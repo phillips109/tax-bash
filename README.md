@@ -68,38 +68,51 @@ Also created at this step is a data file for each user entry.
 The sixth step, contained in the 6UI folder, is the creation of the user interface. 
 The main menu is uiMenu located in the Main subdirectory. 
 The user interface is written in bash, a script found on most linux computers. 
-It is a text, not a graphic interface. I find it works well, 
-but a graphical interface could certainly be written in the future. 
-Then the program mignt be call Tax-python or Tax-lisp.
+It is a text interface, not a graphic interface.
+I find it works well, but a graphical interface could certainly be written in the future. 
+Then the program might be call Tax-python or Tax-lisp.
 
 The interface is concattenated from the files in the subdirectory TaxBash plus the ../Files/startMenu2 file. 
 The parts of the interface are easy to find and edit in the TaxBash subdirectory.
 
-The seventh folder, 7app, is the tax-bash application ready for download. 
+## The seventh folder, 7app, is the tax-bash application ready for download. 
 Do not edit the files in this folder. 
-It contains for each form in the 2Fo folder a .2fo file from step 3, 
-in the XSl folder an xsl file from step 4, 
-in the Data folder data files for each user entry created in step 5, 
-and a new tax-bash interface file containing the menus created in step 5.
+It contains for each form, in the 2Fo folder, a .2fo file from step 3, 
+It contains for each form, in the XSl folder, an xsl file from step 4, 
+It contains for each form, in the Data folder, data files for each user entry created in step 5, 
+It contains for each form, in the Main folder, a new tax-bash interface file containing the menus created in step 5.
 
-The next step is to create a tar file of folder 7App. 
-Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
-which will create the tar file of 7App in a directory called T22.
+## How to download the /7App folder, which is the program tax-bash, to your computer
 
-To test out the program created in 7App:
+1. Create a tar file of the folder /7App
+ 
+ Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
+ which will create the tar file of 7App in a directory called T22.
 
-Create a folder for your tax-bash program. 
-I would suggests ~/Tax-bash but you could use something like ~//TB to hide the program from prying eyes. 
-Under your main directory you could have a directory made up of your initials in case you decide to calculate taxes for anyone other than yourself.
-Go to your ~/Tax-bash/PW/ directory and copy ~/FormFactory/T22/downloadT22.sh to it. 
-Run that shell file (./downloadT22.sh) and a directory T22 will be created with the files from 7App in it. 
-If, at any time you wish to update your version of 7App, 
-simply run this file again and any new forms or changes to the program will be updated, but you data will not be overwritten.
+2. Create a folder for your tax-bash program. 
+   I would suggests ~/Tax-bash but you could use something like ~//TB to hide the program from prying eyes. 
+   Under the Tax-bash folder you could have a directory made up of your initials in case you decide to calculate taxes for anyone other than yourself.
 
-Any end user of Tax-bash will do the same. 
-They will create a Tax-bash directory with an optional subdirectory consisting of their innitials. 
-From this subdirectory or the Tax-bash directory itself they will download the downloadT22.sh file. 
-Running this .sh file will download the Tax-bash application ready for use to create a tax return. 
+3. Copy the shell file downloadT22.sh to your folder.
+   Go to your ~/Tax-bash/PW/ directory and copy ~/FormFactory/T22/downloadT22.sh to it. 
+
+4. Run that shell file (./downloadT22.sh)
+   This will create a directory T22 and the files from 7App will be extracted into it.
+
+5. Change to the newly created /Tax-bash/PW/T22/Main directory.
+
+6. Type ./tax-bash to start the program.
+
+## How to update your program with any changes from Formfactory.
+
+   Simply run the /Tax-bash/PW/T22/downloadT22.sh file again.
+   Any new forms or changes to the program will be updated, but you data will not be overwritten.
+
+## To summarize: The end user who wants to use tax-bash to do his taxes will
+1. Create a Tax-bash directory with an optional subdirectory consisting of their innitials. 
+2. From this subdirectory  they will download the downloadT22.sh file. 
+3. Running this .sh file will download the Tax-bash application ready for use to create a tax return. 
+
 Running the same program at a latter date will update the program without overwriting the user's data.
 
 
