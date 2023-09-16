@@ -4,7 +4,7 @@ It is similar to commercial programs such as Tax-cut and TurboTax except that it
 
 ## Differences from Tax-Cut@ or TurboTax@
 The program currently does not have a guide to help you collect your data, it does not offer any tax or financial advice, and it does not e-file. 
-These features could be easily added in the future.
+These features could be added in the future, if desired.
 
 The program does not access the internet to either pull information from financial institutions nor does it supply your data to be e-filed. 
 Your data is confidential and is designed to be printed on paper and filed by "snail mail". 
@@ -39,7 +39,7 @@ This menu will guide you through the process.
 ## Folder 2Sequence performs the second step.
 The second step is to set the short names for each entry on the form and the sequence in which they will most likely be entered. 
 The names set here will be used in all subsequent steps and the sequence will be used to create the menus for entering data. 
-This process is contained in the 2Sequence folder with the main menu seqmenu located, as usual, in the Main subdirectory. 
+This process is contained in the 2Sequence folder with the main menu seqMenu located, as usual, in the Main subdirectory. 
 The resultant document is an awk file in the Text folder with a name such as f1040.txt. 
 
 ## Separation of concerns
@@ -72,7 +72,7 @@ It is a text interface, not a graphic interface.
 I find it works well, but a graphical interface could certainly be written in the future. 
 Then the program might be call Tax-python or Tax-lisp.
 
-The interface is concattenated from the files in the subdirectory TaxBash plus the ../Files/startMenu2 file. 
+The interface is concatenated from the files in the subdirectory TaxBash plus the ../Files/startMenu2 file. 
 The parts of the interface are easy to find and edit in the TaxBash subdirectory.
 
 ## The seventh folder, 7app, is the tax-bash application ready for download. 
@@ -80,7 +80,7 @@ Do not edit the files in this folder.
 It contains for each form, in the 2Fo folder, a .2fo file from step 3, 
 It contains for each form, in the XSl folder, an xsl file from step 4, 
 It contains for each form, in the Data folder, data files for each user entry created in step 5, 
-It contains for each form, in the Main folder, a new tax-bash interface file containing the menus created in step 5.
+It contains for each form, in the Main folder, a new tax-bash interface file containing the menus created in step 6.
 
 ## How to download the /7App folder, which is the program tax-bash, to your computer
 
@@ -106,7 +106,7 @@ It contains for each form, in the Main folder, a new tax-bash interface file con
 ## How to update your program with any changes from Formfactory.
 
    Simply run the /Tax-bash/PW/T22/downloadT22.sh file again.
-   Any new forms or changes to the program will be updated, but you data will not be overwritten.
+   Any new forms or changes to the program will be updated, but your data will not be overwritten.
 
 ## To summarize: The end user who wants to use tax-bash to do his taxes will
 1. Create a Tax-bash directory with an optional subdirectory consisting of their innitials. 
