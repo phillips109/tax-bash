@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<background>
+  <data>
+    <name>Taxpayor First Name Initial:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Taxpayor Last Name:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Taxpayor SSNo. First:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Taxpayor SSNo. Middle:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Taxpayor SSNo. Last:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Spouse First Name Initial:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Spouse Last Name:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Spouse SSNo. First:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Spouse SSNo. Middle:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Spouse SSNo. Last:</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Filing Status (S, MFJ, MFS, HOH, or QSS):</name>
+    <value></value>
+  </data>
+  <data>
+    <name>Lived Apart (All, Some, None) of the year:</name>
+    <value></value>
+  </data>
+</background>
