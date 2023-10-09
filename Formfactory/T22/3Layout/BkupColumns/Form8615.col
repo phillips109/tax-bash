@@ -1,0 +1,42 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+i     	!001   	!CFNMI   	!tlin  	!      	!      	!      
+j     	!002   	!CLN     	!tlin  	!      	!      	!      
+k     	!003   	!CSSNoF  	!tlin  	!      	!      	!      
+l     	!004   	!CSSNoM  	!tlin  	!      	!      	!      
+m     	!005   	!CSSNoL  	!tlin  	!      	!      	!      
+i     	!006   	!TFNI    	!tlin  	!      	!      	!      
+j     	!007   	!TLN     	!tlin  	!      	!      	!      
+k     	!008   	!TSSNoF  	!tlin  	!      	!      	!      
+l     	!009   	!TSSNoM  	!tlin  	!      	!      	!      
+m     	!010   	!TSSNoL  	!tlin  	!      	!      	!      
+d     	!011   	!single  	!tlin  	!      	!      	!      
+e     	!012   	!MFJ     	!tlin  	!      	!      	!      
+f     	!013   	!MFS     	!tlin  	!      	!      	!      
+g      	!014   	!HOH     	!tlin  	!      	!      	!      
+h      	!015   	!QSS     	!tlin  	!      	!      	!      
+c      	!035   	!09ck    	!tlin  	!      	!      	!      
+c      	!036   	!10ck    	!tlin  	!      	!      	!      
+c      	!037   	!15ck    	!tlin  	!      	!      	!      
+c      	!038   	!17ck    	!tlin  	!      	!      	!      
+a      	!016   	!01      	!dlin  	!      	!      	!      
+a      	!017   	!02      	!dlin  	!      	!      	!      
+a      	!018   	!03      	!dlin  	!      	!      	!      
+a      	!019   	!04      	!dlin  	!      	!      	!      
+a      	!020   	!05      	!dlin  	!      	!      	!      
+a      	!021   	!06      	!dlin  	!      	!      	!      
+a      	!022   	!07      	!dlin  	!      	!      	!      
+a      	!023   	!08      	!dlin  	!      	!      	!      
+a      	!024   	!09      	!dlin  	!      	!      	!      
+a      	!025   	!10      	!dlin  	!      	!      	!      
+a      	!026   	!11      	!dlin  	!      	!      	!      
+b      	!027   	!12a     	!dlin  	!      	!      	!      
+a      	!028   	!12b     	!dlin  	!      	!      	!      
+a      	!029   	!13      	!dlin  	!      	!      	!      
+b      	!030   	!14      	!dlin  	!      	!      	!      
+a      	!031   	!15      	!dlin  	!      	!      	!      
+a      	!032   	!16      	!dlin  	!      	!      	!      
+a      	!033   	!17      	!dlin  	!      	!      	!      
+a      	!034   	!18      	!dlin  	!      	!      	!      

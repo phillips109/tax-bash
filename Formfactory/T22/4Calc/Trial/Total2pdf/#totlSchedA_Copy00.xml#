@@ -1,0 +1,182 @@
+<taxlines>
+  <taxline type="number" color="red">
+    <linename>SchedA-Copy00-line01</linename>
+    <instructions/>
+    <IRSinstructions/>
+    <notes/>
+    <override>100</override>
+    <accounts>
+      <item/>
+    </accounts>
+  </taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line05a</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>501</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line05b</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>502</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line05c</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>503</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line06</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>600</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line08a</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>801</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line08b</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>802</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line08c</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>803</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line08d</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>804</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line09</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>900</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line11</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>1100</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line12</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>1200</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line13</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>1300</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line15</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>1500</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-line16</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>1600</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-linec02</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>0.075</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-linec05d1</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>10000</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+<taxline type="number" color="red">
+<linename>SchedA-Copy00-linec05d2</linename>
+<instructions/>
+<IRSinstructions/>
+<notes/>
+<override>5000</override>
+<accounts>
+<item/>
+</accounts>
+</taxline>
+</taxlines>

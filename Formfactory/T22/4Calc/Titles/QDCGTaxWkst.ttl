@@ -1,0 +1,34 @@
+xaddit	!2name 	!3format	!4augend     	!5addend     	!6+addend
+addit 	!04    	!004    	!                              	!            	!            
+addit 	!15    	!015    	!                              	!            	!            
+addit 	!19    	!019    	!                              	!            	!            
+addit 	!23    	!023    	!                              	!            	!            
+xcnum 	!2name 	!3format	!4test       	!5value1     	!6value2
+cnum  	!03    	!003    	!                              	!            	!            
+cnum  	!06    	!006    	!                              	!            	!            
+cnum  	!13    	!013    	!                              	!            	!            
+xdPull	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dPull 	!01    	!001    	!                              	!            	!      	!
+dPull 	!02    	!002    	!                              	!            	!      	!
+xdRef 	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dRef  	!11    	!011    	!                              	!            	!      	!
+xmult 	!2name 	!3format	!4multiplicand	!5multiplier
+mult  	!18    	!018    	!                              	!
+mult  	!21    	!021    	!                              	!
+xsmOf 	!2name 	!3format	!4first      	!5second
+smOf  	!07    	!007    	!                              	!
+smOf  	!08    	!008    	!                              	!
+smOf  	!10    	!010    	!                              	!
+smOf  	!14    	!014    	!                              	!
+smOf  	!17    	!017    	!                              	!
+smOf  	!25    	!025    	!                              	!
+xsubt0	!2name 	!3format	!4minuend    	!5subtrahend
+subt0 	!05    	!005    	!                              	!
+subt0 	!16    	!016    	!                              	!
+xsubtr	!2name 	!3format	!4minuend    	!5subtrahend
+subtr 	!09    	!009    	!                              	!
+subtr 	!12    	!012    	!                              	!
+subtr 	!20    	!020    	!                              	!
+xtlin 	!2name 	!3form       	!4copy 	!5line
+tlin  	!03n   	!027         	!      	!
+tlin  	!03y   	!026         	!                              	!

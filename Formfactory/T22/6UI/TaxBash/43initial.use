@@ -1,0 +1,51 @@
+
+initial(){
+    while true;
+    do
+	clear
+	echo
+	echo "The next menu you see upon choosing"
+	echo "  6)  Start using tax-bash"
+	echo "from the previous menu"
+	echo "will have three sets of menu choices."
+	echo
+	echo "The first four menu choices set up your data."
+	echo
+	echo "The first two involve importing last years data."
+	echo "Since this is the first year you are using tax-bash,"
+	echo "these first two choice currently do nothing."
+	echo
+	echo "The third choice imports your GnuCash data."
+	echo "Be certain you have set the GNUCASHFILES variable."
+	echo "(See choices 2-4 on previous menu)"
+	echo "You should choose 3) to make certain you are"
+	echo "using your most current gnucash data."
+	echo
+	echo "The 4th choice initializes you data."
+	echo "You should choose 4) before" 
+	echo "starting your work for the day."
+	echo
+	echo "The next three choices allow you to look at"
+	echo "your GnuCash data:"
+	echo "ln: will give you a listing of all the accounts"
+	echo "    in your GnuCash data."
+        echo "at: will show you the transactions in any account you choose."
+	echo "ft: will show you the transactions in all accounts"
+	echo "    that are associated with the form you are working on."
+	echo
+	echo "The last 3 choices allow you to work with:"
+	echo "f forms"
+	echo "s schedules"
+	echo "w worksheets"
+	echo
+	echo "q) Quit"
+	echo
+	echo "Enter q to return to the previous menu."
+	read choice
+
+	case "$choice" in
+	    q) break;;
+	esac
+    done
+}
+    

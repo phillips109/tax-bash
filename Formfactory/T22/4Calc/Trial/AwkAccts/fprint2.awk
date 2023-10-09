@@ -1,0 +1,19 @@
+BEGIN{
+    FS = "!"
+    OFS = "!"
+    x = "9"
+    y = "10"
+}
+
+$1 == LastPayee {
+    y = y + 1
+#    printf("%2d!%2d!%-60s!%6s!%16s\n",  x , y ,  $1, $2, $3)
+    print $1 "!" $2 "!" $3
+}
+$1 != LastPayee {
+    LastPayee = $1
+    x = x + 1
+    y = 10
+#    printf("%2d!%2d!%-60s!%6s!%16s\n", x , y , $1, $2, $3)
+    print $1 "!" $2 "!" $3
+}    

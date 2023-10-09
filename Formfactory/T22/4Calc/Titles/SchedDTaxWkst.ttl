@@ -1,0 +1,46 @@
+xaddit	!2name 	!3format	!4augend     	!5addend     	!6+addend
+addit 	!10    	!010    	!                              	!            	!            
+addit 	!11    	!011    	!                              	!            	!            
+addit 	!28    	!028    	!                              	!            	!            
+addit 	!32    	!032    	!                              	!            	!            
+addit 	!36    	!036    	!                              	!            	!            
+addit 	!41    	!041    	!                              	!            	!            
+addit 	!45    	!045    	!                              	!            	!            
+xdPull	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dPull 	!01    	!001    	!                              	!            	!      	!
+dPull 	!02    	!002    	!                              	!            	!      	!
+dPull 	!03    	!003    	!                              	!            	!      	!
+dPull 	!04    	!004    	!                              	!            	!      	!
+dPull 	!24    	!024    	!                              	!            	!      	!
+dPull 	!37    	!037    	!                              	!            	!      	!
+xmult 	!2name 	!3format	!4multiplicand	!5multiplier
+mult  	!31    	!031    	!                              	!
+mult  	!34    	!034    	!                              	!
+mult  	!40    	!040    	!                              	!
+mult  	!43    	!043    	!                              	!
+xsmOf 	!2name 	!3format	!4first      	!5second
+smOf  	!07    	!007    	!                              	!
+smOf  	!08    	!008    	!                              	!
+smOf  	!12    	!012    	!                              	!
+smOf  	!16    	!016    	!                              	!
+smOf  	!17    	!017    	!                              	!
+smOf  	!20    	!020    	!                              	!
+smOf  	!23    	!023    	!                              	!
+smOf  	!27    	!027    	!                              	!
+smOf  	!30    	!030    	!                              	!
+smOf  	!35    	!035    	!                              	!
+smOf  	!47    	!047    	!                              	!
+xsubt0	!2name 	!3format	!4minuend    	!5subtrahend
+subt0 	!05    	!005    	!                              	!
+subt0 	!06    	!006    	!                              	!
+subt0 	!09    	!009    	!                              	!
+subt0 	!14    	!014    	!                              	!
+subt0 	!18    	!018    	!                              	!
+subt0 	!25    	!025    	!                              	!
+subt0 	!29    	!029    	!                              	!
+subt0 	!38    	!038    	!                              	!
+xsubtr	!2name 	!3format	!4minuend    	!5subtrahend
+subtr 	!13    	!013    	!                              	!
+subtr 	!22    	!022    	!                              	!
+subtr 	!33    	!033    	!                              	!
+subtr 	!42    	!042    	!                              	!

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00line05at color='blue'>Broker01</copy00line05at>
+<copy00line05bt color='blue'>Broker02</copy00line05bt>
+<copy00line05ct color='blue'>Broker03</copy00line05ct>
+<copy00line05dt color='blue'>Broker04</copy00line05dt>
+<copy00line05et color='blue'>Broker05</copy00line05et>
+<copy00line05ft color='blue'>Broker06</copy00line05ft>
+<copy00line05gt color='blue'>Broker07</copy00line05gt>
+<copy00line05ht color='blue'>Broker08</copy00line05ht>
+<copy00line05it color='blue'>Broker09</copy00line05it>
+<copy00line05jt color='blue'>Broker10</copy00line05jt>
+<copy00line05kt color='blue'>Broker11</copy00line05kt>
+<copy00line05lt color='blue'>Broker12</copy00line05lt>
+<copy00line05mt color='blue'>Broker13</copy00line05mt>
+<copy00line05nt color='blue'>Broker14</copy00line05nt>
+<copy00line01ata color='blue'>Bank01accountNo.</copy00line01ata>
+<copy00line01bta color='blue'>Bank02accountNo.</copy00line01bta>
+<copy00line01cta color='blue'>Bank03accountNo.</copy00line01cta>
+<copy00line01dta color='blue'>Bank04accountNo.</copy00line01dta>
+<copy00line01eta color='blue'>Bank05accountNo.</copy00line01eta>
+<copy00line01fta color='blue'>Bank06accountNo.</copy00line01fta>
+<copy00line01gta color='blue'>Bank07accountNo.</copy00line01gta>
+<copy00line01hta color='blue'>Bank08accountNo.</copy00line01hta>
+<copy00line01ita color='blue'>Bank09accountNo.</copy00line01ita>
+<copy00line01jta color='blue'>Bank10accountNo.</copy00line01jta>
+<copy00line01kta color='blue'>Bank11accountNo.</copy00line01kta>
+<copy00line01lta color='blue'>Bank12accountNo.</copy00line01lta>
+<copy00line01mta color='blue'>Bank13accountNo.</copy00line01mta>
+<copy00line01nta color='blue'>Bank14accountNo.</copy00line01nta>
+<copy00line05ata color='blue'>Broker01accountNo.</copy00line05ata>
+<copy00line05bta color='blue'>Broker02accountNo.</copy00line05bta>
+<copy00line05cta color='blue'>Broker03accountNo.</copy00line05cta>
+<copy00line05dta color='blue'>Broker04accountNo.</copy00line05dta>
+<copy00line05eta color='blue'>Broker05accountNo.</copy00line05eta>
+<copy00line05fta color='blue'>Broker06accountNo.</copy00line05fta>
+<copy00line05gta color='blue'>Broker07accountNo.</copy00line05gta>
+<copy00line05hta color='blue'>Broker08accountNo.</copy00line05hta>
+<copy00line05ita color='blue'>Broker09accountNo.</copy00line05ita>
+<copy00line05jta color='blue'>Broker10accountNo.</copy00line05jta>
+<copy00line05kta color='blue'>Broker11accountNo.</copy00line05kta>
+<copy00line05lta color='blue'>Broker12accountNo.</copy00line05lta>
+<copy00line05mta color='blue'>Broker13accountNo.</copy00line05mta>
+<copy00line05nta color='blue'>Broker14accountNo.</copy00line05nta>
+<copy00line01ad color='red'>10</copy00line01ad>
+<copy00line01bd color='red'>20</copy00line01bd>
+<copy00line01cd color='red'>30</copy00line01cd>
+<copy00line01dd color='red'>40</copy00line01dd>
+<copy00line01ed color='red'>50</copy00line01ed>
+<copy00line01fd color='red'>60</copy00line01fd>
+<copy00line01gd color='red'>70</copy00line01gd>
+<copy00line01hd color='red'>80</copy00line01hd>
+<copy00line01id color='red'>90</copy00line01id>
+<copy00line01jd color='red'>100</copy00line01jd>
+<copy00line01kd color='red'>110</copy00line01kd>
+
+<copy00line01ld color='red'>120</copy00line01ld>
+<copy00line01md color='red'>130</copy00line01md>
+<copy00line01nd color='red'>140</copy00line01nd>
+<copy00line02 color='red'>200</copy00line02>
+<copy00line03 color='red'>300</copy00line03>
+<copy00line04 color='red'>400</copy00line04>
+<copy00line05ad color='red'>501</copy00line05ad>
+<copy00line05bd color='red'>502</copy00line05bd>
+<copy00line05cd color='red'>503</copy00line05cd>
+<copy00line05dd color='red'>504</copy00line05dd>
+<copy00line05ed color='red'>505</copy00line05ed>
+<copy00line05fd color='red'>506</copy00line05fd>
+<copy00line05gd color='red'>507</copy00line05gd>
+<copy00line05hd color='red'>508</copy00line05hd>
+<copy00line05id color='red'>509</copy00line05id>
+<copy00line05jd color='red'>510</copy00line05jd>
+<copy00line05kd color='red'>511</copy00line05kd>
+<copy00line05ld color='red'>512</copy00line05ld>
+<copy00line05md color='red'>513</copy00line05md>
+<copy00line05nd color='red'>514</copy00line05nd>
+<copy00line06 color='red'>600</copy00line06>
+<copy00line07a1y color='blue'>x</copy00line07a1y>
+<copy00line07a2y color='blue'>x</copy00line07a2y>
+<copy00line08y color='blue'>x</copy00line08y>
+<copy00line07a1n color='blue'>x</copy00line07a1n>
+<copy00line07a2n color='blue'>x</copy00line07a2n>
+<copy00line08n color='blue'>x</copy00line08n>
+<copy00line07b color='blue'>Foreign Country</copy00line07b>
+</Form>
+</IRSForms>

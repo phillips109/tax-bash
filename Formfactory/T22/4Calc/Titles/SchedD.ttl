@@ -1,0 +1,56 @@
+xtPull	!2name 	!3form       	!4copy 	!5line
+tPull 	!SFNI  	!003         	!                              	!
+tPull 	!SLN   	!004         	!                              	!
+tPull 	!TFNI  	!001         	!                              	!
+tPull 	!TLN   	!002         	!                              	!
+tPull 	!TSSNoF	!005         	!                              	!
+tPull 	!TSSNoL	!007         	!                              	!
+tPull 	!TSSNoM	!006         	!                              	!
+xtlin 	!2name 	!3form       	!4copy 	!5line
+tlin  	!QOFn  	!009         	!                              	!
+tlin  	!QOFy  	!008         	!                              	!
+xaddit	!2name 	!3format	!4augend     	!5addend     	!6+addend
+addit 	!07    	!028    	!                              	!            	!            
+addit 	!15    	!0408   	!                              	!            	!            
+addit 	!16    	!049    	!                              	!            	!            
+xdPull	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dPull 	!01ad  	!010    	!                              	!            	!      	!
+dPull 	!01ae  	!011    	!                              	!            	!      	!
+dPull 	!01bd  	!013    	!                              	!            	!      	!
+dPull 	!01be  	!014    	!                              	!            	!      	!
+dPull 	!01bg  	!015    	!                              	!            	!      	!
+dPull 	!02d   	!017    	!            	!            	!      	!
+dPull 	!02e   	!018    	!            	!            	!      	!
+dPull 	!02g   	!019    	!            	!            	!      	!
+dPull 	!03d   	!021    	!            	!            	!      	!
+dPull 	!03e   	!022    	!            	!            	!      	!
+dPull 	!03g   	!023    	!            	!            	!      	!
+dPull 	!04    	!025    	!                              	!            	!      	!
+dPull 	!05    	!026    	!                              	!            	!      	!
+dPull 	!06    	!027    	!                              	!            	!      	!
+dPull 	!08ad  	!029    	!                              	!            	!      	!
+dPull 	!08ae  	!030    	!                              	!            	!      	!
+dPull 	!08bd  	!032    	!                              	!            	!      	!
+dPull 	!08be  	!033    	!                              	!            	!      	!
+dPull 	!08bg  	!034    	!                              	!            	!      	!
+dPull 	!09d   	!036    	!                              	!            	!      	!
+dPull 	!09e   	!037    	!                              	!            	!      	!
+dPull 	!09g   	!038    	!                              	!            	!      	!
+dPull 	!10d   	!040    	!                              	!            	!      	!
+dPull 	!10e   	!041    	!                              	!            	!      	!
+dPull 	!10g   	!042    	!                              	!            	!      	!
+dPull 	!11    	!044    	!                              	!            	!      	!
+dPull 	!12    	!045    	!                              	!            	!      	!
+dPull 	!13    	!046    	!                              	!            	!      	!
+dPull 	!14    	!047    	!                              	!            	!      	!
+dPull 	!18    	!052    	!                              	!            	!      	!
+dPull 	!19    	!053    	!                              	!            	!      	!
+xsubtr	!2name 	!3format	!4minuend    	!5subtrahend
+subtr 	!01ah  	!012    	!                              	!
+subtr 	!01bh  	!016    	!                              	!
+subtr 	!02h   	!020    	!            	!
+subtr 	!03h   	!024    	!            	!
+subtr 	!08ah  	!031    	!                              	!
+subtr 	!08bh  	!035    	!                              	!
+subtr 	!09h   	!039    	!                              	!
+subtr 	!10h   	!043    	!                              	!

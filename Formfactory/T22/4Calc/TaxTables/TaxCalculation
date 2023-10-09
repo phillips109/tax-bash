@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version ="1.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+
+<xsl:template name="taxCalc">
+
+  <xsl:text disable-output-escaping="yes">&lt;xsl:param name="lineToBeTaxed"&#47;&gt;</xsl:text><xsl:text>
+</xsl:text>
+
+
+  
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test=$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-lineFS="S"</xsl:text>
+
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+<!-- ********************************************************************************************** -->
+
+  <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; 0 and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>SBracketOne"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+  
+          <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - 0)</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">TaxRateBracketOne) - 0)&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+
+  
+<!-- ********************************************************************************************* -->
+
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>SBracketOne and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>SBracketTwo"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="(round(((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text>-$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>SBracketOne</xsl:text>
+	<xsl:text disable-output-escaping="yes">) div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">TaxRateBracketTwo) -</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="MFSTaxOnBracketOne"/>
+	<xsl:text disable-output-escaping="yes">&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+<!-- ******************************************************************************************* -->
+  
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>SBracketTwo and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>SBracketThree"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+    
+          <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>SBracketTwo</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>TaxRateBracketThree) + $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">STaxOnBracketTwo)"&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+<!-- ****************************************************************************************** -->
+
+
+
+      
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>SBracketThree and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>SBracketFourA"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>SBracketThree)</xsl:text>
+	<xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) + $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">STaxOnBracketThree)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+
+<!-- *********************************************************************************** -->
+    
+ 
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketFourA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>SBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">SBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+
+
+<!-- ***************************************************************************************** -->	 
+
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketFourA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>SBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">SBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+	 <!-- ********************************************************************************************* -->
+
+	 
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketFour and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketFive"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketFive) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">SBracketFiveSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+
+<!-- ************************************************************************************** -->
+
+
+      
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketFive and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>SBracketSix"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+              <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:value-of select="./lineToBeTaxed"/>
+	      <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text>TaxRateBracketSix) - $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text disable-output-escaping="yes">SBracketSixSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	    </xsl:text>
+	    
+          <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	</xsl:text>
+
+
+<!-- ************************************************************************************** -->
+
+	
+
+	<xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">SBracketSix"&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketSeven) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">SBracketSevenSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+  
+      
+       <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+     </xsl:text>
+
+     <!-- *************************************************************************************End of last bracket when -->
+
+     <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:choose&gt;</xsl:text><xsl:text>
+   </xsl:text>
+
+     <!-- *********************************************************************end of choose for bracket whens -->
+
+       <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+     </xsl:text>
+
+     <!-- *************************************************************************************End of when FS="S" -->
+
+
+
+
+
+
+
+
+     
+     
+     <!-- ****************************************************************************************Start of when FS="QW" -->
+
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test=$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-lineFS="MFJ or </xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-lineFS="QW"</xsl:text>
+
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+<!-- ********************************************************************************************** -->
+
+  <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; 0 and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFJBracketOne"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+  
+          <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - 0)</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">TaxRateBracketOne) - 0)&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+
+<!-- ********************************************************************************************* -->
+
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFJBracketOne and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFJBracketTwo"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="(round(((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text>-$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFJBracketOne</xsl:text>
+	<xsl:text disable-output-escaping="yes">) div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">TaxRateBracketTwo) -</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="TaxOnBracketOne"/>
+	<xsl:text disable-output-escaping="yes">&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+<!-- ******************************************************************************************* -->
+  
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFJBracketTwo and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFJBracketThree"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+    
+          <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>MFJBracketTwo</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>TaxRateBracketThree) + $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">MFJTaxOnBracketTwo)"&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+<!-- ****************************************************************************************** -->
+
+
+
+      
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFJBracketThree and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFJBracketFourA"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFJBracketThree)</xsl:text>
+	<xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFJTaxRateBracketFour) + $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">TaxOnBracketThree)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+
+<!-- *********************************************************************************** -->
+    
+ 
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketFourAA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFJBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">MFJBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+
+
+<!-- ***************************************************************************************** -->	 
+
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketFourAA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFJBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">MFJBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+	 <!-- ********************************************************************************************* -->
+
+	 
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketFour and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketFive"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketFive) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">MFJBracketFiveSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+
+<!-- ************************************************************************************** -->
+
+
+      
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketFive and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFJBracketSix"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+              <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:value-of select="./lineToBeTaxed"/>
+	      <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text>TaxRateBracketSix) - $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text disable-output-escaping="yes">MFJBracketSixSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	    </xsl:text>
+	    
+          <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	</xsl:text>
+
+
+<!-- ************************************************************************************** -->
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+  
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+	
+
+	<xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">MFJBracketSix"&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketSeven) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">MFJBracketSevenSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+  
+      
+       <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+     </xsl:text>
+
+     <!-- *************************************************************************************last when of brackets -->
+
+
+     
+     <!-- ***************************************************************************************End of choose for brackets -->
+
+       <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+     </xsl:text>
+     
+     <!-- *************************************************************************************End of when FS="QW" -->
+
+    
+
+
+     <!--  ******************************************************************************************Start of when FS="HOH" -->
+     
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test=$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-lineFS="HOH</xsl:text>
+
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+<!-- ********************************************************************************************** -->
+
+  <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; 0 and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>HOHBracketOne"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+  
+          <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - 0)</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">TaxRateBracketOne) - 0)&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+
+<!-- ********************************************************************************************* -->
+
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>HOHBracketOne and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>HOHBracketTwo"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="(round(((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text>-$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>HOHBracketOne</xsl:text>
+	<xsl:text disable-output-escaping="yes">) div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">HOHTaxRateBracketTwo) -</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="TaxOnBracketOne"/>
+	<xsl:text disable-output-escaping="yes">&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+<!-- ******************************************************************************************* -->
+  
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>HOHBracketTwo and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>HOHBracketThree"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+    
+          <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>HOHBracketTwo</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>TaxRateBracketThree) + $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">HOHTaxOnBracketTwo)"&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+<!-- ****************************************************************************************** -->
+
+
+
+      
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>HOHBracketThree and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>HOHBracketFourA"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>HOHBracketThree)</xsl:text>
+	<xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) + $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">HOHTaxOnBracketThree)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+
+<!-- *********************************************************************************** -->
+    
+ 
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>HOHBracketFourAA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>HOHBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>HOHBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">HOHBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+
+
+<!-- ***************************************************************************************** -->	 
+
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>HOHBracketFourAA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>HOHBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>HOHBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">HOHBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+	 <!-- ********************************************************************************************* -->
+
+	 
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>HOHBracketFour and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>HOHBracketFive"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketFive) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">HOHBracketFiveSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+
+<!-- ************************************************************************************** -->
+
+
+      
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>HOHBracketFive and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>BracketSix"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+              <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:value-of select="./lineToBeTaxed"/>
+	      <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text>TaxRateBracketSix) - $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text disable-output-escaping="yes">HOHBracketSixSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	    </xsl:text>
+	    
+          <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	</xsl:text>
+
+
+<!-- ************************************************************************************** -->
+
+	
+
+	<xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">HOHBracketSix"&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketSeven) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">HOHBracketSevenSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+  
+      
+       <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+     </xsl:text>
+
+     <!-- *************************************************************************************last when of brackets -->
+
+          <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:choose&gt;</xsl:text><xsl:text>
+   </xsl:text>
+
+     <!-- *********************************************************************end of choose for bracket whens -->
+
+
+     <!-- ************************************************************************start of when for MFS -->
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test=$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-lineFS="MFS</xsl:text>
+
+    <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+<!-- ********************************************************************************************** -->
+
+  <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; 0 and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFSBracketOne"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+  
+          <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - 0)</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">TaxRateBracketOne) - 0)&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+
+<!-- ********************************************************************************************* -->
+
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFSBracketOne and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFSBracketTwo"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="(round(((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text>-$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFSBracketOne</xsl:text>
+	<xsl:text disable-output-escaping="yes">) div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">TaxRateBracketTwo) -</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="TaxOnBracketOne"/>
+	<xsl:text disable-output-escaping="yes">&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+  
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+
+
+<!-- ******************************************************************************************* -->
+  
+
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFSBracketTwo and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFSBracketThree"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+    
+          <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:value-of select="./lineToBeTaxed"/>
+	  <xsl:text> - $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>MFSBracketTwo</xsl:text>
+	  <xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text>TaxRateBracketThree) + $</xsl:text>
+	  <xsl:value-of select="$form"/>
+	  <xsl:text>-Copy</xsl:text>
+	  <xsl:value-of select="$copy"/>
+	  <xsl:text>-line</xsl:text>
+	  <xsl:text disable-output-escaping="yes">MFSTaxOnBracketTwo)"&#47;&gt;</xsl:text><xsl:text>
+	</xsl:text>
+  
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+<!-- ****************************************************************************************** -->
+
+
+
+      
+      <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFSBracketThree and $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:value-of select="./lineToBeTaxed"/>
+      <xsl:text> &lt;= $</xsl:text>
+      <xsl:value-of select="$form"/>
+      <xsl:text>-Copy</xsl:text>
+      <xsl:value-of select="$copy"/>
+      <xsl:text>-line</xsl:text>
+      <xsl:text>MFSBracketFourA"</xsl:text>
+      <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFSBracketThree)</xsl:text>
+	<xsl:text disable-output-escaping="yes"> div 50) + 0.5) * 50) * $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) + $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">MFSTaxOnBracketThree)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+      <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+
+<!-- *********************************************************************************** -->
+    
+ 
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketFourAA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFSBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">MFSBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+
+
+<!-- ***************************************************************************************** -->	 
+
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketFourAA and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt;= $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketFour"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+
+        <xsl:text disable-output-escaping="yes">"&lt;xsl:value-of select="round(((((floor($</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text> - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>MFSBracketFourA) *</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text>TaxRateBracketFour) - $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">MFSBracketFourSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+	   <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	 </xsl:text>
+
+	 <!-- ********************************************************************************************* -->
+
+	 
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketFour and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketFive"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketFive) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">MFSBracketFiveSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+
+	<xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+      </xsl:text>
+
+
+
+
+<!-- ************************************************************************************** -->
+
+
+      
+
+         <xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketFive and $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:value-of select="./lineToBeTaxed"/>
+	 <xsl:text> &lt; $</xsl:text>
+	 <xsl:value-of select="$form"/>
+	 <xsl:text>-Copy</xsl:text>
+	 <xsl:value-of select="$copy"/>
+	 <xsl:text>-line</xsl:text>
+	 <xsl:text>MFSBracketSix"</xsl:text>
+	 <xsl:text disable-output-escaping="yes">&gt;</xsl:text><xsl:text>
+       </xsl:text>
+       
+              <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:value-of select="./lineToBeTaxed"/>
+	      <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text>TaxRateBracketSix) - $</xsl:text>
+	      <xsl:value-of select="$form"/>
+	      <xsl:text>-Copy</xsl:text>
+	      <xsl:value-of select="$copy"/>
+	      <xsl:text>-line</xsl:text>
+	      <xsl:text disable-output-escaping="yes">MFSBracketSixSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	    </xsl:text>
+	    
+          <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+	</xsl:text>
+
+
+<!-- ************************************************************************************** -->
+
+	
+
+	<xsl:text disable-output-escaping="yes">&lt;xsl:when test="$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:value-of select="./lineToBeTaxed"/>
+	<xsl:text disable-output-escaping="yes"> &gt; $</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-line</xsl:text>
+	<xsl:text disable-output-escaping="yes">HOHBracketSix"&gt;</xsl:text><xsl:text>
+      </xsl:text>
+      
+             <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="round(($</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:value-of select="./lineToBeTaxed"/>
+	     <xsl:text disable-output-escaping="yes"> * $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text>TaxRateBracketSeven) - $</xsl:text>
+	     <xsl:value-of select="$form"/>
+	     <xsl:text>-Copy</xsl:text>
+	     <xsl:value-of select="$copy"/>
+	     <xsl:text>-line</xsl:text>
+	     <xsl:text disable-output-escaping="yes">MFSBracketSevenSubtractionAmt)"&#47;&gt;</xsl:text><xsl:text>
+	   </xsl:text>
+  
+      
+       <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+     </xsl:text>
+
+     <!-- *************************************************************************************End of last bracket when -->
+
+
+         <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+  <!-- ***************************************************************************************End of choose for brackets -->
+
+       <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:when&gt;</xsl:text><xsl:text>
+     </xsl:text>
+
+     <!-- *************************************************************************************End of when for FS="MFS" -->
+
+         <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+  <!-- ***************************************************************************************End of choose for FS Filing Status -->
+
+
+  
+ <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:variable&gt;</xsl:text><xsl:text>
+  </xsl:text>
+
+</xsl:template>
+
+</xsl:stylesheet>
+
+
+
+
+

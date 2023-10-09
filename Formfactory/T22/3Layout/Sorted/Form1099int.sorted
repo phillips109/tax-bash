@@ -1,0 +1,60 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!0.76  	!4.04  	!left         	!
+a     	!tlin  	!pnam1 	!      	!      	!0.88         	!Hopkins Coal Co.
+a     	!tlin  	!pnam2 	!      	!      	!1.08     	!Ohio Division
+a     	!tlin  	!padd1 	!      	!      	!1.27     	!1700 Industrial Park
+a     	!tlin  	!padd2 	!      	!      	!1.45     	!Suite 300
+a     	!tlin  	!pcity 	!      	!      	!1.62     	!Sandusky
+a     	!tlin  	!ptel  	!      	!      	!1.78     	!972-346-9254
+a     	!tlin  	!pTIN  	!      	!      	!2.28     	!26-785633
+a     	!tlin  	!rnam1 	!      	!      	!2.76     	!John Taxpayor
+a     	!tlin  	!rnam2 	!      	!      	!2.95     	!Accounting Specialist
+a     	!tlin  	!radd1 	!      	!      	!3.26     	!300 Grant Street
+a     	!tlin  	!radd2 	!      	!      	!3.45     	!5th Floor
+a     	!tlin  	!rcity 	!      	!      	!3.87     	!Pittsburgh
+a     	!tlin  	!actNo 	!      	!      	!4.94     	!754824
+Col   	!col   	!b     	!2.00  	!2.60  	!left         	!
+b     	!tlin  	!pST   	!      	!      	!1.62         	!OH
+b     	!tlin  	!rST   	!      	!      	!3.87     	!PA
+Col   	!col   	!c     	!2.46  	!4.04  	!left         	!
+c     	!tlin  	!pcnty 	!      	!      	!1.62         	!Erie
+c     	!tlin  	!rTIN  	!      	!      	!2.28     	!28-74521
+c     	!tlin  	!rcnty 	!      	!      	!3.87     	!Allegheny
+Col   	!col   	!d     	!2.75  	!4.04  	!right         	!
+d     	!tlin  	!pctry 	!      	!      	!1.62    	!USA
+d     	!tlin  	!rctry 	!      	!      	!3.87     	!USA
+Col   	!col   	!e     	!3.00  	!4.04  	!right         	!
+e     	!tlin  	!pzip  	!      	!      	!1.62     	!44870
+e     	!tlin  	!rzip  	!      	!      	!3.87     	!15213
+Col   	!col   	!f     	!3.74  	!3.83  	!right         	!
+f     	!tlin  	!FATCA 	!      	!      	!4.37    	!x
+f     	!tlin  	!2TIN  	!      	!      	!4.77     	!x
+Col   	!col   	!g     	!4.18  	!5.47  	!right         	!
+g     	!tlin  	!pRTN  	!      	!      	!0.91    	!472-30-3181
+g     	!dlin  	!01    	!      	!      	!1.44     	!1000
+g     	!dlin  	!04    	!      	!      	!2.78     	!4000
+g     	!dlin  	!06    	!      	!      	!3.12     	!6000
+g     	!dlin  	!08    	!      	!      	!3.62     	!8000
+g     	!dlin  	!10    	!      	!      	!4.12     	!10000
+g     	!dlin  	!12    	!      	!      	!4.46     	!12000
+g     	!dlin  	!14    	!      	!      	!4.94     	!14000
+Col   	!col   	!h     	!4.18  	!6.85  	!right         	!
+h     	!dlin  	!02    	!      	!      	!1.96    	!2000
+h     	!dlin  	!03    	!      	!      	!2.44     	!3000
+Col   	!col   	!i     	!5.62  	!6.85  	!right         	!
+i     	!dlin  	!05    	!      	!      	!2.78    	!5000
+i     	!tlin  	!07    	!      	!      	!3.12     	!7000
+i     	!dlin  	!09    	!      	!      	!3.62     	!9000
+i     	!dlin  	!11    	!      	!      	!4.12     	!11000
+i     	!dlin  	!13    	!      	!      	!4.46     	!13000
+Col   	!col   	!j     	!5.62  	!5.70  	!left         	!
+j     	!tlin  	!15a   	!      	!      	!4.78     	!PA
+j     	!tlin  	!15b   	!      	!      	!4.96     	!OH
+Col   	!col   	!k     	!5.96  	!6.85  	!right         	!
+k     	!tlin  	!16a   	!      	!      	!4.78    	!459835
+k     	!tlin  	!16b   	!      	!      	!4.96     	!274592
+Col   	!col   	!l     	!7.04  	!7.90  	!right         	!
+l     	!dlin  	!17a   	!      	!      	!4.78    	!17000
+l     	!dlin  	!17b   	!      	!      	!4.96    	!17001
+Col   	!col   	!m     	!6.25  	!6.50  	!left        	!
+m     	!tlin  	!20yr  	!      	!      	!1.44     	!22

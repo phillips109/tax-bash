@@ -1,0 +1,37 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+a      	!001   	!pname   	!tlin  	!      	!      	!      
+a      	!002   	!paddr1  	!tlin  	!      	!      	!      
+a      	!003   	!paddr2  	!tlin  	!      	!      	!      
+a      	!004   	!pcity   	!tlin  	!      	!      	!      
+b      	!005   	!pST     	!tlin  	!      	!      	!      
+c      	!006   	!pzip    	!tlin  	!      	!      	!      
+a      	!007   	!ptel    	!tlin  	!      	!      	!      
+a      	!008   	!pTIN    	!tlin  	!      	!      	!      
+d      	!009   	!rTIN    	!tlin  	!      	!      	!      
+a      	!010   	!rname   	!tlin  	!      	!      	!      
+a      	!011   	!raddr1  	!tlin  	!      	!      	!      
+a      	!012   	!raddr2  	!tlin  	!      	!      	!      
+a      	!013   	!rcity   	!tlin  	!      	!      	!      
+b      	!014   	!rST     	!tlin  	!      	!      	!      
+c      	!015   	!rzip    	!tlin  	!      	!      	!      
+a      	!016   	!acctNo  	!tlin  	!      	!      	!      
+e      	!017   	!TIN2    	!tlin  	!      	!      	!      
+f      	!018   	!yr      	!tlin  	!      	!      	!      
+g      	!019   	!01      	!dlin  	!      	!      	!      
+g      	!020   	!02      	!dlin  	!      	!      	!      
+g      	!021   	!03      	!dlin  	!      	!      	!      
+h      	!022   	!04      	!dlin  	!      	!      	!      
+g      	!023   	!05      	!dlin  	!      	!      	!      
+h      	!024   	!06      	!dlin  	!      	!      	!      
+g      	!025   	!07      	!dlin  	!      	!      	!      
+i      	!026   	!08ck    	!tlin  	!      	!      	!      
+g      	!027   	!09      	!dlin  	!      	!      	!      
+g      	!028   	!10a1    	!tlin  	!      	!      	!      
+j      	!029   	!10b1    	!tlin  	!      	!      	!      
+k      	!030   	!11c1    	!dlin  	!      	!      	!      
+g      	!031   	!10a2    	!tlin  	!      	!      	!      
+j      	!032   	!10b2    	!tlin  	!      	!      	!      
+k      	!033   	!11c2    	!dlin  	!      	!      	!      

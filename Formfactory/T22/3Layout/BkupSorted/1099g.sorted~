@@ -1,0 +1,49 @@
+Col	!type	!name	!dummy          	!left	!right	!align/top
+Col	!col	!a	!       	        !0.75	!4.00	!left
+a	!tlin	!pname	!Granite Siding Co.	!	!	!0.88
+a	!tlin	!paddr1	!300 Grant Stret	!	!	!1.00
+a	!tlin	!paddr2	!Suite 300      	!	!	!1.26
+a	!tlin	!pcity	!Pittsburgh     	!	!	!1.30
+a	!tlin	!ptel	!412-692-7015   	!	!	!1.44
+a	!tlin	!pTIN	!25-346759      	!	!	!1.78
+a	!tlin	!rname	!Robert Doyle   	!	!	!2.17
+a	!tlin	!raddr1	!300 5th Avenue 	!	!	!2.60
+a	!tlin	!acctNo	!397285         	!       !	!3.28
+Col	!col	!a1	!               	!0.75	!2.08	!left
+a1	!tlin	!rcity	!Pittsburgh     	!	!	!2.94
+Col	!col	!b	!               	!2.45	!2.60	!left
+b	!tlin	!pST	!PA             	!	!	!1.30
+b	!tlin	!rST	!PA             	!	!	!2.94
+Col	!col	!c	!               	!3.00	!4.00	!left
+c	!tlin	!pzip	!15213           	!	!	!1.30
+c	!tlin	!rzip	!15218          	!	!	!2.94
+Col	!col	!d	!               	!2.46	!4.00	!left
+d	!tlin	!rTIN	!27-57689       	!	!	!1.78
+Col	!col	!e	!               	!3.74	!3.84	!left
+e	!tlin	!TIN2	!x              	!	!	!3.28
+Col	!col	!f	!               	!5.99	!6.20	!left
+f	!tlin	!yr	!22             	!	!	!1.42
+Col	!col	!g	!               	!4.26	!5.38	!right
+g	!dlin	!01	!10000          	!	!	!0.94
+g	!dlin	!02	!2000           	!	!	!1.45
+g	!dlin	!03	!3000           	!	!	!1.79
+g	!dlin	!05	!5000           	!	!	!2.12
+g	!dlin	!07	!7000           	!	!	!2.45
+g	!dlin	!09	!9000           	!	!	!2.79
+Col	!col	!g1	!               	!4.26	!4.64	!center
+g1	!tlin	!10a1	!PA             	!	!	!3.11
+g1	!tlin	!10a2	!NY             	!	!	!3.30
+Col	!col	!h	!                	!5.65	!6.81	!right
+h	!dlin	!04	!4000           	!	!	!1.79
+h	!dlin	!06	!6000           	!	!	!2.12
+Col	!col	!i	!               	!6.71	!6.81	!left
+i	!tlin	!08ck	!x              	!	!	!2.45
+Col	!col	!j	!               	!4.73	!5.74	!left
+j	!tlin	!10b1	!7654321              	!	!	!3.11
+j	!tlin	!10b2	!9876543        	!	!	!3.30
+Col	!col	!k	!               	!5.97	!6.84	!right
+k	!dlin	!11c1	!1100           	!	!	!3.11
+k	!dlin	!11c2	!1101           	!	!       !3.30	
+
+
+

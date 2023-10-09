@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<book>
+  <chapter id="ch1">
+    <title>
+      First chapter
+    </title>
+    <para>
+      A link to <xref idref="ch2"/>
+    </para>
+  </chapter>
+  <chapter id="ch2">
+    <title>
+      Second chapter
+    </title>
+    <para>
+      This is a line in Chapter 2.
+    </para>
+  </chapter>
+</book>

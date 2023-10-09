@@ -1,0 +1,16 @@
+
+importLastYrReturn(){
+echo "Importing last year's return."
+sleep 1
+
+#IMPORT LAST YEARS RETURN
+if [ -f ../../T16/Xml/taxlogic.final ]
+then
+cp ../../T16/Xml/taxlogic.final ../Xml/taxlogic.PrevYear
+else
+echo "../../T16/Xml/taxlogic.final is not a regular file."
+echo "      Will use taxlogic.frame instead."
+cp ../Xml/taxlogic.frame ../Xml/taxlogic.PrevYear
+fi
+return
+}

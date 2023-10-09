@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IRSForms xmlns:vendor="http://www.gnucash.org/XML/vendor" xmlns:entry="http://www.gnucash.org/XML/entry" xmlns:invoice="http://www.gnucash.org/XML/invoice" xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox" xmlns:bt-days="http://www.gnucash.org/XML/bt-days" xmlns:billterm="http://www.gnucash.org/XML/billterm" xmlns:order="http://www.gnucash.org/XML/order" xmlns:employee="http://www.gnucash.org/XML/employee" xmlns:tte="http://www.gnucash.org/XML/tte" xmlns:taxtable="http://www.gnucash.org/XML/taxtable" xmlns:owner="http://www.gnucash.org/XML/owner" xmlns:addr="http://www.gnucash.org/XML/addr" xmlns:job="http://www.gnucash.org/XML/job" xmlns:cust="http://www.gnucash.org/XML/cust" xmlns:lot="http://www.gnucash.org/XML/lot" xmlns:recurrence="http://www.gnucash.org/XML/recurrence" xmlns:bgt="http://www.gnucash.org/XML/bgt" xmlns:fs="http://www.gnucash.org/XML/fs" xmlns:ts="http://www.gnucash.org/XML/ts" xmlns:trn="http://www.gnucash.org/XML/trn" xmlns:sx="http://www.gnucash.org/XML/sx" xmlns:split="http://www.gnucash.org/XML/split" xmlns:slot="http://www.gnucash.org/XML/slot" xmlns:price="http://www.gnucash.org/XML/price" xmlns:cmdty="http://www.gnucash.org/XML/cmdty" xmlns:cd="http://www.gnucash.org/XML/cd" xmlns:book="http://www.gnucash.org/XML/book" xmlns:act="http://www.gnucash.org/XML/act" xmlns:gnc="http://www.gnucash.org/XML/gnc">
+  <accounts>
+    <account>
+      <act:name>Charity</act:name>
+      <taxCode/>
+      <transaction>
+	<trn:date-posted>
+	  <ts:date>2021-01-17 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>ACLU</trn:description>
+	<split:dollarvalue>-40</split:dollarvalue>
+      </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-16 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+	<trn:date-posted>
+	  <ts:date>2021-03-16 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>ACLU</trn:description>
+	<split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-16 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-17 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-16 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-16 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-16 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-16 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-17 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>ACLU</trn:description>
+      <split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-11-16 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>ACLU</trn:description>
+	<split:dollarvalue>-40</split:dollarvalue>
+    </transaction>
+    <transaction>
+	<trn:date-posted>
+	  <ts:date>2021-12-30 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>AMERICANS UNITED FOR SEPA20</trn:description>
+	<split:dollarvalue>-15</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>AMNESTYUSA 2126334254 212-6</trn:description>
+	<split:dollarvalue>-15</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-20 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Appreciation Fund</trn:description>
+      <split:dollarvalue>-500</split:dollarvalue>
+    </transaction>
+    <transaction>
+	<trn:date-posted>
+	  <ts:date>2021-09-04 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>Consumer Reports</trn:description>
+	<split:dollarvalue>-50</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Donation to the Wikimedia 877-600-9454 CA</trn:description>
+      <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-01 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>Donation to the Wikimedia 877-600-9454 CA</trn:description>
+	<split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-01 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>DWB*DOCTORS W/O BORDERS  212-679-6800 NY</trn:description>
+	<split:dollarvalue>-250</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>EARTHJUSTICE 415-2172000 CA</trn:description>
+      <split:dollarvalue>-120</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>FINCA INTL INC HTTPSWWW.FIN</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-08 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>FREE SOFTWARE FOUNDATAION 833-972-8766 MA</trn:description>
+      <split:dollarvalue>-120</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>GREENPEACE USA 800722699580</trn:description>
+      <split:dollarvalue>-100</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Jubilee Soup Kitchens</trn:description>
+      <split:dollarvalue>-100</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-12 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>MONTHLY DONATION TO WI</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-12 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>MONTHLY DONATION TO WI</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Natural Resources Defense Council</trn:description>
+      <split:dollarvalue>-100</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Nature Conservancy 800-6286</trn:description>
+      <split:dollarvalue>-103</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>NRDC 212-727-2700 NY</trn:description>
+      <split:dollarvalue>-15</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>OPERATION HOMEFRONT NATL 21</trn:description>
+      <split:dollarvalue>-100</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-04 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>PENNENVIRONMENT</trn:description>
+	<split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-11-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>PENNENVIRONMENT</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Presbyterian SeniorCare Foundation</trn:description>
+      <split:dollarvalue>-100</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>QGV*Light of Life Ministr41</trn:description>
+      <split:dollarvalue>-124.8</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>SA CHARITY EASTERNUSA.SANY</trn:description>
+	<split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SHAW FESTIVAL FOUND.SHAWFEST.COM NY</trn:description>
+      <split:dollarvalue>-102.8</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SHAW FESTIVAL THEATRE 905-4</trn:description>
+      <split:dollarvalue>-100</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPECIAL OLYMPICS 800-380307</trn:description>
+      <split:dollarvalue>-102.5</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-21 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-18 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-18 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-19 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-19 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-18 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-22 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-24 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-17 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-20 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-11-18 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SPLC DONATION WWW.SPLCENTER</trn:description>
+      <split:dollarvalue>-250</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>SSP*CityMission 724-2228530</trn:description>
+      <split:dollarvalue>-206</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>UNION CNCRND SCIENTISTS 800</trn:description>
+      <split:dollarvalue>-100</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>USA for UNHCR</trn:description>
+      <split:dollarvalue>-150</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-06 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-11-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-10 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WESA 412-6972942 PA</trn:description>
+      <split:dollarvalue>-120</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-12 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-13 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-12 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-15 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-13 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-12 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-14 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-12 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	  <ts:date>2021-11-12 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WIKIMEDIA 877 600 9454</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+	<trn:date-posted>
+	  <ts:date>2021-05-03 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+	<split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-31 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+      <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+      <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+	<trn:date-posted>
+	  <ts:date>2021-08-02 10:59:00 +0000</ts:date>
+	</trn:date-posted>
+	<trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+	<split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	  <ts:date>2021-08-31 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+      <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-01 10:59:00 +0000</ts:date>
+	</trn:date-posted>q
+	<trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+	<split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+	  <trn:date-posted>
+	    <ts:date>2021-11-01 10:59:00 +0000</ts:date>
+	  </trn:date-posted>
+	  <trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+	  <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+	  <trn:date-posted>
+	    <ts:date>2021-12-01 10:59:00 +0000</ts:date>
+	  </trn:date-posted>
+	  <trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+	  <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+	  <trn:date-posted>
+	    <ts:date>2021-12-31 10:59:00 +0000</ts:date>
+	  </trn:date-posted>
+	  <trn:description>Wikimedia 877 600 9454 877-60094</trn:description>
+	  <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+	  <trn:date-posted>
+	    <ts:date>2021-03-31 10:59:00 +0000</ts:date>
+	  </trn:date-posted>
+	  <trn:description>Wikimedia 877-600-9454 CA</trn:description>
+	  <split:dollarvalue>-9</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WPY*National Aviary in Pittsburgh 855-469-3729 pa</trn:description>
+      <split:dollarvalue>-102.99</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-31 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-31 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+	  <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-31 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-11-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-11-30 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-20</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-05 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WQED MULTIMEDIA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-01-04 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-02-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-03-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-04-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-05-03 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-06-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-07-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-08-02 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP   412-888-0404 PA</trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-09-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP                     412-8880404  PA     </trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-10-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP                     412-8880404  PA     </trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-11-01 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>WYEP                     412-8880404  PA     </trn:description>
+      <split:dollarvalue>-10</split:dollarvalue>
+    </transaction>
+    <transaction>
+      <trn:date-posted>
+	<ts:date>2021-12-31 10:59:00 +0000</ts:date>
+      </trn:date-posted>
+      <trn:description>YALE UNIVERSITY GIFT 203-43</trn:description>
+      <split:dollarvalue>-250</split:dollarvalue>
+    </transaction>
+    <total>-4785.09</total>
+  </account>
+</accounts>
+</IRSForms>

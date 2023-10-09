@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00lineTFNI color='blue'>John D</copy00lineTFNI>
+<copy00lineSFNI color='blue'>Jeanne M</copy00lineSFNI>
+<copy00lineTLN color='blue'>Taxpayor</copy00lineTLN>
+<copy00lineSLN color='blue'>Taxpayor</copy00lineSLN>
+<copy00lineTSSNoF color='blue'>123</copy00lineTSSNoF>
+<copy00lineTSSNoM color='blue'>45</copy00lineTSSNoM>
+<copy00lineTSSNoL color='blue'>6789</copy00lineTSSNoL>
+<copy00lineEnrol1 color='blue'>James Doe</copy00lineEnrol1>
+<copy00lineEnrol2 color='blue'>Jane Doe</copy00lineEnrol2>
+<copy00lineEnrol3 color='blue'>Tim Doe</copy00lineEnrol3>
+<copy00lineInst1 color='blue'>USMA</copy00lineInst1>
+<copy00lineInst2 color='blue'>MIT</copy00lineInst2>
+<copy00lineInst3 color='blue'>USC</copy00lineInst3>
+<copy00lineInst4 color='blue'>Yale</copy00lineInst4>
+<copy00lineInst5 color='blue'>Columbia</copy00lineInst5>
+<copy00lineInst6 color='blue'>Michigan State</copy00lineInst6>
+<copy00line02 color='red'>20</copy00line02>
+<copy00line03 color='red'>30</copy00line03>
+<copy00line04 color='red'>40</copy00line04>
+<copy00line05 color='red'>50</copy00line05>
+<copy00line06 color='red'>60</copy00line06>
+<copy00line07 color='red'>0.700</copy00line07>
+<copy00line08 color='red'>80</copy00line08>
+<copy00line12 color='red'>0.120</copy00line12>
+<copy00line13 color='red'>130</copy00line13>
+<copy00line14 color='red'>140</copy00line14>
+<copy00line09 color='red'>90</copy00line09>
+<copy00line10 color='red'>100</copy00line10>
+<copy00line11 color='red'>110</copy00line11>
+<copy00line color='blue'></copy00line>
+<copy00line0601 color='red'>601</copy00line0601>
+<copy00line0602 color='red'>602</copy00line0602>
+<copy00line0603 color='red'>603</copy00line0603>
+<copy00line0604 color='red'>604</copy00line0604>
+<copy00line0605 color='red'>605</copy00line0605>
+<copy00line0606 color='red'>606</copy00line0606>
+<copy00line0901 color='red'>901</copy00line0901>
+<copy00line0902 color='red'>902</copy00line0902>
+<copy00line0903 color='red'>903</copy00line0903>
+<copy00line0904 color='red'>904</copy00line0904>
+<copy00line0905 color='red'>905</copy00line0905>
+</Form>
+</IRSForms>

@@ -1,0 +1,140 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!02      	!#####0  	!line01ad      	!line01bd     	!line01cd      	!line01dd	!line01ed	!line01fd	!line01gd	!line01hd	!line01id	!line01jd	!line01kd	!line01ld	!line01md	!line01nd
+addit   	!06      	!#####0  	!line05ad      	!line05bd      	!line05cd      	!line05dd	!line05ed	!line05fd	!line05gd	!line05hd	!line05id	!line05jd	!line05kd	!line05ld	!line05md	!line05nd
+addit   	!exempt  	!#####0  	!line01aint    	!line01bint    	!line01cint   	!line01dint	!line01eint	!line01fint	!line01gint	!line01hint	!line01iint	!line01jint	!line01kint	!line01lint	!line01mint	!line01nint
+addit   	!qual    	!#####0  	!line05adiv    	!line05bdiv    	!line05cdiv    	!line05ddiv	!line05ediv	!line05fdiv	!line05gdiv	!line05hdiv	!line05idiv	!line05jdiv	!line05kdiv	!line05ldiv	!line05mdiv	!line05ndiv
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!01ad    	!#####0  	!0        	!Form1099int   	!01        	!line01
+dPull   	!01bd    	!#####0  	!0        	!Form1099int   	!02        	!line01
+dPull   	!01cd    	!#####0  	!0        	!Form1099int   	!03        	!line01
+dPull   	!01dd    	!#####0  	!0        	!Form1099int   	!04        	!line01
+dPull   	!01ed    	!#####0  	!0        	!Form1099int   	!05        	!line01
+dPull   	!01fd    	!#####0  	!0        	!Form1099int   	!06        	!line01
+dPull   	!01gd    	!#####0  	!0        	!Form1099int   	!07        	!line01
+dPull   	!01hd    	!#####0  	!0        	!Form1099int   	!08        	!line01
+dPull   	!01id    	!#####0  	!0        	!Form1099int   	!09        	!line01
+dPull   	!01jd    	!#####0  	!0        	!Form1099int   	!10        	!line01
+dPull   	!01kd    	!#####0  	!0        	!Form1099int   	!11        	!line01
+dPull   	!01ld    	!#####0  	!0        	!Form1099int   	!12        	!line01
+dPull   	!01md    	!#####0  	!0        	!Form1099int   	!13        	!line01
+dPull   	!01nd    	!#####0  	!0        	!Form1099int   	!14        	!line01
+
+dPull   	!03      	!#####0  	!0        	!Form8815      	!01		!00
+
+dPull   	!05ad    	!#####0  	!0        	!Form1099div   	!01        	!line01a
+dPull   	!05bd    	!#####0  	!0        	!Form1099div   	!02        	!line01a
+dPull   	!05cd    	!#####0  	!0        	!Form1099div   	!03        	!line01a
+dPull   	!05dd    	!#####0  	!0        	!Form1099div   	!04        	!line01a
+dPull   	!05ed    	!#####0  	!0        	!Form1099div   	!05        	!line01a
+dPull   	!05fd    	!#####0  	!0        	!Form1099div   	!06        	!line01a
+dPull   	!05gd    	!#####0  	!0        	!Form1099div   	!07        	!line01a
+dPull   	!05hd    	!#####0  	!0        	!Form1099div   	!08        	!line01a
+dPull   	!05id    	!#####0  	!0        	!Form1099div   	!09        	!line01a
+dPull   	!05jd    	!#####0  	!0        	!Form1099div   	!10        	!line01a
+dPull   	!05kd    	!#####0  	!0        	!Form1099div   	!11        	!line01a
+dPull   	!05ld    	!#####0  	!0        	!Form1099div   	!12        	!line01a
+dPull   	!05md    	!#####0  	!0        	!Form1099div   	!13        	!line01a
+dPull   	!05nd    	!#####0  	!0        	!Form1099div   	!14        	!line01a
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy
+dPull		!01aint		!#####0		!0		!Form1099int	!01		!line08
+dPull		!01bint		!#####0		!0		!Form1099int	!02		!line08
+dPull		!01cint		!#####0		!0		!Form1099int	!03		!line08
+dPull		!01dint		!#####0		!0		!Form1099int	!04		!line08
+dPull		!01eint		!#####0		!0		!Form1099int	!05		!line08
+dPull		!01fint		!#####0		!0		!Form1099int	!06		!line08
+dPull		!01gint		!#####0		!0		!Form1099int	!07		!line08
+dPull		!01hint		!#####0		!0		!Form1099int	!08		!line08
+dPull		!01iint		!#####0		!0		!Form1099int	!09		!line08
+dPull		!01jint		!#####0		!0		!Form1099int	!10		!line08
+dPull		!01kint		!#####0		!0		!Form1099int	!11		!line08
+dPull		!01lint		!#####0		!0		!Form1099int	!12		!line08
+dPull		!01mint		!#####0		!0		!Form1099int	!13		!line08
+dPull		!01nint		!#####0		!0		!Form1099int	!14		!line08
+
+dPull		!05adiv		!#####0		!0		!Form1099div	!01		!line01b
+dPull		!05bdiv		!#####0		!0		!Form1099div	!02		!line01b
+dPull		!05cdiv		!#####0		!0		!Form1099div	!03		!line01b
+dPull		!05ddiv		!#####0		!0		!Form1099div	!04		!line01b
+dPull		!05ediv		!#####0		!0		!Form1099div	!05		!line01b
+dPull		!05fdiv		!#####0		!0		!Form1099div	!06		!line01b
+dPull		!05gdiv		!#####0		!0		!Form1099div	!07		!line01b
+dPull		!05hdiv		!#####0		!0		!Form1099div	!08		!line01b
+dPull		!05idiv		!#####0		!0		!Form1099div	!09		!line01b
+dPull		!05jdiv		!#####0		!0		!Form1099div	!10		!line01b
+dPull		!05kdiv		!#####0		!0		!Form1099div	!11		!line01b
+dPull		!05ldiv 	!#####0		!0		!Form1099div	!12		!line01b
+dPull		!05mdiv 	!#####0		!0		!Form1099div	!13		!line01b
+dPull		!05ndiv		!#####0		!0		!Form1099div	!14		!line01b
+
+
+xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
+subtr   	!04      	!#####0  	!line02        	!line03        	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!07a1n   	!        	!x        	!
+tlin    	!07a1y   	!        	!x        	!
+tlin    	!07a2n   	!        	!x        	!
+tlin    	!07a2y   	!        	!x        	!
+tlin    	!07b     	!        	!x        	!
+tlin    	!08n     	!        	!x        	!
+tlin    	!08y     	!        	!x        	!
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	
+tPull   	!01at    	!        	!Bank01        	!Form1099int   	!01        	!pnam1
+tPull   	!01bt    	!        	!Bank02        	!Form1099int   	!02        	!linepnam1
+tPull   	!01ct    	!        	!Bank03        	!Form1099int   	!03       	!linepnam1	
+tPull   	!01dt    	!        	!Bank04        	!Form1099int   	!04        	!linepnam1	
+tPull   	!01et    	!        	!Bank05  	!Form1099int   	!05        	!linepnam1	
+tPull   	!01ft    	!        	!Bank06        	!Form1099int   	!06        	!linepnam1	
+tPull   	!01gt    	!        	!Bank07        	!Form1099int   	!07       	!linepnam1	
+tPull   	!01ht    	!        	!Bank08        	!Form1099int   	!08        	!linepnam1	
+tPull   	!01it    	!        	!Bank09        	!Form1099int   	!09        	!linepnam1	
+tPull   	!01jt    	!        	!Bank10        	!Form1099int   	!10        	!linepnam1	
+tPull   	!01kt    	!        	!Bank11      	!Form1099int   	!11        	!linepnam1	
+tPull   	!01lt    	!        	!Bank12        	!Form1099int   	!12        	!linepnam1	
+tPull   	!01mt    	!        	!Bank13  	!Form1099int   	!13        	!linepnam1	
+tPull   	!01nt    	!        	!Bank14        	!Form1099int   	!14        	!linepnam1	
+
+tPull   	!05at    	!        	!Broker01  	!Form1099div   	!01        	!pnam1        	
+tPull   	!05bt    	!        	!Broker02      	!Form1099div   	!01        	!linepnam1	
+tPull   	!05ct    	!        	!Broker03      	!Form1099div   	!01        	!linepnam1	
+tPull   	!05dt    	!        	!Broker04	!Form1099div   	!01        	!linepnam1	
+tPull   	!05et    	!        	!Broker05  	!Form1099div   	!01        	!linepnam1	
+tPull   	!05ft    	!        	!Broker06	!Form1099div   	!01        	!linepnam1	
+tPull   	!05gt    	!        	!Broker07	!Form1099div   	!01        	!linepnam1	
+tPull   	!05ht    	!        	!Broker08	!Form1099div   	!01        	!linepnam1	
+tPull   	!05it    	!        	!Broker09	!Form1099div   	!01        	!linepnam1	
+tPull   	!05jt    	!        	!Broker10	!Form1099div   	!01        	!linepnam1	
+tPull   	!05kt    	!        	!Broker11	!Form1099div   	!01        	!linepnam1	
+tPull   	!05lt    	!        	!Broker12	!Form1099div   	!01        	!linepnam1	
+tPull   	!05mt    	!        	!Broker13	!Form1099div   	!01        	!linepnam1	
+tPull   	!05nt    	!        	!Broker14	!Form1099div   	!01        	!linepnam1	
+
+tPull   	!SFNI    	!        	!        	!Bkg        	!01        	!SFNI         	
+tPull   	!SLN     	!        	!        	!Bkg        	!01        	!SLN          	
+tPull   	!TFNI    	!        	!        	!Bkg        	!01      	!TFNI         	
+tPull   	!TLN     	!        	!        	!Bkg        	!01      	!TLN          	
+tPull   	!TSSNoL   	!        	!        	!Bkg        	!01      	!TSSNoL        	
+tPull   	!TSSNoF   	!        	!        	!Bkg        	!01      	!TSSNoF        	
+tPull   	!TSSNoM   	!        	!        	!Bkg        	!01      	!TSSNoM        	

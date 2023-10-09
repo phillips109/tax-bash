@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00lineTFNI color='blue'>John</copy00lineTFNI>
+<copy00lineTLN color='blue'>Dough</copy00lineTLN>
+<copy00lineTSSNoF color='blue'>123</copy00lineTSSNoF>
+<copy00lineTSSNoM color='blue'>45</copy00lineTSSNoM>
+<copy00lineTSSNoL color='blue'>6789</copy00lineTSSNoL>
+<copy00line01 color='red'>1000</copy00line01>
+<copy00line02 color='red'>2000</copy00line02>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='red'>7000</copy00line07>
+<copy00line08 color='red'>8000</copy00line08>
+<copy00line06a color='red'>6001</copy00line06a>
+<copy00line06b color='red'>6002</copy00line06b>
+<copy00line06c color='red'>6003</copy00line06c>
+<copy00line06d color='red'>6004</copy00line06d>
+<copy00line06e color='red'>6005</copy00line06e>
+<copy00line06f color='red'>6006</copy00line06f>
+<copy00line06g color='red'>6007</copy00line06g>
+<copy00line06h color='red'>6008</copy00line06h>
+<copy00line06i color='red'>6009</copy00line06i>
+<copy00line06j color='red'>6010</copy00line06j>
+<copy00line06k color='red'>6011</copy00line06k>
+<copy00line06l color='red'>6012</copy00line06l>
+<copy00line06z color='red'>6013</copy00line06z>
+<copy00line06t1 color='blue'>zline1</copy00line06t1>
+<copy00line06t2 color='blue'>zline2</copy00line06t2>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line11 color='red'>11000</copy00line11>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line14 color='red'>14000</copy00line14>
+<copy00line15 color='red'>15000</copy00line15>
+<copy00line13a color='red'>1301</copy00line13a>
+<copy00line13b color='red'>1302</copy00line13b>
+<copy00line13d color='red'>1304</copy00line13d>
+<copy00line13f color='red'>1306</copy00line13f>
+<copy00line13h color='red'>1308</copy00line13h>
+<copy00line13z color='red'>1309</copy00line13z>
+</Form>
+</IRSForms>

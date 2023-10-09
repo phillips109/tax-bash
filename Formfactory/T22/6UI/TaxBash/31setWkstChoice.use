@@ -1,0 +1,36 @@
+
+set_wkst_choice() {
+while true;
+do
+  clear
+  echo "Worksheets :"
+  echo
+  echo "   fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
+  echo "   ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
+  echo "   qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
+  echo "    schd) Schedule D worksheet."
+  echo "   sales) State and Local Sales Tax Worksheet."
+  echo "     ssa) Social Security Benefit Statement"
+  echo "     sst) Social Security Tax Worksheet."
+  
+  
+  echo "   q)     Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read wkst_choice
+
+    case $wkst_choice in
+
+      fei)   set_copy_number  FEITaxWkst     01;;
+      ln10)  set_copy_number  WSln10         01;;
+      qdcg)  set_copy_number  QDCGTaxWkst    01;;
+      schd)  set_copy_number  SchedDTaxWkst  01;;
+      sales) set_copy_number  WSSchASalesTax 01;;
+      ssa)   set_copy_number  SSA_1099       01;;
+      sst)   set_copy_number  SST            01;;	
+      q)     break;;
+    esac
+done
+ 
+}
+

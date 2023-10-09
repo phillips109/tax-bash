@@ -1,0 +1,70 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!10      	!#####0  	!        	!        	!        	!
+addit   	!11      	!#####0  	!        	!        	!        	!
+addit   	!28      	!#####0  	!        	!        	!        	!
+addit   	!32      	!#####0  	!        	!        	!        	!
+addit   	!36      	!#####0  	!        	!        	!        	!
+addit   	!41      	!#####0  	!        	!        	!        	!
+addit   	!45      	!#####0  	!        	!        	!        	!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!01      	!#####0  	!        	!        	!        	!
+dPull   	!02      	!#####0  	!        	!        	!        	!
+dPull   	!03      	!#####0  	!        	!        	!        	!
+dPull   	!04      	!#####0  	!        	!        	!        	!
+dPull   	!24      	!#####0  	!        	!        	!        	!
+dPull   	!37      	!#####0  	!        	!        	!        	!
+
+xmult   	!2name   	!3format 	!4multiplicand	!5multiplier	!
+mult    	!31      	!#####0  	!        	!        	!
+mult    	!34      	!#####0  	!        	!        	!
+mult    	!40      	!#####0  	!        	!        	!
+mult    	!43      	!#####0  	!        	!        	!
+
+xsmOf   	!2name   	!3format 	!4first  	!5second 	!
+smOf    	!07      	!#####0  	!        	!        	!
+smOf    	!08      	!#####0  	!        	!        	!
+smOf    	!12      	!#####0  	!        	!        	!
+smOf    	!16      	!#####0  	!        	!        	!
+smOf    	!17      	!#####0  	!        	!        	!
+smOf    	!20      	!#####0  	!        	!        	!
+smOf    	!23      	!#####0  	!        	!        	!
+smOf    	!27      	!#####0  	!        	!        	!
+smOf    	!30      	!#####0  	!        	!        	!
+smOf    	!35      	!#####0  	!        	!        	!
+smOf    	!47      	!#####0  	!        	!        	!
+
+xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend	!
+subt0   	!05      	!#####0  	!        	!        	!
+subt0   	!06      	!#####0  	!        	!        	!
+subt0   	!09      	!#####0  	!        	!        	!
+subt0   	!14      	!#####0  	!        	!        	!
+subt0   	!18      	!#####0  	!        	!        	!
+subt0   	!25      	!#####0  	!        	!        	!
+subt0   	!29      	!#####0  	!        	!        	!
+subt0   	!38      	!#####0  	!        	!        	!
+
+xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
+subtr   	!13      	!#####0  	!        	!        	!
+subtr   	!22      	!#####0  	!        	!        	!
+subtr   	!33      	!#####0  	!        	!        	!
+subtr   	!42      	!#####0  	!        	!        	!

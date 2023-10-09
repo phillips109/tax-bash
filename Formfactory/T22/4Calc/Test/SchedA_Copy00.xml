@@ -1,0 +1,448 @@
+<Form name=''>
+
+<line number='05d'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line05a</augend>
+<addend>line05b</addend>
+<addend>line05c</addend>
+</line>
+
+<line number='08e'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08a</augend>
+<addend>line08b</addend>
+<addend>line08c</addend>
+<addend>line08d</addend>
+</line>
+
+<line number='10'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08e</augend>
+<addend>line09</addend>
+</line>
+
+<line number='14'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line11</augend>
+<addend>line12</addend>
+<addend>line13</addend>
+</line>
+
+<line number='17'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line04</augend>
+<addend>line07</addend>
+<addend>line10</addend>
+<addend>line14</addend>
+<addend>line15</addend>
+<addend>line16</addend>
+</line>
+
+<line number='05e'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedA-Copy00-lineFS='MarriedFilingSeparately'</testvalue>
+<value1>$SchedA-Copy00-line05e1</value1>
+<value2>$SchedA-Copy00-line05e2</value2>
+</line>
+
+<line number='05e1'
+ color='yellow'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line05d</first>
+<second>line5000</second>
+</line>
+
+<line number='05e2'
+ color='yellow'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line05d</first>
+<second>line10000</second>
+</line>
+
+<line number='5000'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>5000</override>
+<blank></blank>
+</line>
+
+<line number='10000'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>10000</override>
+<blank></blank>
+</line>
+
+<line number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>10</override>
+<blank></blank>
+</line>
+
+<line number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>20</override>
+<blank></blank>
+</line>
+
+<line number='02pr'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>###0.0###</format>
+<override>0.075</override>
+<blank></blank>
+</line>
+
+<line number='05a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>5100</override>
+<blank></blank>
+</line>
+
+<line number='05b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>52</override>
+<blank></blank>
+</line>
+
+<line number='05c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>53</override>
+<blank></blank>
+</line>
+
+<line number='05epr'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>10000</override>
+<blank></blank>
+</line>
+
+<line number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>60</override>
+<blank></blank>
+</line>
+
+<line number='08a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>81</override>
+<blank></blank>
+</line>
+
+<line number='08b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>82</override>
+<blank></blank>
+</line>
+
+<line number='08c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>83</override>
+<blank></blank>
+</line>
+
+<line number='08d'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>84</override>
+<blank></blank>
+</line>
+
+<line number='09'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>90</override>
+<blank></blank>
+</line>
+
+<line number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>110</override>
+<blank></blank>
+</line>
+
+<line number='12'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>120</override>
+<blank></blank>
+</line>
+
+<line number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>130</override>
+<blank></blank>
+</line>
+
+<line number='15'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>150</override>
+<blank></blank>
+</line>
+
+<line number='16'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>160</override>
+<blank></blank>
+</line>
+
+<line number='41'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#00%</format>
+<override>35</override>
+<blank></blank>
+</line>
+
+<line number='03'
+ color='orange'>
+<type>mult</type>
+<format>#00%</format>
+<multiplicand>line02</multiplicand>
+<multiplier>line02pr</multiplier>
+</line>
+
+<line number='07'
+ color='orange'>
+<type>mult</type>
+<format>#00%</format>
+<multiplicand>line05e</multiplicand>
+<multiplier>line06</multiplier>
+</line>
+
+<line number='04'
+ color='purple'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line01</minuend>
+<subtrahend>line03</subtrahend>
+</line>
+
+<line number='05ack'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>05ack</line2>
+</line>
+
+<line number='06tx1'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>06tx1</line2>
+</line>
+
+<line number='06tx2'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>06tx2</line2>
+</line>
+
+<line number='08btx1'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>08btx1</line2>
+</line>
+
+<line number='08btx2'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>08btx2</line2>
+</line>
+
+<line number='08ck'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>08ck</line2>
+</line>
+
+<line number='16tx1'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>16tx1</line2>
+</line>
+
+<line number='16tx2'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>16tx2</line2>
+</line>
+
+<line number='18ck'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>18ck</line2>
+</line>
+
+<line number='SFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SFNI</line2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SLN</line2>
+</line>
+
+<line number='SSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SSSNoF</line2>
+</line>
+
+<line number='SSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SSSNoL</line2>
+</line>
+
+<line number='SSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SSSNoM</line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoL</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</line>
+
+<line number='FS'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>FS</line2>
+</line>
+</Form>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+	  Copyright(C) 2019 Phillips Wedemeyer
+
+	  This file is part of a program called Tax-bash.
+
+	  Tax-bash is free software: you can redistibute it and/or modify
+	  it under the terms of the FNU General Public License as published by
+	  the Free Software Foundation, either version 3 of the License, or
+	  (at your option) any later version.
+	  
+	  Tax-bash is distributed in the hope that it will be useful,
+	  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  GNU General Public License for more details.
+	  
+	  You should have received a copy of the GNU General Public License
+	  along with Tax-bash.  If not, see %lt;https://www.gnu.org/licenses/%gt;.
+
+	<fo:layout-master-set><fo:simple-page-master master-name="page" page-height="11.00in" page-width="8.50in"><fo:region-body/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="page"><fo:flow flow-name="xsl-region-body"><fo:block-container background-image="../Jpg/f8615-page-001.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.12in" position="absolute"><fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.91in" left="7.05in" top="0.00in" position="absolute"><fo:block-container top="2.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">100</fo:block></fo:block-container><fo:block-container top="2.96in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">200</fo:block></fo:block-container><fo:block-container top="3.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">300</fo:block></fo:block-container><fo:block-container top="3.64in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">400</fo:block></fo:block-container><fo:block-container top="3.97in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">500</fo:block></fo:block-container><fo:block-container top="4.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">600</fo:block></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">700</fo:block></fo:block-container><fo:block-container top="4.98in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">800</fo:block></fo:block-container><fo:block-container top="5.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">900</fo:block></fo:block-container><fo:block-container top="6.20in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1000</fo:block></fo:block-container><fo:block-container top="6.54in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1100</fo:block></fo:block-container><fo:block-container top="6.90in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1202</fo:block></fo:block-container><fo:block-container top="7.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1300</fo:block></fo:block-container><fo:block-container top="8.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1500</fo:block></fo:block-container><fo:block-container top="8.22in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1600</fo:block></fo:block-container><fo:block-container top="8.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1700</fo:block></fo:block-container><fo:block-container top="9.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1800</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.88in" left="5.74in" top="0.00in" position="absolute"><fo:block-container top="6.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1201</fo:block></fo:block-container><fo:block-container top="7.55in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">1400</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.50in" top="0.00in" position="absolute"><fo:block-container top="5.42in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container><fo:block-container top="6.20in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container><fo:block-container top="8.03in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container><fo:block-container top="8.69in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.09in" left="0.72in" top="0.00in" position="absolute"><fo:block-container top="2.11in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="1.60in" top="0.00in" position="absolute"><fo:block-container top="2.11in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="3.20in" top="0.00in" position="absolute"><fo:block-container top="2.11in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="5.00in" top="0.00in" position="absolute"><fo:block-container top="2.11in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.60in" top="0.00in" position="absolute"><fo:block-container top="2.11in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="2.04in" left="0.66in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">Baby G.</fo:block></fo:block-container><fo:block-container top="1.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">John E.</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="3.1in" left="2.92in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">Dough</fo:block></fo:block-container><fo:block-container top="1.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">Dough</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="0.36in" left="6.18in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">123</fo:block></fo:block-container><fo:block-container top="1.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">987</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.33in" left="6.82in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">45</fo:block></fo:block-container><fo:block-container top="1.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">65</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.6in" left="7.34in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">6789</fo:block></fo:block-container><fo:block-container top="1.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">4321</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container></fo:flow></fo:page-sequence></fo:root>

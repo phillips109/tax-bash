@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+	  Copyright(C) 2019 Phillips Wedemeyer
+
+	  This file is part of a program called Tax-bash.
+
+	  Tax-bash is free software: you can redistibute it and/or modify
+	  it under the terms of the FNU General Public License as published by
+	  the Free Software Foundation, either version 3 of the License, or
+	  (at your option) any later version.
+	  
+	  Tax-bash is distributed in the hope that it will be useful,
+	  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  GNU General Public License for more details.
+	  
+	  You should have received a copy of the GNU General Public License
+	  along with Tax-bash.  If not, see %lt;https://www.gnu.org/licenses/%gt;.
+
+	<fo:layout-master-set><fo:simple-page-master master-name="page" page-height="11.00in" page-width="8.50in"><fo:region-body/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="page"><fo:flow flow-name="xsl-region-body"><fo:block-container background-image="../Jpg/f1040-page-001.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.12in" position="absolute"><fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="1.34in" top="0.00in" position="absolute"><fo:block-container top="1.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="1.93in" top="0.00in" position="absolute"><fo:block-container top="1.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="3.23in" top="0.00in" position="absolute"><fo:block-container top="1.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="5.03in" top="0.00in" position="absolute"><fo:block-container top="1.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.52in" top="0.00in" position="absolute"><fo:block-container top="1.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="4.39in" left="3.44in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="2.71in" left="0.53in" top="0.00in" position="absolute"><fo:block-container top="1.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">John Q</fo:basic-link></fo:block></fo:block-container><fo:block-container top="2.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">Jean E</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="3.07in" left="3.34in" top="0.00in" position="absolute"><fo:block-container top="1.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">Taxpayor</fo:basic-link></fo:block></fo:block-container><fo:block-container top="2.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">Taxpayor</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.35in" left="6.55in" top="0.00in" position="absolute"><fo:block-container top="1.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">123</fo:basic-link></fo:block></fo:block-container><fo:block-container top="2.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">321</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.25in" left="6.96in" top="0.00in" position="absolute"><fo:block-container top="1.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">45</fo:basic-link></fo:block></fo:block-container><fo:block-container top="2.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">54</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.68in" left="7.22in" top="0.00in" position="absolute"><fo:block-container top="1.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">6789</fo:basic-link></fo:block></fo:block-container><fo:block-container top="2.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">9876</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="2.77in" left="0.53in" top="0.00in" position="absolute"><fo:block-container top="2.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="2.4in" left="3.34in" top="0.00in" position="absolute"><fo:block-container top="2.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.56in" left="5.85in" top="0.00in" position="absolute"><fo:block-container top="2.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="4.11in" left="0.53in" top="0.00in" position="absolute"><fo:block-container top="2.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.82in" left="4.74in" top="0.00in" position="absolute"><fo:block-container top="2.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.8in" left="5.64in" top="0.00in" position="absolute"><fo:block-container top="2.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="3.01in" left="0.53in" top="0.00in" position="absolute"><fo:block-container top="3.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.85in" left="3.67in" top="0.00in" position="absolute"><fo:block-container top="3.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.82in" left="5.63in" top="0.00in" position="absolute"><fo:block-container top="3.12in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="7.01in" top="0.00in" position="absolute"><fo:block-container top="3.09in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="3.43in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="7.51in" top="0.00in" position="absolute"><fo:block-container top="3.09in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="3.43in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="2.53in" top="0.00in" position="absolute"><fo:block-container top="3.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="3.93in" top="0.00in" position="absolute"><fo:block-container top="3.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="1.34in" top="0.00in" position="absolute"><fo:block-container top="3.78in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="1.64in" top="0.00in" position="absolute"><fo:block-container top="4.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="3.64in" top="0.00in" position="absolute"><fo:block-container top="4.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="5.03in" top="0.00in" position="absolute"><fo:block-container top="4.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="7.03in" top="0.00in" position="absolute"><fo:block-container top="4.02in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.04in" left="1.32in" top="0.00in" position="absolute"><fo:block-container top="4.56in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.27in" left="2.40in" top="0.00in" position="absolute"><fo:block-container top="4.56in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.3in" left="3.73in" top="0.00in" position="absolute"><fo:block-container top="4.56in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.21in" left="4.09in" top="0.00in" position="absolute"><fo:block-container top="4.56in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.5in" left="4.36in" top="0.00in" position="absolute"><fo:block-container top="4.56in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.8in" left="4.93in" top="0.00in" position="absolute"><fo:block-container top="4.56in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.30in" top="0.00in" position="absolute"><fo:block-container top="4.53in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.70in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.86in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.03in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="7.41in" top="0.00in" position="absolute"><fo:block-container top="4.53in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.70in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.86in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="5.03in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="1.11in" top="0.00in" position="absolute"><fo:block-container top="5.03in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.91in" left="7.03in" top="0.00in" position="absolute"><fo:block-container top="5.22in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="5.39in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red"/></fo:block-container><fo:block-container top="5.55in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red"/></fo:block-container><fo:block-container top="5.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red"/></fo:block-container><fo:block-container top="5.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="6.06in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="6.22in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="6.38in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red"/></fo:block-container><fo:block-container top="6.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green"/></fo:block-container><fo:block-container top="6.89in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="7.07in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="7.22in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red"/></fo:block-container><fo:block-container top="7.38in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">NaN</fo:block></fo:block-container><fo:block-container top="7.55in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple">425</fo:block></fo:block-container><fo:block-container top="7.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="8.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="8.22in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">NaN</fo:block></fo:block-container><fo:block-container top="8.38in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="8.56in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple">NaN</fo:block></fo:block-container><fo:block-container top="8.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="8.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="9.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green"/></fo:block-container><fo:block-container top="9.22in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="cyan">NaN</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.91in" left="3.52in" top="0.00in" position="absolute"><fo:block-container top="6.89in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green"/></fo:block-container><fo:block-container top="7.07in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green"/></fo:block-container><fo:block-container top="7.22in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red"/></fo:block-container><fo:block-container top="7.38in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">501</fo:block></fo:block-container><fo:block-container top="7.55in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.88in" left="5.74in" top="0.00in" position="absolute"><fo:block-container top="6.55in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.47in" top="0.00in" position="absolute"><fo:block-container top="7.69in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.86in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container><fo:block break-after="page"/><fo:block break-before="page"/><fo:block-container background-image="../Jpg/f1040-page-002.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.12in" position="absolute"><fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="4.13in" top="0.00in" position="absolute"><fo:block-container top="0.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="4.83in" top="0.00in" position="absolute"><fo:block-container top="0.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="5.53in" top="0.00in" position="absolute"><fo:block-container top="0.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="0.46in" left="5.70in" top="0.00in" position="absolute"><fo:block-container top="0.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.88in" left="7.03in" top="0.00in" position="absolute"><fo:block-container top="0.64in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">10461</fo:block></fo:block-container><fo:block-container top="0.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="0.97in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">10461</fo:block></fo:block-container><fo:block-container top="1.13in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="1.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple">108</fo:block></fo:block-container><fo:block-container top="1.47in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">108</fo:block></fo:block-container><fo:block-container top="1.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="cyan">NaN</fo:block></fo:block-container><fo:block-container top="1.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="1.96in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">NaN</fo:block></fo:block-container><fo:block-container top="2.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">2503</fo:block></fo:block-container><fo:block-container top="2.96in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">2600</fo:block></fo:block-container><fo:block-container top="3.96in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">2700</fo:block></fo:block-container><fo:block-container top="4.15in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">7803</fo:block></fo:block-container><fo:block-container top="4.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="cyan">NaN</fo:block></fo:block-container><fo:block-container top="4.47in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">NaN</fo:block></fo:block-container><fo:block-container top="5.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="cyan">NaN</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.88in" left="5.74in" top="0.00in" position="absolute"><fo:block-container top="2.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="2.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green"/></fo:block-container><fo:block-container top="2.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">2503</fo:block></fo:block-container><fo:block-container top="3.13in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">2700</fo:block></fo:block-container><fo:block-container top="3.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="3.47in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="3.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="4.96in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">3600</fo:block></fo:block-container><fo:block-container top="5.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">50</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.46in" top="0.00in" position="absolute"><fo:block-container top="4.45in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.15in" left="2.42in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="2.62in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.15in" left="2.82in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="3.02in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="3.22in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.15in" left="3.42in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.13in" left="3.62in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="3.82in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.17in" left="4.02in" top="0.00in" position="absolute"><fo:block-container top="4.62in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="5.25in" top="0.00in" position="absolute"><fo:block-container top="4.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.04in" top="0.00in" position="absolute"><fo:block-container top="4.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.17in" left="4.21in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="4.42in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="4.62in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="4.82in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="5.02in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="5.22in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="5.42in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="5.62in" top="0.00in" position="absolute"><fo:block-container top="4.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="5.70in" top="0.00in" position="absolute"><fo:block-container top="5.76in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="7.10in" top="0.00in" position="absolute"><fo:block-container top="5.76in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="2.05in" left="2.02in" top="0.00in" position="absolute"><fo:block-container top="6.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="1.25in" left="4.62in" top="0.00in" position="absolute"><fo:block-container top="6.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.15in" left="7.02in" top="0.00in" position="absolute"><fo:block-container top="6.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="7.22in" top="0.00in" position="absolute"><fo:block-container top="6.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="7.42in" top="0.00in" position="absolute"><fo:block-container top="6.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.16in" left="7.62in" top="0.00in" position="absolute"><fo:block-container top="6.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.15in" left="7.82in" top="0.00in" position="absolute"><fo:block-container top="6.04in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.85in" left="3.75in" top="0.00in" position="absolute"><fo:block-container top="6.75in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.19in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="1.74in" left="4.62in" top="0.00in" position="absolute"><fo:block-container top="6.75in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.19in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.12in" left="7.02in" top="0.00in" position="absolute"><fo:block-container top="6.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.21in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.14in" left="7.18in" top="0.00in" position="absolute"><fo:block-container top="6.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.21in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.12in" left="7.36in" top="0.00in" position="absolute"><fo:block-container top="6.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.21in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.12in" left="7.52in" top="0.00in" position="absolute"><fo:block-container top="6.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.21in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.12in" left="7.69in" top="0.00in" position="absolute"><fo:block-container top="6.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.21in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.11in" left="7.86in" top="0.00in" position="absolute"><fo:block-container top="6.79in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container><fo:block-container top="7.21in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.81in" left="1.95in" top="0.00in" position="absolute"><fo:block-container top="7.38in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="3.42in" left="4.52in" top="0.00in" position="absolute"><fo:block-container top="7.38in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.66in" left="1.29in" top="0.00in" position="absolute"><fo:block-container top="7.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.9in" left="5.36in" top="0.00in" position="absolute"><fo:block-container top="7.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.72in" left="6.24in" top="0.00in" position="absolute"><fo:block-container top="7.72in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="7.13in" top="0.00in" position="absolute"><fo:block-container top="7.68in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="4.31in" left="2.02in" top="0.00in" position="absolute"><fo:block-container top="7.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="0.96in" left="6.96in" top="0.00in" position="absolute"><fo:block-container top="7.88in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="4.21in" left="2.12in" top="0.00in" position="absolute"><fo:block-container top="8.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="0.96in" left="6.96in" top="0.00in" position="absolute"><fo:block-container top="8.05in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container></fo:flow></fo:page-sequence></fo:root>

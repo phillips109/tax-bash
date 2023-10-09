@@ -1,0 +1,161 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line
+tPull   	!SFNI    	!        	!        	!Bkg        	!00        	!SFNI
+tPull   	!SLN     	!        	!        	!Bkg        	!00        	!SLN
+tPull   	!TFNI    	!        	!        	!Bkg        	!00        	!TFNI
+tPull   	!TLN     	!        	!        	!Bkg        	!00        	!TLN
+tPull   	!TSSNoF  	!        	!        	!Bkg        	!00        	!TSSNoF
+tPull   	!TSSNoL  	!        	!        	!Bkg        	!00        	!TSSNoM
+tPull   	!TSSNoM  	!        	!        	!Bkg        	!00        	!TSSNoL
+tPull		!FS		!		!		!Bkg		!00		!FS
+
+xtlin   	!2name   	!3blank  	!4dummy
+tlin    	!QOFn    	!        	!x
+tlin    	!QOFy    	!        	!x
+
+xdlin		!2name		!3format	!4dummy
+dlin		!3000		!#####0		!3000
+dlin		!1500		!#####0		!1500
+dlin		!min1		!#0.00		!-1.00
+dlin		!15		!#####0		!1500
+dlin		!16		!#####0		!8000
+
+xsum    	!2name   	!3format 	!4augend		!5addend 	!6addend
+addit   	!07      	!#####0  	!line01ah        	!line01bh      	!line02h       	!line03h	!line04	!line05	!line06
+xaddit   	!15      	!#####0  	!line08ah        	!line08bh      	!line09h       	!line10h	!line11	!line12	!line13	!line14
+xaddit   	!16      	!#####0  	!line07      		!line15
+addit		!01bh		!#####0		!line01bh		!line01bg
+addit		!02h 		!#####0		!line02h 		!line02g
+addit		!03h 		!#####0		!line03h 		!line03g
+addit		!08bh		!#####0		!line08bh		!line08bg
+addit		!09h		!#####0		!line09h 		!line09g
+aaddit		!10h 		!#####0		!line10h 		!line10g
+
+
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy
+dPull   	!01ad    	!#####0  	!0        	!Form1099-B    	!01        	!line01
+dPull   	!01ae    	!#####0  	!0        	!Form1099-B    	!01        	!line02
+dPull   	!01bd    	!#####0  	!0        	!Form8849     	!01        	!line01
+dPull   	!01be    	!#####0  	!0        	!Form8849     	!01        	!line02
+dPull   	!01bg    	!#####0  	!0        	!Form8849      	!01       	!line03
+dPull   	!02d     	!#####0  	!0        	!Form8849     	!01        	!line01
+dPull   	!02e     	!#####0  	!0        	!Form8849     	!01        	!line02
+dPull   	!02g     	!#####0  	!0        	!Form8849      	!01       	!line03
+dPull   	!03d     	!#####0  	!0        	!Form8849     	!01        	!line01
+dPull   	!03e     	!#####0  	!0        	!Form8849     	!01        	!line02
+dPull   	!03g     	!#####0  	!0        	!Form8849     	!01       	!line03
+dPull   	!04      	!#####0  	!0        	!Form6252      	!01        	!line01
+dPull   	!05      	!#####0  	!0        	!SchedK1       	!01        	!line01
+dPull   	!06      	!#####0  	!0        	!CLCWkst       	!01        	!line01
+dPull   	!08ad    	!#####0  	!0        	!Form1099-B    	!01        	!line01
+dPull   	!08ae    	!#####0  	!0        	!Form1099-B    	!01        	!line01
+dPull   	!08bd    	!#####0  	!0        	!Form8849     	!01        	!line01
+dPull   	!08be    	!#####0  	!0        	!Form8849     	!01        	!line02
+dPull   	!08bg    	!#####0  	!0        	!Form8849      	!01       	!line03
+dPull   	!09d     	!#####0  	!0        	!Form8849     	!01        	!line01
+dPull   	!09e     	!#####0  	!0        	!Form8849     	!01        	!line02
+dPull   	!09g     	!#####0  	!0        	!Form8849      	!01       	!line03
+dPull   	!10d     	!#####0  	!0        	!Form8849     	!01        	!line01
+dPull   	!10e     	!#####0  	!0        	!Form8849     	!01        	!line02
+dPull   	!10g     	!#####0  	!0        	!Form8849      	!01       	!line03
+dPull   	!11      	!#####0  	!0        	!Form4797      	!01        	!line01
+dPull   	!12      	!#####0  	!0        	!SchedK1      	!01        	!line01
+dPull   	!13      	!#####0  	!0        	!CGD        	!01        	!line01
+dPull   	!14      	!#####0  	!-140000       	!CLCWkst      	!01        	!line01
+dPull   	!18d      	!#####0  	!0        	!28RGWkst      	!01        	!line07
+dPull		!19d		!#####0		!0		!US1250GWkst	!01		!line18
+dPull		!20ye		!#####0		!0		!Form4952	!01		!line01
+dPull   	!19      	!#####0  	!0        	!QDCGWkst      	!01        	!line16
+dPull		!22		!#####0		!0		!Form1040	!01		!line03a
+
+
+xsubt   	!2name   	!3format 	!4minuend	!5subtrahend
+subtr   	!01ah    	!#####0  	!line01ad     	!line01ae
+subtr   	!01bh    	!#####0  	!line01bd      	!line01be
+subtr   	!02h     	!#####0  	!line02d       	!line02e
+subtr   	!03h     	!#####0  	!line03d       	!line03e
+subtr   	!08ah    	!#####0  	!line08ad      	!line08ae
+subtr   	!08bh    	!#####0  	!line08bd      	!line08be
+subtr   	!09h     	!#####0  	!line09d       	!line09e
+subtr   	!10h     	!#####0  	!line10e       	!line10e
+
+xmult   	!2name   	!3format 	!4multiplicand	!5multiplier
+xmult		!16pos		!#####0		!line16		!-1.0
+xmult		!21		!#####0		!line21b	!-1.0
+
+
+xsmOf   	!2name   	!3format 	!4first  	!5second
+smOf		!21e		!#####0		!line16 * -1.0	!line21x
+
+ctext		!17y		!#####0		!$SchedD-Copy00-line16 = 0					!''																				  !$SchedD-Copy00-line16 &lt; 0					  !''																				    !$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0  !'x'																			      !''
+
+ctext		!17n		!		!$SchedD-Copy00-line16 = 0					!''																				  !$SchedD-Copy00-line16 &lt; 0					  !''																				    !$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0  !''																				      !'x'
+
+xcnum		!2name		!3format	!4test								!5value1			!6value2
+cnum		!18		!#####0		!$SchedD-Copy00-line16 = 0					!0																				  !$SchedD-Copy00-line16 &lt; 0					  !0																				    !$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0  !$SchedD-Copy00-line18c	    !0
+cnum		!18c		!#####0		!$SchedD-Copy00-line18d &gt; 0			       		!$SchedD-Copy00-line18d		!0
+
+cnum		!19		!#####0		!$SchedD-Copy00-line16 = 0					!0				!$SchedD-Copy00-line19a
+cnum		!19a		!#####0		!$SchedD-Copy00-line16 &lt; 0					!0				!$SchedD-Copy00-line19b
+cnum		!19b		!#####0		!$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0	!$SchedD-Copy00-line19c		!0
+cnum		!19c		!#####0		!$SchedD-Copy00-line19d &gt; 0					!$SchedD-Copy00-line19d		!0
+
+ctext		!20y		!		!$SchedD-Copy00-line16 = 0					!''				!$SchedD-Copy00-line20ya
+ctext		!20ya		!		!$SchedD-Copy00-line16 &lt; 0					!''				!$SchedD-Copy00-line20yb
+ctext		!20yb		!		!$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0	!$SchedD-Copy00-line20yc	!''
+ctext		!20yc		!		!$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0 	!$SchedD-Copy00-line20yd	!''
+ctext		!20yd		!		!$SchedD-Copy00-line20ye = 0  			      		!'x'				!''
+
+ctext		!20n		!		!$SchedD-Copy00-line16 = 0 					!''				!$SchedD-Copy00-line20na
+ctext		!20na		!		!$SchedD-Copy00-line16 &lt; 0					!''				!$SchedD-Copy00-line20nb
+ctext		!20nb		!		!$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0	!$SchedD-Copy00-line20nc	!''
+ctext		!20nc		!		!$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0 	!$SchedD-Copy00-line20nd	!''
+ctext		!20nd		!		!$SchedD-Copy00-line20ye = 0			 		!''				!'x'
+
+cnum		!21x      	!#####0		!$SchedD-Copy00-lineFS = 'MFS'					!1500				!3000
+cnum		!21		!#####0		!$SchedD-Copy00-line20n = 'x'					!0				!$SchedD-Copy00-line21a
+cnum		!21a		!#####0		!$SchedD-Copy00-line16 = 0					!0				!$SchedD-Copy00-line21b
+cnum		!21b		!#####0		!$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0	!0				!$SchedD-Copy00-line21c
+cnum		!21c		!#####0		!$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'	!0				!$SchedD-Copy00-line21d
+cnum		!21d		!#####0		!$SchedD-Copy00-line16 &lt; 0					!$SchedD-Copy00-line21e * -1.0	!0
+
+ctext		!22y		!		!$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'	!''				!$SchedD-Copy00-line22ya
+ctext		!22ya		!		!$SchedD-Copy00-line22 &gt; 0					!'x'				!''
+
+ctext		!22n		!		!$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'	!''				!$SchedD-Copy00-line22na
+ctext		!22na		!		!$SchedD-Copy00-line22 &gt; 0					!''				!'x'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

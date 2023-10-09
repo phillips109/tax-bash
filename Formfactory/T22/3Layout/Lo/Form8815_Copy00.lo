@@ -1,0 +1,173 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+For direction on how to separate pages see ../notes.
+
+
+Form
+
+xpgF  	!2name 	!3BkgImage
+pgF   	!Single	!../Jpg/f8815-page-001.jpg
+
+xcol  	!2name 	!top   	!align 	!left  	!right
+col   	!      	!-0.12 	!left  	!0.00  	!8.50
+
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!1.74  	!4.06
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TFNI  	!1.50  	!John D            	!            	!      	!
+tlin  	!SFNI  	!1.63  	!Jeanne M          	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!left  	!4.10  	!6.33
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TLN   	!1.50  	!Taxpayor          	!            	!      	!
+tlin  	!SLN   	!1.63  	!Taxpayor          	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!6.49  	!6.74
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!1.63  	!123               	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!6.93  	!7.15
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!1.63  	!45                	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!left  	!7.20  	!7.69
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!1.63  	!6789              	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!0.50  	!4.05
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Enrol1	!2.41  	!James Doe         	!            	!      	!
+tlin  	!Enrol2	!2.74  	!Jane Doe          	!            	!      	!
+tlin  	!Enrol3	!3.07  	!Tim Doe           	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!4.15  	!7.95
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Inst1 	!2.30  	!USMA              	!            	!      	!
+tlin  	!Inst2 	!2.47  	!MIT               	!            	!      	!
+tlin  	!Inst3 	!2.63  	!USC               	!            	!      	!
+tlin  	!Inst4 	!2.80  	!Yale              	!            	!      	!
+tlin  	!Inst5 	!2.97  	!Columbia          	!            	!      	!
+tlin  	!Inst6 	!3.13  	!Michigan State    	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!right 	!7.05  	!7.92
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!3.64  	!20                	!            	!      	!
+dlin  	!03    	!3.96  	!30                	!            	!      	!
+dlin  	!04    	!4.14  	!40                	!            	!      	!
+dlin  	!05    	!4.45  	!50                	!            	!      	!
+dlin  	!06    	!4.63  	!60                	!            	!      	!
+dlin  	!07    	!4.96  	!0.700             	!            	!      	!
+dlin  	!08    	!5.14  	!80                	!            	!      	!
+dlin  	!12    	!6.79  	!0.120             	!            	!      	!
+dlin  	!13    	!6.97  	!130               	!            	!      	!
+dlin  	!14    	!7.30  	!140               	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!right 	!5.78  	!6.64
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!09    	!5.30  	!90                	!            	!      	!
+dlin  	!10    	!6.13  	!100               	!            	!      	!
+dlin  	!11    	!6.47  	!110               	!            	!      	!
+Endcol*******************
+
+Endcol*******************
+EndpgF
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Second	!../Jpg/f8815-page-002.jpg
+
+xcol  	!2name 	!top   	!align 	!left  	!right
+col   	!      	!-0.10 	!left  	!0.00  	!8.50
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!
+Endcol*******************
+
+Endcol*******************
+EndpgM
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Third	!../Jpg/f8815-page-003.jpg
+
+xcol  	!2name 	!top   	!align 	!left  	!right
+col   	!      	!-0.12 	!left  	!0.00  	!8.50
+
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!right 	!7.21  	!7.97
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!0601  	!7.77  	!601               	!            	!      	!
+dlin  	!0602  	!8.08  	!602               	!            	!      	!
+dlin  	!0603  	!8.26  	!603               	!            	!      	!
+dlin  	!0604  	!8.69  	!604               	!            	!      	!
+dlin  	!0605  	!8.87  	!605               	!            	!      	!
+dlin  	!0606  	!9.18  	!606               	!            	!      	!
+Endcol*******************
+
+Endcol*******************
+EndpgM
+
+
+
+xpgL  	!2name 	!3BkgImage
+pgL   	!Fourth	!../Jpg/f8815-page-004.jpg
+
+xcol  	!2name 	!top   	!align 	!left  	!right
+col   	!      	!-0.28 	!left  	!0.00  	!8.50
+
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!right 	!7.21  	!7.97
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!0901  	!1.46  	!901               	!            	!      	!
+dlin  	!0902  	!1.90  	!902               	!            	!      	!
+dlin  	!0903  	!2.07  	!903               	!            	!      	!
+dlin  	!0904  	!2.29  	!904               	!            	!      	!
+dlin  	!0905  	!2.62  	!905               	!            	!      	!
+Endcol*******************
+
+Endcol*******************
+
+EndpgL
+
+EndForm

@@ -1,0 +1,275 @@
+You do not need to know how to program in Xsl or other languages.
+You will create an awk database that will tell the program what needs to be programmed.
+An Awk database is written in plain text and is human readable and writabale.
+Each line is a record.
+Each line contains fields that are ordinarily delineated by spaces.
+Below is an example:
+
+ Fields:FirstName LastName City State
+Record1:James Marsh Chicago IL
+Record2:William Jones Phoenix AZ	    
+Record3:Robert DeVita Denver CO
+Record4:Thomas Morse New York NY
+
+As you can see Record4 presents a problem:There is a space in New York and therefore Record4 has 5 fields instead of 4.
+
+Awk provides a way to change the delimiter of the fields to say ":".
+Thus Record4 could be written Thomas:Morse:New York:NY
+
+I have chosen whitespace! as my delimiter.
+The above database would be written by me (or you or the program) as:
+James	  !Marsh   !Chicago !IL
+William	  !Jones   !Phoenix !AZ
+Robert	  !DeVita  !Denver  !CO
+Thomas	  !Morse   !New York!NY
+
+
+
+The layout section is concerned with two things.
+The main one is placing the data in the right place on the page.
+The second is to handle the text data for the form.
+
+The text data is either a tlin or a tPull line.
+The tlin is one into which the taxpayor enters data.
+The tPull is one which pulls its data from another form.
+You will need to make certain that this pull is performed properly.
+
+The layout section has as its final product the file ../2Fo/FormName_Copy00.2fo.
+
+Your menu is in your Main directory where you are now.
+The menu is called layoutmenu.
+It is invoked from the Main directory with the ./layoutmenu command.
+Note the leading ./ because it is assumed that the working directory
+is not in your PATH for security reasons.
+You will have to enlarge the window to accomodate the menu.
+
+The background is the jpg image of the form produced in ../../1pdf2jpg.
+You will copy this file to your ../Jpg folder. (Menu choice 1a)
+
+The nomenclature of the lines is determined in ../../2sequence.
+You will copy the file ../../2sequence/Text/FormName.txt to ../Text.
+(This is menu choice 1b.)
+
+MENU CHOICE 1c allows you to edit this file.
+You may have to remove any extraneous !'s.
+You should remove the heading line.
+
+MENU CHOICE 1d moves the columns around.
+The .txt file had four columns: type, name, seq and blank.
+The columns will be rearranged to: blank, type, name and seq.
+The resulting file will be ../Columns/FormName.col.
+
+MENU CHOICE 1e allows you to edit ../Columns/FormName.col.
+Visualize your layout as consisting of columns and lines.
+
+The columns all run from the top of the page to the bottom.
+They have two measurement: left and right.
+These indicate the left and right edges of the column.
+
+The lines are placed in a column.
+They have only one measurement: top.
+This indicates how far down the page in the column the line is.
+
+The first column in your .col file will contain a letter a-z.
+This means you can have 26 columns on your page.
+
+Put an a in the first column of the first line.
+Then above it enter a line for the column.
+It will be:a  !col
+Your file will look like this:
+a    !col
+a    !tPull	!TFNI	!001
+     !tPull	!SFNI	!002
+     !tlin	!addr1	!003
+     !tlin	!addr2	!004
+     !dlin	!01	!005
+
+Now you decide that SFNI belongs right below TFNI.
+That is, it is in the same column.
+You simply place an a in the first column of SFNI.
+
+You decide that the addr lines belong in a different column.
+You place a b in front of addr1 and addr2.
+You designate a column b by making a line for it.
+Your file will now look like this:
+
+a    !col
+b    !col
+a    !tPull	!TFNI	!001
+a    !tPull	!SFNI	!002
+b    !tlin	!addr1	!003
+b    !tlin	!addr2	!004
+     !dlin	!01	!005
+
+You continue in this manner,
+adding columns at the top and
+placing lower case letters in front of each line.
+
+MENU CHOICE 1f will sort the file based on the first column.
+The result will be ../Sorted/FormName.sorted
+The result will be an awk database:
+
+a   !col
+a   !tPull	!TFNI	!001
+a   !tPull	!SFNI	!002
+b   !col
+b   !tlin	!addr1	!003
+b   !tlin	!addr2	!004
+c   !col
+c   !dlin	!01	!005
+etc.
+
+MENU CHOICE 1g allows you to check this file for mistakes.
+
+MENU CHOICE 1h, using awk, creates the outline of your page.
+This file is ../PreLot/FormName.pre.
+Simplified, it will look something like this:
+
+Form
+  pgS
+
+    col
+      col
+        tlin
+        tPull
+        dlin
+      Endcol****
+
+      col
+        tlin
+        tPull
+        dlin
+      Endcol****
+
+      col
+        tlin
+        tPull
+        dlin
+      Endcol****
+    Endcol****
+EndpgS
+EndForm
+
+Note that there are only three types of lines for you to deal with:
+tlin are entries in the form where the taxpayor enters text.
+tPull are lines where the text is drawn from other forms.
+dlin are used here for all numerical lines regardless of their type.
+They will be sorted into data entry, addition, subtraction, etc.
+in the ../../4calc directory later.
+
+The lines occupy one line.
+All other entries are pairs that enclose something.
+
+The outside enclosure is the Form EndForm pair.
+
+The next inside enclosure is the pgS EndpgS pair enclosing a page.
+The pgS EndpgS is used for single page form.
+The pgF EndpgF is used for the first page of a 2 or more page form.
+The pgM EndpgM is used for middle pages.
+The pgL EndpgL is used for the last page of a 2 or more page form.
+
+The next inside enclosure is a column that encloses all the othe columns.
+This enclosure allows ALL the lines in the form to be moved up or down.
+It is needed since the gimp data is about 0.10 inches too low.
+
+Then comes the col Endcol***** pairs that enclose lines.
+
+The page, column and line entries have an accompanying line above them.
+This line tell you what data belongs where.
+For instance, a col pair will look like this:
+
+xcol   !2name !3top !4left    !5right	      
+col    !      !	    !	      !
+
+
+Endcol****
+
+This guiding line is preceded by and x so that awk ignores it.
+
+MENU CHOICE 1i allows you to check this file.
+
+Note carefully that each pair has a start and an end.
+
+Note carefully that each column encloses at least one line.
+If a column does not enclose a line, an error is thrown.
+This error comes with little information to guide you.
+In fact, if you get an error with little or no information
+to tell you what is wrong, most likely you have a column
+that does not enclose a line.
+
+Lines need a name.
+Columns do not seem to need a name.
+The top measurement of a column is always 0.00 inches.
+
+If your form has more than one page, I would do each page separately
+and then concatenate them together.
+
+MENU CHOICE 1j copies the .pre file to ../Lot/FormName_Copy00.lot.reg
+There are warnings and backups to try to prevent your overwriting
+data that you had previously entered.
+
+MENU CHOICE 1k opens gimp.
+You should open your the ../Jpg/  image of the page on which you are working.
+Change the measurements to inches rather than pixels.
+Change the zoom to 50% or whatever is comfortable for you.
+
+Place the pointer on the left side of the entry box and
+record the x dimension value. This is the "left" side of your column.
+
+Place the pointer on the right side of the entry box and
+record the x dimension value. This is the "right" side of your column.
+
+Place the pointer slightly above the bottom line of the entry box.
+Record the y dimension value. This is the "top" measure for your line. 
+
+MENU CHOICE 1l allows you to edit ../Lot/FormName_Copy00.lot.reg.
+You have already looked it over in the .pre stage.
+You can now enter the data that you have garnered from the gimp program.
+You can run the gimp program simultaneously, but it is probably
+easier to write the gimp data on paper and then enter it here.
+
+The other data to be entered is:
+1: A dummy value to be shown on the form.
+2: For the tPull lines, enter the Form, Copy number (00), and line name
+from which the data is to be pulled.
+
+MENU CHOICE 1m makes a simplified version of your regular file.
+../Lot/FormName_Copy00.lot.reg is converted to ../Lot/FormName_Copy00.lot.sim
+That is all the tPull lines are changed to tlin lines.
+This allows the use of dummy values on each line.
+There is no dependence on other files.
+
+MENU CHOICE 1n allows you to look at the .sim file to check it.
+
+MENU CHOICE 1o copies the .sim file to ../Lot/FormName_Copy00.lot
+This file is used for steps 2 through 9.
+Menu choice 10 carries the file through all the 2-9 steps.
+If it doesn't work, then you can step through each step individually
+to see where things go wrong.
+
+When your form looks the way you think it should,
+you should see what happens when you use the .reg file instead of the .sim one.
+
+MENU CHOICE 11 copies the .reg file to the .lot file.
+MENU CHOICE 12 does what 10 did with the .sim file.
+
+The regular .reg file contains tPull lines.
+These lines will not show up unless the files from which
+they draw their data exist.
+These files are contained in ../Data directory.
+Let's say one of your lines is the taxpayors last name.
+This data is to be pulled from your background form Bkg.
+Your form looks for this data in the file:
+../Data/Bkg_Copy00_lineTLN_text.xml
+If this file does not already exist you need to create it
+in order to test whether your program will fetch the data.
+Go to the ../Data directory. Copy any existing *_text.xml file
+to Bkg_Copy00_lineTLN_text.xml.
+Then edit that file so that the
+<text></text> markup encloses the text you wish to be shown.
+ie: <text>LastName</text>
+Once this is done, menu choice 12 should show the pulled data.
+
+MENU CHOICES 11 and 12 should ALWAYS be run at the end of your work.
+This creates the ../2Fo/FormName_Copy00.2fo file that the rest of
+the program depends upon. It should have the tPull lines in it.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:vendor="http://www.gnucash.org/XML/vendor" xmlns:entry="http://www.gnucash.org/XML/entry" xmlns:invoice="http://www.gnucash.org/XML/invoice" xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox" xmlns:bt-days="http://www.gnucash.org/XML/bt-days" xmlns:billterm="http://www.gnucash.org/XML/billterm" xmlns:order="http://www.gnucash.org/XML/order" xmlns:employee="http://www.gnucash.org/XML/employee" xmlns:tte="http://www.gnucash.org/XML/tte" xmlns:taxtable="http://www.gnucash.org/XML/taxtable" xmlns:owner="http://www.gnucash.org/XML/owner" xmlns:addr="http://www.gnucash.org/XML/addr" xmlns:job="http://www.gnucash.org/XML/job" xmlns:cust="http://www.gnucash.org/XML/cust" xmlns:lot="http://www.gnucash.org/XML/lot" xmlns:recurrence="http://www.gnucash.org/XML/recurrence" xmlns:bgt="http://www.gnucash.org/XML/bgt" xmlns:fs="http://www.gnucash.org/XML/fs" xmlns:ts="http://www.gnucash.org/XML/ts" xmlns:trn="http://www.gnucash.org/XML/trn" xmlns:sx="http://www.gnucash.org/XML/sx" xmlns:split="http://www.gnucash.org/XML/split" xmlns:slot="http://www.gnucash.org/XML/slot" xmlns:price="http://www.gnucash.org/XML/price" xmlns:cmdty="http://www.gnucash.org/XML/cmdty" xmlns:cd="http://www.gnucash.org/XML/cd" xmlns:book="http://www.gnucash.org/XML/book" xmlns:act="http://www.gnucash.org/XML/act" xmlns:gnc="http://www.gnucash.org/XML/gnc">
+<taxlines>
+<taxline color="red">
+<linename>Form4952-Copy00-line01</linename>
+<override>100</override>
+</taxline>
+<taxline color="red">
+<linename>Form4952-Copy00-line02</linename>
+<override>200</override>
+</taxline>
+<taxline color="red">
+<linename>Form4952-Copy00-line04a</linename>
+<override>401</override>
+</taxline>
+<taxline color="red">
+<linename>Form4952-Copy00-line04b</linename>
+<override>402</override>
+</taxline>
+<taxline color="red">
+<linename>Form4952-Copy00-line04d</linename>
+<override>404</override>
+</taxline>
+<taxline color="red">
+<linename>Form4952-Copy00-line04g</linename>
+<override>407</override>
+</taxline>
+<taxline color="red">
+<linename>Form4952-Copy00-line05</linename>
+<override>500</override>
+</taxline>
+<taxline color="red">
+<linename>Form4952-Copy00-linencg</linename>
+<override>1000</override>
+</taxline>
+</taxlines>
+</IRSForms>

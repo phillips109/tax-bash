@@ -1,0 +1,36 @@
+type	!name	!seq	!menuEntry
+tlin	!void	!001	!Enter x if form is void.
+tlin	!corr	!002	!Enter x if form has been corrected.
+tlin	!pname	!003	!Enter payor's name.                              
+tlin	!paddr1	!004	!Enter payor's address 1.
+tlin	!paddr2	!005	!Enter payor's address 2.      
+tlin	!pcity	!006	!Enter payor's city.      
+tlin	!pST	!007	!Enter payor's state.           
+tlin	!pzip	!008	!Enter payor's zip.          
+tlin	!ptel	!009	!Enter payor's telephone number.            
+tlin	!pTIN	!010	!Enter payor's TIN.
+tlin	!rTIN	!011	!Enter recipient's TIN.            
+tlin	!rname	!012	!Enter recipient's name.        
+tlin	!raddr1	!013	!Enter recipient's address 1.       
+tlin	!raddr2	!014	!Enter recipient's address 2.  
+tlin	!rcity	!015	!Enter recipient's city.  
+tlin	!rST	!016	!Enter recipient's state.       
+tlin	!rzip	!017	!Enter recipient's zip.      
+tlin	!acctNo	!018	!Enter account number.        
+tlin	!TIN2	!019	!Is there a second TIN?         
+tlin	!yr	!020	!Reporting year.        
+dlin	!01	!021	!Unemployment compensation.                             
+dlin	!02	!022	!State or local income tax refunds, credits or offsets. 
+dlin	!03	!023	!Box 2 amount is for tax year.
+dlin	!04	!024	!Federal income tax withheld. 
+dlin	!05	!025	!RTAA payments.  
+dlin	!06	!026	!Taxable grants.                
+dlin	!07	!027	!Agriculture payments.               
+tlin	!08ck	!028	!Is box 2 trade or business income?         
+dlin	!09	!029	!Market gain.
+tlin	!10a1	!030	!Enter first state with income tax withheld.
+tlin	!10b1	!031	!Enter ID No. of first state.
+dlin	!11c1	!032	!Income tax withheld by first state.    
+tlin	!10a2	!033	!Enter second state with income tax withheld.       
+tlin	!10b2	!034	!Enter ID No. of second state.
+dlin	!11c2	!035	!Income tax withheld by second state.

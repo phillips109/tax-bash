@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:fo="http://www.w3.org/1999/XSL/Format">
+  
+  <xsl:output method="xml"/>
+  
+  <xsl:template match="/">
+    <fo:root>
+      <fo:layout-master-set>
+	<fo:simple-page-master page-width="8.50in"
+			       page-height="11.00in"
+			       master-name="page">
+	  <fo:region-body/>
+	</fo:simple-page-master>
+      </fo:layout-master-set>
+      <fo:page-sequence master-reference="page">
+	<fo:flow flow-name="xsl-region-body">
+	  <xsl:apply-templates/>
+	</fo:flow>
+      </fo:page-sequence>
+    </fo:root>
+  </xsl:template>
+  
+  <xsl:template match="chapter">
+    <fo:block id="{id}">
+      <xsl:apply-templates/>
+    </fo:block>
+  </xsl:template>
+  
+  <xsl:template match="xref">
+    <fo:inline><fo:basic-link internal-destination="{@idref}">
+      Chapter
+      <xsl:for-each select="id(@idref)">
+	<xsl:number level="multiple"
+		    count="chapter"
+		    format="1 "/>
+      </xsl:for-each>
+      <xsl:value-of select="id(@idref)/title"/>
+      on Page
+      <fo:page-number-citation ref-id="{@idref}"/>
+    </fo:basic-link>
+    </fo:inline>
+  </xsl:template>  
+  
+</xsl:stylesheet>

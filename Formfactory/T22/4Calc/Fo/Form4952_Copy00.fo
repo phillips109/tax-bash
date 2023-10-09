@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+	  Copyright(C) 2019 Phillips Wedemeyer
+
+	  This file is part of a program called Tax-bash.
+
+	  Tax-bash is free software: you can redistibute it and/or modify
+	  it under the terms of the FNU General Public License as published by
+	  the Free Software Foundation, either version 3 of the License, or
+	  (at your option) any later version.
+	  
+	  Tax-bash is distributed in the hope that it will be useful,
+	  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  GNU General Public License for more details.
+	  
+	  You should have received a copy of the GNU General Public License
+	  along with Tax-bash.  If not, see %lt;https://www.gnu.org/licenses/%gt;.
+
+	<fo:layout-master-set><fo:simple-page-master master-name="page" page-height="11.00in" page-width="8.50in"><fo:region-body/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="page"><fo:flow flow-name="xsl-region-body"><fo:block-container background-image="../Jpg/f4952-page-001.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.12in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.52in" left="0.50in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form4952_Copy00.pdf">John Q</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.38in" left="2.04in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form4952_Copy00.pdf">Taxpayor</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.22in" left="3.50in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form4952_Copy00.pdf">Jean E</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.56in" left="4.80in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form4952_Copy00.pdf">Taxpayor</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.38in" left="6.48in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form4952_Copy00.pdf">123</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.31in" left="7.01in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form4952_Copy00.pdf">45</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.49in" left="7.47in" top="0.00in" position="absolute"><fo:block-container top="1.46in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="&#10;&#9;purple"><fo:basic-link external-destination="../Pdf/Form4952_Copy00.pdf">6789</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.9in" left="7.04in" top="0.00in" position="absolute"><fo:block-container top="1.96in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">100</fo:block></fo:block-container><fo:block-container top="2.13in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">200</fo:block></fo:block-container><fo:block-container top="2.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">300</fo:block></fo:block-container><fo:block-container top="3.29in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple">-1</fo:block></fo:block-container><fo:block-container top="3.96in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="purple"/></fo:block-container><fo:block-container top="4.14in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">407</fo:block></fo:block-container><fo:block-container top="4.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="green">406</fo:block></fo:block-container><fo:block-container top="4.47in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">500</fo:block></fo:block-container><fo:block-container top="4.63in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="cyan"/></fo:block-container><fo:block-container top="5.30in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="cyan">300</fo:block></fo:block-container><fo:block-container top="5.47in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.9in" left="5.74in" top="0.00in" position="absolute"><fo:block-container top="2.97in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">401</fo:block></fo:block-container><fo:block-container top="3.13in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">402</fo:block></fo:block-container><fo:block-container top="3.47in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">404</fo:block></fo:block-container><fo:block-container top="3.80in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">404</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container><fo:block break-after="page"/><fo:block break-before="page"/><fo:block-container background-image="../Jpg/f4952-page-002.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.10in" position="absolute"><fo:block-container text-align="" font-size="12pt" font-family="Times" background-color="transparent" width="0in" left="in" top="0.00in" position="absolute"><fo:block-container top="in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container><fo:block break-after="page"/><fo:block break-before="page"/><fo:block-container background-image="../Jpg/f4952-page-003.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.10in" position="absolute"><fo:block-container text-align="" font-size="12pt" font-family="Times" background-color="transparent" width="0in" left="in" top="0.00in" position="absolute"><fo:block-container top="in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container><fo:block break-after="page"/><fo:block break-before="page"/><fo:block-container background-image="../Jpg/f4952-page-004.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.10in" position="absolute"><fo:block-container text-align="" font-size="12pt" font-family="Times" background-color="transparent" width="0in" left="in" top="0.00in" position="absolute"><fo:block-container top="in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container></fo:flow></fo:page-sequence></fo:root>

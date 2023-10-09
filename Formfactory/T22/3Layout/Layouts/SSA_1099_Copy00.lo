@@ -1,0 +1,541 @@
+<?xml version="1.0"?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<Form>
+
+<pgS name='Single'
+bkgImage='../Jpg/ssa-1099-1040-page-001.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.12in'>
+
+<col name='a'
+left='0.72in'
+right='2.50in'
+width='1.78in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tPull name='TFNI'
+top='5.94in'
+height='0.15in'
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>lineTFNI</line2>
+</tPull>
+
+<tlin name='Box03d1'
+top='6.68in'
+height='0.15in'
+color='blue'>
+<text>Box03d1</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03d2'
+top='6.88in'
+height='0.15in'
+color='blue'>
+<text>Box03d2</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03d3'
+top='7.08in'
+height='0.15in'
+color='blue'>
+<text>Medicare PartB premiums</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03d4'
+top='7.28in'
+height='0.15in'
+color='blue'>
+<text>Box03d4</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03d5'
+top='7.48in'
+height='0.15in'
+color='blue'>
+<text>Box03d5</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03d6'
+top='7.68in'
+height='0.15in'
+color='blue'>
+<text>Box03d6</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03d7'
+top='7.88in'
+height='0.15in'
+color='blue'>
+<text>Box03d7</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03d8'
+top='8.08in'
+height='0.15in'
+color='blue'>
+<text>Box03d8</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='a1'
+left='0.72in'
+right='2.50in'
+width='1.78in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='Box03'
+top='6.34in'
+height='0.15in'
+color='red'>
+<dummy>2000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='b'
+left='2.53in'
+right='4.29in'
+width='1.76in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tPull name='TLN'
+top='5.94in'
+height='0.15in'
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>lineTLN</line2>
+</tPull>
+
+</col>
+*******************************************************
+
+<col name='b1'
+left='2.53in'
+right='4.29in'
+width='1.76in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='Box04'
+top='6.34in'
+height='0.15in'
+color='red'>
+<dummy>1000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='b2'
+left='2.53in'
+right='3.40in'
+width='0.87in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='Box03e1'
+top='6.68in'
+height='0.15in'
+color='blue'>
+<text>Box03e1</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03e2'
+top='6.88in'
+height='0.15in'
+color='blue'>
+<text>Box03e2</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03e3'
+top='7.08in'
+height='0.15in'
+color='blue'>
+<text>Box03e3</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03e4'
+top='7.28in'
+height='0.15in'
+color='blue'>
+<text>Box03e4</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03e5'
+top='7.48in'
+height='0.15in'
+color='blue'>
+<text>Box03e5</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03e6'
+top='7.68in'
+height='0.15in'
+color='blue'>
+<text>Box03e6</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03e7'
+top='7.88in'
+height='0.15in'
+color='blue'>
+<text>Box03e7</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box03e8'
+top='8.08in'
+height='0.15in'
+color='blue'>
+<text>Box03e8</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='c'
+left='4.43in'
+right='4.84in'
+width='0.41in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tPull name='TSSNoF'
+top='5.94in'
+height='0.15in'
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>lineTSSNoF</line2>
+</tPull>
+
+</col>
+*******************************************************
+
+<col name='d'
+left='4.90in'
+right='5.37in'
+width='0.47in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='center'
+top='0.00in'>
+
+<tPull name='TSSNoM'
+top='5.94in'
+height='0.15in'
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>lineTSSNoM</line2>
+</tPull>
+
+</col>
+*******************************************************
+
+<col name='e'
+left='5.40in'
+right='6.17in'
+width='0.77in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tPull name='TSSNoL'
+top='5.94in'
+height='0.15in'
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>lineTSSNoL</line2>
+</tPull>
+
+</col>
+*******************************************************
+
+<col name='f'
+left='4.43in'
+right='6.17in'
+width='1.74in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='Box05'
+top='6.34in'
+height='0.15in'
+color='red'>
+<dummy>5000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='g'
+left='3.48in'
+right='6.17in'
+width='2.69in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='Box04d1'
+top='6.68in'
+height='0.15in'
+color='blue'>
+<text>Box04d1</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04d2'
+top='6.88in'
+height='0.15in'
+color='blue'>
+<text>Box04d2</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04d3'
+top='7.08in'
+height='0.15in'
+color='blue'>
+<text>Box04d3</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04d4'
+top='7.28in'
+height='0.15in'
+color='blue'>
+<text>Box04d4</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04d5'
+top='7.48in'
+height='0.15in'
+color='blue'>
+<text>Box04d5</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04d6'
+top='7.68in'
+height='0.15in'
+color='blue'>
+<text>Box04d6</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box07'
+top='8.72in'
+height='0.15in'
+color='blue'>
+<text>PHILLIPS P WEDEMEYER</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box07a'
+top='8.92in'
+height='0.15in'
+color='blue'>
+<text>100 MARKET STREET</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box07b'
+top='9.12in'
+height='0.15in'
+color='blue'>
+<text>PITTSBURGH PA 15018</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box08'
+top='9.96in'
+height='0.15in'
+color='blue'>
+<text>070-90-9121A</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='g1'
+left='3.48in'
+right='6.17in'
+width='2.69in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='Box06'
+top='8.25in'
+height='0.15in'
+color='red'>
+<dummy>6000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='h'
+left='5.20in'
+right='6.17in'
+width='0.97in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='Box04e1'
+top='6.68in'
+height='0.15in'
+color='blue'>
+<text>Box04e1</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04e2'
+top='6.88in'
+height='0.15in'
+color='blue'>
+<text>Box04e2</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04e3'
+top='7.08in'
+height='0.15in'
+color='blue'>
+<text>Box04e3</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04e4'
+top='7.28in'
+height='0.15in'
+color='blue'>
+<text>Box04e4</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04e5'
+top='7.48in'
+height='0.15in'
+color='blue'>
+<text>Box04e5</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Box04e6'
+top='7.68in'
+height='0.15in'
+color='blue'>
+<text>Box04e6</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgS>
+</Form>

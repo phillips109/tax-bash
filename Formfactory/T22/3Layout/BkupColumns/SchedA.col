@@ -1,0 +1,38 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+a      	!001   	!TFNI    	!tlin  	!      	!      	!      
+b      	!002   	!TLN     	!tlin  	!      	!      	!      
+a      	!003   	!SFNI    	!tlin  	!      	!      	!      
+b      	!004   	!SLN     	!tlin  	!      	!      	!      
+c     	!005   	!TSSNoF  	!tlin  	!      	!      	!      
+d      	!006   	!TSSNoM  	!tlin  	!      	!      	!      
+e      	!007   	!TSSNoL  	!tlin  	!      	!      	!      
+g      	!008   	!01      	!dlin  	!      	!      	!      
+h      	!009   	!02      	!dlin  	!      	!      	!      
+g      	!010   	!03      	!dlin  	!      	!      	!      
+f      	!011   	!04      	!dlin  	!      	!      	!      
+g      	!012   	!05a     	!dlin  	!      	!      	!      
+g      	!013   	!05b     	!dlin  	!      	!      	!      
+g      	!014   	!05c     	!dlin  	!      	!      	!      
+g      	!015   	!05d     	!dlin  	!      	!      	!      
+g      	!016   	!05e     	!dlin  	!      	!      	!      
+g      	!017   	!06      	!dlin  	!      	!      	!      
+f      	!018   	!07      	!dlin  	!      	!      	!      
+g      	!019   	!08a     	!dlin  	!      	!      	!      
+g      	!020   	!08b     	!dlin  	!      	!      	!      
+g      	!021   	!08c     	!dlin  	!      	!      	!      
+g      	!022   	!08d     	!dlin  	!      	!      	!      
+g      	!023   	!08e     	!dlin  	!      	!      	!      
+g      	!024   	!09      	!dlin  	!      	!      	!      
+f      	!025   	!10      	!dlin  	!      	!      	!      
+g      	!026   	!11      	!dlin  	!      	!      	!      
+g      	!027   	!12      	!dlin  	!      	!      	!      
+g      	!027   	!13      	!dlin  	!      	!      	!      
+f      	!027   	!14      	!dlin  	!      	!      	!      
+f      	!027   	!15      	!dlin  	!      	!      	!      
+f      	!027   	!16      	!dlin  	!      	!      	!      
+f      	!027   	!17      	!dlin  	!      	!      	!      
+i      	!027   	!05ack   	!tlin  	!      	!      	!      
+j      	!027   	!18ck    	!tlin  	!      	!      	!      

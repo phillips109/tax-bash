@@ -1,0 +1,110 @@
+<Form name=''>
+
+<tlin name='Apart'
+ color='blue'>
+<type>tlin</type>
+<text>0</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='FS'
+ color='blue'>
+<type>tlin</type>
+<text>MFS</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='SFNI'
+ color='blue'>
+<type>tlin</type>
+<text>Jean E</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='SLN'
+ color='blue'>
+<type>tlin</type>
+<text>Taxpayor</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='SSSNoF'
+ color='blue'>
+<type>tlin</type>
+<text>321</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='SSSNoL'
+ color='blue'>
+<type>tlin</type>
+<text>9876</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='SSSNoM'
+ color='blue'>
+<type>tlin</type>
+<text>54</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='TFNI'
+ color='blue'>
+<type>tlin</type>
+<text>John Q</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='TLN'
+ color='blue'>
+<type>tlin</type>
+<text>Taxpayor</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='TSSNoF'
+ color='blue'>
+<type>tlin</type>
+<text>123</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='TSSNoL'
+ color='blue'>
+<type>tlin</type>
+<text>6789</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='TSSNoM'
+ color='blue'>
+<type>tlin</type>
+<text>45</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+</Form>

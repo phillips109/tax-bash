@@ -1,0 +1,49 @@
+type	!name	!seq	!menuEntry
+tlin	!void	!001	!Enter x if form is void.
+tlin	!corr	!002	!Enter x if Form has been corrected.
+tlin	!pnam1	!003	!Enter line 1 of payor's name.                          
+tlin	!pnam2	!004	!Enter line 2 of payor's name. 
+tlin	!padd1	!005	!Enter line 1 of payor's address. 
+tlin	!padd2	!006	!Enter line 2 of payor's address.
+tlin	!pcity	!007	!Enter payor's city.
+tlin	!pST	!008	!Enter payor's state.           
+tlin	!pcnty	!009	!Enter payor's county.          
+tlin	!pctry	!010	!Enter payor's country.         
+tlin	!pzip	!011	!Enter payor's zip.        
+tlin	!ptel	!012	!Enter payor's telephone number.            
+tlin	!pTIN	!013	!Enter payor's TIN.
+tlin	!rTIN	!014	!Enter recipient's TIN.            
+tlin	!rnam1	!015	!Enter line 1 of recipient's name.        
+tlin	!rnam2	!016	!Enter line 2 of recipient's name.
+tlin	!radd1	!017	!Enter line 1 of recipient's address.
+tlin	!radd2	!018	!Enter line 2 of recipient's address.
+tlin	!rcity	!019	!Enter recipient's city.
+tlin	!rST	!020	!Enter recipient's state.
+tlin	!rcnty	!021	!Enter recipient's county.      
+tlin	!rctry	!022	!Enter recipient's country.     
+tlin	!rzip	!023	!Enter recipient's zip.    
+tlin	!FATCA	!024	!Enter x if FATCA filing required.        
+tlin	!actNo	!025	!Enter account number.
+tlin	!2TIN	!026	!Enter x if 2nd TIN.         
+tlin	!pRTN	!027	!Enter recipient's RTN (optional).
+tlin	!20yr	!028	!Enter last 2 digits of filing year.
+dlin	!01	!029	!Enter interest income.
+dlin	!02	!030	!Enter early withdrawal penalty.        
+dlin	!03	!031	!Enter interest on US Savings Bonds and Treasury obligations.
+dlin	!04	!032	!Enter federal income tax withheld.
+dlin	!05	!033	!Enter investment expenses.
+dlin	!06	!034	!Enter foreign tax paid.    
+tlin	!07	!035	!Enter the foreign country or US possession.       
+dlin	!08	!036	!Enter tax-exempt interest.
+dlin	!09	!037	!Enter specified private activity bond interest.    
+dlin	!10	!038	!Enter market discount.
+dlin	!11	!039	!Enter bond premium.        
+dlin	!12	!040	!Enter bond premium on Treasury obligations.           
+dlin	!13	!041	!Enter Bond premium on tax-exempt bond.
+dlin	!14	!042	!Enter tax-exempt and tax credit bond CUSIP number.
+tlin	!15a	!043	!Enter first state where tax was withheld.
+tlin	!16a	!044	!Enter ID number of first state.
+dlin	!17a	!045	!Enter tax withheld by first state.
+tlin	!15b	!046	!Enter second state wher tax was withheld.
+tlin	!16b	!047	!Enter ID number of second state.
+dlin	!17b	!048	!Enter tax withheld by second state.

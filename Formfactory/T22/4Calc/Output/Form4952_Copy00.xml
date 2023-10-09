@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<Form name="Form4952-Copy00">
+<copy00line03 color="green">300</copy00line03>
+<copy00line04h color="green">406</copy00line04h>
+<copy00line01 color="red">100</copy00line01>
+<copy00line02 color="red">200</copy00line02>
+<copy00line04a color="red">401</copy00line04a>
+<copy00line04b color="red">402</copy00line04b>
+<copy00line04d color="red">404</copy00line04d>
+<copy00line04g color="red">407</copy00line04g>
+<copy00line05 color="red">500</copy00line05>
+<copy00linencg color="red">1000</copy00linencg>
+<copy00line04e color="blue">404</copy00line04e>
+<copy00line08 color="blue">0</copy00line08>
+<copy00line06 color="cyan">0</copy00line06>
+<copy00line07 color="cyan">300</copy00line07>
+<copy00line04c color="purple">-1</copy00line04c>
+<copy00line04f color="purple">0</copy00line04f>
+<copy00lineSFNI color="blue">Jean E</copy00lineSFNI>
+<copy00lineSLN color="blue">Taxpayor</copy00lineSLN>
+<copy00lineTFNI color="blue">John Q</copy00lineTFNI>
+<copy00lineTLN color="blue">Taxpayor</copy00lineTLN>
+<copy00lineTSSNoF color="blue">123</copy00lineTSSNoF>
+<copy00lineTSSNoL color="blue">6789</copy00lineTSSNoL>
+<copy00lineTSSNoM color="blue">45</copy00lineTSSNoM>
+</Form>
+</IRSForms>

@@ -1,0 +1,36 @@
+
+seq	!name	  !type 	!menuEntry                     	!
+001	!TFNI	  !tlin
+002	!TLN	  !tlin
+003	!SFNI	  !tlin
+004	!SLN	  !tlin
+005	!TSSNoF	  !tlin
+006	!TSSNoM	  !tlin
+007	!TSSNoL	  !tlin
+008	!01	  !dlin
+009	!02	  !dlin
+010	!03	  !dlin
+011	!04	  !dlin
+012	!05a	  !dlin
+013	!05b	  !dlin
+014	!05c	  !dlin
+015	!05d	  !dlin
+016	!05e	  !dlin
+017	!06	  !dlin
+018	!07	  !dlin
+019	!06a	  !dlin
+020	!08b	  !dlin
+021	!08c	  !dlin
+022	!08d	  !dlin
+023	!08e	  !dlin
+024	!09	  !dlin
+025	!10	  !dlin
+026	!11	  !dlin
+027	!12	  !dlin
+027	!13	  !dlin
+027	!14	  !dlin
+027	!15	  !dlin
+027	!16	  !dlin
+027	!17	  !dlin
+027	!05ack	  !tlin
+027	!18ck	  !tlin

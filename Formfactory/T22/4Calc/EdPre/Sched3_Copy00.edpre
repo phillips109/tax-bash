@@ -1,0 +1,69 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!07      	!#####0  	!line06a       	!line06b      	!line06c       	!line06d	!line06e	!line06f	!line06g	!line06h	!line06i	!line06j	!line06k	!line06l	!line06z
+addit   	!08      	!#####0  	!line01        	!line02        	!line03        	!line04		!line05		!line07
+addit   	!14      	!#####0  	!line13a       	!line13b      	!line13d       	!line13f	!line13h	!line13z
+addit   	!15      	!#####0  	!line09        	!line10        	!line11        	!line12		!line14
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!06z     	!#####0  	!                    	!
+dlin    	!10      	!#####0  	!                    	!
+dlin    	!11      	!#####0  	!                    	!
+dlin    	!12      	!#####0  	!                    	!
+dlin    	!13b     	!#####0  	!                    	!
+dlin    	!13c     	!#####0  	!                    	!
+dlin    	!13d     	!#####0  	!                    	!
+dlin    	!13e     	!#####0  	!                    	!
+dlin    	!13f     	!#####0  	!                    	!
+dlin    	!13g     	!#####0  	!                    	!
+dlin    	!13h     	!#####0  	!                    	!
+dlin    	!13z     	!#####0  	!                    	!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull		!01      	!#####0  	!108        	!Form1116      	!00        	!line35
+dPull   	!02      	!#####0  	!0       	!Form2441      	!00        	!line11
+dPull   	!03      	!#####0  	!0       	!Form8863      	!00        	!line19
+dPull   	!04      	!#####0  	!0       	!Form8880      	!00        	!linex
+dPull   	!05      	!#####0  	!0       	!Form5695      	!00        	!linex
+dPull   	!06a     	!#####0  	!0       	!Form3800      	!00        	!linex
+dPull   	!06b     	!#####0  	!0       	!Form8801      	!00        	!linex
+dPull   	!06c     	!#####0  	!0       	!Form8839      	!00        	!linex
+dPull   	!06d     	!#####0  	!0       	!SchedR        	!00        	!linex
+dPull   	!06e     	!#####0  	!0       	!Form8910      	!00        	!linex
+dPull   	!06f     	!#####0  	!0       	!Form8936      	!00        	!linex
+dPull   	!06g     	!#####0  	!0       	!Form8396      	!00        	!linex
+dPull   	!06h     	!#####0  	!0       	!Form8859      	!00        	!linex
+dPull   	!06i     	!#####0  	!0       	!Form8834      	!00        	!linex
+dPull   	!06j     	!#####0  	!0      	!Form8911      	!00        	!linex
+dPull   	!06k     	!#####0  	!0       	!Form8912      	!00        	!linex
+dPull   	!06l     	!#####0  	!0       	!Form8978      	!00        	!line14
+dPull    	!09      	!#####0  	!0             	!Form8962	!00		!linex
+dPull		!12		!#####0		!0		!Form4138	!00		!linex
+dPull		!13a		!#####0		!0		!Form2439	!00		!linex
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!zline2  	!        	!zline2        	!
+tlin    	!TFNI    	!        	!John        	!
+tlin    	!TLN     	!        	!Dough    	!
+tlin    	!TSSNoF  	!        	!123    	!
+tlin    	!TSSNoL  	!        	!6789    	!
+tlin    	!TSSNoM  	!        	!45     	!
+tlin    	!zline1  	!        	!zline1     	!

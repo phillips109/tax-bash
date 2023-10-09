@@ -1,0 +1,934 @@
+<Form name=''>
+
+<line number='SFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SFNI</line2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SLN</line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoL</line2>
+</line>
+
+<line number='FS'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>FS</line2>
+</line>
+
+<tlin name='QOFn'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='QOFy'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<dlin number='3000'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>3000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='1500'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1500</override>
+<blank></blank>
+</dlin>
+
+<dlin number='min1'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#0.00</format>
+<override>-1.00</override>
+<blank></blank>
+</dlin>
+
+<dlin number='15'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1500</override>
+<blank></blank>
+</dlin>
+
+<dlin number='16'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>8000</override>
+<blank></blank>
+</dlin>
+
+<line number='07'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01ah</augend>
+<addend>line01bh</addend>
+<addend>line02h</addend>
+<addend>line03h</addend>
+<addend>line04</addend>
+<addend>line05</addend>
+<addend>line06</addend>
+</line>
+
+<line number='01bh'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01bh</augend>
+<addend>line01bg</addend>
+</line>
+
+<line number='02h'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line02h</augend>
+<addend>line02g</addend>
+</line>
+
+<line number='03h'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line03h</augend>
+<addend>line03g</addend>
+</line>
+
+<line number='08bh'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08bh</augend>
+<addend>line08bg</addend>
+</line>
+
+<line number='09h'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line09h</augend>
+<addend>line09g</addend>
+</line>
+
+<line number='01ad'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099-B</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01ae'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099-B</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='01bd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01be'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='01bg'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line03</line2>
+</line>
+
+<line number='02d'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='02e'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='02g'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line03</line2>
+</line>
+
+<line number='03d'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='03e'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='03g'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line03</line2>
+</line>
+
+<line number='04'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form6252</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='05'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>SchedK1</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='06'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>CLCWkst</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='08ad'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099-B</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='08ae'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099-B</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='08bd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='08be'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='08bg'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line03</line2>
+</line>
+
+<line number='09d'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='09e'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='09g'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line03</line2>
+</line>
+
+<line number='10d'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='10e'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='10g'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form8849</form>
+<copy>01</copy>
+<line2>line03</line2>
+</line>
+
+<line number='11'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form4797</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='12'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>SchedK1</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='13'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>CGD</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='14'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>-140086</dummy>
+<form>CLCWkst</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='18d'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>28RGWkst</form>
+<copy>01</copy>
+<line2>line07</line2>
+</line>
+
+<line number='19d'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>US1250GWkst</form>
+<copy>01</copy>
+<line2>line18</line2>
+</line>
+
+<line number='20ye'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form4952</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='19'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>QDCGWkst</form>
+<copy>01</copy>
+<line2>line16</line2>
+</line>
+
+<line number='22'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line03a</line2>
+</line>
+
+<line number='01ah'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line01ad</minuend>
+<subtrahend>line01ae</subtrahend>
+</line>
+
+<line number='01bh'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line01bd</minuend>
+<subtrahend>line01be</subtrahend>
+</line>
+
+<line number='02h'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line02d</minuend>
+<subtrahend>line02e</subtrahend>
+</line>
+
+<line number='03h'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line03d</minuend>
+<subtrahend>line03e</subtrahend>
+</line>
+
+<line number='08ah'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line08ad</minuend>
+<subtrahend>line08ae</subtrahend>
+</line>
+
+<line number='08bh'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line08bd</minuend>
+<subtrahend>line08be</subtrahend>
+</line>
+
+<line number='09h'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line09d</minuend>
+<subtrahend>line09e</subtrahend>
+</line>
+
+<line number='10h'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line10e</minuend>
+<subtrahend>line10e</subtrahend>
+</line>
+
+<line number='21e'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line16 * -1.0</first>
+<second>line21x</second>
+</line>
+
+<line number='17y'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>$SchedD-Copy00-line16 = 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line17a</value2>
+</line>
+
+<line number='17a'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>$SchedD-Copy00-line16 &lt; 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line17b</value2>
+</line>
+
+<line number='17b'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
+<value1>'x'</value1>
+<value2>''</value2>
+</line>
+
+<line number='17n'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line16 = 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line17na</value2>
+</line>
+
+<line number='17na'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line16 &lt; 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line17nb</value2>
+</line>
+
+<line number='17nb'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
+<value1>''</value1>
+<value2>'x'</value2>
+</line>
+
+<line number='18'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line16 = 0</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line18a</value2>
+</line>
+
+<line number='18a'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line16 &lt; 0</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line18b</value2>
+</line>
+
+<line number='18b'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</testvalue>
+<value1>$SchedD-Copy00-line18c</value1>
+<value2>0</value2>
+</line>
+
+<line number='18c'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line18d &gt; 0</testvalue>
+<value1>$SchedD-Copy00-line18d</value1>
+<value2>0</value2>
+</line>
+
+<line number='19'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line16 = 0</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line19a</value2>
+</line>
+
+<line number='19a'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line16 &lt; 0</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line19b</value2>
+</line>
+
+<line number='19b'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</testvalue>
+<value1>$SchedD-Copy00-line19c</value1>
+<value2>0</value2>
+</line>
+
+<line number='19c'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line19d &gt; 0</testvalue>
+<value1>$SchedD-Copy00-line19d</value1>
+<value2>0</value2>
+</line>
+
+<line number='20y'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line16 = 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line20ya</value2>
+</line>
+
+<line number='20ya'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line16 &lt; 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line20yb</value2>
+</line>
+
+<line number='20yb'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
+<value1>$SchedD-Copy00-line20yc</value1>
+<value2>''</value2>
+</line>
+
+<line number='20yc'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0</test>
+<value1>$SchedD-Copy00-line20yd</value1>
+<value2>''</value2>
+</line>
+
+<line number='20yd'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line20ye = 0</test>
+<value1>'x'</value1>
+<value2>''</value2>
+</line>
+
+<line number='20n'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line16 = 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line20na</value2>
+</line>
+
+<line number='20na'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line16 &lt; 0</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line20nb</value2>
+</line>
+
+<line number='20nb'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
+<value1>$SchedD-Copy00-line20nc</value1>
+<value2>''</value2>
+</line>
+
+<line number='20nc'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0</test>
+<value1>$SchedD-Copy00-line20nd</value1>
+<value2>''</value2>
+</line>
+
+<line number='20nd'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line20ye = 0</test>
+<value1>''</value1>
+<value2>'x'</value2>
+</line>
+
+<line number='21x'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-lineFS = 'MFS'</testvalue>
+<value1>1500</value1>
+<value2>3000</value2>
+</line>
+
+<line number='21'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line20n = 'x'</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line21a</value2>
+</line>
+
+<line number='21a'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line16 = 0</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line21b</value2>
+</line>
+
+<line number='21b'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line21c</value2>
+</line>
+
+<line number='21c'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'</testvalue>
+<value1>0</value1>
+<value2>$SchedD-Copy00-line21d</value2>
+</line>
+
+<line number='21d'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedD-Copy00-line16 &lt; 0</testvalue>
+<value1>$SchedD-Copy00-line21e * -1.0</value1>
+<value2>0</value2>
+</line>
+
+<line number='22y'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line22ya</value2>
+</line>
+
+<line number='22ya'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line22 &gt; 0</test>
+<value1>'x'</value1>
+<value2>''</value2>
+</line>
+
+<line number='22n'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'</test>
+<value1>''</value1>
+<value2>$SchedD-Copy00-line22na</value2>
+</line>
+
+<line number='22na'
+ color='blue'>
+<type>ctext</type>
+<format></format>
+<test>$SchedD-Copy00-line22 &gt; 0</test>
+<value1>''</value1>
+<value2>'x'</value2>
+</line>
+</Form>

@@ -1,0 +1,20 @@
+notes on Form8815.
+There are options for all the Filing Status options
+except MarriedFilingSeparately. Why?
+
+cnum and ctext can be used instead of if or choice.
+Field 5 is the decision. It can include and's and or's.
+Field 6 is choice1. This is done if 5 evaluates to 1(true).
+Field 7 is choice2. This is chosen if 5 evaluates to 0(false).
+An if clause is acheived if 6 and 7 are identical.
+A choice is set up by having choice 2 call another cnum.
+Thus each cnum becomes a when and otherwise becomes an if.
+
+
+Recalculation (refresh) is achieved for each form using refreshTl (refreshTaxLine)
+Recalclation for the return is acheived by using taxlogic.xsl which combines all
+the variables in the top and all the lines in the bottom. The compiles makes
+all the decisions as to which calculation to do first etc.
+
+A third possibility that may work is to have each form as you close out working on it to call all the forms that are dependent on it. It may be complicated in forms like 1040 where ScheduleA intervenes and Form8815 where SchedB intervenes.
+But I think it might be possible.

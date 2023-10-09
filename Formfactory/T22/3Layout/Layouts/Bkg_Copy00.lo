@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<Form>
+
+<pgS name='Single'
+bkgImage='../Jpg/fBkg-page-001.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.16in'>
+
+<col name='a'
+left='4.18in'
+right='7.55in'
+width='3.37in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='TFNI'
+top='2.55in'
+height='0.15in'
+color='blue'>
+<text>John Q</text>
+<blank></blank>
+</tlin>
+
+<tlin name='TLN'
+top='2.86in'
+height='0.15in'
+color='blue'>
+<text>Taxpayor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='TSSNoF'
+top='3.17in'
+height='0.15in'
+color='blue'>
+<text>123</text>
+<blank></blank>
+</tlin>
+
+<tlin name='TSSNoM'
+top='3.48in'
+height='0.15in'
+color='blue'>
+<text>45</text>
+<blank></blank>
+</tlin>
+
+<tlin name='TSSNoL'
+top='3.80in'
+height='0.15in'
+color='blue'>
+<text>6789</text>
+<blank></blank>
+</tlin>
+
+<tlin name='SFNI'
+top='4.10in'
+height='0.15in'
+color='blue'>
+<text>Jean E</text>
+<blank></blank>
+</tlin>
+
+<tlin name='SLN'
+top='4.42in'
+height='0.15in'
+color='blue'>
+<text>Taxpayor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='SSSNoF'
+top='4.73in'
+height='0.15in'
+color='blue'>
+<text>987</text>
+<blank></blank>
+</tlin>
+
+<tlin name='SSSNoM'
+top='5.03in'
+height='0.15in'
+color='blue'>
+<text>65</text>
+<blank></blank>
+</tlin>
+
+<tlin name='SSSNoL'
+top='5.36in'
+height='0.15in'
+color='blue'>
+<text>4321</text>
+<blank></blank>
+</tlin>
+
+<tlin name='FS'
+top='5.66in'
+height='0.15in'
+color='blue'>
+<text>MFJ</text>
+<blank></blank>
+</tlin>
+
+<tlin name='Apart'
+top='5.97in'
+height='0.15in'
+color='blue'>
+<text>None</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgS>
+</Form>

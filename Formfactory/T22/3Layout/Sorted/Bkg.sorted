@@ -1,0 +1,14 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!4.18 	!7.55  	!left         	!
+a     	!tlin  	!TFNI  	!      	!      	!2.55         	!John Q
+a     	!tlin  	!TLN   	!      	!      	!2.86     	!Taxpayor
+a     	!tlin  	!TSSNoF	!      	!      	!3.17     	!123
+a     	!tlin  	!TSSNoM	!      	!      	!3.48         	!45
+a     	!tlin  	!TSSNoL	!      	!      	!3.80     	!6789
+a     	!tlin  	!SFNI  	!      	!      	!4.10     	!Jean E
+a     	!tlin  	!SLN   	!      	!      	!4.42     	!Taxpayor
+a     	!tlin  	!SSSNoF	!      	!      	!4.73     	!987
+a     	!tlin  	!SSSNoM	!      	!      	!5.03     	!65
+a     	!tlin  	!SSSNoL	!      	!      	!5.36     	!4321
+a     	!tlin  	!FS    	!      	!      	!5.66     	!MFS
+a     	!tlin  	!Apart 	!      	!      	!5.97     	!None

@@ -1,0 +1,33 @@
+How to delimit pages in the .Lot file.
+
+The ../Text/$1.txt file is a sequence of all the lines in the form.
+The lines from all pages of the form are listed in order.
+The exception is when subsequent pages are carbon copies of page 1.
+In that case only the first page is sequenced.
+
+Your ../PreLot/$1.pre file presents the lines as being on one page.
+You now have to separate the pages.
+
+If the form is a single page then that page is delimited with:
+PgS at the start and EndPgS at the end.
+
+If the form is two pages then:
+The first page is delimited with
+PgF at the start and EndPgF at the end.
+The second page is delimited with
+PgL at the start and EndPgL at the end.
+
+If the form is three or more pages
+The first page is delimited with
+PgF at the start and EndPgF at the end.
+Subsequent pages are delimited with
+PgM at the start and EndPgM at the end.
+The last page is delimited with
+PgL at the start and EndPgL at the end.
+
+If the subsequent pages are carbon copies of the first
+copy the lines of the first page as often as necessary
+to create the subsequent pages.
+Then delimit the pages as directed above.
+You may have to make slight changes to some pages if
+they are not exact duplicates.

@@ -1,0 +1,626 @@
+#!/bin/bash
+
+yOrn(){
+response=$1
+while [ "$response" != "y" ]
+do
+case "$response" in
+    y) return 0
+       ;;
+    n) return 1
+       ;;
+    *) echo "Response not recognized. Please enter y or n."
+       read response
+       ;;
+esac
+done    
+}
+
+Pdfshowform(){
+    cp ../../1Pdf2Jpg/Pdf/* ../Pdf
+    foo=$1
+#    echo $foo
+    foo2=${foo#Form}
+#    echo $foo2
+    foo3=f$foo2
+#    echo $foo3
+    qpdfview ../Pdf/$foo3.pdf &
+}
+
+
+PdfshowSched(){
+while true;
+do
+  foo=$1   
+  clear
+  echo $foo
+
+    case $foo in
+         SchedA) qpdfview ../Pdf/f1040sa.pdf &;;
+         SchedB) qpdfview ../Pdf/f1040sb.pdf &;;
+         ca) set_menu_choices SchedCa		00;;
+          c) set_menu_choices SchedC		00;;
+          d) set_menu_choices SchedD		00;;
+	  f) set_menu_choices SchedF            00;;
+          h) set_menu_choices SchedH		00;;
+	  1) set_menu_choices Sched1            00;;
+	  2) set_menu_choices Sched2            00;;
+	  3) set_menu_choices Sched3            00;;
+	  4) set_menu_choices Sched4            00;;
+	  5) set_menu_choices Sched5            00;;
+	  6) set_menu_choices Sched6            00;;
+      1041k) set_menu_choices Form1041SchedK1	00;;
+      1065k) set_menu_choices Form1065SchedK1	00;;
+     1065Bk) set_menu_choices Form1065BSchedK1	00;;
+     1120Sk) set_menu_choices Form1120SSchedK1	00;; 
+      8865k) set_menu_choices Form8865SchedK1	00;;
+         se) set_menu_choices SchedSE		00;;
+
+          q) break;;	
+    esac
+done
+}
+    
+Pdfshow(){
+    foo=$1
+#    echo $foo
+#    sleep 5
+    case $foo in
+	 Form*)  Pdfshowform $1;;
+         SchedA) qpdfview ../Pdf/f1040sa.pdf &;;
+         SchedB) qpdfview ../Pdf/f1040sb.pdf &;;
+	 SchedC) qpdfview ../Pdf/f1040sc.pdf &;;
+	 SchedD) qpdfview ../Pdf/f1040sd.pdf &;;
+	 SchedF) qpdfview ../Pdf/f1040sf.pdf &;;
+	 SchedH) qpdfview ../Pdf/f1040sh.pdf &;;
+	 Sched1) qpdfview ../Pdf/f1040s1.pdf &;;
+	 Sched2) qpdfview ../Pdf/f1040s2.pdf &;;
+	 Sched3) qpdfview ../Pdf/f1040s3.pdf &;;
+	 Sched4) qpdfview ../Pdf/f1040s4.pdf &;;
+	 Sched5) qpdfview ../Pdf/f1040s5.pdf &;;
+	 Sched6) qpdfview ../Pdf/f1040s6.pdf &;;
+	Schedse) qpdfview ../Pdf/f1040se.pdf &;;
+          1041k) qpdfview ../Pdf/f1040s1.pdf &;;
+	  1065k) qpdfview ../Pdf/f1040s1.pdf &;;
+         1065Bk) qpdfview ../Pdf/f1040s1.pdf &;;
+         1120Sk) qpdfview ../Pdf/f1040s1.pdf &;;
+          8865k) qpdfview ../Pdf/f1040s1.pdf &;;
+    QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf    &;;
+            SST) qpdfview ../Pdf/sst.pdf &;;
+       SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
+  SchedDTaxWkst) qpdfview ../Pdf/schd.pdf &;;
+
+          q) break;;	
+    esac		
+   
+}
+
+
+#showPdf(){
+#    foo=$1
+#    qpdfview ../../1Pdf2Jpg/Pdf/f${foo#Form}.pdf &
+#    return
+#}
+
+#check4Seq(){
+#    dir ../Seqs
+#    echo "If $1.seq exists, skip steps 3 and 4 on the main menu"
+#    echo "and go to step 5 to edit the seq file."
+#    echo
+#    echo
+#    echo "Are you ready to continue?"
+#    echo "If so, press y or n."
+#    read this
+#    if yOrn $this
+#    then
+#	return
+#    fi
+#    }
+
+makeNoSequence(){
+#    echo " Enter the name of the form."
+#    read form
+    echo " Count the number of fields on the form."
+    echo " Include all pages unless they duplicate the first page."
+    echo " Enter the number or an approximation now."
+    read num
+
+    ../Make/makeNos.sh $num > ../Nos/$1.num 
+}
+
+editNos(){
+    echo $1
+    emacs ../Nos/$1.num
+}
+
+#cpNos2Seqs(){
+#    ../Make/cpNos2Seqs.sh $1
+#}
+
+#editSeq(){
+#    emacs ../Seqs/$1.seq
+#}
+
+changeOrder(){
+    echo $1
+#    awk -f ../Awk/changeOrder.awk ../Seqs/$1.seq > ../Text/$1.txt
+     awk -f ../Awk/changeOrder.awk ../Nos/$1.num  > ../Text/$1.txt 
+}
+
+editTxt(){
+    emacs ../Text/$1.txt
+}
+
+editText(){
+    emacs ../Text/$1.text
+}
+
+remove1stLine(){
+    sed 1d ../Text/$1.txt > ../Text/$1.text
+}
+
+copytxt5(){
+    cp ../Text/$1.txt ../../5Menu/Text
+}
+
+copyText3(){
+    cp ../Text/$1.text ../../3Layout/Text/$1.txt
+    }
+
+copyText4(){
+    cp ../Text/$1.text ../../4Calc/Text/$1.txt
+    }
+
+
+set_menu_choices() {
+while true;
+  do     
+  clear
+  echo
+  echo "This menu is to set the order of fields and their names."
+  echo
+#  echo "Choice 1) will show the pdf file for reference."
+#  echo "Choice 2) If $1.seq doesn't exist, a basic template is made."
+#  echo "Choice 3) will show the ../Nos/ file."
+#  echo "Choice 3) The basic template is copied to ../Seqs/$1.seq"
+#  echo "Choice 4) allows you to enter the names of the fields in order."
+#  echo "Choice 5) reorders the columns(fields) for subsequent use."
+#  echo
+  echo "   1)  show ../../Pdf2Jpg/Pdf file"
+  echo "   2)  make template file ../Nos/"$1".num"
+  echo "   3) Edit ../Nos/"$1".num"
+  echo "      Enter a short name for each entry."
+  echo "      Enter type as either tlin for text,"
+  echo "      or dlin for numbers."
+#  echo "   3)  Copy ../Nos/"$1".num to ../Seqs/"$1".seq"
+#  echo "   4)  Edit ../Seqs/"$1".seq"
+  echo "   4)  Change order of fields ../Nos/"$1".num > ../Text/"$1".txt"
+  echo "   5)  Check that ../Text/"$1".txt is correct."
+  echo "   6)  Copy ../Text/"$1".txt ../../5menu/Text/"
+  echo "   7)  Remove first line from ../Text/"$1".txt to ../Text/"$1".text"
+  echo "   8)  Edit ../Text/"$1".text to check result"
+  echo "   9)  Copy ../Text/"$1".text to ../../3layout/Text/"
+  echo "  10)  Copy ../Text/"$1".text to ../../4calc/Text/"
+
+echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+
+	1)  Pdfshow $1;;
+	2)  makeNoSequence $1;;
+	3)  editNos $1;;
+#	3)  cpNos2Seqs $1;;
+#	4)  editSeq $1;;
+	4)  changeOrder $1;;
+	5)  editTxt $1;;
+	6)  copytxt5 $1;;
+	7)  remove1stLine $1;;
+	8)  editText $1;;
+        9)  copyText3 $1;;
+       10)  copyText4 $1;;	
+	q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}
+
+create_new_copy() {
+    while true;
+    do
+	clear
+	echo "These are the copies of $1 that currently exist:"
+        check_copy_existence $1 01
+	check_copy_existence $1 02
+	check_copy_existence $1 03
+	check_copy_existence $1 04
+	check_copy_existence $1 05
+	check_copy_existence $1 06
+	check_copy_existence $1 07
+	check_copy_existence $1 08
+	check_copy_existence $1 09
+	check_copy_existence $1 10
+	check_copy_existence $1 11
+	check_copy_existence $1 12
+	check_copy_existence $1 13
+	check_copy_existence $1 14
+	check_copy_existence $1 15
+	check_copy_existence $1 16
+	check_copy_existence $1 17
+        check_copy_existence $1 18
+	check_copy_existence $1 19
+	check_copy_existence $1 20
+        echo "Enter the number of the copy you wish to create."
+        echo "This is usually the next number in the series."
+	echo "If no copies exist, enter 01."
+
+        read copy_number
+ 
+	case $copy_number in
+
+          01) set_menu_choices $1 $copy_number;;
+          02) $( ./makeFiles $1 $copy_number );; 
+#         03) set_menu_choices $1 Copy$copy_number;;
+#         04) set_menu_choices $1 Copy$copy_number;;
+#         05) set_menu_choices $1 Copy$copy_number;;
+#         06) set_menu_choices $1 Copy$copy_number;;
+#         07) set_menu_choices $1 Copy$copy_number;;
+#         08) set_menu_choices $1 Copy$copy_number;;
+#         09) set_menu_choices $1 Copy$copy_number;;
+#         10) set_menu_choices $1 Copy$copy_number;;
+#         11) set_menu_choices $1 Copy$copy_number;;
+#         12) set_menu_choices $1 Copy$copy_number;;
+#         13) set_menu_choices $1 Copy$copy_number;;
+#         14) set_menu_choices $1 Copy$copy_number;;
+#         15) set_menu_choices $1 Copy$copy_number;;
+#         16) set_menu_choices $1 Copy$copy_number;;
+#         17) set_menu_choices $1 Copy$copy_number;;
+#         18) set_menu_choices $1 Copy$copy_number;;
+#         19) set_menu_choices $1 Copy$copy_number;;
+#         20) set_menu_choices $1 Copy$copy_number;;
+	 
+         q) break;;
+	 
+	esac
+	done
+
+return
+}    
+
+check_copy_existence(){
+    for file in ../../Calc/Data/$1_Copy$2*
+    do
+	if [ -e $file ]
+	then
+	    echo "     $2) Copy$2"
+	    break;
+	fi
+    done	
+    }
+
+set_copy_number() {
+    while true;
+    do
+	clear
+	echo "Choose the copy with which you wish to work:"
+        check_copy_existence $1 01
+	check_copy_existence $1 02
+	check_copy_existence $1 03
+	check_copy_existence $1 04
+	check_copy_existence $1 05
+	check_copy_existence $1 06
+	check_copy_existence $1 07
+	check_copy_existence $1 08
+	check_copy_existence $1 09
+	check_copy_existence $1 10
+	check_copy_existence $1 11
+	check_copy_existence $1 12
+	check_copy_existence $1 13
+	check_copy_existence $1 14
+	check_copy_existence $1 15
+	check_copy_existence $1 16
+	check_copy_existence $1 17
+        check_copy_existence $1 18
+	check_copy_existence $1 19
+	check_copy_existence $1 20
+        echo "    new) Create a new copy of this form."
+        echo "      q) Return to previous menu."
+	
+	echo "  Enter your choice:"
+        read copy_number
+ 
+	case $copy_number in
+        new) create_new_copy $1;;
+         01) set_menu_choices $1 $copy_number;;
+         02) set_menu_choices $1 $copy_number;;     
+         03) set_menu_choices $1 $copy_number;;
+         04) set_menu_choices $1 $copy_number;;
+         05) set_menu_choices $1 $copy_number;;
+         06) set_menu_choices $1 $copy_number;;
+         07) set_menu_choices $1 $copy_number;;
+         08) set_menu_choices $1 $copy_number;;
+         09) set_menu_choices $1 $copy_number;;
+         10) set_menu_choices $1 $copy_number;;
+         11) set_menu_choices $1 $copy_number;;
+         12) set_menu_choices $1 $copy_number;;
+         13) set_menu_choices $1 $copy_number;;
+         14) set_menu_choices $1 $copy_number;;
+         15) set_menu_choices $1 $copy_number;;
+         16) set_menu_choices $1 $copy_number;;
+         17) set_menu_choices $1 $copy_number;;
+         18) set_menu_choices $1 $copy_number;;
+         19) set_menu_choices $1 $copy_number;;
+         20) set_menu_choices $1 $copy_number;;
+	 
+         q) break;;
+	 
+	esac
+	done
+
+}    
+
+
+
+set_schedule_choice() {
+while true;
+do
+  clear
+  echo "Schedules :"
+  echo
+  echo "       1) Schedule 1"
+  echo "       2) Schedule 2"
+  echo "       3) Schedule 3"
+  echo "       4) Schedule 4"
+  echo "       5) Schedule 5"  
+  echo "       6) Schedule 6"
+  echo "       a) Schedule A"
+  echo "       b) Schedule B"
+  echo "       c) Schedule C"
+  echo "       d) Schedule D"
+  echo "       e) Schedule E"
+  echo "       f) Schedule F"
+  echo "       h) Schedule H."
+  echo "      se) Schedule SE."
+  echo "   1041k) Form1041SchedK1"
+  echo "   1065k) Form1065SchedK1"
+  echo "  1065Bk) Form1065BSchedK1" 
+  echo "  1120Sk) Form1120SSchedK1" 
+  echo "   8865k) Form8865SchedK1"
+
+  
+  echo "       q) Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read sched_choice
+
+    case $sched_choice in
+          1) set_menu_choices Sched1		01;;
+          2) set_menu_choices Sched2		01;;
+          3) set_menu_choices Sched3		01;;
+          4) set_menu_choices Sched4		01;;
+          5) set_menu_choices Sched5		01;;
+	  6) set_menu_choices Sched6            01;;
+          a) set_menu_choices SchedA		01;;
+          b) set_menu_choices SchedB		01;;
+          c) set_menu_choices SchedC		01;;
+          d) set_menu_choices SchedD		01;;
+	  e) set_menu_choices SchedE            01;;
+	  f) set_menu_choices SchedF            01;;
+          h) set_menu_choices SchedH		01;;
+         se) set_menu_choices SchedSE		01;;
+      1041k) set_menu_choices Form1041SchedK1	01;;
+      1065k) set_menu_choices Form1065SchedK1	01;;
+     1065Bk) set_menu_choices Form1065BSchedK1	01;;
+     1120Sk) set_menu_choices Form1120SSchedK1	01;; 
+      8865k) set_menu_choices Form8865SchedK1	01;;
+
+
+          q) break;;	
+    esac
+done
+}
+
+
+set_form_choice() {
+while true;
+do
+  clear
+  echo "Forms :"
+  echo
+  echo "   1040)  U.S. Individual Income Tax Return" 
+  echo "   1116)  Foreign Tax Credit"
+  echo "   2106)  Employee Business Expenses"          
+  echo "   2439)  Notice to Shareholder of Long-Term Undistributed Capital Gains"
+  echo "   2441)  Child and Dependent Care Expenses"
+  echo "   3800)  General Business Credit"
+  echo "   3903)  Moving Expenses"
+  echo "   4137)  Social Security and Medicare Tax on Unreported Tip Income"
+  echo "   4562)  Depreciation and Amortization"
+  echo "   4797)  Sales of Business Property"
+  echo "   4868)  Application for Automatic Extension of Time to file"
+  echo "   4952)  "
+  echo "   4972)  Tax on Lump-Sum Distributions"
+  echo "   5329)  Additional Taxes on Qualified Plans (inclucing IRAs) 
+                  and Other Tax Favored Accounts"
+  echo "   5405)  Repayment of First-Time Homebuyer Credit"
+  echo "   5695)  Residential Energy Credits"
+  echo "   6251)  Alternative Minimum Tax--Individuals"
+  echo "   6252)  Installment Sale Income"
+  echo "   8615)  Tax for Cerain Children Who Have Unearned Income"
+  echo "   8801)  Credit for Prior Year Minimum Tax--Individuals, Estates, and Trusts"
+  echo "   8812)  Child Tax Credit"
+  echo "   8814)  Parents' Election to Report Child's Interest and Dividends"
+  echo "   8815)  Exclusion of Interest from Series EE and I U.S. Savings Bonds"
+  echo "   8829)  Expenses for Business Use of Your Home"
+  echo "   8863)  Education Credits (American Opportunity and Lifetime Learning Credits)"
+  echo "   8880)  Credit for Qualified Retirement Savings Contributions"
+  echo "   8885)  Health Coverage Tax Credit"
+  echo "   8888)  Allocation of Refund (Including Savings Bond Purchases)"
+  echo "   8889)  Health Savings Accounts (HSAs)"  
+  echo "   8903)  Domestic PRoduction Activities Deduction"
+  echo "   8917)  Tuition and Fees Deduction"
+  echo "   8919)  Uncollected Social Security and Medicare Taxes on Wages"
+  echo
+  echo "   8949a) Sales and Other Dispositons of Capital Assets,
+                  basis reported on Form 1099-B."
+  echo "   8949b) Sales and Other Dispositons of Capital Assets, 
+                  basis not reported on Form 1099-B."
+  echo "   8949c) Sales and Other Dispositons of Capital Assets, 
+                  not on Form 1099-B."
+  echo
+  echo "   8959)  Additional Medicare Tax"
+  echo "   8960)  Net Investment Income Tax--Individuals, Estates, and Trusts"
+  echo "   8962)  Premium Tax Credit (PTC)"
+  echo
+  echo "   1099b)    Proceeds from Broker and Barter Exchange Transactions"
+  echo "   1099div)  Dividends and Distributions"
+  echo "   1099int)  Interest Income"
+  echo "   1099r)    Distributions from Pensions, Annuities, Retirement etc."
+  echo "   1099g)    Certain Government Payments"
+  echo  
+  echo "   w2)    Wage and Tax Statement"
+  echo
+  echo "   bkg) background"
+  echo
+  echo "   q)     Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read form_choice
+  
+    case $form_choice in
+
+      1040)        set_menu_choices Form1040;;
+      1116)        set_menu_choices Form1116;;
+      2106)        set_menu_choices Form2106;;
+      2439)        set_menu_choices Form2439;;
+      2441)        set_menu_choices Form2441;;
+      3800)        set_menu_choices Form3800;;
+      3903)        set_menu_choices Form3903;;
+      4137)        set_menu_choices Form4137;;
+      4562)        set_menu_choices Form4562;;
+      4868)        set_menu_choices Form4868;;
+      4797)        set_menu_choices Form4797;;
+      4952)        set_menu_choices Form4952;;
+      4972)        set_menu_choices Form4972;;
+      5329)        set_menu_choices Form5329;;
+      5405)        set_menu_choices Form5405;;
+      5695)        set_menu_choices Form5695;;
+      6251)        set_menu_choices Form6251;;
+      6252)        set_menu_choices Form6252;;
+      8615)        set_menu_choices Form8615;;
+      8801)        set_menu_choices Form8801;;
+      8812)        set_menu_choices Form8812;;
+      8814)        set_menu_choices Form8814;;
+      8815)        set_menu_choices Form8815;;
+      8829)        set_menu_choices Form8829;;
+      8863)        set_menu_choices Form8863;;
+      8880)        set_menu_choices Form8880;;
+      8885)        set_menu_choices Form8885;;
+      8888)        set_menu_choices Form8888;;
+      8889)        set_menu_choices Form8889;;
+      8903)        set_menu_choices Form8903;;
+      8917)        set_menu_choices Form8917;;
+      8919)        set_menu_choices Form8919;;
+      8949a)       set_menu_choices Form8949a;;
+      8949b)       set_menu_choices Form8949b;;
+      8949c)       set_menu_choices Form8949c;;
+      8959)        set_menu_choices Form8959;;
+      8960)        set_menu_choices Form8960;;
+      8962)        set_menu_choices Form8962;;
+      1099b)       set_menu_choices Form1099b;;
+      1099div)     set_menu_choices Form1099div;;
+      1099int)     set_menu_choices Form1099int;;	
+      1099r)       set_menu_choices Form1099r;;	
+      1099g)       set_menu_choices Form1099g;;
+      w2)          set_menu_choices W2-CopyA;;	
+      bkg)         set_menu_choices Bkg 01;;      
+      q)         break;;
+    esac
+done
+
+}
+
+set_wkst_choice() {
+while true;
+do
+  clear
+  echo "Worksheets :"
+  echo
+  echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44"
+  echo "    ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
+  echo "    qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44"
+  echo "    schd)  Schedule D worksheet"
+  echo "   sales)  State and Local Sales Tax Worksheet"
+  echo "     ssa)  Social Security benefit Statement"
+  echo "     sst)  Social Security Tax Worksheet"
+  echo "     wks)  Worksheet for tax penalty"
+  echo "     cap)  Capital Loss Carryover Worksheet"
+  echo "    rg28)  28% Rate Gain Worksheet"
+  echo "    1250)  Unrecaptured Section 1250 Gain Worksheet"
+  
+  echo "   q)     Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read wkst_choice
+
+    case $wkst_choice in
+
+      fei)   set_menu_choices FEITaxWkst        01;;
+      ln10)  set_menu_choices WSln10            01;;
+      qdcg)  set_menu_choices QDCGTaxWkst       01;;
+      schd)  set_menu_choices SchedDTaxWkst     01;;
+      sales) set_menu_choices WSSchASalesTax    01;;
+      ssa)   set_menu_choices SSA_1099          01;;
+      sst)   set_menu_choices SST               01;;
+      wks)   set_menu_choices Wks               01;;
+      cap)   set_menu_choices CapLossCarryWks   01;;
+      rg28)  set_menu_choices RG28Wks           01;;
+      1250)  set_menu_choices UG1250            01;;
+      q)     break;;
+    esac
+done
+ 
+}
+
+
+set_menu_choice() {
+while true;
+  do     
+  clear
+  echo
+  echo "Use this menu to choose the Form, Schedule, or Worksheet you wish to work on."
+  echo
+  echo "   f)  Show choice of Forms."
+  echo "   s)  Show choice of Schedules."
+  echo "   w)  Show choice of Worksheets."
+  echo 
+  echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+
+      f)  set_form_choice;;	
+      s)  set_schedule_choice;;
+      w)  set_wkst_choice;;	
+
+      q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}
+
+while true;
+do
+    set_menu_choice	
+done
+    
+#Tidy up and leave
+
+echo "Finished"
+
+exit 0
+

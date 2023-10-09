@@ -1,0 +1,44 @@
+
+set_schedule_choice() {
+while true;
+do
+  clear
+  echo "Schedules :"
+  echo
+  echo "       a) Schedule A"
+  echo "       b) Schedule B"
+#  echo "      ca) Schedule Ca"
+  echo "       c) Schedule C"
+  echo "       d) Schedule D"  
+#  echo "       h) Show Schedule H."
+#  echo "   1041k) Show Form1041SchedK1"
+#  echo "   1065k) Show Form1065SchedK1"
+#  echo "  1065Bk) Show Form1065BSchedK1" 
+#  echo "  1120Sk) Show Form1120SSchedK1" 
+#  echo "   8865k) Show Form8865SchedK1"
+#  echo "      se) Show Schedule SE."
+  
+  echo "       q) Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read sched_choice
+
+    case $sched_choice in
+          a) set_copy_number  SchedA		;;
+          b) set_copy_number  SchedB		;;
+         ca) set_copy_number  SchedCa		;;
+          c) set_copy_number  SchedC		;;
+          d) set_copy_number  SchedD		;;
+          h) set_copy_number  SchedH		;;
+      1041k) set_copy_number  Form1041SchedK1	;;
+      1065k) set_copy_number  Form1065SchedK1	;;
+     1065Bk) set_copy_number  Form1065BSchedK1	;;
+     1120Sk) set_copy_number  Form1120SSchedK1	;; 
+      8865k) set_copy_number  Form8865SchedK1	;;
+         se) set_copy_number  SchedSE		;;
+
+          q) break;;	
+    esac
+done
+}
+

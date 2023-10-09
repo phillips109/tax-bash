@@ -1,0 +1,32 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!0.50	!2.02  !left         	!
+a     	!dPull 	!TFNI  	!      	!      	!1.46         	!Robert E
+Col   	!col   	!b     	!2.04  	!3.42  	!left         	!
+b     	!dPull 	!TLN   	!      	!      	!1.46         	!Lee
+Col   	!col   	!c     	!3.50  	!4.72  	!left         	!
+c     	!dPull 	!SFNI  	!      	!      	!1.46         	!Mary S
+Col   	!col   	!d     	!4.80  	!6.36  	!left         	!
+d     	!dPull 	!SLN   	!      	!      	!1.46         	!Lee
+Col   	!col   	!e     	!6.48  	!6.86  	!center       	!
+e     	!dPull 	!TSSNoF	!      	!      	!1.46         	!123
+Col   	!col   	!f     	!7.01  	!7.32  	!center       	!
+f     	!dPull 	!TSSNoM	!      	!      	!1.46         	!45
+Col   	!col   	!g     	!7.47  	!7.96  	!center       	!
+g     	!dPull 	!TSSNoL	!      	!      	!1.46         	!6789
+Col   	!col   	!h     	!7.04  	!7.94  	!right         	!
+h     	!dlin  	!01    	!      	!      	!1.96         	!100
+h     	!dlin  	!02    	!      	!      	!2.13         	!200
+h     	!addit 	!03    	!      	!      	!2.30         	!
+h     	!subtr 	!04c   	!      	!      	!3.29         	!
+h     	!subtr 	!04f   	!      	!      	!3.96         	!
+h     	!dlin  	!04g   	!      	!      	!4.14         	!400
+h     	!addit 	!04h   	!      	!      	!4.30         	!
+h     	!dlin  	!05    	!      	!      	!4.47         	!500
+h     	!subt0 	!06    	!      	!      	!4.63         	!
+h     	!subt0 	!07    	!      	!      	!5.30         	!
+h     	!smOf  	!08    	!      	!      	!5.47         	!
+Col   	!col   	!i     	!5.74  	!6.64  	!right         	!
+i     	!dlin  	!04a   	!      	!      	!2.97         	!401
+i     	!dlin  	!04b   	!      	!      	!3.13         	!402
+i     	!dlin  	!04d   	!      	!      	!3.47         	!404
+i     	!smOf  	!04e   	!      	!      	!3.80         	!405

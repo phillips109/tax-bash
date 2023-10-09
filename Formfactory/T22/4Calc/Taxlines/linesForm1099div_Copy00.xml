@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:vendor="http://www.gnucash.org/XML/vendor" xmlns:entry="http://www.gnucash.org/XML/entry" xmlns:invoice="http://www.gnucash.org/XML/invoice" xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox" xmlns:bt-days="http://www.gnucash.org/XML/bt-days" xmlns:billterm="http://www.gnucash.org/XML/billterm" xmlns:order="http://www.gnucash.org/XML/order" xmlns:employee="http://www.gnucash.org/XML/employee" xmlns:tte="http://www.gnucash.org/XML/tte" xmlns:taxtable="http://www.gnucash.org/XML/taxtable" xmlns:owner="http://www.gnucash.org/XML/owner" xmlns:addr="http://www.gnucash.org/XML/addr" xmlns:job="http://www.gnucash.org/XML/job" xmlns:cust="http://www.gnucash.org/XML/cust" xmlns:lot="http://www.gnucash.org/XML/lot" xmlns:recurrence="http://www.gnucash.org/XML/recurrence" xmlns:bgt="http://www.gnucash.org/XML/bgt" xmlns:fs="http://www.gnucash.org/XML/fs" xmlns:ts="http://www.gnucash.org/XML/ts" xmlns:trn="http://www.gnucash.org/XML/trn" xmlns:sx="http://www.gnucash.org/XML/sx" xmlns:split="http://www.gnucash.org/XML/split" xmlns:slot="http://www.gnucash.org/XML/slot" xmlns:price="http://www.gnucash.org/XML/price" xmlns:cmdty="http://www.gnucash.org/XML/cmdty" xmlns:cd="http://www.gnucash.org/XML/cd" xmlns:book="http://www.gnucash.org/XML/book" xmlns:act="http://www.gnucash.org/XML/act" xmlns:gnc="http://www.gnucash.org/XML/gnc">
+<taxlines>
+<taxline color="red">
+<linename>Form1099div-Copy00-line01a</linename>
+<override>1001</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line01b</linename>
+<override>1002</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line02a</linename>
+<override>2001</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line02b</linename>
+<override>2002</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line02c</linename>
+<override>2003</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line02d</linename>
+<override>2004</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line02e</linename>
+<override>2005</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line02f</linename>
+<override>2006</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line03</linename>
+<override>3000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line04</linename>
+<override>4000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line05</linename>
+<override>5000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line06</linename>
+<override>6000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line07</linename>
+<override>7000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line09</linename>
+<override>9000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line10</linename>
+<override>10000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line12</linename>
+<override>12000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line13</linename>
+<override>13000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line16a</linename>
+<override>1601</override>
+</taxline>
+<taxline color="red">
+<linename>Form1099div-Copy00-line16b</linename>
+<override>1602</override>
+</taxline>
+</taxlines>
+</IRSForms>

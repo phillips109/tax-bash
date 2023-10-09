@@ -1,0 +1,12 @@
+
+listAccounts() {
+#This function displays an aphabetically sorted list of all your accounts in Firefox. 
+
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/totl.xml -xsl ../Xsl/listAccounts.xsl -out ../Work/listAccounts.xml
+
+
+#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
+firefox -new-tab ../Work/listAccounts.xml > /dev/null 2>&1 &
+#qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
+return
+}

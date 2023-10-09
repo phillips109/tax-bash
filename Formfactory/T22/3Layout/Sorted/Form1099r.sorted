@@ -1,0 +1,67 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!0.77  	!4.01  	!left         	!
+a     	!tlin  	!pname1	!      	!      	!0.87         	!General Steel Company
+a     	!tlin  	!pname2	!      	!      	!1.07         	!Industrial Division
+a     	!tlin  	!paddr1	!      	!      	!1.34         	!300 Grant Street
+a     	!tlin  	!paddr2	!      	!      	!1.49         	!Suite 200
+a     	!tlin  	!pcity 	!      	!      	!1.60         	!Pittsburgh
+a	!tlin	!ptel	!	!	!1.80		!412-784-3957
+a     	!tlin  	!pTIN  	!      	!      	!2.46         	!24-67392
+a     	!tlin  	!rname1	!      	!      	!2.83         	!James Jones
+a     	!tlin  	!rname2	!      	!      	!3.08         	!Attorney at Law
+a     	!tlin  	!raddr1	!      	!      	!3.58         	!25 Maple Avenue
+a     	!tlin  	!rcity 	!      	!      	!3.97         	!Pittsburgh
+a     	!tlin  	!acctNo	!      	!      	!4.95         	!7562943
+Col   	!col   	!b     	!2.42  	!2.66   !center   	!         	!
+b     	!tlin  	!pST   	!      	!      	!1.60         	!PA
+b     	!tlin  	!rST   	!      	!      	!3.97         	!PA
+Col   	!col   	!c     	!2.86  	!4.05  	!left         	!
+c     	!tlin  	!pzip  	!      	!      	!1.60         	!15213
+c     	!tlin  	!rzip  	!      	!      	!3.97         	!15218
+Col   	!col   	!d     	!2.44  	!4.00  	!left         	!
+d     	!tlin  	!rTIN  	!      	!      	!2.46         	!43-79421
+Col   	!col   	!e     	!4.25  	!3.96  	!right         	!
+e     	!dlin  	!01    	!      	!      	!0.96         	!10000
+e     	!dlin  	!02a   	!      	!      	!1.46         	!2000
+e     	!dlin  	!03    	!      	!      	!2.46         	!300
+e     	!dlin  	!05    	!      	!      	!3.12         	!500
+e     	!tlin  	!07    	!      	!      	!3.62         	!07
+e     	!tlin  	!09a   	!      	!      	!3.96         	!50
+e     	!dlin  	!14a   	!      	!      	!4.30         	!1401
+e     	!dlin  	!14b   	!      	!      	!4.48         	!1402
+e     	!dlin  	!17a   	!      	!      	!4.80         	!1701
+e     	!dlin  	!17b   	!      	!      	!4.96         	!1702
+Col   	!col   	!f     	!5.64  	!3.62  	!right         	!
+f     	!dlin  	!04    	!      	!      	!2.46         	!4000
+f     	!dlin  	!06    	!      	!      	!3.12         	!600
+f     	!dlin  	!08    	!      	!      	!3.62         	!800
+f     	!dlin  	!09b   	!      	!      	!3.96         	!901
+f     	!tlin  	!15a   	!      	!      	!4.30         	!569823
+f     	!tlin  	!15b   	!      	!      	!4.48         	!458291
+f     	!tlin  	!18a   	!      	!      	!4.80         	!Edgewood
+f     	!tlin  	!18b   	!      	!      	!4.96         	!Edgewood
+Col   	!col   	!g     	!7.07 	!7.88  	!right         	!
+g     	!dlin  	!16a   	!      	!      	!4.30         	!1601
+g     	!dlin  	!16b   	!      	!      	!4.48         	!1602
+g     	!dlin  	!19a   	!      	!      	!4.80         	!1901
+g     	!dlin  	!19b   	!      	!      	!4.96         	!1902
+Col   	!col   	!h     	!5.21  	!5.31  	!center        	!
+h     	!tlin  	!02b1  	!      	!      	!1.74         	!x
+Col   	!col   	!i     	!6.41  	!6.51  	!center        	!
+i     	!tlin  	!02b2  	!      	!      	!1.74         	!x
+Col   	!col   	!j     	!5.24  	!5.34  	!center        	!
+j     	!dlin  	!07a   	!      	!      	!3.62         	!x
+Col   	!col   	!k     	!6.34  	!6.76  	!right         	!
+k     	!tlin  	!08pct 	!      	!      	!3.62         	!15
+Col   	!col   	!l     	!0.86  	!2.24  	!right         	!
+l     	!dlin  	!10    	!      	!      	!4.48         	!100
+Col   	!col   	!m     	!2.34  	!3.26  	!right         	!
+m     	!tlin  	!11    	!      	!      	!4.48         	!1999
+Col   	!col   	!n     	!3.65  	!3.75  	!center        	!
+n     	!tlin  	!12Ck  	!      	!      	!4.41         	!x
+Col   	!col   	!o     	!3.32  	!4.04  	!center        	!
+o     	!dlin  	!13    	!      	!      	!4.95         	!6/2/22
+Col   	!col   	!p     	!2.63  	!2.73  	!center        	!
+p     	!tlin  	!void  	!      	!      	!0.45         	!x
+Col   	!col   	!q     	!3.44  	!3.54  	!center        	!
+q     	!tlin  	!corr  	!      	!      	!0.45         	!x

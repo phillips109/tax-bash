@@ -1,0 +1,62 @@
+<Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Bkg-Copy00">
+
+<copy00lineApart color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineApart"/>
+    </copy00lineApart>
+  
+
+<copy00lineFS color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineFS"/>
+    </copy00lineFS>
+  
+
+<copy00lineSFNI color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineSFNI"/>
+    </copy00lineSFNI>
+  
+
+<copy00lineSLN color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineSLN"/>
+    </copy00lineSLN>
+  
+
+<copy00lineSSSNoF color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineSSSNoF"/>
+    </copy00lineSSSNoF>
+  
+
+<copy00lineSSSNoL color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineSSSNoL"/>
+    </copy00lineSSSNoL>
+  
+
+<copy00lineSSSNoM color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineSSSNoM"/>
+    </copy00lineSSSNoM>
+  
+
+<copy00lineTFNI color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineTFNI"/>
+    </copy00lineTFNI>
+  
+
+<copy00lineTLN color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineTLN"/>
+    </copy00lineTLN>
+  
+
+<copy00lineTSSNoF color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineTSSNoF"/>
+    </copy00lineTSSNoF>
+  
+
+<copy00lineTSSNoL color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineTSSNoL"/>
+    </copy00lineTSSNoL>
+  
+
+<copy00lineTSSNoM color="blue">
+    <xsl:value-of select="$Bkg-Copy00-lineTSSNoM"/>
+    </copy00lineTSSNoM>
+  
+</Form>

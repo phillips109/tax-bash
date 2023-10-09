@@ -1,0 +1,121 @@
+set_Form1099r_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form1099r in which to enter or edit data:"
+echo
+echo "pname1)    Enter payor's name line1           "
+echo "pname2)    Enter payor's name line2                  "
+echo "paddr1)    Enter payor's address line1        "
+echo "paddr2)    Enter payor's address line2                            "
+echo "pcity )    Enter payor's city                              "
+echo "pST   )    Enter payor's state as ST                              "
+echo "pzip  )    Enter payor's zip                  "
+echo "pCntry)    Enter payor's country              "
+echo "ptel  )	 Enter payor's telephone number"
+echo "pTIN  )    Enter papor's TIN                           "
+echo "rTIN  )    Enter recipient's TIN                           "
+echo "rname1)    Enter recipient's name line1       "
+echo "rname2)    Enter recipient's name line2       "
+echo "raddr1)    Enter recipient's address line1                        "
+echo "raddr2)    Enter recipient's address line2                       "
+echo "rcity )    Enter recipient's city	                              "
+echo "rST   )    Enter recipient's state as ST                          "
+echo "rzip  )    Enter recipient's zip              "
+echo "rCntry)    Enter recipient's country          "
+echo "acctNo)    Enter account number 	                              "
+echo "01    )    Enter Gross distribution                             "
+echo "02a   )    Enter taxable amount                        "
+echo "02b1  )    Enter x if taxable amount not determined"
+echo "02b2  )    Enter x if total distribution                        "
+echo "03    )    Enter capital gain included in box 2a              "
+echo "04    )    Enter Federal lincome tax withheld                  "
+echo "05    )    Enter employee contributions/Designated Roth contributions or insurance premiums                     "
+echo "06    )    Enter net unrealized appreciation in employer's securities	                              "
+echo "07    )    Enter distibution code(s)                            "
+echo "07a   )    Enter x if IRA/SEP/SIMPLE          "
+echo "08    )    Enter other 	                              "
+echo "08pct )    Enter percent without the "%"      "
+echo "09a   )    Enter percent of total distribution without the "%""
+echo "09b   )    Enter total employee contributions                    "
+echo "10    )    Enter amount allocable toIRR within 5 years           "
+echo "11    )    Enter the first year of designated Roth contribution  "
+echo "12Ck  )    Enter x if FATCA filing required                      "
+echo "13    )    Enter data of payment                             "
+echo "14a   )    Enter tax withheld by first state                      "
+echo "15a   )    Enter first state/Payer's state number                "
+echo "16a   )    Enter distribution of first state        "
+echo "14b   )    Enter tax withheld by second state                     "
+echo "15b   )    Enter second state/Payer's state number               "
+echo "16b   )    Enter distribution of second state                     "
+echo "17a   )    Enter tax withheld by first locality                   "
+echo "18a   )    Enter name of first locality             "
+echo "19a   )    Enter distribution of first locality                  "
+echo "17b   )    Enter tax withheld by first locality"
+echo "18b   )    Enter name of second locality	      "
+echo "19b   )    Enter distribution of second locality"
+echo "void  )    Enter x if form is void            "
+echo "corr  )    Enter x if form has been corrected "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form1099r_line_data_choice
+echo
+     case $Form1099r_line_data_choice in
+pname1)    set_line_menu_text   $1 $2  linepname1                         14;;
+pname2)    set_line_menu_text   $1 $2  linepname2                         14;;
+paddr1)    set_line_menu_text   $1 $2  linepaddr1                         14;;
+paddr2)    set_line_menu_text   $1 $2  linepaddr2                         14;;
+pcity )    set_line_menu_text   $1 $2  linepcity                          14;;
+pST   )    set_line_menu_text   $1 $2  linepST                            14;;
+pzip  )    set_line_menu_text   $1 $2  linepzip                           14;;
+ptel  )    set_line_menu_text   $1 $2  lineptel				  14;;
+pCntry)    set_line_menu_text   $1 $2  linepCntry                         14;;
+pTIN  )    set_line_menu_text   $1 $2  linepTIN                           14;;
+rTIN  )    set_line_menu_text   $1 $2  linerTIN                           14;;
+rname1)    set_line_menu_text   $1 $2  linername1                         14;;
+rname2)    set_line_menu_text   $1 $2  linername2                         14;;
+raddr1)    set_line_menu_text   $1 $2  lineraddr1                         14;;
+raddr2)    set_line_menu_text   $1 $2  lineraddr2                         14;;
+rcity )    set_line_menu_text   $1 $2  linercity                          14;;
+rST   )    set_line_menu_text   $1 $2  linerST                            14;;
+rzip  )    set_line_menu_text   $1 $2  linerzip                           14;;
+rCntry)    set_line_menu_text   $1 $2  linerCntry                         14;;
+acctNo)    set_line_menu_text   $1 $2  lineacctNo                         14;;
+01    )    set_line_menu_number $1 $2  line01                             14;;
+02a   )    set_line_menu_number $1 $2  line02a                            14;;
+02b1  )    set_line_menu_text   $1 $2  line02b1                           14;;
+02b2  )    set_line_menu_text   $1 $2  line02b2                           14;;
+03    )    set_line_menu_number $1 $2  line03                             14;;
+04    )    set_line_menu_number $1 $2  line04                             14;;
+05    )    set_line_menu_number $1 $2  line05                             14;;
+06    )    set_line_menu_number $1 $2  line06                             14;;
+07    )    set_line_menu_text   $1 $2  line07                             14;;
+07a   )    set_line_menu_text   $1 $2  line07a                            14;;
+08    )    set_line_menu_number $1 $2  line08                             14;;
+08pct )    set_line_menu_text   $1 $2  line08pct                          14;;
+09a   )    set_line_menu_number $1 $2  line09a                            14;;
+09b   )    set_line_menu_number $1 $2  line09b                            14;;
+10    )    set_line_menu_number $1 $2  line10                             14;;
+11    )    set_line_menu_number $1 $2  line11                             14;;
+12Ck  )    set_line_menu_text   $1 $2  line12Ck                           14;;
+13    )    set_line_menu_number $1 $2  line13                             14;;
+14a   )    set_line_menu_number $1 $2  line14a                            14;;
+15a   )    set_line_menu_text   $1 $2  line15a                            14;;
+16a   )    set_line_menu_number $1 $2  line16a                            14;;
+14b   )    set_line_menu_number $1 $2  line14b                            14;;
+15b   )    set_line_menu_text   $1 $2  line15b                            14;;
+16b   )    set_line_menu_number $1 $2  line16b                            14;;
+17a   )    set_line_menu_number $1 $2  line17a                            14;;
+18a   )    set_line_menu_text   $1 $2  line18a                            14;;
+19a   )    set_line_menu_number $1 $2  line19a                            14;;
+17b   )    set_line_menu_number $1 $2  line17b                            14;;
+18b   )    set_line_menu_text   $1 $2  line18b                            14;;
+19b   )    set_line_menu_number $1 $2  line19b                            14;;
+void  )    set_line_menu_text   $1 $2  linevoid                           14;;
+corr  )    set_line_menu_text   $1 $2  linecorr                           14;;
+q     )    break;;                       
+esac
+done
+}

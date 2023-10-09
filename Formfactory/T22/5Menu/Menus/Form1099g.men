@@ -1,0 +1,87 @@
+set_Form1099g_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form1099g in which to enter or edit data:"
+echo
+echo "void  )    Enter x if form is void.           "
+echo "corr  )    Enter x if form has been corrected."
+echo "pname )    Enter payor's name.                              "
+echo "paddr1)    Enter payor's address 1.           "
+echo "paddr2)    Enter payor's address 2.           "
+echo "pcity )    Enter payor's city.                "
+echo "pST   )    Enter payor's state.               "
+echo "pzip  )    Enter payor's zip.                 "
+echo "ptel  )    Enter payor's telephone number.            "
+echo "pTIN  )    Enter payor's TIN.                 "
+echo "rTIN  )    Enter recipient's TIN.             "
+echo "rname )    Enter recipient's name.            "
+echo "raddr1)    Enter recipient's address 1.       "
+echo "raddr2)    Enter recipient's address 2.       "
+echo "rcity )    Enter recipient's city.            "
+echo "rST   )    Enter recipient's state.           "
+echo "rzip  )    Enter recipient's zip.             "
+echo "acctNo)    Enter account number.              "
+echo "TIN2  )    Is there a second TIN?             "
+echo "yr    )    Reporting year.                    "
+echo "01    )    Unemployment compensation.                             "
+echo "02    )    State or local income tax refunds, credits or offsets. "
+echo "03    )    Box 2 amount is for tax year.      "
+echo "04    )    Federal income tax withheld.       "
+echo "05    )    RTAA payments.                     "
+echo "06    )    Taxable grants.                    "
+echo "07    )    Agriculture payments.               "
+echo "08ck  )    Is box 2 trade or business income?         "
+echo "09    )    Market gain.                       "
+echo "10a1  )    Enter first state with income tax withheld."
+echo "10b1  )    Enter ID No. of first state.       "
+echo "11c1  )    Income tax withheld by first state.    "
+echo "10a2  )    Enter second state with income tax withheld.       "
+echo "10b2  )    Enter ID No. of second state.      "
+echo "11c2  )    Income tax withheld by second state."
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form1099g_line_data_choice
+echo
+     case $Form1099g_line_data_choice in
+void  )    set_line_menu_text   $1 $2  linevoid                           14;;
+corr  )    set_line_menu_text   $1 $2  linecorr                           14;;
+pname )    set_line_menu_text   $1 $2  linepname                          14;;
+paddr1)    set_line_menu_text   $1 $2  linepaddr1                         14;;
+paddr2)    set_line_menu_text   $1 $2  linepaddr2                         14;;
+pcity )    set_line_menu_text   $1 $2  linepcity                          14;;
+pST   )    set_line_menu_text   $1 $2  linepST                            14;;
+pzip  )    set_line_menu_text   $1 $2  linepzip                           14;;
+ptel  )    set_line_menu_text   $1 $2  lineptel                           14;;
+pTIN  )    set_line_menu_text   $1 $2  linepTIN                           14;;
+rTIN  )    set_line_menu_text   $1 $2  linerTIN                           14;;
+rname )    set_line_menu_text   $1 $2  linername                          14;;
+raddr1)    set_line_menu_text   $1 $2  lineraddr1                         14;;
+raddr2)    set_line_menu_text   $1 $2  lineraddr2                         14;;
+rcity )    set_line_menu_text   $1 $2  linercity                          14;;
+rST   )    set_line_menu_text   $1 $2  linerST                            14;;
+rzip  )    set_line_menu_text   $1 $2  linerzip                           14;;
+acctNo)    set_line_menu_text   $1 $2  lineacctNo                         14;;
+TIN2  )    set_line_menu_text   $1 $2  lineTIN2                           14;;
+yr    )    set_line_menu_text   $1 $2  lineyr                             14;;
+01    )    set_line_menu_number $1 $2  line01                             14;;
+02    )    set_line_menu_number $1 $2  line02                             14;;
+03    )    set_line_menu_number $1 $2  line03                             14;;
+04    )    set_line_menu_number $1 $2  line04                             14;;
+05    )    set_line_menu_number $1 $2  line05                             14;;
+06    )    set_line_menu_number $1 $2  line06                             14;;
+07    )    set_line_menu_number $1 $2  line07                             14;;
+08ck  )    set_line_menu_text   $1 $2  line08ck                           14;;
+09    )    set_line_menu_number $1 $2  line09                             14;;
+10a1  )    set_line_menu_text   $1 $2  line10a1                           14;;
+10b1  )    set_line_menu_text   $1 $2  line10b1                           14;;
+11c1  )    set_line_menu_number $1 $2  line11c1                           14;;
+10a2  )    set_line_menu_text   $1 $2  line10a2                           14;;
+10b2  )    set_line_menu_text   $1 $2  line10b2                           14;;
+11c2  )    set_line_menu_number $1 $2  line11c2                           14;;
+q     )    break;;                       
+esac
+done
+}

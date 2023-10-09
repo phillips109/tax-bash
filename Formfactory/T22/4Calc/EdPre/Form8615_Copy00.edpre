@@ -1,0 +1,72 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!08      	!#####0  	!line05        	!line06        	!line07        	!
+addit   	!12a     	!#####0  	!line05        	!line07        	!        	!
+addit   	!16      	!#####0  	!line13        	!line15        	!        	!
+
+xctext  	!2name   	!3format 	!4test				!5value1 	!6value2 	!
+ctext   	!HOH     	!#####0  	!$Form8615-Copy00-lineFS = 'HOH'!"x"        	!''		!
+ctext   	!MFJ     	!#####0  	!$Form8615-Copy00-lineFS = 'MFJ'!"x'        	!''     	!
+ctext   	!MFS     	!#####0  	!$Form8615-Copy00-lineFS = 'MFS'!"x"        	!''        	!
+ctext   	!QSS     	!#####0  	!$Form8615-Copy00-lineFS = 'QSS'!"x"        	!''        	!
+ctext   	!S       	!#####0  	!$Form8615-Copy00-lineFS = 'S	'!"x"        	!''!        	!
+
+xdiv    	!2name   	!3format 	!4dividend	!5divisor	!
+div     	!12b     	!#####0  	!line05        	!line12a       	!
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!01      	!#####0  	!              	!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!04      	!#####0  	!       	!Form1040c     	!00        	!line15
+dPull   	!06      	!#####0  	!        	!Form1040      	!00        	!line15
+dPull   	!07      	!#####0  	!        	!       	!        	!
+dPull   	!10      	!#####0  	!        	!Form1040      	!00        	!line16
+
+xmult   	!2name   	!3format 	!4multiplicand	!5multiplier	!
+mult    	!13      	!#####0  	!line11        	!line12b       	!
+
+xsmOf   	!2name   	!3format 	!4first  	!5second 	!
+smOf    	!05      	!#####0  	!line03        	!line04        	!
+
+xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
+subtr   	!03      	!#####0  	!line01        	!line02        	!
+subtr   	!11      	!#####0  	!line09        	!line10        	!
+subtr   	!14      	!#####0  	!line04        	!line05        	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!09ck    	!        	!x        	!
+tlin    	!10ck    	!        	!x        	!
+tlin    	!15ck    	!        	!x        	!
+tlin    	!17ck    	!        	!x        	!
+tlin    	!CFNMI   	!        	!Babe B        	!
+tlin    	!CLN     	!        	!Dough        	!
+tlin    	!CSSNoF  	!        	!123        	!
+tlin    	!CSSNoL  	!        	!45        	!
+tlin    	!CSSNoM  	!        	!6789        	!
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	!
+tPull   	!FS      	!        	!        	!Bkg        	!00        	!FS            	!
+tPull   	!TFNI    	!        	!        	!Bkg     	!00        	!TFNI          	!
+tPull   	!TLN     	!        	!        	!Bkg     	!00        	!TLN           	!
+tPull   	!TSSNoF  	!        	!        	!Bkg     	!00        	!TSSNoF        	!
+tPull   	!TSSNoL  	!        	!        	!Bkg     	!00        	!TSSNoL        	!
+tPull   	!TSSNoM  	!        	!        	!Bkg     	!00        	!TSSNoM        	!

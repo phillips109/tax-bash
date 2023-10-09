@@ -1,0 +1,8 @@
+
+#goes_to2() {
+#select file in $(sed -n '/<to>//;s/<\/to>//p $infile);
+#do
+#    set_line_menu_text $file
+#done
+#}
+

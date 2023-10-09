@@ -1,0 +1,179 @@
+seq	!name 	!type 	!menuEntry                     
+001	!FS    	!tlin  	!Filing Status
+001a	!Single	!tlin	!Single
+001b	!MFJ	!tlin	!Married Filing Jointly
+001c	!MFS	!tlin	!Married Filing Separately
+001d	!HOH	!tlin	!Head of Household
+001e	!QW	!tlin	!Qualifying Widow(er)
+002	!Qname 	!tlin  	!Spouse's or child's name                              
+003	!TFNI  	!tlin  	!Taxpayor first name, initial                           
+004	!TLN   	!tlin  	!Taxpayor's last name                              
+005	!TSSNoF	!tlin  	!First 3 digits of Taxpayor' SS No.                    
+006	!TSSNoM	!tlin  	!Fourth and Fifth digits of TP SS No.                   
+007	!TSSNoL	!tlin  	!Last four digits of Taxpayor's SS No.                  
+008	!SFNI 	!tlin  	!Spouse first name initial                              
+009	!SLN   	!tlin  	!Spouse last name                              
+010	!SSSNoF	!tlin  	!First 3 digits of Spouse's SS No.                      
+011	!SSSNoM	!tlin  	!Middle two digits of Spouse's SS No.                   
+012	!SSSNoL	!tlin  	!Last four digits of Spouse's SS No.                    
+013	!Addr  	!tlin  	!Address:Number and Street                              
+014	!AptNo 	!tlin  	!Appartment Number                              
+015	!City	!tlin	!City                              
+016	!ST	!tlin	!State                          
+017	!Zip	!tlin	!Zip Code                         
+018	!FC	!tlin	!Foreign Country                      
+019	!Provin	!tlin	!Foreign province/state/county               
+020	!FPCode	!tlin	!Foreign postal code 
+021	!TCamp	!tlin	!Taxpayor Presidential Election Campaign           
+022	!SCamp	!tlin	!Spouse Presidential Election Campaign
+023	!VCurrY	!tlin	!Virtual Currency Yes
+024	!VCurrN	!tlin	!Virtual Currency No             
+025	!TDep	!tlin	!Taxpayor a dependent?            
+026	!SDep	!tlin	!Spouse a dependent?         
+027	!SItem	!tlin	!Spouse itemizes of a sep return/dual-status alien      
+028	!Ta57	!tlin	!Taxpayor born before 2 Jan 1957
+029	!TBlind	!tlin	!Taxpayor blind?
+030	!Sa57	!tlin	!Spouse born before 2 Jan 1957
+031	!Sblind	!tlin	!Spoouse blind? 
+032	!D1FN	!tlin	!First Depepndent first name                
+033	!D1LN	!tlin	!First Dependent Last Name		   
+034	!D1SS	!tlin	!First Dependent SS No.   		   
+035	!D1Rel	!tlin   !First Dependent relatlionship     	   
+036	!D1CTC	!tlin	!First Dependent Child Tax Credit 	   
+037	!D!COD	!tlin	!First Dependent Credit for othe dependents
+038	!D2FN	!tlin	!Second Depepndent first name
+039	!D2LN	!tlin	!Second Dependent Last Name
+040	!D2SS	!tlin	!Second Dependent SS No.
+041	!D2Rel	!tlin   !Second Dependent relatlionship
+042	!D2CTC	!tlin	!Second Dependent Child Tax Credit
+043	!D2COD	!tlin	!Second Dependent Credit for othe dependents    
+044	!D3FN	!tlin	!Third Depepndent first name
+045	!D3LN	!tlin	!Third Dependent Last Name
+046	!D3SS	!tlin	!Third Dependent SS No.
+047	!D3Rel	!tlin   !Third Dependent relatlionship
+048	!D3CTC	!tlin	!Third Dependent Child Tax Credit
+049	!D3COD	!tlin	!Third Dependent Credit for othe dependents
+050	!D4FN	!tlin	!Fourth Depepndent first name
+051	!D4LN	!tlin	!Fourth Dependent Last Name
+052	!D4SS	!tlin	!Fourth Dependent SSS No.
+053	!D4Rel	!tlin   !Fourth Dependent relatlionship
+054	!D4CTC	!tlin	!Fourth Dependent Child Tax Credit
+055	!D4COD	!tlin	!Fourth Dependent Credit for othe dependents
+056	!01   	!dlin  	!Wages, salalries, tips etc                             
+057	!02a	!dlin	!Tax exempt interes    
+058	!02b	!dlin	!Taxable interest            
+059	!03a	!dlin	!Qualified dividends              
+060	!03b	!dlin	!Ordinaty dividends           
+061	!04a	!dlin	!IRA distributions             
+062	!04b	!dlin	!Taxable amount
+063	!05a	!dlin	!Pensions and annuities                
+064	!05b	!dlin	!Taxable amount        
+065	!06a	!dlin	!Social Security benefits                
+066	!06b	!dlin	!Taxable amount      
+067	!07	!dlin	!Capital gain or (loss)                
+068	!07ck	!tlin	!Schedule D not required        
+069	!08	!dlin	!Other income from Schedule 1 line 10       
+070	!09	!dlin	!Total Income
+071	!10	!dlin	!Adjustments to income from Schedule 1 line 26          
+072	!11	!dlin	!Adjusted gross income
+073	!12a	!dlin	!Standard deduction or itemized deductions          
+074	!12b	!dlin	!Charitable contributions for std deduction
+075	!12c	!dlin	!Sum of 12a and 12b
+076	!13	!dlin	!Qualified business income deduction (8995, 8995A)      
+077	!14	!dlin	!Sum of 12c and 13
+078	!15	!dlin	!Taxable Income             
+079	!16ck1	!dlin	!Tax from 8814                
+080	!16ck2	!dlin	!Tax from 4972                 
+081	!16ck3	!dlin	!Tax from Other                 
+082	!16	!dlin	!Tax                
+083	!17	!dlin	!Amount from Schedule 2 line3                           
+084	!18	!dlin	!Sum of 16 and 17  
+085	!19	!dlin	!Nonrefundable child tax credit or credit fr Sched8812
+086	!20	!dlin	!Amount from Sched2 line8
+087	!21	!dlin	!Sum of 19 and 20      
+088	!22	!dlin	!Line 18 minus 21              
+089	!23	!dlin	!Other taxes              
+090	!24	!dlin	!Sum of 22 and 23                   
+091	!25a	!dlin	!Federal Income tax withheld from Form W2              
+092	!25b	!dlin	!Federal Income tax withheld from Form 1099
+093	!25c	!dlin	!Federal Income tax withheld from other forms
+094	!25d	!dlin	!Sum of 25a,25b,25c
+095	!26	!dlin	!Estimated tax payments and amt applied fromm 2020      
+096	!27a	!dlin	!Earned Income Credit        
+097	!27b	!dlin	!Nontaxable combat pay election  
+098	!27c	!dlin	!Prior year (2019) earned income
+099	!28	!dlin	!Refundable child tax credit or 8812
+100	!29	!dlin	!American opportunity credit, form 8863 line8
+101	!30	!dlin	!Recovery rebate credit
+102	!31	!dlin	!Amount from Schedule3 line15        
+103	!32	!dlin	!Sum of 27a, 28, 29, 30, 31  
+104	!33	!dlin	!Sum of 25d, 26, 32
+105	!34	!dlin	!Line 33 minus line 24            
+106	!35ack	!tlin	!Form8888 attached?         
+107	!35a	!dlin	!Amount you want refunded to you             
+108	!35b1	!tlin	!First digit of routing number
+109	!35b2	!tlin	!Second digit of routing number
+110	!35b3	!tlin	!Third digit of routing number
+111	!35b4	!tlin	!Fourth digit of routing number
+112	!35b5	!tlin	!Fifth digit of routing number
+113	!35b6	!tlin	!Sixth digit of routing number
+114	!35b7	!tlin	!Seventh digit of routing number
+115	!35b8	!tlin	!Eighth digit of routing number
+116	!35b9	!tlin	!Ninth digit of routing number
+117	!35cCk1	!tlin	!Checking?                      
+118	!35cCk2	!tlin	!Savings?	                            
+119	!35d1	!tlin	!First digit of Account number                      
+120	!35d2	!tlin	!Second digit of Account number                      
+121	!35d3	!tlin	!Third digit of Account number                      
+122	!35d4	!tlin	!Fourth digit of Account number                      
+123	!35d5	!tlin	!Fifth digit of Account number                      
+124	!35d6	!tlin	!Sixth digit of Account number                      
+125	!35d7	!tlin	!Seventh digit of Account number                      
+126	!35d8	!tlin	!Eighth digit of Account number                      
+127	!35d9	!tlin	!Ninth digit of Account number                      
+128	!35d10	!tlin	!Tenth digit of Account number                      
+129	!35d11	!tlin	!Eleventh digit of Account number                      
+130	!35d12	!tlin	!Twelveth digit of Account number                      
+131	!35d13	!tlin	!Thirteenth digit of Account number
+132	!35d14	!tlin	!Fourteenth digit of Account number            
+133	!35d15	!tlin	!Fifteenth digit of Account number                      
+134	!35d16	!tlin	!Sixteenth digit of Account number                      
+135	!35d17	!tlin	!Seventeenth digit of Account number                   
+136	!36	!dlin	!Line 34 minus line 35a                           
+137	!37	!dlin	!Line 24 minus line 33        
+138	!38	!dlin	!Estimated tax penalty         
+139	!39Ck1	!tlin	!Another person yes         
+140	!39Ck2	!tlin	!Another person no            
+141	!40a	!tlin	!Designee name             
+142	!40b	!tlin	!Designee phone                 
+143	!40c1	!tlin	!First digit of PIN                
+144	!40c2	!tlin	!Second digit of PIN            
+145	!40c3	!tlin	!Third digit of PIN           
+146	!40c4	!tlin	!Fourth digit of PIN            
+147	!40c5	!tlin	!Fifth digit of PIN           
+148	!41a	!tlin	!Date of taxpayor signature            
+149	!41b	!t;om	!Taxpayor occupation          
+150	!41c1	!tlin	!First digit of taxpayor's protection PIN           
+151	!41c2	!tlin	!Second digit of taxpayor's protection PIN
+152	!41c3	!tlin	!Third digit of taxpayor's protection PIN
+153	!41c4	!tlin	!Fourth digit of taxpayor's protection PIN
+154	!41c5	!tlin	!Fifth digit of taxpayor's protection PIN           
+155	!41c6  	!tlin  	!Sixth digit of taxpayor's protection PIN        
+156	!42a	!tlin	!Date of spouse's signature
+157	!42b	!tlin	!Spouse's  occupation
+158	!42c1	!tlin	!First digit of spouse's protection PIN
+159	!42c2	!tlin	!Second digit of spouse's protection PIN
+160	!42c3	!tlin	!Third digit of spouse's protection PIN
+161	!42c4	!tlin	!Fourth digit of spouse's protection PIN
+162	!42c5	!tlin	!Fifth digit of spouse's protection PIN
+163	!42c6  	!tlin  	!Sixth digit of spouse's protection PIN
+164	!43a	!tlin	!Taxpayor phone number                             
+165	!43b	!tlin	!Taxpayor email address         
+166	!44a	!tlin	!Preparer's name        
+167	!44b	!tlin	!Date prepared               
+168	!44c	!tlin	!Preparer's TIN                 
+169	!44Ck	!tlin	!Self-employed?                
+170	!45a	!tlin	!Firm's name                
+171	!45b	!tlin	!Firm's phone number
+172	!46a	!tlin	!Firm's address
+173	!46b	!tlin	!Firm's EIN

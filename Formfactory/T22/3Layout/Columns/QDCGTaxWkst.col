@@ -1,0 +1,31 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+b      	!001   	!01      	!dlin  	!      	!      	!      
+c      	!002   	!02      	!dlin  	!      	!      	!      
+c      	!003   	!03      	!dlin  	!      	!      	!      
+c      	!004   	!04      	!dlin  	!      	!      	!      
+b      	!005   	!05      	!dlin  	!      	!      	!      
+b      	!006   	!06      	!dlin  	!      	!      	!      
+b      	!007   	!07      	!dlin  	!      	!      	!      
+b      	!008   	!08      	!dlin  	!      	!      	!      
+b      	!009   	!09      	!dlin  	!      	!      	!      
+b     	!010   	!10      	!dlin  	!      	!      	!      
+b     	!011   	!11      	!dlin  	!      	!      	!      
+b      	!012   	!12      	!dlin  	!      	!      	!      
+b      	!013   	!13      	!dlin  	!      	!      	!      
+b      	!014   	!14      	!dlin  	!      	!      	!      
+b      	!015   	!15      	!dlin  	!      	!      	!      
+b      	!016   	!16      	!dlin  	!      	!      	!      
+b      	!017   	!17      	!dlin  	!      	!      	!      
+a      	!018   	!18      	!dlin  	!      	!      	!      
+b      	!019   	!19      	!dlin  	!      	!      	!      
+b      	!020   	!20      	!dlin  	!      	!      	!      
+a      	!021   	!21      	!dlin  	!      	!      	!      
+a      	!022   	!22      	!dlin  	!      	!      	!      
+a      	!023   	!23      	!dlin  	!      	!      	!      
+a      	!024   	!24      	!dlin  	!      	!      	!      
+a      	!025   	!25      	!dlin  	!      	!      	!      
+d      	!026   	!03y     	!tlin  	!      	!      	!      
+d      	!027   	!03n     	!tlin  	!      	!      	!      

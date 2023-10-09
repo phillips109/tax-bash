@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00lineTFNI color='blue'>John Q</copy00lineTFNI>
+<copy00lineSFNI color='blue'>Jeanne E</copy00lineSFNI>
+<copy00lineTLN color='blue'>Taxpayor</copy00lineTLN>
+<copy00lineSLN color='blue'>Taxpayor</copy00lineSLN>
+<copy00lineTSSNoF color='blue'>123</copy00lineTSSNoF>
+<copy00lineTSSNoM color='blue'>45</copy00lineTSSNoM>
+<copy00lineTSSNoL color='blue'>6789</copy00lineTSSNoL>
+<copy00lineQOFy color='blue'>x</copy00lineQOFy>
+<copy00lineQOFn color='blue'>x</copy00lineQOFn>
+<copy00line01ah color='red'>1110</copy00line01ah>
+<copy00line01bh color='red'>1210</copy00line01bh>
+<copy00line02h color='red'>2010</copy00line02h>
+<copy00line03h color='red'>3000</copy00line03h>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line07 color='red'>7000</copy00line07>
+<copy00line08ah color='red'>8110</copy00line08ah>
+<copy00line08bh color='red'>8210</copy00line08bh>
+<copy00line09h color='red'>9000</copy00line09h>
+<copy00line10h color='red'>10000</copy00line10h>
+<copy00line11 color='red'>11000</copy00line11>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line14 color='red'>14000</copy00line14>
+<copy00line15 color='red'>15000</copy00line15>
+<copy00line01bg color='red'>1220</copy00line01bg>
+<copy00line02g color='red'>2020</copy00line02g>
+<copy00line03g color='red'>3020</copy00line03g>
+<copy00line08bg color='red'>8020</copy00line08bg>
+<copy00line09g color='red'>9020</copy00line09g>
+<copy00line10g color='red'>1020</copy00line10g>
+<copy00line01ae color='red'>1030</copy00line01ae>
+<copy00line01be color='red'>1230</copy00line01be>
+<copy00line02e color='red'>2030</copy00line02e>
+<copy00line03e color='red'>3020</copy00line03e>
+<copy00line08ae color='red'>8030</copy00line08ae>
+<copy00line08be color='red'>8230</copy00line08be>
+<copy00line09e color='red'>9030</copy00line09e>
+<copy00line10e color='red'>1030</copy00line10e>
+<copy00line01ad color='red'>1140</copy00line01ad>
+<copy00line01bd color='red'>1240</copy00line01bd>
+<copy00line02d color='red'>2040</copy00line02d>
+<copy00line03d color='red'>3040</copy00line03d>
+<copy00line08ad color='red'>8130</copy00line08ad>
+<copy00line08bd color='red'>8240</copy00line08bd>
+<copy00line09d color='red'>9040</copy00line09d>
+<copy00line10d color='red'>1040</copy00line10d>
+<copy00line16 color='red'>16000</copy00line16>
+<copy00line18 color='red'>18000</copy00line18>
+<copy00line19 color='red'>19000</copy00line19>
+<copy00line21 color='red'>21000</copy00line21>
+<copy00line17y color='red'>x</copy00line17y>
+<copy00line17n color='red'>x</copy00line17n>
+<copy00line20y color='red'>x</copy00line20y>
+<copy00line20n color='red'>x</copy00line20n>
+<copy00line22y color='red'>x</copy00line22y>
+<copy00line22n color='red'>x</copy00line22n>
+</Form>
+</IRSForms>

@@ -1,0 +1,855 @@
+#!/bin/bash
+#Copyright(C) 2019 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the FNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+yOrn(){
+response=$1
+while [ "$response" != "y" ]
+do
+case "$response" in
+    y) return 0
+       ;;
+    n) return 1
+       ;;
+    *) echo "Response not recognized. Please enter y or n."
+       read response
+       ;;
+esac
+done    
+}
+
+
+Pdfshowform(){
+    cp ../../1Pdf2Jpg/Pdf/* ../Pdf
+    foo=$1
+#    echo $foo
+    foo2=${foo#Form}
+#    echo $foo2
+    foo3=f$foo2
+#    echo $foo3
+    qpdfview ../Pdf/$foo3.pdf &
+}
+
+
+    
+Pdfshow(){
+    foo=$1
+#    echo $foo
+#    sleep 5
+    case $foo in
+	 Form*)  Pdfshowform $1;;
+         SchedA) qpdfview ../Pdf/f1040sa.pdf       &;;
+         SchedB) qpdfview ../Pdf/f1040sb.pdf       &;;
+	 SchedC) qpdfview ../Pdf/f1040sc.pdf       &;;
+	 SchedD) qpdfview ../Pdf/f1040sd.pdf       &;;
+	 SchedF) qpdfview ../Pdf/f1040sf.pdf       &;;
+	 SchedH) qpdfview ../Pdf/f1040sh.pdf       &;;
+	 Sched1) qpdfview ../Pdf/f1040s1.pdf       &;;
+	 Sched2) qpdfview ../Pdf/f1040s2.pdf       &;;
+	 Sched3) qpdfview ../Pdf/f1040s3.pdf       &;;
+	 Sched4) qpdfview ../Pdf/f1040s4.pdf       &;;
+	 Sched5) qpdfview ../Pdf/f1040s5.pdf       &;;
+	 Sched6) qpdfview ../Pdf/f1040s6.pdf       &;;
+	Schedse) qpdfview ../Pdf/f1040se.pdf       &;;
+          1041k) qpdfview ../Pdf/f1040s1.pdf       &;;
+	  1065k) qpdfview ../Pdf/f1040s1.pdf       &;;
+         1065Bk) qpdfview ../Pdf/f1040s1.pdf       &;;
+         1120Sk) qpdfview ../Pdf/f1040s1.pdf       &;;
+          8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
+    QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;; 
+       SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
+            SST) qpdfview ../Pdf/sst.pdf           &;;
+  SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;; 
+         
+
+          q) break;;	
+    esac		
+   
+}
+
+
+
+
+
+importJpg(){
+    cp ../../1Pdf2Jpg/Jpg/*.jpg ../Jpg
+    dir ../Jpg
+    echo " "
+    echo "Are you ready to continue?"
+    echo "If so, press y or n."
+    read this
+    if yOrn $this
+    then
+	return
+    fi
+    }
+
+importText(){
+    cp ../../2Sequence/Text/$1.text ../Text/$1.txt
+}
+
+editText(){
+    emacs ../Text/$1.txt
+}
+    
+
+changeOrder(){
+    #This removes the line starting with "type":
+    #awk -f ../Awk/rmMenu.awk ../Text/$1.txt > ../Text/$1.txt1
+    #This changes tPull to tlin and dPull to dlin":
+    #sed -f ../Sed/pull2lin.sed ../Text/$1.txt1 > ../Text/$1.txt2
+    #This puts in a field to designate the column of each line:
+    #awk -f ../Awk/chOrder.awk ../Text/$1.txt2 > ../Columns/$1.col
+     awk -f ../Awk/chOrder.awk ../Text/$1.txt > ../Columns/$1.col
+    #These lines remove the intermediate files:
+    #rm ../Text/$1.txt1
+    #rm ../Text/$1.txt2
+}     
+
+editColumns(){
+    #This allows you to enter the column to which the field belongs.
+    emacs ../Columns/$1.col
+    
+}
+
+bkupColumns(){
+    cp ../Columns/$1.col ../BkupColumns/$1.col
+    }
+
+sortColumns(){
+    #This removes the directions, col heading line, and blank lines:
+    sed -f ../Sed/rmdir.sed ../Columns/$1.col > ../Columns/$1.col2
+    #This sorts the lines by column (a-z):
+    sort ../Columns/$1.col2 > ../Columns/$1.col3
+    #This inserts a heading line for each column:
+    awk -f ../Awk/setCols.awk ../Columns/$1.col3 > ../Columns/$1.col4
+    #This line removes terminal blank space on each line.
+    sed -f ../Sed/rmEndSpace.sed ../Columns/$1.col4 > ../Sorted/$1.sorted
+    #These lines remove the intermediate files:
+    rm ../Columns/$1.col2
+    rm ../Columns/$1.col3
+    rm ../Columns/$1.col4
+    }
+
+editSorted(){
+    #This allows you to enter the gimp data:
+    emacs ../Sorted/$1.sorted &
+}
+
+bkupSorted(){
+    cp ../Sorted/$1.sorted ../BkupSorted/$1.sorted
+}
+
+rmEndSpace(){
+    sed -f ../Sed/rmEndSpace.sed ../Sorted/$1.sorted > ../Sorted/$1.nes
+    mv ../Sorted/$1.nes ../Sorted/$1.sorted
+    }
+
+#chOrder2(){
+#    awk -f ../Awk/2chOrder.awk ../Sorted/$1.sorted > ../Ordered/$1.ord
+#}
+
+#editOrder2(){
+#    emacs ../Ordered/$1.ord
+#}
+
+makePreLot(){
+    awk -f ../Awk/makePreLot.awk ../Sorted/$1.sorted > ../PreLot/$1.pre
+    }
+
+#makePreLot(){
+#awk -f ../Awk/makePreLot.awk ../../2Sequence/Text/$1.txt > ../PreLot/$1.txt
+#}
+
+editPreLot(){
+emacs ../PreLot/$1.pre
+}
+
+cpPre2Lot(){
+    cp ../PreLot/$1.pre ../Lot/$1_Copy00.lot
+#   ../Make/cpPre2Lot.sh $1 $2
+}    
+
+#copy00toXX(){
+#    cp ../Lot/$1_Copy00.lot.reg ../Lot/$1_Copy$2.lot.reg
+#}    
+
+editLot(){
+emacs ../Lot/$1_Copy$2.lot
+}
+
+bkupLot(){
+ cp ../Lot/$1_Copy$2.lot ../BkupLot
+}
+
+
+#makeSimpleCopy(){
+#This make a copy of lot containing only tlin and dlin types.    
+#    ../Make/simplify.sh $1 $2
+#}
+
+#editSim(){
+#emacs ../Lot/$1_Copy$2.lot.sim
+#}
+
+#chooseSimple(){
+#    cp ../Lot/$1_Copy$2.lot.sim ../Lot/$1_Copy$2.lot
+#}    
+
+#chooseRegular(){
+#    cp ../Lot/$1_Copy$2.lot.reg ../Lot/$1_Copy$2.lot
+#}    
+    
+makeMultiLine(){
+
+    sed -f ../Sed/rmEndSpace.sed ../Lot/$1_Copy$2.lot > ../Lo/$1_Copy$2.lo
+    awk -f ../Awk/makeMultiLineLot.awk ../Lo/$1_Copy$2.lo > ../MultiLine/$1_Copy$2.multi
+    sed -f ../Sed/rmEndSpace.sed ../MultiLine/$1_Copy$2.multi > ../MultiLine/$1_Copy$2.multi2
+    mv ../MultiLine/$1_Copy$2.multi2 ../MultiLine/$1_Copy$2.multi
+    }
+
+makeLayout(){
+    awk -f ../Awk/makeLayout.awk ../MultiLine/$1_Copy$2.multi > ../Layouts/$1_Copy$2.lo
+}
+ 
+
+makeData(){
+    rm ../Data/$1*
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Layouts/$1_Copy$2.lo -xsl ../Make/makeDataFile.xsl -out ../Out/$1_Copy$2.xml -PARAM form $1 -PARAM copy $2
+    }
+
+#makeTextblank(){
+#    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Layouts/$1_Copy$2.lo -xsl ../Make/makeTextFileblank.xsl -out ../../Application/Out/$1_Copy$2.xml -PARAM form $1 -PARAM copy $2
+#    }
+
+makeOutput(){
+#    echo "Creating ../Output/$1_Copy$2.xml"
+    awk -f ../Awk/makeLOutput.awk form=$1 copy=$2 ../MultiLine/$1_Copy$2.multi > ../Output/$1_Copy$2.xml
+}
+
+make2Fo(){
+#    echo "Creating 2Fo file for $1_Copy$2."
+#    echo "form is" $1
+#    echo "copy is" $2
+
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Layouts/$1_Copy$2.lo -xsl ../Make/make22Fo.xsl -out ../2Fo/$1_Copy$2.2fo -PARAM form $1 -PARAM copy $2
+
+}
+
+#This step now includes makePdf().
+#It also acts on all files that are in the grouping $1_Copy$2*.2fo
+#This was done so that "Destination" files would be converted to pdf immediately.
+makeFo(){
+    echo $1
+    echo $2
+    for file in $(ls ../2Fo/$1_Copy$2*.2fo)
+    do
+	echo $file
+	foo=${file%.2fo}
+	echo $foo
+	foo2=${foo#../2Fo/}
+	echo $foo2
+	java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/$1_Copy$2.xml -xsl $file -out ../Fo/$foo2.fo
+	fop ../Fo/$foo2.fo ../Pdf/$foo2.pdf
+    done
+}
+
+makePdf(){
+    #This is now included in makeFo()
+#This usage doesn't work after upgrade of Ubuntu in Oct 2020/
+#   java $FOPJAVAJAR org.apache.fop.cli.Main ../Fo/$1_Copy$2.fo ../Pdf/$1_Copy$2.pdf
+#Now I have ./bashrc put fop at the start of PATH
+    fop ../Fo/$1_Copy$2.fo ../Pdf/$1_Copy$2.pdf
+}
+
+showPdf(){
+    qpdfview --unique ../Pdf/$1_Copy$2.pdf &
+    }
+
+2-9(){
+#2
+    sed -f ../Sed/rmEndSpace.sed ../Lot/$1_Copy$2.lot > ../Lo/$1_Copy$2.lo
+    awk -f ../Awk/makeMultiLineLot.awk ../Lo/$1_Copy$2.lo > ../MultiLine/$1_Copy$2.multi
+    sed -f ../Sed/rmEndSpace.sed ../MultiLine/$1_Copy$2.multi > ../MultiLine/$1_Copy$2.multi2
+    mv ../MultiLine/$1_Copy$2.multi2 ../MultiLine/$1_Copy$2.multi
+
+
+#3
+    awk -f ../Awk/makeLayout.awk ../MultiLine/$1_Copy$2.multi > ../Layouts/$1_Copy$2.lo
+#4
+    rm ../Data/$1*
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Layouts/$1_Copy$2.lo -xsl ../Make/makeDataFile.xsl -out ../Out/$1_Copy$2.xml -PARAM form $1 -PARAM copy $2
+
+   #java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Layouts/$1_Copy$2.lo -xsl ../Make/makeTextFileblank.xsl -out ../../Application/Out/$1_Copy$2.xml -PARAM form $1 -PARAM copy $2
+
+#5
+    awk -f ../Awk/makeLOutput.awk form=$1 copy=$2 ../MultiLine/$1_Copy$2.multi > ../Output/$1_Copy$2.xml
+#6
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Layouts/$1_Copy$2.lo -xsl ../Make/make22Fo.xsl -out ../2Fo/$1_Copy$2.2fo -PARAM form $1 -PARAM copy $2
+#7
+    echo $1
+    echo $2
+    for file in $(ls ../2Fo/$1_Copy$2*.2fo)
+    do
+	echo $file
+	foo=${file%.2fo}
+	echo $foo
+	foo2=${foo#../2Fo/}
+	echo $foo2
+	java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/$1_Copy$2.xml -xsl $file -out ../Fo/$foo2.fo
+	fop ../Fo/$foo2.fo ../Pdf/$foo2.pdf
+    done
+
+    #    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/$1_Copy$2.xml -xsl ../2Fo/$1_Copy$2.2fo -out ../Fo/$1_Copy$2.fo
+
+    
+   
+#8
+    qpdfview --unique ../Pdf/$1_Copy$2.pdf &
+    }
+
+createDestinations(){
+    while true;
+    do
+	echo
+	echo " This menu is for creating destination files for hyperlinks."
+	echo " 1) List current distination files for this form."
+	echo " 2) Make a destination file for this form."
+	echo " 3) List current destination files for this form."
+	echo " q) Return to previous menu."
+	read menu_choice
+
+	case "$menu_choice" in
+	    1) dir ../2Fo/$1_Copy$2_*.2fo;;
+	    2) echo "Enter the name or number of the line you wish to make a distination."
+               echo "For instance: line01 or linepnam."
+               echo "The distination file will be displayed in emacs."
+               echo "Using your entry as the search-string, use C-s search-string Return"
+               echo "to locate the block whose background-color need to be"
+               echo "changed to 'yellow'." 
+               read ln
+               cp ../2Fo/$1_Copy$2.2fo ../2Fo/$1_Copy$2_$ln.2fo
+               emacs ../2Fo/$1_Copy$2_$ln.2fo
+               makeFo $1 $2
+               qpdfview ../Pdf/$1_Copy$2_$ln.pdf
+	       rm ../2Fo/*~;;
+             3) echo "The following files are link destination files."
+                dir ../2Fo/$1_Copy$2_*.2fo;;
+	     q) break;;	
+		
+          esac
+     done	       
+   }
+
+export2Fo(){
+    #echo $1_Copy$2.2fo
+    #Export to ../../Calc is not necessary, Calc imports it.
+    #The following change exports the destination files as well as the regular files to 7App
+#         cp ../2Fo/$1_Copy$2.2fo ../../Calc/2Fo/
+         cp ../2Fo/$1_Copy$2* ../../7App/2Fo/
+}
+
+
+
+set_menu_choices() {
+while true;
+  do     
+#  clear
+      echo "This menu is for Developers writing the layout of a form."
+  echo "    0) Show Pdf."    
+  echo "   1a) Import ../../1pdf2jpg/Jpg/f*.jpg ../Jpg"
+  echo "   1b) Import ../../2Sequence/Text/$1.text to ../Text"
+  echo "   1c) Check that ../Text/$1.text is correct"
+  echo "   1d) Set up a field to designate column"
+  echo "   1e) Enter a column name for each field"
+  echo "   1f) Make a backup copy with columns designated."
+  echo "   1g) Sort ../Columns/$1.col to ../Sorted/$1.sorted"
+  echo "   1h) Open ../Sorted/$1.sorted for entry of dummy data"
+  echo "   1i) Open gimp, set scale to inches"
+  echo "   1j) Open ../Sorted/$1.sorted for entry of gimp data"
+  echo "   1k) Remove white space at end of lines in ../Sorted/$1.sorted"
+  echo "   1l) Make a backup of ../Sorted/$1.sorted containing dummy and gimp data"
+  echo "   1m) Make ../PreLot/$1.pre"
+  echo "   1n) Edit ../PreLot/$1.pre to separate pages."
+  echo "   1o) Copy ../PreLot/$1.pre to ../Lot/$1_Copy$2.lot"
+  echo "   1p) Edit ../Lot/$1_Copy$2.lot"
+  echo "   1q) Backup ../Lot/$1_Copy$2.lot to ../BkupLot/"
+  echo "   1r) Edit ../Lot/$1_Copu$2.lot to add duplicate pages."
+  echo "   1s) Backup ../Lot/$1-Copy$2.lot to ../BkupLot/"
+  echo
+  echo "   2)  Make ../MultiLine/$1_Copy$2.multi"
+  echo "   3)  Make ../Layouts/$1_Copy$2.lo"
+  echo "   4)  Make ../Data/$1_Copy$2_line*_data.text.xml"
+  echo "   5)  Make ../Output/$1_Copy$2.xml"
+  echo "   6)  Make ../2Fo/$1_Copy$2.2fo"
+  echo "   7)  Make ../Fo/$1_Copy$2.xml and ../Pdf/$1_Copy$2.pdf"
+  echo "   8)  Show ../Pdf/$1_Copy$2.pdf"
+  echo "   9)  Do 2 through 8"
+  echo
+  echo "  When satisfied with the layout,"
+  echo "  10)  Create link destinations."
+  echo "  11)  Export ../2Fo/$1_Copy$2*.2fo to ../../7App/2Fo"
+  echo
+  echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+  case "$menu_choice" in
+      
+
+      0)  Pdfshow $1;;
+     1a)  importJpg $1;;
+     1b)  importText $1;;
+     1c)  editText $1;;
+     1d)  changeOrder $1;;
+     1e)  editColumns $1;;
+     1f)  bkupColumns $1;;
+     1g)  sortColumns $1;;
+     1h)  editSorted $1;;
+     1i)  gimp &;;
+     1j)  editSorted $1;;
+     1k)  rmEndSpace $1;;
+     1l)  bkupSorted $1;;
+     1m)  makePreLot $1;;
+     1n)  editPreLot $1;;
+     1o)  cpPre2Lot $1 $2;;
+     1p)  editLot $1 $2;;
+     1q)  bkupLot $1 $2;;
+     1r)  editLot $1 $2;;
+     1s)  bkupLot $1 $2;;
+
+      2)  makeMultiLine $1 $2;;
+      3)  makeLayout $1 $2;;
+      4)  makeData $1 $2;;
+      5)  makeOutput $1 $2;;
+      6)  make2Fo $1 $2 $3;;
+      7)  makeFo $1 $2;;
+      8)  showPdf $1 $2;;
+      9) 2-9 $1 $2;;
+     10) createDestinations $1 $2;;
+     11) export2Fo $1 $2;;
+     
+      q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}
+
+create_new_copy() {
+    while true;
+    do
+	clear
+	echo "These are the copies of $1 that currently exist:"
+	check_copy_existence $1 00
+        check_copy_existence $1 01
+	check_copy_existence $1 02
+	check_copy_existence $1 03
+	check_copy_existence $1 04
+	check_copy_existence $1 05
+	check_copy_existence $1 06
+	check_copy_existence $1 07
+	check_copy_existence $1 08
+	check_copy_existence $1 09
+	check_copy_existence $1 10
+	check_copy_existence $1 11
+	check_copy_existence $1 12
+	check_copy_existence $1 13
+	check_copy_existence $1 14
+	check_copy_existence $1 15
+	check_copy_existence $1 16
+	check_copy_existence $1 17
+        check_copy_existence $1 18
+	check_copy_existence $1 19
+	check_copy_existence $1 20
+        echo "Enter the number of the copy you wish to create."
+        echo "This is usually the next number in the series."
+	echo "If no copies exist, enter 00."
+
+        read copy_number
+ 
+	case $copy_number in
+	  00) set_menu_choices  $1 $copy_number;;  
+          01) set_menu_choices2 $1 $copy_number;;
+	  02) set_menu_choices2 $1 $copy_number;;
+	  03) set_menu_choices2 $1 $copy_number;;
+          04) set_menu_choices2 $1 $copy_number;;
+          05) set_menu_choices2 $1 $copy_number;;
+          06) set_menu_choices2 $1 $copy_number;;
+          07) set_menu_choices2 $1 $copy_number;;
+          08) set_menu_choices2 $1 $copy_number;;
+          09) set_menu_choices2 $1 $copy_number;;
+          10) set_menu_choices2 $1 $copy_number;;
+          11) set_menu_choices2 $1 $copy_number;;
+          12) set_menu_choices2 $1 $copy_number;;
+          13) set_menu_choices2 $1 $copy_number;;
+          14) set_menu_choices2 $1 $copy_number;;
+          15) set_menu_choices2 $1 $copy_number;;
+          16) set_menu_choices2 $1 $copy_number;;
+          17) set_menu_choices2 $1 $copy_number;;
+          18) set_menu_choices2 $1 $copy_number;;
+          19) set_menu_choices2 $1 $copy_number;;
+          20) set_menu_choices2 $1 $copy_number;;
+	 
+          q) break;;
+	 
+	esac
+	done
+
+return
+}    
+
+check_copy_existence(){
+    for file in ../Data/$1_Copy$2*
+    do
+	if [ -e $file ]
+	then
+	    echo "     $2) Copy$2"
+	    break;
+	fi
+    done	
+    }
+
+set_copy_number() {
+    while true;
+    do
+	clear
+	echo "Choose the copy with which you wish to work:"
+	check_copy_existence $1 00
+        check_copy_existence $1 01
+	check_copy_existence $1 02
+	check_copy_existence $1 03
+	check_copy_existence $1 04
+	check_copy_existence $1 05
+	check_copy_existence $1 06
+	check_copy_existence $1 07
+	check_copy_existence $1 08
+	check_copy_existence $1 09
+	check_copy_existence $1 10
+	check_copy_existence $1 11
+	check_copy_existence $1 12
+	check_copy_existence $1 13
+	check_copy_existence $1 14
+	check_copy_existence $1 15
+	check_copy_existence $1 16
+	check_copy_existence $1 17
+        check_copy_existence $1 18
+	check_copy_existence $1 19
+	check_copy_existence $1 20
+        echo "    new) Create a new copy of this form."
+        echo "      q) Return to previous menu."
+	
+	echo "  Enter your choice:"
+        read copy_number
+ 
+	case $copy_number in
+         new) create_new_copy $1;;
+	 00) set_menu_choices  $1 $copy_number;;
+         01) set_menu_choices2 $1 $copy_number;;
+         02) set_menu_choices2 $1 $copy_number;;     
+         03) set_menu_choices2 $1 $copy_number;;
+         04) set_menu_choices2 $1 $copy_number;;
+         05) set_menu_choices2 $1 $copy_number;;
+         06) set_menu_choices2 $1 $copy_number;;
+         07) set_menu_choices2 $1 $copy_number;;
+         08) set_menu_choices2 $1 $copy_number;;
+         09) set_menu_choices2 $1 $copy_number;;
+         10) set_menu_choices2 $1 $copy_number;;
+         11) set_menu_choices2 $1 $copy_number;;
+         12) set_menu_choices2 $1 $copy_number;;
+         13) set_menu_choices2 $1 $copy_number;;
+         14) set_menu_choices2 $1 $copy_number;;
+         15) set_menu_choices2 $1 $copy_number;;
+         16) set_menu_choices2 $1 $copy_number;;
+         17) set_menu_choices2 $1 $copy_number;;
+         18) set_menu_choices2 $1 $copy_number;;
+         19) set_menu_choices2 $1 $copy_number;;
+         20) set_menu_choices2 $1 $copy_number;;
+	 
+         q) break;;
+	 
+	esac
+	done
+
+}    
+
+
+
+set_schedule_choice() {
+while true;
+do
+  clear
+  echo "Schedules :"
+  echo
+  echo "       a) Schedule A"
+  echo "       b) Schedule B"
+  echo "      ca) Schedule Ca"
+  echo "       c) Schedule C"
+  echo "       d) Schedule D"
+  echo "       f) Schedule F"
+  echo "       h) Show Schedule H."
+  echo "       1) Show Schedule 1"
+  echo "       2) Show Schedule 2"
+  echo "       3) Show Schedule 3"
+  echo "       4) Show Schedule 4"
+  echo "       5) Show Schedule 5"
+  echo "       6) Show Schedule 6"
+  echo "   1041k) Show Form1041SchedK1"
+  echo "   1065k) Show Form1065SchedK1"
+  echo "  1065Bk) Show Form1065BSchedK1" 
+  echo "  1120Sk) Show Form1120SSchedK1" 
+  echo "   8865k) Show Form8865SchedK1"
+  echo "      se) Show Schedule SE."
+  
+  echo "       q) Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read sched_choice
+
+    case $sched_choice in
+          a) set_menu_choices SchedA		00;;
+          b) set_menu_choices SchedB		00;;
+         ca) set_menu_choices SchedCa		00;;
+          c) set_menu_choices SchedC		00;;
+          d) set_menu_choices SchedD		00;;
+	  f) set_menu_choices SchedF            00;;
+          h) set_menu_choices SchedH		00;;
+	  1) set_menu_choices Sched1            00;;
+	  2) set_menu_choices Sched2            00;;
+	  3) set_menu_choices Sched3            00;;
+	  4) set_menu_choices Sched4            00;;
+	  5) set_menu_choices Sched5            00;;
+	  6) set_menu_choices Sched6            00;;
+      1041k) set_menu_choices Form1041SchedK1	00;;
+      1065k) set_menu_choices Form1065SchedK1	00;;
+     1065Bk) set_menu_choices Form1065BSchedK1	00;;
+     1120Sk) set_menu_choices Form1120SSchedK1	00;; 
+      8865k) set_menu_choices Form8865SchedK1	00;;
+         se) set_menu_choices SchedSE		00;;
+
+          q) break;;	
+    esac
+done
+}
+
+
+set_form_choice() {
+while true;
+do
+  clear
+  echo "Forms :"
+  echo
+  echo "   1040)  U.S. Individual Income Tax Return"
+  echo "  1040v)  Payment Voucher" 
+  echo "   1116)  Foreign Tax Credit"
+  echo "   2106)  Employee Business Expenses"          
+  echo "   2439)  Notice to Shareholder of Long-Term Undistributed Capital Gains"
+  echo "   2441)  Child and Dependent Care Expenses"
+  echo "   3800)  General Business Credit"
+  echo "   3903)  Moving Expenses"
+  echo "   4137)  Social Security and Medicare Tax on Unreported Tip Income"
+  echo "   4562)  Depreciation and Amortization"
+  echo "   4797)  Sales of Business Property"
+  echo "   4868)  Application for Automatic Extension of Time to file"
+  echo "   4952)  Investment Interest Expense Deduction" 
+  echo "   4972)  Tax on Lump-Sum Distributions"
+  echo "   5329)  Additional Taxes on Qualified Plans (inclucing IRAs) 
+                  and Other Tax Favored Accounts"
+  echo "   5405)  Repayment of First-Time Homebuyer Credit"
+  echo "   5695)  Residential Energy Credits"
+  echo "   6251)  Alternative Minimum Tax--Individuals"
+  echo "   6252)  Installment Sale Income"
+  echo "   8615)  Tax for Certain Children Who Have Unearned Income"
+  echo "   8801)  Credit for Prior Year Minimum Tax--Individuals, Estates, and Trusts"
+  echo "   8812)  Child Tax Credit"
+  echo "   8814)  Parents' Election to Report Child's Interest and Dividends"
+  echo "   8815)  Exclusion of Interest from Series EE and I U.S.Savings Bonds"
+  echo "   8829)  Expenses for Business Use of Your Home"
+  echo "   8863)  Education Credits (American Opportunity and Lifetime Learning Credits)"
+  echo "   8880)  Credit for Qualified Retirement Savings Contributions"
+  echo "   8885)  Health Coverage Tax Credit"
+  echo "   8888)  Allocation of Refund (Including Savings Bond Purchases)"
+  echo "   8889)  Health Savings Accounts (HSAs)"  
+  echo "   8903)  Domestic PRoduction Activities Deduction"
+  echo "   8917)  Tuition and Fees Deduction"
+  echo "   8919)  Uncollected Social Security and Medicare Taxes on Wages"
+  echo
+  echo "   8949a) Sales and Other Dispositons of Capital Assets,
+                  basis reported on Form 1099-B."
+  echo "   8949b) Sales and Other Dispositons of Capital Assets, 
+                  basis not reported on Form 1099-B."
+  echo "   8949c) Sales and Other Dispositons of Capital Assets, 
+                  not on Form 1099-B."
+  echo
+  echo "   8959)  Additional Medicare Tax"
+  echo "   8960)  Net Investment Income Tax--Individuals, Estates, and Trusts"
+  echo "   8962)  Premium Tax Credit (PTC)"
+  echo
+  echo "   1099b)    Proceeds from Broker and Barter Exchange Transactions"
+  echo "   1099div)  Dividends and Distributions"
+  echo "   1099int)  Interest Income"
+  echo "   1099r)    Distributions from Pensions, Annuities, Retirement etc."
+  echo "   1099g)    Certain Government Payments"
+  echo "   1099ssa)  Social Security Benefit Statement"
+  echo  
+  echo "   w2)    Wage and Tax Statement"
+  echo
+  echo "   bkg) background"
+  echo
+  echo "   q)     Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read form_choice
+  
+    case $form_choice in
+
+      1040)      set_menu_choices  Form1040    00;; #Using set_menu_choices instead of set_copy_number
+      1040v)     set_menu_choices  Form1040v   00;; #skips the ability to create copies other than 00.
+      1116)      set_menu_choices  Form1116    00;; #This is desired. We only want to create copy 00. 	
+      2106)      set_menu_choices  Form2106    00;;   
+      2439)      set_menu_choices  Form2439    00;; 
+      2441)      set_menu_choices  Form2441    00;; 
+      3800)      set_menu_choices  Form3800    00;; 
+      3903)      set_menu_choices  Form3903    00;;
+      4137)      set_menu_choices  Form4137    00;; 
+      4562)      set_menu_choices  Form4562    00;; 
+      4868)      set_menu_choices  Form4868    00;; 
+      4797)      set_menu_choices  Form4797    00;;
+      4952)      set_menu_choices  Form4952    00;;
+      4972)      set_menu_choices  Form4972    00;;
+      5329)      set_menu_choices  Form5329    00;;
+      5405)      set_menu_choices  Form5405    00;;
+      5695)      set_menu_choices  Form5695    00;;
+      6251)      set_menu_choices  Form6251    00;;
+      6252)      set_menu_choices  Form6252    00;;
+      8615)      set_menu_choices  Form8615    00;;
+      8801)      set_menu_choices  Form8801    00;;
+      8812)      set_menu_choices  Form8812    00;;
+      8814)      set_menu_choices  Form8814    00;;
+      8815)      set_menu_choices  Form8815    00;;
+      8829)      set_menu_choices  Form8829    00;;
+      8863)      set_menu_choices  Form8863    00;;
+      8880)      set_menu_choices  Form8880    00;;
+      8885)      set_menu_choices  Form8885    00;;
+      8888)      set_menu_choices  Form8888    00;;
+      8889)      set_menu_choices  Form8889    00;;
+      8903)      set_menu_choices  Form8903    00;;
+      8917)      set_menu_choices  Form8917    00;;
+      8919)      set_menu_choices  Form8919    00;;
+      8949a)     set_menu_choices  Form8949a   00;;
+      8949b)     set_menu_choices  Form8949b   00;;
+      8949c)     set_menu_choices  Form8949c   00;;
+      8959)      set_menu_choices  Form8959    00;;
+      8960)      set_menu_choices  Form8960    00;;
+      8962)      set_menu_choices  Form8962    00;;
+      1099b)     set_menu_choices  Form1099b   00;;
+      1099div)   set_menu_choices  Form1099div 00;;
+      1099int)   set_menu_choices  Form1099int 00;;	
+      1099r)     set_menu_choices  Form1099r   00;;	
+      1099g)     set_menu_choices  Form1099g   00;;
+      1099ssa)   set_copy_number   Form1099ssa 00;;
+      w2)        set_menu_choices  W2-CopyA    00;;	
+      bkg)       set_menu_choices  Bkg         00;; #Limited to one copy (00). (see above)     
+      q)         break;;
+    esac
+done
+
+}
+
+set_wkst_choice() {
+while true;
+do
+  clear
+  echo "Worksheets :"
+  echo
+  echo "   cap)    Capital Loss Carryover Worksheet"
+  echo "   fei)    Foreign Earned Income Tax Worksheet--f1040-line44."
+  echo "   ln10)   State & Local Income Tax Refund Worksheet-form1040-line10"
+  echo "   qdcg)   Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
+  echo "   rg28)   RGains 28%"
+  echo "   schd)   Schedule D worksheet."
+  echo "   sales)  State and Local Sales Tax Worksheet."
+  echo "   ssa)    Social Security Benefit Statement."
+  echo "   sst)    Social Security Tax Worksheet."
+  echo "   ug1250) Unreported Capital Gains"
+  
+  
+  echo "   q)      Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read wkst_choice
+
+    case $wkst_choice in
+
+      cap)    set_menu_choices CapLossCarryWks  00;;	
+      fei)    set_menu_choices FEITaxWkst       00;;
+      ln10)   set_menu_choices WSln10           00;;
+      qdcg)   set_menu_choices QDCGTaxWkst      00;;
+      rg28)   set_menu_choices RG28Wks          00;;
+      schd)   set_menu_choices SchedDTaxWkst    00;;
+      sales)  set_menu_choices WSSchASalesTax   00;;
+      ssa)    set_menu_choices SSA_1099         00;;
+      sst)    set_menu_choices SST              00;;
+      ug1250) set_menu_choices UG1250Wks        00;;
+      q)     break;;
+    esac
+done
+ 
+}
+
+
+set_menu_choice() {
+while true;
+  do     
+  clear
+  echo
+  echo "Use this menu to choose the Form, Schedule, or Worksheet you wish to work on."
+  echo
+  echo "   f)  Show choice of Forms."
+  echo "   s)  Show choice of Schedules."
+  echo "   w)  Show choice of Worksheets."
+  echo 
+  echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+
+      f)  set_form_choice;;	
+      s)  set_schedule_choice;;
+      w)  set_wkst_choice;;	
+
+      q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}
+
+while true;
+do
+    set_menu_choice	
+done
+    
+#Tidy up and leave
+
+echo "Finished"
+
+exit 0
+

@@ -1,0 +1,135 @@
+type	!name	!seq	!menuEntry
+tlin	!child	!006	!If MFS enter your spouse, if HOH or QSS enter child                              
+tlin	!addr1	!017	!Enter address: line1
+tlin	!addr2	!018	!Enter address: line2           
+tlin	!aptNo	!019	!Enter address: apartment number           
+tlin	!city	!020	!Enter address: city        
+tlin	!ST	!021	!Enter address: state as ST                    
+tlin	!zip	!022	!Enter address: zip                              
+tlin	!FCntry	!023	!Enter foreign address: country            
+tlin	!Fprov	!024	!Enter foreign address: province        
+tlin	!Fzip	!025	!Enter foreign address: postal code                              
+tlin	!campme	!026	!Enter x if you want to give $3 to campaign
+tlin	!campS	!027	!Enter x if spouse wants to give $3 to campaign
+tlin	!digY	!028	!Enter x if you engaged with digital assests   
+tlin	!digN	!029	!Enter x if you did not engage with digital assets                              
+tlin	!youdep	!030	!Enter x if someone can claim you as a dependent                              
+tlin	!Sdep	!031	!Enter x if someone can clain your spouse as a dependent
+tlin	!SiUali	!032	!Enter x if spouse itemizes on a separate return or you were a dual-status alien                              
+tlin	!Ya58	!033	!Enter x if you were born before January 2, 1958
+tlin	!Yblind	!034	!Enter x if you are blind 
+tlin	!Sa58	!035	!Enter x if your spouse was born before January 2, 1958      
+tlin	!Sblind	!036	!Enter x if your spouse is blind
+tlin	!d1name	!037	!Enter first dependent's first name				    
+tlin	!d1LN	!038	!Enter first dependent's last name                                  
+tlin	!d1SF	!039	!Enter first three digits of first dependent's SS number	    
+tlin	!d1SM	!040	!Enter next two digits of first dependent's SS number		    
+tlin	!d1SL	!041	!Enter last four digits of first dependent's SS number		    
+tlin	!d1rel	!042	!Enter first dependent's relationship to you			    
+tlin	!d1CTC	!043	!Enter x if first dependent qualifies for Child Tax Credit	    
+tlin	!d1cod	!044	!Enter x if first dependent qualifies for credit for other dependents                      
+tlin	!d2name	!053	!Enter second dependent's first name				    
+tlin	!d2LN	!054	!Enter second dependent's last name                                                                
+tlin	!d2SF	!055	!Enter first three digits of second dependent's SS number	                                  
+tlin	!d2SM	!056	!Enter next two digits of second dependent's SS number		                                  
+tlin	!d2SL	!057	!Enter last four digits of second dependent's SS number		                                  
+tlin	!d2rel	!058	!Enter second dependent's relationship to you			                                  
+tlin	!d2CTC	!059	!Enter x if second dependent qualifies for Child Tax Credit	                                  
+tlin	!d2cod	!060	!Enter x if second dependent qualifies for credit for other dependents                              
+tlin	!d3name	!061	!Enter third dependent's first name				    
+tlin	!d3LN	!062	!Enter third dependent's last name                                                                
+tlin	!d3SF	!063	!Enter first three digits of third dependent's SS number	                                  
+tlin	!d3SM	!064	!Enter next two digits of third dependent's SS number		                                  
+tlin	!d3SL	!065	!Enter last four digits of third dependent's SS number		                                  
+tlin	!d3rel	!066	!Enter third dependent's relationship to you			                                  
+tlin	!d3CTC	!067	!Enter x if third dependent qualifies for Child Tax Credit	                                  
+tlin	!d3cod	!068	!Enter x if third dependent qualifies for credit for other dependents                              
+tlin	!d4name	!069	!Enter fourth dependent's first name				     
+tlin	!d4LN	!070	!Enter fourth dependent's last name                                                                
+tlin	!d4SF	!071	!Enter first three digits of fourth dependent's SS number	                                  
+tlin	!d4SM	!072	!Enter next two digits of fourth dependent's SS number		                                  
+tlin	!d4SL	!073	!Enter last four digits of fourth dependent's SS number		                                  
+tlin	!d4rel	!074	!Enter fourth dependent's relationship to you			                                  
+tlin	!d4CTC	!075	!Enter x if fourth dependent qualifies for Child Tax Credit	                                  
+tlin	!d4cod	!076	!Enter x if fourth dependent qualifies for credit for other dependents                              
+tlin	!dgt4	!077	!Enter x if you have more than 4 dependents              
+dlin	!01a	!078	!Enter the total amount from Form(s) W-2, box 1                              
+dlin	!01b	!079	!Enter household employee wages not reported on Form(s) W-2
+dlin	!01c	!080	!Enter tip income not reported on line 1a 
+dlin	!01d	!081	!Enter Medicaid waiver payments not reported on Form(s) W-2
+dlin	!01h	!085	!Enter other earned income
+dlin	!01i	!086	!Enter nontaxable combat pay election     
+dlin	!04a	!092	!Enter nontaxable IRA distributions (usually 0)
+dlin	!05a	!094	!Enter nontaxable pension and annuity income (usually 0)                              
+tlin	!06cCk	!098	!Enter x if you elect to use the lump-sum election method                              
+tlin	!07Ck	!099	!Enter x if Schedule D need not be attached
+tlin	!8814	!109	!Enter x if any tax was from Form8814
+tlin	!4972	!110	!Enter x if any tax was from Form4972
+tlin	!Other	!111	!Enter x if any tax was from anothe form
+tlin	!tOther	!111a	!Enter the number of the other form
+xdlin	!16	!112	!Enter the calculated tax plus tax from other forms
+dlin	!26	!125	!Enter 2022 estimated tax payments and amount applied from 2021 return
+dlin	!27	!126	!Enter earned income credit(EIC)                              
+xdlin	!35a	!133	!Enter amount from line 34 that you want refunded to you
+tlin	!35aCk	!134	!Enter x if Form8888 is attached
+tlin	!35b1	!135	!Enter the first digit of your routing number 
+tlin	!35b2	!136	!Enter the second digit of your routing number                              
+tlin	!35b3	!137	!Enter the third digit of your routing number 
+tlin	!35b4	!138	!Enter the fourth digit of your routing number
+tlin	!35b5	!139	!Enter the fifth digit of your routing number 
+tlin	!35b6	!140	!Enter the sixth digit of your routing number 
+tlin	!35b7	!141	!Enter the seventh digit of your routing number
+tlin	!35b8	!142	!Enter the eight digit of your routing number 
+tlin	!35b9	!143	!Enter the ninth digit of your routing number
+tlin	!35cCkg	!144	!Enter x if checking account                         
+tlin	!35cSvg	!145	!Enter x if savings account                         
+tlin	!35d1	!146	!Enter the first digit of your account number                               
+tlin	!35d2	!147	!Enter the second digit of your account number                              
+tlin	!35d3	!148	!Enter the third digit of your account number                               
+tlin	!35d4	!149	!Enter the fourth digit of your account number                              
+tlin	!35d5	!150	!Enter the fifth digit of your account number                                
+tlin	!35d6	!151	!Enter the sixth digit of your account number                               
+tlin	!35d7	!152	!Enter the seventh digit of your account number                            
+tlin	!35d8	!153	!Enter the eight digit of your account number                              
+tlin	!35d9	!154	!Enter the ninth digit of your account number                                
+tlin	!35d10	!155	!Enter the tenth digit of your account number                                
+tlin	!35d11	!156	!Enter the eleventh digit of your account number                                
+tlin	!35d12	!157	!Enter the twelfth digit of your account number                                 
+tlin	!35d13	!158	!Enter the thirteenth digit of your account numbe                              
+tlin	!35d14	!159	!Enter the fourteenth digit of your account number                           
+tlin	!35d15	!160	!Enter the fifteenth digit of your account number                                
+tlin	!35d16	!161	!Enter the sixteenth digit of your account number                              
+tlin	!35d17	!162	!Enter the seventeenth digit of your account number                              
+dlin	!36	!163	!Enter the amount you want applied to your 2023 estimated tax                              
+dlin	!38	!165	!Enter any estimated tax penalty
+tlin	!39Y	!166	!Enter x if you want to allow another person to discuss the return with the IRS
+tlin	!39N	!167	!Enter x if you do not want to allow another person to discuss the return with the IRS
+tlin	!Dname	!168	!Enter the disignee's name
+tlin	!Dphone	!169	!Enter the disignee's phone number
+tlin	!421	!170	!Enter the first digit of the designee's PIN   
+tlin	!422	!171	!Enter the second digit of the designee's PIN  
+tlin	!423	!172	!Enter the third digit of the designee's PIN   
+tlin	!424	!173	!Enter the fourth digit of the designee's PIN  
+tlin	!425	!174	!Enter the fifth digit of the designee's PIN                              
+tlin	!Tocc	!176	!Enter taxpayor's occupatuion                              
+tlin	!431	!177	!Enter the first digit of the taxpayor's identity protection PIN   
+tlin	!432	!178	!Enter the second digit of the taxpayor's identity protection PI
+tlin	!433	!179	!Enter the third digit of the taxpayor's identity protection PIN                                 
+tlin	!434	!180	!Enter the fourth dgit of the taxpayor's identity protection PIN                                
+tlin	!435	!181	!Enter the fifth digit of the taxpayor's identity protection PIN                              
+tlin	!436	!182	!Enter the sixth digit of the taxpayor's identity protection PIN
+tlin	!Socc	!184	!Enter spouse's occupation                              
+tlin	!441	!185	!Enter the first digit of the spouse's identity protection PIN                              
+tlin	!442	!186	!Enter the second digit of the spouse's identity protection PI                              
+tlin	!443	!187	!Enter the third digit of the spouse's identity protection PIN                              
+tlin	!444	!188	!Enter the fourth dgit of the spouse's identity protection PIN                              
+tlin	!445	!189	!Enter the fifth digit of the spouse's identity protection PIN                              
+tlin	!446	!190	!Enter the sixth digit of the spouse's identity protection PIN                              
+tlin	!Pname	!191	!Enter preparer's name                              
+tlin	!Pdate	!192	!         
+tlin	!PTIN	!193	!Enter preparer's PTN                              
+tlin	!SECk	!194	!Enter x if preparer is self-employed          
+tlin	!Fname	!195	!Enter name of preparer's firm
+tlin	!Fphone	!196	!Enter phone number of preparer 
+tlin	!Faddr	!197	!Enter address of preparer
+tlin	!FEIN	!198	!Enter EIN of preparer's firm

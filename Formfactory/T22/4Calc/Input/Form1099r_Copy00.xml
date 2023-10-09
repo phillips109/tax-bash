@@ -1,0 +1,470 @@
+<Form name=''>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='02a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>201</override>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>300</override>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>400</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>500</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>600</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>800</override>
+<blank></blank>
+</dlin>
+
+<dlin number='09a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>901</override>
+<blank></blank>
+</dlin>
+
+<dlin number='09b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>902</override>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2006</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1300</override>
+<blank></blank>
+</dlin>
+
+<dlin number='14a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1401</override>
+<blank></blank>
+</dlin>
+
+<dlin number='14b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1402</override>
+<blank></blank>
+</dlin>
+
+<dlin number='16a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1601</override>
+<blank></blank>
+</dlin>
+
+<dlin number='16b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1602</override>
+<blank></blank>
+</dlin>
+
+<dlin number='17a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1701</override>
+<blank></blank>
+</dlin>
+
+<dlin number='17b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1702</override>
+<blank></blank>
+</dlin>
+
+<dlin number='19a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1901</override>
+<blank></blank>
+</dlin>
+
+<dlin number='19b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1902</override>
+<blank></blank>
+</dlin>
+
+<tlin name='02b1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='02b2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='07'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='07a'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='08pct'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='12Ck'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='15a'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='15b'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='18a'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='18b'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='acctNo'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='corr'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='paddr1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='paddr2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='pcity'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='pCntry'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='pname1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='pname2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='pST'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='ptel'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='pTIN'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='pzip'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='raddr1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='raddr2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='rcity'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='rCntry'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='rname1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='rname2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='rST'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='rTIN'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='rzip'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+
+<tlin name='void'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</tlin>
+</Form>

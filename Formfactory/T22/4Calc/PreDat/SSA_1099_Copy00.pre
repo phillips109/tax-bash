@@ -1,0 +1,55 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!Box03   	!#####0  	!                    	!
+dlin    	!Box04   	!#####0  	!                    	!
+dlin    	!Box06   	!#####0  	!                    	!
+
+xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend	!
+subt0   	!Box05   	!#####0  	!        	!        	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!Box03d1 	!        	!        	!
+tlin    	!Box03d2 	!        	!        	!
+tlin    	!Box03d3 	!        	!        	!
+tlin    	!Box03d4 	!        	!        	!
+tlin    	!Box03d5 	!        	!        	!
+tlin    	!Box03d6 	!        	!        	!
+tlin    	!Box03d7 	!        	!        	!
+tlin    	!Box03d8 	!        	!        	!
+tlin    	!Box03e1 	!        	!        	!
+tlin    	!Box03e2 	!        	!        	!
+tlin    	!Box03e3 	!        	!        	!
+tlin    	!Box03e4 	!        	!        	!
+tlin    	!Box03e5 	!        	!        	!
+tlin    	!Box03e6 	!        	!        	!
+tlin    	!Box03e7 	!        	!        	!
+tlin    	!Box03e8 	!        	!        	!
+tlin    	!Box07   	!        	!        	!
+tlin    	!Box07a  	!        	!        	!
+tlin    	!Box07b  	!        	!        	!
+tlin    	!Box08   	!        	!        	!
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	!
+tPull   	!TFNI    	!        	!        	!        	!        	!        	!
+tPull   	!TLN     	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoF  	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoL  	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoM  	!        	!        	!        	!        	!        	!

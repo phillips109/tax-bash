@@ -1,0 +1,8 @@
+type	!name	!seq	!menuEntry
+tlin	!07a1y	!072	!Enter x if, at any time during 2022, you had a financial interest in or signature authority over a financial account located in a foreign country.
+.lin	!07a1n	!073	!Enter x if you did not had such financial interest or signature authority.
+tlin	!07a2y	!074	!Enter x if your are required to file FinCEN Form114.
+tlin	!07a2n	!075	!Enter x if your are not so required.
+tlin	!07b	!076	!If you are required to file FinCEN form 114, list the name(s) of the foreign country(ies) where the financial account(s) are located.
+tlin	!08y	!077	!Enter x if , during 2022, you received a distribution from, or were the grantor of, or transferor to , a foreign trust. If yes, you may have to file Form 3520.
+tlin	!08n	!078	!Enter x if you were not such a receiver, grantor, or transferor.

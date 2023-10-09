@@ -1,0 +1,1301 @@
+Account name=''>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-17  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number11</number>
+		<date>02-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number12</number>
+		<date>03-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number13</number>
+		<date>04-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number14</number>
+		<date>05-17  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number15</number>
+		<date>06-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number16</number>
+		<date>07-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number17</number>
+		<date>08-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number18</number>
+		<date>09-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number19</number>
+		<date>10-17  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>10</payeeNo>
+<payeeName>ACLU                                                        </payeeName>
+	<transaction>
+		<number20</number>
+		<date>11-16  </date>
+		amount>            40  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>11</payeeNo>
+<payeeName>AMERICANS UNITED far SEPA20                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>            15  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>12</payeeNo>
+<payeeName>AMNESTYUSA 2126334254 212-6                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>            15  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>13</payeeNo>
+<payeeName>Appreciation Fund                                           </payeeName>
+	<transaction>
+		<number10</number>
+		<date>10-20  </date>
+		amount>           500  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>14</payeeNo>
+<payeeName>Consumer Reports                                            </payeeName>
+	<transaction>
+		<number10</number>
+		<date>09-04  </date>
+		amount>            50  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>15</payeeNo>
+<payeeName>Donation to the Wikimedia 877-600-9454 CA                   </payeeName>
+	<transaction>
+		<number10</number>
+		<date>02-01  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>15</payeeNo>
+<payeeName>Donation to the Wikimedia 877-600-9454 CA                   </payeeName>
+	<transaction>
+		<number11</number>
+		<date>03-01  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>16</payeeNo>
+<payeeName>DWB*DOCTORS W/O BORDERS  212-679-6800 NY                    </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-01  </date>
+		amount>           250  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>17</payeeNo>
+<payeeName>EARTHJUSTICE 415-2172000 CA                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           120  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>18</payeeNo>
+<payeeName>FinnCA INTL INC HTTPSWWW.FIN                                </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>19</payeeNo>
+<payeeName>FREE SOFTWARE FOUNDATAION 833-972-8766 MA                   </payeeName>
+	<transaction>
+		<number10</number>
+		<date>04-08  </date>
+		amount>           120  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>20</payeeNo>
+<payeeName>GREENPEACE USA 800722699580                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           100  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>21</payeeNo>
+<payeeName>Jubilee Soup Kitchens                                       </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           100  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>22</payeeNo>
+<payeeName>MONTHLY DONATION TO WI                                      </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-12  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>22</payeeNo>
+<payeeName>MONTHLY DONATION TO WI                                      </payeeName>
+	<transaction>
+		<number11</number>
+		<date>02-12  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>23</payeeNo>
+<payeeName>Natural Resources Defense Council                           </payeeName>
+	<transaction>
+		<number10</number>
+		<date>09-04  </date>
+		amount>           100  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>24</payeeNo>
+<payeeName>Nature Conservancy 800-6286                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           103  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>25</payeeNo>
+<payeeName>NRDC 212-727-2700 NY                                        </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>            15  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>26</payeeNo>
+<payeeName>OPERATION HOMEFRONT NATL 21                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           100  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number11</number>
+		<date>02-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number12</number>
+		<date>03-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number13</number>
+		<date>04-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number14</number>
+		<date>05-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number15</number>
+		<date>06-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number16</number>
+		<date>07-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number17</number>
+		<date>08-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number18</number>
+		<date>09-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number19</number>
+		<date>10-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number20</number>
+		<date>11-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>27</payeeNo>
+<payeeName>PENNENVIRONMENT                                             </payeeName>
+	<transaction>
+		<number21</number>
+		<date>12-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>28</payeeNo>
+<payeeName>Presbyterian SeniorCare Foundation                          </payeeName>
+	<transaction>
+		<number10</number>
+		<date>04-03  </date>
+		amount>           100  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>29</payeeNo>
+<payeeName>QGV*Light of Life Minnistr41                                </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>         124.8  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>30</payeeNo>
+<payeeName>SA CHARITY EASTERNUSA.SANY                                  </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>31</payeeNo>
+<payeeName>SHAW FESTIVAL FOUND.SHAWFEST.COM NY                         </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-01  </date>
+		amount>         102.8  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>32</payeeNo>
+<payeeName>SHAW FESTIVAL THEATRE 905-4                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-01  </date>
+		amount>           100  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>33</payeeNo>
+<payeeName>SPECIAL OLYMPICS 800-380307                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>         102.5  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-21  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number11</number>
+		<date>02-18  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number12</number>
+		<date>03-18  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number13</number>
+		<date>04-19  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number14</number>
+		<date>05-19  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number15</number>
+		<date>06-18  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number16</number>
+		<date>07-22  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number17</number>
+		<date>08-24  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number18</number>
+		<date>09-17  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number19</number>
+		<date>10-20  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>34</payeeNo>
+<payeeName>SPLC DONATION                                               </payeeName>
+	<transaction>
+		<number20</number>
+		<date>11-18  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>35</payeeNo>
+<payeeName>SPLC DONATION WWW.SPLCENTER                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           250  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>36</payeeNo>
+<payeeName>SSP*CityMission 724-2228530                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           206  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>37</payeeNo>
+<payeeName>UNION CNCRND SCIENTISTS 800                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-30  </date>
+		amount>           100  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>38</payeeNo>
+<payeeName>USA far UNHCR                                               </payeeName>
+	<transaction>
+		<number10</number>
+		<date>10-03  </date>
+		amount>           150  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-06  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number11</number>
+		<date>02-03  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number12</number>
+		<date>03-03  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number13</number>
+		<date>04-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number14</number>
+		<date>05-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number15</number>
+		<date>06-03  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number16</number>
+		<date>07-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number17</number>
+		<date>08-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number18</number>
+		<date>09-03  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number19</number>
+		<date>10-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number20</number>
+		<date>11-03  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>39</payeeNo>
+<payeeName>WESA                                                        </payeeName>
+	<transaction>
+		<number21</number>
+		<date>12-03  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>40</payeeNo>
+<payeeName>WESA 412-6972942 PA                                         </payeeName>
+	<transaction>
+		<number10</number>
+		<date>09-10  </date>
+		amount>           120  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number10</number>
+		<date>03-12  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number11</number>
+		<date>04-13  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number12</number>
+		<date>05-12  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number13</number>
+		<date>06-15  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number14</number>
+		<date>07-13  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number15</number>
+		<date>08-12  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number16</number>
+		<date>09-14  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number17</number>
+		<date>10-12  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>41</payeeNo>
+<payeeName>WIKIMEDIA 877 600 9454                                      </payeeName>
+	<transaction>
+		<number18</number>
+		<date>11-12  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number10</number>
+		<date>05-03  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number11</number>
+		<date>05-31  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number12</number>
+		<date>07-01  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number13</number>
+		<date>08-02  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number14</number>
+		<date>08-31  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number15</number>
+		<date>10-01  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number16</number>
+		<date>11-01  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number17</number>
+		<date>12-01  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>42</payeeNo>
+<payeeName>Wikimedia 877 600 9454 877-60094                            </payeeName>
+	<transaction>
+		<number18</number>
+		<date>12-31  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>43</payeeNo>
+<payeeName>Wikimedia 877-600-9454 CA                                   </payeeName>
+	<transaction>
+		<number10</number>
+		<date>03-31  </date>
+		amount>             9  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>44</payeeNo>
+<payeeName>WPY*National Aviary inn Pittsburgh 855-469-3729 pa          </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-01  </date>
+		amount>        102.99  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number11</number>
+		<date>01-31  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number12</number>
+		<date>02-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number13</number>
+		<date>03-01  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number14</number>
+		<date>03-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number15</number>
+		<date>03-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number16</number>
+		<date>04-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number17</number>
+		<date>04-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number18</number>
+		<date>05-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number19</number>
+		<date>05-31  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number20</number>
+		<date>06-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number21</number>
+		<date>06-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number22</number>
+		<date>07-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number23</number>
+		<date>07-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number24</number>
+		<date>08-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number25</number>
+		<date>08-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number26</number>
+		<date>09-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number27</number>
+		<date>09-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number28</number>
+		<date>10-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number29</number>
+		<date>10-31  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number30</number>
+		<date>11-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number31</number>
+		<date>11-30  </date>
+		amount>            20  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>45</payeeNo>
+<payeeName>WQED MULTIMEDIA                                             </payeeName>
+	<transaction>
+		<number32</number>
+		<date>12-05  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number10</number>
+		<date>01-04  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number11</number>
+		<date>02-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number12</number>
+		<date>03-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number13</number>
+		<date>04-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number14</number>
+		<date>05-03  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number15</number>
+		<date>06-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number16</number>
+		<date>07-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>46</payeeNo>
+<payeeName>WYEP   412-888-0404 PA                                      </payeeName>
+	<transaction>
+		<number17</number>
+		<date>08-02  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>47</payeeNo>
+<payeeName>WYEP                     412-8880404  PA                    </payeeName>
+	<transaction>
+		<number10</number>
+		<date>09-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>47</payeeNo>
+<payeeName>WYEP                     412-8880404  PA                    </payeeName>
+	<transaction>
+		<number11</number>
+		<date>10-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>47</payeeNo>
+<payeeName>WYEP                     412-8880404  PA                    </payeeName>
+	<transaction>
+		<number12</number>
+		<date>11-01  </date>
+		amount>            10  </amount>
+	</transaction>
+</payee>
+
+<payee>
+<payeeNo>48</payeeNo>
+<payeeName>YALE UNIVERSITY GIFT 203-43                                 </payeeName>
+	<transaction>
+		<number10</number>
+		<date>12-31  </date>
+		amount>           250  </amount>
+	</transaction>
+</payee>

@@ -1,0 +1,52 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!1.74  	!4.06  	!left         	!
+a     	!tlin  	!TFNI  	!      	!      	!1.50     	!John D
+a     	!tlin  	!SFNI  	!      	!      	!1.63     	!Jeanne M
+Col   	!col   	!b     	!4.10 	!6.33 	!left     	!
+b     	!tlin  	!TLN   	!      	!      	!1.50         	!Taxpayor
+b     	!tlin  	!SLN   	!      	!      	!1.63     	!Taxpayor
+Col   	!col   	!c     	!6.49 	!6.74 	!left         	!
+c     	!tlin  	!TSSNoF	!      	!      	!1.63         	!123
+Col   	!col   	!d     	!6.93 	!7.15 	!left     	!
+d     	!tlin  	!TSSNoM	!      	!      	!1.63         	!45
+Col   	!col   	!e     	!7.02 	!7.69 	!left     	!
+e     	!tlin  	!TSSNoL	!      	!      	!1.63         	!6789
+Col   	!col   	!f     	!0.50 	!4.05 	!left     	!
+f     	!tlin  	!Enrol1	!      	!      	!2.41         	!James Doe
+f     	!tlin  	!Enrol2	!      	!      	!2.74     	!Jane Doe
+f     	!tlin  	!Enrol3	!      	!      	!3.07     	!Tim Doe
+Col   	!col   	!g     	!4.15  	!7.95 	!left     	!
+g     	!tlin  	!Inst1 	!      	!      	!2.30         	!USMA
+g     	!tlin  	!Inst2 	!      	!      	!2.47     	!MIT
+g     	!tlin  	!Inst3 	!      	!      	!2.63     	!USC
+g     	!tlin  	!Inst4 	!      	!      	!2.80     	!Yale
+g     	!tlin  	!Inst5 	!      	!      	!2.97     	!Columbia
+g     	!tlin  	!Inst6 	!      	!      	!3.13     	!Michigan State
+Col   	!col   	!h     	!7.05 	!7.92 	!right     	!
+h     	!dlin  	!02    	!      	!      	!3.64         	!20
+h     	!dlin  	!03    	!      	!      	!3.96       	!30
+h     	!dlin  	!04    	!      	!      	!4.14     	!40
+h     	!dlin  	!05    	!      	!      	!4.45     	!50
+h     	!dlin  	!06    	!      	!      	!4.63     	!60
+h     	!dlin  	!07    	!      	!      	!4.96     	!0.700
+h     	!dlin  	!08    	!      	!      	!5.14     	!80
+h     	!dlin  	!12    	!      	!      	!6.79     	!0.120
+h     	!dlin  	!13    	!      	!      	!6.97     	!130
+h     	!dlin  	!14    	!      	!      	!7.30     	!140
+Col   	!col   	!i     	!5.78 	!6.64 	!right     	!
+i     	!dlin  	!09    	!      	!      	!5.30         	!90
+i     	!dlin  	!10    	!      	!      	!6.13     	!100
+i     	!dlin  	!11    	!      	!      	!6.47     	!110
+Col   	!col   	!j     	!7.21 	!7.97 	!right     	!
+j     	!dlin  	!0601  	!      	!      	!7.77         	!601
+j     	!dlin  	!0602  	!      	!      	!8.08     	!602
+j     	!dlin  	!0603  	!      	!      	!8.26     	!603
+j     	!dlin  	!0604  	!      	!      	!8.69     	!604
+j     	!dlin  	!0605  	!      	!      	!8.97     	!605
+j     	!dlin  	!0606  	!      	!      	!9.18     	!606
+Col   	!col   	!k     	!7.21 	!7.97 	!right     	!
+k     	!dlin  	!0901  	!      	!      	!1.48         	!901
+k     	!dlin  	!0902  	!      	!      	!2.02     	!902
+k     	!dlin  	!0903  	!      	!      	!2.20     	!903
+k     	!dlin  	!0904  	!      	!      	!2.74     	!904
+k     	!dlin  	!0905  	!      	!      	!3.08     	!905

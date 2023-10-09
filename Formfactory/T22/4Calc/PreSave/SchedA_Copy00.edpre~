@@ -1,0 +1,78 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!05d     	!#####0  	!line05a      	!line05b       	!line05c       	!
+addit   	!07      	!#####0  	!line05e       	!line06        	!        	!
+addit   	!08e     	!#####0  	!line08a       	!line08b       	!line08c       	!
+addit   	!10      	!#####0  	!line08e       	!line09        	!        	!
+addit   	!14      	!#####0  	!line11        	!line12        	!line13        	!
+addit   	!17      	!#####0  	!line04        	!line07        	!line10        	!line14	!line15	!line16
+
+
+xconst		!2nam3		!3format	!4value
+const		!75		!#0.000		!0.075
+
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!01      	!#####0  	!100                   	!
+dlin    	!05a     	!#####0  	!501                   	!
+dlin    	!05b     	!#####0  	!502                 	!
+dlin    	!05c     	!#####0  	!503                 	!
+dlin    	!06      	!#####0  	!600                 	!
+dlin    	!08a     	!#####0  	!801                   	!
+dlin    	!08b     	!#####0  	!802                 	!
+dlin    	!08c     	!#####0  	!803                 	!
+dlin    	!09      	!#####0  	!900                 	!
+dlin    	!11      	!#####0  	!1010                 	!
+dlin    	!12      	!#####0  	!1020                	!
+dlin    	!13      	!#####0  	!1030                	!
+dlin    	!15      	!#####0  	!1050                	!
+dlin    	!16      	!#####0  	!1060                	!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!02      	!#####0  	!200        	!Form1040      	!00        	!line11
+
+xmult   	!2name   	!3format 	!4multiplicand	!5multiplier	!
+mult    	!03      	!#####0  	!line02        	!line75        	!
+
+xsmOf   	!2name   	!3format 	!4first  	!5second 	!
+smOf    	!05e     	!#####0  	!line05d       	!line05q       	!
+
+xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend	!
+subt0		!03
+subt0   	!04      	!#####0  	!line01        	!line03        	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!05ack   	!        	!x        	!
+tlin    	!08ck   	!        	!x        	!
+tlin    	!18ck    	!        	!x        	!
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	!
+tPull   	!SFNI    	!        	!        	!Bkg        	!00        	!SFNI        	!
+tPull   	!SLN     	!        	!        	!Bkg        	!00        	!SLN        	!
+tPull   	!TFNI    	!        	!        	!Bkg        	!00        	!TFNI     	!
+tPull   	!TLN     	!        	!        	!Bkg        	!00        	!TLN    	!
+tPull   	!TSSNoF  	!        	!        	!Bkg        	!00        	!TSSNoF     	!
+tPull   	!TSSNoL  	!        	!        	!Bkg        	!00        	!TSSNoM  	!
+tPull   	!TSSNoM  	!        	!        	!Bkg        	!00        	!TSSNoL  	!
+tPull		!FS		!		!		!Bkg		!00		!FS		!
+
+
+cnum		!05q		!#####0		!$SchedA-Copy00-lineFS = MFS	!5000		!10000

@@ -1,0 +1,21 @@
+set_SST_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SST in which to enter or edit data:"
+echo
+echo "50)    Enter 0.50                         "
+echo "85)    Enter 0.85                         "
+echo
+echo " q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SST_line_data_choice
+echo
+     case $SST_line_data_choice in
+50)    set_line_menu_number $1 $2  line50                             14;;
+85)    set_line_menu_number $1 $2  line85                             14;;
+q )    break;;                       
+esac
+done
+}

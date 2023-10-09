@@ -1,0 +1,324 @@
+The folder Layout contains the files necessary to produce the file $1_Copy$2.2fo.
+
+
+This file determine the layout of the form on the screen. A jpg image of the form is shown as background and at this stage we place the values(entries) in the boxes on the page. The entries are lines such as a tlin for text or dlin for numbers. Other lines are calculated such as addit, subtr, etc. The lines are contained in a column which extends the entire length of the page. The column xdimensions determine the width of the box. The line has a top dimension which determines the y location of the box on the page. As presented to you in PreLot each line has a unique name and is enclosed in its own column. You will edit this file $1_Copy.pre (in the PreLot directory) to produce $1_Copy$2.lot which is copied to the Lot directory.
+
+The PreLot file is actually an awk data base. Each line is a record. Fields are separated by whitespace and !.
+Note that some lines begin with an x. These lines are not used by the program and are there simply as labels to tell you what is what.
+
+To edit $1_Copy$2.pre, do the following:
+
+The PreLot file that you imported from Sequence has some initial text that put the copy-left on the page. This should be left as it is.
+
+The next lines are Form and EndForm. The Form line should be left alone and the EndForm should be moved to the end of the file.
+
+Next are some lines to designate the beginning and end of pages.
+PgS and EndPgS are used to indicate the beginning and end of a single page form.
+If your form has only one page keep the PgS where it is and move the EndPgS to the end of the file just above the EndForm line. Put an x at the beginning of the other page delimiters PgF, EndPgF, PgM, EndPgM, PgL, and EndPgL since they will not be used.
+If your form has two or more pages, the PgS and EndPgS delimiters are not used and should have an x placed before their names.
+PgF and EndPgF are used to delimit the first page. Since Sequence has put all the lines in order, you can scan down looking at the names of the lines until you reach the last line on the first page. Move the EndPgF line to a position right after this line.
+
+If your form has only two pages, move the PgL (for last page) label to the line right after EndPgF. Then move the EndPgL label at the end of the file just above the EndForm label line. Then put an x in front of the PgM and EndPgM labels.
+
+If your form has more than two pages use the PgM (for middle page) and EndPgM labels to delimit the beginning and end of each interior page, reserving the PgL and EndPgL for the last page.
+
+The file for a 3 page form should now look like this:
+Copy-left
+Form
+xPgS
+xEndPgS
+PgF
+a number of lines (tlin, dlin, addit,etc) each enclosed in a col(colunm).
+EndPgF
+PgM
+a number of lines (tlin, dlin, addit,etc) each enclosed in a col(colunm).
+EndPgM
+PgL
+a number of lines (tlin, dlin, addit,etc) each enclosed in a col(colunm).
+EndPgL
+EndForm
+
+The next step is to put the jpg file on each page.
+For instance the PgF line will look like this:
+xPgF	     !name   !BkgImage
+PgF	     !First  !
+
+The xPgF line is there to tell you what goes where.
+Therefore enter the jpg file right under BkgImage
+Since by now you have copied the jpg files from Sequence/Jpg to Layout/Jpg use the relative address ../Jpg.
+
+xPgF	  !Name	    !BkgImage
+PgF	  !First    !../Jpg/f1099int_19-page-001.jpg
+
+Do this for each page in your file.
+
+Now you are ready to place your data on the form.
+The right and left dimensions are specified in the column(col) line.
+The verical(y) dimension is specified in the line(tlin, dlin,etc)
+Each line currently has its own enclosing column:
+
+
+The column may have but does not need a name.
+The line must have a unique name, otherwise its value is determined by the value of the last line with the same name.
+The names of the lines are already specified by Sequence and shouldn't be changed.
+A column that contains text values will have a left alignment.
+A column that contains data(number) values will have a right alignment.
+
+Open the ../Jpg/*.jpg file for the page in Gimp.
+Zoom to about 50% or whatever amount suits you.
+Change the measurement from pixels to inches.
+Then place the pointer at the beginning of the box for the first line.
+The y coordinate is the value that should be put in the "left" field of col.
+Now move the pointer to the end of the box for the first line.
+This y coordinate is the value that should be put in the "right" field of col.
+Now place the pointer slightly above the line on which the data goes.
+This x coordinate is the value that should be put in the "top" field of dlin.
+
+Now each line does not need to have its own column.
+So if you have deliniated a column that should contain many lines,
+move(cut and paste) the lines into that column between the col and Endcol lines.
+
+xcol 	  !2name  !3top  !4align !5left	!6right
+col  	  !A1	  !0.00	 !right	 !6.40	!7.40
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !01	  !1.00  !100
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !02	  !1.50  !200
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !03	  !2.00  !300
+
+Endcol******************************************
+
+You will have to delete the xcol, col, and Endcol lines left behind
+after the line has been moved.
+If you do not delete them your program will not work and
+may not give you a decipherable error.
+This is because you will have columns that do not contain a line.
+The compiler will not tolerate this, but may not tell you why.
+Make sure that every column contains a line.
+
+Note that each line may contain a dummy value that you specify.
+This is true even if the line is an addit or subtr line.
+I would suggest a value that suggests the name of the line.
+If your program prints a 300 at the top of the page,
+this gives you a clue that the values are wrong on the 03 line.
+Use dummy values for text lines that indicate to which line they belong.
+
+You will now have a Lot file that looks like:
+
+Copy-left
+Form
+xPgS
+xEndPgS
+PgF
+
+xcol    	!2name   	!3top    	!4align                        !5left           !6right  
+col     	!data    	!0.00    	!left			       !0.00		!8.50    
+Endcol************************************************
+
+xcol    	!2name   	!3top    	!4align				!5left	 	!6right  
+col     	!		!0.00    	!left  				!0.00		!0.00
+
+xtPull  	!2name   	!3top    	!4dummy				!5form		!6copy   !7line2         
+tPull   	!TFNI    	!0.00    	!1.43  				!Bkg		!01	 !TFNI               
+
+Endcol*************************************************************
+xcol    	!2name   	!3top    	!4align                        	!5left   	!6right  
+col     	!		!0.00    	!left                          	!0.00    	!0.00    
+
+xtlin		!2name   	!3top    	!4dummy                   
+tlin		!TLN     	!0.00    	!TaxpayorLastName               
+
+xtlin		!2name   	!3top    	!4dummy                   
+tlin		!AptNo     	!0.00    	!Apt#3               
+
+Endcol*************************************************************
+
+xcol 	  !2name  !3top  !4align !5left	!6right
+col  	  !A1	  !0.00	 !right	 !6.40	!7.40
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !01	  !1.00  !100
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !02	  !1.50  !200
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !03	  !2.00  !300
+
+Endcol******************************************
+
+EndPgF
+
+PgM
+
+xcol 	  !2name  !3top  !4align !5left	!6right
+col  	  !A1	  !0.00	 !right	 !6.40	!7.40
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !04	  !1.00  !400
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !05	  !1.50  !500
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !06	  !2.00  !600
+
+Endcol******************************************
+
+EndPgM
+
+PgL
+
+xcol 	  !2name  !3top  !4align !5left	!6right
+col  	  !A1	  !0.00	 !right	 !6.40	!7.40
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !07	  !1.00  !700
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !08	  !1.50  !800
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !09	  !2.00  !900
+
+Endcol******************************************
+
+
+EndPgL
+EndForm
+
+
+There are lines that we have not discussed, such as tPull lines which pull text from other forms.
+These as you can see have fields that indicate the form, copy and line from which to pull.
+
+There is one abnormality in our file that needs to be corrected.
+The first column named data does not contain any lines.
+As we noted before, the compiler will not tolerate this situation.
+
+The purpose of this first column is to enclose all the data boxes on the form
+so that they can be moved on one, up or down as needed.
+In my experience the y values obtained from Gimp are about 0.10 inches too low.
+This column allows one to move all the boxes up 0.10in in one fell swoop.
+
+To do this move the line Endcol**************
+from below the first col to the end of the page
+just before the line EndPgF
+
+You should place this enclosing column on each of your subsequent pages.
+copy
+
+xcol    	!2name   	!3top    	!4align                        !5left           !6right  
+col     	!data    	!0.00    	!left			       !0.00		!8.50    
+
+to the beginning of each page right after the PgM or PgL lines and
+
+Endcol****************
+
+to the end of each page just be for the EndpgM*** or EndpgL***** lines.
+
+Your completedvfile will now look something like this:
+
+Copy-left text
+
+Form
+
+xPgS
+xEndPgS
+
+PgF
+
+xcol    	!2name   	!3top    	!4align                        !5left           !6right  
+col     	!data    	!0.00    	!left			       !0.00		!8.50    
+
+xcol    	!2name   	!3top    	!4align				!5left	 	!6right  
+col     	!		!0.00    	!left  				!0.00		!0.00
+
+xtPull  	!2name   	!3top    	!4dummy				!5form		!6copy   !7line2         
+tPull   	!TFNI    	!0.00    	!1.43  				!Bkg		!01	 !TFNI               
+
+Endcol*************************************************************
+
+xcol    	!2name   	!3top    	!4align                        	!5left   	!6right  
+col     	!		!0.00    	!left                          	!0.00    	!0.00    
+
+xtlin		!2name   	!3top    	!4dummy                   
+tlin		!TLN     	!0.00    	!TaxpayorLastName               
+
+xtlin		!2name   	!3top    	!4dummy                   
+tlin		!AptNo     	!0.00    	!Apt#3               
+
+Endcol*************************************************************
+
+xcol 	  !2name  !3top  !4align !5left	!6right
+col  	  !A1	  !0.00	 !right	 !6.40	!7.40
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !01	  !1.00  !100
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !02	  !1.50  !200
+
+xdlin	  !2name  !3top	 !4dummy
+dlin	  !03	  !2.00  !300
+
+Endcol******************************************
+
+Endcol************************************************
+
+EndPgF
+
+PgM
+xcol    	!2name   	!3top    	!4align                        !5left           !6right  
+col     	!data    	!-0.10    	!left			       !0.00		!8.50    
+
+xcol 	  !2name  		!3top		!4align			        !5left		!6right
+col  	  !A1	 		!0.00		!right				!6.40		!7.40
+
+xdlin	  !2name 		!3top		!4dummy
+dlin	  !04	 		!1.00		!400
+
+xdlin	  !2name 		!3top		!4dummy
+dlin	  !05	 		!1.50		!500
+
+xdlin	  !2name 		!3top		!4dummy
+dlin	  !06	 		!2.00		!600
+
+Endcol******************************************
+
+Endcol************************************************
+
+EndPgM
+
+PgL
+xcol    	!2name   	!3top    	!4align                        !5left           !6right  
+col     	!data    	!-0.10    	!left			       !0.00		!8.50    
+
+xcol 	 	!2name		!3top		!4align			       !5left		!6right
+col  	 	!A1		!0.00		!right			       !6.40		!7.40
+
+xdlin	 	!2name		!3top		!4dummy
+dlin	 	!07		!1.00		!700
+
+xdlin	 	!2name		!3top		!4dummy
+dlin	 	!08		!1.50		!800
+
+xdlin	 	!2name		!3top		!4dummy
+dlin	  	!09	  	!2.00  		!900
+
+Endcol******************************************
+
+Endcol************************************************
+
+
+EndPgL
+EndForm
+
+Note that every column contains at least one line.
+The first column contains all the columns and lines on a page.
+
+The pages contain all the columns and lines that are to be displayed on that page.
+The Form contains everything except the copy-left material.

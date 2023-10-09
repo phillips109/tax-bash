@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<Form name="Bkg-Copy00">
+<copy00lineApart color="blue">0</copy00lineApart>
+<copy00lineFS color="blue">MFS</copy00lineFS>
+<copy00lineSFNI color="blue">Jean E</copy00lineSFNI>
+<copy00lineSLN color="blue">Taxpayor</copy00lineSLN>
+<copy00lineSSSNoF color="blue">321</copy00lineSSSNoF>
+<copy00lineSSSNoL color="blue">9876</copy00lineSSSNoL>
+<copy00lineSSSNoM color="blue">54</copy00lineSSSNoM>
+<copy00lineTFNI color="blue">John Q</copy00lineTFNI>
+<copy00lineTLN color="blue">Taxpayor</copy00lineTLN>
+<copy00lineTSSNoF color="blue">123</copy00lineTSSNoF>
+<copy00lineTSSNoL color="blue">6789</copy00lineTSSNoL>
+<copy00lineTSSNoM color="blue">45</copy00lineTSSNoM>
+</Form>
+</IRSForms>

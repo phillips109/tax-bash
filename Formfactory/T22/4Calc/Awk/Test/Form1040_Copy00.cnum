@@ -1,0 +1,45 @@
+xCopyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend
+addit   	!01z     	!#####0  	!line01a       	!line01b       	!line01c       	!line01d	!line01e	!line01f	!line01g	!line01h
+addit   	!09      	!#####0  	!line01z       	!line02b       	!line03b       	!line04b	!line05b	!line06b	!line07		!line08
+addit   	!14      	!#####0  	!line12       	!line13
+addit		!16		!#####0		!line16a	!line8814	!line4972	!line962	!lineECR	!line1291TAX	!lineForm8978	!line965	!line965INC
+
+
+cnum		!16a	!#####0		!$Form1040-Copy00-line4952 > 0  						                           !$Form1040-Copy00-lineSDTW   !$Form1040-Copy00-line16b
+cnum		!16b	!#####0		!document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0  !$Form1040-Copy00-lineSDTW	!$Form1040-Copy00-line16c
+cnum		!16c	!#####0		!document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0  !$Form1040-Copy00-lineSDTW	!$Form1040-Copy00-line16d
+cnum		!16d	!#####0		!$Form1040-Copy00-line03a > 0		       			     	    			      	   !$Form1040-Copy00-lineQDCG	!$Form1040-Copy00-line16e
+cnum		!16e	!#####0		!$Form1040-Copy00-line07 > 0										   !$Form1040-Copy00-lineQDCG	!$Form1040-Copy00-lineCalc16
+
+
+xtCalc		!2Name		!3format	!4Form		!5copy		!6line
+tCalc		!Calc16		!#####0		!Form1040	!00		!line15
+
+
+xctext		!2name	!3format	!4testvalue				!5value1	!6value2
+ctext		!S	!#####0		!$Form1040-Copy00-lineFS = 'S'		!'x'		!''
+ctext		!MFJ	!#####0		!$Form1040-Copy00-lineFS = 'MFJ'	!'x'		!''
+ctext		!MFS	!#####0		!$Form1040-Copy00-lineFS = 'MFS'	!'x'		!''
+ctext		!HOH	!#####0		!$Form1040-Copy00-lineFS = 'HOH'	!'x'		!''
+ctext		!QSS	!#####0		!$Form1040-Copy00-lineFS = 'QSS'	!'x'		!''
+
+

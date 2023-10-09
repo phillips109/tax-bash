@@ -1,0 +1,1025 @@
+Copyright(C) 2019 Phillips Wedemeyer
+                              
+This file is part of a program called Tax-bash
+                              
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+                              
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+                              
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+                              
+                              
+For direction on how to separate pages see ../notes.
+
+                              
+Form
+
+xpgF  	!2name 	!3BkgImage
+pgF   	!First	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgF    
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Second	!../Jpg/f1040sb-page-002.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!0.77  	!4.01  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname1	!0.87  	!General Steel Company	!            	!      	!      
+tlin  	!pname2	!1.07  	!Industrial Division	!            	!      	!      
+tlin  	!paddr1	!1.34  	!300 Grant Street  	!            	!      	!      
+tlin  	!paddr2	!1.49  	!Suite 200         	!            	!      	!      
+tlin  	!pcity 	!1.60  	!Pittsburgh        	!            	!      	!      
+tlin  	!ptel  	!1.80  	!412-784-3957      	!            	!      	!      
+tlin  	!pTIN  	!2.46  	!24-67392          	!            	!      	!      
+tlin  	!rname1	!2.83  	!James Jones       	!            	!      	!      
+tlin  	!rname2	!3.08  	!Attorney at Law   	!            	!      	!      
+tlin  	!raddr1	!3.58  	!25 Maple Avenue   	!            	!      	!      
+tlin  	!rcity 	!3.97  	!Pittsburgh        	!            	!      	!      
+tlin  	!acctNo	!4.95  	!7562943           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!center	!2.42  	!2.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!1.60  	!PA                	!            	!      	!      
+tlin  	!rST   	!3.97  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!2.86  	!4.05  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!1.60  	!15213             	!            	!      	!      
+tlin  	!rzip  	!3.97  	!15218             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!2.44  	!4.00  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!rTIN  	!2.46  	!43-79421          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!right 	!4.25  	!3.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!0.96  	!10000             	!            	!      	!      
+dlin  	!02a   	!1.46  	!2000              	!            	!      	!      
+dlin  	!03    	!2.46  	!300               	!            	!      	!      
+dlin  	!05    	!3.12  	!500               	!            	!      	!      
+tlin  	!07    	!3.62  	!07                	!            	!      	!      
+tlin  	!09a   	!3.96  	!50                	!            	!      	!      
+dlin  	!14a   	!4.30  	!1401              	!            	!      	!      
+dlin  	!14b   	!4.48  	!1402              	!            	!      	!      
+dlin  	!17a   	!4.80  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.96  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!right 	!5.64  	!3.62  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!04    	!2.46  	!4000              	!            	!      	!      
+dlin  	!06    	!3.12  	!600               	!            	!      	!      
+dlin  	!08    	!3.62  	!800               	!            	!      	!      
+dlin  	!09b   	!3.96  	!901               	!            	!      	!      
+tlin  	!15a   	!4.30  	!569823            	!            	!      	!      
+tlin  	!15b   	!4.48  	!458291            	!            	!      	!      
+tlin  	!18a   	!4.80  	!Edgewood          	!            	!      	!      
+tlin  	!18b   	!4.96  	!Edgewood          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!right 	!7.07  	!7.88  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.30  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.48  	!1602              	!            	!      	!      
+dlin  	!19a   	!4.80  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.96  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!center	!5.21  	!5.31  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b1  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!6.41  	!6.51  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b2  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!5.24  	!5.34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!07a   	!3.62  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!right 	!6.34  	!6.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!08pct 	!3.62  	!15                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!right 	!0.86  	!2.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!10    	!4.48  	!100               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!right 	!2.34  	!3.26  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!11    	!4.48  	!1999              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!center	!3.65  	!3.75  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!12Ck  	!4.41  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!center	!3.32  	!4.04  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!13    	!4.95  	!6/2/22            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!center	!2.63  	!2.73  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!center	!3.44  	!3.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!corr  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Third	!../Jpg/f1040sb-page-003.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!0.77  	!4.01  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname1	!0.87  	!General Steel Company	!            	!      	!      
+tlin  	!pname2	!1.07  	!Industrial Division	!            	!      	!      
+tlin  	!paddr1	!1.34  	!300 Grant Street  	!            	!      	!      
+tlin  	!paddr2	!1.49  	!Suite 200         	!            	!      	!      
+tlin  	!pcity 	!1.60  	!Pittsburgh        	!            	!      	!      
+tlin  	!ptel  	!1.80  	!412-784-3957      	!            	!      	!      
+tlin  	!pTIN  	!2.46  	!24-67392          	!            	!      	!      
+tlin  	!rname1	!2.83  	!James Jones       	!            	!      	!      
+tlin  	!rname2	!3.08  	!Attorney at Law   	!            	!      	!      
+tlin  	!raddr1	!3.58  	!25 Maple Avenue   	!            	!      	!      
+tlin  	!rcity 	!3.97  	!Pittsburgh        	!            	!      	!      
+tlin  	!acctNo	!4.95  	!7562943           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!center	!2.42  	!2.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!1.60  	!PA                	!            	!      	!      
+tlin  	!rST   	!3.97  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!2.86  	!4.05  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!1.60  	!15213             	!            	!      	!      
+tlin  	!rzip  	!3.97  	!15218             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!2.44  	!4.00  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!rTIN  	!2.46  	!43-79421          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!right 	!4.25  	!3.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!0.96  	!10000             	!            	!      	!      
+dlin  	!02a   	!1.46  	!2000              	!            	!      	!      
+dlin  	!03    	!2.46  	!300               	!            	!      	!      
+dlin  	!05    	!3.12  	!500               	!            	!      	!      
+tlin  	!07    	!3.62  	!07                	!            	!      	!      
+tlin  	!09a   	!3.96  	!50                	!            	!      	!      
+dlin  	!14a   	!4.30  	!1401              	!            	!      	!      
+dlin  	!14b   	!4.48  	!1402              	!            	!      	!      
+dlin  	!17a   	!4.80  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.96  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!right 	!5.64  	!3.62  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!04    	!2.46  	!4000              	!            	!      	!      
+dlin  	!06    	!3.12  	!600               	!            	!      	!      
+dlin  	!08    	!3.62  	!800               	!            	!      	!      
+dlin  	!09b   	!3.96  	!901               	!            	!      	!      
+tlin  	!15a   	!4.30  	!569823            	!            	!      	!      
+tlin  	!15b   	!4.48  	!458291            	!            	!      	!      
+tlin  	!18a   	!4.80  	!Edgewood          	!            	!      	!      
+tlin  	!18b   	!4.96  	!Edgewood          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!right 	!7.07  	!7.88  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.30  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.48  	!1602              	!            	!      	!      
+dlin  	!19a   	!4.80  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.96  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!center	!5.21  	!5.31  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b1  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!6.41  	!6.51  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b2  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!5.24  	!5.34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!07a   	!3.62  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!right 	!6.34  	!6.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!08pct 	!3.62  	!15                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!right 	!0.86  	!2.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!10    	!4.48  	!100               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!right 	!2.34  	!3.26  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!11    	!4.48  	!1999              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!center	!3.65  	!3.75  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!12Ck  	!4.41  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!center	!3.32  	!4.04  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!13    	!4.95  	!6/2/22            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!center	!2.63  	!2.73  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!center	!3.44  	!3.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!corr  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Fourth	!../Jpg/f1040sb-page-004.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!0.77  	!4.01  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname1	!0.87  	!General Steel Company	!            	!      	!      
+tlin  	!pname2	!1.07  	!Industrial Division	!            	!      	!      
+tlin  	!paddr1	!1.34  	!300 Grant Street  	!            	!      	!      
+tlin  	!paddr2	!1.49  	!Suite 200         	!            	!      	!      
+tlin  	!pcity 	!1.60  	!Pittsburgh        	!            	!      	!      
+tlin  	!ptel  	!1.80  	!412-784-3957      	!            	!      	!      
+tlin  	!pTIN  	!2.46  	!24-67392          	!            	!      	!      
+tlin  	!rname1	!2.83  	!James Jones       	!            	!      	!      
+tlin  	!rname2	!3.08  	!Attorney at Law   	!            	!      	!      
+tlin  	!raddr1	!3.58  	!25 Maple Avenue   	!            	!      	!      
+tlin  	!rcity 	!3.97  	!Pittsburgh        	!            	!      	!      
+tlin  	!acctNo	!4.95  	!7562943           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!center	!2.42  	!2.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!1.60  	!PA                	!            	!      	!      
+tlin  	!rST   	!3.97  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!2.86  	!4.05  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!1.60  	!15213             	!            	!      	!      
+tlin  	!rzip  	!3.97  	!15218             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!2.44  	!4.00  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!rTIN  	!2.46  	!43-79421          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!right 	!4.25  	!3.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!0.96  	!10000             	!            	!      	!      
+dlin  	!02a   	!1.46  	!2000              	!            	!      	!      
+dlin  	!03    	!2.46  	!300               	!            	!      	!      
+dlin  	!05    	!3.12  	!500               	!            	!      	!      
+tlin  	!07    	!3.62  	!07                	!            	!      	!      
+tlin  	!09a   	!3.96  	!50                	!            	!      	!      
+dlin  	!14a   	!4.30  	!1401              	!            	!      	!      
+dlin  	!14b   	!4.48  	!1402              	!            	!      	!      
+dlin  	!17a   	!4.80  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.96  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!right 	!5.64  	!3.62  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!04    	!2.46  	!4000              	!            	!      	!      
+dlin  	!06    	!3.12  	!600               	!            	!      	!      
+dlin  	!08    	!3.62  	!800               	!            	!      	!      
+dlin  	!09b   	!3.96  	!901               	!            	!      	!      
+tlin  	!15a   	!4.30  	!569823            	!            	!      	!      
+tlin  	!15b   	!4.48  	!458291            	!            	!      	!      
+tlin  	!18a   	!4.80  	!Edgewood          	!            	!      	!      
+tlin  	!18b   	!4.96  	!Edgewood          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!right 	!7.07  	!7.88  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.30  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.48  	!1602              	!            	!      	!      
+dlin  	!19a   	!4.80  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.96  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!center	!5.21  	!5.31  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b1  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!6.41  	!6.51  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b2  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!5.24  	!5.34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!07a   	!3.62  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!right 	!6.34  	!6.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!08pct 	!3.62  	!15                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!right 	!0.86  	!2.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!10    	!4.48  	!100               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!right 	!2.34  	!3.26  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!11    	!4.48  	!1999              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!center	!3.65  	!3.75  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!12Ck  	!4.41  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!center	!3.32  	!4.04  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!13    	!4.95  	!6/2/22            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!center	!2.63  	!2.73  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!center	!3.44  	!3.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!corr  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgF   	!Fifth	!../Jpg/f1040sb-page-005.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Sixth	!../Jpg/f1040sb-page-006.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!0.77  	!4.01  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname1	!0.87  	!General Steel Company	!            	!      	!      
+tlin  	!pname2	!1.07  	!Industrial Division	!            	!      	!      
+tlin  	!paddr1	!1.34  	!300 Grant Street  	!            	!      	!      
+tlin  	!paddr2	!1.49  	!Suite 200         	!            	!      	!      
+tlin  	!pcity 	!1.60  	!Pittsburgh        	!            	!      	!      
+tlin  	!ptel  	!1.80  	!412-784-3957      	!            	!      	!      
+tlin  	!pTIN  	!2.46  	!24-67392          	!            	!      	!      
+tlin  	!rname1	!2.83  	!James Jones       	!            	!      	!      
+tlin  	!rname2	!3.08  	!Attorney at Law   	!            	!      	!      
+tlin  	!raddr1	!3.58  	!25 Maple Avenue   	!            	!      	!      
+tlin  	!rcity 	!3.97  	!Pittsburgh        	!            	!      	!      
+tlin  	!acctNo	!4.95  	!7562943           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!center	!2.42  	!2.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!1.60  	!PA                	!            	!      	!      
+tlin  	!rST   	!3.97  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!2.86  	!4.05  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!1.60  	!15213             	!            	!      	!      
+tlin  	!rzip  	!3.97  	!15218             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!2.44  	!4.00  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!rTIN  	!2.46  	!43-79421          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!right 	!4.25  	!3.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!0.96  	!10000             	!            	!      	!      
+dlin  	!02a   	!1.46  	!2000              	!            	!      	!      
+dlin  	!03    	!2.46  	!300               	!            	!      	!      
+dlin  	!05    	!3.12  	!500               	!            	!      	!      
+tlin  	!07    	!3.62  	!07                	!            	!      	!      
+tlin  	!09a   	!3.96  	!50                	!            	!      	!      
+dlin  	!14a   	!4.30  	!1401              	!            	!      	!      
+dlin  	!14b   	!4.48  	!1402              	!            	!      	!      
+dlin  	!17a   	!4.80  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.96  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!right 	!5.64  	!3.62  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!04    	!2.46  	!4000              	!            	!      	!      
+dlin  	!06    	!3.12  	!600               	!            	!      	!      
+dlin  	!08    	!3.62  	!800               	!            	!      	!      
+dlin  	!09b   	!3.96  	!901               	!            	!      	!      
+tlin  	!15a   	!4.30  	!569823            	!            	!      	!      
+tlin  	!15b   	!4.48  	!458291            	!            	!      	!      
+tlin  	!18a   	!4.80  	!Edgewood          	!            	!      	!      
+tlin  	!18b   	!4.96  	!Edgewood          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!right 	!7.07  	!7.88  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.30  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.48  	!1602              	!            	!      	!      
+dlin  	!19a   	!4.80  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.96  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!center	!5.21  	!5.31  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b1  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!6.41  	!6.51  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b2  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!5.24  	!5.34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!07a   	!3.62  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!right 	!6.34  	!6.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!08pct 	!3.62  	!15                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!right 	!0.86  	!2.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!10    	!4.48  	!100               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!right 	!2.34  	!3.26  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!11    	!4.48  	!1999              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!center	!3.65  	!3.75  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!12Ck  	!4.41  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!center	!3.32  	!4.04  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!13    	!4.95  	!6/2/22            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!center	!2.63  	!2.73  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!center	!3.44  	!3.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!corr  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Seven	!../Jpg/f1040sb-page-007.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+
+
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Eighth	!../Jpg/f1040sb-page-008.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!0.77  	!4.01  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname1	!0.87  	!General Steel Company	!            	!      	!      
+tlin  	!pname2	!1.07  	!Industrial Division	!            	!      	!      
+tlin  	!paddr1	!1.34  	!300 Grant Street  	!            	!      	!      
+tlin  	!paddr2	!1.49  	!Suite 200         	!            	!      	!      
+tlin  	!pcity 	!1.60  	!Pittsburgh        	!            	!      	!      
+tlin  	!ptel  	!1.80  	!412-784-3957      	!            	!      	!      
+tlin  	!pTIN  	!2.46  	!24-67392          	!            	!      	!      
+tlin  	!rname1	!2.83  	!James Jones       	!            	!      	!      
+tlin  	!rname2	!3.08  	!Attorney at Law   	!            	!      	!      
+tlin  	!raddr1	!3.58  	!25 Maple Avenue   	!            	!      	!      
+tlin  	!rcity 	!3.97  	!Pittsburgh        	!            	!      	!      
+tlin  	!acctNo	!4.95  	!7562943           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!center	!2.42  	!2.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!1.60  	!PA                	!            	!      	!      
+tlin  	!rST   	!3.97  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!2.86  	!4.05  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!1.60  	!15213             	!            	!      	!      
+tlin  	!rzip  	!3.97  	!15218             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!2.44  	!4.00  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!rTIN  	!2.46  	!43-79421          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!right 	!4.25  	!3.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!0.96  	!10000             	!            	!      	!      
+dlin  	!02a   	!1.46  	!2000              	!            	!      	!      
+dlin  	!03    	!2.46  	!300               	!            	!      	!      
+dlin  	!05    	!3.12  	!500               	!            	!      	!      
+tlin  	!07    	!3.62  	!07                	!            	!      	!      
+tlin  	!09a   	!3.96  	!50                	!            	!      	!      
+dlin  	!14a   	!4.30  	!1401              	!            	!      	!      
+dlin  	!14b   	!4.48  	!1402              	!            	!      	!      
+dlin  	!17a   	!4.80  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.96  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!right 	!5.64  	!3.62  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!04    	!2.46  	!4000              	!            	!      	!      
+dlin  	!06    	!3.12  	!600               	!            	!      	!      
+dlin  	!08    	!3.62  	!800               	!            	!      	!      
+dlin  	!09b   	!3.96  	!901               	!            	!      	!      
+tlin  	!15a   	!4.30  	!569823            	!            	!      	!      
+tlin  	!15b   	!4.48  	!458291            	!            	!      	!      
+tlin  	!18a   	!4.80  	!Edgewood          	!            	!      	!      
+tlin  	!18b   	!4.96  	!Edgewood          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!right 	!7.07  	!7.88  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.30  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.48  	!1602              	!            	!      	!      
+dlin  	!19a   	!4.80  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.96  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!center	!5.21  	!5.31  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b1  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!6.41  	!6.51  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b2  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!5.24  	!5.34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!07a   	!3.62  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!right 	!6.34  	!6.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!08pct 	!3.62  	!15                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!right 	!0.86  	!2.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!10    	!4.48  	!100               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!right 	!2.34  	!3.26  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!11    	!4.48  	!1999              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!center	!3.65  	!3.75  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!12Ck  	!4.41  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!center	!3.32  	!4.04  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!13    	!4.95  	!6/2/22            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!center	!2.63  	!2.73  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!center	!3.44  	!3.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!corr  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Ninth	!../Jpg/f1040sb-page-009.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Ninth	!../Jpg/f1040sb-page-009.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+
+
+
+
+
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Tenth	!../Jpg/f1040sb-page-010.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!0.77  	!4.01  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname1	!0.87  	!General Steel Company	!            	!      	!      
+tlin  	!pname2	!1.07  	!Industrial Division	!            	!      	!      
+tlin  	!paddr1	!1.34  	!300 Grant Street  	!            	!      	!      
+tlin  	!paddr2	!1.49  	!Suite 200         	!            	!      	!      
+tlin  	!pcity 	!1.60  	!Pittsburgh        	!            	!      	!      
+tlin  	!ptel  	!1.80  	!412-784-3957      	!            	!      	!      
+tlin  	!pTIN  	!2.46  	!24-67392          	!            	!      	!      
+tlin  	!rname1	!2.83  	!James Jones       	!            	!      	!      
+tlin  	!rname2	!3.08  	!Attorney at Law   	!            	!      	!      
+tlin  	!raddr1	!3.58  	!25 Maple Avenue   	!            	!      	!      
+tlin  	!rcity 	!3.97  	!Pittsburgh        	!            	!      	!      
+tlin  	!acctNo	!4.95  	!7562943           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!center	!2.42  	!2.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!1.60  	!PA                	!            	!      	!      
+tlin  	!rST   	!3.97  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!2.86  	!4.05  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!1.60  	!15213             	!            	!      	!      
+tlin  	!rzip  	!3.97  	!15218             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!2.44  	!4.00  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!rTIN  	!2.46  	!43-79421          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!right 	!4.25  	!3.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!0.96  	!10000             	!            	!      	!      
+dlin  	!02a   	!1.46  	!2000              	!            	!      	!      
+dlin  	!03    	!2.46  	!300               	!            	!      	!      
+dlin  	!05    	!3.12  	!500               	!            	!      	!      
+tlin  	!07    	!3.62  	!07                	!            	!      	!      
+tlin  	!09a   	!3.96  	!50                	!            	!      	!      
+dlin  	!14a   	!4.30  	!1401              	!            	!      	!      
+dlin  	!14b   	!4.48  	!1402              	!            	!      	!      
+dlin  	!17a   	!4.80  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.96  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!right 	!5.64  	!3.62  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!04    	!2.46  	!4000              	!            	!      	!      
+dlin  	!06    	!3.12  	!600               	!            	!      	!      
+dlin  	!08    	!3.62  	!800               	!            	!      	!      
+dlin  	!09b   	!3.96  	!901               	!            	!      	!      
+tlin  	!15a   	!4.30  	!569823            	!            	!      	!      
+tlin  	!15b   	!4.48  	!458291            	!            	!      	!      
+tlin  	!18a   	!4.80  	!Edgewood          	!            	!      	!      
+tlin  	!18b   	!4.96  	!Edgewood          	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!right 	!7.07  	!7.88  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.30  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.48  	!1602              	!            	!      	!      
+dlin  	!19a   	!4.80  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.96  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!center	!5.21  	!5.31  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b1  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!6.41  	!6.51  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!02b2  	!1.74  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!5.24  	!5.34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!07a   	!3.62  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!right 	!6.34  	!6.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!08pct 	!3.62  	!15                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!right 	!0.86  	!2.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!10    	!4.48  	!100               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!right 	!2.34  	!3.26  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!11    	!4.48  	!1999              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!center	!3.65  	!3.75  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!12Ck  	!4.41  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!center	!3.32  	!4.04  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!13    	!4.95  	!6/2/22            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!center	!2.63  	!2.73  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!center	!3.44  	!3.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!corr  	!0.45  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+
+xpgL  	!2name 	!3BkgImage
+pgL   	!Last	!../Jpg/f1040sb-page-011.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgL    
+
+
+EndForm

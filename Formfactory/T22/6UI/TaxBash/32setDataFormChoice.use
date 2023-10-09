@@ -1,0 +1,113 @@
+
+set_data_form_choice() {
+while true;
+do
+  clear
+  echo "Forms for which to enter and edit data :"
+  echo
+  echo "   bkg) background"
+  echo "   a) Schedule A"
+  echo "   c) Schedule C"
+  echo "   1040) Form 1040"
+  echo 
+  echo "   div01)Form 1099DIV_Copy01"
+  echo "   div02)Form 1099DIV_Copy02"
+  echo "   div03)Form 1099DIV_Copy03"
+  echo "   div04)Form 1099DIV_Copy04"
+  echo "   div05)Form 1099DIV_Copy05"
+  echo ""
+  echo "   int01)Form 1099INT_Copy01"
+  echo "   int02)Form 1099INT_Copy02"
+  echo "   int03)Form 1099INT_Copy03"
+  echo "   int04)Form 1099INT_Copy04"
+  echo "   int05)Form 1099INT_Copy05"
+  echo "   int06)Form 1099INT_Copy06"
+  echo "   int08)Form 1099INT_Copy07"
+  echo "   int08)Form 1099INT_Copy08"
+  echo "   int09)Form 1099INT_Copy09"
+  echo "   int10)Form 1099INT_Copy10"
+  echo "   int11)Form 1099INT_Copy11"
+  echo "   int12)Form 1099INT_Copy12"
+  echo "   int13)Form 1099INT_Copy13"
+  echo "   int14)Form 1099INT_Copy14"
+  echo 
+  echo "   r01)  Form 1099R_Copy01"
+  echo "   r02)  Form 1099R_Copy02"
+  echo "   r03)  Form 1099R_Copy03"
+  echo "   r04)  Form 1099R_Copy04"
+  echo "   r05)  Form 1099R_Copy05" 
+  echo "   r06)  Form 1099R_Copy06"
+  echo "   r07)  Form 1099R_Copy07"
+  echo 
+  echo "   g01)  Form 1099G_Copy01"
+  echo "   g02)  Form 1099G_Copy02"
+  echo "   g03)  Form 1099G_Copy03"
+  echo "   g04)  Form 1099G_Copy04"
+  echo "   g05)  Form 1099G_Copy05" 
+  echo ""
+  echo "   4562) Form 4562"
+  echo "   4868) Form 4868"
+  echo "   6251) Form 6251"
+  echo "   6252) Form 6252"
+  echo "   8829) Form 8829"  
+  echo 
+  echo "     q)  Return to Previous Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read data_form_choice
+
+    case $data_form_choice in
+
+      bkg) set_background_line_data_choice;;	
+      a) set_schedA_line_data_choice;;
+      c) set_schedC_line_data_choice;;
+
+      1040) set_form1040_line_data_choice;;
+
+      div01)  set_form1099div01_line_data_choice;;
+      div02)  set_form1099div02_line_data_choice;;
+      div03)  set_form1099div03_line_data_choice;;
+      div04)  set_form1099div04_line_data_choice;;
+      div05)  set_form1099div05_line_data_choice;;
+
+      int01)  set_form1099int01_line_data_choice;;
+      int02)  set_form1099int02_line_data_choice;;
+      int03)  set_form1099int03_line_data_choice;;
+      int04)  set_form1099int04_line_data_choice;;
+      int05)  set_form1099int05_line_data_choice;;
+      int06)  set_form1099int06_line_data_choice;;
+      int07)  set_form1099int07_line_data_choice;;
+      int08)  set_form1099int08_line_data_choice;;
+      int09)  set_form1099int09_line_data_choice;;
+      int10)  set_form1099int10_line_data_choice;;
+      int11)  set_form1099int11_line_data_choice;;
+      int12)  set_form1099int12_line_data_choice;;
+      int13)  set_form1099int13_line_data_choice;;
+      int14)  set_form1099int14_line_data_choice;;
+      
+    
+      r01)    set_form1099r01_line_data_choice;;
+      r02)    set_form1099r02_line_data_choice;;
+      r03)    set_form1099r03_line_data_choice;;
+      r04)    set_form1099r04_line_data_choice;;
+      r05)    set_form1099r05_line_data_choice;;
+      r06)    set_form1099r06_line_data_choice;;
+      r07)    set_form1099r07_line_data_choice;;
+	
+      g01)    set_form1099g01_line_data_choice;;
+      g02)    set_form1099g02_line_data_choice;;
+      g03)    set_form1099g03_line_data_choice;;
+      g04)    set_form1099g04_line_data_choice;;
+      g05)    set_form1099g05_line_data_choice;;
+
+      4562)   set_form4562_line_data_choice;;
+      4868)   set_form4868_line_data_choice;;
+      6251)   set_form6251_line_data_choice;;
+      6252)   set_form6252_line_data_choice;;
+      8829)   set_form8829_line_data_choice;;
+      
+      q)      break;;
+    esac
+done
+}
+

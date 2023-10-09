@@ -1,0 +1,17 @@
+set_QDCGTaxWkst_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in QDCGTaxWkst in which to enter or edit data:"
+echo
+echo
+echo "q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read QDCGTaxWkst_line_data_choice
+echo
+     case $QDCGTaxWkst_line_data_choice in
+q)    break;;                       
+esac
+done
+}

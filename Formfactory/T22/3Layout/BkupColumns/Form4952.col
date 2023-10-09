@@ -1,0 +1,26 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+a      	!001   	!TFNI    	!dPull 	!      	!      	!      
+b      	!002   	!TLN     	!dPull 	!      	!      	!      
+c      	!003   	!SFNI    	!dPull 	!      	!      	!      
+d      	!004   	!SLN     	!dPull 	!      	!      	!      
+e      	!005   	!TSSNoF  	!dPull 	!      	!      	!      
+f      	!006   	!TSSNoM  	!dPull 	!      	!      	!      
+g      	!007   	!TSSNoL  	!dPull 	!      	!      	!      
+h      	!008   	!01      	!dlin  	!      	!      	!      
+h      	!009   	!02      	!dlin  	!      	!      	!      
+h      	!010   	!03      	!addit 	!      	!      	!      
+i      	!011   	!04a     	!dlin  	!      	!      	!      
+i      	!012   	!04b     	!dlin  	!      	!      	!      
+h      	!013   	!04c     	!subtr 	!      	!      	!      
+i      	!014   	!04d     	!dlin  	!      	!      	!      
+i      	!015   	!04e     	!smOf  	!      	!      	!      
+h      	!016   	!04f     	!subtr 	!      	!      	!      
+h      	!017   	!04g     	!dlin  	!      	!      	!      
+h      	!018   	!04h     	!addit 	!      	!      	!      
+h      	!019   	!05      	!dlin  	!      	!      	!      
+h      	!020   	!06      	!subt0 	!      	!      	!      
+h      	!021   	!07      	!subt0 	!      	!      	!      
+h      	!022   	!08      	!smOf  	!      	!      	!      
