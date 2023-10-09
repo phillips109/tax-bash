@@ -18,7 +18,7 @@
 #
 #
 
-<!--
+
 downloadPdf(){
 	firefox https://apps.irs.gov/app/picklist/list/formsPublications.html
 	}
