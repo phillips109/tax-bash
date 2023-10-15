@@ -1,0 +1,47 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!amtpd   	!#####0  	!1000                    	!
+dlin    	!t0tpay  	!#####0  	!5000                    	!
+dlin    	!tottax  	!#####0  	!10000                    	!
+
+xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
+subtr   	!bal     	!#####0  	!linetottax    	!linet0tpay    	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!1040NR  	!        	!x        	!
+tlin    	!addr1   	!        	!25 Main Street !
+tlin    	!addr2   	!        	!Apt 2        	!
+tlin    	!away    	!        	!x        	!
+tlin    	!city    	!        	!Pittsburgh    	!
+tlin    	!ST      	!        	!PA        	!
+tlin    	!zip     	!        	!15212        	!
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	!
+tPull   	!SFNI    	!        	!        	!Bkg        	!00        	!SFNI          	!
+tPull   	!SLN     	!        	!        	!Bkg        	!00        	!SLN           	!
+tPull   	!SSSNoF  	!        	!        	!Bkg        	!00        	!SSSNoF        	!
+tPull   	!SSSNoL  	!        	!        	!Bkg        	!00        	!SSSNoL        	!
+tPull   	!SSSNoM  	!        	!        	!Bkg        	!00     	!SSSNoM        	!
+tPull   	!TFNI    	!        	!        	!Bkg        	!00     	!TFNI          	!
+tPull   	!TLN     	!        	!        	!Bkg        	!00      	!TLN           	!
+tPull   	!TSSNoF  	!        	!        	!Bkg        	!00      	!TSSNoF        	!
+tPull   	!TSSNoL  	!        	!        	!Bkg        	!00      	!TSSNoL        	!
+tPull   	!TSSNoM  	!        	!        	!Bkg        	!00      	!TSSNoM        	!

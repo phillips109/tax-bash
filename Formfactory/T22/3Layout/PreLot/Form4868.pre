@@ -1,0 +1,163 @@
+Copyright(C) 2019 Phillips Wedemeyer
+                              
+This file is part of a program called Tax-bash
+                              
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+                              
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+                              
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+                              
+                              
+For direction on how to separate pages see ../notes.
+
+                              
+Form
+xpgF  	!2name 	!3BkgImage
+pgF   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgS    
+                              
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!0.58  	!1.69  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TFNI  	!9.21  	!John E            	!            	!      	!      
+tlin  	!SFNI  	!9.31  	!Jean E            	!            	!      	!      
+tlin  	!addr1 	!9.59  	!129 Main Street   	!            	!      	!      
+tlin  	!addr2 	!9.79  	!Apt 2             	!            	!      	!      
+tlin  	!city  	!10.13 	!Chicago           	!            	!      	!      
+tlin  	!TSSNoF	!10.45 	!123               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!left  	!2.26  	!4.11  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TLN   	!9.21  	!Dough             	!            	!      	!      
+tlin  	!SLN   	!9.31  	!Dough             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!center	!2.92  	!3.16  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!ST    	!10.13 	!IL                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!3.36  	!4.15  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!zip   	!10.13 	!60615             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!center	!0.98  	!1.26  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!10.45 	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!left  	!1.30  	!2.23  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!10.45 	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!2.37  	!2.82  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!SSSNoF	!10.45 	!987               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!center	!2.90  	!3.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!SSSNoM	!10.45 	!65                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!left  	!3.24  	!4.14  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!SSSNoL	!10.45 	!4321              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!right 	!6.96  	!7.94  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!tottax	!9.13  	!15000             	!            	!      	!      
+dlin  	!t0tpay	!9.30  	!10000             	!            	!      	!      
+dlin  	!bal   	!9.62  	!5000              	!            	!      	!      
+dlin  	!amtpd 	!9.80  	!2000              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!7.66  	!7.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!away  	!10.06 	!x                 	!            	!      	!      
+tlin  	!1040NR	!10.44 	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgF    
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-002.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-003.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+xpgF  	!2name 	!3BkgImage
+pgL   	!Single	!../Jpg/f1040sb-page-004.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgL    
+
+
+EndForm

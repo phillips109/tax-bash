@@ -1,0 +1,25 @@
+xdlin 	!2name 	!3format	!4dummy
+dlin  	!amtpd 	!019    	!                              
+dlin  	!t0tpay	!017    	!                              
+dlin  	!tottax	!016    	!                              
+xsubtr	!2name 	!3format	!4minuend    	!5subtrahend
+subtr 	!bal   	!018    	!                              	!
+xtlin 	!2name 	!3form       	!4copy 	!5line
+tlin  	!1040NR	!021         	!                              	!
+tlin  	!addr1 	!005         	!                              	!
+tlin  	!addr2 	!006         	!                              	!
+tlin  	!away  	!020         	!                              	!
+tlin  	!city  	!007         	!                              	!
+tlin  	!ST    	!008         	!                              	!
+tlin  	!zip   	!009         	!                              	!
+xtPull	!2name 	!3form       	!4copy 	!5line
+tPull 	!SFNI  	!003         	!                              	!
+tPull 	!SLN   	!004         	!                              	!
+tPull 	!SSSNoF	!013         	!                              	!
+tPull 	!SSSNoL	!015         	!                              	!
+tPull 	!SSSNoM	!014         	!                              	!
+tPull 	!TFNI  	!001         	!                              	!
+tPull 	!TLN   	!002         	!                              	!
+tPull 	!TSSNoF	!010         	!                              	!
+tPull 	!TSSNoL	!012         	!                              	!
+tPull 	!TSSNoM	!011         	!                              	!

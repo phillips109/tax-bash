@@ -1,0 +1,37 @@
+set_Form4868_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form4868 in which to enter or edit data:"
+echo
+echo "addr1 )    Enter first line of your address.                              "
+echo "addr2 )    Enter second line of your address.                              "
+echo "city  )    Enter city of residence.                              "
+echo "ST    )    Enter state of residence.                              "
+echo "zip   )    Enter your zip code.                              "
+echo "tottax)    Enter estimate of total tax liability for 2022.       "
+echo "t0tpay)    Enter total payments.                              "
+echo "amtpd )    Emter the amount you are paying.                      "
+echo "away  )    Enter x if you are "out of the couontry"              "
+echo "1040NR)    Enter x if filing Form1040NR and you didn't receive wages                              "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form4868_line_data_choice
+echo
+     case $Form4868_line_data_choice in
+addr1 )    set_line_menu_text   $1 $2  lineaddr1                          14;;
+addr2 )    set_line_menu_text   $1 $2  lineaddr2                          14;;
+city  )    set_line_menu_text   $1 $2  linecity                           14;;
+ST    )    set_line_menu_text   $1 $2  lineST                             14;;
+zip   )    set_line_menu_text   $1 $2  linezip                            14;;
+tottax)    set_line_menu_number $1 $2  linetottax                         14;;
+t0tpay)    set_line_menu_number $1 $2  linet0tpay                         14;;
+amtpd )    set_line_menu_number $1 $2  lineamtpd                          14;;
+away  )    set_line_menu_text   $1 $2  lineaway                           14;;
+1040NR)    set_line_menu_text   $1 $2  line1040NR                         14;;
+q     )    break;;                       
+esac
+done
+}

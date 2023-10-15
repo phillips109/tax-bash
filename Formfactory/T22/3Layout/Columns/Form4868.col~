@@ -1,0 +1,25 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+      	!001   	!TFNI    	!tlin  	!      	!      	!      
+      	!002   	!TLN     	!tlin  	!      	!      	!      
+      	!003   	!SFNI    	!tlin  	!      	!      	!      
+      	!004   	!SLN     	!tlin  	!      	!      	!      
+      	!005   	!addr1   	!tlin  	!      	!      	!      
+      	!006   	!addr2   	!tlin  	!      	!      	!      
+      	!007   	!city    	!tlin  	!      	!      	!      
+      	!008   	!ST      	!tlin  	!      	!      	!      
+      	!009   	!zip     	!tlin  	!      	!      	!      
+      	!010   	!TSSNoF  	!tlin  	!      	!      	!      
+      	!011   	!TSSNoM  	!tlin  	!      	!      	!      
+      	!012   	!TSSNoL  	!tlin  	!      	!      	!      
+      	!013   	!SSSNoF  	!tlin  	!      	!      	!      
+      	!014   	!SSSNoM  	!tlin  	!      	!      	!      
+      	!015   	!SSSNoL  	!tlin  	!      	!      	!      
+      	!016   	!tottax  	!dlin  	!      	!      	!      
+      	!017   	!t0tpay  	!dlin  	!      	!      	!      
+      	!018   	!bal     	!dlin  	!      	!      	!      
+      	!019   	!amtpd   	!dlin  	!      	!      	!      
+      	!020   	!away    	!tlin  	!      	!      	!      
+      	!021   	!1040NR  	!tlin  	!      	!      	!      
