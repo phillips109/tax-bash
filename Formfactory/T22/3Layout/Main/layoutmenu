@@ -71,6 +71,7 @@ Pdfshow(){
 	  1065k) qpdfview ../Pdf/f1040s1.pdf       &;;
          1065Bk) qpdfview ../Pdf/f1040s1.pdf       &;;
          1120Sk) qpdfview ../Pdf/f1040s1.pdf       &;;
+	   4868) qpdfview ../Pdf/f4868.pdf         &;;
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;; 
        SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
