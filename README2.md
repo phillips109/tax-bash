@@ -58,8 +58,11 @@ In Xsl the If clause is expressed like this:
 More complex logic is achieved by nesting another <choose> under one of the <when>'s.
 
 In order to make the creation of the awk simple I used a 6 character prefix for the lines:
+
 CHOOS1
+
 WHEN01
+
 VALU0F
 WHEN02
 WHEN01
