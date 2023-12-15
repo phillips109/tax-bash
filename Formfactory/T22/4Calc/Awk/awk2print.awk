@@ -5,7 +5,8 @@
 
 
 BEGIN {
-      FS="[ \t]*!"
+      FS = "\n"
+      RS = ""
 }
 
 /^addit/ {
@@ -23,55 +24,106 @@ BEGIN {
 }
 
 
+#/^cnum/ {
+#        print ""
+#	print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
+#	print "<xsl:choose>"
+#        print "<xsl:when test=\""$4"\">"
+#	print "<xsl:value-of select=\""$5"\"/>"
+#        print "</xsl:when>"
+#	x = 6
+#	while ( x < NF )
+#	{
+#	    print "<xsl:when test=\""$(x)"\">"
+#	    print "<xsl:value-of select=\""$(x + 1)"\"/>"
+#	    print "</xsl:when>"
+#	    x=x+2
+#	}
+#  	print "<xsl:otherwise>"
+#        print "<xsl:value-of select=\""$NF"\"/>"
+#        print "</xsl:otherwise>"
+#        print "</xsl:choose>"
+#        print "</xsl:variable>"
+#}
+
 /^cnum/ {
-        print ""
-	print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
-	print "<xsl:choose>"
-        print "<xsl:when test=\""$4"\">"
-	print "<xsl:value-of select=\""$5"\"/>"
-        print "</xsl:when>"
-	x = 6
-	while ( x < NF )
-	{
-	    print "<xsl:when test=\""$(x)"\">"
-	    print "<xsl:value-of select=\""$(x + 1)"\"/>"
-	    print "</xsl:when>"
-	    x=x+2
-	}
-  	print "<xsl:otherwise>"
-        print "<xsl:value-of select=\""$NF"\"/>"
-        print "</xsl:otherwise>"
-        print "</xsl:choose>"
-        print "</xsl:variable>"
+    print ""
+    print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
+
+    for ( i = 1; i <= NF; ++i ){
+	if ( substr( $i, 1, 6 ) == "CHOOS1" )
+           print "<xsl:choose>"
+	else if ( substr( $i, 1, 6 ) == "WHEN01" )
+	    print "<xsl:when test=\""substr( $i, 7 )"\">"
+	else if ( substr( $i, 1, 6 ) == "VALUOF" )
+	    print "<xsl:value-of select=\""substr( $i, 7 )"\"/>"
+	else if ( substr( $i, 1, 6 ) == "WHEN02" )
+           print "</xsl:when>"
+	else if ( substr( $i, 1, 6 ) == "OTHER1" )
+           print "<xsl:otherwise>"
+	else if ( substr( $i, 1, 6 ) == "OTHER2" )
+           print "</xsl:otherwise>"
+	else if ( substr( $i, 1, 6 ) == "CHOOS2" )
+           print "</xsl:choose>"
+    }
+
+    print "</xsl:variable>" 
 }
+
+/^ctext/ {
+    print ""
+    print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
+
+    for ( i = 1; i <= NF; ++i ){
+	if ( substr( $i, 1, 6 ) == "CHOOS1" )
+           print "<xsl:choose>"
+	else if ( substr( $i, 1, 6 ) == "WHEN01" )
+	    print "<xsl:when test=\""substr( $i, 7 )"\">"
+	else if ( substr( $i, 1, 6 ) == "VALUOF" )
+	    print "<xsl:value-of select=\""substr( $i, 7 )"\"/>"
+	else if ( substr( $i, 1, 6 ) == "WHEN02" )
+           print "</xsl:when>"
+	else if ( substr( $i, 1, 6 ) == "OTHER1" )
+           print "<xsl:otherwise>"
+	else if ( substr( $i, 1, 6 ) == "OTHER2" )
+           print "</xsl:otherwise>"
+	else if ( substr( $i, 1, 6 ) == "CHOOS2" )
+           print "</xsl:choose>"
+    }
+
+    print "</xsl:variable>" 
+}
+
 
 /^const/ {
     print ""
-    print "<xsl:variable name=\""form"-Copy00-line"$2"\" select=\"2000\"/>"
+    print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
+    print "<xsl:value-of select=\""$4"\"/>"
+    print "</xsl:variable>"
 }
 
-/^ctext/  {
-        print ""
-	print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
-	print "<xsl:choose>"
-        print "<xsl:when test=\""$4"\">"
-	print "<xsl:value-of select=\""$5"\"/>"
-        print "</xsl:when>"
-	x = 6
-	while ( x < NF )
-	{
-	    print "<xsl:when test=\""$(x)"\">"
-	    print "<xsl:value-of select=\""$(x + 1)"\"/>"
-	    print "</xsl:when>"
-	    x=x+2
-	}
-  	print "<xsl:otherwise>"
-        print "<xsl:value-of select=\""$NF"\"/>"
-        print "</xsl:otherwise>"
-        print "</xsl:choose>"
-        print "</xsl:variable>"
-
-}
+#/^ctext/  {
+#        print ""
+#	print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
+#	print "<xsl:choose>"
+#        print "<xsl:when test=\""$4"\">"
+#	print "<xsl:value-of select=\""$5"\"/>"
+#        print "</xsl:when>"
+#	x = 6
+#	while ( x < NF )
+#	{
+#	    print "<xsl:when test=\""$(x)"\">"
+#	    print "<xsl:value-of select=\""$(x + 1)"\"/>"
+#	    print "</xsl:when>"
+#	    x=x+2
+#	}
+# 	print "<xsl:otherwise>"
+#        print "<xsl:value-of select=\""$NF"\"/>"
+#        print "</xsl:otherwise>"
+#        print "</xsl:choose>"
+#        print "</xsl:variable>"
+#
+#}
 
 /^dlin/  {
     print ""
@@ -89,10 +141,10 @@ BEGIN {
 							      
 /^dPull/ {
         print ""
-	print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
+	print "<xsl:variable name=\""form"-Copy00-line"$4$2"\">"
 	print "<xsl:choose>"
-        print "<xsl:when test=\"document('../Output/"$5"_Copy"$6".xml')\">"
-	print "<xsl:value-of select=\"document('../Output/"$5"_Copy"$6".xml')//copy00"$7"\"/>"
+        print "<xsl:when test=\"document('../../"$4"/Output/"$5"_Copy"$6".xml')\">"
+	print "<xsl:value-of select=\"document('../../"$4"/Output/"$5"_Copy"$6".xml')//copy"$6 $7"\"/>"
         print "</xsl:when>"
 	print "<xsl:otherwise>"
         print "<xsl:value-of select=\"0\"/>"
@@ -105,11 +157,11 @@ BEGIN {
         print ""
         print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
         print "<xsl:choose>"
-        print "<xsl:when test=\""form"-Copy00-"$5" >= "form"-Copy00-"$4"\">"
+        print "<xsl:when test=\"$"form"-Copy00-"$5" >= $"form"-Copy00-"$4"\">"
         print "<xsl:value-of select=\"0\"/>"
         print "</xsl:when>"
         print "<xsl:otherwise>"
-        print "<xsl:value-of select=\""form"-Copy00-"$4" - "form"-Copy00-"$5"\"/>"
+        print "<xsl:value-of select=\"$"form"-Copy00-"$4" - $"form"-Copy00-"$5"\"/>"
         print "</xsl:otherwise>"
         print "</xsl:choose>"
         print "</xsl:variable>"
@@ -118,7 +170,7 @@ BEGIN {
 /^subtr/  {
        print ""
        print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
-       print "<xsl:value-of select=\"format-number($"form"-Copy00-"$4" -  $"form"-Copy00-"$5", '#####0')\"/>"
+       print "<xsl:value-of select=\"$"form"-Copy00-"$4" -  $"form"-Copy00-"$5"\"/>"
        print "</xsl:variable>"
 
 }
@@ -134,8 +186,8 @@ BEGIN {
     print ""
     print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
     print "<xsl:choose>"
-    print "<xsl:when test=\"document('../Data/"$5"_Copy00_line"$7"_text.xml')\">"
-    print "<xsl:value-of select=\"document('../Data/"$5"_Copy00_line"$7"_text.xml')//text\"/>"
+    print "<xsl:when test=\"document('../Data/"$5"_Copy"$6"_line"$7"_text.xml')\">"
+    print "<xsl:value-of select=\"document('../Data/"$5"_Copy"$6"_line"$7"_text.xml')//text\"/>"
     print "</xsl:when>"
     print "<xsl:otherwise>"
     print "<xsl:value-of select=\"''\"/>"
@@ -164,7 +216,7 @@ BEGIN {
 /^dRef/  {
     print ""
     print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
-    print "<xsl:value-of select=$"form"-Copy00-line"$7"\"/>"
+    print "<xsl:value-of select=\"$"form"-Copy00-line"$5"\"/>"
     print "</xsl:variable>"
 }
 
@@ -191,7 +243,7 @@ BEGIN {
     print "<xsl:value-of select=\"$"form"-Copy00-"$5"\"/>"
     print "</xsl:when>"
     print "<xsl:otherwise>"
-    print "<xsl:value-of select=\"$"form"-Copy00-"$5"\"/>"
+    print "<xsl:value-of select=\"$"form"-Copy00-"$4"\"/>"
     print "</xsl:otherwise>"
     print "</xsl:choose>"
     print "</xsl:variable>"

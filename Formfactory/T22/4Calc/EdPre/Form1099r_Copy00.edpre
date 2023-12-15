@@ -34,7 +34,6 @@ dlin    	!14a     	!#####0  	!1401                  	!
 dlin    	!14b     	!#####0  	!1402                  	!
 dlin    	!16a     	!#####0  	!1601                  	!
 dlin    	!16b     	!#####0  	!1602                  	!
-dlin    	!17a     	!#####0  	!1701                  	!
 dlin    	!17b     	!#####0  	!1702                  	!
 dlin    	!19a     	!#####0  	!1901                  	!
 dlin    	!19b     	!#####0  	!1902                  	!
@@ -43,6 +42,7 @@ xtlin   	!2name   	!3blank  	!4dummy  	!
 tlin    	!02b1    	!        	!        	!
 tlin    	!02b2    	!        	!        	!
 tlin    	!07      	!		!            	!
+tlin    	!17a     	!       	!              	!
 tlin    	!07a     	!		!             	!
 tlin    	!08pct   	!        	!        	!
 tlin    	!12Ck    	!        	!        	!

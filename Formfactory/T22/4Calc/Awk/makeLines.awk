@@ -9,63 +9,63 @@ BEGIN {
 
 /^addit/  {
     print "<copy" copy "line" $2 " color=\"green\">"
-    print "<xsl:value-of select=\"format-number($" form "-Coppy" copy "-line" $2 ", '#####0')\"/>"
+    print "<xsl:value-of select=\"format-number($" form "-Copy" copy "-line" $2 ", '#####0')\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^const/  {
     print "<copy" copy "line" $2 " color=\"green\">"
-    print "<xsl:value-of select=\"format-number($" form "-Coppy" copy "-line" $2 ", '#####0')\"/>"
+    print "<xsl:value-of select=\"format-number($" form "-Copy" copy "-line" $2 ", '#####0')\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^dlin/  {
     print "<copy" copy "line" $2 " color=\"green\">"
-    print "<xsl:value-of select=\"format-number($" form "-Coppy" copy "-line" $2 ", '#####0')\"/>"
+    print "<xsl:value-of select=\"format-number($" form "-Copy" copy "-line" $2 ", '#####0')\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^dPull/  {
     print "<copy" copy "line" $2 " color=\"green\">"
-    print "<xsl:value-of select=\"format-number($" form "-Coppy" copy "-line" $2 ", '#####0')\"/>"
+    print "<xsl:value-of select=\"format-number($" form "-Copy" copy "-line" $2 ", '#####0')\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^subtr/  {
     print "<copy" copy "line" $2 " color=\"green\">"
-    print "<xsl:value-of select=\"format-number($" form "-Coppy" copy "-line" $2 ", '#####0')\"/>"
+    print "<xsl:value-of select=\"format-number($" form "-Copy" copy "-line" $2 ", '#####0')\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^subt0/  {
     print "<copy" copy "line" $2 " color=\"green\">"
-    print "<xsl:value-of select=\"format-number($" form "-Coppy" copy "-line" $2 ", '#####0')\"/>"
+    print "<xsl:value-of select=\"format-number($" form "-Copy" copy "-line" $2 ", '#####0')\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^tCalc/  {
     print "<copy" copy "line" $2 " color=\"green\">"
-    print "<xsl:value-of select=\"format-number($" form "-Coppy" copy "-line" $2 ", '#####0')\"/>"
+    print "<xsl:value-of select=\"format-number($" form "-Copy" copy "-line" $2 ", '#####0')\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^tlin/  {
     print "<copy" copy "line" $2 " color=\"blue\">"
-    print "<xsl:value-of select=\"$" form "-Coppy" copy "-line" $2 "\"/>"
+    print "<xsl:value-of select=\"$" form "-Copy" copy "-line" $2 "\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }
 
 /^tPull/  {
     print "<copy" copy "line" $2 " color=\"blue\">"
-    print "<xsl:value-of select=\"$" form "-Coppy" copy "-line" $2 "\"/>"
+    print "<xsl:value-of select=\"$" form "-Copy" copy "-line" $2 "\"/>"
     print "</xsl:copy" copy "line" $2 ">"
     print ""
 }

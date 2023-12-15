@@ -1,83 +1,406 @@
-
 Copyright(C) 2019 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash
 
 Tax-bash is free software: you can redistibute it and/or modify
+
 it under the terms of the FNU General Public License as published by
+
 the Free Software Foundation, either version 3 of the License, or
+
 (at your option) any later version.
 
 Tax-bash is distributed in the hope that it will be useful,
+
 but WITHOUT ANY WARRANTY; without even the implied warranty of
+
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
+
 along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
+xaddit
+2name
+3format
+4augend
+5addend
+6addend
+
+addit
+04
+#####0
+line02
+line03
+
+addit
+15
+#####0
+line05
+line09
+
+addit
+19
+#####0
+line09
+line17
+
+addit
+23
+#####0
+line18
+line21
+line22
+
+x**********************
+
+xdPull
+2name
+3format
+4dummy
+5form
+6copy
+
+dPull
+02
+#####0
+0
+Form1040
+00
+line03a
 
 
-xaddit    	!2name   	!3format 	!4augend 	!5addend 	!6addend
-addit   	!04      	!#####0  	!line02        	!line03
-addit   	!15      	!#####0  	!line05        	!line09
-addit   	!19      	!#####0  	!line09        	!line17
-addit   	!23      	!#####0  	!line18        	!line21        	!line22
+dPull
+15D
+#####0
+0
+SchedD
+00
+line15
+
+dPull
+16D
+#####0
+0
+SchedD
+00
+line16
+
+dPull
+10407
+#####0
+0
+Form1040
+00
+line07
+
+dPull
+FS
+#####0
+0
+Bkg
+00
+lineFS
+
+dPull
+FEI3
+#####0
+0
+FEITaxWkst
+00
+line03
+
+dPull
+104015
+#####0
+0
+Form1040
+00
+line15
+
+x***********************************
+
+dRef
+11
+#####0
+0
+09
+
+x****************************************
+
+xconst
+2name
+3format
+4dummy
+
+const
+p15
+0.00##
+0.15
+
+const
+p20
+0.00##
+0.20
+
+x*****************************************************
+
+xmult
+2name
+3format
+4multiplicand
+5multiplier
+
+mult
+18
+#####0
+line17
+linep15
+
+mult
+21
+#####0
+line20
+linep20
+
+x***************************************
+
+xsmOf
+2name
+3format
+4first
+5second
+
+xsmOf
+03b
+#####0
+line15D
+line16D
+
+smOf
+07
+#####0
+line01
+line06
+
+smOf
+08
+#####0
+line05
+line07
+
+smOf
+10
+#####0
+line01
+line04
+
+smOf
+14
+#####0
+line01
+line13
+
+smOf
+17
+#####0
+line12
+line16
+
+smOf
+25
+#####0
+line23
+line24
+
+x***********************************
+
+xsubt0
+2name
+3format
+4minuend
+5subtrahend
+
+subt0
+05
+#####0
+line01
+line04
+
+subt0
+16
+#####0
+line14
+line15
+
+x*****************************
+
+xsubt
+2name
+3format
+4minuend
+5subtrahend
+
+subtr
+09
+#####0
+line07
+line08
+
+subtr
+12
+#####0
+line10
+line11
+
+subtr
+20
+#####0
+line10
+line19
+
+x********************************
+
+xtlin
+2name
+3bllank
+4dummy
+
+x*****************
+
+xcnum
+2name
+3format
+4test
+5value1
+6value2
+
+x***********************************
+
+cnum
+01
+#####0
+CHOOS1
+WHEN01document('../Output/Form2555_Copy00.xml')
+VALUOF$QDCGTaxWkst-Copy00-lineFEI3 
+WHEN02
+OTHER1
+VALUOF$QDCGTaxWkst-Copy00-line104015
+OTHER2
+CHOOS2
 
 
-xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy
-dPull   	!02      	!#####0  	!0        	!Form1040      	!00        	!line03a
-dPull		!11		!#####0		!0		!QDCGTaxWkst	!00		!line09
-dPull		!15D		!#####0		!0		!SchedD		!00		!line15
-dPull		!16D		!#####0		!0		!SchedD		!00		!line16
-dPull		!10407		!#####0		!0		!Form1040	!00		!line07
-dPull		!FS		!#####0		!0		!Bkg		!00		!lineFS
-dPull		!FEI3		!#####0		!0		!FEITaxWkst	!00		!line03
-dPull		!104015		!#####0		!0		!Form1040	!00		!line15
+
+cnum
+03
+#####0
+CHOOS1
+WHEN01$QDCGTaxWkst-Copy00-line03y = 'x'
+CHOOS1
+WHEN01$QDCGTaxWkst-Copy00-line15D &lt;= 0 or QDCGTaxWkst-Copy00-line16D &lt;= 0
+VALUOF0
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-line15D &lt; $QDCGTaxWkst-Copy00-line16D
+VALUOF$QDCGTaxWkst-Copy00-line15D
+WHEN02
+OTHER1
+VALUOF$QDCGTaxWkst-Copy00-line16D
+OTHER2
+CHOOS2
+WHEN02
+CHOOS2
+
+x*******************************
+
+ctext
+03y
+CHOOS1
+WHEN01document('../Output/SchedD_Copy00.xml')
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
 
 
-xconst		!2name		!3format	!4dummy
-const		!p15		!0.00##		!0.15
-const		!p20		!0.00##		!0.20
 
-xmult   	!2name   	!3format 	!4multiplicand	!5multiplier
-mult    	!18      	!#####0  	!line17        	!linep15
-mult    	!21      	!#####0  	!line20        	!linep20
-
-xsmOf   	!2name   	!3format 	!4first  	!5second
-smOf		!03b		!#####0		!line15D	!line16D
-smOf    	!07      	!#####0  	!line01        	!line06
-smOf    	!08      	!#####0  	!line05        	!line07
-smOf    	!10      	!#####0  	!line01        	!line04
-smOf    	!14      	!#####0  	!line01        	!line13
-smOf    	!17      	!#####0  	!line12        	!line16
-smOf    	!25      	!#####0  	!line23        	!line24
-
-xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend
-subt0   	!05      	!#####0  	!line01        	!line04
-subt0   	!16      	!#####0  	!line14        	!line15
-
-xsubt   	!2name   	!3format 	!4minuend	!5subtrahend
-subtr   	!09      	!#####0  	!line07        	!line08
-subtr   	!12      	!#####0  	!line10        	!line11
-subtr   	!20      	!#####0  	!line10        	!line19
-
-xtlin   	!2name   	!3bllank 	!4dummy
+ctext
+03n
+CHOOS1
+WHEN01document('../Output/SchedD_Copy00.xml')
+VALUOF''
+WHEN02
+OTHER1
+VALUOF'x'
+OTHER2
+CHOOS2
 
 
-xcnum   	!2name   	!3format 	!4test													!5value1				!6value2
-cnum		!01		!#####0		!$QDCGTaxWkst-Copy00-lineFEI3 &gt; 0  									!$QDCGTaxWkst-Copy00-lineFEI3																    !$QDCGTaxWkst-Copy00-line104015 &gt; 0								    !$QDCGTaxWkst-Copy00-line104015																!0
+ctext
+06
+CHOOS1
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
+VALUOF41675
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFS'
+VALUOF41675
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFJ'
+VALUOF83350
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'QSS'
+VALUOF83350
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'HOH'
+VALUOF55800
+WHEN02
+CHOOS2
 
-cnum    	!03      	!#####0  	!$QDCGTaxWkst-Copy00-line03y = 'x'     									!$QDCGTaxWkst-Copy00-line03a		!$QDCGTaxWkst-Copy00-line10407
-cnum		!03a		!#####0		!$QDCGTaxWkst-Copy00-line15D &lt;= 0 or $QDCGTaxWkst-Copy00-line16D &lt;= 0				!0					!$QDCGTaxWkst-Copy00-line03b
+ctext
+13
+CHOOS1
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
+VALUOF459750
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFS'
+VALUOF258600
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFJ'
+VALUOF517200
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'QSS'
+VALUOF517200
+WHEN02
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'HOH'
+VALUOF488500
+WHEN02
+CHOOS2
 
-ctext		!03y     	!        	!document('../Output/SchedD_Copy00.xml')			    	  				!'x'					!''
-ctext		!03n     	!        	!document('../Output/SchedD_Copy00.xml')			    	  				!''					!'x'
 
-ctext    	!06      	!#####0  	!$QDCGTaxWkst-Copy00-lineFS = 'S'									!41675																			    !$QDCGTaxWkst-Copy00-lineFS = 'MFS'									    !41675																			!$QDCGTaxWkst-Copy00-lineFS = 'MFJ'									!83350																			    !$QDCGTaxWkst-Copy00-lineFS = 'QSS'									    !83350																			!$QDCGTaxWkst-Copy00-lineFS = 'HOH'									!55800																			    !0
 
-ctext    	!13      	!#####0  	!$QDCGTaxWkst-Copy00-lineFS = 'S'									!459750																			    !$QDCGTaxWkst-Copy00-lineFS = 'MFS'									    !258600																			!$QDCGTaxWkst-Copy00-lineFS = 'MFJ'									!517200																			    !$QDCGTaxWkst-Copy00-lineFS = 'QSS'									    !517200																			!$QDCGTaxWkst-Copy00-lineFS = 'HOH'									!488500																			    !0
+x************************************************
 
-xtCalc		!2Name		!3format	!4Form		!5copy		!6line
-tCalc		!22		!#####0		!QDCGTaxWkst	!00		!line05
-tCalc		!24		!#####0		!QDCGTaxWkst	!00		!line01
+xtCalc
+2Name
+3format
+4Form
+5copy
+6line
+
+tCalc
+22
+#####0
+QDCGTaxWkst
+00
+line05
+
+tCalc
+24
+#####0
+QDCGTaxWkst
+00
+line01
+

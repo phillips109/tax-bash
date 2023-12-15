@@ -3,381 +3,2331 @@ xCopyright(C) 2019 Phillips Wedemeyer
 This file is part of a program called Tax-bash
 
 Tax-bash is free software: you can redistibute it and/or modify
+
 it under the terms of the FNU General Public License as published by
+
 the Free Software Foundation, either version 3 of the License, or
+
 (at your option) any later version.
 
 Tax-bash is distributed in the hope that it will be useful,
+
 but WITHOUT ANY WARRANTY; without even the implied warranty of
+
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
+
 along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
+x***************************************************************
+
+xaddit
+2name
+3format
+4augend
+5addend
+6addend
+NFaddend
+
+addit
+01z
+#####0
+line01a
+line01b
+line01c
+line01d
+line01e
+line01f
+line01g
+line01h
+
+addit
+09
+#####0
+line01z
+lineintTot
+line03b
+line04b
+line05b
+line06b
+line07
+line08
+
+addit
+14
+#####0
+line12
+line13
+
+addit
+16
+#####0
+line16a
+line8814
+line4972
+line962
+lineECR
+line1291TAX
+lineForm8978
+line965
+line965INC
+
+addit
+18
+#####0
+line16
+line17
+
+addit
+21
+#####0
+line19
+line20
+
+addit
+24
+#####0
+line22
+line23
+
+addit
+25b
+#####0
+line1099rtax01
+line1099rtax02
+line1099rtax03
+line1099rtax04
+line1099rtax05
+line1099rtax06
+line1099rtax07
+line1099rtax08
+line1099rtax09
+line1099rtax10
+
+addit
+25d
+#####0
+line25a
+line25b
+line25c
+
+addit
+32
+#####0
+line27
+line28
+line29
+line31
+
+addit
+33
+#####0
+line25d
+line26
+line32
+
+addit
+02a
+#####0
+lineexempt01
+lineexempt02
+lineexempt03
+lineexempt04
+lineexempt05
+lineexempt06
+lineexempt07
+lineexempt08
+lineexempt09
+lineexempt10
+
+addit
+03a
+#####0
+linequal01
+linequal02
+linequal03
+linequal04
+linequal05
+linequal06
+linequal07
+linequal08
+linequal09
+linequal10
+
+xaddit
+iraTot
+#####0
+lineira01
+lineira02
+lineira03
+lineira04
+lineira05
+lineira06
+lineira07
+lineira08
+lineira09
+lineira10
+
+xaddit
+penTot
+#####0
+linepen01
+linepen02
+linepen03
+linepen04
+linepen05
+linepen06
+linepen07
+linepen08
+linepen09
+linepen10
+
+addit
+37a
+#####0
+line24
+line38
+
+addit
+04b
+#####0
+lineira01
+lineira02
+lineira03
+lineira04
+lineira05
+lineira06
+lineira07
+lineira08
+lineira09
+lineira10
+
+addit
+05b
+#####0
+linepen01
+linepen02
+linepen03
+linepen04
+linepen05
+linepen06
+linepen07
+linepen08
+linepen09
+linepen10
+
+xaddit
+04b
+#####0
+linet01
+linet02
+linet03
+linet04
+linet05
+linet06
+linet07
+linet08
+linet09
+linet10
+
+xaddit
+05b
+#####0
+linept01
+linept02
+linept03
+linept04
+linept05
+linept06
+linept07
+linept08
+linept09
+linept10
+
+x*************************************************************
+
+xconst
+2name
+3format
+4value
+
+const
+c2000
+#####0
+2000
+
+x******************************************************************
+
+xdlin
+2name
+3format
+4dummy
+
+dlin
+01b
+#####0
+0
+
+dlin
+01c
+#####0
+0
+
+dlin
+01d
+#####0
+0
+
+dlin
+01h
+#####0
+0
+
+dlin
+01i
+#####0
+0
+
+xdlin
+04a
+#####0
+0
+
+xdlin
+05a
+#####0
+501
+
+dlin
+25c
+#####0
+2503
+
+dlin
+26
+#####0
+2600
+
+dlin
+27
+#####0
+2700
+
+dlin
+36
+#####0
+3600
+
+dlin
+38
+#####0
+50
+
+x************************************************************
+
+xNote that dPull uses linename not just name in the last column ************************************
+
+xdPull
+2name
+3format
+4dummy
+5form
+6copy
+
+dPull
+01a
+#####0
+0
+W-2
+00
+line01
+
+dPull
+01e
+#####0
+0
+Form2441
+00
+line26
+
+dPull
+01f
+#####0
+0
+Form8839
+00
+line29
+
+dPull
+01g
+#####0
+0
+Form8919
+00
+line06
+
+dPull
+intTot
+#####0
+0
+SchedB
+00
+line04
+
+dPull
+03b
+#####0
+0
+SchedB
+00
+line06
+
+dPull
+06a
+#####0
+0
+SST
+01
+line01
+
+dPull
+06b
+#####0
+0
+SST
+00
+line18
+
+dPull
+07
+#####0
+0
+SchedD
+00
+line21
+
+dPull
+08
+#####0
+0
+Sched1
+00
+line10
+
+dPull
+10
+#####0
+0
+Sched1
+00
+line26
+
+dPull
+12
+#####0
+0
+SchedA
+01
+line17
+
+dPull
+13
+#####0
+0
+Form8995
+00
+line01
+
+dPull
+17
+#####0
+0
+Sched2
+00
+line03
+
+dPull
+19
+#####0
+0
+Sched8812
+00
+line00
+
+dPull
+20
+#####0
+0
+Sched3
+00
+line08
+
+dPull
+23
+#####0
+0
+Sched2
+00
+line21
+
+dPull
+25a
+#####0
+0
+FormW2
+00
+line00
+
+dPull
+28
+#####0
+0
+Sched8812
+00
+line00
+
+dPull
+29
+#####0
+0
+Form8863
+00
+line08
+
+dPull
+31
+#####0
+0
+Sched3
+00
+line15
+
+dlin
+35a
+#####0
+1000
+Form8888
+00
+line08
+
+dPull
+D15
+#####0
+0
+SchedD
+00
+line15
+
+dPull
+D16
+#####0
+0
+SchedD
+00
+line16
+
+dPull
+D18
+#####0
+0
+SchedD
+00
+line18
+
+dPull
+D19
+#####0
+0
+SchedD
+00
+line19
+
+dPull
+SDTW
+#####0
+0
+SchedDTaxWkst
+00
+line47
+
+dPull
+QDCG
+#####0
+0
+QDCGTaxWkst
+00
+line25
+
+dPull
+4952
+#####0
+0
+Form4952
+00
+line04g
+
+dPull
+8814
+#####0
+0
+Form8814
+00
+line100
+
+dPull
+4972
+#####0
+0
+Form4972
+00
+line100
+
+dPull
+962
+#####0
+0
+Form1118
+00
+line100
+
+dPull
+ECR
+#####0
+0
+Form8863
+00
+line100
+
+dPull
+1291TAX
+#####0
+0
+Form8621
+00
+line16e
+
+dPull
+Form8978
+#####0
+0
+Form8978
+00
+line14
+
+dPull
+965
+#####0
+0
+Form965?
+00
+line100
+
+dPull
+965INC
+#####0
+0
+Form965?
+00
+line100
+
+xdPull
+1099rtax00
+#####0
+0
+Form1099r
+00
+line04
+
+dPull
+1099rtax01
+#####0
+0
+Form1099r
+01
+line04
+
+dPull
+1099rtax02
+#####0
+0
+Form1099r
+02
+line04
+
+dPull
+1099rtax03
+#####0
+0
+Form1099r
+03
+line04
+
+dPull
+1099rtax04
+#####0
+0
+Form1099r
+04
+line04
+
+dPull
+1099rtax05
+#####0
+0
+Form1099r
+05
+line04
+
+dPull
+1099rtax06
+#####0
+0
+Form1099r
+06
+line04
+
+dPull
+1099rtax07
+#####0
+0
+Form1099r
+07
+line04
+
+dPull
+1099rtax08
+#####0
+0
+Form1099r
+08
+line04
+
+dPull
+1099rtax09
+#####0
+0
+Form1099r
+09
+line04
+
+dPull
+1099rtax10
+#####0
+0
+Form1099r
+10
+line04
+
+xdPull
+exempt00
+#####0
+0
+Form1099int
+00
+line08
+
+dPull
+exempt01
+#####0
+0
+Form1099int
+01
+line08
+
+dPull
+exempt02
+#####0
+0
+Form1099int
+02
+line08
+
+dPull
+exempt03
+#####0
+0
+Form1099int
+03
+line08
+
+dPull
+exempt04
+#####0
+0
+Form1099int
+04
+line08
+
+dPull
+exempt05
+#####0
+0
+Form1099int
+05
+line08
+
+dPull
+exempt06
+#####0
+0
+Form1099int
+06
+line08
+
+dPull
+exempt07
+#####0
+0
+Form1099int
+07
+line08
+
+dPull
+exempt08
+#####0
+0
+Form1099int
+08
+line08
+
+dPull
+exempt09
+#####0
+0
+Form1099int
+09
+line08
+
+dPull
+exempt10
+#####0
+0
+Form1099int
+10
+line08
+
+xdPull
+qual00
+#####0
+0
+Form1099div
+00
+line01b
+
+dPull
+qual01
+#####0
+0
+Form1099div
+01
+line01b
+
+dPull
+qual02
+#####0
+0
+Form1099div
+02
+line01b
+
+dPull
+qual03
+#####0
+0
+Form1099div
+03
+line01b
+
+dPull
+qual04
+#####0
+0
+Form1099div
+04
+line01b
+
+dPull
+qual05
+#####0
+0
+Form1099div
+05
+line01b
+
+dPull
+qual06
+#####0
+0
+Form1099div
+06
+line01b
+
+dPull
+qual07
+#####0
+0
+Form1099div
+07
+line01b
+
+dPull
+qual08
+#####0
+0
+Form1099div
+08
+line01b
+
+dPull
+qual09
+#####0
+0
+Form1099div
+09
+line01b
+
+dPull
+qual10
+#####0
+0
+Form1099div
+10
+line01b
+
+xdPull
+r00
+#####0
+0
+Form1099r
+00
+line01
+
+dPull
+r01
+#####0
+0
+Form1099r
+01
+line01
+
+dPull
+r02
+#####0
+0
+Form1099r
+02
+line01
+
+dPull
+r03
+#####0
+0
+Form1099r
+03
+line01
+
+dPull
+r04
+#####0
+0
+Form1099r
+04
+line01
+
+dPull
+r05
+#####0
+0
+Form1099r
+05
+line01
+
+dPull
+r06
+#####0
+0
+Form1099r
+06
+line01
+
+dPull
+r07
+#####0
+0
+Form1099r
+07
+line01
+
+dPull
+r08
+#####0
+0
+Form1099r
+08
+line01
+
+dPull
+r09
+#####0
+0
+Form1099r
+09
+line01
+
+dPull
+r10
+#####0
+0
+Form1099r
+10
+line01
+
+xdPull
+t00
+#####0
+0
+Form1099r
+00
+line01
+
+dPull
+t01
+#####0
+0
+Form1099r
+01
+line01
+
+dPull
+t02
+#####0
+0
+Form1099r
+02
+line01
+
+dPull
+t03
+#####0
+0
+Form1099r
+03
+line01
+
+dPull
+t04
+#####0
+0
+Form1099r
+04
+line01
+
+dPull
+t05
+#####0
+0
+Form1099r
+05
+line01
+
+dPull
+t06
+#####0
+0
+Form1099r
+06
+line01
+
+dPull
+t07
+#####0
+0
+Form1099r
+07
+line01
+
+dPull
+t08
+#####0
+0
+Form1099r
+08
+line01
+
+dPull
+t09
+#####0
+0
+Form1099r
+09
+line01
+
+dPull
+t10
+#####0
+0
+Form1099r
+10
+line01
+
+xdPull
+pt00
+#####0
+0
+Form1099r
+00
+line02
+
+dPull
+pt01
+#####0
+0
+Form1099r
+01
+line02
+
+dPull
+pt02
+#####0
+0
+Form1099r
+02
+line02
+
+dPull
+pt03
+#####0
+0
+Form1099r
+03
+line02
+
+dPull
+pt04
+#####0
+0
+Form1099r
+04
+line02
+
+dPull
+pt05
+#####0
+0
+Form1099r
+05
+line02
+
+dPull
+pt06
+#####0
+0
+Form1099r
+06
+line02
+
+dPull
+pt07
+#####0
+0
+Form1099r
+07
+line02
+
+dPull
+pt08
+#####0
+0
+Form1099r
+08
+line02
+
+dPull
+pt09
+#####0
+0
+Form1099r
+09
+line02
+
+dPull
+pt10
+#####0
+0
+Form1099r
+10
+line02
+
+x*********************************************************
+
+xsubt0
+2name
+3format
+4minuend
+5subtrahend
+
+xsubt0
+04b
+#####0
+lineiraTot
+line04a
+
+xsubt0
+05b
+#####0
+linepenTot
+line05a
+
+subt0
+15
+#####0
+line11
+line14
+
+subt0
+22
+#####0
+line18
+line21
+
+subt0
+34
+#####0
+line33
+line24
+
+subt0
+37
+#####0
+line37a
+line33
+
+x*******************************************************
+
+xsubt
+2name
+3format
+4minuend
+5subtrahend
+
+subtr
+02b
+#####0
+lineintTot
+line02a
+
+subtr
+11
+#####0
+line09
+line10
+
+subtr
+35
+#####0
+line34
+line36
+
+subtr
+35a
+#####0
+line35
+line38
+
+x***************************************************************
+
+xtCalc
+2Name
+3format
+4Form
+5copy
+6line
+
+tCalc
+Calc16
+#####0
+Form1040
+00
+line15
+
+x***************************************************************
+
+tlin
+2name
+3blank
+4dummy
+
+tlin
+06cCk
+
+tlin
+07Ck
+
+tlin
+35aCk
+
+tlin
+35b1
+
+tlin
+35b2
+
+tlin
+35b3
+
+tlin
+35b4
+
+tlin
+35b5
+
+tlin
+35b6
+
+tlin
+35b7
+
+tlin
+35b8
+
+tlin
+35b9
+
+tlin
+35cCkg
+
+tlin
+35cSvg
+
+tlin
+35d10
+
+tlin
+35d11
+
+tlin
+35d1
+
+tlin
+35d12
+
+tlin
+35d13
+
+tlin
+35d14
+
+tlin
+35d15
+
+tlin
+35d16
+
+tlin
+35d17
+
+tlin
+35d2
+
+tlin
+35d3
+
+tlin
+35d4
+
+tlin
+35d5
+
+tlin
+35d6
+
+tlin
+35d7
+
+tlin
+35d8
+
+tlin
+35d9
+
+tlin
+39N
+
+tlin
+39Y
+
+tlin
+421
+
+tlin
+422
+
+tlin
+423
+
+tlin
+424
+
+tlin
+425
+
+tlin
+431
+
+tlin
+432
+
+tlin
+433
+
+tlin
+434
+
+tlin
+435
+
+tlin
+436
+
+tlin
+441
+
+tlin
+442
+
+tlin
+443
+
+tlin
+444
+
+tlin
+445
+
+tlin
+4972Ck
+
+tlin
+8814Ck
+
+tlin
+addr1
+
+tlin
+addr2
+
+tlin
+aptNo
+
+tlin
+campme
+
+tlin
+campS
+
+tlin
+child
+
+tlin
+city
+
+tlin
+d1cod
+
+tlin
+d1CTC
+
+tlin
+d1LN
+
+tlin
+d1name
+
+tlin
+d1name
+
+tlin
+d1rel
+
+tlin
+d1SF
+
+tlin
+d1SL
+
+tlin
+d1SM
+
+tlin
+d2cod
+
+tlin
+d2CTC
+
+tlin
+d2LN
+
+tlin
+d2name
+
+tlin
+d2rel
+
+tlin
+d2SF
+
+tlin
+d2SL
+
+tlin
+d2SM
+
+tlin
+d3cod
+
+tlin
+d3CTC
+
+tlin
+d3LN
+
+tlin
+d3name
+
+tlin
+d3rel
+
+tlin
+d3SF
+
+tlin
+d3SL
+
+tlin
+d3SM
+
+tlin
+d4cod
+
+tlin
+d4CTC
+
+tlin
+d4LN
+
+tlin
+d4name
+
+tlin
+d4rel
+
+tlin
+d4SF
+
+tlin
+d4SL
+
+tlin
+d4SM
+
+tlin
+d5cod
+
+tlin
+d5CTC
+
+tlin
+d5LN
+
+tlin
+d5rel
+
+tlin
+d5SF
+
+tlin
+d5SL
+
+tlin
+d5SM
+
+tlin
+dgt4
+
+tlin
+digN
+
+tlin
+digY
+
+tlin
+Dname
+
+tlin
+Dphone
+
+tlin
+Faddr
+
+tlin
+FCntry
+
+tlin
+FEIN
+
+tlin
+Fname
+
+tlin
+Fphone
+
+tlin
+Fprov
+
+tlin
+Fzip
+
+tlin
+Other
+
+tlin
+Pdate
+
+tlin
+Pname
+
+tlin
+PTIN
+
+tlin
+Sa58
+
+tlin
+Sblind
+
+tlin
+Sdate
+
+tlin
+Sdep
+
+tlin
+SECk
+
+tlin
+SiUali
+
+tlin
+Socc
+
+tlin
+ST
+
+tlin
+Tdate
+
+tlin
+Tocc
+
+tlin
+Ya58
+
+tlin
+Yblind
+
+tlin
+youdep
+
+tlin
+zip
+
+tlin
+x00
+
+x
+
+x**************************************************************
+
+xNote that tPull uses just the name not linename under 7line
+
+xtPull
+2name
+3blank
+4dummy
+5form
+6copy
+7line
+
+xtPull
+07a00
+''
+''
+Form1099r
+00
+07a
+
+tPull
+07a01
+''
+''
+Form1099r
+01
+07a
+
+tPull
+07a02
+''
+''
+Form1099r
+02
+07a
+
+tPull
+07a03
+''
+''
+Form1099r
+03
+07a
+
+tPull
+07a04
+''
+''
+Form1099r
+04
+07a
+
+tPull
+07a05
+''
+''
+Form1099r
+05
+07a
+
+tPull
+07a06
+''
+''
+Form1099r
+06
+07a
+
+tPull
+07a07
+''
+''
+Form1099r
+07
+07a
+
+tPull
+07a08
+''
+''
+Form1099r
+08
+07a
+
+tPull
+07a09
+''
+''
+Form1099r
+09
+07a
+
+tPull
+07a10
+''
+''
+Form1099r
+10
+07a
+
+tPull
+FS
+''
+''
+Bkg
+00
+FS
+
+tPull
+SFNI
+''
+''
+Bkg
+00
+SFNI
+
+tPull
+SLN
+''
+''
+Bkg
+00
+SLN
+
+tPull
+SSSNoF
+''
+''
+Bkg
+00
+SSSNoF
+
+tPull
+SSSNoL
+''
+''
+Bkg
+00
+SSSNoL
+
+tPull
+SSSNoM
+''
+''
+Bkg
+00
+SSSNoM
+
+tPull
+TFNI
+''
+''
+Bkg
+00
+TFNI
+
+tPull
+TLN
+''
+''
+Bkg
+00
+TLN
+
+tPull
+TSSNoF
+''
+''
+Bkg
+00
+TSSNoF
+
+tPull
+TSSNoL
+''
+''
+Bkg
+00
+TSSNoL
+
+tPull
+TSSNoM
+''
+''
+Bkg
+00
+TSSNoM
+
+x**************************************************************
+
+xNote that cnum and ctest use the full name
+
+xcnum
+2name
+3format
+4testvalue
+5value1
+6value2
+
+xcnum
+04b
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line04a = 0
+VALUOF$Form1040-Copy00-lineiraTot
+WHEN02
+OTHER1
+VALUOF$Form1040-Copy00-line04s
+OTHER2
+CHOOS2
 
 
-xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend
-addit   	!01z     	!#####0  	!line01a       	!line01b       	!line01c       	!line01d	!line01e	!line01f	!line01g	!line01h
-addit   	!09      	!#####0  	!line01z       	!lineintTot    	!line03b       	!line04b	!line05b	!line06b	!line07		!line08
-addit   	!14      	!#####0  	!line12       	!line13
-addit		!16		!#####0		!line16a	!line8814	!line4972	!line962	!lineECR	!line1291TAX	!lineForm8978	!line965	!line965INC
 
-addit   	!18      	!#####0  	!line16        	!line17
-addit   	!21      	!#####0  	!line19        	!line20
-addit   	!24      	!#####0  	!line22        	!line23
-addit		!25b		!#####0		!line1099rtax01	!line1099rtax02 !line1099rtax03 !line1099rtax04 !line1099rtax05 !line1099rtax06 !line1099rtax07 !line1099rtax08 !line1099rtax09 !line1099rtax10
-addit   	!25d     	!#####0  	!line25a       	!line25b       	!line25c
-addit   	!32      	!#####0  	!line27        	!line28        	!line29        	!line31
-addit   	!33      	!#####0  	!line25d       	!line26        	!line32
-addit		!02a		!#####0		!lineexempt01	!lineexempt02	!lineexempt03	!lineexempt04	!lineexempt05	!lineexempt06	!lineexempt07	!lineexempt08	!lineexempt09	!lineexempt10
-addit		!03a		!#####0		!linequal01	!linequal02	!linequal03	!linequal04	!linequal05	!linequal06	!linequal07	!linequal08	!linequal09	!linequal10
-addit		!iraTot		!#####0		!lineira01	!lineira02	!lineira03	!lineira04	!lineira05	!lineira06	!lineira07	!lineira08	!lineira09	!lineira10
-addit		!penTot		!#####0		!linepen01	!linepen02	!linepen03	!linepen04	!linepen05	!linepen06	!linepen07	!linepen08	!linepen09	!linepen10
-xaddit		!34a		!#####0		!line33		!line24
-addit		!37a		!#####0		!line24		!line38
 
-xconst		!2name		!3format	!4value
-const		!c2000		!#####0		!2000
-
-xdlin   	!2name   	!3format 	!4dummy
-xdlin    	!01a     	!#####0  	!101
-dlin    	!01b     	!#####0  	!0
-dlin    	!01c     	!#####0  	!0
-dlin    	!01d     	!#####0  	!0
-dlin    	!01h     	!#####0  	!0
-dlin    	!01i     	!#####0  	!0
-dlin    	!04a     	!#####0  	!0
-dlin    	!05a     	!#####0  	!501
-xdlin    	!16      	!#####0  	!1600
-dlin    	!25c     	!#####0  	!2503
-dlin    	!26      	!#####0  	!2600
-dlin    	!27      	!#####0  	!2700
-dlin    	!36      	!#####0  	!3600
-dlin    	!38      	!#####0  	!50
+xcnum
+05b
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line05a = 0
+VALUOF$Form1040-Copy00-linepenTot
+WHEN02
+OTHER1
+VALUOF$Form1040-Copy00-line05s
+OTHER2
+CHOOS2
 
 
 
 
-xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy
-dPull		!01a		!#####0		!0		!W-2		!00		!line01
-dPull   	!01e     	!#####0  	!0        	!Form2441      	!00		!line26
-dPull   	!01f     	!#####0  	!0        	!Form8839      	!00        	!line29
-dPull   	!01g     	!#####0  	!0        	!Form8919     	!00        	!line06
-dPull   	!intTot     	!#####0  	!0        	!SchedB        	!00        	!line04
-dPull   	!03b     	!#####0  	!0        	!SchedB        	!00        	!line06
-dPull   	!06a     	!#####0  	!0      	!SST        	!01        	!line01
-dPull   	!06b     	!#####0  	!0        	!SST        	!00        	!line18
-dPull   	!07      	!#####0  	!0        	!SchedD        	!00        	!line21
-dPull   	!08      	!#####0  	!0        	!Sched1        	!00        	!line10
-dPull   	!10      	!#####0  	!0        	!Sched1        	!00        	!line26
-dPull   	!12      	!#####0  	!0        	!SchedA        	!01        	!line17
-dPull   	!13      	!#####0  	!0        	!Form8995      	!00        	!line00
-dPull   	!17      	!#####0  	!0        	!Sched2        	!00        	!line03
-dPull   	!19      	!#####0  	!0        	!Sched8812     	!00        	!line00
-dPull   	!20      	!#####0  	!0        	!Sched3        	!00        	!line08
-dPull   	!23      	!#####0  	!0        	!Sched2        	!00        	!line21
-dPull   	!25a     	!#####0  	!0        	!FormW2        	!00        	!line00
-dPull   	!28      	!#####0  	!0        	!Sched8812     	!00        	!line00
-dPull   	!29      	!#####0  	!0        	!Form8863      	!00        	!line08
-dPull   	!31      	!#####0  	!0        	!Sched3        	!00        	!line15
-dlin		!35a		!#####0		!1000		!Form8888	!00		!line08
-
-dPull		!D15		!#####0		!0		!SchedD		!00		!line15
-dPull		!D16		!#####0		!0		!SchedD		!00		!line16
-dPull		!D18		!#####0		!0		!SchedD		!00		!line18
-dPull		!D19		!#####0		!0		!SchedD		!00		!line19
-dPull		!SDTW		!#####0		!0		!SchedDTaxWkst	!00		!line47
-dPull		!QDCG		!#####0		!0		!QDCGTaxWkst	!00		!line25
-dPull		!4952		!#####0		!0		!Form4952	!00		!line04g
-dPull		!8814		!#####0		!0		!Form8814	!00		!line100
-dPull		!4972		!#####0		!0		!Form4972	!00		!line100
-dPull		!962		!#####0		!0		!Form1118	!00		!line100
-dPull		!ECR		!#####0		!0		!Form8863	!00		!line100
-dPull		!1291TAX	!#####0		!0		!Form8621	!00		!line16e
-dPull		!Form8978	!#####0		!0		!Form8978	!00		!line14
-dPull		!965		!#####0		!0		!Form965?	!00		!line100
-dPull		!965INC		!#####0		!0		!Form965?	!00		!line100
-
-xdPull   	!1099rtax00    	!#####0  	!0        	!Form1099r   	!00        	!line04
-dPull   	!1099rtax01    	!#####0  	!0        	!Form1099r   	!01        	!line04
-dPull   	!1099rtax02    	!#####0  	!0        	!Form1099r   	!02        	!line04
-dPull   	!1099rtax03    	!#####0  	!0        	!Form1099r   	!03        	!line04
-dPull   	!1099rtax04    	!#####0  	!0        	!Form1099r   	!04        	!line04
-dPull   	!1099rtax05    	!#####0  	!0        	!Form1099r   	!05        	!line04
-dPull   	!1099rtax06    	!#####0  	!0        	!Form1099r   	!06        	!line04
-dPull   	!1099rtax07    	!#####0  	!0        	!Form1099r   	!07        	!line04
-dPull   	!1099rtax08    	!#####0  	!0        	!Form1099r   	!08        	!line04
-dPull   	!1099rtax09    	!#####0  	!0        	!Form1099r   	!09        	!line04
-dPull   	!1099rtax10    	!#####0  	!0        	!Form1099r   	!10        	!line04
-
-
-xdPull   	!exempt00     	!#####0  	!0        	!Form1099int   	!00        	!line08
-dPull   	!exempt01     	!#####0  	!0        	!Form1099int   	!01        	!line08
-dPull   	!exempt02     	!#####0  	!0        	!Form1099int   	!02        	!line08
-dPull   	!exempt03     	!#####0  	!0        	!Form1099int   	!03        	!line08
-dPull   	!exempt04     	!#####0  	!0        	!Form1099int   	!04        	!line08
-dPull   	!exempt05     	!#####0  	!0        	!Form1099int   	!05        	!line08
-dPull   	!exempt06     	!#####0  	!0        	!Form1099int   	!06        	!line08
-dPull   	!exempt07     	!#####0  	!0        	!Form1099int   	!07        	!line08
-dPull   	!exempt08     	!#####0  	!0        	!Form1099int   	!08        	!line08
-dPull   	!exempt09     	!#####0  	!0        	!Form1099int   	!09        	!line08
-dPull   	!exempt10     	!#####0  	!0        	!Form1099int   	!10        	!line08
-
-xdPull   	!qual00     	!#####0  	!0        	!Form1099div   	!00        	!line01b
-dPull   	!qual01     	!#####0  	!0        	!Form1099div   	!01        	!line01b
-dPull   	!qual02     	!#####0  	!0        	!Form1099div   	!02        	!line01b
-dPull   	!qual03     	!#####0  	!0        	!Form1099div   	!03        	!line01b
-dPull   	!qual04     	!#####0  	!0        	!Form1099div   	!04        	!line01b
-dPull   	!qual05     	!#####0  	!0        	!Form1099div   	!05        	!line01b
-dPull   	!qual06     	!#####0  	!0        	!Form1099div   	!06        	!line01b
-dPull   	!qual07     	!#####0  	!0        	!Form1099div   	!07        	!line01b
-dPull   	!qual08     	!#####0  	!0        	!Form1099div   	!08        	!line01b
-dPull   	!qual09     	!#####0  	!0        	!Form1099div   	!09        	!line01b
-dPull   	!qual10     	!#####0  	!0        	!Form1099div   	!10        	!line01b
-
-xdPull		!r00		!#####0		!0		!Form1099r	!00		!line01	!Note that dPull uses linename not just name in the last column
-dPull		!r01		!#####0		!0		!Form1099r	!01		!line01
-dPull		!r02		!#####0		!0		!Form1099r	!02		!line01
-dPull		!r03		!#####0		!0		!Form1099r	!03		!line01
-dPull		!r04		!#####0		!0		!Form1099r	!04		!line01
-dPull		!r05		!#####0		!0		!Form1099r	!05		!line01
-dPull		!r06		!#####0		!0		!Form1099r	!06		!line01
-dPull		!r07		!#####0		!0		!Form1099r	!07		!line01
-dPull		!r08		!#####0		!0		!Form1099r	!08		!line01
-dPull		!r09		!#####0		!0		!Form1099r	!09		!line01
-dPull		!r10		!#####0		!0		!Form1099r	!10		!line01
+xcnum
+ira00
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a00 = 'x'
+VALUOF$Form1040-Copy00-liner00
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
 
 
 
-xdPull		!ss01		!#####0		!30541.20	!FormSS1099	!01		!line05
+cnum
+ira01
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a01 = 'x'
+VALUOF$Form1040-Copy00-liner01
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
 
 
 
 
-xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend
-subt0		!04s		!#####0		!lineiraTot	!line04a
-subt0		!05s		!#####0		!linepenTot	!line05a
-subt0   	!15      	!#####0  	!line11        	!line14
-subt0   	!22      	!#####0  	!line18        	!line21
-subt0		!34		!#####0		!line33		!line24
-subt0   	!37      	!#####0  	!line37a       	!line33
-
-xsubt   	!2name   	!3format 	!4minuend	!5subtrahend
-subtr		!02b		!#####0		!lineintTot	!line02a
-subtr   	!11      	!#####0  	!line09        	!line10
-subtr   	!35      	!#####0  	!line34        	!line36
-subtr		!35a		!#####0		!line35		!line38
+cnum
+ira02
+#####0
+CHOOS1
+WHEN01Form1040-Copy00-line07a02 = 'x'
+VALUOF$Form1040-Copy00-liner02
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
 
 
 
 
-
-xtPull		!x00		!		!''		!Form1099r	!00		!07a
-tPull		!x01		!		!''		!Form1099r	!01		!07a
-tPull		!x02		!		!''		!Form1099r	!02		!07a
-tPull		!x03		!		!''		!Form1099r	!03		!07a
-tPull		!x04		!		!''		!Form1099r	!04		!07a
-tPull		!x05		!		!''		!Form1099r	!05		!07a
-tPull		!x06		!		!''		!Form1099r	!06		!07a
-tPull		!x07		!		!''		!Form1099r	!07		!07a
-tPull		!x08		!		!''		!Form1099r	!08		!07a
-tPull		!x09		!		!''		!Form1099r	!09		!07a
-tPull		!x10		!		!''		!Form1099r	!10		!07a
-
+cnum
+ira03
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a03 = 'x'
+VALUOF$Form1040-Copy00-liner03
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
 
 
 
-xcnum		!2name	!3format	!4testvalue			!5value1			!6value2			!Note that cnum and ctest use the full name
-cnum		!04b	!#####0		!$Form1040-Copy00-line04a = 0	!$Form1040-Copy00-lineiraTot	!$Form1040-Copy00-line04s
-cnum		!05b	!#####0		!$Form1040-Copy00-line05a = 0	!$Form1040-Copy00-linepenTot	!$Form1040-Copy00-line05s
 
-xcnum		!ira00	!#####0		!$Form1040-Copy00-linex00 = 'x'	!$Form1040-Copy00-liner00			!0
-cnum		!ira01	!#####0		!$Form1040-Copy00-linex01 = 'x'	!$Form1040-Copy00-liner01			!0
-cnum		!ira02	!#####0		!$Form1040-Copy00-linex02 = 'x'	!$Form1040-Copy00-liner02			!0
-cnum		!ira03	!#####0		!$Form1040-Copy00-linex03 = 'x'	!$Form1040-Copy00-liner03			!0
-cnum		!ira04	!#####0		!$Form1040-Copy00-linex04 = 'x'	!$Form1040-Copy00-liner04			!0
-cnum		!ira05	!#####0		!$Form1040-Copy00-linex05 = 'x'	!$Form1040-Copy00-liner05			!0
-cnum		!ira06	!#####0		!$Form1040-Copy00-linex06 = 'x'	!$Form1040-Copy00-liner06			!0
-cnum		!ira07	!#####0		!$Form1040-Copy00-linex07 = 'x'	!$Form1040-Copy00-liner07			!0
-cnum		!ira08	!#####0		!$Form1040-Copy00-linex08 = 'x'	!$Form1040-Copy00-liner08			!0
-cnum		!ira09	!#####0		!$Form1040-Copy00-linex09 = 'x'	!$Form1040-Copy00-liner09			!0
-cnum		!ira10	!#####0		!$Form1040-Copy00-linex10 = 'x'	!$Form1040-Copy00-liner10			!0
-
-xcnum		!pen00	!#####0		!$Form1040-Copy00-linex00 = ''	!$Form1040-Copy00-liner00			!0
-cnum		!pen01	!#####0		!$Form1040-Copy00-linex01 = ''	!$Form1040-Copy00-liner01			!0
-cnum		!pen02	!#####0		!$Form1040-Copy00-linex02 = ''	!$Form1040-Copy00-liner02			!0
-cnum		!pen03	!#####0		!$Form1040-Copy00-linex03 = ''	!$Form1040-Copy00-liner03			!0
-cnum		!pen04	!#####0		!$Form1040-Copy00-linex04 = ''	!$Form1040-Copy00-liner04			!0
-cnum		!pen05	!#####0		!$Form1040-Copy00-linex05 = ''	!$Form1040-Copy00-liner05			!0
-cnum		!pen06	!#####0		!$Form1040-Copy00-linex06 = ''	!$Form1040-Copy00-liner06			!0
-cnum		!pen07	!#####0		!$Form1040-Copy00-linex07 = ''	!$Form1040-Copy00-liner07			!0
-cnum		!pen08	!#####0		!$Form1040-Copy00-linex08 = ''	!$Form1040-Copy00-liner08			!0
-cnum		!pen09	!#####0		!$Form1040-Copy00-linex09 = ''	!$Form1040-Copy00-liner09			!0
-cnum		!pen10	!#####0		!$Form1040-Copy00-linex10 = ''	!$Form1040-Copy00-liner10			!0
-
-cnum		!16a	!#####0		!$Form1040-Copy00-line4952 > 0  						                           !$Form1040-Copy00-lineSDTW   !$Form1040-Copy00-line16b
-cnum		!16b	!#####0		!document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0  !$Form1040-Copy00-lineSDTW	!$Form1040-Copy00-line16c
-cnum		!16c	!#####0		!document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0  !$Form1040-Copy00-lineSDTW	!$Form1040-Copy00-line16d
-cnum		!16d	!#####0		!$Form1040-Copy00-line03a > 0		       			     	    			      	   !$Form1040-Copy00-lineQDCG	!$Form1040-Copy00-line16e
-cnum		!16e	!#####0		!$Form1040-Copy00-line07 > 0										   !$Form1040-Copy00-lineQDCG	!$Form1040-Copy00-lineCalc16
-
-
-xtCalc		!2Name		!3format	!4Form		!5copy		!6line
-tCalc		!Calc16		!#####0		!Form1040	!00		!line15
+cnum
+ira04
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a04 = 'x'
+VALUOF$Form1040-Copy00-liner04
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
 
 
 
-xtlin   	!2name   	!3blank  	!4dummy
-tlin    	!06cCk
-tlin    	!07Ck
-tlin    	!35aCk
-tlin    	!35b1
-tlin    	!35b2
-tlin    	!35b3
-tlin    	!35b4
-tlin    	!35b5
-tlin    	!35b6
-tlin    	!35b7
-tlin    	!35b8
-tlin    	!35b9
-tlin    	!35cCkg
-tlin    	!35cSvg
-tlin    	!35d10
-tlin    	!35d11
-tlin    	!35d1
-tlin    	!35d12
-tlin    	!35d13
-tlin    	!35d14
-tlin    	!35d15
-tlin    	!35d16
-tlin    	!35d17
-tlin    	!35d2
-tlin    	!35d3
-tlin    	!35d4
-tlin    	!35d5
-tlin    	!35d6
-tlin    	!35d7
-tlin    	!35d8
-tlin    	!35d9
-tlin    	!39N
-tlin    	!39Y
-tlin    	!421
-tlin    	!422
-tlin    	!423
-tlin    	!424
-tlin    	!425
-tlin    	!431
-tlin    	!432
-tlin    	!433
-tlin    	!434
-tlin    	!435
-tlin    	!436
-tlin    	!441
-tlin    	!442
-tlin    	!443
-tlin    	!444
-tlin    	!445
-tlin    	!4972Ck
-tlin    	!8814Ck
-tlin    	!addr1
-tlin    	!addr2
-tlin    	!aptNo
-tlin    	!campme
-tlin    	!campS
-tlin    	!child
-tlin    	!city
-tlin    	!d1cod
-tlin    	!d1CTC
-tlin    	!d1LN
-tlin    	!d1name
-tlin    	!d1name
-tlin    	!d1rel
-tlin    	!d1SF
-tlin    	!d1SL
-tlin    	!d1SM
-tlin    	!d2cod
-tlin    	!d2CTC
-tlin    	!d2LN
-tlin    	!d2name
-tlin    	!d2rel
-tlin    	!d2SF
-tlin    	!d2SL
-tlin    	!d2SM
-tlin    	!d3cod
-tlin    	!d3CTC
-tlin    	!d3LN
-tlin    	!d3name
-tlin    	!d3rel
-tlin    	!d3SF
-tlin    	!d3SL
-tlin    	!d3SM
-tlin    	!d4cod
-tlin    	!d4CTC
-tlin    	!d4LN
-tlin    	!d4name
-tlin    	!d4rel
-tlin    	!d4SF
-tlin    	!d4SL
-tlin    	!d4SM
-tlin    	!d5cod
-tlin    	!d5CTC
-tlin    	!d5LN
-tlin    	!d5rel
-tlin    	!d5SF
-tlin    	!d5SL
-tlin    	!d5SM
-tlin    	!dgt4
-tlin    	!digN
-tlin    	!digY
-tlin    	!Dname
-tlin    	!Dphone
-tlin    	!Faddr
-tlin    	!FCntry
-tlin    	!FEIN
-tlin    	!Fname
-tlin    	!Fphone
-tlin    	!Fprov
-tlin    	!Fzip
-tlin    	!Other
-tlin    	!Pdate
-tlin    	!Pname
-tlin    	!PTIN
-tlin    	!Sa58
-tlin    	!Sblind
-tlin    	!Sdate
-tlin    	!Sdep
-tlin    	!SECk
-tlin    	!SiUali
-tlin    	!Socc
-tlin    	!ST
-tlin    	!Tdate
-tlin    	!Tocc
-tlin    	!Ya58
-tlin    	!Yblind
-tlin    	!youdep
-tlin    	!zip
-tlin		!x00		!		!x
 
-xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	!Note that tPull uses just the name not linename under 7line
-tPull		!FS		!		!		!Bkg		!00		!FS
-tPull   	!SFNI    	!        	!        	!Bkg        	!00        	!SFNI
-tPull   	!SLN     	!        	!        	!Bkg    	!00      	!SLN
-tPull   	!SSSNoF  	!        	!        	!Bkg    	!00      	!SSSNoF
-tPull   	!SSSNoL  	!        	!        	!Bkg     	!00      	!SSSNoL
-tPull   	!SSSNoM  	!        	!        	!Bkg     	!00      	!SSSNoM
-tPull   	!TFNI    	!        	!        	!Bkg     	!00      	!TFNI
-tPull   	!TLN     	!        	!        	!Bkg     	!00      	!TLN
-tPull   	!TSSNoF  	!        	!        	!Bkg     	!00      	!TSSNoF
-tPull   	!TSSNoL  	!        	!        	!Bkg     	!00      	!TSSNoL
-tPull   	!TSSNoM  	!        	!        	!Bkg     	!00      	!TSSNoM
+cnum
+ira05
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a05 = 'x'
+VALUOF$Form1040-Copy00-liner05
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
 
 
-xctext		!2name	!3format	!4testvalue				!5value1	!6value2
-ctext		!S	!#####0		!$Form1040-Copy00-lineFS = 'S'		!'x'		!''
-ctext		!MFJ	!#####0		!$Form1040-Copy00-lineFS = 'MFJ'	!'x'		!''
-ctext		!MFS	!#####0		!$Form1040-Copy00-lineFS = 'MFS'	!'x'		!''
-ctext		!HOH	!#####0		!$Form1040-Copy00-lineFS = 'HOH'	!'x'		!''
-ctext		!QSS	!#####0		!$Form1040-Copy00-lineFS = 'QSS'	!'x'		!''
 
+
+cnum
+ira06
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a06 = 'x'
+VALUOF$Form1040-Copy00-liner06
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+ira07
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a07 = 'x'
+VALUOF$Form1040-Copy00-liner07
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+ira08
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a08 = 'x'
+VALUOF$Form1040-Copy00-liner08
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+ira09
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a09 = 'x'
+VALUOF$Form1040-Copy00-liner09
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+ira10
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a10 = 'x'
+VALUOF$Form1040-Copy00-liner10
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+xcnum
+pen00
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a00 = ''
+VALUOF$Form1040-Copy00-linet00
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen01
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a01 = ''
+VALUOF$Form1040-Copy00-linet01
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen02
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a02 = ''
+VALUOF$Form1040-Copy00-linet02
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen03
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a03 = ''
+VALUOF$Form1040-Copy00-linet03
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen04
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a04 = ''
+VALUOF$Form1040-Copy00-linet04
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen05
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a05 = ''
+VALUOF$Form1040-Copy00-linet05
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen06
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a06 = ''
+VALUOF$Form1040-Copy00-linet06
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen07
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a07 = ''
+VALUOF$Form1040-Copy00-linet07
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen08
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a08 = ''
+VALUOF$Form1040-Copy00-linet08
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen09
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a09 = ''
+VALUOF$Form1040-Copy00-linet09
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+pen10
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a10 = ''
+VALUOF$Form1040-Copy00-linet10
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+
+xNote that the following approach to calculating line 16a did not work because the compiler could calculate each record in a different order each time.
+xThis gave different numerical results each time and necessitated a change to a multiline record format.
+
+cnum
+16a
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line4952 > 0
+VALUOF$Form1040-Copy00-lineSDTW
+WHEN02
+WHEN01document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0
+VALUOF$Form1040-Copy00-lineSDTW
+WHEN02
+WHEN01document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0
+VALUOF$Form1040-Copy00-lineSDTW
+WHEN02
+WHEN01$Form1040-Copy00-line03a > 0
+VALUOF$Form1040-Copy00-lineQDCG
+WHEN02
+WHEN01$Form1040-Copy00-line07 > 0
+VALUOF$Form1040-Copy00-lineQDCG
+WHEN02
+OTHER1
+VALUOF$Form1040-Copy00-lineCalc16
+OTHER2
+CHOOS2
+
+
+
+
+
+
+
+
+X****************************************************
+
+
+
+xNote that cnum and ctest use the full name
+
+xctext
+2name
+3format
+4testvalue
+5value1
+6value2
+
+ctext
+S
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'S'
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+
+
+
+ctext
+MFJ
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+
+
+
+ctext
+MFS
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFS'
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+
+
+
+ctext
+HOH
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'HOH'
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+
+
+
+ctext
+QSS
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'QSS'
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+
+
+
+x**************************************************************
 

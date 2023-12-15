@@ -40,44 +40,49 @@
     </copy00lineFS>
   
 
-<copy00lineQOFn color="blue">
-    <xsl:value-of select="$SchedD-Copy00-lineQOFn"/>
-    </copy00lineQOFn>
-  
-
 <copy00lineQOFy color="blue">
     <xsl:value-of select="$SchedD-Copy00-lineQOFy"/>
     </copy00lineQOFy>
   
 
-<copy00line3000 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line3000, '#####0')"/>
-  </copy00line3000>
+<copy00lineQOFn color="blue">
+    <xsl:value-of select="$SchedD-Copy00-lineQOFn"/>
+    </copy00lineQOFn>
+  
+
+<copy00linec3000 color="blue">
+  <xsl:value-of select="format-number($SchedD-Copy00-linec3000, '#####0')"/>
+  </copy00linec3000>
 
 
-<copy00line1500 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line1500, '#####0')"/>
-  </copy00line1500>
+<copy00linec1500 color="blue">
+  <xsl:value-of select="format-number($SchedD-Copy00-linec1500, '#####0')"/>
+  </copy00linec1500>
 
 
-<copy00linemin1 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-linemin1, '#0.00')"/>
-  </copy00linemin1>
+<copy00linecmin1 color="blue">
+  <xsl:value-of select="format-number($SchedD-Copy00-linecmin1, '#0.00')"/>
+  </copy00linecmin1>
 
 
-<copy00line15 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line15, '#####0')"/>
-  </copy00line15>
-
-
-<copy00line16 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line16, '#####0')"/>
-  </copy00line16>
+<copy00line14 color="red">
+  <xsl:value-of select="format-number($SchedD-Copy00-line14, '#####0')"/>
+  </copy00line14>
 
 
 <copy00line07 color="green">
   <xsl:value-of select="format-number($SchedD-Copy00-line07, '#####0')"/>
   </copy00line07>
+
+
+<copy00line15 color="green">
+  <xsl:value-of select="format-number($SchedD-Copy00-line15, '#####0')"/>
+  </copy00line15>
+
+
+<copy00line16 color="green">
+  <xsl:value-of select="format-number($SchedD-Copy00-line16, '#####0')"/>
+  </copy00line16>
 
 
 <copy00line01bh color="green">
@@ -245,24 +250,9 @@
   </copy00line13>
 
 
-<copy00line14 color="purple">
-  <xsl:value-of select="format-number($SchedD-Copy00-line14, '#####0')"/>
-  </copy00line14>
-
-
-<copy00line18d color="purple">
-  <xsl:value-of select="format-number($SchedD-Copy00-line18d, '#####0')"/>
-  </copy00line18d>
-
-
-<copy00line19d color="purple">
-  <xsl:value-of select="format-number($SchedD-Copy00-line19d, '#####0')"/>
-  </copy00line19d>
-
-
-<copy00line20ye color="purple">
-  <xsl:value-of select="format-number($SchedD-Copy00-line20ye, '#####0')"/>
-  </copy00line20ye>
+<copy00line18 color="purple">
+  <xsl:value-of select="format-number($SchedD-Copy00-line18, '#####0')"/>
+  </copy00line18>
 
 
 <copy00line19 color="purple">
@@ -270,9 +260,9 @@
   </copy00line19>
 
 
-<copy00line22 color="purple">
-  <xsl:value-of select="format-number($SchedD-Copy00-line22, '#####0')"/>
-  </copy00line22>
+<copy00line104003a color="purple">
+  <xsl:value-of select="format-number($SchedD-Copy00-line104003a, '#####0')"/>
+  </copy00line104003a>
 
 
 <copy00line01ah color="purple">
@@ -315,9 +305,14 @@
   </copy00line10h>
 
 
-<copy00line21e color="blue">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21e, '#####0')"/>
-  </copy00line21e>
+<copy00line16pos color="red">
+  <xsl:value-of select="format-number($SchedD-Copy00-line16pos, '#####0')"/>
+  </copy00line16pos>
+
+
+<copy00line21a color="blue">
+  <xsl:value-of select="format-number($SchedD-Copy00-line21a, '#####0')"/>
+  </copy00line21a>
 
 
 <copy00line17y color="blue">
@@ -325,94 +320,14 @@
     </copy00line17y>
   
 
-<copy00line17a color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line17a"/>
-    </copy00line17a>
-  
-
-<copy00line17b color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line17b"/>
-    </copy00line17b>
-  
-
 <copy00line17n color="blue">
     <xsl:value-of select="$SchedD-Copy00-line17n"/>
     </copy00line17n>
   
 
-<copy00line17na color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line17na"/>
-    </copy00line17na>
-  
-
-<copy00line17nb color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line17nb"/>
-    </copy00line17nb>
-  
-
-<copy00line18 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line18, '#####0')"/>
-  </copy00line18>
-
-
-<copy00line18a color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line18a, '#####0')"/>
-  </copy00line18a>
-
-
-<copy00line18b color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line18b, '#####0')"/>
-  </copy00line18b>
-
-
-<copy00line18c color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line18c, '#####0')"/>
-  </copy00line18c>
-
-
-<copy00line19 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line19, '#####0')"/>
-  </copy00line19>
-
-
-<copy00line19a color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line19a, '#####0')"/>
-  </copy00line19a>
-
-
-<copy00line19b color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line19b, '#####0')"/>
-  </copy00line19b>
-
-
-<copy00line19c color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line19c, '#####0')"/>
-  </copy00line19c>
-
-
 <copy00line20y color="blue">
     <xsl:value-of select="$SchedD-Copy00-line20y"/>
     </copy00line20y>
-  
-
-<copy00line20ya color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20ya"/>
-    </copy00line20ya>
-  
-
-<copy00line20yb color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20yb"/>
-    </copy00line20yb>
-  
-
-<copy00line20yc color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20yc"/>
-    </copy00line20yc>
-  
-
-<copy00line20yd color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20yd"/>
-    </copy00line20yd>
   
 
 <copy00line20n color="blue">
@@ -420,64 +335,9 @@
     </copy00line20n>
   
 
-<copy00line20na color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20na"/>
-    </copy00line20na>
-  
-
-<copy00line20nb color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20nb"/>
-    </copy00line20nb>
-  
-
-<copy00line20nc color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20nc"/>
-    </copy00line20nc>
-  
-
-<copy00line20nd color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line20nd"/>
-    </copy00line20nd>
-  
-
-<copy00line21x color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21x, '#####0')"/>
-  </copy00line21x>
-
-
-<copy00line21 color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21, '#####0')"/>
-  </copy00line21>
-
-
-<copy00line21a color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21a, '#####0')"/>
-  </copy00line21a>
-
-
-<copy00line21b color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21b, '#####0')"/>
-  </copy00line21b>
-
-
-<copy00line21c color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21c, '#####0')"/>
-  </copy00line21c>
-
-
-<copy00line21d color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21d, '#####0')"/>
-  </copy00line21d>
-
-
 <copy00line22y color="blue">
     <xsl:value-of select="$SchedD-Copy00-line22y"/>
     </copy00line22y>
-  
-
-<copy00line22ya color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line22ya"/>
-    </copy00line22ya>
   
 
 <copy00line22n color="blue">
@@ -485,8 +345,13 @@
     </copy00line22n>
   
 
-<copy00line22na color="blue">
-    <xsl:value-of select="$SchedD-Copy00-line22na"/>
-    </copy00line22na>
-  
+<copy00line21 color="red">
+  <xsl:value-of select="format-number($SchedD-Copy00-line21, '#####0')"/>
+  </copy00line21>
+
+
+<copy00line21x color="red">
+  <xsl:value-of select="format-number($SchedD-Copy00-line21x, '#####0')"/>
+  </copy00line21x>
+
 </Form>

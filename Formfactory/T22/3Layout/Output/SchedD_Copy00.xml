@@ -20,13 +20,8 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 <IRSForms>
 <Form>
-<copy00lineTFNI color='blue'>John Q</copy00lineTFNI>
-<copy00lineSFNI color='blue'>Jeanne E</copy00lineSFNI>
 <copy00lineTLN color='blue'>Taxpayor</copy00lineTLN>
 <copy00lineSLN color='blue'>Taxpayor</copy00lineSLN>
-<copy00lineTSSNoF color='blue'>123</copy00lineTSSNoF>
-<copy00lineTSSNoM color='blue'>45</copy00lineTSSNoM>
-<copy00lineTSSNoL color='blue'>6789</copy00lineTSSNoL>
 <copy00lineQOFy color='blue'>x</copy00lineQOFy>
 <copy00lineQOFn color='blue'>x</copy00lineQOFn>
 <copy00line01ah color='red'>1110</copy00line01ah>

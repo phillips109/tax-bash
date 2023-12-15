@@ -34,11 +34,13 @@ show(){
 	qpdfview ../Pdf/$1 &
 }
 
+
     
 Pdfshow(){
     foo=$1
 #    echo $foo
 #    sleep 5
+     cp ../../1Pdf2Jpg/Pdf/* ../Pdf
     case $foo in
 	 Form*)  Pdfshowform $1;;
          SchedA) qpdfview ../Pdf/f1040sa.pdf       &;;
@@ -59,11 +61,14 @@ Pdfshow(){
          1065Bk) qpdfview ../Pdf/f1040s1.pdf       &;;
          1120Sk) qpdfview ../Pdf/f1040s1.pdf       &;;
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
+	CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
+       28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
+    UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
        SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
 	    SST) qpdfview ../Pdf/sst.pdf           &;; 
-  SchedDTaxWkst) show     ../Pdf/schd.pdf           ;;
-
+  SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
+             w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
           q) break;;	
     esac		
    
@@ -114,27 +119,46 @@ cpPre2EdPre(){
 }
 
 #This allows one to enter dummy data while in Txt.
+
 editEdPre(){	
     emacs ../EdPre/$1_Copy$2.edpre
 }
 
-rmEndSpaceField(){
-    sed -f ../Sed/rmEndSpaceField.sed ../EdPre/$1_Copy$2.edpre > ../Dat/$1_Copy$2.dat	
+rmEndSpaceField1(){
+    sed -f ../Sed/rmEndSpaceField.sed ../EdPre/$1_Copy$2.edpre > $1_Copy$2.edpre.tmp
+    cp $1_Copy$2.edpre.tmp ../Dat/$1_Copy$2.dat
+    rm $1_Copy$2.edpre.tmp
 }
 
-#copyPre2Dat(){
-#    
+#cpEdPre2Dat(){
 #    cp ../EdPre/$1_Copy$2.edpre ../Dat/$1_Copy$2.dat
 #    }
 
-#copyDat2Dat(){
-#    cp ../Dat/$1_Copy00.dat ../Dat/$1_Copy$2.dat
-#    }
 
-#If not edited in Txt, can be edited in Dat.	
+
+convertFS2nl(){
+	#This line double spaces the dat file
+	awk -f ../Awk/multline1.awk ../Dat/$1_Copy$2.dat > $1_Copy$2.tmp
+
+	#This line changes the FS from "[ \t]*!" to "\n"
+	awk -f ../Awk/multline.awk $1_Copy$2.tmp > ../Dat/$1_Copy$2.dat
+
+	#This line removes the tmp file
+	rm $1_Copy$2.tmp
+}
+
+rmEndSpaceField2(){
+    sed -f ../Sed/rmEndSpaceField.sed ../Dat/$1_Copy$2.dat > $1_Copy$2.dat.tmp
+    cp $1_Copy$2.dat.tmp ../Dat/$1_Copy$2.dat
+    rm $1_Copy$2.dat.tmp
+}
+
+
+#Can now edit cnum and ctext more easily	
 editDat(){
     emacs ../Dat/$1_Copy$2.dat
 }
+
 
 
 makeInput(){
@@ -257,7 +281,11 @@ showPdf(){
 
     
 #4makeVariables()    
-    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Input/$1_Copy$2.xml -xsl ../Make/makeVariablesFile.xsl -out ../Variables/v$1_Copy$2.xsl -PARAM form $1 -PARAM copy $2
+#    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Input/$1_Copy$2.xml -xsl ../Make/makeVariablesFile.xsl -out ../Variables/v$1_Copy$2.xsl -PARAM form $1 -PARAM copy $2
+
+#This files awk2print.awk creates the variables file directly from the ../Dat file w/o going through an input files
+#It's simpler, more direct, and easier to follow. It makes creation of cnum and ctext files easier.cd 
+    awk -f ../Awk/awk2print.awk "form=$1" ../Dat/$1_Copy00.dat > ../Variables/v$1_Copy00.xsl
 
 #5makeLines()
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Input/$1_Copy$2.xml -xsl ../Make/makeLinesFile.xsl -out ../Lines/l$1_Copy$2.xml -PARAM form $1 -PARAM copy $2
@@ -324,8 +352,12 @@ while true;
   echo "  1g)  convert to ../PreDat/"$1"_Copy$2.pre, a blank Dat awk database"
   echo "  1h)  cp ../PreDat/"$1"_Copy$2.pre to ../EdPre/$1_Copy$2.edpre"
   echo "  1i)  Edit ../EdPre/$1_Copy$2.edpre"
-  echo "  1j)  rmEndSpaceField of ../EdPre/"$1"_Copy"$2".edpre > ../Dat/"$1"_Copy"$2".dat"
-  echo "  1k)  view ../Dat/"$1"_Copy"$2".dat"
+  echo "  1j)  rmEndSpaceField1 of ../EdPre/"$1"_Copy"$2".edpre > ../Dat/"$1"_Copy"$2".dat"
+#  echo "  1j)  cp ../EndPre/$1_Copy$2.endpre to ../Dat/$1_Copy$2.dat"
+  echo "  1k)  convert FS to newline and RS to blank line"
+  echo "  1l)  rmEndSpaceField2 of ../Dat/"$1"_Copy"$2".dat"
+  echo "  1m)  edit cnum and ctext in ../Dat/"$1"_Copy"$2".dat"
+  echo "  1n)  rmEndSpaceField2 of ../Dat/"$1"_Copy"$2".dat"
   echo "   2)  makeInput"
   echo "   3)  make ../Data/"$1"_Copy"$2"_line*.xml files"
   echo "   4)  make ../Variables/v"$1"_Copy"$2".xsl"
@@ -369,8 +401,12 @@ while true;
      1g)  makePreDat $1 $2;;
      1h)  cpPre2EdPre $1 $2;;
      1i)  editEdPre $1 $2;;
-     1j)  rmEndSpaceField $1 $2;;
-     1k)  editDat $1 $2;;
+     1j)  rmEndSpaceField1 $1 $2;;
+#     1j)  cpEdPre2Dat $1 $2;;
+     1k)  convertFS2nl $1 $2;;
+     1l)  rmEndSpaceField2 $1 $2;;
+     1m)  editDat $1 $2;;
+     1n)  rmEndSpaceField2 $1 $2;;
     
       2)  makeInput $1 $2;;
       3)  makeDataFiles $1 $2;;
@@ -719,7 +755,7 @@ do
       1099r)     set_menu_choices  Form1099r       00;;	
       1099g)     set_menu_choices  Form1099g       00;;
       1099ssa)   set_copy_number   Form1099ssa     00;;
-      w2)        set_menu_choices  W2-CopyA        00;;	
+      w2)        set_menu_choices  w2              00;; #can only produce once copy (00) anyway	
       bkg)       set_menu_choices  Bkg             00;; #using set_menu_choices limits Bkg to one copy (00)      
       q)         break;;
     esac
@@ -742,7 +778,7 @@ do
   echo "     sst)  Social Security Tax Worksheet"
   echo "     wks)  Worksheet for tax penalty"
   echo "     cap)  Capital Loss Carryover Worksheet"
-  echo "    rg28)  28% Rate Gain Worksheet"
+  echo "    28rg)  28% Rate Gain Worksheet"
   echo "    1250)  Unrecaptured Section 1250 Gain Worksheet"
   
   echo "   q)     Return to Main Menu"
@@ -760,9 +796,9 @@ do
        ssa)   set_copy_number   SSA_1099	  00;;
        sst)   set_menu_choices  SST               00;;
        wks)   set_menu_choices  Wks               00;;
-       cap)   set_menu_choices  CapLossCarryWks   00;;
-      rg28)   set_menu_choices  RG28Wks           00;;
-      1250)   set_menu_choices  UG1250            00;;
+       cap)   set_menu_choices  CLCWkst           00;;
+      28rg)   set_menu_choices  28RGWkst          00;;
+      1250)   set_menu_choices  UR1250GWkst       00;;
       
          q)     break;;
     esac

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+Form
+
+type:pgS
+name:Single
+bkgImage:../Jpg/28RGWkst-page-001.jpg
+
+type:col
+name:
+left:0.00
+right:8.50
+width:8.5
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:-0.12
+
+type:col
+name:a
+left:6.98
+right:7.48
+width:0.5
+background-color='pink'
+font-size:12
+font-family:Times
+align:right
+top:0.00
+
+type:dlin
+name:01
+top:6.88
+height:0.15
+color:red
+dummy:1000
+form:
+copy:
+line2:
+
+type:dlin
+name:02
+top:7.54
+height:0.15
+color:red
+dummy:2000
+form:
+copy:
+line2:
+
+type:dlin
+name:03
+top:8.32
+height:0.15
+color:red
+dummy:3000
+form:
+copy:
+line2:
+
+type:dlin
+name:04
+top:8.71
+height:0.15
+color:red
+dummy:4000
+form:
+copy:
+line2:
+
+type:dlin
+name:05
+top:9.15
+height:0.15
+color:red
+dummy:5000
+form:
+copy:
+line2:
+
+type:dlin
+name:06
+top:9.40
+height:0.15
+color:red
+dummy:6000
+form:
+copy:
+line2:
+
+type:dlin
+name:07
+top:9.70
+height:0.15
+color:red
+dummy:7000
+form:
+copy:
+line2:
+
+Endcol ************************************************
+
+Endcol ************************************************
+
+EndpgS
+EndForm

@@ -44,17 +44,6 @@
 <line2>line03a</line2>
 </line>
 
-<line number='11'
- color='purple'>
-<title></title>
-<type>dPull</type>
-<format>#####0</format>
-<dummy>0</dummy>
-<form>QDCGTaxWkst</form>
-<copy>00</copy>
-<line2>line09</line2>
-</line>
-
 <line number='15D'
  color='purple'>
 <title></title>
@@ -121,6 +110,16 @@
 <line2>line15</line2>
 </line>
 
+<line number='11'
+ color='magenta'>
+<title>0</title>
+<type>dRef</type>
+<format>#####0</format>
+<form>09</form>
+<copy></copy>
+<line2></line2>
+</line>
+
 <line number='p15'
  color='blue'>
 <type>const</type>
@@ -149,14 +148,6 @@
 <format>#####0</format>
 <multiplicand>line20</multiplicand>
 <multiplier>linep20</multiplier>
-</line>
-
-<line number='03b'
- color='blue'>
-<type>smOf</type>
-<format>#####0</format>
-<first>line15D</first>
-<second>line16D</second>
 </line>
 
 <line number='07'
@@ -251,63 +242,54 @@
  color='red'>
 <type>cnum</type>
 <format>#####0</format>
-<testvalue>$QDCGTaxWkst-Copy00-lineFEI3 &gt; 0</testvalue>
-<value1>$QDCGTaxWkst-Copy00-lineFEI3</value1>
-<value2>$QDCGTaxWkst-Copy00-line104015 &gt; 0</value2>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01document('../Output/Form2555_Copy00.xml')</value1>
+<value2>VALUOF$QDCGTaxWkst-Copy00-lineFEI3 </value2>
 </line>
 
 <line number='03'
  color='red'>
 <type>cnum</type>
 <format>#####0</format>
-<testvalue>$QDCGTaxWkst-Copy00-line03y = 'x'</testvalue>
-<value1>$QDCGTaxWkst-Copy00-line03a</value1>
-<value2>$QDCGTaxWkst-Copy00-line10407</value2>
-</line>
-
-<line number='03a'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$QDCGTaxWkst-Copy00-line15D &lt;= 0 or $QDCGTaxWkst-Copy00-line16D &lt;= 0</testvalue>
-<value1>0</value1>
-<value2>$QDCGTaxWkst-Copy00-line03b</value2>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$QDCGTaxWkst-Copy00-line03y = 'x'</value1>
+<value2>CHOOS1</value2>
 </line>
 
 <line number='03y'
  color='blue'>
 <type>ctext</type>
-<format></format>
-<test>document('../Output/SchedD_Copy00.xml')</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<format>CHOOS1</format>
+<test>WHEN01document('../Output/SchedD_Copy00.xml')</test>
+<value1>VALUOF'x'</value1>
+<value2>WHEN02</value2>
 </line>
 
 <line number='03n'
  color='blue'>
 <type>ctext</type>
-<format></format>
-<test>document('../Output/SchedD_Copy00.xml')</test>
-<value1>''</value1>
-<value2>'x'</value2>
+<format>CHOOS1</format>
+<test>WHEN01document('../Output/SchedD_Copy00.xml')</test>
+<value1>VALUOF''</value1>
+<value2>WHEN02</value2>
 </line>
 
 <line number='06'
  color='blue'>
 <type>ctext</type>
-<format>#####0</format>
-<test>$QDCGTaxWkst-Copy00-lineFS = 'S'</test>
-<value1>41675</value1>
-<value2>$QDCGTaxWkst-Copy00-lineFS = 'MFS'</value2>
+<format>CHOOS1</format>
+<test>WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'</test>
+<value1>VALUOF41675</value1>
+<value2>WHEN02</value2>
 </line>
 
 <line number='13'
  color='blue'>
 <type>ctext</type>
-<format>#####0</format>
-<test>$QDCGTaxWkst-Copy00-lineFS = 'S'</test>
-<value1>459750</value1>
-<value2>$QDCGTaxWkst-Copy00-lineFS = 'MFS'</value2>
+<format>CHOOS1</format>
+<test>WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'</test>
+<value1>VALUOF459750</value1>
+<value2>WHEN02</value2>
 </line>
 
 <line number='22'

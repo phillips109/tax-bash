@@ -1,0 +1,230 @@
+<Form name=''>
+
+<line number='03'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01</augend>
+<addend>line02</addend>
+</line>
+
+<line number='07a'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line04</augend>
+<addend>line06</addend>
+</line>
+
+<line number='12a'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line10</augend>
+<addend>line11</addend>
+</line>
+
+<line number='min1'
+ color='blue'>
+<type>const</type>
+<format>#####0</format>
+<value>-1</value>
+</line>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='05a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='09a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='10a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<line number='10402111'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>T21</dummy>
+<form>Form1040(2021)</form>
+<copy>01</copy>
+<line2>line11</line2>
+</line>
+
+<line number='10402114'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>T21</dummy>
+<form>Form1040(2021)</form>
+<copy>01</copy>
+<line2>line14</line2>
+</line>
+
+<line number='04'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line02</first>
+<second>line03</second>
+</line>
+
+<line number='08a'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line05</minuend>
+<subtrahend>line07</subtrahend>
+</line>
+
+<line number='11a'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line04</minuend>
+<subtrahend>line05</subtrahend>
+</line>
+
+<line number='13'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line09</minuend>
+<subtrahend>line12</subtrahend>
+</line>
+
+<line number='01'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line10402122</minuend>
+<subtrahend>line10402114</subtrahend>
+</line>
+
+<line number='05'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
+<value1>VALUOFline05a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='06'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
+<value1>VALUOFline06a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='07'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
+<value1>VALUOFline07a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='08'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
+<value1>VALUOFline08a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='09'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line015 &lt; 0</testvalue>
+<value1>VALUOFline09a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='10'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
+<value1>VALUOFline10a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='11'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
+<value1>VALUOFline11a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='12'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
+<value1>VALUOFline12a</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='13'
+ color='red'>
+<type>cnum</type>
+<format>CHOOS1</format>
+<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
+<value1>VALUOFline13a</value1>
+<value2>WHEN02</value2>
+</line>
+</Form>

@@ -52,6 +52,7 @@ Pdfshow(){
     foo=$1
 #    echo $foo
 #    sleep 5
+     cp ../../1Pdf2Jpg/Pdf/* ../Pdf
     case $foo in
 	 Form*)  Pdfshowform $1;;
          SchedA) qpdfview ../Pdf/f1040sa.pdf       &;;
@@ -73,10 +74,14 @@ Pdfshow(){
          1120Sk) qpdfview ../Pdf/f1040s1.pdf       &;;
 	   4868) qpdfview ../Pdf/f4868.pdf         &;;
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
+        CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
+       28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
+    UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;	    
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;; 
        SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
             SST) qpdfview ../Pdf/sst.pdf           &;;
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;; 
+             w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
          
 
           q) break;;	
@@ -765,7 +770,7 @@ do
       1099r)     set_menu_choices  Form1099r   00;;	
       1099g)     set_menu_choices  Form1099g   00;;
       1099ssa)   set_copy_number   Form1099ssa 00;;
-      w2)        set_menu_choices  W2-CopyA    00;;	
+      w2)        set_copy_number   w2          00;;	
       bkg)       set_menu_choices  Bkg         00;; #Limited to one copy (00). (see above)     
       q)         break;;
     esac
@@ -788,7 +793,7 @@ do
   echo "   sales)  State and Local Sales Tax Worksheet."
   echo "   ssa)    Social Security Benefit Statement."
   echo "   sst)    Social Security Tax Worksheet."
-  echo "   ug1250) Unreported Capital Gains"
+  echo "   ur1250) Unreported Capital Gains"
   
   
   echo "   q)      Return to Main Menu"
@@ -798,16 +803,16 @@ do
 
     case $wkst_choice in
 
-      cap)    set_menu_choices CapLossCarryWks  00;;	
+      cap)    set_menu_choices CLCWkst          00;;	
       fei)    set_menu_choices FEITaxWkst       00;;
       ln10)   set_menu_choices WSln10           00;;
       qdcg)   set_menu_choices QDCGTaxWkst      00;;
-      rg28)   set_menu_choices RG28Wks          00;;
+      rg28)   set_menu_choices 28RGWkst         00;;
       schd)   set_menu_choices SchedDTaxWkst    00;;
       sales)  set_menu_choices WSSchASalesTax   00;;
       ssa)    set_menu_choices SSA_1099         00;;
       sst)    set_menu_choices SST              00;;
-      ug1250) set_menu_choices UG1250Wks        00;;
+      ur1250) set_menu_choices UR1250GWkst      00;;
       q)     break;;
     esac
 done

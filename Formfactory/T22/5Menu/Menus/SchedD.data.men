@@ -1,0 +1,23 @@
+set_SchedD_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SchedD in which to enter or edit data:"
+echo
+echo "QOFy)    Enter x if you disposed of any investment in a qualified opportunity fund during the tax year."
+echo "QOFn)    Enter x if you did not.            "
+echo "14  )    Enter long-term capital loss carryover. This is line 13 of your Capital Loss Carryover Worksheet."
+echo
+echo "   q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SchedD_line_data_choice
+echo
+     case $SchedD_line_data_choice in
+QOFy)    set_line_menu_text   $1 $2  lineQOFy                           14;;
+QOFn)    set_line_menu_text   $1 $2  lineQOFn                           14;;
+14  )    set_line_menu_number $1 $2  line14                             14;;
+q   )    break;;                       
+esac
+done
+}

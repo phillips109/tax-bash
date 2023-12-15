@@ -1,0 +1,58 @@
+type	!name	!seq	!menuEntry
+tlin	!void	!001	!Enter x if form is void.                              
+tlin	!EID	!005	!Enter Empmloyer ID number.                             
+tlin	!EName	!006	!Employere name.
+tlin	!EAdd1	!007	!Employer Address 01                              
+tlin	!EAdd2	!008	!Employer Address 02           
+tlin	!ECity	!009	!Employer's City                              
+tlin	!EST	!010	!Employer's State (ST)               
+tlin	!Ezip	!011	!Employer's zip code                              
+tlin	!CtlNo	!012	!Control Number
+tlin	!TFNI	!013	!Enter taxpayor's first name and initial
+tlin	!TLN	!014	!Enter taxpayor's last name
+tlin	!TSSNoF	!14a	!Enter first three digits of taxpayor's SS No.
+tlin	!TSSNoM	!14b	!Enter fourth, fifth digiets of taxpayor's SS No.
+tlin	!TSSNoL	!14c	!Enter last four digits of taxpayor's SS No.
+tlin	!Tsuff	!015	!Taxpayor's name suffix                              
+tlin	!TAddr1	!016	!Taxpayor Address 01                              
+tlin	!TAddr2	!017	!Taxpayor Address 02           
+tlin	!TCity	!018	!Taxpayor City           
+tlin	!TST	!019	!Taxpayor's State (ST)                              
+tlin	!Tzip	!020	!Taxpayor's zip code                              
+tlin	!ST01	!021	!State 01 in which income was earned.                  
+tlin	!ST1EID	!022	!State 01 EID                              
+tlin	!ST01W	!023	!State 01 Wages,tips etc.                              
+dlin	!ST1Tax	!024	!State 01 Income Tax                              
+dlin	!L01W	!025	!Locality 01 Wages                              
+dlin	!L01Tax	!026	!Locality 01 Income Tax                              
+tlin	!L1Name	!027	!Locality 01 Name                             
+tlin	!ST02	!028	!State 02 in which income was earned.
+tlin	!ST2EID	!029	!State 02 EID                              
+dlin	!ST02W	!030	!State 02 Wages                              
+dlin	!ST2Tax	!031	!State 02 Income Tax                              
+dlin	!L02W	!032	!Locality 02 Wages                              
+dlin	!L02Tax	!033	!Locality 02 Income Tax                              
+tlin	!L2Name	!034	!Localilty 02 Name                              
+dlin	!Box01	!035	!Wages, tips, other compensation                    
+dlin	!Box02	!036	!Federal Income Tax withheld                     
+dlin	!Box03	!037	!Social Security wages                              
+dlin	!Box04	!038	!Social Security Tax withheld                          
+dlin	!Box05	!039	!Medicare Wages and tips            
+dlin	!Box06	!040	!Medicare tax withheld                              
+dlin	!Box07	!041	!Social Security tips                              
+dlin	!Box08	!042	!Allocated tips                              
+dlin	!Box09	!043	!Not used at present                              
+dlin	!Box10	!044	!Dependent Care Benefits                              
+dlin	!Box11	!045	!Nonqualified Plans                              
+tlin	!Box12a1	!046	!Code                              
+dlin	!Box12a2	!047	!Uncollected social security or RRTA tax on tips    
+tlin	!Box12b1	!048	!Code                    
+dlin	!Box12b2	!049	!Uncollected Medicare tax on tips
+tlin	!Box12c1	!052	!Code                              
+dlin	!Box12c2	!053	!Taxable cost of group term life insusrance         
+tlin	!Box12d1	!054	!Code                              
+dlin	!Box12d2	!055	!Elective deferrals under a section 401(b)          
+tlin	!Box13a	!056	!Enter x if statutory employee
+tlin	!Box13b	!057	!Enter x if Retirement Plan 
+tlin	!Box13c	!058	!Enter x if Third party sick pay    
+dlin	!Box14	!059	!Other:

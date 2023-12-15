@@ -30,33 +30,33 @@ col   	!      	!-0.12 	!left  	!0.00  	!8.50
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!f     	!0.00  	!left  	!1.73  	!3.63  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TFNI  	!1.48  	!John Q            	!            	!      	!      
-tlin  	!SFNI  	!1.62  	!Jeanne E          	!            	!      	!      
+tPull  	!TFNI  	!1.48  	!John Q            	!Bkg           	!00    	!TFNI      
+tPull  	!SFNI  	!1.62  	!Jeanne E          	!Bkg           	!00    	!SFNI      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!g     	!0.00  	!left  	!3.98  	!6.21  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TLN   	!1.48  	!Taxpayor          	!            	!      	!      
-tlin  	!SLN   	!1.62  	!Taxpayor          	!            	!      	!      
+tlin  	!TLN   	!1.48  	!Taxpayor          	!Bkg           	!00    	!TLN      
+tlin  	!SLN   	!1.62  	!Taxpayor          	!Bkg           	!00    	!SLN      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!h     	!0.00  	!right 	!6.36  	!6.73  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TSSNoF	!1.62  	!123               	!            	!      	!      
+tPull  	!TSSNoF	!1.62  	!123               	!Bkg           	!00    	!TSSNoF      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!i     	!0.00  	!center	!6.83  	!7.04  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TSSNoM	!1.62  	!45                	!            	!      	!      
+tPull  	!TSSNoM	!1.62  	!45                	!Bkg           	!00    	!TSSNoM      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!j     	!0.00  	!left  	!7.16  	!7.70  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TSSNoL	!1.62  	!6789              	!            	!      	!      
+tPull  	!TSSNoL	!1.62  	!6789              	!Bkg          	!00    	!TSSNoL      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right

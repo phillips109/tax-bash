@@ -33,8 +33,8 @@ while true;
 do
   foo=$1   
   clear
-  echo $foo
-
+#  echo $foo
+    cp ../../1Pdf2Jpg/Pdf/* ../Pdf
     case $foo in
          SchedA) qpdfview ../Pdf/f1040sa.pdf &;;
          SchedB) qpdfview ../Pdf/f1040sb.pdf &;;
@@ -65,31 +65,35 @@ Pdfshow(){
     foo=$1
 #    echo $foo
 #    sleep 5
+     cp ../../1Pdf2Jpg/Pdf/* ../Pdf
     case $foo in
 	 Form*)  Pdfshowform $1;;
-         SchedA) qpdfview ../Pdf/f1040sa.pdf &;;
-         SchedB) qpdfview ../Pdf/f1040sb.pdf &;;
-	 SchedC) qpdfview ../Pdf/f1040sc.pdf &;;
-	 SchedD) qpdfview ../Pdf/f1040sd.pdf &;;
-	 SchedF) qpdfview ../Pdf/f1040sf.pdf &;;
-	 SchedH) qpdfview ../Pdf/f1040sh.pdf &;;
-	 Sched1) qpdfview ../Pdf/f1040s1.pdf &;;
-	 Sched2) qpdfview ../Pdf/f1040s2.pdf &;;
-	 Sched3) qpdfview ../Pdf/f1040s3.pdf &;;
-	 Sched4) qpdfview ../Pdf/f1040s4.pdf &;;
-	 Sched5) qpdfview ../Pdf/f1040s5.pdf &;;
-	 Sched6) qpdfview ../Pdf/f1040s6.pdf &;;
-	Schedse) qpdfview ../Pdf/f1040se.pdf &;;
-          1041k) qpdfview ../Pdf/f1040s1.pdf &;;
-	  1065k) qpdfview ../Pdf/f1040s1.pdf &;;
-         1065Bk) qpdfview ../Pdf/f1040s1.pdf &;;
-         1120Sk) qpdfview ../Pdf/f1040s1.pdf &;;
-          8865k) qpdfview ../Pdf/f1040s1.pdf &;;
-    QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf    &;;
-            SST) qpdfview ../Pdf/sst.pdf &;;
+         SchedA) qpdfview ../Pdf/f1040sa.pdf       &;;
+         SchedB) qpdfview ../Pdf/f1040sb.pdf       &;;
+	 SchedC) qpdfview ../Pdf/f1040sc.pdf       &;;
+	 SchedD) qpdfview ../Pdf/f1040sd.pdf       &;;
+	 SchedF) qpdfview ../Pdf/f1040sf.pdf       &;;
+	 SchedH) qpdfview ../Pdf/f1040sh.pdf       &;;
+	 Sched1) qpdfview ../Pdf/f1040s1.pdf       &;;
+	 Sched2) qpdfview ../Pdf/f1040s2.pdf       &;;
+	 Sched3) qpdfview ../Pdf/f1040s3.pdf       &;;
+	 Sched4) qpdfview ../Pdf/f1040s4.pdf       &;;
+	 Sched5) qpdfview ../Pdf/f1040s5.pdf       &;;
+	 Sched6) qpdfview ../Pdf/f1040s6.pdf       &;;
+	Schedse) qpdfview ../Pdf/f1040se.pdf       &;;
+          1041k) qpdfview ../Pdf/f1040s1.pdf       &;;
+	  1065k) qpdfview ../Pdf/f1040s1.pdf       &;;
+         1065Bk) qpdfview ../Pdf/f1040s1.pdf       &;;
+         1120Sk) qpdfview ../Pdf/f1040s1.pdf       &;;
+          8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
+       28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
+    UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;
+        CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
+    QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
+            SST) qpdfview ../Pdf/sst.pdf           &;;
        SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
-  SchedDTaxWkst) qpdfview ../Pdf/schd.pdf &;;
-
+  SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
+             w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
           q) break;;	
     esac		
    
@@ -534,7 +538,7 @@ do
       1099int)     set_menu_choices Form1099int;;	
       1099r)       set_menu_choices Form1099r;;	
       1099g)       set_menu_choices Form1099g;;
-      w2)          set_menu_choices W2-CopyA;;	
+      w2)          set_menu_choices w2;;	
       bkg)         set_menu_choices Bkg 01;;      
       q)         break;;
     esac
@@ -557,7 +561,7 @@ do
   echo "     sst)  Social Security Tax Worksheet"
   echo "     wks)  Worksheet for tax penalty"
   echo "     cap)  Capital Loss Carryover Worksheet"
-  echo "    rg28)  28% Rate Gain Worksheet"
+  echo "    28rg)  28% Rate Gain Worksheet"
   echo "    1250)  Unrecaptured Section 1250 Gain Worksheet"
   
   echo "   q)     Return to Main Menu"
@@ -575,9 +579,9 @@ do
       ssa)   set_menu_choices SSA_1099          01;;
       sst)   set_menu_choices SST               01;;
       wks)   set_menu_choices Wks               01;;
-      cap)   set_menu_choices CapLossCarryWks   01;;
-      rg28)  set_menu_choices RG28Wks           01;;
-      1250)  set_menu_choices UG1250            01;;
+      cap)   set_menu_choices CLCWkst           01;;
+      28rg)  set_menu_choices 28RGWkst          01;;
+      1250)  set_menu_choices UR1250GWkst       01;;
       q)     break;;
     esac
 done

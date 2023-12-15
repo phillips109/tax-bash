@@ -98,12 +98,6 @@ const
 
 
 
-
-
-
-
-
-
 mult
 #####0
 line30
@@ -316,409 +310,185 @@ line41
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'S'   or $SchedDTaxWkst-Copy00-lineFS = 'MFS'
-41675
-$SchedDTaxWkst-Copy00-line15a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-lineFS = 'S'   or $SchedDTaxWkst-Copy00-lineFS = 'MFS'
+VALUOF41675
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'MFJ' or $SchedDTaxWkst-Copy00-lineFS = 'QSS'
-83350
-$SchedDTaxWkst-Copy00-line15b
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-lineFS = 'S'   or $SchedDTaxWkst-Copy00-lineFS = 'MFS'
+VALUOF170050
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'HOH'
-55800
-0
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'S'   or $SchedDTaxWkst-Copy00-lineFS = 'MFS'
-170050
-$SchedDTaxWkst-Copy00-line19b
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'MFJ' or $SchedDTaxWkst-Copy00-lineFS = 'QSS'
-340100
-$SchedDTaxWkst-Copy00-line19c
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'HOH'
-170050
-0
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line26a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'S'
-459750
-$SchedDTaxWkst-Copy00-line26b
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'MFS'
-258600
-$SchedDTaxWkst-Copy00-line26c
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'MFJ' or $SchedDTaxWkst-Copy00-lineFS = 'QSS'
-517200
-$SchedDTaxWkst-Copy00-line26d
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-lineFS = 'HOH'
-488500
-0
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line23a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line24a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line25a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line27a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line28a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line29a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line30a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line31a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line32a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line33a
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line33b
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 
 cnum
 #####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line34a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line34b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line35a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line35b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line119 = 0
-0
-$SchedDTaxWkst-Copy00-line35c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line36a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line36b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line119 = 0
-0
-$SchedDTaxWkst-Copy00-line36c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line37a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line37b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line119 = 0
-0
-$SchedDTaxWkst-Copy00-line37c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line38a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line38b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line119 = 0
-0
-$SchedDTaxWkst-Copy00-line38c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line39a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line39b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line119 = 0
-0
-$SchedDTaxWkst-Copy00-line39c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line40a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line40b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line119 = 0
-0
-$SchedDTaxWkst-Copy00-line40c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line41a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line41b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line118 = 0
-0
-$SchedDTaxWkst-Copy00-line41c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line42a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line42b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line118 = 0
-0
-$SchedDTaxWkst-Copy00-line42c
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
-0
-$SchedDTaxWkst-Copy00-line43a
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line32
-0
-$SchedDTaxWkst-Copy00-line43b
-
-
-
-cnum
-#####0
-$SchedDTaxWkst-Copy00-line118 = 0
-0
-$SchedDTaxWkst-Copy00-line43c
+CHOOS1
+WHEN01$SchedDTaxWkst-Copy00-line01 = $SchedDTaxWkst-Copy00-line16
+VALUOF0
 
 
 

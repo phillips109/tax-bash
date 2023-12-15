@@ -46,19 +46,23 @@ font-family:Times
 align:left
 top:0.00
 
-type:tlin
+type:tPull
 name:TFNI
 top:1.48
 height:0.15
-color:blue
-dummy:John Q
+color:purple
+form:Bkg
+copy:00
+line2:TFNI
 
-type:tlin
+type:tPull
 name:SFNI
 top:1.62
 height:0.15
-color:blue
-dummy:Jeanne E
+color:purple
+form:Bkg
+copy:00
+line2:SFNI
 
 Endcol ************************************************
 
@@ -100,12 +104,14 @@ font-family:Times
 align:right
 top:0.00
 
-type:tlin
+type:tPull
 name:TSSNoF
 top:1.62
 height:0.15
-color:blue
-dummy:123
+color:purple
+form:Bkg
+copy:00
+line2:TSSNoF
 
 Endcol ************************************************
 
@@ -120,12 +126,14 @@ font-family:Times
 align:center
 top:0.00
 
-type:tlin
+type:tPull
 name:TSSNoM
 top:1.62
 height:0.15
-color:blue
-dummy:45
+color:purple
+form:Bkg
+copy:00
+line2:TSSNoM
 
 Endcol ************************************************
 
@@ -140,12 +148,14 @@ font-family:Times
 align:left
 top:0.00
 
-type:tlin
+type:tPull
 name:TSSNoL
 top:1.62
 height:0.15
-color:blue
-dummy:6789
+color:purple
+form:Bkg
+copy:00
+line2:TSSNoL
 
 Endcol ************************************************
 

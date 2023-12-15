@@ -119,7 +119,12 @@ $Form1040-Copy00-linequal09 +
 $Form1040-Copy00-linequal10"/>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineiraTot">
+<xsl:variable name="Form1040-Copy00-line37a">
+<xsl:value-of select="$Form1040-Copy00-line24 +
+$Form1040-Copy00-line38"/>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line04b">
 <xsl:value-of select="$Form1040-Copy00-lineira01 +
 $Form1040-Copy00-lineira02 +
 $Form1040-Copy00-lineira03 +
@@ -132,7 +137,7 @@ $Form1040-Copy00-lineira09 +
 $Form1040-Copy00-lineira10"/>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-linepenTot">
+<xsl:variable name="Form1040-Copy00-line05b">
 <xsl:value-of select="$Form1040-Copy00-linepen01 +
 $Form1040-Copy00-linepen02 +
 $Form1040-Copy00-linepen03 +
@@ -145,12 +150,9 @@ $Form1040-Copy00-linepen09 +
 $Form1040-Copy00-linepen10"/>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-line37a">
-<xsl:value-of select="$Form1040-Copy00-line24 +
-$Form1040-Copy00-line38"/>
+<xsl:variable name="Form1040-Copy00-linec2000">
+<xsl:value-of select="2000"/>
 </xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linec2000" select="2000"/>
 
 <xsl:variable name="Form1040-Copy00-line01b">
 <xsl:choose>
@@ -203,28 +205,6 @@ $Form1040-Copy00-line38"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Form1040-Copy00-line01i']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line04a">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Form1040-Copy00-line04a'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Form1040-Copy00-line04a'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Form1040-Copy00-line04a']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line05a">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Form1040-Copy00-line05a'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Form1040-Copy00-line05a'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Form1040-Copy00-line05a']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -353,7 +333,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line06a">
 <xsl:choose>
 <xsl:when test="document('../Output/SST_Copy01.xml')">
-<xsl:value-of select="document('../Output/SST_Copy01.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/SST_Copy01.xml')//copy01line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -408,7 +388,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line12">
 <xsl:choose>
 <xsl:when test="document('../Output/SchedA_Copy01.xml')">
-<xsl:value-of select="document('../Output/SchedA_Copy01.xml')//copy00line17"/>
+<xsl:value-of select="document('../Output/SchedA_Copy01.xml')//copy01line17"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -419,7 +399,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line13">
 <xsl:choose>
 <xsl:when test="document('../Output/Form8995_Copy00.xml')">
-<xsl:value-of select="document('../Output/Form8995_Copy00.xml')//copy00line00"/>
+<xsl:value-of select="document('../Output/Form8995_Copy00.xml')//copy00line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -694,7 +674,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax01">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy01.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy01.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy01.xml')//copy01line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -705,7 +685,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax02">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy02.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy02.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy02.xml')//copy02line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -716,7 +696,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax03">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy03.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy03.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy03.xml')//copy03line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -727,7 +707,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax04">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy04.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy04.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy04.xml')//copy04line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -738,7 +718,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax05">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy05.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy05.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy05.xml')//copy05line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -749,7 +729,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax06">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy06.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy06.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy06.xml')//copy06line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -760,7 +740,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax07">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy07.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy07.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy07.xml')//copy07line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -771,7 +751,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax08">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy08.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy08.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy08.xml')//copy08line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -782,7 +762,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax09">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy09.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy09.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy09.xml')//copy09line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -793,7 +773,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-line1099rtax10">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy10.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy10.xml')//copy00line04"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy10.xml')//copy10line04"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -804,7 +784,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt01">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy01.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy01.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy01.xml')//copy01line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -815,7 +795,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt02">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy02.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy02.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy02.xml')//copy02line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -826,7 +806,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt03">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy03.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy03.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy03.xml')//copy03line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -837,7 +817,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt04">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy04.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy04.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy04.xml')//copy04line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -848,7 +828,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt05">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy05.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy05.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy05.xml')//copy05line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -859,7 +839,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt06">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy06.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy06.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy06.xml')//copy06line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -870,7 +850,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt07">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy07.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy07.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy07.xml')//copy07line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -881,7 +861,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt08">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy08.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy08.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy08.xml')//copy08line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -892,7 +872,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt09">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy09.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy09.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy09.xml')//copy09line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -903,7 +883,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-lineexempt10">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099int_Copy10.xml')">
-<xsl:value-of select="document('../Output/Form1099int_Copy10.xml')//copy00line08"/>
+<xsl:value-of select="document('../Output/Form1099int_Copy10.xml')//copy10line08"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -914,7 +894,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal01">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy01.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy01.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy01.xml')//copy01line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -925,7 +905,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal02">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy02.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy02.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy02.xml')//copy02line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -936,7 +916,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal03">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy03.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy03.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy03.xml')//copy03line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -947,7 +927,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal04">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy04.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy04.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy04.xml')//copy04line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -958,7 +938,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal05">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy05.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy05.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy05.xml')//copy05line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -969,7 +949,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal06">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy06.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy06.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy06.xml')//copy06line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -980,7 +960,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal07">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy07.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy07.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy07.xml')//copy07line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -991,7 +971,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal08">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy08.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy08.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy08.xml')//copy08line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1002,7 +982,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal09">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy09.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy09.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy09.xml')//copy09line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1013,7 +993,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-linequal10">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099div_Copy10.xml')">
-<xsl:value-of select="document('../Output/Form1099div_Copy10.xml')//copy00line01b"/>
+<xsl:value-of select="document('../Output/Form1099div_Copy10.xml')//copy10line01b"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1024,7 +1004,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner01">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy01.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy01.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy01.xml')//copy01line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1035,7 +1015,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner02">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy02.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy02.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy02.xml')//copy02line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1046,7 +1026,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner03">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy03.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy03.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy03.xml')//copy03line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1057,7 +1037,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner04">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy04.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy04.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy04.xml')//copy04line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1068,7 +1048,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner05">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy05.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy05.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy05.xml')//copy05line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1079,7 +1059,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner06">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy06.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy06.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy06.xml')//copy06line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1090,7 +1070,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner07">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy07.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy07.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy07.xml')//copy07line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1101,7 +1081,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner08">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy08.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy08.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy08.xml')//copy08line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1112,7 +1092,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner09">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy09.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy09.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy09.xml')//copy09line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1123,7 +1103,7 @@ $Form1040-Copy00-line38"/>
 <xsl:variable name="Form1040-Copy00-liner10">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1099r_Copy10.xml')">
-<xsl:value-of select="document('../Output/Form1099r_Copy10.xml')//copy00line01"/>
+<xsl:value-of select="document('../Output/Form1099r_Copy10.xml')//copy10line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -1131,493 +1111,284 @@ $Form1040-Copy00-line38"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-line04s">
+<xsl:variable name="Form1040-Copy00-linet01">
 <xsl:choose>
-<xsl:when test="Form1040-Copy00-line04a >= Form1040-Copy00-lineiraTot">
-<xsl:value-of select="0"/>
+<xsl:when test="document('../Output/Form1099r_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy01.xml')//copy01line01"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="Form1040-Copy00-lineiraTot - Form1040-Copy00-line04a"/>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-line05s">
+<xsl:variable name="Form1040-Copy00-linet02">
 <xsl:choose>
-<xsl:when test="Form1040-Copy00-line05a >= Form1040-Copy00-linepenTot">
-<xsl:value-of select="0"/>
+<xsl:when test="document('../Output/Form1099r_Copy02.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy02.xml')//copy02line01"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="Form1040-Copy00-linepenTot - Form1040-Copy00-line05a"/>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet03">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy03.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy03.xml')//copy03line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet04">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy04.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy04.xml')//copy04line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet05">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy05.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy05.xml')//copy05line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet06">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy06.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy06.xml')//copy06line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet07">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy07.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy07.xml')//copy07line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet08">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy08.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy08.xml')//copy08line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet09">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy09.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy09.xml')//copy09line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linet10">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy10.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy10.xml')//copy10line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept01">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy01.xml')//copy01line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept02">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy02.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy02.xml')//copy02line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept03">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy03.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy03.xml')//copy03line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept04">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy04.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy04.xml')//copy04line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept05">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy05.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy05.xml')//copy05line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept06">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy06.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy06.xml')//copy06line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept07">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy07.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy07.xml')//copy07line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept08">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy08.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy08.xml')//copy08line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept09">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy09.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy09.xml')//copy09line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linept10">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1099r_Copy10.xml')">
+<xsl:value-of select="document('../Output/Form1099r_Copy10.xml')//copy10line02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line15">
 <xsl:choose>
-<xsl:when test="Form1040-Copy00-line14 >= Form1040-Copy00-line11">
+<xsl:when test="$Form1040-Copy00-line14 >= $Form1040-Copy00-line11">
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="Form1040-Copy00-line11 - Form1040-Copy00-line14"/>
+<xsl:value-of select="$Form1040-Copy00-line11 - $Form1040-Copy00-line14"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line22">
 <xsl:choose>
-<xsl:when test="Form1040-Copy00-line21 >= Form1040-Copy00-line18">
+<xsl:when test="$Form1040-Copy00-line21 >= $Form1040-Copy00-line18">
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="Form1040-Copy00-line18 - Form1040-Copy00-line21"/>
+<xsl:value-of select="$Form1040-Copy00-line18 - $Form1040-Copy00-line21"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line34">
 <xsl:choose>
-<xsl:when test="Form1040-Copy00-line24 >= Form1040-Copy00-line33">
+<xsl:when test="$Form1040-Copy00-line24 >= $Form1040-Copy00-line33">
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="Form1040-Copy00-line33 - Form1040-Copy00-line24"/>
+<xsl:value-of select="$Form1040-Copy00-line33 - $Form1040-Copy00-line24"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line37">
 <xsl:choose>
-<xsl:when test="Form1040-Copy00-line33 >= Form1040-Copy00-line37a">
+<xsl:when test="$Form1040-Copy00-line33 >= $Form1040-Copy00-line37a">
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="Form1040-Copy00-line37a - Form1040-Copy00-line33"/>
+<xsl:value-of select="$Form1040-Copy00-line37a - $Form1040-Copy00-line33"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line02b">
-<xsl:value-of select="format-number($Form1040-Copy00-lineintTot -  $Form1040-Copy00-line02a, '#####0')"/>
+<xsl:value-of select="$Form1040-Copy00-lineintTot -  $Form1040-Copy00-line02a"/>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line11">
-<xsl:value-of select="format-number($Form1040-Copy00-line09 -  $Form1040-Copy00-line10, '#####0')"/>
+<xsl:value-of select="$Form1040-Copy00-line09 -  $Form1040-Copy00-line10"/>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line35">
-<xsl:value-of select="format-number($Form1040-Copy00-line34 -  $Form1040-Copy00-line36, '#####0')"/>
+<xsl:value-of select="$Form1040-Copy00-line34 -  $Form1040-Copy00-line36"/>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line35a">
-<xsl:value-of select="format-number($Form1040-Copy00-line35 -  $Form1040-Copy00-line38, '#####0')"/>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex01">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex02">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex03">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex04">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex05">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex06">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex07">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex08">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex09">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linex10">
-<xsl:choose>
-<xsl:when test="document('../Data/Form1099r_Copy00_line07a_text.xml')">
-<xsl:value-of select="document('../Data/Form1099r_Copy00_line07a_text.xml')//text"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="''"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line04b">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-line04a = 0">
-<xsl:value-of select="$Form1040-Copy00-lineiraTot"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$Form1040-Copy00-line04s"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line05b">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-line05a = 0">
-<xsl:value-of select="$Form1040-Copy00-linepenTot"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$Form1040-Copy00-line05s"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira01">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex01 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner01"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira02">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex02 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner02"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira03">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex03 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner03"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira04">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex04 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner04"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira05">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex05 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner05"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira06">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex06 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner06"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira07">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex07 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner07"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira08">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex08 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner08"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira09">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex09 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner09"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-lineira10">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex10 = 'x'">
-<xsl:value-of select="$Form1040-Copy00-liner10"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen01">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex01 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner01"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen02">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex02 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner02"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen03">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex03 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner03"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen04">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex04 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner04"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen05">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex05 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner05"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen06">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex06 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner06"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen07">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex07 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner07"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen08">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex08 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner08"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen09">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex09 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner09"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-linepen10">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-linex10 = ''">
-<xsl:value-of select="$Form1040-Copy00-liner10"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line16a">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-line4952 > 0">
-<xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$Form1040-Copy00-line16b"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line16b">
-<xsl:choose>
-<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0">
-<xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$Form1040-Copy00-line16c"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line16c">
-<xsl:choose>
-<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0">
-<xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$Form1040-Copy00-line16d"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line16d">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-line03a > 0">
-<xsl:value-of select="$Form1040-Copy00-lineQDCG"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$Form1040-Copy00-line16e"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="Form1040-Copy00-line16e">
-<xsl:choose>
-<xsl:when test="$Form1040-Copy00-line07 > 0">
-<xsl:value-of select="$Form1040-Copy00-lineQDCG"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$Form1040-Copy00-lineCalc16"/>
-</xsl:otherwise>
-</xsl:choose>
+<xsl:value-of select="$Form1040-Copy00-line35 -  $Form1040-Copy00-line38"/>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-lineCalc16">
@@ -1625,6 +1396,10 @@ $Form1040-Copy00-line38"/>
 <xsl:with-param name="filingStatus" select="$Form1040-Copy00-lineFS"/>
 <xsl:with-param name="lineToBeTaxed" select="$Form1040-Copy00-line15"/>
 </xsl:call-template>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line2name">
+<xsl:value-of select="document('../Data/Form1040_Copy00_line2name_text.xml')//text"/>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-line06cCk">
@@ -2143,6 +1918,116 @@ $Form1040-Copy00-line38"/>
 <xsl:value-of select="document('../Data/Form1040_Copy00_linex00_text.xml')//text"/>
 </xsl:variable>
 
+<xsl:variable name="Form1040-Copy00-line07a01">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy01_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy01_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a02">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy02_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy02_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a03">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy03_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy03_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a04">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy04_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy04_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a05">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy05_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy05_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a06">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy06_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy06_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a07">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy07_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy07_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a08">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy08_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy08_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a09">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy09_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy09_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line07a10">
+<xsl:choose>
+<xsl:when test="document('../Data/Form1099r_Copy10_line07a_text.xml')">
+<xsl:value-of select="document('../Data/Form1099r_Copy10_line07a_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="Form1040-Copy00-lineFS">
 <xsl:choose>
 <xsl:when test="document('../Data/Bkg_Copy00_lineFS_text.xml')">
@@ -2260,6 +2145,249 @@ $Form1040-Copy00-line38"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira01">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a01 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira02">
+<xsl:choose>
+<xsl:when test="Form1040-Copy00-line07a02 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira03">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a03 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner03"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira04">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a04 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner04"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira05">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a05 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner05"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira06">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a06 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner06"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira07">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a07 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira08">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a08 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner08"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira09">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a09 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner09"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineira10">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a10 = 'x'">
+<xsl:value-of select="$Form1040-Copy00-liner10"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen01">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a01 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen02">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a02 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet02"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen03">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a03 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet03"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen04">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a04 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet04"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen05">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a05 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet05"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen06">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a06 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet06"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen07">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a07 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen08">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a08 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet08"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen09">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a09 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet09"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-linepen10">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line07a10 = ''">
+<xsl:value-of select="$Form1040-Copy00-linet10"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line16a">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-line4952 > 0">
+<xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
+</xsl:when>
+<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0">
+<xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
+</xsl:when>
+<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0">
+<xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-line03a > 0">
+<xsl:value-of select="$Form1040-Copy00-lineQDCG"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-line07 > 0">
+<xsl:value-of select="$Form1040-Copy00-lineQDCG"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$Form1040-Copy00-lineCalc16"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -2390,19 +2518,19 @@ $Form1040-Copy00-line38"/>
   </copy00line03a>
 
 
-<copy00lineiraTot color="green">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineiraTot, '#####0')"/>
-  </copy00lineiraTot>
-
-
-<copy00linepenTot color="green">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepenTot, '#####0')"/>
-  </copy00linepenTot>
-
-
 <copy00line37a color="green">
   <xsl:value-of select="format-number($Form1040-Copy00-line37a, '#####0')"/>
   </copy00line37a>
+
+
+<copy00line04b color="green">
+  <xsl:value-of select="format-number($Form1040-Copy00-line04b, '#####0')"/>
+  </copy00line04b>
+
+
+<copy00line05b color="green">
+  <xsl:value-of select="format-number($Form1040-Copy00-line05b, '#####0')"/>
+  </copy00line05b>
 
 
 <copy00linec2000 color="blue">
@@ -2433,16 +2561,6 @@ $Form1040-Copy00-line38"/>
 <copy00line01i color="red">
   <xsl:value-of select="format-number($Form1040-Copy00-line01i, '#####0')"/>
   </copy00line01i>
-
-
-<copy00line04a color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line04a, '#####0')"/>
-  </copy00line04a>
-
-
-<copy00line05a color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line05a, '#####0')"/>
-  </copy00line05a>
 
 
 <copy00line25c color="red">
@@ -2855,14 +2973,104 @@ $Form1040-Copy00-line38"/>
   </copy00liner10>
 
 
-<copy00line04s color="cyan">
-  <xsl:value-of select="format-number($Form1040-Copy00-line04s, '#####0')"/>
-  </copy00line04s>
+<copy00linet01 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet01, '#####0')"/>
+  </copy00linet01>
 
 
-<copy00line05s color="cyan">
-  <xsl:value-of select="format-number($Form1040-Copy00-line05s, '#####0')"/>
-  </copy00line05s>
+<copy00linet02 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet02, '#####0')"/>
+  </copy00linet02>
+
+
+<copy00linet03 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet03, '#####0')"/>
+  </copy00linet03>
+
+
+<copy00linet04 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet04, '#####0')"/>
+  </copy00linet04>
+
+
+<copy00linet05 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet05, '#####0')"/>
+  </copy00linet05>
+
+
+<copy00linet06 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet06, '#####0')"/>
+  </copy00linet06>
+
+
+<copy00linet07 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet07, '#####0')"/>
+  </copy00linet07>
+
+
+<copy00linet08 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet08, '#####0')"/>
+  </copy00linet08>
+
+
+<copy00linet09 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet09, '#####0')"/>
+  </copy00linet09>
+
+
+<copy00linet10 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linet10, '#####0')"/>
+  </copy00linet10>
+
+
+<copy00linept01 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept01, '#####0')"/>
+  </copy00linept01>
+
+
+<copy00linept02 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept02, '#####0')"/>
+  </copy00linept02>
+
+
+<copy00linept03 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept03, '#####0')"/>
+  </copy00linept03>
+
+
+<copy00linept04 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept04, '#####0')"/>
+  </copy00linept04>
+
+
+<copy00linept05 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept05, '#####0')"/>
+  </copy00linept05>
+
+
+<copy00linept06 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept06, '#####0')"/>
+  </copy00linept06>
+
+
+<copy00linept07 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept07, '#####0')"/>
+  </copy00linept07>
+
+
+<copy00linept08 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept08, '#####0')"/>
+  </copy00linept08>
+
+
+<copy00linept09 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept09, '#####0')"/>
+  </copy00linept09>
+
+
+<copy00linept10 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-linept10, '#####0')"/>
+  </copy00linept10>
 
 
 <copy00line15 color="cyan">
@@ -2905,195 +3113,15 @@ $Form1040-Copy00-line38"/>
   </copy00line35a>
 
 
-<copy00linex01 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex01"/>
-    </copy00linex01>
-  
-
-<copy00linex02 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex02"/>
-    </copy00linex02>
-  
-
-<copy00linex03 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex03"/>
-    </copy00linex03>
-  
-
-<copy00linex04 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex04"/>
-    </copy00linex04>
-  
-
-<copy00linex05 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex05"/>
-    </copy00linex05>
-  
-
-<copy00linex06 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex06"/>
-    </copy00linex06>
-  
-
-<copy00linex07 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex07"/>
-    </copy00linex07>
-  
-
-<copy00linex08 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex08"/>
-    </copy00linex08>
-  
-
-<copy00linex09 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex09"/>
-    </copy00linex09>
-  
-
-<copy00linex10 color="blue">
-    <xsl:value-of select="$Form1040-Copy00-linex10"/>
-    </copy00linex10>
-  
-
-<copy00line04b color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line04b, '#####0')"/>
-  </copy00line04b>
-
-
-<copy00line05b color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line05b, '#####0')"/>
-  </copy00line05b>
-
-
-<copy00lineira01 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira01, '#####0')"/>
-  </copy00lineira01>
-
-
-<copy00lineira02 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira02, '#####0')"/>
-  </copy00lineira02>
-
-
-<copy00lineira03 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira03, '#####0')"/>
-  </copy00lineira03>
-
-
-<copy00lineira04 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira04, '#####0')"/>
-  </copy00lineira04>
-
-
-<copy00lineira05 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira05, '#####0')"/>
-  </copy00lineira05>
-
-
-<copy00lineira06 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira06, '#####0')"/>
-  </copy00lineira06>
-
-
-<copy00lineira07 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira07, '#####0')"/>
-  </copy00lineira07>
-
-
-<copy00lineira08 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira08, '#####0')"/>
-  </copy00lineira08>
-
-
-<copy00lineira09 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira09, '#####0')"/>
-  </copy00lineira09>
-
-
-<copy00lineira10 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-lineira10, '#####0')"/>
-  </copy00lineira10>
-
-
-<copy00linepen01 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen01, '#####0')"/>
-  </copy00linepen01>
-
-
-<copy00linepen02 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen02, '#####0')"/>
-  </copy00linepen02>
-
-
-<copy00linepen03 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen03, '#####0')"/>
-  </copy00linepen03>
-
-
-<copy00linepen04 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen04, '#####0')"/>
-  </copy00linepen04>
-
-
-<copy00linepen05 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen05, '#####0')"/>
-  </copy00linepen05>
-
-
-<copy00linepen06 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen06, '#####0')"/>
-  </copy00linepen06>
-
-
-<copy00linepen07 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen07, '#####0')"/>
-  </copy00linepen07>
-
-
-<copy00linepen08 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen08, '#####0')"/>
-  </copy00linepen08>
-
-
-<copy00linepen09 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen09, '#####0')"/>
-  </copy00linepen09>
-
-
-<copy00linepen10 color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-linepen10, '#####0')"/>
-  </copy00linepen10>
-
-
-<copy00line16a color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line16a, '#####0')"/>
-  </copy00line16a>
-
-
-<copy00line16b color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line16b, '#####0')"/>
-  </copy00line16b>
-
-
-<copy00line16c color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line16c, '#####0')"/>
-  </copy00line16c>
-
-
-<copy00line16d color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line16d, '#####0')"/>
-  </copy00line16d>
-
-
-<copy00line16e color="red">
-  <xsl:value-of select="format-number($Form1040-Copy00-line16e, '#####0')"/>
-  </copy00line16e>
-
-
 <copy00lineCalc16 color="blue">
   <xsl:value-of select="format-number($Form1040-Copy00-lineCalc16, '#####0')"/>
   </copy00lineCalc16>
 
+
+<copy00line2name color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line2name"/>
+    </copy00line2name>
+  
 
 <copy00line06cCk color="blue">
     <xsl:value-of select="$Form1040-Copy00-line06cCk"/>
@@ -3740,6 +3768,56 @@ $Form1040-Copy00-line38"/>
     </copy00linex00>
   
 
+<copy00line07a01 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a01"/>
+    </copy00line07a01>
+  
+
+<copy00line07a02 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a02"/>
+    </copy00line07a02>
+  
+
+<copy00line07a03 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a03"/>
+    </copy00line07a03>
+  
+
+<copy00line07a04 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a04"/>
+    </copy00line07a04>
+  
+
+<copy00line07a05 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a05"/>
+    </copy00line07a05>
+  
+
+<copy00line07a06 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a06"/>
+    </copy00line07a06>
+  
+
+<copy00line07a07 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a07"/>
+    </copy00line07a07>
+  
+
+<copy00line07a08 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a08"/>
+    </copy00line07a08>
+  
+
+<copy00line07a09 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a09"/>
+    </copy00line07a09>
+  
+
+<copy00line07a10 color="blue">
+    <xsl:value-of select="$Form1040-Copy00-line07a10"/>
+    </copy00line07a10>
+  
+
 <copy00lineFS color="blue">
     <xsl:value-of select="$Form1040-Copy00-lineFS"/>
     </copy00lineFS>
@@ -3794,6 +3872,111 @@ $Form1040-Copy00-line38"/>
     <xsl:value-of select="$Form1040-Copy00-lineTSSNoM"/>
     </copy00lineTSSNoM>
   
+
+<copy00lineira01 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira01, '#####0')"/>
+  </copy00lineira01>
+
+
+<copy00lineira02 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira02, '#####0')"/>
+  </copy00lineira02>
+
+
+<copy00lineira03 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira03, '#####0')"/>
+  </copy00lineira03>
+
+
+<copy00lineira04 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira04, '#####0')"/>
+  </copy00lineira04>
+
+
+<copy00lineira05 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira05, '#####0')"/>
+  </copy00lineira05>
+
+
+<copy00lineira06 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira06, '#####0')"/>
+  </copy00lineira06>
+
+
+<copy00lineira07 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira07, '#####0')"/>
+  </copy00lineira07>
+
+
+<copy00lineira08 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira08, '#####0')"/>
+  </copy00lineira08>
+
+
+<copy00lineira09 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira09, '#####0')"/>
+  </copy00lineira09>
+
+
+<copy00lineira10 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineira10, '#####0')"/>
+  </copy00lineira10>
+
+
+<copy00linepen01 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen01, '#####0')"/>
+  </copy00linepen01>
+
+
+<copy00linepen02 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen02, '#####0')"/>
+  </copy00linepen02>
+
+
+<copy00linepen03 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen03, '#####0')"/>
+  </copy00linepen03>
+
+
+<copy00linepen04 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen04, '#####0')"/>
+  </copy00linepen04>
+
+
+<copy00linepen05 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen05, '#####0')"/>
+  </copy00linepen05>
+
+
+<copy00linepen06 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen06, '#####0')"/>
+  </copy00linepen06>
+
+
+<copy00linepen07 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen07, '#####0')"/>
+  </copy00linepen07>
+
+
+<copy00linepen08 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen08, '#####0')"/>
+  </copy00linepen08>
+
+
+<copy00linepen09 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen09, '#####0')"/>
+  </copy00linepen09>
+
+
+<copy00linepen10 color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-linepen10, '#####0')"/>
+  </copy00linepen10>
+
+
+<copy00line16a color="red">
+  <xsl:value-of select="format-number($Form1040-Copy00-line16a, '#####0')"/>
+  </copy00line16a>
+
 
 <copy00lineS color="blue">
     <xsl:value-of select="$Form1040-Copy00-lineS"/>

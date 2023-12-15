@@ -64,66 +64,51 @@
 <line2>FS</line2>
 </line>
 
-<tlin name='QOFn'
+<line name='QOFy'
  color='blue'>
 <type>tlin</type>
 <text>x</text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='QOFy'
+<line name='QOFn'
  color='blue'>
 <type>tlin</type>
 <text>x</text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<dlin number='3000'
- color='red'>
-<title></title>
-<type>dlin</type>
+<line number='c3000'
+ color='blue'>
+<type>const</type>
 <format>#####0</format>
-<override>3000</override>
-<blank></blank>
-</dlin>
+<value>3000</value>
+</line>
 
-<dlin number='1500'
- color='red'>
-<title></title>
-<type>dlin</type>
+<line number='c1500'
+ color='blue'>
+<type>const</type>
 <format>#####0</format>
-<override>1500</override>
-<blank></blank>
-</dlin>
+<value>1500</value>
+</line>
 
-<dlin number='min1'
- color='red'>
-<title></title>
-<type>dlin</type>
+<line number='cmin1'
+ color='blue'>
+<type>const</type>
 <format>#0.00</format>
-<override>-1.00</override>
-<blank></blank>
-</dlin>
+<value>-1.00</value>
+</line>
 
-<dlin number='15'
+<dlin number='14'
  color='red'>
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>1500</override>
-<blank></blank>
-</dlin>
-
-<dlin number='16'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override>8000</override>
+<override>-140086</override>
 <blank></blank>
 </dlin>
 
@@ -138,6 +123,28 @@
 <addend>line04</addend>
 <addend>line05</addend>
 <addend>line06</addend>
+</line>
+
+<line number='15'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08ah</augend>
+<addend>line08bh</addend>
+<addend>line09h</addend>
+<addend>line10h</addend>
+<addend>line11</addend>
+<addend>line12</addend>
+<addend>line13</addend>
+<addend>line14</addend>
+</line>
+
+<line number='16'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line07</augend>
+<addend>line15</addend>
 </line>
 
 <line number='01bh'
@@ -488,18 +495,7 @@
 <line2>line01</line2>
 </line>
 
-<line number='14'
- color='purple'>
-<title></title>
-<type>dPull</type>
-<format>#####0</format>
-<dummy>-140086</dummy>
-<form>CLCWkst</form>
-<copy>01</copy>
-<line2>line01</line2>
-</line>
-
-<line number='18d'
+<line number='18'
  color='purple'>
 <title></title>
 <type>dPull</type>
@@ -510,7 +506,7 @@
 <line2>line07</line2>
 </line>
 
-<line number='19d'
+<line number='19'
  color='purple'>
 <title></title>
 <type>dPull</type>
@@ -521,29 +517,7 @@
 <line2>line18</line2>
 </line>
 
-<line number='20ye'
- color='purple'>
-<title></title>
-<type>dPull</type>
-<format>#####0</format>
-<dummy>0</dummy>
-<form>Form4952</form>
-<copy>01</copy>
-<line2>line01</line2>
-</line>
-
-<line number='19'
- color='purple'>
-<title></title>
-<type>dPull</type>
-<format>#####0</format>
-<dummy>0</dummy>
-<form>QDCGWkst</form>
-<copy>01</copy>
-<line2>line16</line2>
-</line>
-
-<line number='22'
+<line number='104003a'
  color='purple'>
 <title></title>
 <type>dPull</type>
@@ -618,317 +592,91 @@
 <subtrahend>line10e</subtrahend>
 </line>
 
-<line number='21e'
+<line number='16pos'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line16</multiplicand>
+<multiplier>linecmin1</multiplier>
+</line>
+
+<line number='21a'
  color='blue'>
 <type>smOf</type>
 <format>#####0</format>
-<first>line16 * -1.0</first>
+<first>line16pos</first>
 <second>line21x</second>
 </line>
 
 <line number='17y'
  color='blue'>
 <type>ctext</type>
-<format>#####0</format>
-<test>$SchedD-Copy00-line16 = 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line17a</value2>
-</line>
-
-<line number='17a'
- color='blue'>
-<type>ctext</type>
-<format>#####0</format>
-<test>$SchedD-Copy00-line16 &lt; 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line17b</value2>
-</line>
-
-<line number='17b'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<format>CHOOS1</format>
+<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
+<value1>CHOOS1</value1>
+<value2>WHEN01$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</value2>
 </line>
 
 <line number='17n'
  color='blue'>
 <type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line16 = 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line17na</value2>
-</line>
-
-<line number='17na'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line16 &lt; 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line17nb</value2>
-</line>
-
-<line number='17nb'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
-<value1>''</value1>
-<value2>'x'</value2>
-</line>
-
-<line number='18'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line16 = 0</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line18a</value2>
-</line>
-
-<line number='18a'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line16 &lt; 0</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line18b</value2>
-</line>
-
-<line number='18b'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</testvalue>
-<value1>$SchedD-Copy00-line18c</value1>
-<value2>0</value2>
-</line>
-
-<line number='18c'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line18d &gt; 0</testvalue>
-<value1>$SchedD-Copy00-line18d</value1>
-<value2>0</value2>
-</line>
-
-<line number='19'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line16 = 0</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line19a</value2>
-</line>
-
-<line number='19a'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line16 &lt; 0</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line19b</value2>
-</line>
-
-<line number='19b'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</testvalue>
-<value1>$SchedD-Copy00-line19c</value1>
-<value2>0</value2>
-</line>
-
-<line number='19c'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line19d &gt; 0</testvalue>
-<value1>$SchedD-Copy00-line19d</value1>
-<value2>0</value2>
+<format>CHOOS1</format>
+<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
+<value1>CHOOS1</value1>
+<value2>WHEN01$SchedD-Copy00-line17y = ''</value2>
 </line>
 
 <line number='20y'
  color='blue'>
 <type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line16 = 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line20ya</value2>
-</line>
-
-<line number='20ya'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line16 &lt; 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line20yb</value2>
-</line>
-
-<line number='20yb'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
-<value1>$SchedD-Copy00-line20yc</value1>
-<value2>''</value2>
-</line>
-
-<line number='20yc'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0</test>
-<value1>$SchedD-Copy00-line20yd</value1>
-<value2>''</value2>
-</line>
-
-<line number='20yd'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line20ye = 0</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<format>CHOOS1</format>
+<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
+<value1>CHOOS1</value1>
+<value2>WHEN01$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0 and not(document('../Output/Form4952-Copy00.xml'))</value2>
 </line>
 
 <line number='20n'
  color='blue'>
 <type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line16 = 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line20na</value2>
+<format>CHOOS1</format>
+<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
+<value1>CHOOS1</value1>
+<value2>WHEN01$SchedD-Copy00-line20y = ''</value2>
 </line>
 
-<line number='20na'
+<line number='22y'
  color='blue'>
 <type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line16 &lt; 0</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line20nb</value2>
+<format>CHOOS1</format>
+<test>WHEN01$SchedD-Copy00-line104003a &gt; 0</test>
+<value1>VALUOF'x'</value1>
+<value2>WHEN02</value2>
 </line>
 
-<line number='20nb'
+<line number='22n'
  color='blue'>
 <type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</test>
-<value1>$SchedD-Copy00-line20nc</value1>
-<value2>''</value2>
-</line>
-
-<line number='20nc'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0</test>
-<value1>$SchedD-Copy00-line20nd</value1>
-<value2>''</value2>
-</line>
-
-<line number='20nd'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line20ye = 0</test>
-<value1>''</value1>
-<value2>'x'</value2>
-</line>
-
-<line number='21x'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-lineFS = 'MFS'</testvalue>
-<value1>1500</value1>
-<value2>3000</value2>
+<format>CHOOS1</format>
+<test>WHEN01$SchedD-Copy00-line22y = ''</test>
+<value1>VALUOF'x'</value1>
+<value2>WHEN02</value2>
 </line>
 
 <line number='21'
  color='red'>
 <type>cnum</type>
 <format>#####0</format>
-<testvalue>$SchedD-Copy00-line20n = 'x'</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line21a</value2>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SchedD-Copy00-line16 &lt; 0</value1>
+<value2>VALUOF$SchedD-Copy00-line21a * $SchedD-Copy00-linecmin1</value2>
 </line>
 
-<line number='21a'
+<line number='21x'
  color='red'>
 <type>cnum</type>
 <format>#####0</format>
-<testvalue>$SchedD-Copy00-line16 = 0</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line21b</value2>
-</line>
-
-<line number='21b'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line21c</value2>
-</line>
-
-<line number='21c'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'</testvalue>
-<value1>0</value1>
-<value2>$SchedD-Copy00-line21d</value2>
-</line>
-
-<line number='21d'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$SchedD-Copy00-line16 &lt; 0</testvalue>
-<value1>$SchedD-Copy00-line21e * -1.0</value1>
-<value2>0</value2>
-</line>
-
-<line number='22y'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line22ya</value2>
-</line>
-
-<line number='22ya'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line22 &gt; 0</test>
-<value1>'x'</value1>
-<value2>''</value2>
-</line>
-
-<line number='22n'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line20y = 'x' or $SchedD-Copy00-line20n = 'x'</test>
-<value1>''</value1>
-<value2>$SchedD-Copy00-line22na</value2>
-</line>
-
-<line number='22na'
- color='blue'>
-<type>ctext</type>
-<format></format>
-<test>$SchedD-Copy00-line22 &gt; 0</test>
-<value1>''</value1>
-<value2>'x'</value2>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SchedD-Copy00-lineFS = 'MFS'</value1>
+<value2>VALUOF$SchedD-Copy00-linec1500</value2>
 </line>
 </Form>

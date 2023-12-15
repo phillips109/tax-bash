@@ -31,17 +31,6 @@ $QDCGTaxWkst-Copy00-line22"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="QDCGTaxWkst-Copy00-line11">
-<xsl:choose>
-<xsl:when test="document('../Output/QDCGTaxWkst_Copy00.xml')">
-<xsl:value-of select="document('../Output/QDCGTaxWkst_Copy00.xml')//copy00line09"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
 <xsl:variable name="QDCGTaxWkst-Copy00-line15D">
 <xsl:choose>
 <xsl:when test="document('../Output/SchedD_Copy00.xml')">
@@ -108,9 +97,17 @@ $QDCGTaxWkst-Copy00-line22"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="QDCGTaxWkst-Copy00-linep15" select="2000"/>
+<xsl:variable name="QDCGTaxWkst-Copy00-line11">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line09"/>
+</xsl:variable>
 
-<xsl:variable name="QDCGTaxWkst-Copy00-linep20" select="2000"/>
+<xsl:variable name="QDCGTaxWkst-Copy00-linep15">
+<xsl:value-of select="0.15"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-linep20">
+<xsl:value-of select="0.20"/>
+</xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line18">
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line17 * $QDCGTaxWkst-Copy00-linep15"/>
@@ -120,24 +117,13 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line20 * $QDCGTaxWkst-Copy00-linep20"/>
 </xsl:variable>
 
-<xsl:variable name="QDCGTaxWkst-Copy00-line03b">
-<xsl:choose>
-<xsl:when test="$QDCGTaxWkst-Copy00-line15D &gt;= $QDCGTaxWkst-Copy00-line16D">
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line16D"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line16D"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
 <xsl:variable name="QDCGTaxWkst-Copy00-line07">
 <xsl:choose>
 <xsl:when test="$QDCGTaxWkst-Copy00-line01 &gt;= $QDCGTaxWkst-Copy00-line06">
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line06"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line06"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -148,7 +134,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line07"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line07"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line05"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -159,7 +145,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line04"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line04"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -170,7 +156,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line13"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line13"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -181,7 +167,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line16"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line16"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line12"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -192,55 +178,52 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line24"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line24"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line23"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line05">
 <xsl:choose>
-<xsl:when test="QDCGTaxWkst-Copy00-line04 >= QDCGTaxWkst-Copy00-line01">
+<xsl:when test="$QDCGTaxWkst-Copy00-line04 >= $QDCGTaxWkst-Copy00-line01">
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="QDCGTaxWkst-Copy00-line01 - QDCGTaxWkst-Copy00-line04"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01 - $QDCGTaxWkst-Copy00-line04"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line16">
 <xsl:choose>
-<xsl:when test="QDCGTaxWkst-Copy00-line15 >= QDCGTaxWkst-Copy00-line14">
+<xsl:when test="$QDCGTaxWkst-Copy00-line15 >= $QDCGTaxWkst-Copy00-line14">
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="QDCGTaxWkst-Copy00-line14 - QDCGTaxWkst-Copy00-line15"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line14 - $QDCGTaxWkst-Copy00-line15"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line09">
-<xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line07 -  $QDCGTaxWkst-Copy00-line08, '#####0')"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line07 -  $QDCGTaxWkst-Copy00-line08"/>
 </xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line12">
-<xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line10 -  $QDCGTaxWkst-Copy00-line11, '#####0')"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line10 -  $QDCGTaxWkst-Copy00-line11"/>
 </xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line20">
-<xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line10 -  $QDCGTaxWkst-Copy00-line19, '#####0')"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line10 -  $QDCGTaxWkst-Copy00-line19"/>
 </xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line01">
 <xsl:choose>
-<xsl:when test="$QDCGTaxWkst-Copy00-lineFEI3 &gt; 0">
-<xsl:value-of select="$QDCGTaxWkst-Copy00-lineFEI3"/>
-</xsl:when>
-<xsl:when test="$QDCGTaxWkst-Copy00-line104015 &gt; 0">
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line104015"/>
+<xsl:when test="document('../Output/Form2555_Copy00.xml')">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-lineFEI3 "/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="0"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line104015"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -248,22 +231,18 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:variable name="QDCGTaxWkst-Copy00-line03">
 <xsl:choose>
 <xsl:when test="$QDCGTaxWkst-Copy00-line03y = 'x'">
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line03a"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line10407"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="QDCGTaxWkst-Copy00-line03a">
 <xsl:choose>
-<xsl:when test="$QDCGTaxWkst-Copy00-line15D &lt;= 0 or $QDCGTaxWkst-Copy00-line16D &lt;= 0">
+<xsl:when test="$QDCGTaxWkst-Copy00-line15D &lt;= 0 or QDCGTaxWkst-Copy00-line16D &lt;= 0">
 <xsl:value-of select="0"/>
 </xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-line15D &lt; $QDCGTaxWkst-Copy00-line16D">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line15D"/>
+</xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="$QDCGTaxWkst-Copy00-line03b"/>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line16D"/>
 </xsl:otherwise>
+</xsl:choose>
+</xsl:when>
 </xsl:choose>
 </xsl:variable>
 
@@ -306,9 +285,6 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'HOH'">
 <xsl:value-of select="55800"/>
 </xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
@@ -329,9 +305,6 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'HOH'">
 <xsl:value-of select="488500"/>
 </xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="0"/>
-</xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 

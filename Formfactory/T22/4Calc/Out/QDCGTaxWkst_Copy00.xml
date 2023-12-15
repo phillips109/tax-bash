@@ -74,13 +74,6 @@ linep20
 
 smOf
 #####0
-line15D
-line16D
-
-
-
-smOf
-#####0
 line01
 line06
 
@@ -158,57 +151,49 @@ line19
 
 cnum
 #####0
-$QDCGTaxWkst-Copy00-lineFEI3 &gt; 0
-$QDCGTaxWkst-Copy00-lineFEI3
-$QDCGTaxWkst-Copy00-line104015 &gt; 0
+CHOOS1
+WHEN01document('../Output/Form2555_Copy00.xml')
+VALUOF$QDCGTaxWkst-Copy00-lineFEI3 
 
 
 
 cnum
 #####0
-$QDCGTaxWkst-Copy00-line03y = 'x'
-$QDCGTaxWkst-Copy00-line03a
-$QDCGTaxWkst-Copy00-line10407
-
-
-
-cnum
-#####0
-$QDCGTaxWkst-Copy00-line15D &lt;= 0 or $QDCGTaxWkst-Copy00-line16D &lt;= 0
-0
-$QDCGTaxWkst-Copy00-line03b
+CHOOS1
+WHEN01$QDCGTaxWkst-Copy00-line03y = 'x'
+CHOOS1
 
 
 
 ctext
-
-document('../Output/SchedD_Copy00.xml')
-'x'
-''
-
-
-
-ctext
-
-document('../Output/SchedD_Copy00.xml')
-''
-'x'
+CHOOS1
+WHEN01document('../Output/SchedD_Copy00.xml')
+VALUOF'x'
+WHEN02
 
 
 
 ctext
-#####0
-$QDCGTaxWkst-Copy00-lineFS = 'S'
-41675
-$QDCGTaxWkst-Copy00-lineFS = 'MFS'
+CHOOS1
+WHEN01document('../Output/SchedD_Copy00.xml')
+VALUOF''
+WHEN02
 
 
 
 ctext
-#####0
-$QDCGTaxWkst-Copy00-lineFS = 'S'
-459750
-$QDCGTaxWkst-Copy00-lineFS = 'MFS'
+CHOOS1
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
+VALUOF41675
+WHEN02
+
+
+
+ctext
+CHOOS1
+WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
+VALUOF459750
+WHEN02
 
 
 

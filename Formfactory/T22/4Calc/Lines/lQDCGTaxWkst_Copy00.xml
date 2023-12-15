@@ -25,11 +25,6 @@
   </copy00line02>
 
 
-<copy00line11 color="purple">
-  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line11, '#####0')"/>
-  </copy00line11>
-
-
 <copy00line15D color="purple">
   <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line15D, '#####0')"/>
   </copy00line15D>
@@ -60,6 +55,11 @@
   </copy00line104015>
 
 
+<copy00line11 color="magenta">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line11, '#####0')"/>
+  </copy00line11>
+
+
 <copy00linep15 color="blue">
   <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-linep15, '0.00##')"/>
   </copy00linep15>
@@ -78,11 +78,6 @@
 <copy00line21 color="red">
   <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line21, '#####0')"/>
   </copy00line21>
-
-
-<copy00line03b color="blue">
-  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line03b, '#####0')"/>
-  </copy00line03b>
 
 
 <copy00line07 color="blue">
@@ -148,11 +143,6 @@
 <copy00line03 color="red">
   <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line03, '#####0')"/>
   </copy00line03>
-
-
-<copy00line03a color="red">
-  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line03a, '#####0')"/>
-  </copy00line03a>
 
 
 <copy00line03y color="blue">

@@ -22,9 +22,9 @@
   </xsl:template>
   
   
+  <!-- Note tlin uses "name" others use "number" -->
   
-  
-  <xsl:template match="tlin">
+  <xsl:template match="line[type='tlin']">
 		
     <xsl:text disable-output-escaping="yes">&lt;copy</xsl:text>
     <xsl:value-of select="$copy"/>
@@ -60,6 +60,7 @@
 <xsl:template match="line[type = 'text'  or
 		     type = 'tPull'      or
 		     type = 'ctext'      or
+		     type = 'c2text'     or
 		     type = 'textNav'    or
 		     type = 'dataNav'    or
 		     type = 'no'         or
@@ -143,6 +144,7 @@
 		       type = 'smOf'   or
 		       type = 'lgOf'   or
 		       type = 'cnum'   or
+                       TYPE = 'c2num'  or
 		       type = 'choice' or
 		       type = 'cFS'    or
 		       type = 'const'  or

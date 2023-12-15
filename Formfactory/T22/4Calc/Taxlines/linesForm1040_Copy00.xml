@@ -21,14 +21,6 @@
 <override>0</override>
 </taxline>
 <taxline color="red">
-<linename>Form1040-Copy00-line04a</linename>
-<override>0</override>
-</taxline>
-<taxline color="red">
-<linename>Form1040-Copy00-line05a</linename>
-<override>501</override>
-</taxline>
-<taxline color="red">
 <linename>Form1040-Copy00-line25c</linename>
 <override>2503</override>
 </taxline>

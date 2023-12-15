@@ -1,0 +1,60 @@
+seq	!name 	!type 	!menuEntry                     
+001	!void  	!tlin 	!                              
+002	!TSSNoF	!tlin 	!                              
+003	!TSSNoM	!tlin 	!                              
+004	!TSSNoL	!tlin 	!                              
+005	!EID	!tlin 	!                              
+006	!EName 	!tlin 	!                              
+007	!EAdd1	!tlin 	!                              
+008	!EAdd2	!tlin 	!                              
+009	!ECity	!tlin 	!                              
+010	!EST	!tlin 	!                              
+011	!Ezip  	!tlin 	!                              
+012	!CtlNo 	!tlin 	!                              
+013	!TFNI	!tlin 	!                              
+014	!TLN 	!tlin 	!                              
+015	!Tsuff 	!tlin 	!                              
+016	!TAddr1	!tlin 	!                              
+017	!TAddr2	!tlin 	!                              
+018	!TCity	!tlin 	!                              
+019	!TST	!tlin 	!                              
+020	!Tzip  	!tlin 	!                              
+021	!ST01 	!tlin 	!                              
+022	!ST01EID!tlin	!                              
+023	!ST01W	!tlin 	!                              
+024	!ST01Tax!dlin 	!                              
+025	!L01W   !dlin 	!                              
+026	!L01Tax	!dlin 	!                              
+027	!L01Name!tlin 	!                              
+028	!ST02  	!tlin 	!                              
+029	!ST02EID!tlin 	!                              
+030	!ST02W	!dlin 	!                              
+031	!ST02Tax!dlin 	!                              
+032	!L02W   !dlin 	!                              
+033	!L02Tax	!dlin 	!                              
+034	!L02Name!tlin 	!                              
+035	!Box01	!dlin 	!                              
+036	!Box02	!dlin 	!                              
+037	!Box03	!dlin 	!                              
+038	!Box04	!dlin   !                          
+039	!Box05	!dlin 	!                              
+040	!Box06	!dlin 	!                              
+041	!Box07	!dlin 	!                              
+042	!Box08	!dlin 	!                              
+043	!Box09	!dlin 	!                              
+044	!Box10	!dlin 	!                              
+045	!Box11	!dlin 	!                              
+046	!Box12a1!tlin 	!                              
+047	!Box12a2!dlini	!                              
+048	!Box12b1!tlin 	!                              
+049	!Box12b2!dlin 	!                              
+050	!Box12b1!tlin 	!                              
+051	!Box12b2!dlin 	!                              
+052	!Box12c1!tlin 	!                              
+053	!Box12c2!dlin 	!                              
+054	!Box12d1!tlin 	!                              
+055	!Box12d2!dlin 	!                              
+056	!Box13a	!tlin 	!                              
+057	!Box13b	!tlin 	!                              
+058	!Box13c	!tlin 	!                              
+059	!Box14  !dlin	!                              

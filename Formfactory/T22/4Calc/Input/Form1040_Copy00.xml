@@ -151,7 +151,15 @@
 <addend>linequal10</addend>
 </line>
 
-<line number='iraTot'
+<line number='37a'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line24</augend>
+<addend>line38</addend>
+</line>
+
+<line number='04b'
  color='green'>
 <type>addit</type>
 <format>#####0</format>
@@ -167,7 +175,7 @@
 <addend>lineira10</addend>
 </line>
 
-<line number='penTot'
+<line number='05b'
  color='green'>
 <type>addit</type>
 <format>#####0</format>
@@ -181,14 +189,6 @@
 <addend>linepen08</addend>
 <addend>linepen09</addend>
 <addend>linepen10</addend>
-</line>
-
-<line number='37a'
- color='green'>
-<type>addit</type>
-<format>#####0</format>
-<augend>line24</augend>
-<addend>line38</addend>
 </line>
 
 <line number='c2000'
@@ -240,24 +240,6 @@
 <type>dlin</type>
 <format>#####0</format>
 <override>0</override>
-<blank></blank>
-</dlin>
-
-<dlin number='04a'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override>0</override>
-<blank></blank>
-</dlin>
-
-<dlin number='05a'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override>501</override>
 <blank></blank>
 </dlin>
 
@@ -446,7 +428,7 @@
 <dummy>0</dummy>
 <form>Form8995</form>
 <copy>00</copy>
-<line2>line00</line2>
+<line2>line01</line2>
 </line>
 
 <line number='17'
@@ -1151,20 +1133,224 @@
 <line2>line01</line2>
 </line>
 
-<line number='04s'
- color='cyan'>
-<type>subt0</type>
+<line number='t01'
+ color='purple'>
+<title></title>
+<type>dPull</type>
 <format>#####0</format>
-<minuend>lineiraTot</minuend>
-<subtrahend>line04a</subtrahend>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>01</copy>
+<line2>line01</line2>
 </line>
 
-<line number='05s'
- color='cyan'>
-<type>subt0</type>
+<line number='t02'
+ color='purple'>
+<title></title>
+<type>dPull</type>
 <format>#####0</format>
-<minuend>linepenTot</minuend>
-<subtrahend>line05a</subtrahend>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>02</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t03'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>03</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t04'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>04</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t05'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>05</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t06'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>06</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t07'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>07</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t08'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>08</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t09'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>09</copy>
+<line2>line01</line2>
+</line>
+
+<line number='t10'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>10</copy>
+<line2>line01</line2>
+</line>
+
+<line number='pt01'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>01</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt02'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>02</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt03'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>03</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt04'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>04</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt05'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>05</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt06'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>06</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt07'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>07</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt08'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>08</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt09'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>09</copy>
+<line2>line02</line2>
+</line>
+
+<line number='pt10'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<dummy>0</dummy>
+<form>Form1099r</form>
+<copy>10</copy>
+<line2>line02</line2>
 </line>
 
 <line number='15'
@@ -1231,329 +1417,6 @@
 <subtrahend>line38</subtrahend>
 </line>
 
-<line number='x01'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>01</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x02'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>02</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x03'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>03</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x04'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>04</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x05'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>05</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x06'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>06</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x07'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>07</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x08'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>08</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x09'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>09</copy>
-<line2>07a</line2>
-</line>
-
-<line number='x10'
- color='blue'>
-<type>tPull</type>
-<form>Form1099r</form>
-<copy>10</copy>
-<line2>07a</line2>
-</line>
-
-<line number='04b'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-line04a = 0</testvalue>
-<value1>$Form1040-Copy00-lineiraTot</value1>
-<value2>$Form1040-Copy00-line04s</value2>
-</line>
-
-<line number='05b'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-line05a = 0</testvalue>
-<value1>$Form1040-Copy00-linepenTot</value1>
-<value2>$Form1040-Copy00-line05s</value2>
-</line>
-
-<line number='ira01'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex01 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner01</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira02'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex02 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner02</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira03'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex03 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner03</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira04'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex04 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner04</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira05'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex05 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner05</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira06'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex06 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner06</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira07'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex07 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner07</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira08'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex08 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner08</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira09'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex09 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner09</value1>
-<value2>0</value2>
-</line>
-
-<line number='ira10'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex10 = 'x'</testvalue>
-<value1>$Form1040-Copy00-liner10</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen01'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex01 = ''</testvalue>
-<value1>$Form1040-Copy00-liner01</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen02'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex02 = ''</testvalue>
-<value1>$Form1040-Copy00-liner02</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen03'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex03 = ''</testvalue>
-<value1>$Form1040-Copy00-liner03</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen04'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex04 = ''</testvalue>
-<value1>$Form1040-Copy00-liner04</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen05'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex05 = ''</testvalue>
-<value1>$Form1040-Copy00-liner05</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen06'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex06 = ''</testvalue>
-<value1>$Form1040-Copy00-liner06</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen07'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex07 = ''</testvalue>
-<value1>$Form1040-Copy00-liner07</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen08'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex08 = ''</testvalue>
-<value1>$Form1040-Copy00-liner08</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen09'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex09 = ''</testvalue>
-<value1>$Form1040-Copy00-liner09</value1>
-<value2>0</value2>
-</line>
-
-<line number='pen10'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-linex10 = ''</testvalue>
-<value1>$Form1040-Copy00-liner10</value1>
-<value2>0</value2>
-</line>
-
-<line number='16a'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-line4952 > 0</testvalue>
-<value1>$Form1040-Copy00-lineSDTW</value1>
-<value2>$Form1040-Copy00-line16b</value2>
-</line>
-
-<line number='16b'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0</testvalue>
-<value1>$Form1040-Copy00-lineSDTW</value1>
-<value2>$Form1040-Copy00-line16c</value2>
-</line>
-
-<line number='16c'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0</testvalue>
-<value1>$Form1040-Copy00-lineSDTW</value1>
-<value2>$Form1040-Copy00-line16d</value2>
-</line>
-
-<line number='16d'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-line03a > 0</testvalue>
-<value1>$Form1040-Copy00-lineQDCG</value1>
-<value2>$Form1040-Copy00-line16e</value2>
-</line>
-
-<line number='16e'
- color='red'>
-<type>cnum</type>
-<format>#####0</format>
-<testvalue>$Form1040-Copy00-line07 > 0</testvalue>
-<value1>$Form1040-Copy00-lineQDCG</value1>
-<value2>$Form1040-Copy00-lineCalc16</value2>
-</line>
-
 <line number='Calc16'
  color='blue'>
 <type>tCalc</type>
@@ -1563,1166 +1426,1255 @@
 <line2>line15</line2>
 </line>
 
-<tlin name='06cCk'
+<line name='2name'
  color='blue'>
 <type>tlin</type>
+<text>4dummy</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='06cCk'
+ color='blue'>
+<type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='07Ck'
+<line name='07Ck'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35aCk'
+<line name='35aCk'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b1'
+<line name='35b1'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b2'
+<line name='35b2'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b3'
+<line name='35b3'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b4'
+<line name='35b4'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b5'
+<line name='35b5'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b6'
+<line name='35b6'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b7'
+<line name='35b7'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b8'
+<line name='35b8'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35b9'
+<line name='35b9'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35cCkg'
+<line name='35cCkg'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35cSvg'
+<line name='35cSvg'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d10'
+<line name='35d10'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d11'
+<line name='35d11'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d1'
+<line name='35d1'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d12'
+<line name='35d12'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d13'
+<line name='35d13'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d14'
+<line name='35d14'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d15'
+<line name='35d15'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d16'
+<line name='35d16'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d17'
+<line name='35d17'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d2'
+<line name='35d2'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d3'
+<line name='35d3'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d4'
+<line name='35d4'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d5'
+<line name='35d5'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d6'
+<line name='35d6'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d7'
+<line name='35d7'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d8'
+<line name='35d8'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='35d9'
+<line name='35d9'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='39N'
+<line name='39N'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='39Y'
+<line name='39Y'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='421'
+<line name='421'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='422'
+<line name='422'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='423'
+<line name='423'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='424'
+<line name='424'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='425'
+<line name='425'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='431'
+<line name='431'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='432'
+<line name='432'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='433'
+<line name='433'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='434'
+<line name='434'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='435'
+<line name='435'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='436'
+<line name='436'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='441'
+<line name='441'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='442'
+<line name='442'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='443'
+<line name='443'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='444'
+<line name='444'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='445'
+<line name='445'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='4972Ck'
+<line name='4972Ck'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='8814Ck'
+<line name='8814Ck'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='addr1'
+<line name='addr1'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='addr2'
+<line name='addr2'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='aptNo'
+<line name='aptNo'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='campme'
+<line name='campme'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='campS'
+<line name='campS'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='child'
+<line name='child'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='city'
+<line name='city'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1cod'
+<line name='d1cod'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1CTC'
+<line name='d1CTC'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1LN'
+<line name='d1LN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1name'
+<line name='d1name'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1name'
+<line name='d1name'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1rel'
+<line name='d1rel'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1SF'
+<line name='d1SF'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1SL'
+<line name='d1SL'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d1SM'
+<line name='d1SM'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2cod'
+<line name='d2cod'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2CTC'
+<line name='d2CTC'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2LN'
+<line name='d2LN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2name'
+<line name='d2name'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2rel'
+<line name='d2rel'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2SF'
+<line name='d2SF'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2SL'
+<line name='d2SL'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d2SM'
+<line name='d2SM'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3cod'
+<line name='d3cod'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3CTC'
+<line name='d3CTC'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3LN'
+<line name='d3LN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3name'
+<line name='d3name'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3rel'
+<line name='d3rel'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3SF'
+<line name='d3SF'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3SL'
+<line name='d3SL'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d3SM'
+<line name='d3SM'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4cod'
+<line name='d4cod'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4CTC'
+<line name='d4CTC'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4LN'
+<line name='d4LN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4name'
+<line name='d4name'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4rel'
+<line name='d4rel'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4SF'
+<line name='d4SF'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4SL'
+<line name='d4SL'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d4SM'
+<line name='d4SM'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d5cod'
+<line name='d5cod'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d5CTC'
+<line name='d5CTC'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d5LN'
+<line name='d5LN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d5rel'
+<line name='d5rel'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d5SF'
+<line name='d5SF'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d5SL'
+<line name='d5SL'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='d5SM'
+<line name='d5SM'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='dgt4'
+<line name='dgt4'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='digN'
+<line name='digN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='digY'
+<line name='digY'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Dname'
+<line name='Dname'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Dphone'
+<line name='Dphone'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Faddr'
+<line name='Faddr'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='FCntry'
+<line name='FCntry'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='FEIN'
+<line name='FEIN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Fname'
+<line name='Fname'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Fphone'
+<line name='Fphone'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Fprov'
+<line name='Fprov'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Fzip'
+<line name='Fzip'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Other'
+<line name='Other'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Pdate'
+<line name='Pdate'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Pname'
+<line name='Pname'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='PTIN'
+<line name='PTIN'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Sa58'
+<line name='Sa58'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Sblind'
+<line name='Sblind'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Sdate'
+<line name='Sdate'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Sdep'
+<line name='Sdep'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='SECk'
+<line name='SECk'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='SiUali'
+<line name='SiUali'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Socc'
+<line name='Socc'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='ST'
+<line name='ST'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Tdate'
+<line name='Tdate'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Tocc'
+<line name='Tocc'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Ya58'
+<line name='Ya58'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='Yblind'
+<line name='Yblind'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='youdep'
+<line name='youdep'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='zip'
+<line name='zip'
  color='blue'>
 <type>tlin</type>
 <text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
 
-<tlin name='x00'
+<line name='x00'
  color='blue'>
 <type>tlin</type>
-<text>x</text>
+<text></text>
 <form></form>
 <copy></copy>
 <line2></line2>
-</tlin>
+</line>
+
+<line number='07a01'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>01</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a02'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>02</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a03'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>03</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a04'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>04</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a05'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>05</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a06'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>06</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a07'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>07</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a08'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>08</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a09'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>09</copy>
+<line2>07a</line2>
+</line>
+
+<line number='07a10'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099r</form>
+<copy>10</copy>
+<line2>07a</line2>
+</line>
 
 <line number='FS'
  color='blue'>
@@ -2812,48 +2764,237 @@
 <line2>TSSNoM</line2>
 </line>
 
+<line number='ira01'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a01 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner01</value2>
+</line>
+
+<line number='ira02'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01Form1040-Copy00-line07a02 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner02</value2>
+</line>
+
+<line number='ira03'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a03 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner03</value2>
+</line>
+
+<line number='ira04'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a04 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner04</value2>
+</line>
+
+<line number='ira05'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a05 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner05</value2>
+</line>
+
+<line number='ira06'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a06 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner06</value2>
+</line>
+
+<line number='ira07'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a07 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner07</value2>
+</line>
+
+<line number='ira08'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a08 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner08</value2>
+</line>
+
+<line number='ira09'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a09 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner09</value2>
+</line>
+
+<line number='ira10'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a10 = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-liner10</value2>
+</line>
+
+<line number='pen01'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a01 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet01</value2>
+</line>
+
+<line number='pen02'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a02 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet02</value2>
+</line>
+
+<line number='pen03'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a03 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet03</value2>
+</line>
+
+<line number='pen04'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a04 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet04</value2>
+</line>
+
+<line number='pen05'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a05 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet05</value2>
+</line>
+
+<line number='pen06'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a06 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet06</value2>
+</line>
+
+<line number='pen07'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a07 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet07</value2>
+</line>
+
+<line number='pen08'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a08 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet08</value2>
+</line>
+
+<line number='pen09'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a09 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet09</value2>
+</line>
+
+<line number='pen10'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line07a10 = ''</value1>
+<value2>VALUOF$Form1040-Copy00-linet10</value2>
+</line>
+
+<line number='16a'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line4952 > 0</value1>
+<value2>VALUOF$Form1040-Copy00-lineSDTW</value2>
+</line>
+
 <line number='S'
  color='blue'>
 <type>ctext</type>
 <format>#####0</format>
-<test>$Form1040-Copy00-lineFS = 'S'</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'S'</value1>
+<value2>VALUOF'x'</value2>
 </line>
 
 <line number='MFJ'
  color='blue'>
 <type>ctext</type>
 <format>#####0</format>
-<test>$Form1040-Copy00-lineFS = 'MFJ'</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value2>VALUOF'x'</value2>
 </line>
 
 <line number='MFS'
  color='blue'>
 <type>ctext</type>
 <format>#####0</format>
-<test>$Form1040-Copy00-lineFS = 'MFS'</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFS'</value1>
+<value2>VALUOF'x'</value2>
 </line>
 
 <line number='HOH'
  color='blue'>
 <type>ctext</type>
 <format>#####0</format>
-<test>$Form1040-Copy00-lineFS = 'HOH'</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'HOH'</value1>
+<value2>VALUOF'x'</value2>
 </line>
 
 <line number='QSS'
  color='blue'>
 <type>ctext</type>
 <format>#####0</format>
-<test>$Form1040-Copy00-lineFS = 'QSS'</test>
-<value1>'x'</value1>
-<value2>''</value2>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'QSS'</value1>
+<value2>VALUOF'x'</value2>
 </line>
 </Form>

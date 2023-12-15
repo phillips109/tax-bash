@@ -106,7 +106,7 @@ do
       1099r)     set_copy_number  Form1099r;;	
       1099g)     set_copy_number  Form1099g;;
       1099ssa)   set_copy_number  Form1099ssa;;
-      w2)        set_copy_number  W2-CopyA;;	
+      w2)        set_copy_number  w2;;	
       bkg)       set_copy_number  Bkg;;      
       q)         break;;
     esac

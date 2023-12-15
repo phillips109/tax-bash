@@ -1,0 +1,62 @@
+xdlin 	!2name 	!3format	!4dummy
+dlin  	!Box01 	!035    	!                              
+dlin  	!Box02 	!036    	!                              
+dlin  	!Box03 	!037    	!                              
+dlin  	!Box04 	!038    	!                          
+dlin  	!Box05 	!039    	!                              
+dlin  	!Box06 	!040    	!                              
+dlin  	!Box07 	!041    	!                              
+dlin  	!Box08 	!042    	!                              
+dlin  	!Box09 	!043    	!                              
+dlin  	!Box10 	!044    	!                              
+dlin  	!Box11 	!045    	!                              
+dlin  	!Box12b2	!049    	!                              
+dlin  	!Box12b2	!051    	!                              
+dlin  	!Box12c2	!053    	!                              
+dlin  	!Box12d2	!055    	!                              
+dlin  	!Box14 	!059    	!                              
+dlin  	!Box12a2	!047    	!                              
+dlin  	!L01Tax	!026    	!                              
+dlin  	!L01W  	!025    	!                              
+dlin  	!L02Tax	!033    	!                              
+dlin  	!L02W  	!032    	!                              
+dlin  	!ST01Tax	!024    	!                              
+dlin  	!ST02Tax	!031    	!                              
+dlin  	!ST02W 	!030    	!                              
+xtlin 	!2name 	!3form       	!4copy 	!5line
+tlin  	!Box12a1	!046         	!                              	!
+tlin  	!Box12b1	!048         	!                              	!
+tlin  	!Box12b1	!050         	!                              	!
+tlin  	!Box12c1	!052         	!                              	!
+tlin  	!Box12d1	!054         	!                              	!
+tlin  	!Box13a	!056         	!                              	!
+tlin  	!Box13b	!057         	!                              	!
+tlin  	!Box13c	!058         	!                              	!
+tlin  	!CtlNo 	!012         	!                              	!
+tlin  	!EAdd1 	!007         	!                              	!
+tlin  	!EAdd2 	!008         	!                              	!
+tlin  	!ECity 	!009         	!                              	!
+tlin  	!EID   	!005         	!                              	!
+tlin  	!EName 	!006         	!                              	!
+tlin  	!EST   	!010         	!                              	!
+tlin  	!Ezip  	!011         	!                              	!
+tlin  	!L01Name	!027         	!                              	!
+tlin  	!L02Name	!034         	!                              	!
+tlin  	!ST01  	!021         	!                              	!
+tlin  	!ST01EID	!022         	!                              	!
+tlin  	!ST01W 	!023         	!                              	!
+tlin  	!ST02  	!028         	!                              	!
+tlin  	!ST02EID	!029         	!                              	!
+tlin  	!TAddr1	!016         	!                              	!
+tlin  	!TAddr2	!017         	!                              	!
+tlin  	!TCity 	!018         	!                              	!
+tlin  	!TST   	!019         	!                              	!
+tlin  	!Tsuff 	!015         	!                              	!
+tlin  	!Tzip  	!020         	!                              	!
+tlin  	!void  	!001         	!                              	!
+xtPull	!2name 	!3form       	!4copy 	!5line
+tPull 	!TFNI  	!013         	!                              	!
+tPull 	!TLN   	!014         	!                              	!
+tPull 	!TSSNoF	!002         	!                              	!
+tPull 	!TSSNoL	!004         	!                              	!
+tPull 	!TSSNoM	!003         	!                              	!

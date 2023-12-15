@@ -1,0 +1,9 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!      	!      	!         	!
+a     	!dlin  	!01    	!      	!      	!         	!1000
+a     	!dlin  	!02    	!      	!      	!         	!2000
+a     	!dlin  	!03    	!      	!      	!         	!3000
+a     	!dlin  	!04    	!      	!      	!         	!4000
+a     	!dlin  	!05    	!      	!      	!         	!5000
+a     	!dlin  	!06    	!      	!      	!         	!6000
+a     	!dlin  	!07    	!      	!      	!         	!7000

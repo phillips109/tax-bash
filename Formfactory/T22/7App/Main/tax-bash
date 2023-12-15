@@ -1689,7 +1689,7 @@ do
       1099r)     set_copy_number  Form1099r;;	
       1099g)     set_copy_number  Form1099g;;
       1099ssa)   set_copy_number  Form1099ssa;;
-      w2)        set_copy_number  W2-CopyA;;	
+      w2)        set_copy_number  w2;;	
       bkg)       set_copy_number  Bkg;;      
       q)         break;;
     esac
@@ -3496,10 +3496,9 @@ do
 clear
 echo "Lines in SchedD in which to enter or edit data:"
 echo
-echo "QOFy)    Enter x if you disposed of any investment(s) in a qualified opportunity fund during the tax year.                             "
-echo "QOFn)    Enter x if you did not.                           "
-echo "15  )    Enter amt for line 15                              "
-echo "16  )    Enter amoutn for line16                              "
+echo "QOFy)    Enter x if you disposed of any investment in a qualified opportunity fund during the tax year."
+echo "QOFn)    Enter x if you did not.            "
+echo "14  )    Enter long-term capital loss carryover. This is line 13 of your Capital Loss Carryover Worksheet."
 echo
 echo "   q)    Return to Previous Menu"      
 echo
@@ -3509,8 +3508,7 @@ echo
      case $SchedD_line_data_choice in
 QOFy)    set_line_menu_text   $1 $2  lineQOFy                           14;;
 QOFn)    set_line_menu_text   $1 $2  lineQOFn                           14;;
-15  )    set_line_menu_number $1 $2  line15                             14;;
-16  )    set_line_menu_number $1 $2  line16                             14;;
+14  )    set_line_menu_number $1 $2  line14                             14;;
 q   )    break;;                       
 esac
 done
@@ -3637,6 +3635,137 @@ echo
 50)    set_line_menu_number $1 $2  line50                             14;;
 85)    set_line_menu_number $1 $2  line85                             14;;
 q )    break;;                       
+esac
+done
+}
+set_w2_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in w2 in which to enter or edit data:"
+echo
+echo "void   )    Enter x if form is void.                              "
+echo "EID    )    Enter Empmloyer ID number.                             "
+echo "EName  )    Employere name.                    "
+echo "EAdd1  )    Employer Address 01                              "
+echo "EAdd2  )    Employer Address 02                "
+echo "ECity  )    Employer's City                              "
+echo "EST    )    Employer's State (ST)               "
+echo "Ezip   )    Employer's zip code                              "
+echo "CtlNo  )    Control Number                     "
+echo "TFNI   )    Enter taxpayor's first name and initial"
+echo "TLN    )    Enter taxpayor's last name         "
+echo "TSSNoF )    Enter first three digits of taxpayor's SS No."
+echo "TSSNoM )    Enter fourth, fifth digiets of taxpayor's SS No."
+echo "TSSNoL )    Enter last four digits of taxpayor's SS No."
+echo "Tsuff  )    Taxpayor's name suffix                              "
+echo "TAddr1 )    Taxpayor Address 01                              "
+echo "TAddr2 )    Taxpayor Address 02                "
+echo "TCity  )    Taxpayor City                      "
+echo "TST    )    Taxpayor's State (ST)                              "
+echo "Tzip   )    Taxpayor's zip code                              "
+echo "ST01   )    State 01 in which income was earned.                  "
+echo "ST1EID )    State 01 EID                              "
+echo "ST01W  )    State 01 Wages,tips etc.                              "
+echo "ST1Tax )    State 01 Income Tax                              "
+echo "L01W   )    Locality 01 Wages                              "
+echo "L01Tax )    Locality 01 Income Tax                              "
+echo "L1Name )    Locality 01 Name                             "
+echo "ST02   )    State 02 in which income was earned."
+echo "ST2EID )    State 02 EID                              "
+echo "ST02W  )    State 02 Wages                              "
+echo "ST2Tax )    State 02 Income Tax                              "
+echo "L02W   )    Locality 02 Wages                              "
+echo "L02Tax )    Locality 02 Income Tax                              "
+echo "L2Name )    Localilty 02 Name                              "
+echo "Box01  )    Wages, tips, other compensation                    "
+echo "Box02  )    Federal Income Tax withheld                     "
+echo "Box03  )    Social Security wages                              "
+echo "Box04  )    Social Security Tax withheld                          "
+echo "Box05  )    Medicare Wages and tips            "
+echo "Box06  )    Medicare tax withheld                              "
+echo "Box07  )    Social Security tips                              "
+echo "Box08  )    Allocated tips                              "
+echo "Box09  )    Not used at present                              "
+echo "Box10  )    Dependent Care Benefits                              "
+echo "Box11  )    Nonqualified Plans                              "
+echo "Box12a1)    Code                               "
+echo "Box12a2)    Uncollected social security or RRTA tax on tips    "
+echo "Box12b1)    Code                               "
+echo "Box12b2)    Uncollected Medicare tax on tips   "
+echo "Box12c1)    Code                               "
+echo "Box12c2)    Taxable cost of group term life insusrance         "
+echo "Box12d1)    Code                               "
+echo "Box12d2)    Elective deferrals under a section 401(b)          "
+echo "Box13a )    Enter x if statutory employee      "
+echo "Box13b )    Enter x if Retirement Plan         "
+echo "Box13c )    Enter x if Third party sick pay    "
+echo "Box14  )    Other:                             "
+echo
+echo "      q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read w2_line_data_choice
+echo
+     case $w2_line_data_choice in
+void   )    set_line_menu_text   $1 $2  linevoid                           14;;
+EID    )    set_line_menu_text   $1 $2  lineEID                            14;;
+EName  )    set_line_menu_text   $1 $2  lineEName                          14;;
+EAdd1  )    set_line_menu_text   $1 $2  lineEAdd1                          14;;
+EAdd2  )    set_line_menu_text   $1 $2  lineEAdd2                          14;;
+ECity  )    set_line_menu_text   $1 $2  lineECity                          14;;
+EST    )    set_line_menu_text   $1 $2  lineEST                            14;;
+Ezip   )    set_line_menu_text   $1 $2  lineEzip                           14;;
+CtlNo  )    set_line_menu_text   $1 $2  lineCtlNo                          14;;
+TFNI   )    set_line_menu_text   $1 $2  lineTFNI                           14;;
+TLN    )    set_line_menu_text   $1 $2  lineTLN                            14;;
+TSSNoF )    set_line_menu_text   $1 $2  lineTSSNoF                         14;;
+TSSNoM )    set_line_menu_text   $1 $2  lineTSSNoM                         14;;
+TSSNoL )    set_line_menu_text   $1 $2  lineTSSNoL                         14;;
+Tsuff  )    set_line_menu_text   $1 $2  lineTsuff                          14;;
+TAddr1 )    set_line_menu_text   $1 $2  lineTAddr1                         14;;
+TAddr2 )    set_line_menu_text   $1 $2  lineTAddr2                         14;;
+TCity  )    set_line_menu_text   $1 $2  lineTCity                          14;;
+TST    )    set_line_menu_text   $1 $2  lineTST                            14;;
+Tzip   )    set_line_menu_text   $1 $2  lineTzip                           14;;
+ST01   )    set_line_menu_text   $1 $2  lineST01                           14;;
+ST1EID )    set_line_menu_text   $1 $2  lineST1EID                         14;;
+ST01W  )    set_line_menu_text   $1 $2  lineST01W                          14;;
+ST1Tax )    set_line_menu_number $1 $2  lineST1Tax                         14;;
+L01W   )    set_line_menu_number $1 $2  lineL01W                           14;;
+L01Tax )    set_line_menu_number $1 $2  lineL01Tax                         14;;
+L1Name )    set_line_menu_text   $1 $2  lineL1Name                         14;;
+ST02   )    set_line_menu_text   $1 $2  lineST02                           14;;
+ST2EID )    set_line_menu_text   $1 $2  lineST2EID                         14;;
+ST02W  )    set_line_menu_number $1 $2  lineST02W                          14;;
+ST2Tax )    set_line_menu_number $1 $2  lineST2Tax                         14;;
+L02W   )    set_line_menu_number $1 $2  lineL02W                           14;;
+L02Tax )    set_line_menu_number $1 $2  lineL02Tax                         14;;
+L2Name )    set_line_menu_text   $1 $2  lineL2Name                         14;;
+Box01  )    set_line_menu_number $1 $2  lineBox01                          14;;
+Box02  )    set_line_menu_number $1 $2  lineBox02                          14;;
+Box03  )    set_line_menu_number $1 $2  lineBox03                          14;;
+Box04  )    set_line_menu_number $1 $2  lineBox04                          14;;
+Box05  )    set_line_menu_number $1 $2  lineBox05                          14;;
+Box06  )    set_line_menu_number $1 $2  lineBox06                          14;;
+Box07  )    set_line_menu_number $1 $2  lineBox07                          14;;
+Box08  )    set_line_menu_number $1 $2  lineBox08                          14;;
+Box09  )    set_line_menu_number $1 $2  lineBox09                          14;;
+Box10  )    set_line_menu_number $1 $2  lineBox10                          14;;
+Box11  )    set_line_menu_number $1 $2  lineBox11                          14;;
+Box12a1)    set_line_menu_text   $1 $2  lineBox12a1                        14;;
+Box12a2)    set_line_menu_number $1 $2  lineBox12a2                        14;;
+Box12b1)    set_line_menu_text   $1 $2  lineBox12b1                        14;;
+Box12b2)    set_line_menu_number $1 $2  lineBox12b2                        14;;
+Box12c1)    set_line_menu_text   $1 $2  lineBox12c1                        14;;
+Box12c2)    set_line_menu_number $1 $2  lineBox12c2                        14;;
+Box12d1)    set_line_menu_text   $1 $2  lineBox12d1                        14;;
+Box12d2)    set_line_menu_number $1 $2  lineBox12d2                        14;;
+Box13a )    set_line_menu_text   $1 $2  lineBox13a                         14;;
+Box13b )    set_line_menu_text   $1 $2  lineBox13b                         14;;
+Box13c )    set_line_menu_text   $1 $2  lineBox13c                         14;;
+Box14  )    set_line_menu_number $1 $2  lineBox14                          14;;
+q      )    break;;                       
 esac
 done
 }

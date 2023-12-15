@@ -141,6 +141,13 @@ linequal10
 
 addit
 #####0
+line24
+line38
+
+
+
+addit
+#####0
 lineira01
 lineira02
 lineira03
@@ -166,13 +173,6 @@ linepen07
 linepen08
 linepen09
 linepen10
-
-
-
-addit
-#####0
-line24
-line38
 
 
 
@@ -360,17 +360,39 @@ const
 
 
 
-subt0
-#####0
-lineiraTot
-line04a
 
 
 
-subt0
-#####0
-linepenTot
-line05a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -430,242 +452,6 @@ line38
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-cnum
-#####0
-$Form1040-Copy00-line04a = 0
-$Form1040-Copy00-lineiraTot
-$Form1040-Copy00-line04s
-
-
-
-cnum
-#####0
-$Form1040-Copy00-line05a = 0
-$Form1040-Copy00-linepenTot
-$Form1040-Copy00-line05s
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex01 = 'x'
-$Form1040-Copy00-liner01
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex02 = 'x'
-$Form1040-Copy00-liner02
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex03 = 'x'
-$Form1040-Copy00-liner03
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex04 = 'x'
-$Form1040-Copy00-liner04
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex05 = 'x'
-$Form1040-Copy00-liner05
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex06 = 'x'
-$Form1040-Copy00-liner06
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex07 = 'x'
-$Form1040-Copy00-liner07
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex08 = 'x'
-$Form1040-Copy00-liner08
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex09 = 'x'
-$Form1040-Copy00-liner09
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex10 = 'x'
-$Form1040-Copy00-liner10
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex01 = ''
-$Form1040-Copy00-liner01
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex02 = ''
-$Form1040-Copy00-liner02
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex03 = ''
-$Form1040-Copy00-liner03
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex04 = ''
-$Form1040-Copy00-liner04
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex05 = ''
-$Form1040-Copy00-liner05
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex06 = ''
-$Form1040-Copy00-liner06
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex07 = ''
-$Form1040-Copy00-liner07
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex08 = ''
-$Form1040-Copy00-liner08
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex09 = ''
-$Form1040-Copy00-liner09
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-linex10 = ''
-$Form1040-Copy00-liner10
-0
-
-
-
-cnum
-#####0
-$Form1040-Copy00-line4952 &gt; 0
-$Form1040-Copy00-lineSDTW
-$Form1040-Copy00-line16b
-
-
-
-cnum
-#####0
-document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 &gt; 0 or $Form1040-Copy00-lineD19 &gt; 0
-$Form1040-Copy00-lineSDTW
-$Form1040-Copy00-line16c
-
-
-
-cnum
-#####0
-document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 &gt;0 and $Form1040-Copy00-lineD16 &gt; 0
-$Form1040-Copy00-lineSDTW
-$Form1040-Copy00-line16d
-
-
-
-cnum
-#####0
-$Form1040-Copy00-line03a &gt; 0
-$Form1040-Copy00-lineQDCG
-$Form1040-Copy00-line16e
-
-
-
-cnum
-#####0
-$Form1040-Copy00-line07 &gt; 0
-$Form1040-Copy00-lineQDCG
-$Form1040-Copy00-lineCalc16
-
-
-
 tCalc
 #####0
 Form1040
@@ -674,12 +460,15 @@ line15
 
 
 
+tlin
+4dummy
 
 
 
 
 
 
+tlin
 
 
 
@@ -687,6 +476,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -694,6 +484,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -701,6 +492,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -708,6 +500,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -715,6 +508,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -722,6 +516,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -729,6 +524,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -736,6 +532,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -743,6 +540,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -750,6 +548,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -757,6 +556,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -764,6 +564,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -771,6 +572,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -778,6 +580,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -785,6 +588,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -792,6 +596,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -799,6 +604,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -806,6 +612,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -813,6 +620,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -820,6 +628,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -827,6 +636,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -834,6 +644,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -841,6 +652,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -848,6 +660,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -855,6 +668,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -862,6 +676,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -869,6 +684,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -876,6 +692,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -883,6 +700,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -890,6 +708,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -897,6 +716,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -904,6 +724,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -911,6 +732,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -918,6 +740,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -925,6 +748,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -932,6 +756,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -939,6 +764,7 @@ line15
 
 
 
+tlin
 
 
 
@@ -946,50 +772,980 @@ line15
 
 
 
+tlin
 
 
 
 
 
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a01 = 'x'
+VALUOF$Form1040-Copy00-liner01
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01Form1040-Copy00-line07a02 = 'x'
+VALUOF$Form1040-Copy00-liner02
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a03 = 'x'
+VALUOF$Form1040-Copy00-liner03
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a04 = 'x'
+VALUOF$Form1040-Copy00-liner04
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a05 = 'x'
+VALUOF$Form1040-Copy00-liner05
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a06 = 'x'
+VALUOF$Form1040-Copy00-liner06
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a07 = 'x'
+VALUOF$Form1040-Copy00-liner07
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a08 = 'x'
+VALUOF$Form1040-Copy00-liner08
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a09 = 'x'
+VALUOF$Form1040-Copy00-liner09
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a10 = 'x'
+VALUOF$Form1040-Copy00-liner10
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a01 = ''
+VALUOF$Form1040-Copy00-linet01
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a02 = ''
+VALUOF$Form1040-Copy00-linet02
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a03 = ''
+VALUOF$Form1040-Copy00-linet03
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a04 = ''
+VALUOF$Form1040-Copy00-linet04
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a05 = ''
+VALUOF$Form1040-Copy00-linet05
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a06 = ''
+VALUOF$Form1040-Copy00-linet06
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a07 = ''
+VALUOF$Form1040-Copy00-linet07
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a08 = ''
+VALUOF$Form1040-Copy00-linet08
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a09 = ''
+VALUOF$Form1040-Copy00-linet09
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line07a10 = ''
+VALUOF$Form1040-Copy00-linet10
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line4952 &gt; 0
+VALUOF$Form1040-Copy00-lineSDTW
 
 
 
 ctext
 #####0
-$Form1040-Copy00-lineFS = 'S'
-'x'
-''
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'S'
+VALUOF'x'
 
 
 
 ctext
 #####0
-$Form1040-Copy00-lineFS = 'MFJ'
-'x'
-''
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF'x'
 
 
 
 ctext
 #####0
-$Form1040-Copy00-lineFS = 'MFS'
-'x'
-''
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFS'
+VALUOF'x'
 
 
 
 ctext
 #####0
-$Form1040-Copy00-lineFS = 'HOH'
-'x'
-''
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'HOH'
+VALUOF'x'
 
 
 
 ctext
 #####0
-$Form1040-Copy00-lineFS = 'QSS'
-'x'
-''
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'QSS'
+VALUOF'x'
 
 </Form>

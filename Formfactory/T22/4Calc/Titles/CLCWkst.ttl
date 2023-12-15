@@ -1,0 +1,17 @@
+xaddit	!2name 	!3format	!4augend     	!5addend     	!6+addend
+addit 	!03    	!003    	!                              	!            	!            
+addit 	!07    	!007    	!                              	!            	!            
+addit 	!12    	!012    	!                              	!            	!            
+xdlin 	!2name 	!3format	!4dummy
+dlin  	!01    	!001    	!                              
+dlin  	!02    	!002    	!                              
+dlin  	!05    	!005    	!                              
+dlin  	!06    	!006    	!                              
+dlin  	!09    	!009    	!                              
+dlin  	!10    	!010    	!                              
+xsmOf 	!2name 	!3format	!4first      	!5second
+smOf  	!04    	!004    	!                              	!
+xsubt0	!2name 	!3format	!4minuend    	!5subtrahend
+subt0 	!08    	!008    	!                              	!
+subt0 	!11    	!011    	!                              	!
+subt0 	!13    	!013    	!                              	!

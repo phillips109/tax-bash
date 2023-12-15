@@ -43,21 +43,23 @@ font-family='Times'
 text-align='left'
 top='0.00in'>
 
-<tlin name='TFNI'
+<tPull name='TFNI'
 top='1.48in'
 height='0.15in'
-color='blue'>
-<text>John Q</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</tPull>
 
-<tlin name='SFNI'
+<tPull name='SFNI'
 top='1.62in'
 height='0.15in'
-color='blue'>
-<text>Jeanne E</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SFNI</line2>
+</tPull>
 
 </col>
 *******************************************************
@@ -101,13 +103,14 @@ font-family='Times'
 text-align='right'
 top='0.00in'>
 
-<tlin name='TSSNoF'
+<tPull name='TSSNoF'
 top='1.62in'
 height='0.15in'
-color='blue'>
-<text>123</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</tPull>
 
 </col>
 *******************************************************
@@ -122,13 +125,14 @@ font-family='Times'
 text-align='center'
 top='0.00in'>
 
-<tlin name='TSSNoM'
+<tPull name='TSSNoM'
 top='1.62in'
 height='0.15in'
-color='blue'>
-<text>45</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</tPull>
 
 </col>
 *******************************************************
@@ -143,13 +147,14 @@ font-family='Times'
 text-align='left'
 top='0.00in'>
 
-<tlin name='TSSNoL'
+<tPull name='TSSNoL'
 top='1.62in'
 height='0.15in'
-color='blue'>
-<text>6789</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoL</line2>
+</tPull>
 
 </col>
 *******************************************************

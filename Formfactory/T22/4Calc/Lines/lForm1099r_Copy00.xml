@@ -80,11 +80,6 @@
   </copy00line16b>
 
 
-<copy00line17a color="red">
-  <xsl:value-of select="format-number($Form1099r-Copy00-line17a, '#####0')"/>
-  </copy00line17a>
-
-
 <copy00line17b color="red">
   <xsl:value-of select="format-number($Form1099r-Copy00-line17b, '#####0')"/>
   </copy00line17b>
@@ -100,163 +95,267 @@
   </copy00line19b>
 
 
-<copy00line02b1 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line02b1"/>
-    </copy00line02b1>
-  
 
-<copy00line02b2 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line02b2"/>
-    </copy00line02b2>
-  
+tlin
 
-<copy00line07 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line07"/>
-    </copy00line07>
-  
 
-<copy00line07a color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line07a"/>
-    </copy00line07a>
-  
 
-<copy00line08pct color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line08pct"/>
-    </copy00line08pct>
-  
 
-<copy00line12Ck color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line12Ck"/>
-    </copy00line12Ck>
-  
 
-<copy00line15a color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line15a"/>
-    </copy00line15a>
-  
 
-<copy00line15b color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line15b"/>
-    </copy00line15b>
-  
 
-<copy00line18a color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line18a"/>
-    </copy00line18a>
-  
+tlin
 
-<copy00line18b color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-line18b"/>
-    </copy00line18b>
-  
 
-<copy00lineacctNo color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-lineacctNo"/>
-    </copy00lineacctNo>
-  
 
-<copy00linecorr color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linecorr"/>
-    </copy00linecorr>
-  
 
-<copy00linepaddr1 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepaddr1"/>
-    </copy00linepaddr1>
-  
 
-<copy00linepaddr2 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepaddr2"/>
-    </copy00linepaddr2>
-  
 
-<copy00linepcity color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepcity"/>
-    </copy00linepcity>
-  
 
-<copy00linepCntry color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepCntry"/>
-    </copy00linepCntry>
-  
+tlin
 
-<copy00linepname1 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepname1"/>
-    </copy00linepname1>
-  
 
-<copy00linepname2 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepname2"/>
-    </copy00linepname2>
-  
 
-<copy00linepST color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepST"/>
-    </copy00linepST>
-  
 
-<copy00lineptel color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-lineptel"/>
-    </copy00lineptel>
-  
 
-<copy00linepTIN color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepTIN"/>
-    </copy00linepTIN>
-  
 
-<copy00linepzip color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linepzip"/>
-    </copy00linepzip>
-  
 
-<copy00lineraddr1 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-lineraddr1"/>
-    </copy00lineraddr1>
-  
+tlin
 
-<copy00lineraddr2 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-lineraddr2"/>
-    </copy00lineraddr2>
-  
 
-<copy00linercity color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linercity"/>
-    </copy00linercity>
-  
 
-<copy00linerCntry color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linerCntry"/>
-    </copy00linerCntry>
-  
 
-<copy00linername1 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linername1"/>
-    </copy00linername1>
-  
 
-<copy00linername2 color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linername2"/>
-    </copy00linername2>
-  
 
-<copy00linerST color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linerST"/>
-    </copy00linerST>
-  
 
-<copy00linerTIN color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linerTIN"/>
-    </copy00linerTIN>
-  
+tlin
 
-<copy00linerzip color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linerzip"/>
-    </copy00linerzip>
-  
 
-<copy00linevoid color="blue">
-    <xsl:value-of select="$Form1099r-Copy00-linevoid"/>
-    </copy00linevoid>
-  
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
 </Form>

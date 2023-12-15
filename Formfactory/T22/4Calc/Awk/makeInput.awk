@@ -1,8 +1,11 @@
 # makeInput -- Creates the i$form.xml file from an awk data file
 #fields: type:number:title:format:instructions:IRSinstructions:1stTerm:2ndTerm:addendum
 
+#10/20/2023 changed FS from "[ \t]*!" to "\n"(new line); changed RS from "\n" to ""(blank line)
+
 BEGIN {
-      FS="[ \t]*!"
+      FS = "\n"
+      RS = ""
       print "<Form name='"$1"'>"
       } 
 
@@ -18,14 +21,14 @@ BEGIN {
 
 /^tlin/ {
 	 print "" 
-	 print "<tlin name='"$2"'"
+	 print "<line name='"$2"'"
 	 print " color='blue'>"
 	 print "<type>"$1"</type>"
 	 print "<text>"$4"</text>"
 	 print "<form>"$5"</form>"
 	 print "<copy>"$6"</copy>"
 	 print "<line2>"$7"</line2>"
-	 print "</tlin>"	 
+	 print "</line>"	 
 	 }
 
 /^tPull/ {
