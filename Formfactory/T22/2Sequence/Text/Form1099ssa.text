@@ -1,3 +1,4 @@
+type	!name		!seq	!menuEntry
 tPull	!TFNI		!001	!                              
 tPull	!TLN		!002	!                              
 tPull	!TSSNoF		!003	!                              

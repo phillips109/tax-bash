@@ -1,3 +1,4 @@
+type	!name	!seq	!menuEntry                     
 tlin	!pname1	!001	!  	                              
 tlin	!pname2	!002	!  	                              
 tlin	!paddr1	!003	!  	                              

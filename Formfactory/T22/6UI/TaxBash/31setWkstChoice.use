@@ -5,6 +5,7 @@ do
   clear
   echo "Worksheets :"
   echo
+  echo "   cap)   Capital Loss Carryover Worksheet"
   echo "   fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
   echo "   ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "   qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
@@ -21,6 +22,7 @@ do
 
     case $wkst_choice in
 
+      cap)   set_copy_number  CLCWkst	     01;;		 
       fei)   set_copy_number  FEITaxWkst     01;;
       ln10)  set_copy_number  WSln10         01;;
       qdcg)  set_copy_number  QDCGTaxWkst    01;;

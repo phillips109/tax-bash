@@ -83,7 +83,7 @@ BEGIN {
 	 print "<title>""</title>"
 	 print "<type>"$1"</type>"
 	 print "<format>"$3"</format>"
-	 print "<dummy>"$4"</dummy>"
+	 print "<year>"$4"</year>"
 	 print "<form>"$5"</form>"
 	 print "<copy>"$6"</copy>"
 	 print "<line2>"$7"</line2>"

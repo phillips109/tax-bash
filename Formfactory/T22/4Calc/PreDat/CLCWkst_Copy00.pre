@@ -30,6 +30,14 @@ dlin    	!06      	!#####0  	!                    	!
 dlin    	!09      	!#####0  	!                    	!
 dlin    	!10      	!#####0  	!                    	!
 
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!01      	!#####0  	!        	!        	!        	!
+dPull   	!02      	!#####0  	!        	!        	!        	!
+dPull   	!05      	!#####0  	!        	!        	!        	!
+dPull   	!06      	!#####0  	!        	!        	!        	!
+dPull   	!09      	!#####0  	!        	!        	!        	!
+dPull   	!10      	!#####0  	!        	!        	!        	!
+
 xsmOf   	!2name   	!3format 	!4first  	!5second 	!
 smOf    	!04      	!#####0  	!        	!        	!
 

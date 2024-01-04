@@ -100,26 +100,6 @@ Pdfshow(){
 }
 
 
-#showPdf(){
-#    foo=$1
-#    qpdfview ../../1Pdf2Jpg/Pdf/f${foo#Form}.pdf &
-#    return
-#}
-
-#check4Seq(){
-#    dir ../Seqs
-#    echo "If $1.seq exists, skip steps 3 and 4 on the main menu"
-#    echo "and go to step 5 to edit the seq file."
-#    echo
-#    echo
-#    echo "Are you ready to continue?"
-#    echo "If so, press y or n."
-#    read this
-#    if yOrn $this
-#    then
-#	return
-#    fi
-#    }
 
 makeNoSequence(){
 #    echo " Enter the name of the form."
@@ -147,32 +127,31 @@ editNos(){
 
 changeOrder(){
     echo $1
-#    awk -f ../Awk/changeOrder.awk ../Seqs/$1.seq > ../Text/$1.txt
-     awk -f ../Awk/changeOrder.awk ../Nos/$1.num  > ../Text/$1.txt 
+#    awk -f ../Awk/changeOrder.awk ../Seqs/$1.seq > ../Text/$1.text
+     awk -f ../Awk/changeOrder.awk ../Nos/$1.num  > ../Text/$1.text 
+}
+
+
+
+
+#copytxt5(){
+#    cp ../Text/$1.text ../../5Menu/Text
+#}
+
+remove1stLine(){
+    sed 1d ../Text/$1.text > ../Txt/$1.txt
 }
 
 editTxt(){
-    emacs ../Text/$1.txt
+    emacs ../Txt/$1.txt
 }
 
-editText(){
-    emacs ../Text/$1.text
-}
-
-remove1stLine(){
-    sed 1d ../Text/$1.txt > ../Text/$1.text
-}
-
-copytxt5(){
-    cp ../Text/$1.txt ../../5Menu/Text
-}
-
-copyText3(){
-    cp ../Text/$1.text ../../3Layout/Text/$1.txt
+copyTxt3(){
+    cp ../Txt/$1.txt ../../3Layout/Txt/$1.txt
     }
 
-copyText4(){
-    cp ../Text/$1.text ../../4Calc/Text/$1.txt
+copyTxt4(){
+    cp ../Txt/$1.txt ../../4Calc/Txt/$1.txt
     }
 
 
@@ -183,28 +162,17 @@ while true;
   echo
   echo "This menu is to set the order of fields and their names."
   echo
-#  echo "Choice 1) will show the pdf file for reference."
-#  echo "Choice 2) If $1.seq doesn't exist, a basic template is made."
-#  echo "Choice 3) will show the ../Nos/ file."
-#  echo "Choice 3) The basic template is copied to ../Seqs/$1.seq"
-#  echo "Choice 4) allows you to enter the names of the fields in order."
-#  echo "Choice 5) reorders the columns(fields) for subsequent use."
-#  echo
   echo "   1)  show ../../Pdf2Jpg/Pdf file"
   echo "   2)  make template file ../Nos/"$1".num"
-  echo "   3) Edit ../Nos/"$1".num"
-  echo "      Enter a short name for each entry."
-  echo "      Enter type as either tlin for text,"
-  echo "      or dlin for numbers."
-#  echo "   3)  Copy ../Nos/"$1".num to ../Seqs/"$1".seq"
-#  echo "   4)  Edit ../Seqs/"$1".seq"
-  echo "   4)  Change order of fields ../Nos/"$1".num > ../Text/"$1".txt"
-  echo "   5)  Check that ../Text/"$1".txt is correct."
-  echo "   6)  Copy ../Text/"$1".txt ../../5menu/Text/"
-  echo "   7)  Remove first line from ../Text/"$1".txt to ../Text/"$1".text"
-  echo "   8)  Edit ../Text/"$1".text to check result"
-  echo "   9)  Copy ../Text/"$1".text to ../../3layout/Text/"
-  echo "  10)  Copy ../Text/"$1".text to ../../4calc/Text/"
+  echo "   3)  Edit ../Nos/"$1".num"
+  echo "       Enter a short name for each entry."
+  echo "       Enter type as either tlin for text,"
+  echo "       or dlin for numbers."
+  echo "   4)  Change order of fields ../Nos/"$1".num > ../Text/"$1".text"
+  echo "   5)  Remove first line from ../Text/"$1".text to ../Txt/"$1".txt"
+  echo "   6)  Edit ../Txt/"$1".txt to check result"
+  echo "   7)  Copy ../Txt/"$1".txt to ../../3layout/Text/"
+  echo "   8)  Copy ../Txt/"$1".txt to ../../4calc/Text/"
 
 echo "   q) Quit"
  
@@ -216,20 +184,18 @@ echo "   q) Quit"
 	1)  Pdfshow $1;;
 	2)  makeNoSequence $1;;
 	3)  editNos $1;;
-#	3)  cpNos2Seqs $1;;
-#	4)  editSeq $1;;
 	4)  changeOrder $1;;
-	5)  editTxt $1;;
-	6)  copytxt5 $1;;
-	7)  remove1stLine $1;;
-	8)  editText $1;;
-        9)  copyText3 $1;;
-       10)  copyText4 $1;;	
+	5)  remove1stLine $1;;
+	6)  editTxt $1;;
+        7)  copyTxt3 $1;;
+        8)  copyTxt4 $1;;
+	
 	q)  exit;;
       *)  echo "Sorry, choice not recognized."
     esac
   done  
 }
+
 
 create_new_copy() {
     while true;

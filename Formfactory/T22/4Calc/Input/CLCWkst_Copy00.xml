@@ -8,7 +8,7 @@
 <addend>line02</addend>
 </line>
 
-<line number='07a'
+<line number='07'
  color='green'>
 <type>addit</type>
 <format>#####0</format>
@@ -16,7 +16,7 @@
 <addend>line06</addend>
 </line>
 
-<line number='12a'
+<line number='12'
  color='green'>
 <type>addit</type>
 <format>#####0</format>
@@ -24,19 +24,12 @@
 <addend>line11</addend>
 </line>
 
-<line number='min1'
- color='blue'>
-<type>const</type>
-<format>#####0</format>
-<value>-1</value>
-</line>
-
 <dlin number='01'
  color='red'>
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override></override>
+<override>0</override>
 <blank></blank>
 </dlin>
 
@@ -45,16 +38,16 @@
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override></override>
+<override>0</override>
 <blank></blank>
 </dlin>
 
-<dlin number='05a'
+<dlin number='05'
  color='red'>
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override></override>
+<override>0</override>
 <blank></blank>
 </dlin>
 
@@ -63,49 +56,27 @@
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override></override>
+<override>0</override>
 <blank></blank>
 </dlin>
 
-<dlin number='09a'
+<dlin number='09'
  color='red'>
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override></override>
+<override>0</override>
 <blank></blank>
 </dlin>
 
-<dlin number='10a'
+<dlin number='10'
  color='red'>
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override></override>
+<override>0</override>
 <blank></blank>
 </dlin>
-
-<line number='10402111'
- color='purple'>
-<title></title>
-<type>dPull</type>
-<format>#####0</format>
-<dummy>T21</dummy>
-<form>Form1040(2021)</form>
-<copy>01</copy>
-<line2>line11</line2>
-</line>
-
-<line number='10402114'
- color='purple'>
-<title></title>
-<type>dPull</type>
-<format>#####0</format>
-<dummy>T21</dummy>
-<form>Form1040(2021)</form>
-<copy>01</copy>
-<line2>line14</line2>
-</line>
 
 <line number='04'
  color='blue'>
@@ -115,7 +86,7 @@
 <second>line03</second>
 </line>
 
-<line number='08a'
+<line number='08'
  color='cyan'>
 <type>subt0</type>
 <format>#####0</format>
@@ -123,7 +94,7 @@
 <subtrahend>line07</subtrahend>
 </line>
 
-<line number='11a'
+<line number='11'
  color='cyan'>
 <type>subt0</type>
 <format>#####0</format>
@@ -137,94 +108,5 @@
 <format>#####0</format>
 <minuend>line09</minuend>
 <subtrahend>line12</subtrahend>
-</line>
-
-<line number='01'
- color='purple'>
-<type>subtr</type>
-<format>#####0</format>
-<minuend>line10402122</minuend>
-<subtrahend>line10402114</subtrahend>
-</line>
-
-<line number='05'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
-<value1>VALUOFline05a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='06'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
-<value1>VALUOFline06a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='07'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
-<value1>VALUOFline07a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='08'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line07 &lt; 0</testvalue>
-<value1>VALUOFline08a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='09'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line015 &lt; 0</testvalue>
-<value1>VALUOFline09a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='10'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
-<value1>VALUOFline10a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='11'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
-<value1>VALUOFline11a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='12'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
-<value1>VALUOFline12a</value1>
-<value2>WHEN02</value2>
-</line>
-
-<line number='13'
- color='red'>
-<type>cnum</type>
-<format>CHOOS1</format>
-<testvalue>WHEN01$SchedD2021-Copy01-line15 &lt; 0</testvalue>
-<value1>VALUOFline13a</value1>
-<value2>WHEN02</value2>
 </line>
 </Form>

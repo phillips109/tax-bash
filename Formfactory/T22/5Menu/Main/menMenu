@@ -104,7 +104,7 @@ choosePdf(){
     SSA_1099)           showsPdf ssa-1099-1040;;
     SST)                showsPdf sst;;
     Wks)                showsPdf f1040;;
-    CapLossCarryWks)    showsPdf f1040;;
+    CLCWkst)            showsPdf clcWkst;;
     RG28Wks)            showsPdf f1040;;
     UG1250)             showsPdf f1040;;
 
@@ -118,181 +118,49 @@ showJpg(){
     qpdfview ../../1Pdf2Jpg/Jpg/$file &
     }
 
-#importText(){
-#    while true;
-#    clear	  
-#    do
-#	echo "  If ../../Calc/Edit/$1.edit is available,"
-#	echo "  1) Import ../../Calc/Edit/$1.edit to ../Text/$1.txt"
-#	echo "  and use it as is."
-#	echo "  Otherwise,"
-#	echo "  2) Import ../../2Sequence/Text/$1.txt to ../Text/$1.txt"
-#	echo "  and put an x in front of all non user entry lines."
-#	echo "  4) Create ../Txt/$1-Copy00.dlins1 from ../../4Calc/Dat"
-#	echo 
-#	echo "  q) Return to previous menu"
-	
-#  echo "Please enter the number or letter(s) of your choice then press return."
-#  read menu_choice
-
-#    case "$menu_choice" in
-    
-#	1)  copyCalc $1;;
-#	2)  copySeq $1;;
-#	3)  copyLayout $1;;
-#	4)  copyCalc2 $1;;
-#	q)  break;;
-#      *)  echo "Sorry, choice not recognized."
-#    esac
-#  done  
-#}
-
-
-#copyCalc(){
-#    cp ../../4Calc/Edit/$1.edit ../Text/$1.txt
-#}
-
-
-#copySeq(){
-#    cp ../../2Sequence/Text/$1.txt ../Text/$1.txt
-#}
-
-#editText(){
-#    emacs ../Text/$1.txt
-#}
-
-#showEntriesOnly(){
-#    echo $1
-#    awk -f ../Awk/showEntriesOnly.awk ../Text/$1.txt > ../Entries/$1.ent
-#    }
-
-#editEntries(){
-#    emacs ../Entries/$1.ent
-#}
-
-#chooseMenu(){
-#    while true;
-#      do
-#	  clear
-#	  echo
-#	  echo "1) Choose Data Menu"
-#	  echo "2) Choose Text Menu"
-#	  echo
-#	  echo "q) Return to previous menu."
-
-#	  read menu_choice
-
-#	  case "$menu_choice" in
-
-#	  1) dataMenu $1;;
-#	  2) textMenu $1;;
-#	  q) break;;
-#	  *) echo "Sorry, choice not recognized."
-
-#	  esac
-#      done	  
-#    }
-
-createtlins2(){
-    if [ -f ../Txt/$1_Copy00.tlins2 ]
-    then
-	echo "../Txt/$1_Copy00.tlins2 exists."
-    else
-	touch ../Txt/$1_Copy00.tlins2
-	echo "../Txt/$1_Copy00.tlins2 has been touched."
-    fi	
-    }
-
-createdlins2(){
-    if [ -f ../Txt/$1_Copy00.dlins2 ]
-    then
-	echo "../Txt/$1_Copy00.dlins2 exists."
-    else
-	touch ../Txt/$1_Copy00.dlins2
-	echo "../Txt/$1_Copy00.dlins2 has been touched."
-    fi	
-    }
-
-createtlins1(){
-    awk -f ../Awk/selecttlins.awk ../../4Calc/Dat/$1_Copy00.dat > ../Txt/$1_Copy00.tlins1
-    
-    }
-
-createdlins1(){
-    awk -f ../Awk/selectdlins.awk ../../4Calc/Dat/$1_Copy00.dat > ../Txt/$1_Copy00.dlins1
-    
-    }
-
-createtDiff(){
-    diff ../Txt/$1_Copy00.tlins2 ../Txt/$1_Copy00.tlins1 > ../Txt/1vs2.diff
-    }
-
-createdDiff(){
-    diff ../Txt/$1_Copy00.dlins2 ../Txt/$1_Copy00.dlins1 > ../Txt/1vs2.diff
-    }
-
-editDiff(){
-    emacs ../Txt/1vs2.diff
+importText(){
+	if ( -f ../../4Calc/Edit/$1.edit )
+	   then
+		cp ../../4Calc/Edit/$1.txt ../Text/$1.txt
+	elif ( -f ../../2Sequence/Text/$1.txt )
+	     then
+		cp ../../2Sequence/Edit/$1.txt ../Text/$1.txt
+	else
+		echo "../../2Sequence/Text/$.txt doesn't exist."
+		echo "Cannot proceed."
 }
 
-patchtlins2(){
-    patch ../Txt/$1_Copy00.tlins2 ../Txt/1vs2.diff
+editText(){
+    emacs ../Text/$1.txt
 }
 
-patchdlins2(){
-    patch ../Txt/$1_Copy00.dlins2 ../Txt/1vs2.diff
-}
-
-backuptlins3(){
-    cp ../Txt/$1_Copy00.tlins3 ../Txt/$1_Copy00.tlins3.bkup
-}
-
-backupdlins3(){
-    cp ../Txt/$1_Copy00.dlins3 ../Txt/$1_Copy00.dlins3.bkup
-}
-
-cptlins2to3(){
-    cp ../Txt/$1_Copy00.tlins2 ../Txt/$1_Copy00.tlins3
+showEntriesOnly(){
+    echo $1
+    awk -f ../Awk/showEntriesOnly.awk ../Text/$1.txt > ../Entries/$1.ent
     }
 
-cpdlins2to3(){
-    cp ../Txt/$1_Copy00.dlins2 ../Txt/$1_Copy00.dlins3
-    }
-
-addtEntries(){
-    emacs ../Txt/$1_Copy00.tlins3 &
-    emacs ../Txt/$1_Copy00.tlins3.bkup &
+editEntries(){
+    emacs ../Entries/$1.ent
 }
 
-adddEntries(){
-    emacs ../Txt/$1_Copy00.dlins3 &
-    emacs ../Txt/$1_Copy00.dlins3.bkup &
-}
 
 rmEmacsBkups(){
     rm ../Txt/*~	
 }
 
-combinetdlins3(){
-    sed -f ../Sed/rmFirstLine.sed ../Txt/$1_Copy00.dlins3 > ../Txt/$1_Copy00.dlins3.minus	
-    cat ../Txt/$1_Copy00.tlins3 ../Txt/$1_Copy00.dlins3.minus > ../Txt/$1.alins	
-}
 
-makeMenuFile2(){
-    awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Txt/$1.alins > ../Menus/$1.data.men
-}
+$makeMenuFile2(){
+#   awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Txt/$1.alins > ../Menus/$1.data.men
+#}
 
-editDataMenu(){
-    emacs ../Menus/$1.data.men
+
+makeMenuFile(){
+    awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Entries/$1.ent > ../Menus/$1.men
     }
 
-#makeMenuFile(){
-#    awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Entries/$1.ent > ../Menus/$1.men
-#    }
-
-#editMenu(){
-#    emacs ../Menus/$1.men
-#}
+editMenu(){
+    emacs ../Menus/$1.men
+}
     
 catMenus(){
 #This combines all menu files into one ../Files/all
@@ -303,10 +171,7 @@ catMenus(){
 
 createData(){
     rm ../Data/$1*.xml
-#
-    cat ../Txt/$1_Copy00.tlins3 ../Txt/$1_Copy00.dlins3 > ../Txt/$1_Copy00.alins
-    awk -f ../Awk/txt2xml.awk form=$1 ../Txt/$1_Copy00.alins > ../Templates/$1.tpl
-#    awk -f ../Awk/txt2xml.awk form=$1 ../Text/$1.txt > ../Templates/$1.tpl
+    awk -f ../Awk/txt2xml.awk form=$1 ../Text/$1.txt > ../Templates/$1.tpl
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Templates/$1.tpl -xsl ../Make/makeDataFile.xsl -out ../Out/$1_Copy00.xml -PARAM form $1
     }
 
@@ -326,39 +191,16 @@ set_menu_choices(){
 	echo " This menu is to produce a menu for the entry of data."
 	echo " It also produces the data files in which the data is stored."
 	echo
-	echo "  0) Show image of the form"
-	echo "  1) If needed create ../Txt/$1_Copy00.tlins2."
-	echo "  2) Create ../Txt/$1_Copy00.tlins1"
-	echo "  3) Create diff file 1vs2.diff between .tlins1 and .tlins2"
-	echo "  4) Emacs 1vs2.diff"
-	echo "     If 1vs2.diff is blank (empty), STOP or GOTO STEP 10"
-	echo "     Else CONTINUE with 5)"
-	echo "  5) Patch .tlins2 with 1vs2.diff"
-	echo "  6) Backup .tlins3"
-	echo "  7) Copy ./tlins2 to .tlins3"
-	echo "  8) Add menuEntrys to .tlins3 with help from .tlins3.bkup"
-	echo "  9) Backup .tlins3"
-	echo " 10) Remove *~ files from ../Txt"
-	echo
-	echo " 11) If needed create ../Txt/$1_Copy00.dlins2."
-	echo " 12) Create ../Txt/$1_Copy00.dlins1"
-	echo " 13) Create diff file 1vs2.diff between .lins1 and .lins2"
-	echo " 14) Emacs 1vs2.diff"
-	echo "     If 1vs2.diff is blank (empty), STOP"
-	echo "     Else CONTINUE with 14)"
-	echo " 15) Patch .dlins2 with 1vs2.diff"
-	echo " 16) Backup .dlins3"
-	echo " 17) Copy ./dlins2 to .dlins3"
-	echo " 18) Add menuEntrys to .dlins3 with help from .dlins3.bkup"
-	echo " 19) Backup .dlins3"
-	echo " 20) Remove *~ files from ../Txt"
-	echo
-	echo " 21) Combine .tlins3 and .dlins3 into .alins"
-	echo " 22) Make ../Menus/$1.data.men"
-	echo " 23) Edit ../Menus/$1.data.men"
-	echo " 24) Combine all menus into ../Files/allMenus"
-	echo " 25) Make data files"
-	echo " 26) Export data files to ../../7App/Data"
+	echo "  1) Show image of the form"
+	echo "  2) Import text from ../4Calc or else ../2Sequence
+	echo "  3) Edit ../Text/$1.txt to see if correct
+	echo "  4) Remove all but user entry lines from ../Text/$1.txt
+	echo "  5) Check ../Entries/$1.ent to see if correct
+	echo "  6) Make ../Menus/$1.data.men"
+	echo "  7) Edit ../Menus/$1.data.men"
+	echo "  8) Combine all menus into ../Files/allMenus"
+	echo "  9) Make data files"
+	echo " 10) Export data files to ../../7App/Data"
 	echo
 	echo "  q) Quit"
 	echo
@@ -368,35 +210,16 @@ set_menu_choices(){
 
 	case "$menu_choice" in
 
-	    0)  choosePdf $1;; 
-	    1)  createtlins2 $1;;
-	    2)  createtlins1 $1;;
-	    3)  createtDiff $1;;
-	    4)  editDiff $1;;
-	    5)  patchtlins2 $1;;
-	    6)  backuptlins3 $1;;
-	    7)  cptlins2to3 $1;;
-	    8)  addtEntries $1;;
-	    9)  backuptlins3 $1;;
-	   10)  rmEmacsBkups;; 
-
-	   11)  createdlins2 $1;;
-	   12)  createdlins1 $1;;
-	   13)  createdDiff $1;;
-	   14)  editDiff $1;;
-	   15)  patchdlins2 $1;;
-	   16)  backupdlins3 $1;;
-	   17)  cpdlins2to3 $1;;
-	   18)  adddEntries $1;;
-	   19)  backupdlins3 $1;;
-	   20)  rmEmacsBkups;;
-
-	   21)  combinetdlins3 $1;;
-	   22)  makeMenuFile2 $1;;
-	   23)  editDataMenu $1;;
-	   24)  catMenus $1;;
-	   25)  createData $1;;
-	   26)  exportData $1;;
+	    1)  choosePdf $1;; 
+	    2)  importText $1;;
+	    3)  editText $1;;
+	    4)  showEntriesOnly $1;;
+	    5)  editEntries $1;;
+	    6)  makeMenuFile $1;;
+	    7)  editMenu $1;;
+	    8)  catMenus $1;;
+	    9)  createData $1;;
+	   10)  exportData $1;;
 
 	    q)  exit;;
 	    *)  echo "Sorry, choice not recognized."
@@ -407,47 +230,6 @@ set_menu_choices(){
 	    
     }
 
-#set_menu_choices() {
-#while true;
-#  do     
-#  clear
-#  echo
-#  echo "This menu is for Developers writing the menus of a form."
-#  echo
-#  echo "   1)  Show the image of the form."
-#  echo "   2)  Import to ../Text/$1.txt"
-#  echo "   3)  Edit ../Text/$1.txt"
-#  echo "   4)  Remove all but entry lines."
-#  echo "   2)  Choose text or data"
-#  echo "   5)  add text to entry lines in ../Entries/$1.ent"
-#  echo "   6)  Make menu ../Menus/$1.men"
-#  echo "   7)  Edit ../Menus/$1.men"
-#  echo "   8)  Combine all menus into one file "
-#  echo "   9)  Make data files"
-#  echo "  10)  Export data files to ../../7App/Data"  
-#  echo
-#  echo "   q) Quit"
- 
-#  echo "Please enter the number or letter(s) of your choice then press return."
-#  read menu_choice
-
-#    case "$menu_choice" in
-    
-#	1)  choosePdf $1;;
-#	2)  chooseMenu $1;;
-#	3)  editText $1;;
-#	4)  showEntriesOnly $1;;
-#	5)  editEntries $1;;
-#	6)  makeMenuFile $1 $2;;
-#	7)  editMenu $1 $2;;
-#	8)  catMenus;;
-#	9)  createData $1;;
-#       10)  exportData $1;;
-#	q)  exit;;
-#     *)  echo "Sorry, choice not recognized."
-#    esac
-#  done  
-#}
 
 create_new_copy() {
     while true;
@@ -799,7 +581,7 @@ do
       ssa)   set_menu_choices SSA_1099          01;;
       sst)   set_menu_choices SST               01;;
       wks)   set_menu_choices Wks               01;;
-      cap)   set_menu_choices CapLossCarryWks   01;;
+      cap)   set_menu_choices CLCWkst           01;;
       rg28)  set_menu_choices RG28Wks           01;;
       1250)  set_menu_choices UG1250            01;;
       q)     break;;

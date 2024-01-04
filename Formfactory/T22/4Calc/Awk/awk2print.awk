@@ -141,10 +141,10 @@ BEGIN {
 							      
 /^dPull/ {
         print ""
-	print "<xsl:variable name=\""form"-Copy00-line"$4$2"\">"
+	print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
 	print "<xsl:choose>"
-        print "<xsl:when test=\"document('../../"$4"/Output/"$5"_Copy"$6".xml')\">"
-	print "<xsl:value-of select=\"document('../../"$4"/Output/"$5"_Copy"$6".xml')//copy"$6 $7"\"/>"
+        print "<xsl:when test=\"document('../../../"$4"/Output/"$5"_Copy"$6".xml')\">"
+	print "<xsl:value-of select=\"document('../../../"$4"/Output/"$5"_Copy"$6".xml')//copy"$6 $7"\"/>"
         print "</xsl:when>"
 	print "<xsl:otherwise>"
         print "<xsl:value-of select=\"0\"/>"

@@ -106,12 +106,12 @@ importJpg(){
     fi
     }
 
-importText(){
-    cp ../../2Sequence/Text/$1.text ../Text/$1.txt
+importTxt(){
+    cp ../../2Sequence/Txt/$1.txt ../Txt/$1.txt
 }
 
-editText(){
-    emacs ../Text/$1.txt
+editTxt(){
+    emacs ../Txt/$1.txt
 }
     
 
@@ -122,7 +122,7 @@ changeOrder(){
     #sed -f ../Sed/pull2lin.sed ../Text/$1.txt1 > ../Text/$1.txt2
     #This puts in a field to designate the column of each line:
     #awk -f ../Awk/chOrder.awk ../Text/$1.txt2 > ../Columns/$1.col
-     awk -f ../Awk/chOrder.awk ../Text/$1.txt > ../Columns/$1.col
+     awk -f ../Awk/chOrder.awk ../Txt/$1.txt > ../Columns/$1.col
     #These lines remove the intermediate files:
     #rm ../Text/$1.txt1
     #rm ../Text/$1.txt2
@@ -380,8 +380,8 @@ while true;
       echo "This menu is for Developers writing the layout of a form."
   echo "    0) Show Pdf."    
   echo "   1a) Import ../../1pdf2jpg/Jpg/f*.jpg ../Jpg"
-  echo "   1b) Import ../../2Sequence/Text/$1.text to ../Text"
-  echo "   1c) Check that ../Text/$1.text is correct"
+  echo "   1b) Import ../../2Sequence/Txt/$1.txt to ../Txt"
+  echo "   1c) Check that ../Txt/$1.txt is correct"
   echo "   1d) Set up a field to designate column"
   echo "   1e) Enter a column name for each field"
   echo "   1f) Make a backup copy with columns designated."
@@ -422,8 +422,8 @@ while true;
 
       0)  Pdfshow $1;;
      1a)  importJpg $1;;
-     1b)  importText $1;;
-     1c)  editText $1;;
+     1b)  importTxt $1;;
+     1c)  editTxt $1;;
      1d)  changeOrder $1;;
      1e)  editColumns $1;;
      1f)  bkupColumns $1;;

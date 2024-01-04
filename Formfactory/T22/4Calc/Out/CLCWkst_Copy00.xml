@@ -22,16 +22,6 @@ line11
 
 
 
-const
-#####0
--1
-
-
-
-
-
-
-
 
 
 
@@ -69,84 +59,5 @@ subt0
 #####0
 line09
 line12
-
-
-
-subtr
-#####0
-line10402122
-line10402114
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline05a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline06a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline07a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline08a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line015 &lt; 0
-VALUOFline09a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline10a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline11a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline12a
-WHEN02
-
-
-
-cnum
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline13a
-WHEN02
 
 </Form>

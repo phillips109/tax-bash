@@ -18,9 +18,9 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 
 xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
-addit   	!03      	!#####0  	!line01        	!line02        	!        	!
-addit   	!07      	!#####0  	!line04        	!line06        	!        	!
-addit   	!12      	!#####0  	!line10        	!line11        	!        	!
+addit   	!03      	!#####0  	!        	!        	!        	!
+addit   	!07      	!#####0  	!        	!        	!        	!
+addit   	!12      	!#####0  	!        	!        	!        	!
 
 xdlin   	!2name   	!3format 	!4dummy              
 dlin    	!01      	!#####0  	!                    	!
@@ -30,11 +30,18 @@ dlin    	!06      	!#####0  	!                    	!
 dlin    	!09      	!#####0  	!                    	!
 dlin    	!10      	!#####0  	!                    	!
 
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!01      	!#####0  	!        	!        	!        	!
+dPull   	!02      	!#####0  	!        	!        	!        	!
+dPull   	!05      	!#####0  	!        	!        	!        	!
+dPull   	!06      	!#####0  	!        	!        	!        	!
+dPull   	!09      	!#####0  	!        	!        	!        	!
+dPull   	!10      	!#####0  	!        	!        	!        	!
+
 xsmOf   	!2name   	!3format 	!4first  	!5second 	!
-smOf    	!04      	!#####0  	!line02        	!line03        	!
+smOf    	!04      	!#####0  	!        	!        	!
 
 xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend	!
-subt0   	!08      	!#####0  	!line05        	!line07        	!
-subt0   	!11      	!#####0  	!line04        	!line05        	!
-subt0   	!13      	!#####0  	!line09        	!line12        	!
-
+subt0   	!08      	!#####0  	!        	!        	!
+subt0   	!11      	!#####0  	!        	!        	!
+subt0   	!13      	!#####0  	!        	!        	!

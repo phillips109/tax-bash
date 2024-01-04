@@ -8,10 +8,17 @@ dlin  	!02    	!002    	!
 dlin  	!05    	!005    	!                              
 dlin  	!06    	!006    	!                              
 dlin  	!09    	!009    	!                              
-dlin  	!10    	!010    	!                              
+dlin  	!10    	!010    	!
+xdPull	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dPull 	!01    	!001    	!            	!            	!      	!
+dPull 	!02    	!002    	!                              	!            	!      	!
+dPull 	!05    	!005    	!                              	!            	!      	!
+dPull 	!06    	!006    	!                              	!            	!      	!
+dPull 	!09    	!009    	!                              	!            	!      	!
+dPull 	!10    	!010    	!            	!            	!      	!
 xsmOf 	!2name 	!3format	!4first      	!5second
-smOf  	!04    	!004    	!                              	!
+smOf  	!04    	!004    	!            	!
 xsubt0	!2name 	!3format	!4minuend    	!5subtrahend
-subt0 	!08    	!008    	!                              	!
-subt0 	!11    	!011    	!                              	!
-subt0 	!13    	!013    	!                              	!
+subt0 	!08    	!008    	!            	!
+subt0 	!11    	!011    	!            	!
+subt0 	!13    	!013    	!            	!

@@ -89,15 +89,15 @@ showForm(){
 
 importTxt(){
      echo $1
-#    cp ../../2Sequence/Text/$1.text ../Text/$1.txt
+#    cp ../../2Sequence/Txt/$1.txt ../Txt/$1.txt
     }
 
 cptxt2edit(){
-   cp ../Text/$1.txt ../Edit/$1.edit
+   cp ../Txt/$1.txt ../Edit/$1.edit
 }
      
 
-editTxt(){
+editEdit(){
     emacs ../Edit/$1.edit
 }
 
@@ -344,8 +344,8 @@ while true;
   echo
   echo "This menu is for Developers writing the math of a form."
   echo "  1a)  Show the image of the form you will be developing."
-  echo "  1b)  Import ../../2Sequence/Text/"$1".text to ../Text/"$1".txt"
-  echo "  1c)  Copy ../Text/"$1".txt to ../Edit/"$1".edit"
+  echo "  1b)  Import ../../2Sequence/Txt/"$1".txt to ../Txt/"$1".txt"
+  echo "  1c)  Copy ../Txt/"$1".txt to ../Edit/"$1".edit"
   echo "  1d)  Edit ../Edit/"$1".edit"
   echo "  1e)  sort ../Edit/"$1".edit to ../Sort/"$1".srt"
   echo "  1f)  view ../Sort/"$1".srt"
@@ -353,7 +353,6 @@ while true;
   echo "  1h)  cp ../PreDat/"$1"_Copy$2.pre to ../EdPre/$1_Copy$2.edpre"
   echo "  1i)  Edit ../EdPre/$1_Copy$2.edpre"
   echo "  1j)  rmEndSpaceField1 of ../EdPre/"$1"_Copy"$2".edpre > ../Dat/"$1"_Copy"$2".dat"
-#  echo "  1j)  cp ../EndPre/$1_Copy$2.endpre to ../Dat/$1_Copy$2.dat"
   echo "  1k)  convert FS to newline and RS to blank line"
   echo "  1l)  rmEndSpaceField2 of ../Dat/"$1"_Copy"$2".dat"
   echo "  1m)  edit cnum and ctext in ../Dat/"$1"_Copy"$2".dat"
@@ -395,14 +394,13 @@ while true;
      1a)  Pdfshow $1;;	
      1b)  importTxt $1;;
      1c)  cptxt2edit $1;;
-     1d)  editTxt $1;;
+     1d)  editEdit $1;;
      1e)  sortSeq $1;;
      1f)  editSort $1;;
      1g)  makePreDat $1 $2;;
      1h)  cpPre2EdPre $1 $2;;
      1i)  editEdPre $1 $2;;
      1j)  rmEndSpaceField1 $1 $2;;
-#     1j)  cpEdPre2Dat $1 $2;;
      1k)  convertFS2nl $1 $2;;
      1l)  rmEndSpaceField2 $1 $2;;
      1m)  editDat $1 $2;;

@@ -1,3 +1,4 @@
+type	!name	!seq	!menuEntry                     
 tlin	!CFNMI	!001	!                              
 tlin	!CLN	!002	!                              
 tlin	!CSSNoF	!003	!                              

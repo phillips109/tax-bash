@@ -1,3 +1,4 @@
+type	!name	!seq	!menuEntry                     
 tlin	!single	!001	!                              
 tlin	!MFJ	!002	!                              
 tlin	!MFS	!003	!                              

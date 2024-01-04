@@ -1,3 +1,4 @@
+type	!name	!seq	!menuEntry
 tlin	!void	!001	!
 tlin	!corr	!002	!
 tlin	!pname	!003	!                              

@@ -2,27 +2,27 @@
 <taxlines>
 <taxline color="red">
 <linename>CLCWkst-Copy00-line01</linename>
-<override/>
+<override>0</override>
 </taxline>
 <taxline color="red">
 <linename>CLCWkst-Copy00-line02</linename>
-<override/>
+<override>0</override>
 </taxline>
 <taxline color="red">
-<linename>CLCWkst-Copy00-line05a</linename>
-<override/>
+<linename>CLCWkst-Copy00-line05</linename>
+<override>0</override>
 </taxline>
 <taxline color="red">
 <linename>CLCWkst-Copy00-line06</linename>
-<override/>
+<override>0</override>
 </taxline>
 <taxline color="red">
-<linename>CLCWkst-Copy00-line09a</linename>
-<override/>
+<linename>CLCWkst-Copy00-line09</linename>
+<override>0</override>
 </taxline>
 <taxline color="red">
-<linename>CLCWkst-Copy00-line10a</linename>
-<override/>
+<linename>CLCWkst-Copy00-line10</linename>
+<override>0</override>
 </taxline>
 </taxlines>
 </IRSForms>

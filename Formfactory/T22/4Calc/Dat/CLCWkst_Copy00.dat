@@ -22,7 +22,7 @@ You should have received a copy of the GNU General Public License
 
 along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
-xaddit
+xsum
 2name
 3format
 4augend
@@ -36,82 +36,107 @@ line01
 line02
 
 addit
-07a
+07
 #####0
 line04
 line06
 
 addit
-12a
+12
 #####0
 line10
 line11
-
-x***************************************
-
-const
-min1
-#####0
--1
-
-x**********************************************
 
 xdlin
 2name
 3format
 4dummy
+5
 
 dlin
 01
 #####0
+0
 
 dlin
 02
 #####0
+0
 
 dlin
-05a
+05
 #####0
+0
 
 dlin
 06
 #####0
+0
 
 dlin
-09a
+09
 #####0
+0
 
 dlin
-10a
+10
 #####0
+0
 
-x*******************************************
 xdPull
 2name
 3format
 4year
 5form
 6copy
-7line
 
-dPull
-10402111
+xdPull
+01
 #####0
 T21
-Form1040(2021)
+Form1040
 01
-line11
+line15
 
-dPull
-10402114
+xdPull
+02
 #####0
 T21
-Form1040(2021)
+SchedD
 01
-line14
+line21
 
+xdPull
+05
+#####0
+T21
+SchedD
+01
+line07
 
-x***************************************
+xdPull
+06
+#####0
+T21
+SchedD
+01
+line15
+
+xdPull
+09
+#####0
+T21
+SchedD
+01
+line21
+
+xdPull
+10
+#####0
+T21
+SchedD
+01
+line07
 
 xsmOf
 2name
@@ -125,8 +150,6 @@ smOf
 line02
 line03
 
-x**************************************
-
 xsubt0
 2name
 3format
@@ -134,13 +157,13 @@ xsubt0
 5subtrahend
 
 subt0
-08a
+08
 #####0
 line05
 line07
 
 subt0
-11a
+11
 #####0
 line04
 line05
@@ -151,116 +174,3 @@ subt0
 line09
 line12
 
-x********************************
-xsubtr
-2name
-3format
-4minuend
-5subtrahend
-
-subtr
-01
-#####0
-line10402122
-line10402114
-
-x*******************************
-
-cnum
-05
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline05a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-06
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline06a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-07
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline07a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-08
-CHOOS1
-WHEN01$SchedD2021-Copy01-line07 &lt; 0
-VALUOFline08a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-09
-CHOOS1
-WHEN01$SchedD2021-Copy01-line015 &lt; 0
-VALUOFline09a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-10
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline10a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-11
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline11a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-12
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline12a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
-
-cnum
-13
-CHOOS1
-WHEN01$SchedD2021-Copy01-line15 &lt; 0
-VALUOFline13a
-WHEN02
-OTHER1
-VALUOF0
-OTHER2
-CHOOS2
