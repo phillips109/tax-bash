@@ -8,13 +8,16 @@
    - Forms
    - Schedules
    - Worksheets.
+ 
+     
 This is for 2 reasons
    1. To reduce the number of choices on one menu.
    2. The source of the .pdf differs.
 To be exact:   
-   1. The .pdf of Forms and Schedules are downloaded from the IRS website.
-   2. The .pdf of Worksheets is taken from the .pdf of the instructions.
-   3. The .pdf of one form, bkg, is created from scratch.
+   - The .pdf of Forms and Schedules are downloaded from the IRS website.
+   - The .pdf of Worksheets is taken from the .pdf of the instructions.
+   - The .pdf of one form, bkg, is created from scratch.
+     
 The menus guide you through the process.
 
 
@@ -24,8 +27,10 @@ The menus guide you through the process.
   - You will be presented with the main menu.
   - The main menu allows you to choose the type of form you wish to create.
 
-* IF YOU ENTER f you will be presented with a long, but not all inclusive, list of forms.
-Enter one, such as 1099div.
+1. IF YOU ENTER "f"
+ 
+  you will be presented with a long, but not all inclusive, list of forms.
+  Enter one, such as 1099div.
 
 * You will be presented with a new menu which will guide you through the steps you need to take.
 * Steps to be taken using the menu 
