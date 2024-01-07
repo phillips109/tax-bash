@@ -31,7 +31,7 @@ This is for 2 reasons
      
 The menus guide you through the process.
 
-1. IF YOU ENTER "f"
+### IF YOU ENTER "f"
    You will be presented with a long, but not all inclusive, list of forms.
    Enter one, such as 1099div.
 
