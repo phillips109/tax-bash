@@ -35,24 +35,33 @@ The menus guide you through the process.
    You will be presented with a long, but not all inclusive, list of forms.
    Enter one, such as 1099div.
 
-   You will be presented with a new menu which will guide you through the steps you need to take.
-* 
-* Steps to be taken using the menu 
+   You will be presented with a new menu whose choices represent the steps you need to take.
+   Select the options in numerical order.
+   
 1. will take you to the IRS website where you can download the .pdf file of the form you seek.
-You will have to figure out the nomenclature used by the IRS. In this case it is "form 1099div".
-Download the .pdf file of the instructions to ../Instructions.
-Download the .pdf file of the form to ../Pdf.
-2. This will show you the files in ../Pdf to show the .pdf files have been downloaded.
+   You will have to figure out the nomenclature used by the IRS. In this case it is "form 1099div".
+   Download the .pdf file of the instructions to ../Instructions.
+   Download the .pdf file of the form to ../Pdf.
+2. This will show you the files in ../Pdf that have been downloaded.
 3. This will allow you to view the .pdf file.
-4. This takes you to the website pdf2jpg.net.
-   There you have to indicate your ./pdf file at ~/Formfactory/T22/1pdf2jpg/Pdf/
+4. This takes you to the website https://safepdfkit/pdf-jpg using firefox.
+   There you have to indicate your .pdf file which is in ../Pdf
    Choose the excellent resolution.
-   Press the button to convert.
-   Download the resultant .jpg file(s) to ~/Downloads.
+   Press the button to convert your .pdf file to .jpg
+   Download the resultant .zip file to ~/Downloads.
    Close the website to return to the menu.
-5. Check that the .jpg files are in ~/Downloads.
-6. Move the ~/Downloads/*.jpg file(s) to ../Jpg (The program assumes you have no other .jpg files in ~/Downloads).
-7. Check the the files have been moved.
+5. Check that the .zip file is in ~/Downloads.
+6. unzip the .zip file. The resultant .jpg files will be in ~/Downloads/images/
+7. Check that ./jpg files are indeed in dir ~/Downloads/images
+8. mv ~/Downloads/images/*jpg to ../Jpg
+9. Check that the ./jpg files are in dir ../Jpg
+10. rm the ~/Downloads/images/*.jpg
+    This step ought to be unnecessary since we used mv in step 8.
+11. cp the ../Jpg/*.jpg to the /Jpg folders of 3Layout, 4Calc, and 7App
+12. cp the ../Pdf/*.pdf to the /Pdf folders of 2Sequence, 3Layout, 4Calc, and 7App
+13.  
+At this point consider removing the zip file from ~/Downloads.
+The program cannot do this for you since it does not know what zip files you may have in ~/Downloads.
 
 You should now have in your ../Jpg folder the .jpg file(s) that will be the background for your form.
 
@@ -61,25 +70,30 @@ You will be presented a menu exactly like that for forms.
 
 ### If "w" for worksheets
 You will see a different menu.
-1) Takes you the IRS website where you are to find and download the instructions for a form.
-2) Check that the .pdf file is now in ../Instructions.
-3) This will open the ../Instructions/$1.pdf file in Nautilus.
+1. Takes you the IRS website where you are to find and download the instructions for a form.
+2. Check that the .pdf file is now in ../Instructions.
+3. This will open the ../Instructions/$1.pdf file in Nautilus.
    The reason for this is that Nautilus has a "print to file" option.
    Find the worksheet desired by scrolling through the instructions.
    Use the next-page or previous-page options to center the page.
    Print the current page to file. If the worksheet covers more that one page, print the range of pages.
    Set the ouput page as ../Pdf/$1.pdf.
-4) Check that the file has been created.
-5) View the file in qpdfviewer.
-6) Will take you to the pdf2jpg.net website where you can convert the .pdf to .jpg
-7) Check that the .jpg file(s) have been downloaded to ~/Downloads.
-8) Move the ./jpg files to ../Jpg. The program assumes you have no other ./jpg files in ~/Downloads.
-9) Check that the ./jpg files have been moved to ../Jpg.
+4. Check that the file has been created.
+5. View the file in qpdfviewer.
+6. Will take you to the https://safepdfkit/pdf-jpg website where you can convert the .pdf to .jpg
+7. Check that the .jpg file(s) have been downloaded in a .zip file toto ~/Downloads.
+8. unzip the zip file. The resultant .jpg file(s) will be in ~/Dowonloads/images/
+9. Check that the .jpg files are in dir ../~/Downloads/images/
+10. mv ~/Downloads/images/*.jpg to ../Jpg
+11. Check that the ./jpg files have been moved to ../Jpg.
+12. 10. rm the ~/Downloads/images/*.jpg
+    This step ought to be unnecessary since we used mv in step 8.
+13. cp the ../Jpg/*.jpg to the /Jpg folders of 3Layout, 4Calc, and 7App
+14. cp the ../Pdf/*.pdf to the /Pdf folders of 2Sequence, 3Layout, 4Calc, and 7App
+  
+At this point consider removing the zip file from ~/Downloads.
+The program cannot do this for you since it does not know what zip files you may have in ~/Downloads.
 
-*THERE IS ONE FORM, bkg, that I created from scratch: The form that contains data that is common to many forms.
-The process is hard wired for this particular form.
-Steps 1 and 2 are reserved for development of a more generic approach to creating tables.
-3) Convert the input file, ../Table/bkgdata.xml to ../Fo/fBkg.fo
-4) Check that the file was created.
-5) Convert the .fo file to .pdf
-Then follow follow steps similar to 4-7 in form or schedules.
+You should now have in your ../Jpg folder the .jpg file(s) that will be the background for your worksheet.
+
+
