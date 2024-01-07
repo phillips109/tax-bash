@@ -1,38 +1,39 @@
 # First Folder: 1Pdfd2Jpg
-* ## Purpose and Goals
-* This directory 1Pdf2Jpg contains the steps to
+## Purpose and Goals
+This directory 1Pdf2Jpg contains the steps to
    1. Download the .pdf file of the form from the IRS website.
    2. Convert the ./pdf file to .jpg file(s).
       The .jpg files form the background image on which the data will be displayed.
       The Xsl program, which is the backend being used, can only work with .jpg.
+      
+## Navigation
+Your first step is to go to the Main directory.
+In Main wil be the file for your initital menu: pdf2jpg.
+Activate the menu by typing ./pdf2jpg.
+(For security reasons your working directory should not be in your PATH.)
+You will be presented with the initial menu.
 
-* Your choices are divided into
+## Initial Menu
+
+This main menu will allow you to chose the type of form you wish to create.
+* Your choices are
    - Forms
    - Schedules
    - Worksheets.
- 
-     
+    
 This is for 2 reasons
    1. To reduce the number of choices on one menu.
    2. The source of the .pdf differs.
-To be exact:   
-   - The .pdf of Forms and Schedules are downloaded from the IRS website.
-   - The .pdf of Worksheets is taken from the .pdf of the instructions.
-   - The .pdf of one form, bkg, is created from scratch.
+      To be exact:   
+        - The .pdf of Forms and Schedules are downloaded from the IRS website.
+        - The .pdf of Worksheets is taken from the .pdf of the instructions.
+        - The .pdf of one form, bkg, is created from scratch.
      
 The menus guide you through the process.
 
-
-* Your first step is to go to ./Main.
-  - In /Main will be the file to use: pdf2jpg.
-  - Type ./pdf2jpg (for security reasons your working directory should not be in PATH)
-  - You will be presented with the main menu.
-  - The main menu allows you to choose the type of form you wish to create.
-
 1. IF YOU ENTER "f"
- 
-  you will be presented with a long, but not all inclusive, list of forms.
-  Enter one, such as 1099div.
+   You will be presented with a long, but not all inclusive, list of forms.
+   Enter one, such as 1099div.
 
 * You will be presented with a new menu which will guide you through the steps you need to take.
 * Steps to be taken using the menu 
