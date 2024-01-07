@@ -1,4 +1,4 @@
-# First Folder: 1Pdfd2Jpg
+# First Folder: 1Pdf2Jpg
 ## Purpose and Goals
 This directory 1Pdf2Jpg contains the steps to
    1. Download the .pdf file of the form from the IRS website.
@@ -7,11 +7,11 @@ This directory 1Pdf2Jpg contains the steps to
       The Xsl program, which is the backend being used, can only work with .jpg.
       
 ## Navigation
-Your first step is to go to the Main directory.
-In Main wil be the file for your initital menu: pdf2jpg.
-Activate the menu by typing ./pdf2jpg.
-(For security reasons your working directory should not be in your PATH.)
-You will be presented with the initial menu.
+- Your first step is to go to the Main directory.
+- In Main wil be the file for your initital menu: pdf2jpg.
+- Activate the menu by typing ./pdf2jpg.
+- (For security reasons your working directory should not be in your PATH.)
+- You will be presented with the initial menu.
 
 ## Initial Menu
 
@@ -27,16 +27,16 @@ This is for 2 reasons
       To be exact:   
         - The .pdf of Forms and Schedules are downloaded from the IRS website.
         - The .pdf of Worksheets is taken from the .pdf of the instructions.
-        - The .pdf of one form, bkg, is created from scratch.
+      
      
 The menus guide you through the process.
 
 ### If you enter "f" for forms
-   You will be presented with a long, but not all inclusive, list of forms.
-   Enter one, such as 1099div.
+   - You will be presented with a long, but not all inclusive, list of forms.
+   - Enter one, such as 1099div.
 
-   You will be presented with a new menu whose choices represent the steps you need to take.
-   Select the options in numerical order.
+   - You will be presented with a new menu whose choices represent the steps you need to take.
+   - Select the options in numerical order.
    
 1. will take you to the IRS website where you can download the .pdf file of the form you seek.
    You will have to figure out the nomenclature used by the IRS. In this case it is "form 1099div".
@@ -59,7 +59,7 @@ The menus guide you through the process.
     This step ought to be unnecessary since we used mv in step 8.
 11. cp the ../Jpg/*.jpg to the /Jpg folders of 3Layout, 4Calc, and 7App
 12. cp the ../Pdf/*.pdf to the /Pdf folders of 2Sequence, 3Layout, 4Calc, and 7App
-13.  
+ 
 At this point consider removing the zip file from ~/Downloads.
 The program cannot do this for you since it does not know what zip files you may have in ~/Downloads.
 
