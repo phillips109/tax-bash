@@ -1,3 +1,5 @@
+# First Folder: 1Pdfd2Jpg
+* ## Purpose and Goals
 * This directory 1Pdf2Jpg contains the steps to
    1. Download the .pdf file of the form from the IRS website.
    2. Convert the ./pdf file to .jpg file(s).
