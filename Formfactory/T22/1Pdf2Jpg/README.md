@@ -31,11 +31,12 @@ This is for 2 reasons
      
 The menus guide you through the process.
 
-### IF YOU ENTER "f"
+### If you enter "f" for forms
    You will be presented with a long, but not all inclusive, list of forms.
    Enter one, such as 1099div.
 
-* You will be presented with a new menu which will guide you through the steps you need to take.
+   You will be presented with a new menu which will guide you through the steps you need to take.
+* 
 * Steps to be taken using the menu 
 1. will take you to the IRS website where you can download the .pdf file of the form you seek.
 You will have to figure out the nomenclature used by the IRS. In this case it is "form 1099div".
@@ -55,9 +56,11 @@ Download the .pdf file of the form to ../Pdf.
 
 You should now have in your ../Jpg folder the .jpg file(s) that will be the background for your form.
 
-*IF YOU ENTER s for schedules, you will be presented a menu exactly like that for forms.
+### If you enter "s" for schedules 
+You will be presented a menu exactly like that for forms.
 
-*IF YOU ENTER w for worksheets, you will see a different menu.
+### If "w" for worksheets
+You will see a different menu.
 1) Takes you the IRS website where you are to find and download the instructions for a form.
 2) Check that the .pdf file is now in ../Instructions.
 3) This will open the ../Instructions/$1.pdf file in Nautilus.
