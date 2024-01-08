@@ -68,7 +68,7 @@ You should now have in your ../Jpg folder the .jpg file(s) that will be the back
 ### If you enter "s" for schedules 
 You will be presented a menu exactly like that for forms.
 
-### If "w" for worksheets
+### If you enter "w" for worksheets
 You will see a different menu.
 1. Takes you the IRS website where you are to find and download the instructions for a form.
 2. Check that the .pdf file is now in ../Instructions.
@@ -96,4 +96,14 @@ The program cannot do this for you since it does not know what zip files you may
 
 You should now have in your ../Jpg folder the .jpg file(s) that will be the background for your worksheet.
 
+## Backgroun Form (Bkg)
+The b
+There is one form for which there was no preexisting .pdf file.
+Therefire the .pdf file hac to be created.
+In the ../Table folder are the required files to create a two-column table.
+I wrote the file bkgdata.xml to contain the dataa that will go in the left hand column.
+The file bkg.xsl creates the .fo file of the table.
+fop is used to convert the .fo file to .pdf.
+This pdf is now the background image for the form.
+The steps in the menu are
 
