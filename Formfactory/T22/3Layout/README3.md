@@ -21,8 +21,8 @@ I have chosen whitespace(spaces or tabs) followed by and exclamation point(!) as
 The above database would be written by me (or you or the program) as:
 James	   !Marsh   !Chicago !IL
 William	 !Jones   !Phoenix !AZ
-Robert	  !DeVita  !Denver  !CO
-Thomas	  !Morse   !New York!NY
+Robert	 !DeVita  !Denver  !CO
+Thomas	 !Morse   !New York!NY
 
 # The layout Folder
 
@@ -45,11 +45,18 @@ You will have to enlarge the window to accomodate the menu.
 
 You will be asked whether you wish to work on a file, a schedule, or a worksheet.
 Enter f for file, s for schedule, or w for worksheet.
+Let's assume you entered "f" for file.
 
-The next menu will ask you  to select the name of the form, schedule, or worksheet on which you wish to work.
+The next menu will ask you  to select the name of the form on which you wish to work.
 
 ## The next menu contains the steps you will persue to create the desired .2fo file.
 
+### Choice 0
+This choice opens the pdf view of the form to guide you.
+
+### Choice 1a
+The background for your form is the jpg image of the form produced in ../../1pdf2jpg.
+This choice will copy this file to your ../Jpg folder.
 
 
 ### Choice 1b
@@ -132,8 +139,7 @@ of dummy data for each line in the last field.
 This choice opens gimp.
 In gimp open the .jpg file for the first page of the form.
 This file will be found in ../Jpg
-Change the measurements from pixels to inches.
-Setting the zoom to 50% should give a reasonable image.u should open yoYur the ../Jpg/  image of the page on which you are working.
+
 Change the measurements to inches rather than pixels.
 Change the zoom to 50% or whatever is comfortable for you.
 
@@ -182,17 +188,15 @@ Simplified, it will look something like this:
 Form
   pgS                     where S means single, F means first, M means middle, and L means last.
 
-    col
+    col                   note that this column encloses all the other columns
       col
-        tlin
         tPull
-        dlin
       Endcol****
 
       col
         tlin
-        tPull
-        dlin
+        tlin
+        tlin
       Endcol****
 
       col
@@ -252,7 +256,7 @@ to tell you what is wrong, most likely you have a column
 that does not enclose a line.
 
 Lines need a name.
-Columns do not seem to need a name.
+Columns do not seem to need a name but is helpful and recommended.
 The top measurement of a column is always 0.00 inches.
 
 Secondly, at this point you should divide your form into pages.
@@ -279,6 +283,7 @@ I it is not your last page, change the xpgS and pgS to xpgM and pgM respectlully
 
 Do similarly for any additionsl pages.
 If you have any empty pages copy the empty page template into those locations.
+If you do not have and empty page at the start of your form, remove the code for the empty page.
 
 ### Choice 1o
 his choice copies the .pre file to ../Lot/FormName_Copy00.lot.reg
@@ -290,7 +295,7 @@ This choice allows you to edit ../Lot/FormName_Copy00.lot.reg.
 You have already looked it over in the .pre stage.
 
 ### Choice 1q
-This choice makes a backup file in the BKupLot directory.
+This choice makes a backup file in the BkupLot directory.
 
 ### Choice 1r
 This choice allows you one last revision in emacs.
@@ -301,22 +306,17 @@ Check that the background files are the correct form and page number.
 ### Choice 1s
 This choice makes a backup of 1r in the BKupLot directory.
 
-### Choices 2 through 8 c
+### Choices 2 through 8
 These choices onvert the template awk file to pdf, step by step.
 
 ### Choice 9
 This choice runs choices 2-8 sequentiially.
-If this fails, run the steps one by one to look for the error.
+If this fails, run the steps 2-8 one by one to look for the error.
 
 ### Choice 10
-Yhis choice opens up a sub menu that takes you through the steps to create a copy of the form that has a yellow background for data that is drawn by other forms.
+This choice opens up a sub menu that takes you through the steps to create a copy of the form that has a yellow background for data that is drawn by other forms.
 This is a hack to allow the taxpayor to link from one form to another.
 It is not yet fully implemented.
 
-## Choice 11
-This choice copieis the .2Fo file that is created to the 7App folder to become part of the Tax return.
-This choice displays the pdf view of the form to guide your work
-
-### Choice 1a
-The background for your form is the jpg image of the form produced in ../../1pdf2jpg.
-This choice will copy this file to your ../Jpg folder.
+### Choice 11
+This choice copies the .2Fo file that is created to the 7App folder to become part of the Tax return.
