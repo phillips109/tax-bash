@@ -50,18 +50,7 @@ The next menu will ask you  to select the name of the form, schedule, or workshe
 
 ## The next menu contains the steps you will persue to create the desired .2fo file.
 
-### Choice 10
-Yhis choice opens up a sub menu that takes you through the steps to create a copy of the form that has a yellow background for data that is drawn by other forms.
-This is a hack to allow the taxpayor to link from one form to another.
-It is not yet fully implemented.
 
-## Choice 11
-This choice copieis the .2Fo file that is created to the 7App folder to become part of the Tax return.
-This choice displays the pdf view of the form to guide your work
-
-### Choice 1a
-The background for your form is the jpg image of the form produced in ../../1pdf2jpg.
-This choice will copy this file to your ../Jpg folder.
 
 ### Choice 1b
 The nomenclature of the lines is determined in ../../2sequence.
@@ -319,3 +308,15 @@ These choices onvert the template awk file to pdf, step by step.
 This choice runs choices 2-8 sequentiially.
 If this fails, run the steps one by one to look for the error.
 
+### Choice 10
+Yhis choice opens up a sub menu that takes you through the steps to create a copy of the form that has a yellow background for data that is drawn by other forms.
+This is a hack to allow the taxpayor to link from one form to another.
+It is not yet fully implemented.
+
+## Choice 11
+This choice copieis the .2Fo file that is created to the 7App folder to become part of the Tax return.
+This choice displays the pdf view of the form to guide your work
+
+### Choice 1a
+The background for your form is the jpg image of the form produced in ../../1pdf2jpg.
+This choice will copy this file to your ../Jpg folder.
