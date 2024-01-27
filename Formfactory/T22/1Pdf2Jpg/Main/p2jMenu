@@ -80,12 +80,32 @@ nau(){
 
 
 
+#pdf2jpg(){
+#    firefox https://www.pdf2jpg.net
+#}
+
 pdf2jpg(){
-    firefox https://www.pdf2jpg.net
-}
+    firefox https://safepdfkit/pdf-jpg
+    }
 
 dirDownloads(){
-    dir ~/Downloads/*.jpg
+    dir ~/Downloads/*.zip
+    echo " "
+    echo "Are you ready to continue?"
+    echo "If so, press y or n."
+    read this
+    if yOrn $this
+    then
+	return
+    fi
+}
+
+unzipDownloads(){
+  ./unzipDownloads.sh
+}
+
+dirimages(){
+    dir ~/Downloads/images/*
     echo " "
     echo "Are you ready to continue?"
     echo "If so, press y or n."
@@ -97,13 +117,13 @@ dirDownloads(){
 }
 
 moveJpg(){
-    mv ~/Downloads/*.jpg ../Jpg/
+    mv ~/Downloads/images/* ../Jpg/
     }
 
 moveJpgFile(){
     echo "Enter the name of the file you wish to move."
     read file
-    mv ~/Downloads/$file.jpg ../Jpg
+    mv ~/Downloads/images/$file.jpg ../Jpg
 }
 
 dirJpg(){
@@ -119,6 +139,10 @@ dirJpg(){
     fi
     }
 
+rmimages(){
+    rm ~/Downloads/images/*
+}
+    
 removeYr(){
     for file in $(dir ../Jpg/*_20*)
     do
@@ -194,13 +218,16 @@ while true;
   echo
   echo "   1)  Download pdf view of form from IRS to ../Pdf"
   echo "   2)  dir ../Pdf"
-  echo "   3)  View the PDF."
-  echo "   4)  Convert pdf to ~/Downloads/*page*.jpg"
-  echo "   5)  dir ~/Downloads/f*.jpg"
-  echo "   6)  Move ~/Downloads/f*.jpg to ../Jpg"
-  echo "   7)  dir ../Jpg/f*.jpg"
-  echo "   8)  export ../Jpg/* to 3Layout, 4Calc, and 7App"
-  echo "   9)  export ../Pdf/* to 2Sequence, 3Layout, 4Calc, and 7App"
+  echo "   3)  View the ../.pdf file."
+  echo "   4)  Convert pdf to jpg and into ~/Downloads/.zip"
+  echo "   5)  dir ~/Downloads/*.zip"
+  echo "   6)  unzip zip file to ~/Downloads/images*.jpg"
+  echo "   7)  dir ~/Downloads/images/*"
+  echo "   8)  Move ~/Downloads/*.jpg to ../Jpg"
+  echo "   9)  dir ../Jpg/*"
+  echo "  10)  rm ~/Downloads/images/*"
+  echo "  11)  export ../Jpg/* to 3Layout, 4Calc, and 7App"
+  echo "  12)  export ../Pdf/* to 2Sequence, 3Layout, 4Calc, and 7App"
 
   echo "   q) Quit"
  
@@ -214,10 +241,13 @@ while true;
       3)  showPdf $1;;
       4)  pdf2jpg;;
       5)  dirDownloads;;
-      6)  moveJpg;;
-      7)  dirJpg;;
-      8)  exportJpg;;
-      9)  exportPdf;;
+      6)  unzipDownloads;;
+      7)  dirimages;;
+      8)  moveJpg;;
+      9)  dirJpg;;
+     10)  rmimages;;
+     11)  exportJpg;;
+     12)  exportPdf;;
       
       q)  exit;;
       *)  echo "Sorry, choice not recognized."
@@ -234,17 +264,20 @@ while true;
   echo "   1)  Download $1.pdf file from IRS to ../Instructions"
   echo "   2)  dir ../Instructions"
   echo "   3)  Open ../Instructions/$1.pdf in nautilus"
-  echo "   Maually go to page(s) containing the worksheet desired"
-  echo "   Print the page(s) to a file in the ../Pdf directory."
-  echo "   Suggested nominclature: $1.pdf"
-  echo "   4) dir ../Pdf"
-  echo "   5) view the .pdf file"
-  echo "   6)  Convert ../Pdf/$1-page-???.pdf to ../Jpg/$1-page-???.jpg"
-  echo "   7)  Check that the .jpg files are in ~/Downloads/"
-  echo "   8)  Move ~/Downloads/*.jpg to ../Jpg" 
-  echo "   9)  dir ../Jpg/*.jpg"
-  echo "  10)  Export ../Jpg/* to 3Layout, 4Calc, and 7App"
-  echo "  11)  Export ../Pdf/* to 2Sequence, 3Layout, 4Calc and 7App"
+  echo "       Maually go to page(s) containing the worksheet desired"
+  echo "       Print the page(s) to a file in the ../Pdf directory."
+  echo "       Suggested nominclature: $1.pdf"
+  echo "   4)  dir ../Pdf"
+  echo "   5)  view the .pdf file"
+  echo "   6)  Convert .pdf tp ~/Downloads/*.zip"
+  echo "   7)  Check that the .zip files are in ~/Downloads/"
+  echo "   8)  unzip zip files to ~/Doownloads/images"
+  echo "   9)  Check that .jpg files are in ~/Doowonloads/images/"
+  echo "  10)  Move ~/Downloads/images/*.jpg to ../Jpg" 
+  echo "  11)  dir ../Jpg/*.jpg"
+  echo "  12)  rm ~/Downloads/images/*"
+  echo "  13)  Export ../Jpg/* to 3Layout, 4Calc, and 7App"
+  echo "  14)  Export ../Pdf/* to 2Sequence, 3Layout, 4Calc and 7App"
   echo
   echo "   q) Quit"
  
@@ -260,10 +293,13 @@ while true;
       5)  showPdf;;
       6)  pdf2jpg;;
       7)  dirDownloads;;
-      8)  moveJpg;;	  
-      9)  dirJpg;;
-     10)  exportJpg;;
-     11)  exportPdf;;
+      8)  unzipDownloads;;
+      9)  dirimages;;
+     10)  moveJpg;;	  
+     11)  dirJpg;;
+     12)  rmimages;; 
+     13)  exportJpg;;
+     14)  exportPdf;;
       
       q)  exit;;
       *)  echo "Sorry, choice not recognized."
@@ -284,12 +320,15 @@ while true;
   echo "   5)  Convert ../Fo/fBkg.fo to ../Pdf/fBkg.pdf."
   echo "   6)  dir ../Pdf"
   echo "   7)  view ../Pdf/fBkg.pdf" 
-  echo "   8)  Convert ../Pdf/fBkg.pdf to ../Downloads/fBkg*.jpg page(s)"
-  echo "   9)  dir ~/Downloads/f*.jpg"
-  echo "  10)  move ~/Downloads/f*.jpg to ../Jpg"
-  echo "  11)  dir ../Jpg"
-  echo "  12)  export ../Jpg/* to 3Layout, 4Calc, and 7App"
-  echo "  13)  export ../Pdf/* to 2Sequence, 3Layout, 4Calc, and 7App"
+  echo "   8)  Convert ../Pdf/fBkg.pdf to ../Downloads/*.zip"
+  echo "   9)  dir ~/Downloads/*.zip"
+  echo "  10)  unzip ~/Downloads/*.zip to ~/Downloads/images/*.jpg"
+  echo "  11)  dir ~/Downloads/images/*jpg" 
+  echo "  12)  move ~/Downloads/images/*.jpg to ../Jpg"
+  echo "  13)  dir ../Jpg"
+  echo "  14)  rm ~/Downloads/images/*jpg"
+  echo "  15)  export ../Jpg/* to 3Layout, 4Calc, and 7App"
+  echo "  16)  export ../Pdf/* to 2Sequence, 3Layout, 4Calc, and 7App"
 
   echo "   q) Quit"
  
@@ -307,10 +346,13 @@ while true;
       7)  qpdfview ../Pdf/fBkg.pdf;;
       8)  pdf2jpg;;
       9)  dirDownloads;;
-     10)  moveJpg;;
-     11)  dirJpg;;
-     12)  exportJpg;;
-     13)  exportPdf;;
+     10)  unzipDownloads;;
+     11)  dirimages;;
+     12)  moveJpg;;
+     13)  dirJpg;;
+     14)  rmimages;;
+     15)  exportJpg;;
+     16)  exportPdf;;
       
       q)  exit;;
       *)  echo "Sorry, choice not recognized."
@@ -494,7 +536,7 @@ do
       1099r)     set_menu_choices  f1099r;;	
       1099g)     set_menu_choices  f1099g;;
       w2)        set_menu_choices  W2-CopyA;;	
-      bkg)       set_tableMenu_choices  bkg;;      
+#      bkg)       set_tableMenu_choices  bkg;; This choice removed since this one form is created from scratch. See  set_tableMenu_choices above.    
       q)         break;;
     esac
 done
