@@ -1,0 +1,394 @@
+Copyright(C) 2019 Phillips Wedemeyer
+                              
+This file is part of a program called Tax-bash
+                              
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+                              
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+                              
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+                              
+                              
+For direction on how to separate pages see ../notes.
+
+                              
+Form
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgS    
+                              
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!01    	!0.00  	!right 	!6.63  	!7.93  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!3.80  	!100               	!            	!      	!      
+dlin  	!02    	!3.97  	!200               	!            	!      	!      
+dlin  	!03    	!4.14  	!300               	!            	!      	!      
+dlin  	!04    	!4.30  	!400               	!            	!      	!      
+dlin  	!05    	!4.48  	!500               	!            	!      	!      
+dlin  	!06    	!4.64  	!600               	!            	!      	!      
+dlin  	!07    	!4.80  	!700               	!            	!      	!      
+dlin  	!18    	!5.14  	!1800              	!            	!      	!      
+dlin  	!19    	!5.30  	!1900              	!            	!      	!      
+dlin  	!20a   	!5.65  	!2001              	!            	!      	!      
+dlin  	!20b   	!6.80  	!2002              	!            	!      	!      
+dlin  	!21    	!5.98  	!2100              	!            	!      	!      
+dlin  	!22    	!6.14  	!2200              	!            	!      	!      
+dlin  	!23    	!6.31  	!2300              	!            	!      	!      
+dlin  	!24a   	!6.64  	!2401              	!            	!      	!      
+dlin  	!24b   	!6.80  	!2302              	!            	!      	!      
+dlin  	!25    	!6.98  	!2500              	!            	!      	!      
+dlin  	!26    	!7.14  	!2600              	!            	!      	!      
+dlin  	!27a   	!7.31  	!2701              	!            	!      	!      
+dlin  	!27b   	!7.65  	!2702              	!            	!      	!      
+dlin  	!28    	!7.81  	!2800              	!            	!      	!      
+dlin  	!29    	!7.93  	!2900              	!            	!      	!      
+dlin  	!30    	!8.81  	!3000              	!            	!      	!      
+dlin  	!31    	!9.31  	!3100              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!02    	!0.00  	!right 	!2.77  	!4.06  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!08    	!5.14  	!800               	!            	!      	!      
+dlin  	!09    	!5.47  	!900               	!            	!      	!      
+dlin  	!10    	!5.64  	!1000              	!            	!      	!      
+dlin  	!11    	!5.79  	!1100              	!            	!      	!      
+dlin  	!12    	!5.98  	!1200              	!            	!      	!      
+dlin  	!13    	!6.48  	!1300              	!            	!      	!      
+dlin  	!14    	!6.81  	!1400              	!            	!      	!      
+dlin  	!15    	!6.96  	!1500              	!            	!      	!      
+dlin  	!16a   	!7.30  	!1601              	!            	!      	!      
+dlin  	!16b   	!7.47  	!1602              	!            	!      	!      
+dlin  	!17    	!7.64  	!1700              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!03    	!0.00  	!center	!7.15  	!7.25  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Gy    	!2.78  	!x                 	!            	!      	!      
+tlin  	!Hx    	!2.96  	!x                 	!            	!      	!      
+tlin  	!Iy    	!3.12  	!x                 	!            	!      	!      
+tlin  	!Jy    	!3.28  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!04    	!0.00  	!center	!7.77  	!7.87  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Gn    	!2.78  	!x                 	!            	!      	!      
+tlin  	!In    	!3.12  	!x                 	!            	!      	!      
+tlin  	!Jn    	!3.28  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!05    	!0.00  	!center	!6.02  	!6.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!01Ck  	!3.78  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!06    	!0.00  	!center	!6.60  	!6.70  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!32a   	!9.95  	!x                 	!            	!      	!      
+tlin  	!32b   	!10.12 	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!07    	!0.00  	!left  	!4.90  	!6.20  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!30a   	!8.48  	!3000              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!08    	!0.00  	!left  	!3.31  	!5.07  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!30b   	!8.64  	!1000              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!09    	!0.00  	!center	!2.34  	!2.44  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!cash  	!2.63  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!10    	!0.00  	!center	!3.24  	!3,34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!accru 	!2.63  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!11    	!0.00  	!center	!4.24  	!4.34  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!other 	!2.63  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!12    	!0.00  	!left  	!5.20  	!7.98  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!specif	!2.63  	!Other             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!13    	!0.00  	!left  	!0.50  	!2.94  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TFNI  	!1.46  	!John E.           	!            	!      	!      
+tlin  	!PrBus 	!1.80  	!Meatpacking       	!            	!      	!      
+tlin  	!BusNm 	!2.13  	!Wilkins Meatpacking Co.	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!14    	!0.00  	!left  	!3.22  	!7.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TLN   	!1.46  	!Dough             	!            	!      	!      
+tlin  	!Addr1 	!2.31  	!300 Liberty Avenue	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!15    	!0.00  	!left  	!3.22  	!5.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!City  	!2.47  	!Pittsburgh        	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!15a   	!0.00  	!center	!5.95  	!6.40  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Addr2 	!2.31  	!Suite 350         	!            	!      	!      
+tlin  	!ST    	!2.47  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!16    	!0.00  	!left  	!6.45  	!7.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!zip   	!2.47  	!15212             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!17    	!0.00  	!left  	!6.23  	!6.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!1.46  	!123               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!18    	!0.00  	!center	!6.70  	!7.17  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!1.46  	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!19    	!0.00  	!left  	!7.22  	!7.79  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!1.46  	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!20    	!0.00  	!center	!6.20  	!6.39  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!D1    	!2.14  	!1                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!21    	!0.00  	!center	!6.39  	!6.60  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!B1    	!1.79  	!1                 	!            	!      	!      
+tlin  	!D2    	!2.14  	!2                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!22    	!0.00  	!      	!6.60  	!6.80  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!B2    	!1.79  	!2                 	!            	!      	!      
+tlin  	!D3    	!2.14  	!3                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!23    	!0.00  	!center	!6.80  	!7.00  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!B3    	!1.79  	!3                 	!            	!      	!      
+tlin  	!D4    	!2.14  	!4                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!24    	!0.00  	!center	!7.00  	!7.19  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!B4    	!1.79  	!4                 	!            	!      	!      
+tlin  	!D5    	!2.14  	!5                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!25    	!0.00  	!center	!7.19  	!7.40  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!B5    	!1.79  	!5                 	!            	!      	!      
+tlin  	!D6    	!2.14  	!6                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!26    	!0.00  	!center	!7.40  	!7.58  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!B6    	!1.79  	!6                 	!            	!      	!      
+tlin  	!D7    	!2.14  	!7                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!27    	!0.00  	!center	!7.58  	!7.79  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!D8    	!2.14  	!8                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!28    	!0.00  	!center	!7.79  	!7.99  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!D9    	!2.14  	!9                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!29    	!0.00  	!center	!2.58  	!2.68  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!33a   	!1.29  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!30    	!0.00  	!center	!3.60  	!3.70  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!33b   	!1.29  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!31    	!0.00  	!center	!5.50  	!5.60  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!33c   	!1.29  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!32    	!0.00  	!center	!6.69  	!6.79  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!34y   	!1.61  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!33    	!0.00  	!center	!7.50  	!7.60  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!34n   	!1.61  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!34    	!0.00  	!right 	!6.53  	!7.94  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!35    	!1.97  	!3500              	!            	!      	!      
+dlin  	!36    	!2.30  	!3600              	!            	!      	!      
+dlin  	!37    	!2.64  	!3700              	!            	!      	!      
+dlin  	!38    	!2.98  	!3800              	!            	!      	!      
+dlin  	!39    	!3.30  	!3900              	!            	!      	!      
+dlin  	!40    	!3.66  	!4000              	!            	!      	!      
+dlin  	!41    	!3.98  	!4100              	!            	!      	!      
+dlin  	!42    	!4.30  	!4200              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!35    	!0.00  	!center	!5.24  	!5.60  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!43m   	!5.14  	!01                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!36    	!0.00  	!center	!5.70  	!5.94  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!43d   	!5.14  	!13                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!37    	!0.00  	!center	!6.08  	!6.43  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!43y   	!5.14  	!2023              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!38    	!0.00  	!left  	!1.44  	!2.79  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!44a   	!5.81  	!2000              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!39    	!0.00  	!left  	!4.60  	!5.91  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!44b   	!5.81  	!500               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!40    	!0.00  	!left  	!6.50  	!7.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!44c   	!5.81  	!1000              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!41    	!0.00  	!center	!6.79  	!6.89  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!45y   	!6.12  	!x                 	!            	!      	!      
+tlin  	!46y   	!6.45  	!x                 	!            	!      	!      
+tlin  	!47ay  	!6.78  	!x                 	!            	!      	!      
+tlin  	!47by  	!7.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!42    	!0.00  	!center	!7.49  	!7.59  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!45n   	!6.12  	!x                 	!            	!      	!      
+tlin  	!46n   	!6.45  	!x                 	!            	!      	!      
+tlin  	!47an  	!6.78  	!x                 	!            	!      	!      
+tlin  	!47bn  	!7.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!43    	!0.00  	!left  	!0.57  	!6.37  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Exp1nm	!7.62  	!Expense 1         	!            	!      	!      
+tlin  	!Exp2nm	!7.96  	!Expense 2         	!            	!      	!      
+tlin  	!Exp3nm	!8.30  	!Expense 3         	!            	!      	!      
+tlin  	!Exp4nm	!8.64  	!Expense 4         	!            	!      	!      
+tlin  	!Exp5nm	!8.97  	!Expense 5         	!            	!      	!      
+tlin  	!Exp6nm	!9.30  	!Expense 6         	!            	!      	!      
+tlin  	!Exp7nm	!9.63  	!Expense 7         	!            	!      	!      
+tlin  	!Exp8nm	!9.96  	!Expense 8         	!            	!      	!      
+tlin  	!Exp9nm	!10.3  	!Expense 9         	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!44    	!0.00  	!right 	!6.58  	!7.94  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!Exp1  	!7.62  	!1000              	!            	!      	!      
+dlin  	!Exp2  	!7.96  	!2000              	!            	!      	!      
+dlin  	!Exp3  	!8.30  	!3000              	!            	!      	!      
+dlin  	!Exp4  	!8.64  	!4000              	!            	!      	!      
+dlin  	!Exp5  	!8.97  	!5000              	!            	!      	!      
+dlin  	!Exp6  	!9.30  	!6000              	!            	!      	!      
+dlin  	!Exp7  	!9.63  	!7000              	!            	!      	!      
+dlin  	!Exp8  	!9.96  	!8000              	!            	!      	!      
+dlin  	!Exp9  	!10.3  	!9000              	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgS    
+EndForm

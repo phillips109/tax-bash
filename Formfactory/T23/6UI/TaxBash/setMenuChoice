@@ -1,0 +1,27 @@
+set_menu_choice() {
+while true;
+  do     
+  clear
+  echo " MAIN MENU"         
+  echo
+  echo "   a)  Work with accounts (GnuCash data)"
+  echo "   f)  Show choice of Forms."
+  echo "   s)  Show choice of Schedules."
+  echo "   w)  Show choice of Worksheets."
+  echo 
+  echo "   q)  Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+      a)  work_with_accounts;;
+      f)  set_form_choice;;	
+      s)  set_schedule_choice;;
+      w)  set_wkst_choice;;	
+
+      q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}

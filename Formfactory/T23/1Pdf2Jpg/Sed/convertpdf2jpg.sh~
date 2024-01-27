@@ -1,0 +1,8 @@
+#! /bin/bash
+#convertpdf2jpg.sh
+echo "You are now going to convert the .pdf file to one or more .jpg files."
+echo "You will be taken to https://smallpdf.com/pdf-to-jpg"
+echo "When you reach the first page scroll down and read the How-To instructions"
+echo  "When you have finished, you will be returned to the main menu."
+pause 5
+firefox https://smallpdf.com/pdf-to-jpg

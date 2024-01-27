@@ -1,0 +1,52 @@
+
+importGnuCash(){
+#IMPORT DATA FROM GNUCASH
+
+#The location of the GnuCash backup files needs to be specified
+#in the constant GNUCASHFILES.
+#This is best defined by placing the following 2 lines in ~/.bashrc
+#  GNUCASHFILES=~/.gnucash.data  (substitute your absolute path to the data here)
+#  export GNUCASHFILES
+
+#This line defines the constant YR
+#This will make it easier to hardwire this file next year.
+#YR=21
+#export YR
+
+#This line select the backup files of gnucash in reverse order.
+#   Thus the desired (most recent) backup is the first in the group.
+#   The break; command ensures that only this first file is used.
+
+for file in $(dir -ra $GNUCASHFILES/*.gnucash)
+do
+
+#The name of the first file is put into foo.
+foo=$file
+#echo $foo
+
+#This removes everything from the filename up to and including the 2 in $YEAR.
+newname=${foo#~/*.2}
+#echo $newname
+
+#The next line puts the 2(of $YEAR) back in the name.
+newername='2'$newname
+#echo $newername
+
+#This copies the file to GnuCash leaving the original backups unchanged.
+cp $foo ../GnuCash/$newername.gz
+#dir ..//GnuCash
+#This unzips the file.
+gunzip ../GnuCash/$newername.gz
+#echo $newername
+
+#This adds the .current extension expected by  refreshAll().
+#dir ../GnuCash/
+rm ../GnuCash/*.current
+cp ../GnuCash/$newername ../GnuCash/$newername.current
+dir ../GnuCash
+
+break;
+
+done
+
+}

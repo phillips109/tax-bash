@@ -1,0 +1,27 @@
+
+set_menu_choices() {
+    while true;
+    do
+#	clear
+	echo "Actions to be taken on "$1"_Copy"$2"."
+	echo
+	echo "  1) Refresh data"
+	echo "  2) Enter or alter data."
+	echo "  3) Show form, schedule, or worksheet."
+	echo " rm) Remove a copy of "$1"." 
+	echo	
+	echo "  q) Return to previous menu."
+
+        echo "Please enter your choice, then press return."
+        read action_choice
+
+        case $action_choice in
+           1) refreshTl $1 $2;;
+           2) set_$1_line_data_choice $1 $2;;
+           3) showForm $1 $2;;
+	  rm) removeForm $1;;
+           q) break;;
+        esac
+    done
+    }
+
