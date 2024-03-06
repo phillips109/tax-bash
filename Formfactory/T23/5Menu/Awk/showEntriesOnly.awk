@@ -1,6 +1,7 @@
 #showEntriesOnly.awk
 #This file is to remove all lines except entry lines.
 #That is tlin or dlin.
+#Input is $1.txt: type(sorted) name sequence
 
 BEGIN{
     FS="[ \t]*!"

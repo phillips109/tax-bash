@@ -1,0 +1,89 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+
+it under the terms of the FNU General Public License as published by
+
+the Free Software Foundation, either version 3 of the License, or
+
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+xtlin
+2name
+3blank
+4dummy
+
+tlin
+Apart
+blank
+None
+
+tlin
+FS
+blank
+MFS
+
+tlin
+SFNI
+blank
+Jean S
+
+tlin
+SLN
+blank
+Dough
+
+tlin
+SSSNoF
+blank
+9876
+
+tlin
+SSSNoL
+blank
+321
+
+tlin
+SSSNoM
+blank
+54
+
+tlin
+TFNI
+blank
+John E
+
+tlin
+TLN
+blank
+Dough
+
+tlin
+TSSNoF
+blank
+123
+
+tlin
+TSSNoL
+blank
+6789
+
+tlin
+TSSNoM
+blank
+45
+

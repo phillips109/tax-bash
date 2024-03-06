@@ -1,0 +1,771 @@
+<Form name="SchedC">
+SchedC-Copy00-linePrBus
+006
+Enter the principal business or profession engaged in.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineB1
+007
+Enter the first code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineB2
+008
+Enter the second code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineB3
+009
+Enter the third code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineB4
+010
+Enter the fourth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineB5
+011
+Enter the fifth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineB6
+012
+Enter the sixth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineBusNm
+013
+Enter the business name if separate from line A.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD1
+014
+Enter the first code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD2
+015
+Enter the second code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD3
+016
+Enter the third code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD4
+017
+Enter the fourth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD5
+018
+Enter the fifth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD6
+019
+Enter the sixth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD7
+020
+Enter the seventh code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD8
+021
+Enter the eighth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineD9
+022
+Enter the ninth code number.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineAddr1
+023
+Enter the first address line of the business.
+i1040sc.pdf
+c3
+
+
+SchedC-Copy00-lineAddr2
+024
+Enter the second address line of the business.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-lineCity
+025
+Enter the ciy in which the business is located.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-lineST
+026
+Enter the state (ST) in which the buseiness is located.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-linezip
+027
+Enter the zip code of the business.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-linecash
+028
+Enter x if the accounting method is cash based.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-lineaccru
+029
+Enter x if the accounting method is accrual based.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-lineother
+030
+Enter x if an other accounting method was used.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-linespecif
+031
+Specify the accounting method used.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-lineGy
+032
+Emter x if you "materially participated" in the operation of the business during 2023.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-lineGn
+033
+Enter x if you did not "materially participate" in the operation of the business during 2023.
+i1040sc.pdf
+c4
+
+
+SchedC-Copy00-lineHx
+034
+Enter x if you started or acquired this business during 2023.
+i1040sc.pdf
+c5
+
+
+SchedC-Copy00-lineIy
+035
+Enter x if you made any payments in 2023 that would require filing Form(s) 1099.
+i1040sc.pdf
+c5
+
+
+SchedC-Copy00-lineIn
+036
+Enter x if you did not make any payments in 2023 thot would require filing Form(s) 1099.
+i1040sc.pdf
+c5
+
+
+SchedC-Copy00-lineJy
+037
+Enter x if you did or will file any required Form(s) 1099.
+i1040sc.pdf
+c5
+
+
+SchedC-Copy00-lineJn
+038
+Enter x if you did not and will not file any required Form(s) 1099.
+i1040sc.pdf
+c5
+
+
+SchedC-Copy00-line01Ck
+039
+Enter x if income on line01 was reported to you on FormW2 and "Statutory employee was checked.
+i1040sc.pdf
+c5
+
+
+SchedC-Copy00-line01
+040
+Enter gross receipts or sales.
+i1040sc.pdf
+c5
+
+
+SchedC-Copy00-line02
+041
+Enter returns anad allowances.
+i1040sc.pdf
+c6
+
+
+SchedC-Copy00-line04
+043
+Enter dost of goods sold from line 42.
+i1040sc.pdf
+c6
+
+
+SchedC-Copy00-line06
+045
+Enter other income.
+i1040sc.pdf
+c6
+
+
+SchedC-Copy00-line08
+047
+Enter advertising expenses.
+i1040sc.pdf
+c6
+
+
+SchedC-Copy00-line09
+048
+Enter car and truck expenses.
+i1040sc.pdf
+c7
+
+
+SchedC-Copy00-line10
+049
+Enter commission and fee expenses.
+i1040sc.pdf
+c7
+
+
+SchedC-Copy00-line11
+050
+Enter contract labor expenses.
+i1040sc.pdf
+c7
+
+
+SchedC-Copy00-line12
+051
+Enter depletion expenses.
+i1040sc.pdf
+c7
+
+
+SchedC-Copy00-line13
+052
+Enter depreciation and section 179 expenses.
+i1040sc.pdf
+c7
+
+
+SchedC-Copy00-line14
+053
+Enter employee benefit program expenses.
+i1040sc.pdf
+c8
+
+
+SchedC-Copy00-line15
+054
+enter insurance (other than heallth) expenses.
+i1040sc.pdf
+c8
+
+
+SchedC-Copy00-line16a
+055
+Enter mortage interest expenses.
+i1040sc.pdf
+c8
+
+
+SchedC-Copy00-line16b
+056
+Enter other interest expenses.
+i1040sc.pdf
+c8
+
+
+SchedC-Copy00-line17
+057
+Enter legal and professional services expenses.
+i1040sc.pdf
+c8
+
+
+SchedC-Copy00-line18
+058
+Enter office expenses.
+i1040sc.pdf
+c8
+
+
+SchedC-Copy00-line19
+059
+Enter pension and profit-sharing plan expenses.
+i1040sc.pdf
+c8
+
+
+SchedC-Copy00-line20a
+060
+Enter rent or lease expenses for vehicles, machinery and equipment.
+i1040sc.pdf    	1c9
+ 
+
+
+SchedC-Copy00-line20b
+061
+Enter rent or lease expenses for other business property.
+i1040sc.pdf
+c9
+
+
+SchedC-Copy00-line21
+062
+Enter repair and maintenance expenses.
+i1040sc.pdf
+c9
+
+
+SchedC-Copy00-line22
+063
+Enter expenses for supplies.
+i1040sc.pdf
+c9
+
+
+SchedC-Copy00-line23
+064
+Enter tax and license expenses.
+i1040sc.pdf
+c9
+
+
+SchedC-Copy00-line24a
+065
+Enter travel expenses.
+i1040sc.pdf
+c9
+
+
+SchedC-Copy00-line24b
+066
+Enter meal deductions.
+i1040sc.pdf
+c10
+
+
+SchedC-Copy00-line25
+067
+Enter utility expenses.
+i1040sc.pdf
+c10
+
+
+SchedC-Copy00-line26
+068
+Enter wage expenses (less employment credits).
+i1040sc.pdf
+c10
+
+
+SchedC-Copy00-line27a
+069
+Enter other expenses from line 48.
+i1040sc.pdf
+c10
+
+
+SchedC-Copy00-line27b
+070
+Enter deduction for energy efficient commercial buildings.(Form 7205)
+i1040sc.pdf
+c11
+
+
+SchedC-Copy00-line30a
+073
+For simplified method: Enter total square footage of your home.
+i1040sc.pdf
+c11
+
+
+SchedC-Copy00-line30b
+074
+For simplified method: Enter ssquare footage used for business.
+i1040sc.pdf
+c12
+
+
+SchedC-Copy00-line30
+075
+Enter expenses for the business use of your home. (Form 8829)
+i1040sc.pdf
+c11
+
+
+SchedC-Copy00-line32a
+077
+Enter x if all investment is at risk.
+i1040sc.pdf
+c15
+
+
+SchedC-Copy00-line32b
+078
+Enter x if some of the investment is not at risk.
+i1040sc.pdf
+c15
+
+
+SchedC-Copy00-line33a
+079
+Enter x if the method used to value closing inventory was "cash".
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line33b
+080
+Enter x if the method used to value closing inventory was "lower of cost or market".
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line33c
+081
+Enter s if another method was used to value closing inventory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line34y
+082
+Enter x if there was any change in determininig quantities, costs, or valualtions
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line34n
+083
+Enter x if there was not any such change.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line35
+084
+Enter value of inventory at the beginning of the year.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line36
+085
+Enter cost of purchases less cost of items withdrawn for personal use.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line37
+086
+Enter cost of labor.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line38
+087
+Enter cost of materials and supplies.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line39
+088
+Enter other costs.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line41
+090
+Enter value of inventory at the end of the year.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line43m
+092
+Enter the month (mm) your vehicle was placed in service for business purposes.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line43d
+093
+Enter the day (dd) your vehicle was placed in service for business purposes.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line43y
+094
+Enter the year (yyyy) your vehicle was placed in service for business purposes.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line44a
+095
+Enter the number of miles you drove your vehicle for business during 2023.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line44b
+096
+Enter the number of miles you drove your vehicle for commuting during 2023.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line44c
+097
+Enter the number of miles you drove your vehicle for other purposes during 2023.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line45y
+098
+Enter x if your vehicle was available for personal use during off-duty hours.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line45n
+099
+Enter x if your vehicle was not available for personal use during off-duty hours.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line46y
+100
+Enter x if you or your spouse have anothe vehicle available for personal use.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line46n
+101
+Enter x if you or your spouse do not have anothe vehicle availabel for personal use.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line47ay
+102
+Enter x if you have evidence to support your deduction.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line47an
+103
+Enter x if you do not have evidence to support your deduction.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line47by
+104
+Enter x if your evidence is not written.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-line47bn
+105
+Enter x if your evidence is written.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp1nm
+106
+Enter the name of the first business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp1
+107
+Enter the amount expensedvfor the first expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp2nm
+108
+Enter the name of the second business expensecatagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp2
+109
+Enter the amount expensed for the second expense catagory
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp3nm
+110
+Enter the name of the thiird business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp3
+111
+Enter the amount expensed for the third expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp4nm
+112
+Enter the name of the fourth business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp4
+113
+Enter the amount expensed for the fourth expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp5nm
+114
+Enter the name of the fifth business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp5
+115
+Enter the amount expensed for the fifth expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp6nm
+116
+Enter the name of the sixth business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp6
+117
+Enter the amount expensed for the sixthe expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp7nm
+118
+Enter the name of the seventh business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp7
+119
+Enter the amount expensed for the seventh expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp8nm
+120
+Enter the name of the eighth business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp8
+121
+Enter the amount expensed for the eight expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp9nm
+122
+Enter the name of the ninth business expense catagory.
+i1040sc.pdf
+c16
+
+
+SchedC-Copy00-lineExp9
+123
+Enter the amount expensed for the ninth expenses catagory.
+i1040sc.pdf
+c16
+
+</Form>

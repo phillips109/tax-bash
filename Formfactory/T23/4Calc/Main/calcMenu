@@ -22,11 +22,11 @@
 Pdfshowform(){
     cp ../../1Pdf2Jpg/Pdf/* ../Pdf
     foo=$1
-#    echo $foo
+    echo $foo
     foo2=${foo#Form}
-#    echo $foo2
+    echo $foo2
     foo3=f$foo2
-#    echo $foo3
+    echo $foo3
     qpdfview ../Pdf/$foo3.pdf &
 }
 
@@ -69,6 +69,7 @@ Pdfshow(){
 	    SST) qpdfview ../Pdf/sst.pdf           &;; 
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
              w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
+	    Bkg) qpdfview ../Pdf/fBkg.pdf          &;; 
           q) break;;	
     esac		
    

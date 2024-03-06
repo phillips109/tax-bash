@@ -21,7 +21,7 @@
 
 #Using showsPdf requires changing the T?? part only on one line each year.
 showsPdf(){
-    qpdfview ~/Projects/tax-bash/Formfactory/T22/1Pdf2Jpg/Pdf/$1.pdf &
+    qpdfview ~/Projects/Tax-bash/Formfactory/T23/1Pdf2Jpg/Pdf/$1.pdf &
 }    
 
 choosePdf(){
@@ -72,7 +72,7 @@ choosePdf(){
     Form1099g)          showsPdf f1099g;;
     Form1099ssa)        showsPdf f1099ssa;;
     w2)                 showsPdf fw2--2022;;
-    Bkg)                showsPdf bkg;;
+    Bkg)                showsPdf fBkg;;
 
 
     Sched1)	        showsPdf f1040sa;;		 
@@ -119,43 +119,60 @@ showJpg(){
     }
 
 importText(){
-	if ( -f ../../4Calc/Edit/$1.edit )
+	if [ -f ../../4Calc/Sort/$1.srt ]
 	   then
-		cp ../../4Calc/Edit/$1.txt ../Text/$1.txt
-	elif ( -f ../../2Sequence/Text/$1.txt )
+		cp ../../4Calc/Sort/$1.srt ../Txt/$1.txt
+	elif [ -f ../../2Sequence/Txt/$1.txt ]
 	     then
-		cp ../../2Sequence/Edit/$1.txt ../Text/$1.txt
+		cp ../../2Sequence/Txt/$1.txt ../Txt/$1.txt
 	else
-		echo "../../2Sequence/Text/$.txt doesn't exist."
+		echo "../../2Sequence/Txt/$1.txt doesn't exist."
 		echo "Cannot proceed."
+	
+	fi	
 }
 
 editText(){
-    emacs ../Text/$1.txt
+    emacs ../Txt/$1.txt
 }
 
+
 showEntriesOnly(){
-    echo $1
-    awk -f ../Awk/showEntriesOnly.awk ../Text/$1.txt > ../Entries/$1.ent
-    }
+
+      awk -f ../Awk/showEntriesOnly3.awk form="$1" ../Txt/$1.txt | sort > ../Entries/$1.ent
+#      awk -f ../Awk/reorderColumns.awk ../Entries/$1.ent > ../Pre/$1.pre
+      
+#     awk -f ../Awk/showEntriesOnly2.awk form="$1" ../Entries/$1.txt | sort > ../Entries/$1.ent
+#    awk -f ../Awk/showEntriesOnly.awk form="$1" ../Txt/$1.txt | sort > ../Entries/$1.ent
+
+}
 
 editEntries(){
     emacs ../Entries/$1.ent
 }
 
+reorderColumns(){
+
+	awk -f ../Awk/reorderColumns.awk ../Entries/$1.ent > ../Pre/$1.pre
+}
+
+editPre(){
+
+	emacs ../Pre/$1.pre
+}
 
 rmEmacsBkups(){
     rm ../Txt/*~	
 }
 
 
-$makeMenuFile2(){
+#makeMenuFile2(){
 #   awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Txt/$1.alins > ../Menus/$1.data.men
 #}
 
 
 makeMenuFile(){
-    awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Entries/$1.ent > ../Menus/$1.men
+    awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Pre/$1.pre > ../Menus/$1.men
     }
 
 editMenu(){
@@ -169,14 +186,32 @@ catMenus(){
     cat ../Menus/*.men > ../Files/allMenus
     }
 
+addColumns(){
+
+	awk  -f ../Awk/addColumns.awk ../Pre/$1.pre > ../Pre2/$1.pre2
+}
+
+
+editPre2(){
+	emacs ../Pre2/$1.pre2
+}
+
+convertEnt2xml(){
+	awk -f ../Awk/convertEnt2xml.awk -v form=$1 ../Pre2/$1.pre2 > ../Xml/$1.xml
+}
+
+editXml(){
+	emacs ../Xml/$1.xml
+}
+
 createData(){
     rm ../Data/$1*.xml
-    awk -f ../Awk/txt2xml.awk form=$1 ../Text/$1.txt > ../Templates/$1.tpl
-    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Templates/$1.tpl -xsl ../Make/makeDataFile.xsl -out ../Out/$1_Copy00.xml -PARAM form $1
+#    awk -f ../Awk/txt4xml.awk form=$1 ../Txt/$1.txt > ../Templates/$1.tpl
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Xml/$1.xml -xsl ../Make/makeDataFile.xsl -out ../Out/$1_Copy00.xml -PARAM form $1
     }
 
 exportData(){
-    rm ../../7App/Data/$1*.data.xml
+    rm ../../7App/Data/$1*.xml
     for file in $(ls ../Data/$1*)
     do
 	cp $file ../../7App/Data/
@@ -192,15 +227,21 @@ set_menu_choices(){
 	echo " It also produces the data files in which the data is stored."
 	echo
 	echo "  1) Show image of the form"
-	echo "  2) Import text from ../4Calc or else ../2Sequence
-	echo "  3) Edit ../Text/$1.txt to see if correct
-	echo "  4) Remove all but user entry lines from ../Text/$1.txt
-	echo "  5) Check ../Entries/$1.ent to see if correct
-	echo "  6) Make ../Menus/$1.data.men"
-	echo "  7) Edit ../Menus/$1.data.men"
-	echo "  8) Combine all menus into ../Files/allMenus"
-	echo "  9) Make data files"
-	echo " 10) Export data files to ../../7App/Data"
+	echo "  2) Import text from ../4Calc or else ../2Sequence"
+	echo "  3) Edit ../Text/$1.txt to remove title line"
+	echo "  4) Remove all but user entry lines from ../Text/$1.txt"
+	echo "  5) Check ../Entries/$1.ent to enter menuEntries"
+	echo "  6) Reorder columns to ../Pre/$1.pre"
+	echo "  7) Edit ../Pre/$1.pre" 
+	echo "  8) Make ../Menus/$1.men"
+	echo "  9) Edit ../Menus/$1.men to check result."
+	echo " 10) Combine all menus into ../Files/allMenus"
+	echo " 11) Add IRSInstructions ../Pre/$1.pre to ../Pre2/$1.pre2"
+	echo " 12) Edit ../Pre2/$1.pre2 to enter pgNo"
+	echo " 13) Convert .ent2 to xml"
+	echo " 14) Edit ../Xml/$1.xml"
+	echo " 15) Make data files"
+	echo " 16) Export data files to ../../7App/Data"
 	echo
 	echo "  q) Quit"
 	echo
@@ -215,11 +256,17 @@ set_menu_choices(){
 	    3)  editText $1;;
 	    4)  showEntriesOnly $1;;
 	    5)  editEntries $1;;
-	    6)  makeMenuFile $1;;
-	    7)  editMenu $1;;
-	    8)  catMenus $1;;
-	    9)  createData $1;;
-	   10)  exportData $1;;
+	    6)  reorderColumns $1;;
+	    7)  editPre $1;;
+	    8)  makeMenuFile $1;;
+	    9)  editMenu $1;;
+	   10)  catMenus $1;;
+	   11)  addColumns $1;;
+	   12)  editPre2 $1;; 
+	   13)  convertEnt2xml $1;;
+	   14)  editXml $1;; 
+	   15)  createData $1;;	     
+	   16)  exportData $1;;
 
 	    q)  exit;;
 	    *)  echo "Sorry, choice not recognized."
@@ -229,6 +276,7 @@ set_menu_choices(){
    done	
 	    
     }
+
 
 
 create_new_copy() {

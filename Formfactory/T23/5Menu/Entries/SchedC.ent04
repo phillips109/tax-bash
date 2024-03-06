@@ -1,0 +1,111 @@
+type  	!name      	!000  	!menuEntry                                                                                           
+tlin  	!PrBus     	!006  	!Enter the principal business or profession engaged in.                                              
+tlin  	!B1        	!007  	!Enter the first code number.                                                                        
+tlin  	!B2        	!008  	!Enter the second code number.                                                                       
+tlin  	!B3        	!009  	!Enter the third code number.                                                                        
+tlin  	!B4        	!010  	!Enter the fourth code number.                                                                       
+tlin  	!B5        	!011  	!Enter the fifth code number.                                                                        
+tlin  	!B6        	!012  	!Enter the sixth code number.                                                                        
+tlin  	!BusNm     	!013  	!Enter the business name if separate from line A.                                                    
+tlin  	!D1        	!014  	!Enter the first code number.                                                                        
+tlin  	!D2        	!015  	!Enter the second code number.                                                                       
+tlin  	!D3        	!016  	!Enter the third code number.                                                                        
+tlin  	!D4        	!017  	!Enter the fourth code number.                                                                       
+tlin  	!D5        	!018  	!Enter the fifth code number.                                                                        
+tlin  	!D6        	!019  	!Enter the sixth code number.                                                                        
+tlin  	!D7        	!020  	!Enter the seventh code number.                                                                      
+tlin  	!D8        	!021  	!Enter the eighth code number.                                                                       
+tlin  	!D9        	!022  	!Enter the ninth code number.                                                                        
+tlin  	!Addr1     	!023  	!Enter the first address line of the business.                                                       
+tlin  	!Addr2     	!024  	!Enter the second address line of the business.                                                      
+tlin  	!City      	!025  	!Enter the ciy in which the business is located.                                                     
+tlin  	!ST        	!026  	!Enter the state (ST) in which the buseiness is located.                                             
+tlin  	!zip       	!027  	!Enter the zip code of the business.                                                                 
+tlin  	!cash      	!028  	!Enter x if the accounting method is cash based.                                                     
+tlin  	!accru     	!029  	!Enter x if the accounting method is accrual based.                                                  
+tlin  	!other     	!030  	!Enter x if an other accounting method was used.                                                     
+tlin  	!specif    	!031  	!Specify the accounting method used.                                                                 
+tlin  	!Gy        	!032  	!Emter x if you "materially participated" in the operation of the business during 2023.              
+tlin  	!Gn        	!033  	!Enter x if you did not "materially participate" in the operation of the business during 2023.       
+tlin  	!Hx        	!034  	!Enter x if you started or acquired this business during 2023.                                       
+tlin  	!Iy        	!035  	!Enter x if you made any payments in 2023 that would require filing Form(s) 1099.                    
+tlin  	!In        	!036  	!Enter x if you did not make any payments in 2023 thot would require filing Form(s) 1099.            
+tlin  	!Jy        	!037  	!Enter x if you did or will file any required Form(s) 1099.                                          
+tlin  	!Jn        	!038  	!Enter x if you did not and will not file any required Form(s) 1099.                                 
+tlin  	!01Ck      	!039  	!Enter x if income on line01 was reported to you on FormW2 and "Statutory employee was checked.      
+dlin  	!01        	!040  	!Enter gross receipts or sales.                                                                      
+dlin  	!02        	!041  	!Enter returns anad allowances.                                                                      
+dlin  	!04        	!043  	!Enter dost of goods sold from line 42.                                                              
+dlin  	!06        	!045  	!Enter other income.                                                                                 
+dlin  	!08        	!047  	!Enter advertising expenses.                                                                         
+dlin  	!09        	!048  	!Enter car and truck expenses.                                                                       
+dlin  	!10        	!049  	!Enter commission and fee expenses.                                                                  
+dlin  	!11        	!050  	!Enter contract labor expenses.                                                                      
+dlin  	!12        	!051  	!Enter depletion expenses.                                                                           
+dlin  	!13        	!052  	!Enter depreciation and section 179 expenses.                                                        
+dlin  	!14        	!053  	!Enter employee benefit program expenses.                                                            
+dlin  	!15        	!054  	!enter insurance (other than heallth) expenses.                                                      
+dlin  	!16a       	!055  	!Enter mortage interest expenses.                                                                    
+dlin  	!16b       	!056  	!Enter other interest expenses.                                                                      
+dlin  	!17        	!057  	!Enter legal and professional services expenses.                                                     
+dlin  	!18        	!058  	!Enter office expenses.                                                                              
+dlin  	!19        	!059  	!Enter pension and profit-sharing plan expenses.                                                     
+dlin  	!20a       	!060  	!Enter rent or lease expenses for vehicles, machinery and equipment.                                 
+dlin  	!20b       	!061  	!Enter rent or lease expenses for other business property.                                           
+dlin  	!21        	!062  	!Enter repair and maintenance expenses.                                                              
+dlin  	!22        	!063  	!Enter expenses for supplies.                                                                        
+dlin  	!23        	!064  	!Enter tax and license expenses.                                                                     
+dlin  	!24a       	!065  	!Enter travel expenses.                                                                              
+dlin  	!24b       	!066  	!Enter meal deductions.                                                                              
+dlin  	!25        	!067  	!Enter utility expenses.                                                                             
+dlin  	!26        	!068  	!Enter wage expenses (less employment credits).                                                      
+dlin  	!27a       	!069  	!Enter other expenses from line 48.                                                                  
+dlin  	!27b       	!070  	!Enter deduction for energy efficient commercial buildings.(Form 7205)                               
+dlin  	!30a       	!073  	!For simplified method: Enter total square footage of your home.                                     
+dlin  	!30b       	!074  	!For simplified method: Enter ssquare footage used for business.                                     
+dlin  	!30        	!075  	!Enter expenses for the business use of your home. (Form 8829)                                       
+tlin  	!32a       	!077  	!Enter x if all investment is at risk.                                                               
+tlin  	!32b       	!078  	!Enter x if some of the investment is not at risk.                                                   
+tlin  	!33a       	!079  	!Enter x if the method used to value closing inventory was "cash".                                   
+tlin  	!33b       	!080  	!Enter x if the method used to value closing inventory was "lower of cost or market".                
+tlin  	!33c       	!081  	!Enter s if another method was used to value closing inventory.                                      
+tlin  	!34y       	!082  	!Enter x if there was any change in determininig quantities, costs, or valualtions                   
+tlin  	!34n       	!083  	!Enter x if there was not any such change.                                                           
+dlin  	!35        	!084  	!Enter value of inventory at the beginning of the year.                                              
+dlin  	!36        	!085  	!Enter cost of purchases less cost of items withdrawn for personal use.                              
+dlin  	!37        	!086  	!Enter cost of labor.                                                                                
+dlin  	!38        	!087  	!Enter cost of materials and supplies.                                                               
+dlin  	!39        	!088  	!Enter other costs.                                                                                  
+dlin  	!41        	!090  	!Enter value of inventory at the end of the year.                                                    
+tlin  	!43m       	!092  	!Enter the month (mm) your vehicle was placed in service for business purposes.                      
+tlin  	!43d       	!093  	!Enter the day (dd) your vehicle was placed in service for business purposes.                        
+tlin  	!43y       	!094  	!Enter the year (yyyy) your vehicle was placed in service for business purposes.                     
+dlin  	!44a       	!095  	!Enter the number of miles you drove your vehicle for business during 2023.                          
+dlin  	!44b       	!096  	!Enter the number of miles you drove your vehicle for commuting during 2023.                         
+dlin  	!44c       	!097  	!Enter the number of miles you drove your vehicle for other purposes during 2023.                    
+tlin  	!45y       	!098  	!Enter x if your vehicle was available for personal use during off-duty hours.                       
+tlin  	!45n       	!099  	!Enter x if your vehicle was not available for personal use during off-duty hours.                   
+tlin  	!46y       	!100  	!Enter x if you or your spouse have anothe vehicle available for personal use.                       
+tlin  	!46n       	!101  	!Enter x if you or your spouse do not have anothe vehicle availabel for personal use.                
+tlin  	!47ay      	!102  	!Enter x if you have evidence to support your deduction.                                             
+tlin  	!47an      	!103  	!Enter x if you do not have evidence to support your deduction.                                      
+tlin  	!47by      	!104  	!Enter x if your evidence is not written.                                                            
+tlin  	!47bn      	!105  	!Enter x if your evidence is written.                                                                
+tlin  	!Exp1nm    	!106  	!Enter the name of the first business expense catagory.                                              
+dlin  	!Exp1      	!107  	!Enter the amount expensedvfor the first expense catagory.                                           
+tlin  	!Exp2nm    	!108  	!Enter the name of the second business expensecatagory.                                              
+dlin  	!Exp2      	!109  	!Enter the amount expensed for the second expense catagory                                           
+tlin  	!Exp3nm    	!110  	!Enter the name of the thiird business expense catagory.                                             
+dlin  	!Exp3      	!111  	!Enter the amount expensed for the third expense catagory.                                           
+tlin  	!Exp4nm    	!112  	!Enter the name of the fourth business expense catagory.                                             
+dlin  	!Exp4      	!113  	!Enter the amount expensed for the fourth expense catagory.                                          
+tlin  	!Exp5nm    	!114  	!Enter the name of the fifth business expense catagory.                                              
+dlin  	!Exp5      	!115  	!Enter the amount expensed for the fifth expense catagory.                                           
+tlin  	!Exp6nm    	!116  	!Enter the name of the sixth business expense catagory.                                              
+dlin  	!Exp6      	!117  	!Enter the amount expensed for the sixthe expense catagory.                                          
+tlin  	!Exp7nm    	!118  	!Enter the name of the seventh business expense catagory.                                            
+dlin  	!Exp7      	!119  	!Enter the amount expensed for the seventh expense catagory.                                         
+tlin  	!Exp8nm    	!120  	!Enter the name of the eighth business expense catagory.                                             
+dlin  	!Exp8      	!121  	!Enter the amount expensed for the eight expense catagory.                                           
+tlin  	!Exp9nm    	!122  	!Enter the name of the ninth business expense catagory.                                              
+dlin  	!Exp9      	!123  	!Enter the amount expensed for the ninth expenses catagory.                                          

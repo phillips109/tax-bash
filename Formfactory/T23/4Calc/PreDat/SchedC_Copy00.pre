@@ -1,0 +1,152 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!07      	!#####0  	!        	!        	!        	!
+addit   	!28      	!#####0  	!        	!        	!        	!
+addit   	!40      	!#####0  	!        	!        	!        	!
+addit   	!totlO   	!#####0  	!        	!        	!        	!
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!01      	!#####0  	!                    	!
+dlin    	!02      	!#####0  	!                    	!
+dlin    	!04      	!#####0  	!                    	!
+dlin    	!05      	!#####0  	!                    	!
+dlin    	!06      	!#####0  	!                    	!
+dlin    	!08      	!#####0  	!                    	!
+dlin    	!09      	!#####0  	!                    	!
+dlin    	!10      	!#####0  	!                    	!
+dlin    	!11      	!#####0  	!                    	!
+dlin    	!12      	!#####0  	!                    	!
+dlin    	!13      	!#####0  	!                    	!
+dlin    	!14      	!#####0  	!                    	!
+dlin    	!15      	!#####0  	!                    	!
+dlin    	!16a     	!#####0  	!                    	!
+dlin    	!16b     	!#####0  	!                    	!
+dlin    	!17      	!#####0  	!                    	!
+dlin    	!18      	!#####0  	!                    	!
+dlin    	!19      	!#####0  	!                    	!
+dlin    	!20a     	!#####0  	!                    	!
+dlin    	!20b     	!#####0  	!                    	!
+dlin    	!21      	!#####0  	!                    	!
+dlin    	!22      	!#####0  	!                    	!
+dlin    	!23      	!#####0  	!                    	!
+dlin    	!24a     	!#####0  	!                    	!
+dlin    	!24b     	!#####0  	!                    	!
+dlin    	!25      	!#####0  	!                    	!
+dlin    	!26      	!#####0  	!                    	!
+dlin    	!27a     	!#####0  	!                    	!
+dlin    	!27b     	!#####0  	!                    	!
+dlin    	!30      	!#####0  	!                    	!
+dlin    	!30a     	!#####0  	!                    	!
+dlin    	!30b     	!#####0  	!                    	!
+dlin    	!35      	!#####0  	!                    	!
+dlin    	!36      	!#####0  	!                    	!
+dlin    	!37      	!#####0  	!                    	!
+dlin    	!38      	!#####0  	!                    	!
+dlin    	!39      	!#####0  	!                    	!
+dlin    	!41      	!#####0  	!                    	!
+dlin    	!44a     	!#####0  	!                    	!
+dlin    	!44b     	!#####0  	!                    	!
+dlin    	!44c     	!#####0  	!                    	!
+dlin    	!Exp1    	!#####0  	!                    	!
+dlin    	!Exp2    	!#####0  	!                    	!
+dlin    	!Exp3    	!#####0  	!                    	!
+dlin    	!Exp4    	!#####0  	!                    	!
+dlin    	!Exp5    	!#####0  	!                    	!
+dlin    	!Exp6    	!#####0  	!                    	!
+dlin    	!Exp7    	!#####0  	!                    	!
+dlin    	!Exp8    	!#####0  	!                    	!
+dlin    	!Exp9    	!#####0  	!                    	!
+
+xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
+subtr   	!03      	!#####0  	!        	!        	!
+subtr   	!29      	!#####0  	!        	!        	!
+subtr   	!31      	!#####0  	!        	!        	!
+subtr   	!42      	!#####0  	!        	!        	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!01Ck    	!        	!        	!
+tlin    	!32a     	!        	!        	!
+tlin    	!32b     	!        	!        	!
+tlin    	!33a     	!        	!        	!
+tlin    	!33b     	!        	!        	!
+tlin    	!33c     	!        	!        	!
+tlin    	!34n     	!        	!        	!
+tlin    	!34y     	!        	!        	!
+tlin    	!43d     	!        	!        	!
+tlin    	!43m     	!        	!        	!
+tlin    	!43y     	!        	!        	!
+tlin    	!45n     	!        	!        	!
+tlin    	!45y     	!        	!        	!
+tlin    	!46n     	!        	!        	!
+tlin    	!46y     	!        	!        	!
+tlin    	!47an    	!        	!        	!
+tlin    	!47ay    	!        	!        	!
+tlin    	!47bn    	!        	!        	!
+tlin    	!47by    	!        	!        	!
+tlin    	!accru   	!        	!        	!
+tlin    	!Addr1   	!        	!        	!
+tlin    	!Addr2   	!        	!        	!
+tlin    	!B1      	!        	!        	!
+tlin    	!B2      	!        	!        	!
+tlin    	!B3      	!        	!        	!
+tlin    	!B4      	!        	!        	!
+tlin    	!B5      	!        	!        	!
+tlin    	!B6      	!        	!        	!
+tlin    	!BusNm   	!        	!        	!
+tlin    	!cash    	!        	!        	!
+tlin    	!City    	!        	!        	!
+tlin    	!D1      	!        	!        	!
+tlin    	!D2      	!        	!        	!
+tlin    	!D3      	!        	!        	!
+tlin    	!D4      	!        	!        	!
+tlin    	!D5      	!        	!        	!
+tlin    	!D6      	!        	!        	!
+tlin    	!D7      	!        	!        	!
+tlin    	!D8      	!        	!        	!
+tlin    	!D9      	!        	!        	!
+tlin    	!Exp1nm  	!        	!        	!
+tlin    	!Exp2nm  	!        	!        	!
+tlin    	!Exp3nm  	!        	!        	!
+tlin    	!Exp4nm  	!        	!        	!
+tlin    	!Exp5nm  	!        	!        	!
+tlin    	!Exp6nm  	!        	!        	!
+tlin    	!Exp7nm  	!        	!        	!
+tlin    	!Exp8nm  	!        	!        	!
+tlin    	!Exp9nm  	!        	!        	!
+tlin    	!Gn      	!        	!        	!
+tlin    	!Gy      	!        	!        	!
+tlin    	!Hx      	!        	!        	!
+tlin    	!In      	!        	!        	!
+tlin    	!Iy      	!        	!        	!
+tlin    	!Jn      	!        	!        	!
+tlin    	!Jy      	!        	!        	!
+tlin    	!other   	!        	!        	!
+tlin    	!PrBus   	!        	!        	!
+tlin    	!specif  	!        	!        	!
+tlin    	!ST      	!        	!        	!
+tlin    	!zip     	!        	!        	!
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	!
+tPull   	!TFNI    	!        	!        	!        	!        	!        	!
+tPull   	!TLN     	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoF  	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoL  	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoM  	!        	!        	!        	!        	!        	!

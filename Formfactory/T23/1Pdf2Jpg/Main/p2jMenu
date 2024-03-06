@@ -80,17 +80,17 @@ nau(){
 
 
 
-#pdf2jpg(){
-#    firefox https://www.pdf2jpg.net
-#}
-
 pdf2jpg(){
-    ../Sed/convertpdf2jpg.sh
+    firefox https://www.pdf2jpg.net
+}
+
+#pdf2jpg(){
+#    ../Sed/convertpdf2jpg.sh
 #    firefox https://smallpdf.com/pdf-to-jpg
-    }
+#    }
 
 dirDownloads(){
-    dir ~/Downloads/*.zip
+    dir ~/Downloads/*.jpg
     echo " "
     echo "Are you ready to continue?"
     echo "If so, press y or n."
@@ -118,7 +118,7 @@ dirimages(){
 }
 
 moveJpg(){
-    mv ~/Downloads/images/* ../Jpg/
+    mv ~/Downloads/*.jpg  ../Jpg/
     }
 
 moveJpgFile(){
@@ -221,12 +221,12 @@ while true;
   echo "   2)  dir ../Pdf"
   echo "   3)  View the ../.pdf file."
   echo "   4)  Convert pdf to jpg and into ~/Downloads/.zip"
-  echo "   5)  dir ~/Downloads/*.zip"
-  echo "   6)  unzip zip file to ~/Downloads/images*.jpg"
-  echo "   7)  dir ~/Downloads/images/*"
+  echo "   5)  dir ~/Downloads/*.jpg"
+#  echo "   6)  unzip zip file to ~/Downloads/*.jpg"
+#  echo "   7)  dir ~/Downloads/*"
   echo "   8)  Move ~/Downloads/*.jpg to ../Jpg"
   echo "   9)  dir ../Jpg/*"
-  echo "  10)  rm ~/Downloads/images/*"
+  echo "  10)  rm ~/Downloads/*.jpg"
   echo "  11)  export ../Jpg/* to 3Layout, 4Calc, and 7App"
   echo "  12)  export ../Pdf/* to 2Sequence, 3Layout, 4Calc, and 7App"
 
@@ -242,8 +242,8 @@ while true;
       3)  showPdf $1;;
       4)  pdf2jpg;;
       5)  dirDownloads;;
-      6)  unzipDownloads;;
-      7)  dirimages;;
+#      6)  unzipDownloads;;
+#      7)  dirimages;;
       8)  moveJpg;;
       9)  dirJpg;;
      10)  rmimages;;
@@ -348,7 +348,7 @@ while true;
       8)  pdf2jpg;;
       9)  dirDownloads;;
      10)  unzipDownloads;;
-     11)  dirimages;;
+     11)  dirJpg;;
      12)  moveJpg;;
      13)  dirJpg;;
      14)  rmimages;;

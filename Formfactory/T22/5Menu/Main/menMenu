@@ -128,6 +128,8 @@ importText(){
 	else
 		echo "../../2Sequence/Text/$.txt doesn't exist."
 		echo "Cannot proceed."
+		
+	fi   
 }
 
 editText(){
@@ -149,7 +151,7 @@ rmEmacsBkups(){
 }
 
 
-$makeMenuFile2(){
+#$makeMenuFile2(){
 #   awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Txt/$1.alins > ../Menus/$1.data.men
 #}
 
@@ -192,10 +194,10 @@ set_menu_choices(){
 	echo " It also produces the data files in which the data is stored."
 	echo
 	echo "  1) Show image of the form"
-	echo "  2) Import text from ../4Calc or else ../2Sequence
-	echo "  3) Edit ../Text/$1.txt to see if correct
-	echo "  4) Remove all but user entry lines from ../Text/$1.txt
-	echo "  5) Check ../Entries/$1.ent to see if correct
+	echo "  2) Import text from ../4Calc or else ../2Sequence"
+	echo "  3) Edit ../Text/$1.txt to see if correct"
+	echo "  4) Remove all but user entry lines from ../Text/$1.txt"
+	echo "  5) Check ../Entries/$1.ent to see if correct"
 	echo "  6) Make ../Menus/$1.data.men"
 	echo "  7) Edit ../Menus/$1.data.men"
 	echo "  8) Combine all menus into ../Files/allMenus"

@@ -25,7 +25,7 @@ xpgF  	!2name 	!3BkgImage
 pgF   	!Single	!../Jpg/f1040sc-page-001.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.12 	!left  	!0.02  	!8.50  
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
                               
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -152,6 +152,7 @@ col   	!14    	!0.00  	!left  	!3.22  	!7.97
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!TLN   	!1.46  	!Dough             	!            	!      	!      
 tlin  	!Addr1 	!2.31  	!300 Liberty Avenue	!            	!      	!      
+tlin  	!Addr2 	!2.31  	!Suite 350         	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -163,7 +164,6 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!15a   	!0.00  	!center	!5.95  	!6.40  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Addr2 	!2.31  	!Suite 350         	!            	!      	!      
 tlin  	!ST    	!2.47  	!PA                	!            	!      	!      
 Endcol*******************     
                               
@@ -250,21 +250,17 @@ col   	!28    	!0.00  	!center	!7.79  	!7.99
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!D9    	!2.14  	!9                 	!            	!      	!      
 Endcol*******************     
-
 Endcol*******************     
-EndpgF    
-
-
-
+EndpgF
 
 xpgL  	!2name 	!3BkgImage
 pgL   	!Single	!../Jpg/f1040sc-page-002.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.12 	!left  	!0.02  	!8.50  
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+
+
                               
-
-
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!29    	!0.00  	!center	!2.58  	!2.68  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><xslt:stylesheet xmlns:xslt="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0">
+<xslt:stylesheet xmlns:xslt="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0">
 <xslt:template match="Form">
 <fo:root>
 <xslt:text disable-output-escaping="yes">
@@ -31,14 +31,12 @@
 
 <fo:block-container position="absolute" top="0.00in" left="0.00in" width="8.5in" height="11in" background-image="../Jpg/f1040sc-page-001.jpg">
 
-<fo:block-container position="absolute" top="-0.12in" left="0.01in" width="8.49in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+<fo:block-container position="absolute" top="-0.12in" left="0.02in" width="8.48in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="0.00in" left="6.63in" width="1.3in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="3.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01='0'">
 	</xslt:when>
@@ -50,9 +48,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.97in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line02/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line02='0'">
 	</xslt:when>
@@ -64,9 +60,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line03/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line03='0'">
 	</xslt:when>
@@ -78,9 +72,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line04/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line04='0'">
 	</xslt:when>
@@ -92,9 +84,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line05/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line05='0'">
 	</xslt:when>
@@ -106,9 +96,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line06/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line06='0'">
 	</xslt:when>
@@ -120,9 +108,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line07/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line07='0'">
 	</xslt:when>
@@ -134,9 +120,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line18/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line18='0'">
 	</xslt:when>
@@ -148,9 +132,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line19/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line19='0'">
 	</xslt:when>
@@ -162,9 +144,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.65in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line20a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line20a='0'">
 	</xslt:when>
@@ -176,9 +156,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line20b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line20b='0'">
 	</xslt:when>
@@ -190,9 +168,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.98in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line21/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line21='0'">
 	</xslt:when>
@@ -204,9 +180,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line22/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line22='0'">
 	</xslt:when>
@@ -218,9 +192,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.31in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line23/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line23='0'">
 	</xslt:when>
@@ -232,9 +204,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line24a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line24a='0'">
 	</xslt:when>
@@ -246,9 +216,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line24b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line24b='0'">
 	</xslt:when>
@@ -260,9 +228,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.98in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line25/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line25='0'">
 	</xslt:when>
@@ -274,9 +240,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line26/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line26='0'">
 	</xslt:when>
@@ -288,9 +252,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.31in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line27a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line27a='0'">
 	</xslt:when>
@@ -302,9 +264,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.65in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line27b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line27b='0'">
 	</xslt:when>
@@ -316,9 +276,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.81in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line28/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line28='0'">
 	</xslt:when>
@@ -330,9 +288,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.97in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line29/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line29='0'">
 	</xslt:when>
@@ -344,9 +300,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.81in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line30/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line30='0'">
 	</xslt:when>
@@ -358,9 +312,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.31in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line31/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line31='0'">
 	</xslt:when>
@@ -377,9 +329,7 @@
 <fo:block-container position="absolute" top="0.00in" left="2.77in" width="1.29in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="5.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line08/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line08='0'">
 	</xslt:when>
@@ -391,9 +341,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line09/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line09='0'">
 	</xslt:when>
@@ -405,9 +353,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line10/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line10='0'">
 	</xslt:when>
@@ -419,9 +365,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line11/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line11='0'">
 	</xslt:when>
@@ -433,9 +377,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.98in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line12/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line12='0'">
 	</xslt:when>
@@ -447,9 +389,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line13/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line13='0'">
 	</xslt:when>
@@ -461,9 +401,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.81in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line14/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line14='0'">
 	</xslt:when>
@@ -475,9 +413,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line15/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line15='0'">
 	</xslt:when>
@@ -489,9 +425,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line16a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line16a='0'">
 	</xslt:when>
@@ -503,9 +437,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line16b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line16b='0'">
 	</xslt:when>
@@ -517,9 +449,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line17/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line17='0'">
 	</xslt:when>
@@ -536,42 +466,49 @@
 <fo:block-container position="absolute" top="0.00in" left="7.15in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.78in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineGy_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineGy_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineGy_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineHx_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineHx_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineHx_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineIy_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineIy_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineIy_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.28in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineJy_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineJy_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineJy_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 </fo:block-container>
 *******************************************************
 
-<fo:block-container position="absolute" top="0.00in" left="7.65in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
+<fo:block-container position="absolute" top="0.00in" left="7.77in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.78in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineGn_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineGn_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineGn_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineIn_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineIn_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineIn_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.28in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineJn_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineJn_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineJn_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -581,7 +518,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.02in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="3.78in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line01Ck_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line01Ck_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line01Ck_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -591,12 +529,14 @@
 <fo:block-container position="absolute" top="0.00in" left="6.60in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="9.95in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line32a_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line32a_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line32a_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="10.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line32b_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line32b_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line32b_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -606,9 +546,7 @@
 <fo:block-container position="absolute" top="0.00in" left="4.90in" width="1.3in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="8.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line30a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line30a='0'">
 	</xslt:when>
@@ -625,9 +563,7 @@
 <fo:block-container position="absolute" top="0.00in" left="3.31in" width="1.76in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="8.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line30b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line30b='0'">
 	</xslt:when>
@@ -644,7 +580,8 @@
 <fo:block-container position="absolute" top="0.00in" left="2.34in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_linecash_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_linecash_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_linecash_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -654,7 +591,8 @@
 <fo:block-container position="absolute" top="0.00in" left="3.24in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineaccru_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineaccru_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineaccru_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -664,7 +602,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.24in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineother_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineother_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineother_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -674,7 +613,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.20in" width="2.78in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="2.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_linespecif_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_linespecif_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_linespecif_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -684,17 +624,22 @@
 <fo:block-container position="absolute" top="0.00in" left="0.50in" width="2.44in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="1.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineTFNI_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineTFNI_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent" color="black">
+	<fo:basic-link external-destination="../Pdf/SchedC_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTFNI_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_linePrBus_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_linePrBus_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_linePrBus_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.13in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineBusNm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineBusNm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineBusNm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -704,22 +649,16 @@
 <fo:block-container position="absolute" top="0.00in" left="3.22in" width="4.75in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="1.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineTLN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineTLN_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent" color="black">
+	<fo:basic-link external-destination="../Pdf/SchedC_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTLN_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.31in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineAddr1_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineAddr1_text.xml')//text"/>
-	</fo:block>
-</fo:block-container>
-
-</fo:block-container>
-*******************************************************
-
-<fo:block-container position="absolute" top="0.00in" left="3.22in" width="2.68in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
-
-<fo:block-container position="absolute" top="2.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineCity_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineCity_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineAddr1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -729,12 +668,30 @@
 <fo:block-container position="absolute" top="0.00in" left="5.95in" width="2.02in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="2.31in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineAddr2_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineAddr2_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineAddr2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
+</fo:block-container>
+*******************************************************
+
+<fo:block-container position="absolute" top="0.00in" left="3.22in" width="2.68in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+
 <fo:block-container position="absolute" top="2.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineST_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineST_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineCity_text.xml')//text"/>
+	</fo:block>
+</fo:block-container>
+
+</fo:block-container>
+*******************************************************
+
+<fo:block-container position="absolute" top="0.00in" left="5.95in" width="0.45in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+
+<fo:block-container position="absolute" top="2.47in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineST_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -744,18 +701,22 @@
 <fo:block-container position="absolute" top="0.00in" left="6.45in" width="1.52in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="2.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_linezip_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_linezip_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_linezip_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 </fo:block-container>
 *******************************************************
 
-<fo:block-container position="absolute" top="0.00in" left="6.23in" width="0.43in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
+<fo:block-container position="absolute" top="0.00in" left="6.23in" width="0.43in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="1.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineTSSNoF_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineTSSNoF_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent" color="black">
+	<fo:basic-link external-destination="../Pdf/SchedC_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoF_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -764,8 +725,11 @@
 <fo:block-container position="absolute" top="0.00in" left="6.70in" width="0.47in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineTSSNoM_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineTSSNoM_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent" color="black">
+	<fo:basic-link external-destination="../Pdf/SchedC_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoM_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -774,8 +738,11 @@
 <fo:block-container position="absolute" top="0.00in" left="7.22in" width="0.57in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="1.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineTSSNoL_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineTSSNoL_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent" color="black">
+	<fo:basic-link external-destination="../Pdf/SchedC_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoL_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -784,7 +751,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.20in" width="0.19in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD1_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD1_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -794,12 +762,14 @@
 <fo:block-container position="absolute" top="0.00in" left="6.39in" width="0.21in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineB1_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineB1_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineB1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD2_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD2_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -809,12 +779,14 @@
 <fo:block-container position="absolute" top="0.00in" left="6.60in" width="0.2in" background-color="transparent" font-family="Times" font-size="12pt" text-align="">
 
 <fo:block-container position="absolute" top="1.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineB2_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineB2_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineB2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD3_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD3_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -824,12 +796,14 @@
 <fo:block-container position="absolute" top="0.00in" left="6.80in" width="0.2in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineB3_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineB3_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineB3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD4_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD4_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -839,12 +813,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.00in" width="0.19in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineB4_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineB4_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineB4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD5_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD5_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -854,12 +830,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.19in" width="0.21in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineB5_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineB5_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineB5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD6_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD6_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -869,12 +847,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.40in" width="0.18in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineB6_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineB6_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineB6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD7_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD7_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD7_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -884,7 +864,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.58in" width="0.21in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD8_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD8_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD8_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -894,7 +875,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.79in" width="0.2in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineD9_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineD9_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineD9_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -915,7 +897,8 @@
 <fo:block-container position="absolute" top="0.00in" left="2.58in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.29in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line33a_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line33a_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line33a_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -925,7 +908,8 @@
 <fo:block-container position="absolute" top="0.00in" left="3.60in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.29in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line33b_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line33b_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line33b_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -935,7 +919,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.50in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.29in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line33c_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line33c_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line33c_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -945,7 +930,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.69in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.61in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line34y_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line34y_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line34y_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -955,7 +941,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.50in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.61in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line34n_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line34n_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line34n_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -965,9 +952,7 @@
 <fo:block-container position="absolute" top="0.00in" left="6.53in" width="1.41in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="1.97in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line35/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line35='0'">
 	</xslt:when>
@@ -979,9 +964,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line36/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line36='0'">
 	</xslt:when>
@@ -993,9 +976,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line37/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line37='0'">
 	</xslt:when>
@@ -1007,9 +988,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.98in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line38/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line38='0'">
 	</xslt:when>
@@ -1021,9 +1000,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line39/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line39='0'">
 	</xslt:when>
@@ -1035,9 +1012,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.66in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line40/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line40='0'">
 	</xslt:when>
@@ -1049,9 +1024,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.98in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line41/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line41='0'">
 	</xslt:when>
@@ -1063,9 +1036,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line42/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line42='0'">
 	</xslt:when>
@@ -1082,7 +1053,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.24in" width="0.36in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="5.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line43m_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line43m_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line43m_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1092,7 +1064,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.70in" width="0.24in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="5.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line43d_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line43d_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line43d_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1102,7 +1075,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.08in" width="0.35in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="5.14in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line43y_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line43y_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line43y_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1112,9 +1086,7 @@
 <fo:block-container position="absolute" top="0.00in" left="1.44in" width="1.35in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="5.81in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line44a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line44a='0'">
 	</xslt:when>
@@ -1131,9 +1103,7 @@
 <fo:block-container position="absolute" top="0.00in" left="4.60in" width="1.31in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="5.81in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line44b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line44b='0'">
 	</xslt:when>
@@ -1150,9 +1120,7 @@
 <fo:block-container position="absolute" top="0.00in" left="6.50in" width="1.46in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="5.81in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line44c/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line44c='0'">
 	</xslt:when>
@@ -1169,22 +1137,26 @@
 <fo:block-container position="absolute" top="0.00in" left="6.79in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line45y_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line45y_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line45y_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.45in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line46y_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line46y_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line46y_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.78in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line47ay_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line47ay_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line47ay_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.11in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line47by_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line47by_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line47by_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1194,22 +1166,26 @@
 <fo:block-container position="absolute" top="0.00in" left="7.49in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line45n_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line45n_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line45n_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.45in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line46n_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line46n_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line46n_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.78in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line47an_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line47an_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line47an_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.11in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_line47bn_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_line47bn_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_line47bn_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1219,47 +1195,56 @@
 <fo:block-container position="absolute" top="0.00in" left="0.57in" width="5.8in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="7.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp1nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp1nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp1nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp2nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp2nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp2nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp3nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp3nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp3nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp4nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp4nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp4nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.97in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp5nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp5nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp5nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp6nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp6nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp6nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp7nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp7nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp7nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp8nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp8nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp8nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="10.3in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp9nm_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedC_Copy00_lineExp9nm_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedC_Copy00_lineExp9nm_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1269,9 +1254,7 @@
 <fo:block-container position="absolute" top="0.00in" left="6.58in" width="1.36in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="7.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp1/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp1='0'">
 	</xslt:when>
@@ -1283,9 +1266,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp2/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp2='0'">
 	</xslt:when>
@@ -1297,9 +1278,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp3/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp3='0'">
 	</xslt:when>
@@ -1311,9 +1290,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp4/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp4='0'">
 	</xslt:when>
@@ -1325,9 +1302,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.97in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp5/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp5='0'">
 	</xslt:when>
@@ -1339,9 +1314,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp6/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp6='0'">
 	</xslt:when>
@@ -1353,9 +1326,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp7/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp7='0'">
 	</xslt:when>
@@ -1367,9 +1338,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp8/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp8='0'">
 	</xslt:when>
@@ -1381,14 +1350,24 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="10.3in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineExp9/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineExp9='0'">
 	</xslt:when>
 	<xslt:otherwise>
 	<xslt:value-of select="copy00lineExp9"/>
+	</xslt:otherwise>
+	</xslt:choose>
+      </fo:block>
+</fo:block-container>
+
+<fo:block-container position="absolute" top="10.46in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+	<xslt:choose>
+	<xslt:when test="copy00lineSum='0'">
+	</xslt:when>
+	<xslt:otherwise>
+	<xslt:value-of select="copy00lineSum"/>
 	</xslt:otherwise>
 	</xslt:choose>
       </fo:block>

@@ -1,0 +1,9 @@
+#! /bin/bash
+f1=$1_Copy00.2fo
+f2=$1_Copy19.2fo
+#dir ../2Fo
+cp ../2Fo/$f1 ../2Fo/$f2
+sed 's/Copy00/Copy19/g' ../2Fo/$f2 > ../2Fo/$f2.tmp
+sed 's/copy00/copy19/g' ../2Fo/$f2.tmp > ../2Fo/$f2
+rm ../2Fo/$f2.tmp
+#./pretty.sh $f2

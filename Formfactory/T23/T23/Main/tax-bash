@@ -1,0 +1,2750 @@
+#!/bin/bash
+
+#This file is copy-left.
+viewReadMe(){
+cat README | less
+return
+}
+
+choice00NotAllowed(){
+	echo "Choice $1 is not allowed."
+	sleep 5
+}
+
+importLastYrReturn(){
+echo "Importing last year's return."
+sleep 1
+
+#IMPORT LAST YEARS RETURN
+if [ -f ../../T16/Xml/taxlogic.final ]
+then
+cp ../../T16/Xml/taxlogic.final ../Xml/taxlogic.PrevYear
+else
+echo "../../T16/Xml/taxlogic.final is not a regular file."
+echo "      Will use taxlogic.frame instead."
+cp ../Xml/taxlogic.frame ../Xml/taxlogic.PrevYear
+fi
+return
+}
+importLastYrData(){
+#IMPORT DATA FROM LAST YEAR'S DATA FILES
+
+if [ -d ../../T16/Data/ ]
+then
+echo "Last years Data directory exists"
+echo "The program will import any data files"
+echo "in that directory."
+
+
+cp ../../T16/Data/*_data.xml ../Data
+
+
+#This takes last years data files and puts them in
+#  the correct format and outputs this in a .temp file.
+for file in ../Data/Background*_data.xml
+do
+    echo "Processing $file"
+    
+#This eliminates the <text/> format to make the file predictable.
+#It does not insert the <number></number> line
+sed 's/<instructions\/>/<instructions><\/instructions>/;s/<text\/>/<text><\/text>/;s/<number\/>/<number><\/number>/;s/<override\/>/<override><\/override>/;s/<item\/>/<item><\/item>/' ../Data/$file  >  ../Data/$file.tmp
+
+#The next two lines eliminate any <number> lines to avoid duplication
+sed '/<number>/d' ../Data/$file.tmp  >  ../Data/$file.tmp2
+sed '/<number\/>/d' ../Data/$file.tmp2 > ../Data/$file.tmp3
+
+#The next line inserts the <number> line in correct format.
+sed '/<override>/i\
+<number><\/number>
+<goesTo>
+</goesTo>
+<comesFrom>
+</comesFrom>' ../Data/$file.tmp3  >  ../Data/$file.tmp4
+
+#This line was supposed to put the whole file in proper format,
+#but it puts back the <text/> usage
+#It may not be necessary.
+#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Data/$file.tmp4 -xsl ../Xsl/setupData.xsl -out ../Data/$file.tmp5
+
+#This eliminates the <text/> format once more to make the file predictable.
+#It also eliminates any unused <item></item> entries.
+sed 's/<instructions\/>/<instructions><\/instructions>/;s/<text\/>/<text><\/text>/;s/<number\/>/<number><\/number>/;s/<override\/>/<override><\/override>/;s/<item\/>//' ../Data/$file.tmp5  >  ../Data/$file.tmp6
+
+#This line removes any blank lines.
+#This may have been done by the java step already.
+sed 's/^$/d' ../Data/$file.tmp6 ../Data/$file.temp
+
+#This moves the changes back to the original file.
+mv ../Data/$file.temp ../Data/$file
+
+done
+
+
+#This line removes the .temp extension
+#rename 's/.temp//' ../Data/*.temp
+
+ 
+
+#These lines remove the T16 .tmp files.
+rm ../Data/*.tmp
+rm ../Data/*.tmp2
+rm ../Data/*.tmp3
+rm ../Data/*.tmp4
+rm ../Data/*.tmp5
+echo
+
+#Here there will have to be a set of copy files to put last years 
+#formatted data files (../../Data/*.temp) in the correct 
+#lines (file names) for this years forms.
+#This is because the formatting and logic may have changed.
+
+
+echo "Last years data files have now been verified for their format."
+sleep 2
+
+
+else
+echo "Last year's Data directory doesn't exist"
+echo "This year's empty data files are now ready to use."
+fi
+
+return
+}
+
+importGnuCash(){
+#IMPORT DATA FROM GNUCASH
+
+#The location of the GnuCash backup files needs to be specified
+#in the constant GNUCASHFILES.
+#This is best defined by placing the following 2 lines in ~/.bashrc
+#  GNUCASHFILES=~/.gnucash.data  (substitute your absolute path to the data here)
+#  export GNUCASHFILES
+
+#This line defines the constant YR
+#This will make it easier to hardwire this file next year.
+#YR=21
+#export YR
+
+#This line select the backup files of gnucash in reverse order.
+#   Thus the desired (most recent) backup is the first in the group.
+#   The break; command ensures that only this first file is used.
+
+for file in $(dir -ra $GNUCASHFILES/*.gnucash)
+do
+
+#The name of the first file is put into foo.
+foo=$file
+#echo $foo
+
+#This removes everything from the filename up to and including the 2 in $YEAR.
+newname=${foo#~/*.2}
+#echo $newname
+
+#The next line puts the 2(of $YEAR) back in the name.
+newername='2'$newname
+#echo $newername
+
+#This copies the file to GnuCash leaving the original backups unchanged.
+cp $foo ../GnuCash/$newername.gz
+#dir ..//GnuCash
+#This unzips the file.
+gunzip ../GnuCash/$newername.gz
+#echo $newername
+
+#This adds the .current extension expected by  refreshAll().
+#dir ../GnuCash/
+rm ../GnuCash/*.current
+cp ../GnuCash/$newername ../GnuCash/$newername.current
+dir ../GnuCash
+
+break;
+
+done
+
+}
+
+
+refreshAll() {
+#This file creates the ../BaseData/totl.xml file for use by refreshTl().
+#This file also creates ../Accounts directory with its account files which can be edited if needed.
+#That is, this file does all the calculations that can be done with the GnuCash data before
+#the taxpayor starts filling out the files in ../Data.
+
+#In Ubuntu xalan is available in /usr/sbin but it points to the c version
+#which has no implementation of format-number()
+#I therefore used the classpath option to get the java version
+
+echo "Your data is being refreshed. This will take about 50 seconds."
+echo "Please wait for the program to return." 
+
+#These lines empty the Accounts and Work directories
+#This is probably not needed.
+#rm ../Accounts/* 2 > /device/null
+#rm ../Work/* 2 > /device/null
+
+#This line removes any non-current-year transactions.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../GnuCash/*.current -xsl ../BaseXsl/year.xsl -out ../BaseData/year.xml
+
+#This line places the transactions under their appropriate account name.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/year.xml -xsl ../BaseXsl/splita.xsl -out ../BaseData/split.xml
+
+#This line divides all the dollarvalues by 100.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/split.xml -xsl ../BaseXsl/dollarvalue.xsl -out ../BaseData/dollarvalue.xml
+
+
+#*********The next few lines would allow the creation and editing of account files *******
+
+#This line separates the accounts into individual files in ../Accounts.init
+#This directory will hold the account files as produced by GnuCash.
+#This is in case you need to see your GnuCash unaltered.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/dollarvalue.xml -xsl ../BaseXsl/accounts.xsl -out ../Accounts.init/accounts.xml
+
+#This file simply copies the account files in ../Accounts.init to ../Accounts
+cp -r ../Accounts.init/* ../Accounts
+
+#*****************************************************************************************************
+
+
+#If one wants to edit an account, simply copy the account.xml file to ../Accounts.edited.
+#There one can use emacs to edit the file.
+#In this location the edited file will not be overwritten if the GnuCash file is updated and copied to ../Accounts.init/ and ../Accounts/
+
+#Once edited, the file is copied on top of the corresponding file in ../Accounts/
+#to maintain any edits previously made.
+cp -r ../Accounts.edited/* ../Accounts
+
+#***************************************************************************************
+
+#This removes dollarvalue.xml to allow one to see if it is recreated.
+#This line is probably not needed.
+rm ../BaseData/dollarvalue.xml
+
+
+#This line rejoins the individual account files into a new version of ../BaseData/dollarvalue.xml called ../BaseData/dollarvalue.xml
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Accounts/accounts.xml -xsl ../BaseXsl/rejoin.xsl -out ../BaseData/dollarvalue.xml
+
+#*******************************************************************************************
+
+#This line totals the transactions under each account
+#This line has to occur after any editing of the accounts.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/dollarvalue.xml -xsl ../BaseXsl/totl.xsl -out ../BaseData/totl.xml
+
+return 
+}
+
+refreshTl() {
+
+#This file refreshes the data starting with ../BaseData/totl.xml. created at the end of RefreshAll()
+#It takes about half the time required by starting with gnucash file.
+#fs = [ java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Data/Bkg_Copy00_lineFS
+#If text [ -f ../Data/Bkg_Copy00_lineFS.text.xml ]
+#   then
+#      echo "File ../Data/Bkg_Copy00_lineFS.text.xml exists."
+#      fs=[ java $XALANJAVAJAR org.apache.xalan.xslt.Process -in   
+#else
+#	echo "File ../Data/Bkg_Copy_lineFS.text.xml doesn't exist."
+#	echo "Please enter data into Bkg Form."
+
+#if [ -f ../Data/Bkg_Copy00_lineFS_text.xml ]
+#   then
+#	echo "File ../Data/Bkg_Copy00_lineFS_text.xml exists."
+#	java -$XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Data/Bkg_Copy00_lineFS_text.xsl -xsl ../Xsl/readFS.xsl -out -
+#else
+#	echo "File ../Data/Bkg_Copy00_lineFS_text.xml doesn't exist."
+#	echo "Install/Open Form Bkg to enter your filing status."
+#fi
+	
+
+echo "Your data is being refreshed. This will take about 30 seconds."
+echo "Please wait for the program to return." 
+
+
+#The next line primes ../BaseData/totl.xml created in refreshAll to attach ../Xml/All.xml created in previous step
+sed 's/<\/IRSForms>/include(\.\.\/Xml\/all.xml)<\/IRSForms>/' ../BaseData/totl.xml > ../BaseData/sedtotl.xml
+
+#This lines removes ../Xml/all.xml to make room for a new version.
+#rm ../Xml/$1_Copy$2.xml
+rm ../Xml/all.xml
+
+#These lines create ../Xml/all.xml by amalgamating the data files in ../Data.
+cat ../Data/*.xml >> ../Xml/all.xml
+
+#This line adds the ../Xml/all.xml lines to the end of ../BaseData/sedtotl.xml  to get ../Total/totlall.xml
+m4 ../BaseData/sedtotl.xml > ../Total/totlall.xml
+
+#This line puts the accounts under the proper taxlines.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Total/totlall.xml -xsl ../BaseXsl/taxlines.xsl -out ../Taxlines/linesall.xml
+
+#This works. There are no Form1040 variables in the xsl, but the file refers to taxlines file.
+#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Taxlines/linesall.xml  -xsl ../Xsl/SchedA_Copy01.xsl -out ../Output/all.xml
+
+#This line uses the logic in taxlogic.xsl to create the final data.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Taxlines/linesall.xml  -xsl ../Xsl/taxlogic.xsl -out ../Output/all.xml
+
+#This changes the -Copy for _Copy in all.xml
+sed 's/-Copy/_Copy/' ../Output/all.xml > ../Output/all.tmp
+cp ../Output/all.tmp ../Output/all.xml
+rm ../Output/all.tmp
+
+#This line will split ../Output/all.xml into individual files for each form.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/all.xml -xsl ../BaseXsl/makeOutputFiles.xsl -out ../Out/outputforms.xml
+
+return 
+}
+
+
+showValue(){
+sed -n '/<$1>/s/>$3>//;s/<\/$3//p' $1 $2
+}    
+
+#The following is an attempt to get a list to work in a for construction.
+listAccountsPlus() {
+#This function displays an aphabetically sorted list of all your accounts in Firefox. 
+
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/totl.xml -xsl ../Xsl/listAccounts.xsl -out ../Work/listAccounts.xml
+
+sed 's/<?xml version="1.0".*?>//;s/<Accounts.*gnc">//;s/<account>//g;s/<\/account>/\n/g;s/<\/Accounts>//' ../Work/listAccounts.xml > ../Work/listAccounts.xml.tmp
+
+#The tmp is a list with one account per line, but the names have spaces.
+cat ../Work/listAccounts.xml.tmp
+
+
+for account in $(cat ../Work/listAccounts.xml.tmp)
+do
+    echo $account > ../Work/listAccounts.xml.temp
+        
+done
+
+#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
+firefox -new-tab ../Work/listAccounts.xml.tmp > /dev/null 2>&1 &
+#qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
+return
+}
+
+
+listAccounts() {
+#This function displays an aphabetically sorted list of all your accounts in Firefox. 
+
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/totl.xml -xsl ../Xsl/listAccounts.xsl -out ../Work/listAccounts.xml
+
+
+#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
+firefox -new-tab ../Work/listAccounts.xml > /dev/null 2>&1 &
+#qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
+return
+}
+
+showAccounts(){
+#This function displays the transactions and total for each account used by a particular form or schedule.
+#This file now depends on refreshAll bringing data up to date.
+clear
+echo "In order to show the accounts associated with a particular"
+echo "Form or Schedule you need to specify the form or schedule you desire."
+echo "The name of the form is case sensitive and has no spaces."
+echo "The possibilities are:"
+echo "SchedA"
+echo "SchedB"
+echo "SchedC"
+#echo "SchedD"
+echo "SchedH"
+#echo "SchedSE"
+echo "1040"
+#echo "4562"
+#echo "4868"
+#echo "6251"
+echo "8829"
+
+
+echo "For which form or schedule would you like to see the accounts and their transactions? Enter a form or schedule from the list above."
+read formSch
+#echo $formSch
+
+#This line removes all accounts except those associated with the specified form or schedule.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/taxlines.xml -xsl ../Xsl/oneForm.xsl -PARAM form $formSch -out ../Work/oneForm.xml 
+
+#This line prepares the fo file to be displayed
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/oneForm.xml -xsl ../2Fo/trnsPerTaxline.2fo -out ../Work/trnsPerForm.fo
+
+#This line converts the fo file to pdf.
+java $FOPJAVAJAR org.apache.fop.cli.Main ../Work/trnsPerForm.fo ../Pdf/trnsPerForm.pdf
+
+#This line displays the pdf in a tab of qpdfview.
+qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
+
+return
+}
+
+
+oneAcct() {
+#This file now depends on refreshAll bringing data up to date.
+list=""
+echo
+echo "This function will list the transactions for one account." 
+echo "You will need to supply the name of the one account you want to see."
+echo
+echo "Do you need to see a list of all available accounts?"
+echo "Enter y or n."
+read list
+
+if [ "$list" = "y" ]
+  then
+#   echo $list
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/totl.xml -xsl ../BaseXsl/listAccounts.xsl -out ../BaseData/listAccounts.xml
+
+firefox -new-tab ../BaseData/listAccounts.xml > /dev/null 2>&1 &
+#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
+fi
+
+echo
+echo "Type the name of the account you want to see:"
+read account
+echo
+echo "The transactions will be sorted by date-posted."
+echo "Would you prefer the transactions be sorted by description? If so enter 'yes'."
+read description
+
+if [ "$description" = "yes" ]
+  then
+echo "description = "yes"."
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/totl.xml -xsl ../BaseXsl/oneAcctDesc.xsl -out ../BaseData/oneAcct.xml -PARAM AName $account
+ else
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/totl.xml  -xsl ../BaseXsl/oneAcctDate.xsl -out ../BaseData/oneAcct.xml -PARAM AName $account
+fi
+
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/oneAcct.xml -xsl ../Base2Fo/trnsPerAcct4.2fo -out ../Fo/oneAcct.fo
+
+#java $FOPJAVAJAR org.apache.fop.cli.Main  ../Fo/oneAcct.fo ../Pdf/oneAcct.pdf
+fop ../Fo/oneAcct.fo ../Pdf/oneAcct.pdf
+
+#firefox -new-tab ../Pdf/oneAcct.pdf > /dev/null 2>&1 &
+qpdfview --unique ../Pdf/oneAcct.pdf > /dev/null 2>&1 &
+
+}
+
+
+edit_account(){
+
+list=""
+echo
+echo "This function will edit the transactions for one account." 
+echo "You will need to supply the name of the one account you want to edit."
+echo
+echo "Do you need to see a list of all available accounts?"
+echo "Enter y or n."
+read list
+
+if [ "$list" = "y" ]
+  then
+    echo $list
+
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/totl.xml -xsl ../Xsl/listAccounts.xsl -out ../Work/listAccounts.xml
+
+firefox ../Work/listAccounts.xml > /dev/null 2>&1 &
+#Note: listAccounts.xml cannot be opened bye qpdfview because it is not pdf.
+ #   qpdfview --unique ../Work/listAccounts.xml > /dev/null 2>&1 &
+fi
+
+echo
+echo Type the name of the account you want to edit:
+read account
+
+if [ -e ../Accounts.edited/$account.xml ]; then
+    emacs ../Accounts.edited/$account.xml
+else
+    cp ../Accounts/$account.xml ../Accounts.edited/$account.xml
+    emacs ../Accounts.edited/$account.xml
+fi
+
+
+#When you change GnuCash and update your data, the files in
+#/Accounts.edited are copied over your new data.
+#In other words, when you edit and account, it becomes immutable
+#until you either reedit it in /Accounts.edited or delete it
+#from /Accounts.edited.
+
+return
+}
+
+
+yOrn(){
+response=$1
+while [ "$response" != "y" ]
+do
+case "$response" in
+    y) return 0
+       ;;
+    n) return 1
+       ;;
+    *) echo "Response not recognized. Please enter y or n."
+       read response
+       ;;
+esac
+done    
+}
+
+showForm() {
+#This function creates ../Pdf/f$1.pdf from ../Work/taxlogic.xml and displays it.
+#It uses as a parameter the name of the form, schedule, or worksheet(as noted in ~/Tax-bash/T15/Developer/Lines/lF$1.xml).
+
+foo=$1
+#echo "$foo"
+#echo "${foo%%_*}"
+#This line removes all lines which do not belong to the form being displayed.
+#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/taxlogic.xml -xsl ../Xsl/notForm.xsl  -out ../Work/formOnly.xml -PARAM form ${foo%%_*}
+
+#This line refreshes the data for the form or schedule.
+#refreshTl $1_$2
+
+#****************************************************************************************************
+#This line creates the fo file from the xml file.
+#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/formOnly.xml -xsl ../2Fo/f$1.2fo -out ../Work/form.fo
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/$1_Copy$2.xml -xsl ../2Fo/$1_Copy$2.2fo -out ../Fo/$1_Copy$2.fo
+
+#This line creates the pdf file from the fo file.
+#This no longer works after Ubuntu update in Oct 2020.
+#java $FOPJAVAJAR org.apache.fop.cli.Main ../Fo/$1_$2.fo ../Pdf/$1_$2.pdf
+#Now using fop directly works:
+fop ../Fo/$1_Copy$2.fo ../Pdf/$1_Copy$2.pdf
+
+#The previous fop file that started fop was /usr/bin/fop.
+#Since I had downloaded Fop version 2.5 to ~/Fop-2.5 I changed my PATH
+#in .bashrc placing ~/Fop-2.5/fop-2.5/fop at the beginning to ensure
+#the use of the newest fop shell file to start fop.
+
+
+#Three ways of displaying the data are possible. qpdfview is preferable. 
+#The form is displayed in the background, allowing return to the menu.
+
+#evince ../Pdf/$1_Copy$2.pdf
+#firefox -new-tab ../Pdf/$1_Copy$2.pdf > /dev/null 2>&1 &
+qpdfview --unique ../Pdf/$1_Copy$2.pdf >/dev/null 2>&1 &
+
+return
+}
+
+showFormLocal() {
+#This is the version of showForm to be called from a particular line. It displays the line with yellow background color.
+
+#The $# is the number of parameters.     
+params=$#
+echo "$params"
+if [ $params = "3" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+fi
+echo "infile is $infile. tempfile=$tempfile."
+
+#This sets the background-color to yellow for the line.
+sed '/<bgcolor>/s/^.*$/<bgcolor>yellow<\/bgcolor>/' $infile > $tempfile
+mv $tempfile $infile
+
+showForm $1 $2
+
+
+#This restores the back-ground color to blank.
+sed '/<bgcolor>/s/^.*$/<bgcolor><\/bgcolor>/' $infile > $tempfile
+mv $tempfile $infile
+
+return
+}
+
+
+editDInstructions(){
+    echo "Editing instructions is only for development."
+    echo "This ability will be removed from the working program."
+
+#The $# is the number of parameters.     
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile. tempfile=$tempfile."
+
+echo "The local instructions for this line are:"
+#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
+
+echo "Do you wish to enter or change the local instructions for this line?"
+echo "Enter y or n."
+read this
+
+if yOrn $this
+then
+       echo "Editing instructions is not currently possible."
+       echo "Please enter any instructions you wish to give:"
+       read instructions
+#      echo "instructions"
+#       sed '/<instructions>/s/<instructions>.*<\/instructions>/<instructions>'"$instructions"'<\/instructions>/' $infile > $tempfile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instDin.xsl -PARAM instructions "$instructions" -out $tempfile
+#      cat $tempfile
+	mv $tempfile $infile
+	cat $infile
+else
+	echo "The instructions have been kept unchanged."
+fi
+
+echo "The local instructions for this line are:"
+#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
+
+}    
+editTInstructions(){
+    echo "Editing instructions is only for development."
+    echo "This ability will be removed from the working program."
+
+#The $# is the number of parameters.     
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile. tempfile=$tempfile."
+
+echo "The local instructions for this line are:"
+#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
+echo "Do you wish to enter or change the local instructions for this line?"
+echo "Enter y or n."
+read this
+
+if yOrn $this
+then
+       echo "Editing existing instructions is not currently possible."
+       echo "Please enter anew any instructions you wish to give:"
+       read instructions
+#       echo "$instructions"
+#       sed '/<instructions>/s/<instructions>.*<\/instructions>/<instructions>'"$instructions"'<\/instructions>/' $infile > $tempfile 
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instTin.xsl -PARAM instructions "$instructions" -out $tempfile
+#       cat $tempfile
+       mv $tempfile $infile
+       cat $infile
+else
+	echo "The instructions have been kept unchanged."
+fi
+
+echo "The local instructions for this line are:"
+#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
+}    
+
+showInstructions(){
+#This fuction shows the local instruction for this line.
+    #The value of this line is shown as <instructions> in the data file:
+#The $# is the number of parameters.     
+params=$#
+#echo "$params"
+if [ $params = "3" ]; then
+    infile="../Data/$1_Copy$2_*.xml"
+    tempfile="../Data/$1_Copy$2_*.tmp"
+elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+fi
+echo "infile is $infile. tempfile=$tempfile."
+    
+echo "The local instructions for this line are:"
+#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl   
+echo
+
+return    
+}
+
+
+showIRSinstructions(){
+#The $# is the number of parameters.     
+params=$#
+echo "$params"
+if [ $params = "3" ]; then
+    pgNo="$3"
+   
+elif [ $params = "4" ]; then
+    pgNo=$4
+    
+fi
+echo $pgNo    
+#qpdfview --unique ~/Downloads/i1040gi.pdf#$1  --search "$2"  &
+qpdfview --unique ../IRS/i1040gi.pdf#$pgNo &
+return
+}
+
+showDataFile(){
+clear
+#The $# is the number of parameters.     
+params=$#
+#echo "$params"
+#echo $1
+#echo $2
+#echo $3
+if [ $params = "3" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+fi
+#echo "infile is $infile tempfile=$tempfile"
+
+#The next two lines remove any blank lines or lines containing only spaces.
+sed '/^ *$/d' $infile > $tempfile
+mv $tempfile $infile
+
+#This removes any leading spaces.
+sed 's/^ *//' $infile > $tempfile
+mv $tempfile $infile
+
+#This removes any blank items, i.e. <item></item>
+sed '/<item><\/item>/d' $infile > $tempfile
+mv $tempfile $infile
+
+#clear
+
+cat $infile
+echo " "
+echo "Are you ready to continue?"
+echo "If so, press y or n."
+read this
+if yOrn $this
+then
+	return
+fi
+}
+
+
+edit-numberline(){
+#This function edit the accounts used to calculate a number value.
+#Each account is an <item> under <accounts>.
+
+#The $# is the number of parameters. It is $0 $1 $2 and perhaps $3 for a total of either 3 or 4.    
+params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile. tempfile=$tempfile."
+
+echo "This line has a numerical value."
+echo "Preferably this value is drawn from your GnuCash data."
+echo "This is done by adding up the totals of the accounts you specify here."
+echo "This method allows the program to enter the amount automatically in the future."
+echo 
+echo "If the value to be entered here is not in your GnuCash accounts, or"
+echo "if you wish to temporarily override the value of this line,"
+echo "you can return to the previous menu and override the value."
+echo "Overriding normally changes the color to red,"
+echo "but on the previous menu you may set the color as you wish."
+echo
+clear
+echo "The totals of the following accounts are currently"
+echo "being added together to produce the value of the line."
+#this sed expression removes the markup of each item(account) and prints the accounts
+#sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl acctout.xsl
+
+echo
+echo "Do you wish to add an account? Enter y or n."
+read choice
+
+while yOrn $choice
+do      
+       echo "Enter the name of the account you wish to add."
+       read add
+#      sed '/<\/accounts>/i\
+#<item>'"$add"'<\/item>' $infile > $tempfile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctadd.xsl -out $tempfile -PARAM item "$add"
+
+       mv $tempfile $infile
+#      cat $infile       
+       echo "The following accounts are now listed:"
+#      sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
+       echo "Do you wish to add the name of another account? Enter y or n."
+       read choice
+done
+clear
+echo "Do you wish to remove an account? Enter y or n."
+read choice2
+
+while yOrn $choice2 
+do      
+       echo "Enter the name of the account you wish to remove."
+       read remove
+#      sed '/<item>'"$remove"'<\/item>/s///' $infile > $tempfile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctremove.xsl -PARAM acct "$remove" -out $tempfile
+#      cat $tempfile
+       mv $tempfile $infile
+#      cat $infile
+       clear
+       echo "The following accounts are now listed:"
+#      sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
+
+       echo "If you wish to remove the name of another account? Enter y or n."
+       read choice2
+done
+
+echo "The following accounts are now listed:"
+#    sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
+
+echo
+
+echo
+echo "Remember that this change will not show up"
+echo "until you have refreshed (recalculated) your data."
+echo "Since refreshing your data takes about 30 seconds,"
+echo "You may wish to make other changes to your data"
+echo "before you recalculate all your data."
+echo 
+echo "Do you wish to refresh your data now?"
+echo "This will take about 30 seconds."
+echo "Enter y or n"
+read this
+if yOrn "$this"
+   then
+       refreshTl $1 $2
+   else
+       echo "Data has not been refreshed."
+fi
+
+
+
+
+return
+}
+
+edit_textline(){
+#This fuction edits the text value of a data file.
+#The value of this line is shown as <text> in the data file:
+
+#The $# is the number of parameters.     
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_text.xml"
+#    tempfile="../Data/$1_$2_text.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_text.xml"
+    tempfile="../Data/$1_Copy$2_$3_text.tmp"
+#fi
+echo "infile is $infile. tempfile=$tempfile."
+
+#The next two lines remove any blank lines or lines containing only spaces.
+sed '/^ *$/d' $infile > $tempfile
+mv $tempfile $infile
+
+#This removes any leading spaces.
+sed 's/^ *//' $infile > $tempfile
+mv $tempfile $infile
+
+#The next two lines change <text/> to <text></text> if necessary.
+sed 's/<text\/>/<text><\/text>/' $infile > $tempfile 
+mv $tempfile $infile
+
+#The next two lines show the <text> line in the data file.
+echo
+echo "The value of this line is currently:"
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textout.xsl
+
+#sed -n '/<text>/s/<text>//;s/<\/text>//p' $infile
+#pattern=$infile//text
+#echo $pattern
+
+#Now you can choose to change the line or leave it unchanged.
+#The function yOrn returns 0 if y, 1 if n.
+echo
+echo "Do you wish to change the value of this text line?" 
+echo "Enter y or n"
+read this
+if yOrn "$this"
+   then
+       echo
+       echo "To change the text value of this line, please enter the new value now:"
+       read text
+#       sed '/<text>/s/<text>.*<\/text>/<text>'"$text"'<\/text>/' $infile > $tempfile 
+#       mv $tempfile $infile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textin.xsl -out $tempfile -PARAM text "$text"
+#      cat $tempfile
+       mv $tempfile $infile
+       echo
+       #Now you are shown the final value of the text line. 
+       echo "This text line now reads:"
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textout.xsl
+#       sed -n '/<text>/s/<text>//;s/<\/text>//p' $infile
+       echo	
+       #This is not applicable to text files.
+#       echo "Remember that this change will not show up"
+#       echo "until you have refreshed (recalculated) your data."
+#       echo "Since refreshing your data takes about 30 seconds,"
+#       echo "You may wish to make other changes to your data"
+#       echo "before you recalculate all your data."
+#       echo 
+#       echo "Do you wish to refresh your data now?"
+#       echo "This will take about 30 seconds."
+#       echo "Enter y or n"
+#       read this
+#       if yOrn "$this"
+#	   then
+#	       refreshTl $1 $2
+#       else
+#       echo "Data has not been refreshed."
+#       fi
+else
+    echo
+    echo "The text value has been kept unchanged."
+fi    
+
+
+
+return
+}
+
+
+edit-override(){
+#This fuction edits the override value of a data file.
+#The value of this line is shown as <override> in the data file:
+#echo "The data file currently reads:"
+#cat ../Data/$1_$2_data.xml
+
+#The $# is the number of parameters. It is $0 $1 $2 and perhaps $3 for a total of either 3 or 4.    
+params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_data.xml"
+#    tempfile="../Data/$1_$2_data.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_data.xml"
+    tempfile="../Data/$1_Copy$2_$3_data.tmp"
+#fi
+#echo "infile is $infile. tempfile=$tempfile."
+
+echo "This line has a numerical value."
+echo "Preferably this value is drawn from you GnuCash data."
+echo "This is done by adding up the totals of the accounts you specify here."
+echo "This method allows the program to enter the amount automatically in the future."
+echo "To do this you should return to the previous menu and choose (6)."
+echo
+
+echo "If the numerical value desired is not in your GnuCash data,"
+echo "or you wish to temporarily or permanently override the value"
+echo "obtained from the accounts method described above,"
+echo "you may enter the desired number as an override here."
+ 
+echo "If you wish to temporarily override the value of this line,"
+     "you can procede here."
+echo "Overriding normally changes the color to red,"
+echo "but on the previous menu you may set the color as you wish."
+
+echo " "
+#The next 5 lines are not complete and give an error if used.
+#echo "Are you ready to continue?"
+#echo "If so, press y or n."
+#read this
+#if yOrn $this
+#then
+
+#These two lines echo the current value of the override line.
+echo
+echo "The value of the override is currently:"
+#sed -n '/<override>/s/<override>//;s/<\/override>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overout.xsl
+
+#Do you want to change it?
+echo
+echo "Do you wish to change this override? Enter y or n."
+read choice
+
+while yOrn $choice
+do
+echo "To change the value of the override, enter the new value now:"
+read override
+#echo "$override"
+#sed '/<override>/s/<override>.*<\/override>/<override>'"$override"'<\/override>/' $infile > $tempfile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overin.xsl -out $tempfile -PARAM override "$override"
+mv $tempfile $infile
+choice="n"
+done
+
+clear
+echo "The value of the override is currently:"
+#sed -n '/<override>/s/<override>//;s/<\/override>//p'  $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overout.xsl
+
+echo
+echo "Remember that this change will not show up"
+echo "until you have refreshed (recalculated) your data."
+echo "Since refreshing your data takes about 30 seconds,"
+echo "You may wish to make other changes to your data"
+echo "before you recalculate all your data."
+echo 
+echo "Do you wish to refresh your data now?"
+echo "This will take about 30 seconds."
+echo "Enter y or n"
+read this
+if yOrn "$this"
+then
+       refreshTl $1 $2
+else
+    echo "Data has not been refreshed."
+fi
+   
+
+return    
+}
+
+
+comesFrom(){
+#This function shows the navigation for this line.
+
+#The $# is the number of parameters.     
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+echo "infile is $infile tempfile is $tempfile"
+
+echo "This line comes from:"
+foo=$(sed -n '/<from>/s/<from>//;s/<\/from>//p' $infile)
+
+echo $foo
+
+for form in $foo
+do	    
+    echo "Do you want to show $form? Enter y or n."
+    read choice
+    
+    if yOrn $choice
+       then
+       showFormLocal $form
+    fi
+done    
+
+return
+}    
+
+
+comes_from2(){
+#The $# is the number of parameters.     
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+echo "infile is $infile tempfile is $tempfile"
+
+echo "This line comes from:"
+foo=$(sed -n '/<from>/s/<from>//;s/<\/from>//p' $infile)
+
+echo $foo
+
+
+    select file in $foo;
+do
+    set_line_menu_text ../Data/$foo.xml
+done
+}
+
+goesTo(){
+#This function shows the navigation for this line.
+
+#The $# is the number of parameters.     
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile tempfile is $tempfile"
+
+
+echo "This line goes to:"
+foo=$(sed -n '/<to>/s/<to>//;s/<\/to>//p' $infile)
+echo $foo
+
+for form in $foo
+do	    
+    echo "Do you want to show $form? Enter y or n."
+    read choice
+    
+    if yOrn $choice
+       then
+       showForm $form
+    fi
+done    
+
+return
+}
+
+#goes_to2() {
+#select file in $(sed -n '/<to>//;s/<\/to>//p $infile);
+#do
+#    set_line_menu_text $file
+#done
+#}
+
+
+enterNotes(){
+#Now you can choose to change the line or leave it unchanged.
+#The function yOrn returns 0 if y, 1 if n.
+#The $# is the number of parameters.     
+
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile."
+#echo "tempfile is $tempfile"
+
+    echo "Currently, your notes on this line read:"
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesout.xsl
+    echo
+    echo
+    echo "Do you wish to change these notes"
+    echo "or enter new notes to yourself about this line?"
+echo "Enter y or n."
+read this
+if yOrn "$this"
+then
+       echo "Editing your notes is not currently possible."
+       echo "Please enter any notes you wish to make:"
+       read note
+#	sed '/<notes>/s/<notes>.*<\/notes>/<notes>'"$note"'<\/notes>/' $infile > $tempfile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesin.xsl -PARAM notes "$note" -out $tempfile
+	mv $tempfile $infile
+	echo
+#	cat $infile
+	echo "Your notes now read:"
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesout.xsl
+       echo
+       echo
+
+else
+	echo "The notes have been kept unchanged."
+	echo
+	echo
+
+fi
+
+return
+}    
+
+changeColor(){
+#The $# is the number of parameters.     
+params=$#
+#echo "$params"
+if [ $params = "3" ]; then
+    infile="../Data/$1_Copy$2_*.xml"
+    tempfile="../Data/$1_Copy$2_*.tmp"
+elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+fi
+echo "infile is $infile."
+
+clear
+echo "When an entry is overriden its color is changed to red"
+echo "When a note is entered on a line its color,"
+echo "if not overriden, is changed to dark blue."
+echo "Red and dark blue print like black."
+echo "You may change the color of an overriden entry"
+echo "or an entry containing a note"
+echo "or any entry"
+echo "by using this fuction."
+echo
+echo "Do you wish to change the color of the text of this entry?"
+echo "Enter y or n"
+read this
+if yOrn "$this"
+
+then
+    echo "Please enter the color you wish::"
+    read color
+#    sed 's/<taxline color=".*">/<taxline color="'"$color"'">/' $infile > $tempfile
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorin.xsl -PARAM shade $color -out $tempfile
+#   cat $tempfile
+    mv $tempfile $infile
+    echo
+    cat $infile
+    clear
+    echo
+    echo "The color of the text is now:"
+#    sed -n '/<taxline color=".*">/s/<taxline color="//;s/">//p'  $infile
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorout.xsl
+    echo
+    return		
+else
+    clear
+    echo " "
+    echo "The color value has been kept unchanged:"
+    echo "The color value is:"
+#    sed -n '/<taxline color=".*">/s/<taxline color="//;s/">//p'  $infile
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorout.xsl
+    echo
+
+    return
+    
+fi    
+
+return
+}    
+
+
+check_copy_existence(){
+    for file in ../2Fo/$1_Copy$2*
+    do
+	if [ -e $file ]
+	then
+	    echo "     $2) Copy$2"
+	    break;
+	fi
+    done	
+    }
+set_copy_number() {
+    while true;
+    do
+	clear
+	echo "Choose the copy with which you wish to work:"
+	check_copy_existence $1 00
+        check_copy_existence $1 01
+	check_copy_existence $1 02
+	check_copy_existence $1 03
+	check_copy_existence $1 04
+	check_copy_existence $1 05
+	check_copy_existence $1 06
+	check_copy_existence $1 07
+	check_copy_existence $1 08
+	check_copy_existence $1 09
+	check_copy_existence $1 10
+	check_copy_existence $1 11
+	check_copy_existence $1 12
+	check_copy_existence $1 13
+	check_copy_existence $1 14
+	check_copy_existence $1 15
+	check_copy_existence $1 16
+	check_copy_existence $1 17
+        check_copy_existence $1 18
+	check_copy_existence $1 19
+	check_copy_existence $1 20
+        echo "    new) Create a new copy of $1."
+	echo "     rm) Remove a copy of $1."
+	echo "      q) Return to previous menu."
+
+	echo
+	echo "There ought to be an 00 copy."
+	echo "If there is no 00 copy,"
+	echo "it means $1 is not yet"
+	echo "part of the tax-bash program."
+	echo
+        echo "Enter the number of the copy"
+	echo "with which you wish to work"
+	echo
+	echo "If you wish to create a new copy of $1, then"
+	echo "enter new"
+	echo
+	echo "If you wish to remove a copy of $1, then"
+	echo "enter rm"
+	echo
+	echo "To return to the previous menu"
+	echo "enter q"
+	echo
+	echo "  Enter your choice:"
+        read copy_number
+ 
+
+	case $copy_number in
+	 00) choice00NotAllowed $copy_number;;
+         01) set_menu_choices $1 $copy_number;;
+         02) set_menu_choices $1 $copy_number;;     
+         03) set_menu_choices $1 $copy_number;;
+         04) set_menu_choices $1 $copy_number;;
+         05) set_menu_choices $1 $copy_number;;
+         06) set_menu_choices $1 $copy_number;;
+         07) set_menu_choices $1 $copy_number;;
+         08) set_menu_choices $1 $copy_number;;
+         09) set_menu_choices $1 $copy_number;;
+         10) set_menu_choices $1 $copy_number;;
+         11) set_menu_choices $1 $copy_number;;
+         12) set_menu_choices $1 $copy_number;;
+         13) set_menu_choices $1 $copy_number;;
+         14) set_menu_choices $1 $copy_number;;
+         15) set_menu_choices $1 $copy_number;;
+         16) set_menu_choices $1 $copy_number;;
+         17) set_menu_choices $1 $copy_number;;
+         18) set_menu_choices $1 $copy_number;;
+         19) set_menu_choices $1 $copy_number;;
+         20) set_menu_choices $1 $copy_number;;
+        new) create_new_copy $1;;
+	 rm) removeForm $1 $2;;
+         q) break;;
+	 
+	esac
+	done
+
+}
+
+create_new_copy() {
+    while true;
+    do
+	clear
+	echo "These are the copies of "$1" that currently exist:"
+	check_copy_existence $1 00
+        check_copy_existence $1 01
+	check_copy_existence $1 02
+	check_copy_existence $1 03
+	check_copy_existence $1 04
+	check_copy_existence $1 05
+	check_copy_existence $1 06
+	check_copy_existence $1 07
+	check_copy_existence $1 08
+	check_copy_existence $1 09
+	check_copy_existence $1 10
+	check_copy_existence $1 11
+	check_copy_existence $1 12
+	check_copy_existence $1 13
+	check_copy_existence $1 14
+	check_copy_existence $1 15
+	check_copy_existence $1 16
+	check_copy_existence $1 17
+        check_copy_existence $1 18
+	check_copy_existence $1 19
+	check_copy_existence $1 20
+	echo
+	echo "There ought to be an 00 copy."
+	echo "If there is no 00 copy,"
+	echo "it means this Form is not yet"
+	echo "part of the tax-bash program."
+	echo
+	echo "The 00 copy should be kept pristine."
+	echo "Choosing 00 does nothing."
+	echo
+	echo "Enter the number of the copy you wish to create."
+        echo "This is usually the next number in the series."
+	echo "01,02,03,etc. up to 20"
+	echo
+	echo "If you DO NOT wish to create a new copy,"
+	echo "enter q to return to the previous menu."
+	echo
+
+       read copynumber
+
+       case $copynumber in
+         00) choiceNotAllowed $copynumber;;
+         01) ../NewCopy/2focopy$copynumber $1
+             ../NewCopy/xslcopy$copynumber $1
+	     ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         02) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         03) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         04) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         05) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         06) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         07) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         08) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         09) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         10) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         11) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         12) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         13) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         14) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         15) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         16) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         17) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         18) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         19) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+         20) ../NewCopy/2focopy$copynumber $1
+	     ../NewCopy/xslcopy$copynumber $1
+             ../NewCopy/datacopy$copynumber $1
+	     refreshTl
+	     set_menu_choices $1 $copynumber;;
+	 q ) break;;
+	 * ) echo "Choice not recognized."
+	     echo "The menu will reappear in 2 seconds."
+	     sleep 2;;
+	    
+	esac
+    done
+}
+
+
+removeForm(){
+        echo "Please enter the number of the copy"
+	echo "   of Form&1 you wish to remove."
+	read number
+	echo "You are about to remove copy"$number" of "$1"."
+	echo "These are the files that will be removed:"
+
+
+#I decided to leave the old data so that, if you decide to resurect it, the data is still there.
+
+#	dir ../Data/$1_Copy$number*
+	dir ../2Fo/$1_Copy$number*
+	dir ../MyVariables/v$1_Copy$number*
+	dir ../MyLines/l$1_Copy$number*
+	dir ../Output/all.xml
+	dir ../Output/$1_Copy$number*
+	
+	echo "Are you sure you want to remove these files?"
+	echo "Enter y or n."
+	read this
+	if yOrn "$this"
+	   then
+#	     rm ../Data/$1_Copy$number*
+	     rm ../2Fo/$1_Copy$number*
+	     rm ../MyVariables/v$1_Copy$number*
+	     rm ../MyLines/l$1_Copy$number*
+	     rm ../Output/all.xml
+	     rm ../Output/$1_Copy$number*
+
+#This line recreates ../Xsl/taxlogic from the remaining MyVaribles and MyLines
+#Thus the logic in ../Xsl/taxlogic will not see any xsl from the removed form
+	     ../BaseXsl/maketaxlogicXsl.sh
+#This line recreates ../Output/all.xml and its derivative form specific files
+	     refreshTl
+	    
+else
+	     echo "$1_Copy$number will not be removed."
+	fi     
+}
+set_menu_choices() {
+    while true;
+    do
+#	clear
+	echo "Actions to be taken on "$1"_Copy"$2"."
+	echo
+	echo "  1) Refresh data"
+	echo "  2) Enter or alter data."
+	echo "  3) Show form, schedule, or worksheet."
+	echo " rm) Remove a copy of "$1"." 
+	echo	
+	echo "  q) Return to previous menu."
+
+        echo "Please enter your choice, then press return."
+        read action_choice
+
+        case $action_choice in
+           1) refreshTl $1 $2;;
+           2) set_$1_line_data_choice $1 $2;;
+           3) showForm $1 $2;;
+	  rm) removeForm $1;;
+           q) break;;
+        esac
+    done
+    }
+
+
+set_schedule_choice() {
+while true;
+do
+  clear
+  echo "Schedules :"
+  echo
+  echo "       a) Schedule A"
+  echo "       b) Schedule B"
+#  echo "      ca) Schedule Ca"
+  echo "       c) Schedule C"
+  echo "       d) Schedule D"  
+#  echo "       h) Show Schedule H."
+#  echo "   1041k) Show Form1041SchedK1"
+#  echo "   1065k) Show Form1065SchedK1"
+#  echo "  1065Bk) Show Form1065BSchedK1" 
+#  echo "  1120Sk) Show Form1120SSchedK1" 
+#  echo "   8865k) Show Form8865SchedK1"
+#  echo "      se) Show Schedule SE."
+  
+  echo "       q) Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read sched_choice
+
+    case $sched_choice in
+          a) set_copy_number  SchedA		;;
+          b) set_copy_number  SchedB		;;
+         ca) set_copy_number  SchedCa		;;
+          c) set_copy_number  SchedC		;;
+          d) set_copy_number  SchedD		;;
+          h) set_copy_number  SchedH		;;
+      1041k) set_copy_number  Form1041SchedK1	;;
+      1065k) set_copy_number  Form1065SchedK1	;;
+     1065Bk) set_copy_number  Form1065BSchedK1	;;
+     1120Sk) set_copy_number  Form1120SSchedK1	;; 
+      8865k) set_copy_number  Form8865SchedK1	;;
+         se) set_copy_number  SchedSE		;;
+
+          q) break;;	
+    esac
+done
+}
+
+
+set_form_choice() {
+while true;
+do
+  clear
+  echo "Forms :"
+  echo
+  echo "   1040)  U.S. Individual Income Tax Return" 
+  echo "   1116)  Foreign Tax Credit"
+#  echo "   2106)  Employee Business Expenses"          
+#  echo "   2439)  Notice to Shareholder of Long-Term Undistributed Capital Gains"
+#  echo "   2441)  Child and Dependent Care Expenses"
+#  echo "   3800)  General Business Credit"
+#  echo "   3903)  Moving Expenses"
+#  echo "   4137)  Social Security and Medicare Tax on Unreported Tip Income"
+#  echo "   4562)  Depreciation and Amortization"
+#  echo "   4797)  Sales of Business Property"
+  echo "   4868)  Application for Automatic Extension of Time to file"
+  echo "   4952)  Investment Interest Expenses Deduction"
+#  echo "   4972)  Tax on Lump-Sum Distributions"
+#  echo "   5329)  Additional Taxes on Qualified Plans (inclucing IRAs) and Other Tax Favored Accounts"
+#  echo "   5405)  Repayment of First-Time Homebuyer Credit"
+#  echo "   5695)  Residential Energy Credits"
+  echo "   6251)  Alternative Minimum Tax--Individuals"
+#  echo "   6252)  Installment Sale Income"
+#  echo "   8801)  Credit for Prior Year Minimum Tax--Individuals, Estates, and Trusts"
+#  echo "   8812)  Child Tax Credit"
+#  echo "   8814)  Parents' Election to Report Child's Interest and Dividends"
+#  echo "   8815)  Exclusion of Interest from Series EE and I U.S. Savings Bonds"
+#  echo "   8829)  Expenses for Business Use of Your Home"
+#  echo "   8863)  Education Credits (American Opportunity and Lifetime Learning Credits)"
+#  echo "   8880)  Credit for Qualified Retirement Savings Contributions"
+#  echo "   8885)  Health Coverage Tax Credit"
+#  echo "   8888)  Allocation of Refund (Including Savings Bond Purchases)"
+#  echo "   8889)  Health Savings Accounts (HSAs)"  
+#  echo "   8903)  Domestic PRoduction Activities Deduction"
+#  echo "   8917)  Tuition and Fees Deduction"
+#  echo "   8919)  Uncollected Social Security and Medicare Taxes on Wages"
+  echo
+#  echo "   8949a) Sales and Other Dispositons of Capital Assets, basis reported on Form 1099-B."
+#  echo "   8949b) Sales and Other Dispositons of Capital Assets, basis not reported on Form 1099-B."
+#  echo "   8949c) Sales and Other Dispositons of Capital Assets, not on Form 1099-B."
+  echo
+#  echo "   8959)  Additional Medicare Tax"
+#  echo "   8960)  Net Investment Income Tax--Individuals, Estates, and Trusts"
+#  echo "   8962)  Premium Tax Credit (PTC)"
+  echo
+#  echo "   1099b)    Proceeds from Broker and Barter Exchange Transactions"
+  echo "   1099div)  Dividends and Distributions"
+  echo "   1099int)  Interest Income"
+  echo "   1099r)    Distributions from Pensions, Annuities, Retirement etc."
+  echo "   1099g)    Certain Government Payments"
+  echo "   1099ssa)  SSA Benefit Statemen"
+  echo  
+  echo "   w2)    Wage and Tax Statement"
+  echo
+  echo "   bkg) background"
+  echo
+  echo "   q)     Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read form_choice
+  
+    case $form_choice in
+
+      1040)      set_copy_number  Form1040;;
+      1116)      set_copy_number  Form1116;;
+      2106)      set_copy_number  Form2106;;
+      2439)      set_copy_number  Form2439;;
+      2441)      set_copy_number  Form2441;;
+      3800)      set_copy_number  Form3800;;
+      3903)      set_copy_number  Form3903;;
+      4137)      set_copy_number  Form4137;;
+      4562)      set_copy_number  Form4562;;
+      4868)      set_copy_number  Form4868;;
+      4797)      set_copy_number  Form4797;;
+      4952)      set_copy_number  Form4952;;
+      4972)      set_copy_number  Form4972;;
+      5329)      set_copy_number  Form5329;;
+      5405)      set_copy_number  Form5405;;
+      5695)      set_copy_number  Form5695;;
+      6251)      set_copy_number  Form6251;;
+      6252)      set_copy_number  Form6252;;    
+      8801)      set_copy_number  Form8801;;
+      8812)      set_copy_number  Form8812;;
+      8814)      set_copy_number  Form8814;;
+      8815)      set_copy_number  Form8815;;
+      8829)      set_menu_choices Form8829;;
+      8863)      set_copy_number  Form8863;;
+      8880)      set_copy_number  Form8880;;
+      8885)      set_copy_number  Form8885;;
+      8888)      set_copy_number  Form8888;;
+      8889)      set_copy_number  Form8889;;
+      8903)      set_copy_number  Form8903;;
+      8917)      set_copy_number  Form8917;;
+      8919)      set_copy_number  Form8919;;
+      8949a)     set_copy_number  Form8949a;;
+      8949b)     set_copy_number  Form8949b;;
+      8949c)     set_copy_number  Form8949c;;
+      8959)      set_copy_number  Form8959;;
+      8960)      set_copy_number  Form8960;;
+      8962)      set_copy_number  Form8962;;
+      1099b)     set_copy_number  Form1099b;;
+      1099div)   set_copy_number  Form1099div;;
+      1099int)   set_copy_number  Form1099int;;	
+      1099r)     set_copy_number  Form1099r;;	
+      1099g)     set_copy_number  Form1099g;;
+      1099ssa)   set_copy_number  Form1099ssa;;
+      w2)        set_copy_number  w2;;	
+      bkg)       set_copy_number  Bkg;;      
+      q)         break;;
+    esac
+done
+
+}
+
+set_wkst_choice() {
+while true;
+do
+  clear
+  echo "Worksheets :"
+  echo
+  echo "   cap)   Capital Loss Carryover Worksheet"
+  echo "   fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
+  echo "   ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
+  echo "   qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
+  echo "    schd) Schedule D worksheet."
+  echo "   sales) State and Local Sales Tax Worksheet."
+  echo "     ssa) Social Security Benefit Statement"
+  echo "     sst) Social Security Tax Worksheet."
+  
+  
+  echo "   q)     Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read wkst_choice
+
+    case $wkst_choice in
+
+      cap)   set_copy_number  CLCWkst	     01;;		 
+      fei)   set_copy_number  FEITaxWkst     01;;
+      ln10)  set_copy_number  WSln10         01;;
+      qdcg)  set_copy_number  QDCGTaxWkst    01;;
+      schd)  set_copy_number  SchedDTaxWkst  01;;
+      sales) set_copy_number  WSSchASalesTax 01;;
+      ssa)   set_copy_number  SSA_1099       01;;
+      sst)   set_copy_number  SST            01;;	
+      q)     break;;
+    esac
+done
+ 
+}
+
+
+set_data_form_choice() {
+while true;
+do
+  clear
+  echo "Forms for which to enter and edit data :"
+  echo
+  echo "   bkg) background"
+  echo "   a) Schedule A"
+  echo "   c) Schedule C"
+  echo "   1040) Form 1040"
+  echo 
+  echo "   div01)Form 1099DIV_Copy01"
+  echo "   div02)Form 1099DIV_Copy02"
+  echo "   div03)Form 1099DIV_Copy03"
+  echo "   div04)Form 1099DIV_Copy04"
+  echo "   div05)Form 1099DIV_Copy05"
+  echo ""
+  echo "   int01)Form 1099INT_Copy01"
+  echo "   int02)Form 1099INT_Copy02"
+  echo "   int03)Form 1099INT_Copy03"
+  echo "   int04)Form 1099INT_Copy04"
+  echo "   int05)Form 1099INT_Copy05"
+  echo "   int06)Form 1099INT_Copy06"
+  echo "   int08)Form 1099INT_Copy07"
+  echo "   int08)Form 1099INT_Copy08"
+  echo "   int09)Form 1099INT_Copy09"
+  echo "   int10)Form 1099INT_Copy10"
+  echo "   int11)Form 1099INT_Copy11"
+  echo "   int12)Form 1099INT_Copy12"
+  echo "   int13)Form 1099INT_Copy13"
+  echo "   int14)Form 1099INT_Copy14"
+  echo 
+  echo "   r01)  Form 1099R_Copy01"
+  echo "   r02)  Form 1099R_Copy02"
+  echo "   r03)  Form 1099R_Copy03"
+  echo "   r04)  Form 1099R_Copy04"
+  echo "   r05)  Form 1099R_Copy05" 
+  echo "   r06)  Form 1099R_Copy06"
+  echo "   r07)  Form 1099R_Copy07"
+  echo 
+  echo "   g01)  Form 1099G_Copy01"
+  echo "   g02)  Form 1099G_Copy02"
+  echo "   g03)  Form 1099G_Copy03"
+  echo "   g04)  Form 1099G_Copy04"
+  echo "   g05)  Form 1099G_Copy05" 
+  echo ""
+  echo "   4562) Form 4562"
+  echo "   4868) Form 4868"
+  echo "   6251) Form 6251"
+  echo "   6252) Form 6252"
+  echo "   8829) Form 8829"  
+  echo 
+  echo "     q)  Return to Previous Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read data_form_choice
+
+    case $data_form_choice in
+
+      bkg) set_background_line_data_choice;;	
+      a) set_schedA_line_data_choice;;
+      c) set_schedC_line_data_choice;;
+
+      1040) set_form1040_line_data_choice;;
+
+      div01)  set_form1099div01_line_data_choice;;
+      div02)  set_form1099div02_line_data_choice;;
+      div03)  set_form1099div03_line_data_choice;;
+      div04)  set_form1099div04_line_data_choice;;
+      div05)  set_form1099div05_line_data_choice;;
+
+      int01)  set_form1099int01_line_data_choice;;
+      int02)  set_form1099int02_line_data_choice;;
+      int03)  set_form1099int03_line_data_choice;;
+      int04)  set_form1099int04_line_data_choice;;
+      int05)  set_form1099int05_line_data_choice;;
+      int06)  set_form1099int06_line_data_choice;;
+      int07)  set_form1099int07_line_data_choice;;
+      int08)  set_form1099int08_line_data_choice;;
+      int09)  set_form1099int09_line_data_choice;;
+      int10)  set_form1099int10_line_data_choice;;
+      int11)  set_form1099int11_line_data_choice;;
+      int12)  set_form1099int12_line_data_choice;;
+      int13)  set_form1099int13_line_data_choice;;
+      int14)  set_form1099int14_line_data_choice;;
+      
+    
+      r01)    set_form1099r01_line_data_choice;;
+      r02)    set_form1099r02_line_data_choice;;
+      r03)    set_form1099r03_line_data_choice;;
+      r04)    set_form1099r04_line_data_choice;;
+      r05)    set_form1099r05_line_data_choice;;
+      r06)    set_form1099r06_line_data_choice;;
+      r07)    set_form1099r07_line_data_choice;;
+	
+      g01)    set_form1099g01_line_data_choice;;
+      g02)    set_form1099g02_line_data_choice;;
+      g03)    set_form1099g03_line_data_choice;;
+      g04)    set_form1099g04_line_data_choice;;
+      g05)    set_form1099g05_line_data_choice;;
+
+      4562)   set_form4562_line_data_choice;;
+      4868)   set_form4868_line_data_choice;;
+      6251)   set_form6251_line_data_choice;;
+      6252)   set_form6252_line_data_choice;;
+      8829)   set_form8829_line_data_choice;;
+      
+      q)      break;;
+    esac
+done
+}
+
+
+set_line_menu_text() {
+while true;
+do
+
+ echo
+ echo  " 1) Show local instructions for this line."   
+ echo  " 2) show IRS instructions for this line" 
+ echo  " 3) Show current contents of the line"
+ echo  " 4) Edit the text of this line."
+ echo  " 5) Redisplay the form."
+ echo  " 5a)Change the color of this line."
+ echo  " 6) Comes from?"
+ echo  " q) quit"
+
+ echo "Please enter number of your choice and press Enter."
+ read action_choice
+
+ case $action_choice in
+        1) showInstructions $1 $2 $3 $4;;
+	2) showIRSinstructions $1 $2 $3 $4;;
+	3) showDataFile $1 $2 $3;;
+        4) edit_textline $1 $2 $3;;
+        5) showFormLocal $1 $2 $3;;
+	5a)changeColor $1 $2 $3 $4;;
+#	6) comes_from2 $1 $2 $3;;
+	6) params=$#
+	   echo $params
+	   if [ "$params" = "3" ]; then
+	       infile="../Data/$1_$2_text.xml"
+	       tempfile="../Data/$1_$2_text.tmp"
+	   elif [ "$params" = "4" ]; then
+	       infile="../Data/$1_$2_$3_text.xml"
+	       tempfile="../Data/$1_$2_$3_text.tmp"
+	   fi
+	   echo "infile is $infile tempfile is $tempfile"
+
+	   echo $infile
+	   echo "This line comes from:"
+	   foo=$(sed -n '/<from>/s/<from>//;s/<\/from>//p' $infile)
+	   echo $foo
+	   select fname in $foo
+	   do
+               echo "You have selected" $fname \($REPLY\)
+	       par=$fname
+#	       echo $par
+	       parminus=${par#*_}
+#	       echo $parminus
+	       par1=${parminus%%_*}
+	       echo $par1
+	       parminus2=${parminus#*_}
+#	       echo $parminus2
+	       par2=${parminus2%%_*}
+	       echo $par2
+	       par3=${parminus2##*_}
+	       echo $par3
+	       echo $par3
+
+	       echo $par3
+	       echo $par2
+	       echo $par1
+	       echo $par1 $par2 $par3
+	       set $(echo $par1 $par2 $par3)
+#	       set_line_menu_text 1040 lineTaxpayorLastName 13
+               set_line_menu_text $1 $2 $3
+	       break;
+            done
+	   ;;
+	   q) break;;
+
+ esac
+
+done
+
+}
+
+set_line_menu_number() {
+while true;
+do
+ clear
+ echo "The following actions can be taken on $1_$2_$3"
+ echo   
+ echo  "  0) edit local instructions for this line"
+ echo  "  1) show local instructions for this line"
+ echo  "  2) show IRS instructions for this line" 
+ echo  "  3) show current contents of the line"
+ echo  "  4) specify accounts from which to draw data for this line"
+ echo  "  5) enter number directly or override value obtained in (4)"
+ echo  "  6) redisplay the form, Schedule, or worksheet"
+ echo  "  7) Comes from:"
+ echo  "  8) Goes to:"
+ echo  "  9) Enter notes about this line"
+ echo  " 10) Change the color of this line."
+
+ echo  " q) quit"
+ echo "Please enter number of your choice and press Enter."
+ read action_choice
+  
+ case $action_choice in
+        0) editInstructions    $1 $2 $3 $4;;
+        1) showInstructions    $1 $2 $3 $4;;
+	2) showIRSinstructions $1 $2 $3 $4;;
+	3) showDataFile	       $1 $2 $3 $4;;
+        4) edit-numberline     $1 $2 $3 $4;;
+        5) edit-override       $1 $2 $3 $4;;
+	6) showForm	       $1 $2 $3 $4;;
+	7) comesFrom2	       $1 $2 $3 $4;;
+	8) goesTo	       $1 $2 $3 $4;;
+        9) enterNotes	       $1 $2 $3 $4;;
+       10) changeColor	       $1 $2 $3 $4;;
+
+	q) break;;
+    esac
+
+done
+
+}
+
+set_line_menu_nav() {
+while true;
+do
+
+    echo
+ echo  " 1) Show local instructions for this line."   
+ echo  " 2) show IRS instructions for this line" 
+ echo  " 3) Show current contents of the line"
+ echo  " 4) Comes from"
+ echo  " 5) Goes to"
+
+ echo  " q) quit"
+ echo "Please enter number of your choice and press Enter."
+ read action_choice
+  
+ case $action_choice in
+        1) showInstructions	 $1 $2 $3 $4;;
+	2) showIRSinstructions	 $1 $2 $3 $4;;
+	3) showDataFile		 $1 $2 $3 $4;;
+	4) comesFrom		 $1 $2 $3 $4;;
+	5) goesTo		 $1 $2 $3 $4;;
+	q) break;;
+    esac
+
+done
+
+}
+
+set_menu_choice() {
+while true;
+  do     
+#  clear
+  echo
+  echo "Welcome to Tax-bash."
+  echo
+  echo "   0)  Update (Download program again)"
+  echo "   1)  Import last years return."
+  echo "   2)  Import last year's text files."
+  echo "   3)  Import data from GnuCash."
+  echo "   4)  Initialize or refresh all of your data."
+  echo
+  echo "   ln) List the names of all of the accounts in your GnuCash data."
+  echo "   at) List the transactions in a specified account."
+  echo "   ft) Show the accounts and transactions used for a specified form."
+  echo 
+  echo "   f)  Show choice of Forms."
+  echo "   s)  Show choice of Schedules."
+  echo "   w)  Show choice of Worksheets."
+#  echo "   t)  Show choice of Tabless"
+echo 
+  echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+      0) ../../downloadT22.sh
+      	 update;;	 
+      1) importLastYrReturn;;
+      2) importLastYrText;;
+      3) importGnuCash;;
+      4) refreshAll $1;;
+
+      ln) listAccounts;;
+      at) oneAcct;;
+      ft) showAccounts;;
+      
+      f)  set_form_choice;;	
+      s)  set_schedule_choice;;
+      w)  set_wkst_choice;;
+#      t)  set_table_choice;;
+
+      q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}
+
+
+
+
+update(){
+
+for file in $(dir ../2Fo/)
+do
+    foo=$file
+    echo $foo
+    bar=${foo%%.2fo*}
+    echo $bar
+    copy=${bar##*Copy}
+    echo $copy
+    form=${foo%%_Copy*}
+    echo $form		  
+
+	
+    case $copy in
+	00) ;;
+	01) echo "Copy01 invoked."
+	    ../NewCopy/2focopy01 $form
+	    ../NewCopy/xslcopy01 $form
+	    ../NewCopy/datacopy01 $form
+	    ;;
+	02) echo "Copy02 invoked."
+	    ../NewCopy/2focopy02 $form
+	    ../NewCopy/xslcopy02 $form
+	    ../NewCopy/datacopy02 $form
+	    ;;
+	03) ../NewCopy/2focopy03 $form
+	    ../NewCopy/xslcopy03 $form
+	    ../NewCopy/datacopy03 $form
+	    ;;
+	04) ../NewCopy/2focopy04 $form
+	    ../NewCopy/xslcopy04 $form
+	    ../NewCopy/datacopy04 $form
+	    ;;
+	05) ../NewCopy/2focopy05 $form
+	    ../NewCopy/xslcopy05 $form
+	    ../NewCopy/datacopy05 $form
+	    ;;
+	06) ../NewCopy/2focopy06 $form
+	    ../NewCopy/xslcopy06 $form
+	    ../NewCopy/datacopy06 $form
+	    ;;
+	07) ../NewCopy/2focopy07 $form
+	    ../NewCopy/xslcopy07 $form
+	    ../NewCopy/datacopy07 $form
+	    ;;
+	08) ../NewCopy/2focopy08 $form
+	    ../NewCopy/xslcopy08 $form
+	    ../NewCopy/datacopy08 $form
+	    ;;
+	09) ../NewCopy/2focopy09 $form
+	    ../NewCopy/xslcopy09 $form
+	    ../NewCopy/datacopy09 $form
+	    ;;
+	10) ../NewCopy/2focopy10 $form
+	    ../NewCopy/xslcopy10 $form
+	    ../NewCopy/datacopy10 $form
+	    ;;
+	11) ../NewCopy/2focopy11 $form
+	    ../NewCopy/xslcopy11 $form
+	    ../NewCopy/datacopy11 $form
+	    ;;
+	12) ../NewCopy/2focopy12 $form
+	    ../NewCopy/xslcopy12 $form
+	    ../NewCopy/datacopy12 $form
+	    ;;
+	13) ../NewCopy/2focopy13 $form
+	    ../NewCopy/xslcopy13 $form
+	    ../NewCopy/datacopy13 $form
+	    ;;
+	14) ../NewCopy/2focopy14 $form
+	    ../NewCopy/xslcopy14 $form
+	    ../NewCopy/datacopy14 $form
+	    ;;
+	15) ../NewCopy/2focopy15 $form
+	    ../NewCopy/xslcopy15 $form
+	    ../NewCopy/datacopy15 $form
+	    ;;
+	16) ../NewCopy/2focopy16 $form
+	    ../NewCopy/xslcopy16 $form
+	    ../NewCopy/datacopy16 $form
+	    ;;
+	17) ../NewCopy/2focopy17 $form
+	    ../NewCopy/xslcopy17 $form
+	    ../NewCopy/datacopy17 $form
+	    ;;
+	18) ../NewCopy/2focopy18 $form
+	    ../NewCopy/xslcopy18 $form
+	    ../NewCopy/datacopy18 $form
+	    ;;
+	19) ../NewCopy/2focopy19 $form
+	    ../NewCopy/xslcopy19 $form
+	    ../NewCopy/datacopy19 $form
+	    ;;
+	20) ../NewCopy/2focopy20 $form
+	    ../NewCopy/xslcopy20 $form
+	    ../NewCopy/datacopy20 $form
+	    ;;
+
+    esac
+		
+done	
+}
+
+
+
+description(){
+    while true;
+    do
+    clear
+    echo
+    echo "1) View description of tax-bash"
+    echo "   and how to use it."
+    echo
+    echo "q) quit"
+    echo
+    echo "Enter q to return to the previous menu."
+    read choice
+    
+    case "$choice" in
+        1)viewReadMe;;
+	q) break;;
+    esac
+done
+    
+}
+
+
+dependencies(){
+    while true;
+    do
+    clear
+    echo
+    echo "The tax-bash program uses the following programs:"
+    echo
+    echo "bash    : bash is the shell in which tax-bash is written."
+    echo "sed     : sed is probably already be installed by your distsribution."
+    echo "awk     : awk is probably already be installed by your distribution."
+    echo "m4      : m4 need to be installed."
+    echo "xalan   : The java version is used (Not the C++ version) because"
+    echo "          when I last checked the C++ version did not include "
+    echo "          the format-number() function used extensively in tax-bash"
+    echo "fop     : The apache formating engine is used."
+    echo "qpdfview: This program works very well for displaying the forms."
+    echo "X11     : This windowing system is needed by qpdfview."
+    echo
+    echo "These programs must be installed for tax-bash to work."
+    echo
+    echo "q)  Enter q to return to the previous menu."
+    read choice
+    
+    case "$choice" in
+	q) break;;
+    esac
+done
+
+}
+
+
+variables(){
+    while true;
+    do
+    clear
+    echo
+    echo "The tax-bash program depends on several global variables:"
+    echo "They are best set in the file ~/.bashrc"
+    echo "so that they are set whenever you restart your computer."
+    echo
+    echo "The first is GNUCASHFILES which should be set to"
+    echo "the path to the backup files of your GnuCash program."
+    echo "On my computer, the path is"
+    echo "  ~/.gnucash.data"
+    echo "This variable is best set in ~/.bashrc"
+    echo "To do that add the following 2 lines to the end of ~/.bashrc:"
+    echo "  GNUCASHFILES='~/.gnucash.data"
+    echo "  export GNUCASHFILES"
+    echo
+    echo "The second is XALANJAVAJAR which should be set to"
+    echo "the class path to the xalan jar file."
+    echo "On my computer, the value is"
+    echo "  '-cp /usr/share/java/xalan2.jar'"
+    echo "This variable is also best set in ~/.bashrc"
+    echo "How to do this is described under choice 3) in the previous menu."
+    echo
+    echo "The third variable is PATH"
+    echo "Tax-bash needs to use fop"
+    echo "Therefore, fop should be in your PATH variable."
+    echo "How to do this is described under choice 4) in the previous menu."
+    echo
+    echo "Enter q to return to the previous menu."
+    read choice
+    
+    case "$choice" in
+	q) break;;
+    esac
+done
+
+}
+    
+    
+setupfop(){
+    while true;
+    do
+   clear
+    echo "tax-bash needs to know the path to fop."
+    echo
+    echo "In my version of Ubuntu there is a bash file "fop" in the bin directory."
+    echo "This is reached first in the standard PATH variable."
+    echo "It works OK, although it does give a warning about 'sun'."
+    echo "I suggest that you not use this version."
+    echo
+    echo "I suggest that you control which version of fop you use."
+    echo "Do this by downloading this version and then"
+    echo "put the path to it at the start of your PATH variable."
+    echo
+    echo "The following steps will achieve that:"
+    echo
+    echo  "Download from the Apache FOP website"
+    echo "the most recent tarball which currently is"
+    echo "  fop-2.6.tar.gz"
+    echo
+    echo "Move this tarball from ~/Downloads to the directory of your choice."
+    echo "I created the directory ~/Fop and moved the tarball there."
+    echo
+    echo "Change directory into ~/Fop and issue the following command:"
+    echo "  tar -xvfz fop-2.6.tar.gz"
+    echo
+    echo "This will create the directory fop-2.6 under ~/Fop"
+    echo "and unpack the fop files into it."
+    echo
+    echo "The path to the executive file becomes:"
+    echo "  ~/Fop/fop-2.6/fop"
+    echo
+    echo "The final step was to add this path to the start"
+    echo "of your global variable PATH"
+    echo "   PATH=~/Fop/fop-2.6/fop:\$PATH"
+    echo
+    echo "You can do this each time you run tax-bash"
+    echo "or you can add the following 2 lines to the end of ~/.bashrc"
+    echo "  PATH=~/Fop/fop-2.6/fop\$PATH"
+    echo "  export PATH"
+    echo
+    echo "Enter q to return to the previous menu."
+	read choice
+
+	case "$choice" in
+	    q) break;;
+	esac
+    done
+    
+
+}
+
+
+setupxalan(){
+    while true;
+    do
+    clear
+			
+    echo " tax-bash needs to use the java version of xalan."
+    echo " This is because the C(++) version does not implement"
+    echo " format-number() which tax-bash uses extensively."
+    echo
+    echo " The following steps will achieve that:"
+    echo
+    echo " Download from the Apache FOP website"
+    echo " the most recent tarball which currently is"
+    echo "   xalan-j_2_7_2.tar.gz"
+    echo
+    echo " Move this tarball from ~/Downloads to the directory of your choice."
+    echo " I created the directory ~/Xalan-j_2_7_2/ and moved the tarball there."
+    echo
+    echo " Change directory into ~/Xalan-j_2_7_2/ and issue the following command:"
+    echo " tar -xvfz xalan-j_2_7_2.tar.gz"
+    echo
+    echo " This will create the directory xalan-j_2_7_2/ under ~/Xalan-j_2_7_2/"
+    echo " and unpacked the fop files into it."
+    echo
+    echo " This will also create in /usr/share/java"
+    echo " the file xalan2-2.7.2.jar"
+    echo
+    echo " The variable XALANJAVAJAR should be set to"
+    echo "   '-cp /usr/share/java/xalan2-2.7.2.jar'"
+    echo " preferabllly in ~/.bashrc"
+    echo " (The -cp is the option in java which sets the class path)"
+    echo
+    echo " Enter q to return to the previous menu."
+	read choice
+
+	case "$choice" in
+	    q) break;;
+	esac
+    done
+    
+
+}
+
+setupX11(){
+while true
+do
+echo "
+Newer versions of Ubuntu, which I use, have changed the default windowing system to wayland. I have found that qpdfview give error messages under weyland. Although the program still works, you can eliminate the error messages by changing the windowing system back to X11.
+
+You may toggle your windowing system under Ubuntu by:
+    1.  Click on the power 0n/Off button at top right to show its menu
+    2.  Choose Settings/Users
+    3.  Disable automatic login
+    4.  Logout, then login
+    5.  Press a key to have the screen ask for you password.
+    6.  At this point there will be a small settings icon in the lower right.
+    7.  Click on the icon.
+    8.  Two clickable choices are presented for use during this log-in session.
+       	   Ubuntu
+	   Ubuntu on X.org
+    9.  Click on 'Ubuntu' to use wayland or
+   10.  Click on 'Ubuntu on X.org' to use X11
+
+ To return to the previous menu enter 'q'. 
+
+   q) Return to previous menu."
+
+   read click
+
+     case "$click" in
+
+        q) return;;
+	*) echo "Choice not recognized."
+	   echo "Enter q to return to the previous menu.";;
+     esac
+done
+}
+initial(){
+    while true;
+    do
+	clear
+	echo
+	echo "The next menu you see upon choosing"
+	echo "  6)  Start using tax-bash"
+	echo "from the previous menu"
+	echo "will have three sets of menu choices."
+	echo
+	echo "The first four menu choices set up your data."
+	echo
+	echo "The first two involve importing last years data."
+	echo "Since this is the first year you are using tax-bash,"
+	echo "these first two choice currently do nothing."
+	echo
+	echo "The third choice imports your GnuCash data."
+	echo "Be certain you have set the GNUCASHFILES variable."
+	echo "(See choices 2-4 on previous menu)"
+	echo "You should choose 3) to make certain you are"
+	echo "using your most current gnucash data."
+	echo
+	echo "The 4th choice initializes you data."
+	echo "You should choose 4) before" 
+	echo "starting your work for the day."
+	echo
+	echo "The next three choices allow you to look at"
+	echo "your GnuCash data:"
+	echo "ln: will give you a listing of all the accounts"
+	echo "    in your GnuCash data."
+        echo "at: will show you the transactions in any account you choose."
+	echo "ft: will show you the transactions in all accounts"
+	echo "    that are associated with the form you are working on."
+	echo
+	echo "The last 3 choices allow you to work with:"
+	echo "f forms"
+	echo "s schedules"
+	echo "w worksheets"
+	echo
+	echo "q) Quit"
+	echo
+	echo "Enter q to return to the previous menu."
+	read choice
+
+	case "$choice" in
+	    q) break;;
+	esac
+    done
+}
+    
+
+viewReadMe(){
+    cat ../README
+    }
+set_Bkg_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Bkg in which to enter or edit data:"
+echo
+echo "TFNI  )    Enter taxpayor first name initial                                                          "
+echo "TLN   )    Enter taxpayor last name                                                                   "
+echo "TSSNoF)    Enter first 3 digits of taxpayor's SS No.                                                  "
+echo "TSSNoM)    Enter middle 2 digits of taxpayor's SS No.                                                 "
+echo "TSSNoL)    Enter last 4 digits of taxpayor's SS No.                                                   "
+echo "SFNI  )    Enter spouse's first name initial                                                          "
+echo "SLN   )    Enter spouse's last name                                                                   "
+echo "SSSNoF)    Enter first 3 digits of spouse's SS No.                                                    "
+echo "SSSNoM)    Enter middle 2 digits of spouse's SS No.                                                   "
+echo "SSSNoL)    Enter last 4 digits of spouse's SS No.                                                     "
+echo "FS    )    Enter filing status (S, MFJ, MFS, HOH, QSS)                                                "
+echo "Apart )    Enter time living apart (All, Some, None)                                                  "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Bkg_line_data_choice
+echo
+     case $Bkg_line_data_choice in
+TFNI  )    set_line_menu_text   $1 $2  lineTFNI                             ;;
+TLN   )    set_line_menu_text   $1 $2  lineTLN                              ;;
+TSSNoF)    set_line_menu_text   $1 $2  lineTSSNoF                           ;;
+TSSNoM)    set_line_menu_text   $1 $2  lineTSSNoM                           ;;
+TSSNoL)    set_line_menu_text   $1 $2  lineTSSNoL                           ;;
+SFNI  )    set_line_menu_text   $1 $2  lineSFNI                             ;;
+SLN   )    set_line_menu_text   $1 $2  lineSLN                              ;;
+SSSNoF)    set_line_menu_text   $1 $2  lineSSSNoF                           ;;
+SSSNoM)    set_line_menu_text   $1 $2  lineSSSNoM                           ;;
+SSSNoL)    set_line_menu_text   $1 $2  lineSSSNoL                           ;;
+FS    )    set_line_menu_text   $1 $2  lineFS                               ;;
+Apart )    set_line_menu_text   $1 $2  lineApart                            ;;
+q     )    break;;                       
+esac
+done
+}
+set_SchedC_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SchedC in which to enter or edit data:"
+echo
+echo "PrBus )    Enter the principal business or profession engaged in.                                              	  "
+echo "B1    )    Enter the first code number.                                                                        	  "
+echo "B2    )    Enter the second code number.                                                                       	  "
+echo "B3    )    Enter the third code number.                                                                        	  "
+echo "B4    )    Enter the fourth code number.                                                                       	  "
+echo "B5    )    Enter the fifth code number.                                                                        	  "
+echo "B6    )    Enter the sixth code number.                                                                        	  "
+echo "BusNm )    Enter the business name if separate from line A.                                                    	  "
+echo "D1    )    Enter the first code number.                                                                        	  "
+echo "D2    )    Enter the second code number.                                                                       	  "
+echo "D3    )    Enter the third code number.                                                                        	  "
+echo "D4    )    Enter the fourth code number.                                                                       	  "
+echo "D5    )    Enter the fifth code number.                                                                        	  "
+echo "D6    )    Enter the sixth code number.                                                                        	  "
+echo "D7    )    Enter the seventh code number.                                                                      	  "
+echo "D8    )    Enter the eighth code number.                                                                       	  "
+echo "D9    )    Enter the ninth code number.                                                                        	  "
+echo "Addr1 )    Enter the first address line of the business.                                                       	  "
+echo "Addr2 )    Enter the second address line of the business.                                                      	  "
+echo "City  )    Enter the ciy in which the business is located.                                                     	  "
+echo "ST    )    Enter the state (ST) in which the buseiness is located.                                             	  "
+echo "zip   )    Enter the zip code of the business.                                                                 	  "
+echo "cash  )    Enter x if the accounting method is cash based.                                                     	  "
+echo "accru )    Enter x if the accounting method is accrual based.                                                  	  "
+echo "other )    Enter x if an other accounting method was used.                                                     	  "
+echo "specif)    Specify the accounting method used.                                                                 	  "
+echo "Gy    )    Emter x if you materially participated in the operation of the business during 2023.              	  "
+echo "Gn    )    Enter x if you did not materially participate in the operation of the business during 2023.       	  "
+echo "Hx    )    Enter x if you started or acquired this business during 2023.                                       	  "
+echo "Iy    )    Enter x if you made any payments in 2023 that would require filing Form(s) 1099.                    	  "
+echo "In    )    Enter x if you did not make any payments in 2023 thot would require filing Form(s) 1099.            	  "
+echo "Jy    )    Enter x if you did or will file any required Form(s) 1099.                                          	  "
+echo "Jn    )    Enter x if you did not and will not file any required Form(s) 1099.                                 	  "
+echo "01Ck  )    Enter x if income on line01 was reported to you on FormW2 and Statutory employee was checked.      	  "
+echo "01    )    Enter gross receipts or sales.                                                                      	  "
+echo "02    )    Enter returns anad allowances.                                                                      	  "
+echo "04    )    Enter cost of goods sold from line 42.                                                              	  "
+echo "06    )    Enter other income.                                                                                 	  "
+echo "08    )    Enter advertising expenses.                                                                         	  "
+echo "09    )    Enter car and truck expenses.                                                                       	  "
+echo "10    )    Enter commission and fee expenses.                                                                  	  "
+echo "11    )    Enter contract labor expenses.                                                                      	  "
+echo "12    )    Enter depletion expenses.                                                                           	  "
+echo "13    )    Enter depreciation and section 179 expenses.                                                        	  "
+echo "14    )    Enter employee benefit program expenses.                                                            	  "
+echo "15    )    enter insurance (other than heallth) expenses.                                                      	  "
+echo "16a   )    Enter mortage interest expenses.                                                                    	  "
+echo "16b   )    Enter other interest expenses.                                                                      	  "
+echo "17    )    Enter legal and professional services expenses.                                                     	  "
+echo "18    )    Enter office expenses.                                                                              	  "
+echo "19    )    Enter pension and profit-sharing plan expenses.                                                     	  "
+echo "20a   )    Enter rent or lease expenses for vehicles, machinery and equipment.                                 	  "
+echo "20b   )    Enter rent or lease expenses for other business property.                                           	  "
+echo "21    )    Enter repair and maintenance expenses.                                                              	  "
+echo "22    )    Enter expenses for supplies.                                                                        	  "
+echo "23    )    Enter tax and license expenses.                                                                     	  "
+echo "24a   )    Enter travel expenses.                                                                              	  "
+echo "24b   )    Enter meal deductions.                                                                              	  "
+echo "25    )    Enter utility expenses.                                                                             	  "
+echo "26    )    Enter wage expenses (less employment credits).                                                      	  "
+echo "27a   )    Enter other expenses from line 48.                                                                  	  "
+echo "27b   )    Enter deduction for energy efficient commercial buildings.(Form 7205)                               	  "
+echo "30a   )    For simplified method: Enter total square footage of your home.                                     	  "
+echo "30b   )    For simplified method: Enter ssquare footage used for business.                                     	  "
+echo "30    )    Enter expenses for the business use of your home. (Form 8829)                                       	  "
+echo "32a   )    Enter x if all investment is at risk.                                                               	  "
+echo "32b   )    Enter x if some of the investment is not at risk.                                                   	  "
+echo "33a   )    Enter x if the method used to value closing inventory was cash.                                   	  "
+echo "33b   )    Enter x if the method used to value closing inventory was lower of cost or market.                	  "
+echo "33c   )    Enter s if another method was used to value closing inventory.                                      	  "
+echo "34y   )    Enter x if there was any change in determininig quantities, costs, or valualtions                   	  "
+echo "34n   )    Enter x if there was not any such change.                                                           	  "
+echo "35    )    Enter value of inventory at the beginning of the year.                                              	  "
+echo "36    )    Enter cost of purchases less cost of items withdrawn for personal use.                              	  "
+echo "37    )    Enter cost of labor.                                                                                	  "
+echo "38    )    Enter cost of materials and supplies.                                                               	  "
+echo "39    )    Enter other costs.                                                                                  	  "
+echo "41    )    Enter value of inventory at the end of the year.                                                    	  "
+echo "43m   )    Enter the month (mm) your vehicle was placed in service for business purposes.                      	  "
+echo "43d   )    Enter the day (dd) your vehicle was placed in service for business purposes.                        	  "
+echo "43y   )    Enter the year (yyyy) your vehicle was placed in service for business purposes.                     	  "
+echo "44a   )    Enter the number of miles you drove your vehicle for business during 2023.                          	  "
+echo "44b   )    Enter the number of miles you drove your vehicle for commuting during 2023.                         	  "
+echo "44c   )    Enter the number of miles you drove your vehicle for other purposes during 2023.                    	  "
+echo "45y   )    Enter x if your vehicle was available for personal use during off-duty hours.                       	  "
+echo "45n   )    Enter x if your vehicle was not available for personal use during off-duty hours.                   	  "
+echo "46y   )    Enter x if you or your spouse have anothe vehicle available for personal use.                       	  "
+echo "46n   )    Enter x if you or your spouse do not have anothe vehicle availabel for personal use.                	  "
+echo "47ay  )    Enter x if you have evidence to support your deduction.                                             	  "
+echo "47an  )    Enter x if you do not have evidence to support your deduction.                                      	  "
+echo "47by  )    Enter x if your evidence is not written.                                                            	  "
+echo "47bn  )    Enter x if your evidence is written.                                                                	  "
+echo "Exp1nm)    Enter the name of the first business expense catagory.                                              	  "
+echo "Exp1  )    Enter the amount expensedvfor the first expense catagory.                                           	  "
+echo "Exp2nm)    Enter the name of the second business expensecatagory.                                              	  "
+echo "Exp2  )    Enter the amount expensed for the second expense catagory                                           	  "
+echo "Exp3nm)    Enter the name of the thiird business expense catagory.                                             	  "
+echo "Exp3  )    Enter the amount expensed for the third expense catagory.                                           	  "
+echo "Exp4nm)    Enter the name of the fourth business expense catagory.                                             	  "
+echo "Exp4  )    Enter the amount expensed for the fourth expense catagory.                                          	  "
+echo "Exp5nm)    Enter the name of the fifth business expense catagory.                                              	  "
+echo "Exp5  )    Enter the amount expensed for the fifth expense catagory.                                           	  "
+echo "Exp6nm)    Enter the name of the sixth business expense catagory.                                              	  "
+echo "Exp6  )    Enter the amount expensed for the sixthe expense catagory.                                          	  "
+echo "Exp7nm)    Enter the name of the seventh business expense catagory.                                            	  "
+echo "Exp7  )    Enter the amount expensed for the seventh expense catagory.                                         	  "
+echo "Exp8nm)    Enter the name of the eighth business expense catagory.                                             	  "
+echo "Exp8  )    Enter the amount expensed for the eight expense catagory.                                           	  "
+echo "Exp9nm)    Enter the name of the ninth business expense catagory.                                              	  "
+echo "Exp9  )    Enter the amount expensed for the ninth expenses catagory.                                          	  "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SchedC_line_data_choice
+echo
+     case $SchedC_line_data_choice in
+PrBus )    set_line_menu_text   $1 $2  linePrBus                            ;;
+B1    )    set_line_menu_text   $1 $2  lineB1                               ;;
+B2    )    set_line_menu_text   $1 $2  lineB2                               ;;
+B3    )    set_line_menu_text   $1 $2  lineB3                               ;;
+B4    )    set_line_menu_text   $1 $2  lineB4                               ;;
+B5    )    set_line_menu_text   $1 $2  lineB5                               ;;
+B6    )    set_line_menu_text   $1 $2  lineB6                               ;;
+BusNm )    set_line_menu_text   $1 $2  lineBusNm                            ;;
+D1    )    set_line_menu_text   $1 $2  lineD1                               ;;
+D2    )    set_line_menu_text   $1 $2  lineD2                               ;;
+D3    )    set_line_menu_text   $1 $2  lineD3                               ;;
+D4    )    set_line_menu_text   $1 $2  lineD4                               ;;
+D5    )    set_line_menu_text   $1 $2  lineD5                               ;;
+D6    )    set_line_menu_text   $1 $2  lineD6                               ;;
+D7    )    set_line_menu_text   $1 $2  lineD7                               ;;
+D8    )    set_line_menu_text   $1 $2  lineD8                               ;;
+D9    )    set_line_menu_text   $1 $2  lineD9                               ;;
+Addr1 )    set_line_menu_text   $1 $2  lineAddr1                            ;;
+Addr2 )    set_line_menu_text   $1 $2  lineAddr2                            ;;
+City  )    set_line_menu_text   $1 $2  lineCity                             ;;
+ST    )    set_line_menu_text   $1 $2  lineST                               ;;
+zip   )    set_line_menu_text   $1 $2  linezip                              ;;
+cash  )    set_line_menu_text   $1 $2  linecash                             ;;
+accru )    set_line_menu_text   $1 $2  lineaccru                            ;;
+other )    set_line_menu_text   $1 $2  lineother                            ;;
+specif)    set_line_menu_text   $1 $2  linespecif                           ;;
+Gy    )    set_line_menu_text   $1 $2  lineGy                               ;;
+Gn    )    set_line_menu_text   $1 $2  lineGn                               ;;
+Hx    )    set_line_menu_text   $1 $2  lineHx                               ;;
+Iy    )    set_line_menu_text   $1 $2  lineIy                               ;;
+In    )    set_line_menu_text   $1 $2  lineIn                               ;;
+Jy    )    set_line_menu_text   $1 $2  lineJy                               ;;
+Jn    )    set_line_menu_text   $1 $2  lineJn                               ;;
+01Ck  )    set_line_menu_text   $1 $2  line01Ck                             ;;
+01    )    set_line_menu_number $1 $2  line01                               ;;
+02    )    set_line_menu_number $1 $2  line02                               ;;
+04    )    set_line_menu_number $1 $2  line04                               ;;
+06    )    set_line_menu_number $1 $2  line06                               ;;
+08    )    set_line_menu_number $1 $2  line08                               ;;
+09    )    set_line_menu_number $1 $2  line09                               ;;
+10    )    set_line_menu_number $1 $2  line10                               ;;
+11    )    set_line_menu_number $1 $2  line11                               ;;
+12    )    set_line_menu_number $1 $2  line12                               ;;
+13    )    set_line_menu_number $1 $2  line13                               ;;
+14    )    set_line_menu_number $1 $2  line14                               ;;
+15    )    set_line_menu_number $1 $2  line15                               ;;
+16a   )    set_line_menu_number $1 $2  line16a                              ;;
+16b   )    set_line_menu_number $1 $2  line16b                              ;;
+17    )    set_line_menu_number $1 $2  line17                               ;;
+18    )    set_line_menu_number $1 $2  line18                               ;;
+19    )    set_line_menu_number $1 $2  line19                               ;;
+20a   )    set_line_menu_number $1 $2  line20a                              ;;
+20b   )    set_line_menu_number $1 $2  line20b                              ;;
+21    )    set_line_menu_number $1 $2  line21                               ;;
+22    )    set_line_menu_number $1 $2  line22                               ;;
+23    )    set_line_menu_number $1 $2  line23                               ;;
+24a   )    set_line_menu_number $1 $2  line24a                              ;;
+24b   )    set_line_menu_number $1 $2  line24b                              ;;
+25    )    set_line_menu_number $1 $2  line25                               ;;
+26    )    set_line_menu_number $1 $2  line26                               ;;
+27a   )    set_line_menu_number $1 $2  line27a                              ;;
+27b   )    set_line_menu_number $1 $2  line27b                              ;;
+30a   )    set_line_menu_number $1 $2  line30a                              ;;
+30b   )    set_line_menu_number $1 $2  line30b                              ;;
+30    )    set_line_menu_number $1 $2  line30                               ;;
+32a   )    set_line_menu_text   $1 $2  line32a                              ;;
+32b   )    set_line_menu_text   $1 $2  line32b                              ;;
+33a   )    set_line_menu_text   $1 $2  line33a                              ;;
+33b   )    set_line_menu_text   $1 $2  line33b                              ;;
+33c   )    set_line_menu_text   $1 $2  line33c                              ;;
+34y   )    set_line_menu_text   $1 $2  line34y                              ;;
+34n   )    set_line_menu_text   $1 $2  line34n                              ;;
+35    )    set_line_menu_number $1 $2  line35                               ;;
+36    )    set_line_menu_number $1 $2  line36                               ;;
+37    )    set_line_menu_number $1 $2  line37                               ;;
+38    )    set_line_menu_number $1 $2  line38                               ;;
+39    )    set_line_menu_number $1 $2  line39                               ;;
+41    )    set_line_menu_number $1 $2  line41                               ;;
+43m   )    set_line_menu_text   $1 $2  line43m                              ;;
+43d   )    set_line_menu_text   $1 $2  line43d                              ;;
+43y   )    set_line_menu_text   $1 $2  line43y                              ;;
+44a   )    set_line_menu_number $1 $2  line44a                              ;;
+44b   )    set_line_menu_number $1 $2  line44b                              ;;
+44c   )    set_line_menu_number $1 $2  line44c                              ;;
+45y   )    set_line_menu_text   $1 $2  line45y                              ;;
+45n   )    set_line_menu_text   $1 $2  line45n                              ;;
+46y   )    set_line_menu_text   $1 $2  line46y                              ;;
+46n   )    set_line_menu_text   $1 $2  line46n                              ;;
+47ay  )    set_line_menu_text   $1 $2  line47ay                             ;;
+47an  )    set_line_menu_text   $1 $2  line47an                             ;;
+47by  )    set_line_menu_text   $1 $2  line47by                             ;;
+47bn  )    set_line_menu_text   $1 $2  line47bn                             ;;
+Exp1nm)    set_line_menu_text   $1 $2  lineExp1nm                           ;;
+Exp1  )    set_line_menu_number $1 $2  lineExp1                             ;;
+Exp2nm)    set_line_menu_text   $1 $2  lineExp2nm                           ;;
+Exp2  )    set_line_menu_number $1 $2  lineExp2                             ;;
+Exp3nm)    set_line_menu_text   $1 $2  lineExp3nm                           ;;
+Exp3  )    set_line_menu_number $1 $2  lineExp3                             ;;
+Exp4nm)    set_line_menu_text   $1 $2  lineExp4nm                           ;;
+Exp4  )    set_line_menu_number $1 $2  lineExp4                             ;;
+Exp5nm)    set_line_menu_text   $1 $2  lineExp5nm                           ;;
+Exp5  )    set_line_menu_number $1 $2  lineExp5                             ;;
+Exp6nm)    set_line_menu_text   $1 $2  lineExp6nm                           ;;
+Exp6  )    set_line_menu_number $1 $2  lineExp6                             ;;
+Exp7nm)    set_line_menu_text   $1 $2  lineExp7nm                           ;;
+Exp7  )    set_line_menu_number $1 $2  lineExp7                             ;;
+Exp8nm)    set_line_menu_text   $1 $2  lineExp8nm                           ;;
+Exp8  )    set_line_menu_number $1 $2  lineExp8                             ;;
+Exp9nm)    set_line_menu_text   $1 $2  lineExp9nm                           ;;
+Exp9  )    set_line_menu_number $1 $2  lineExp9                             ;;
+q     )    break;;                       
+esac
+done
+}
+    
+while true;
+      do    
+  clear
+  echo
+  echo "Welcome to Tax-bash."
+  echo
+  echo "0)  Read a description of the program"
+  echo "1)  On which programs is tax-bash dependent?"
+  echo "2)  What global variables should be set?"
+  echo "3)  How to set up Xalan to use the java version."
+  echo "4)  How to set up FOP"
+  echo "5)  Setting windowing system under Ubuntu"
+  echo "6)  Initial actions to take with tax-bash."
+  echo "7)  Start using tax-bash"
+  echo
+  echo "q)  Exit the program"
+  read choice
+
+  case "$choice" in
+   0) description;;   
+   1) dependencies;;
+   2) variables;;
+   3) setupxalan;;
+   4) setupfop;;
+   5) setupX11;;
+   6) initial;;
+   7) set_menu_choice;;
+   q) exit;;   
+  esac
+	
+done	
+    
+#Tidy up and leave
+
+echo "Finished"
+
+exit 0
+

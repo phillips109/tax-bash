@@ -24,9 +24,9 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 bkgImage='../Jpg/f1040sc-page-001.jpg'>
 
 <col name=''
-left='0.01in'
+left='0.02in'
 right='8.50in'
-width='8.49in'
+width='8.48in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
@@ -490,8 +490,8 @@ color='blue'>
 *******************************************************
 
 <col name='04'
-left='7.65in'
-right='7.75in'
+left='7.77in'
+right='7.87in'
 width='0.1in'
 background-color='pink'
 font-size='12pt'
@@ -718,13 +718,14 @@ font-family='Times'
 text-align='left'
 top='0.00in'>
 
-<tlin name='TFNI'
+<tPull name='TFNI'
 top='1.46in'
 height='0.15in'
-color='blue'>
-<text>John E.</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</tPull>
 
 <tlin name='PrBus'
 top='1.80in'
@@ -755,19 +756,41 @@ font-family='Times'
 text-align='left'
 top='0.00in'>
 
-<tlin name='TLN'
+<tPull name='TLN'
 top='1.46in'
 height='0.15in'
-color='blue'>
-<text>Dough</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TLN</line2>
+</tPull>
 
 <tlin name='Addr1'
 top='2.31in'
 height='0.15in'
 color='blue'>
 <text>300 Liberty Avenue</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='15a'
+left='5.95in'
+right='7.97in'
+width='2.02in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='Addr2'
+top='2.31in'
+height='0.15in'
+color='blue'>
+<text>Suite 350</text>
 <blank></blank>
 </tlin>
 
@@ -797,21 +820,13 @@ color='blue'>
 
 <col name='15a'
 left='5.95in'
-right='7.97in'
-width='2.02in'
+right='6.40in'
+width='0.45in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
 text-align='left'
 top='0.00in'>
-
-<tlin name='Addr2'
-top='2.31in'
-height='0.15in'
-color='blue'>
-<text>Suite 350</text>
-<blank></blank>
-</tlin>
 
 <tlin name='ST'
 top='2.47in'
@@ -852,16 +867,17 @@ width='0.43in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
-text-align='center'
+text-align='right'
 top='0.00in'>
 
-<tlin name='TSSNoF'
+<tPull name='TSSNoF'
 top='1.46in'
 height='0.15in'
-color='blue'>
-<text>123</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</tPull>
 
 </col>
 *******************************************************
@@ -876,13 +892,14 @@ font-family='Times'
 text-align='center'
 top='0.00in'>
 
-<tlin name='TSSNoM'
+<tPull name='TSSNoM'
 top='1.46in'
 height='0.15in'
-color='blue'>
-<text>45</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</tPull>
 
 </col>
 *******************************************************
@@ -897,13 +914,14 @@ font-family='Times'
 text-align='left'
 top='0.00in'>
 
-<tlin name='TSSNoL'
+<tPull name='TSSNoL'
 top='1.46in'
 height='0.15in'
-color='blue'>
-<text>6789</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoL</line2>
+</tPull>
 
 </col>
 *******************************************************
@@ -1782,6 +1800,17 @@ top='10.3in'
 height='0.15in'
 color='red'>
 <dummy>9000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='Sum'
+top='10.46in'
+height='0.15in'
+color='red'>
+<dummy>45000</dummy>
 <form></form>
 <copy></copy>
 <line2></line2>

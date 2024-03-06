@@ -26,9 +26,9 @@ bkgImage:../Jpg/f1040sc-page-001.jpg
 
 type:col
 name:
-left:0.01
+left:0.02
 right:8.50
-width:8.49
+width:8.48
 background-color='pink'
 font-size:12
 font-family:Times
@@ -454,8 +454,8 @@ Endcol ************************************************
 
 type:col
 name:04
-left:7.65
-right:7.75
+left:7.77
+right:7.87
 width:0.1
 background-color='pink'
 font-size:12
@@ -670,12 +670,14 @@ font-family:Times
 align:left
 top:0.00
 
-type:tlin
+type:tPull
 name:TFNI
 top:1.46
 height:0.15
-color:blue
-dummy:John E.
+color:purple
+form:Bkg
+copy:00
+line2:TFNI
 
 type:tlin
 name:PrBus
@@ -704,12 +706,14 @@ font-family:Times
 align:left
 top:0.00
 
-type:tlin
+type:tPull
 name:TLN
 top:1.46
 height:0.15
-color:blue
-dummy:Dough
+color:purple
+form:Bkg
+copy:00
+line2:TLN
 
 type:tlin
 name:Addr1
@@ -717,6 +721,26 @@ top:2.31
 height:0.15
 color:blue
 dummy:300 Liberty Avenue
+
+Endcol ************************************************
+
+type:col
+name:15a
+left:5.95
+right:7.97
+width:2.02
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:Addr2
+top:2.31
+height:0.15
+color:blue
+dummy:Suite 350
 
 Endcol ************************************************
 
@@ -743,20 +767,13 @@ Endcol ************************************************
 type:col
 name:15a
 left:5.95
-right:7.97
-width:2.02
+right:6.40
+width:0.45
 background-color='pink'
 font-size:12
 font-family:Times
 align:left
 top:0.00
-
-type:tlin
-name:Addr2
-top:2.31
-height:0.15
-color:blue
-dummy:Suite 350
 
 type:tlin
 name:ST
@@ -795,15 +812,17 @@ width:0.43
 background-color='pink'
 font-size:12
 font-family:Times
-align:center
+align:right
 top:0.00
 
-type:tlin
+type:tPull
 name:TSSNoF
 top:1.46
 height:0.15
-color:blue
-dummy:123
+color:purple
+form:Bkg
+copy:00
+line2:TSSNoF
 
 Endcol ************************************************
 
@@ -818,12 +837,14 @@ font-family:Times
 align:center
 top:0.00
 
-type:tlin
+type:tPull
 name:TSSNoM
 top:1.46
 height:0.15
-color:blue
-dummy:45
+color:purple
+form:Bkg
+copy:00
+line2:TSSNoM
 
 Endcol ************************************************
 
@@ -838,12 +859,14 @@ font-family:Times
 align:left
 top:0.00
 
-type:tlin
+type:tPull
 name:TSSNoL
 top:1.46
 height:0.15
-color:blue
-dummy:6789
+color:purple
+form:Bkg
+copy:00
+line2:TSSNoL
 
 Endcol ************************************************
 
@@ -1665,6 +1688,16 @@ top:10.3
 height:0.15
 color:red
 dummy:9000
+form:
+copy:
+line2:
+
+type:dlin
+name:Sum
+top:10.46
+height:0.15
+color:red
+dummy:45000
 form:
 copy:
 line2:

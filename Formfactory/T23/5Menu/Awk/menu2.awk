@@ -21,8 +21,8 @@ BEGIN {
 	    tlin2[count] = $2
 	    tlin3[count] = $3
 	    tlin4[count] = $4
-#	    tlin5[count] = $5
-#	    tlin6[count] = $6
+	    tlin5[count] = $5
+	    tlin6[count] = $6
   }
 
     /^dlin/ {
@@ -36,8 +36,8 @@ BEGIN {
 	    dlin2[number] = $2
 	    dlin3[number] = $3
 	    dlin4[number] = $4
-#	    num5[number] = $5
-#	    num6[number] = $6
+	    num5[number] = $5
+	    num6[number] = $6
 
     }
   
@@ -71,7 +71,6 @@ printf( "%s\n", "echo" )
 	count=0
 	number=0
 	for (i=1; i <= NR; i++) {
-
 	    if ( substr(lin[i],1,4) == "tlin" ){
 	    count++
 	    printf("%*s", -5, "echo \"" )
@@ -117,7 +116,7 @@ printf( "%s\n", "echo" )
 	    printf("%*s", 3, "$2 ")
 	    printf("%*s", 5, " line")
 	    printf("%*s", -30, tlin2[count])
-	    printf("%*s", 3, "14")
+	    printf("%*s", 3, $6)
 	    printf("%s\n", ";;")
 	    }
 
@@ -131,7 +130,7 @@ printf( "%s\n", "echo" )
 	    printf("%*s", 3, "$2 ")
 	    printf("%*s", 5, " line")	    
 	    printf("%*s", -30, dlin2[number])
-	    printf("%*s", 3, "14")
+	    printf("%*s", 3, $6)
 	    printf("%s\n", ";;")
 	    }
 	}

@@ -363,6 +363,14 @@ createDestinations(){
      done	       
    }
 
+changeColor2Black(){
+
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../2Fo/$1_Copy$2.2fo -xsl ../../7App/BaseXsl//changeColor2Black.xsl -out ../2Fo/$1_Copy$2.tmp
+#    cp ../2Fo/$1_Copy$2.2fo ../2Fo/$1_Copy$2.hold
+    mv ../2Fo/$1_Copy$2.tmp ../2Fo/$1_Copy$2.2fo
+
+
+    }
 export2Fo(){
     #echo $1_Copy$2.2fo
     #Export to ../../Calc is not necessary, Calc imports it.
@@ -410,7 +418,8 @@ while true;
   echo
   echo "  When satisfied with the layout,"
   echo "  10)  Create link destinations."
-  echo "  11)  Export ../2Fo/$1_Copy$2*.2fo to ../../7App/2Fo"
+  echo "  11)  Change color to black."
+  echo "  12)  Export ../2Fo/$1_Copy$2*.2fo to ../../7App/2Fo"
   echo
   echo "   q) Quit"
  
@@ -450,7 +459,8 @@ while true;
       8)  showPdf $1 $2;;
       9) 2-9 $1 $2;;
      10) createDestinations $1 $2;;
-     11) export2Fo $1 $2;;
+     11) changeColor2Black $1 $2;;
+     12) export2Fo $1 $2;;
      
       q)  exit;;
       *)  echo "Sorry, choice not recognized."

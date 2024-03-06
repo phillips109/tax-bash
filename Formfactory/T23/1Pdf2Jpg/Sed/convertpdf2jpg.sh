@@ -5,4 +5,5 @@ echo "You will be taken to https://smallpdf.com/pdf-to-jpg"
 echo "When you reach the first page scroll down and read the How-To instructions"
 echo  "When you have finished, you will be returned to the main menu."
 sleep 15
-firefox https://smallpdf.com/pdf-to-jpg
+#firefox https://smallpdf.com/pdf-to-jpg
+firefox https://pdf2jpg.net

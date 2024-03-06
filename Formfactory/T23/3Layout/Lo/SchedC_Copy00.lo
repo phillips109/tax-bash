@@ -1,3 +1,4 @@
+
 Copyright(C) 2019 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash
@@ -25,7 +26,7 @@ xpgF  	!2name 	!3BkgImage
 pgF   	!Single	!../Jpg/f1040sc-page-001.jpg
 
 xcol  	!2name 	!top   	!align 	!left  	!right
-col   	!      	!-0.12 	!left  	!0.01  	!8.50
+col   	!      	!-0.12 	!left  	!0.02  	!8.50
 
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -83,7 +84,7 @@ tlin  	!Jy    	!3.28  	!x                 	!            	!      	!
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!04    	!0.00  	!center	!7.65  	!7.75
+col   	!04    	!0.00  	!center	!7.77  	!7.87
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!Gn    	!2.78  	!x                 	!            	!      	!
 tlin  	!In    	!3.12  	!x                 	!            	!      	!
@@ -142,7 +143,7 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!13    	!0.00  	!left  	!0.50  	!2.94
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TFNI  	!1.46  	!John E.           	!            	!      	!
+tPull  	!TFNI  	!1.46  	!John E.           	!Bkg          	!00    	!TFNI
 tlin  	!PrBus 	!1.80  	!Meatpacking       	!            	!      	!
 tlin  	!BusNm 	!2.13  	!Wilkins Meatpacking Co.	!            	!      	!
 Endcol*******************
@@ -150,8 +151,14 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!14    	!0.00  	!left  	!3.22  	!7.97
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TLN   	!1.46  	!Dough             	!            	!      	!
+tPull  	!TLN   	!1.46  	!Dough             	!Bkg           	!00    	!TLN
 tlin  	!Addr1 	!2.31  	!300 Liberty Avenue	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!15a   	!0.00  	!left	!5.95  	!7.97
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Addr2 	!2.31  	!Suite 350         	!            	!      	!
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -161,9 +168,8 @@ tlin  	!City  	!2.47  	!Pittsburgh        	!            	!      	!
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!15a   	!0.00  	!left	!5.95  	!7.97
+col   	!15a   	!0.00  	!left	!5.95  	!6.40
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Addr2 	!2.31  	!Suite 350         	!            	!      	!
 tlin  	!ST    	!2.47  	!PA                	!            	!      	!
 Endcol*******************
 
@@ -174,21 +180,21 @@ tlin  	!zip   	!2.47  	!15212             	!            	!      	!
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!17    	!0.00  	!center  	!6.23  	!6.66
+col   	!17    	!0.00  	!right  	!6.23  	!6.66
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TSSNoF	!1.46  	!123               	!            	!      	!
+tPull  	!TSSNoF	!1.46  	!123               	!Bkg           	!00    	!TSSNoF
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!18    	!0.00  	!center	!6.70  	!7.17
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TSSNoM	!1.46  	!45                	!            	!      	!
+tPull  	!TSSNoM	!1.46  	!45                	!Bkg           	!00    	!TSSNoM
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!19    	!0.00  	!left  	!7.22  	!7.79
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!TSSNoL	!1.46  	!6789              	!            	!      	!
+tPull  	!TSSNoL	!1.46  	!6789              	!Bkg         	!00    	!TSSNoL
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -250,12 +256,8 @@ col   	!28    	!0.00  	!center	!7.79  	!7.99
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!D9    	!2.14  	!9                 	!            	!      	!
 Endcol*******************
-
 Endcol*******************
 EndpgF
-
-
-
 
 xpgL  	!2name 	!3BkgImage
 pgL   	!Single	!../Jpg/f1040sc-page-002.jpg
@@ -388,6 +390,7 @@ dlin  	!Exp6  	!9.30  	!6000              	!            	!      	!
 dlin  	!Exp7  	!9.63  	!7000              	!            	!      	!
 dlin  	!Exp8  	!9.96  	!8000              	!            	!      	!
 dlin  	!Exp9  	!10.3  	!9000              	!            	!      	!
+dlin	!Sum	!10.46	!45000			!		!	!
 Endcol*******************
 
 Endcol*******************

@@ -71,18 +71,13 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00lineaccru color='blue'>x</copy00lineaccru>
 <copy00lineother color='blue'>x</copy00lineother>
 <copy00linespecif color='blue'>Other</copy00linespecif>
-<copy00lineTFNI color='blue'>John E.</copy00lineTFNI>
 <copy00linePrBus color='blue'>Meatpacking</copy00linePrBus>
 <copy00lineBusNm color='blue'>Wilkins Meatpacking Co.</copy00lineBusNm>
-<copy00lineTLN color='blue'>Dough</copy00lineTLN>
 <copy00lineAddr1 color='blue'>300 Liberty Avenue</copy00lineAddr1>
-<copy00lineCity color='blue'>Pittsburgh</copy00lineCity>
 <copy00lineAddr2 color='blue'>Suite 350</copy00lineAddr2>
+<copy00lineCity color='blue'>Pittsburgh</copy00lineCity>
 <copy00lineST color='blue'>PA</copy00lineST>
 <copy00linezip color='blue'>15212</copy00linezip>
-<copy00lineTSSNoF color='blue'>123</copy00lineTSSNoF>
-<copy00lineTSSNoM color='blue'>45</copy00lineTSSNoM>
-<copy00lineTSSNoL color='blue'>6789</copy00lineTSSNoL>
 <copy00lineD1 color='blue'>1</copy00lineD1>
 <copy00lineB1 color='blue'>1</copy00lineB1>
 <copy00lineD2 color='blue'>2</copy00lineD2>
@@ -143,5 +138,6 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00lineExp7 color='red'>7000</copy00lineExp7>
 <copy00lineExp8 color='red'>8000</copy00lineExp8>
 <copy00lineExp9 color='red'>9000</copy00lineExp9>
+<copy00lineSum color='red'>45000</copy00lineSum>
 </Form>
 </IRSForms>
