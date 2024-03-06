@@ -1,20 +1,20 @@
 # Step 5 Menu and Data Creation
-The Main folder contains the menu that wil produce two sets of critical files:
+The Main folder contains the menu that will produce two sets of critical files:
 
 ## 1. Menus
 When the end user needs to enter text or data onto a form, it wil be done with the use of menu.
 The user will select the line on the form he wishes to fill and he will be presented with the menus to do so.
-The menu files will become part of the user interface.
+The created menu file will become part of the user interface.
 
 ## 2. Data files
 The text or data that the user enters is stored in text or data files. 
 These files are created here for each entry.
-The data files will hod the text or data that the end user enters.
+The data files will hold the text or data that the end user enters.
 
 ## Step by step instructions:
-### Step one brings up a view of the form for the form builder to guide his work.
-### Step two imports the ../Txt/$1.txt file from either ../4Calc or ../2Sequence
-### Step 3 allows the builder to remove the title line from  the txt file
+### Step 1 brings up a view of the form for the form builder to guide his work.
+### Step 2 imports the ../Txt/$1.txt file from either ../4Calc or ../2Sequence
+### Step 3 allows the builder to remove the title line from  the .txt file
 ### Step 4 removes all the entries that are not entered by the end user.
 ### Step 5 allows the builder to enter the text requesting entries from the end user.
 ### Step 6 reorders the columns of the awk database.
