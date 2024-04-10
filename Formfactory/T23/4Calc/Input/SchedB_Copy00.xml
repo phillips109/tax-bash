@@ -1,0 +1,1060 @@
+<Form name=''>
+
+<line number='02'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01ad</augend>
+<addend>line01bd</addend>
+<addend>line01cd</addend>
+<addend>line01dd</addend>
+<addend>line01ed</addend>
+<addend>line01fd</addend>
+<addend>line01gd</addend>
+<addend>line01hd</addend>
+<addend>line01id</addend>
+<addend>line01jd</addend>
+<addend>line01kd</addend>
+<addend>line01ld</addend>
+<addend>line01md</addend>
+<addend>line01nd</addend>
+</line>
+
+<line number='06'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line05ad</augend>
+<addend>line05bd</addend>
+<addend>line05cd</addend>
+<addend>line05dd</addend>
+<addend>line05ed</addend>
+<addend>line05fd</addend>
+<addend>line05gd</addend>
+<addend>line05hd</addend>
+<addend>line05id</addend>
+<addend>line05jd</addend>
+<addend>line05kd</addend>
+<addend>line05ld</addend>
+<addend>line05md</addend>
+<addend>line05nd</addend>
+</line>
+
+<line number='exempt'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01aint</augend>
+<addend>line01bint</addend>
+<addend>line01cint</addend>
+<addend>line01dint</addend>
+<addend>line01eint</addend>
+<addend>line01fint</addend>
+<addend>line01gint</addend>
+<addend>line01hint</addend>
+<addend>line01iint</addend>
+<addend>line01jint</addend>
+<addend>line01kint</addend>
+<addend>line01lint</addend>
+<addend>line01mint</addend>
+<addend>line01nint</addend>
+</line>
+
+<line number='qual'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line05adiv</augend>
+<addend>line05bdiv</addend>
+<addend>line05cdiv</addend>
+<addend>line05ddiv</addend>
+<addend>line05ediv</addend>
+<addend>line05fdiv</addend>
+<addend>line05gdiv</addend>
+<addend>line05hdiv</addend>
+<addend>line05idiv</addend>
+<addend>line05jdiv</addend>
+<addend>line05kdiv</addend>
+<addend>line05ldiv</addend>
+<addend>line05mdiv</addend>
+<addend>line05ndiv</addend>
+</line>
+
+<line number='01ad'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>01</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01bd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>02</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01cd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>03</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01dd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>04</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01ed'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>05</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01fd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>06</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01gd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>07</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01hd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>08</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01id'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>09</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01jd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>10</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01kd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>11</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01ld'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>12</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01md'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>13</copy>
+<line2>line01</line2>
+</line>
+
+<line number='01nd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>14</copy>
+<line2>line01</line2>
+</line>
+
+<line number='03'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form8815</form>
+<copy>01</copy>
+<line2>00</line2>
+</line>
+
+<line number='05ad'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05bd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>02</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05cd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>03</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05dd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>04</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05ed'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>05</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05fd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>06</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05gd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>07</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05hd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>08</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05id'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>09</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05jd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>10</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05kd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>11</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05ld'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>12</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05md'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>13</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='05nd'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>14</copy>
+<line2>line01a</line2>
+</line>
+
+<line number='01aint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>01</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01bint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>02</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01cint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>03</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01dint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>04</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01eint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>05</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01fint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>06</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01gint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>07</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01hint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>08</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01iint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>09</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01jint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>10</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01kint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>11</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01lint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>12</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01mint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>13</copy>
+<line2>line08</line2>
+</line>
+
+<line number='01nint'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099int</form>
+<copy>14</copy>
+<line2>line08</line2>
+</line>
+
+<line number='05adiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05bdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>02</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05cdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>03</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05ddiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>04</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05ediv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>05</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05fdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>06</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05gdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>07</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05hdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>08</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05idiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>09</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05jdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>10</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05kdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>11</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05ldiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>12</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05mdiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>13</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='05ndiv'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1099div</form>
+<copy>14</copy>
+<line2>line01b</line2>
+</line>
+
+<line number='04'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line02</minuend>
+<subtrahend>line03</subtrahend>
+</line>
+
+<line name='07a1n'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='07a1y'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='07a2n'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='07a2y'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='07b'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='08n'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='08y'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line number='01at'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>01</copy>
+<line2>pnam1</line2>
+</line>
+
+<line number='01bt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>02</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01ct'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>03</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01dt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>04</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01et'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>05</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01ft'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>06</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01gt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>07</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01ht'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>08</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01it'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>09</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01jt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>10</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01kt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>11</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01lt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>12</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01mt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>13</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='01nt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099int</form>
+<copy>14</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05at'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>pnam1</line2>
+</line>
+
+<line number='05bt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05ct'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05dt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05et'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05ft'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05gt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05ht'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05it'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05jt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05kt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05lt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05mt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='05nt'
+ color='blue'>
+<type>tPull</type>
+<form>Form1099div</form>
+<copy>01</copy>
+<line2>linepnam1</line2>
+</line>
+
+<line number='SFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>SFNI</line2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>SLN</line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TSSNoL</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TSSNoM</line2>
+</line>
+</Form>

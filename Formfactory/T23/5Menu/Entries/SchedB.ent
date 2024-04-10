@@ -1,0 +1,7 @@
+072	!tlin	!07a1y	!Enter x if you had a financial interest in a foreign account.
+073	!tlin	!07a1n	!Enter x if you didn't have a financial interest in a foreign account.
+074	!tlin	!07a2y	!Enter x if you are required to file FinCEN.
+075	!tlin	!07a2n	!Enter x if you are not required to file FinCEN.
+076	!tlin	!07b	!Enter the name of the foreign country where the financial account is located.
+077	!tlin	!08y	!Enter x if you received a distribution from or were the grantor or transferor to a foreign trust.
+078	!tlin	!08n	!Enter x if you were not.

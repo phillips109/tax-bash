@@ -26,7 +26,6 @@ addit   	!totlO   	!#####0  	!        	!        	!        	!
 xdlin   	!2name   	!3format 	!4dummy              
 dlin    	!01      	!#####0  	!                    	!
 dlin    	!02      	!#####0  	!                    	!
-dlin    	!04      	!#####0  	!                    	!
 dlin    	!05      	!#####0  	!                    	!
 dlin    	!06      	!#####0  	!                    	!
 dlin    	!08      	!#####0  	!                    	!
@@ -51,8 +50,6 @@ dlin    	!24a     	!#####0  	!                    	!
 dlin    	!24b     	!#####0  	!                    	!
 dlin    	!25      	!#####0  	!                    	!
 dlin    	!26      	!#####0  	!                    	!
-dlin    	!27a     	!#####0  	!                    	!
-dlin    	!27b     	!#####0  	!                    	!
 dlin    	!30      	!#####0  	!                    	!
 dlin    	!30a     	!#####0  	!                    	!
 dlin    	!30b     	!#####0  	!                    	!
@@ -74,6 +71,11 @@ dlin    	!Exp6    	!#####0  	!                    	!
 dlin    	!Exp7    	!#####0  	!                    	!
 dlin    	!Exp8    	!#####0  	!                    	!
 dlin    	!Exp9    	!#####0  	!                    	!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!04      	!#####0  	!        	!        	!        	!
+dPull   	!27a     	!#####0  	!        	!        	!        	!
+dPull   	!27b     	!#####0  	!        	!        	!        	!
 
 xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
 subtr   	!03      	!#####0  	!        	!        	!

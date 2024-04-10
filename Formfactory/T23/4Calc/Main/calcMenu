@@ -65,7 +65,7 @@ Pdfshow(){
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
     UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
-       SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
+    Form1040ssa) qpdfview ../Pdf/f1040ssa.pdf      &;;
 	    SST) qpdfview ../Pdf/sst.pdf           &;; 
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
              w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
@@ -90,7 +90,7 @@ showForm(){
 
 importTxt(){
      echo $1
-#    cp ../../2Sequence/Txt/$1.txt ../Txt/$1.txt
+    cp ../../2Sequence/Txt/$1.txt ../Txt/$1.txt
     }
 
 cptxt2edit(){
@@ -696,7 +696,7 @@ do
   echo "   1099int)  Interest Income"
   echo "   1099r)    Distributions from Pensions, Annuities, Retirement etc."
   echo "   1099g)    Certain Government Payments"
-  echo "   1099ssa)  SSA Benefit Statement"
+#  echo "   1040ssa)  SSA Benefit Statement"
   echo  
   echo "   w2)    Wage and Tax Statement"
   echo
@@ -753,7 +753,7 @@ do
       1099int)   set_menu_choices  Form1099int     00;;	
       1099r)     set_menu_choices  Form1099r       00;;	
       1099g)     set_menu_choices  Form1099g       00;;
-      1099ssa)   set_copy_number   Form1099ssa     00;;
+#      1099ssa)   set_copy_number   Form1099ssa     00;;
       w2)        set_menu_choices  w2              00;; #can only produce once copy (00) anyway	
       bkg)       set_menu_choices  Bkg             00;; #using set_menu_choices limits Bkg to one copy (00)      
       q)         break;;
@@ -792,7 +792,7 @@ do
       qdcg)   set_menu_choices  QDCGTaxWkst       00;;
       schd)   set_menu_choices  SchedDTaxWkst     00;;
      sales)   set_menu_choices  WSSchASalesTax    00;;
-       ssa)   set_copy_number   SSA_1099	  00;;
+       ssa)   set_menu_choices  Form1040ssa	  00;;
        sst)   set_menu_choices  SST               00;;
        wks)   set_menu_choices  Wks               00;;
        cap)   set_menu_choices  CLCWkst           00;;

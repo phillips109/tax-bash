@@ -1,0 +1,111 @@
+type      	!name      	!seq       	!menuEntry                                                                                                     	!IRSInstructions     	!pgNo    	!     
+tlin      	!PrBus     	!006       	!Enter the principal business or profession engaged in.                                              	  	!i1040sc.pdf         	!3      	!     
+tlin      	!B1        	!007       	!Enter the first code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!B2        	!008       	!Enter the second code number.                                                                       	  	!i1040sc.pdf         	!3      	!     
+tlin      	!B3        	!009       	!Enter the third code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!B4        	!010       	!Enter the fourth code number.                                                                       	  	!i1040sc.pdf         	!3      	!     
+tlin      	!B5        	!011       	!Enter the fifth code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!B6        	!012       	!Enter the sixth code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!BusNm     	!013       	!Enter the business name if separate from line A.                                                    	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D1        	!014       	!Enter the first code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D2        	!015       	!Enter the second code number.                                                                       	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D3        	!016       	!Enter the third code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D4        	!017       	!Enter the fourth code number.                                                                       	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D5        	!018       	!Enter the fifth code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D6        	!019       	!Enter the sixth code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D7        	!020       	!Enter the seventh code number.                                                                      	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D8        	!021       	!Enter the eighth code number.                                                                       	  	!i1040sc.pdf         	!3      	!     
+tlin      	!D9        	!022       	!Enter the ninth code number.                                                                        	  	!i1040sc.pdf         	!3      	!     
+tlin      	!Addr1     	!023       	!Enter the first address line of the business.                                                       	  	!i1040sc.pdf         	!3      	!     
+tlin      	!Addr2     	!024       	!Enter the second address line of the business.                                                      	  	!i1040sc.pdf         	!4      	!     
+tlin      	!City      	!025       	!Enter the ciy in which the business is located.                                                     	  	!i1040sc.pdf         	!4      	!     
+tlin      	!ST        	!026       	!Enter the state (ST) in which the buseiness is located.                                             	  	!i1040sc.pdf         	!4      	!     
+tlin      	!zip       	!027       	!Enter the zip code of the business.                                                                 	  	!i1040sc.pdf         	!4      	!     
+tlin      	!cash      	!028       	!Enter x if the accounting method is cash based.                                                     	  	!i1040sc.pdf         	!4      	!     
+tlin      	!accru     	!029       	!Enter x if the accounting method is accrual based.                                                  	  	!i1040sc.pdf         	!4      	!     
+tlin      	!other     	!030       	!Enter x if an other accounting method was used.                                                     	  	!i1040sc.pdf         	!4      	!     
+tlin      	!specif    	!031       	!Specify the accounting method used.                                                                 	  	!i1040sc.pdf         	!4      	!     
+tlin      	!Gy        	!032       	!Emter x if you materially participated in the operation of the business during 2023.              	  	!i1040sc.pdf         	!4      	!     
+tlin      	!Gn        	!033       	!Enter x if you did not materially participate in the operation of the business during 2023.       	  	!i1040sc.pdf         	!4      	!     
+tlin      	!Hx        	!034       	!Enter x if you started or acquired this business during 2023.                                       	  	!i1040sc.pdf         	!5      	!     
+tlin      	!Iy        	!035       	!Enter x if you made any payments in 2023 that would require filing Form(s) 1099.                    	  	!i1040sc.pdf         	!5      	!     
+tlin      	!In        	!036       	!Enter x if you did not make any payments in 2023 thot would require filing Form(s) 1099.            	  	!i1040sc.pdf         	!5      	!     
+tlin      	!Jy        	!037       	!Enter x if you did or will file any required Form(s) 1099.                                          	  	!i1040sc.pdf         	!5      	!     
+tlin      	!Jn        	!038       	!Enter x if you did not and will not file any required Form(s) 1099.                                 	  	!i1040sc.pdf         	!5      	!     
+tlin      	!01Ck      	!039       	!Enter x if income on line01 was reported to you on FormW2 and Statutory employee was checked.      	  	!i1040sc.pdf         	!5      	!     
+dlin      	!01        	!040       	!Enter gross receipts or sales.                                                                      	  	!i1040sc.pdf         	!5      	!     
+dlin      	!02        	!041       	!Enter returns and allowances.                                                                      	  	!i1040sc.pdf         	!6      	!     
+dlin      	!04        	!043       	!Enter cost of goods sold from line 42.                                                              	  	!i1040sc.pdf         	!6      	!     
+dlin      	!06        	!045       	!Enter other income.                                                                                 	  	!i1040sc.pdf         	!6      	!     
+dlin      	!08        	!047       	!Enter advertising expenses.                                                                         	  	!i1040sc.pdf         	!6      	!     
+dlin      	!09        	!048       	!Enter car and truck expenses.                                                                       	  	!i1040sc.pdf         	!7      	!     
+dlin      	!10        	!049       	!Enter commission and fee expenses.                                                                  	  	!i1040sc.pdf         	!7      	!     
+dlin      	!11        	!050       	!Enter contract labor expenses.                                                                      	  	!i1040sc.pdf         	!7      	!     
+dlin      	!12        	!051       	!Enter depletion expenses.                                                                           	  	!i1040sc.pdf         	!7      	!     
+dlin      	!13        	!052       	!Enter depreciation and section 179 expenses.                                                        	  	!i1040sc.pdf         	!7      	!     
+dlin      	!14        	!053       	!Enter employee benefit program expenses.                                                            	  	!i1040sc.pdf         	!8      	!     
+dlin      	!15        	!054       	!enter insurance (other than health) expenses.                                                      	  	!i1040sc.pdf         	!8      	!     
+dlin      	!16a       	!055       	!Enter mortage interest expenses.                                                                    	  	!i1040sc.pdf         	!8      	!     
+dlin      	!16b       	!056       	!Enter other interest expenses.                                                                      	  	!i1040sc.pdf         	!8      	!     
+dlin      	!17        	!057       	!Enter legal and professional services expenses.                                                     	  	!i1040sc.pdf         	!8      	!     
+dlin      	!18        	!058       	!Enter office expenses.                                                                              	  	!i1040sc.pdf         	!8      	!     
+dlin      	!19        	!059       	!Enter pension and profit-sharing plan expenses.                                                     	  	!i1040sc.pdf         	!8      	!     
+dlin      	!20a       	!060       	!Enter rent or lease expenses for vehicles, machinery and equipment.                                 	  	!i1040sc.pdf         	!9      	!     
+dlin      	!20b       	!061       	!Enter rent or lease expenses for other business property.                                           	  	!i1040sc.pdf         	!9      	!     
+dlin      	!21        	!062       	!Enter repair and maintenance expenses.                                                              	  	!i1040sc.pdf         	!9      	!     
+dlin      	!22        	!063       	!Enter expenses for supplies.                                                                        	  	!i1040sc.pdf         	!9      	!     
+dlin      	!23        	!064       	!Enter tax and license expenses.                                                                     	  	!i1040sc.pdf         	!9      	!     
+dlin      	!24a       	!065       	!Enter travel expenses.                                                                              	  	!i1040sc.pdf         	!9      	!     
+dlin      	!24b       	!066       	!Enter meal deductions.                                                                              	  	!i1040sc.pdf         	!10     	!     
+dlin      	!25        	!067       	!Enter utility expenses.                                                                             	  	!i1040sc.pdf         	!10     	!     
+dlin      	!26        	!068       	!Enter wage expenses (less employment credits).                                                      	  	!i1040sc.pdf         	!10     	!     
+dlin      	!27a       	!069       	!Enter other expenses from line 48.                                                                  	  	!i1040sc.pdf         	!10     	!     
+dlin      	!27b       	!070       	!Enter deduction for energy efficient commercial buildings.(Form 7205)                               	  	!i1040sc.pdf         	!11     	!     
+dlin      	!30a       	!073       	!For simplified method: Enter total square footage of your home.                                     	  	!i1040sc.pdf         	!11     	!     
+dlin      	!30b       	!074       	!For simplified method: Enter ssquare footage used for business.                                     	  	!i1040sc.pdf         	!12     	!     
+dlin      	!30        	!075       	!Enter expenses for the business use of your home. (Form 8829)                                       	  	!i1040sc.pdf         	!11     	!     
+tlin      	!32a       	!077       	!Enter x if all investment is at risk.                                                               	  	!i1040sc.pdf         	!15     	!     
+tlin      	!32b       	!078       	!Enter x if some of the investment is not at risk.                                                   	  	!i1040sc.pdf         	!15     	!     
+tlin      	!33a       	!079       	!Enter x if the method used to value closing inventory was cash.                                   	  	!i1040sc.pdf         	!16     	!     
+tlin      	!33b       	!080       	!Enter x if the method used to value closing inventory was lower of cost or market.                	  	!i1040sc.pdf         	!16     	!     
+tlin      	!33c       	!081       	!Enter s if another method was used to value closing inventory.                                      	  	!i1040sc.pdf         	!16     	!     
+tlin      	!34y       	!082       	!Enter x if there was any change in determininig quantities, costs, or valualtions                   	  	!i1040sc.pdf         	!16     	!     
+tlin      	!34n       	!083       	!Enter x if there was not any such change.                                                           	  	!i1040sc.pdf         	!16     	!     
+dlin      	!35        	!084       	!Enter value of inventory at the beginning of the year.                                              	  	!i1040sc.pdf         	!16     	!     
+dlin      	!36        	!085       	!Enter cost of purchases less cost of items withdrawn for personal use.                              	  	!i1040sc.pdf         	!16     	!     
+dlin      	!37        	!086       	!Enter cost of labor.                                                                                	  	!i1040sc.pdf         	!16     	!     
+dlin      	!38        	!087       	!Enter cost of materials and supplies.                                                               	  	!i1040sc.pdf         	!16     	!     
+dlin      	!39        	!088       	!Enter other costs.                                                                                  	  	!i1040sc.pdf         	!16     	!     
+dlin      	!41        	!090       	!Enter value of inventory at the end of the year.                                                    	  	!i1040sc.pdf         	!16     	!     
+tlin      	!43m       	!092       	!Enter the month (mm) your vehicle was placed in service for business purposes.                      	  	!i1040sc.pdf         	!16     	!     
+tlin      	!43d       	!093       	!Enter the day (dd) your vehicle was placed in service for business purposes.                        	  	!i1040sc.pdf         	!16     	!     
+tlin      	!43y       	!094       	!Enter the year (yyyy) your vehicle was placed in service for business purposes.                     	  	!i1040sc.pdf         	!16     	!     
+dlin      	!44a       	!095       	!Enter the number of miles you drove your vehicle for business during 2023.                          	  	!i1040sc.pdf         	!16     	!     
+dlin      	!44b       	!096       	!Enter the number of miles you drove your vehicle for commuting during 2023.                         	  	!i1040sc.pdf         	!16     	!     
+dlin      	!44c       	!097       	!Enter the number of miles you drove your vehicle for other purposes during 2023.                    	  	!i1040sc.pdf         	!16     	!     
+tlin      	!45y       	!098       	!Enter x if your vehicle was available for personal use during off-duty hours.                       	  	!i1040sc.pdf         	!16     	!     
+tlin      	!45n       	!099       	!Enter x if your vehicle was not available for personal use during off-duty hours.                   	  	!i1040sc.pdf         	!16     	!     
+tlin      	!46y       	!100       	!Enter x if you or your spouse have anothe vehicle available for personal use.                       	  	!i1040sc.pdf         	!16     	!     
+tlin      	!46n       	!101       	!Enter x if you or your spouse do not have anothe vehicle availabel for personal use.                	  	!i1040sc.pdf         	!16     	!     
+tlin      	!47ay      	!102       	!Enter x if you have evidence to support your deduction.                                             	  	!i1040sc.pdf         	!16     	!     
+tlin      	!47an      	!103       	!Enter x if you do not have evidence to support your deduction.                                      	  	!i1040sc.pdf         	!16     	!     
+tlin      	!47by      	!104       	!Enter x if your evidence is not written.                                                            	  	!i1040sc.pdf         	!16     	!     
+tlin      	!47bn      	!105       	!Enter x if your evidence is written.                                                                	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp1nm    	!106       	!Enter the name of the first business expense catagory.                                              	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp1      	!107       	!Enter the amount expensedvfor the first expense catagory.                                           	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp2nm    	!108       	!Enter the name of the second business expensecatagory.                                              	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp2      	!109       	!Enter the amount expensed for the second expense catagory                                           	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp3nm    	!110       	!Enter the name of the thiird business expense catagory.                                             	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp3      	!111       	!Enter the amount expensed for the third expense catagory.                                           	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp4nm    	!112       	!Enter the name of the fourth business expense catagory.                                             	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp4      	!113       	!Enter the amount expensed for the fourth expense catagory.                                          	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp5nm    	!114       	!Enter the name of the fifth business expense catagory.                                              	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp5      	!115       	!Enter the amount expensed for the fifth expense catagory.                                           	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp6nm    	!116       	!Enter the name of the sixth business expense catagory.                                              	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp6      	!117       	!Enter the amount expensed for the sixthe expense catagory.                                          	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp7nm    	!118       	!Enter the name of the seventh business expense catagory.                                            	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp7      	!119       	!Enter the amount expensed for the seventh expense catagory.                                         	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp8nm    	!120       	!Enter the name of the eighth business expense catagory.                                             	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp8      	!121       	!Enter the amount expensed for the eight expense catagory.                                           	  	!i1040sc.pdf         	!16     	!     
+tlin      	!Exp9nm    	!122       	!Enter the name of the ninth business expense catagory.                                              	  	!i1040sc.pdf         	!16     	!     
+dlin      	!Exp9      	!123       	!Enter the amount expensed for the ninth expenses catagory.                                          	  	!i1040sc.pdf         	!16     	!     

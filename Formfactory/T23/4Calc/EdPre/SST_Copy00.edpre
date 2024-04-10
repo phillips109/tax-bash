@@ -1,0 +1,247 @@
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend
+addit   	!05      	!#####0  	!line02        	!line03        	!line04
+addit   	!16      	!#####0  	!line14        	!line15
+addit		!03		!#####0		!line01z1040	!line02b1040	!line03b1040	!line04b1040	!line05b1040	!line071040	!line081040
+
+xconst   	!2name   	!3format 	!4dummy              
+const    	!50      	!#0.00# 	!0.50          	!
+const    	!85      	!#0.00#  	!0.85          	!
+const		!00		!#####0		!0.00		!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!7line2
+dPull		!01      	!#####0  	!1000     	!Form1099ssa	!01		!lineBox05
+dPull		!21s1		!#####0		!2100		!Form1040s1	!01		!line21
+dPull		!26s1		!#####0		!2600		!Form1040s1	!01		!line26
+dPull		!04		!#####0		!0		!Form1040	!01		!line02a
+dPull		!01z1040	!#####0		!0		!Form1040	!01		!line01z
+dPull		!02b1040	!#####0		!0      	!Form1040	!01		!line02b
+dPull		!03b1040	!#####0		!0		!Form1040	!01		!line03b
+dPull		!04b1040	!#####0		!0		!Form1040	!01		!line04b
+dPull		!05b1040	!#####0		!0		!Form1040	!01		!line05b
+dPull		!071040		!#####0		!0		!Form1040	!01		!line07
+dPull		!081040		!#####0		!0		!Form1040	!01		!line08
+
+
+xtPull		!2name		!		!4dummy		!5form		!6copy		!7line2
+tPull		!FS		!		!		!Bkg		!00		!FS
+tPull		!Apart		!		!		!Bkg		!00		!Apart
+
+
+xmult   	!2name   	!3format 	!4multiplicand	!5multiplier	!
+mult    	!02      	!#####0  	!line01        	!line50		!
+mult    	!13      	!#####0  	!line12        	!line50		!
+xmult    	!15e      	!#####0  	!line11        	!line85		!
+xmult    	!16e      	!#####0  	!line07        	!line85		!
+mult    	!17      	!#####0  	!line01  	!line85		!
+
+
+xsmOf   	!2name   	!3format 	!4first  	!5second 	!
+smOf    	!12      	!#####0  	!line09        	!line10        	!
+smOf    	!14      	!#####0  	!line02        	!line13        	!
+smOf    	!18      	!#####0  	!line16        	!line17        	!
+
+
+xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend	!
+xsubt0    	!07a      	!#####0  	!line05        	!line06        	!
+xsubt0   	!09d      	!#####0  	!line07        	!line08        	!
+subt0   	!11      	!#####0  	!line09        	!line10        	!
+
+
+xsubtr		!2name		!3format	!4minuend	!5subtrahend	!
+xsubtr		!06		!#####0		!line26s1	!line21s1	!
+
+cnum
+07
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 < $SST-Copy00-line05
+VALUOF$SST-Copy00-line05 - $SST-Copy00-line06
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+cnum
+08
+#####0
+CHOOS1
+WHEN01$Bkg-Copy00-lineFS = 'MFJ'
+VALUOF32000
+WHEN02
+WHEN01$Bkg-Copy00-lineFS = 'S'
+VALUOF25000
+WHEN02
+WHEN01$Bkg-Copy00-lineFS = 'HOH'
+VALUOF25000
+WHEN01$Bkg-Copy00-lineFS = 'QSS'
+VALUOF25000
+WHEN02
+WHEN02
+WHEN01$Bkg-Copy00-lineFS = 'MFS' and $Bkg-Copy00-lineApart = 'All'
+VALUOF25000
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+cnum
+09
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line08 < $SST-Copy00-line07
+VALUOF$SST-Copy00-line07 - $SST-Copy00-line08
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+cnum
+10
+#####0
+CHOOS1
+WHEN01$Bkg-Copy00-lineFS = 'MFJ'
+VALUOF12000
+WHEN02
+WHEN01$Bkg-Copy00-lineFS = 'S'
+VALUOF9000
+WHEN02
+WHEN01$Bkg-Copy00-lineFS = 'HOH'
+VALUOF9000
+WHEN01$Bkg-Copy00-lineFS = 'QSS'
+VALUOF9000
+WHEN02
+WHEN02
+WHEN01$Bkg-Copy00-lineFS = 'MFS' and $Bkg-Copy00-lineApart = 'All'
+VALUOF9000
+WHEN02
+CHOOS2
+
+cnum
+15
+#####0
+CHOOS1
+WHEN01SST-Copy00-line11 = 0
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-linr11 * %SST-Copy00-line85
+OTHER2
+CHOOS2
+
+
+xcnum		!2name		!3format	!4test				!5value1	!6value2
+xcnum		!07		!#####0		!$SST-Copy00-line07n = 'x'	!0		!$SST-Copy00-line07a
+
+
+xcnum		!2name		!3format	!4test								!5value1	!6value2
+xXcnum		!08		!#####0		!$SST-Copy00-line07n = 'x'					!0		!$SST-Copy00-line08a
+xXcnum		!08a		!#####0		!$SST-Copy00-lineFS = 'MFJ'					!32000		!$SST-Copy00-line08b
+xXcnum		!08b		!#####0		!$SST-Copy00-lineFS = 'S'      					!25000		!$SST-Copy00-line08c
+xXcnum		!08c		!#####0		!$SST-Copy00-lineFS = 'HOH'   					!25000		!$SST-Copy00-line08d
+xXcnum		!08d		!#####0		!$SST-Copy00-lineFS = 'QSS'    					!25000		!$SST-Copy00-line08e
+xcnum		!08e		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'All' 	!25000		!$SST-Copy00-line08f
+xcnum		!08f		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!0		!$SST-Copy00-line08g
+xcnum		!08g		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None'	!0		!0
+
+xcnum		!2name		!3format	!4test		                !5value1	!6value2
+xcnum		!09		!#####0		!$SST-Copy00-line07n = 'x'					!0		!$SST-Copy00-line09a
+xcnum		!09a		!#####0		!$SST-Copy00-line09n = 'x' 					!0		!$SST-Copy00-line09b
+xcnum		!09b		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!0		!$SST-Copy00-line09c
+xcnum		!09c		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None'	!0		!$SST-Copy00-line09d
+
+
+xcnum		!2name		!3format	!4test			      			      		!5value1	!6value2
+xcnum		!10		!#####0		!$SST-Copy00-line07n = 'x'					!0		!$SST-Copy00-line10a
+xcnum		!10a		!#####0		!$SST-Copy00-line09n = 'x'					!0		!$SST-Copy00-line10b
+xcnum		!10b		!#####0		!$SST-Copy00-lineFS = 'MFJ'					!12000		!$SST-Copy00-line10c
+xcnum		!10c		!#####0		!$SST-Copy00-lineFS = 'S'    					!9000		!$SST-Copy00-line10d
+xcnum		!10d		!#####0		!$SST-Copy00-lineFS = 'HOH'    					!9000		!$SST-Copy00-line10e
+xcnum		!10e		!#####0		!$SST-Copy00-lineFS = 'QSS'  					!9000		!$SST-Copy00-line10f
+xcnum		!10f		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'All' 	!9000		!$SST-Copy00-line10g
+xcnum		!10g		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!0		!$SST-Copy00-line10h
+xcnum		!10h		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None'	!0		!0
+
+
+xcnum		!2name		!3format	!4test			      			      	       !5value1		!6value2
+xcnum		!11		!#####0		!$SST-Copy00-line07n = 'x'				       !0		!$SST-Copy00-line11a
+xcnum		!11a		!#####0		!$SST-Copy00-line09n = 'x'				       !0		!$SST-Copy00-line11b
+xcnum		!11b		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some' !0		!$SST-Copy00-line11c
+xcnum		!11c		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None' !0		!$SST-Copy00-line11d
+
+
+xcnum		!2name		!3format	!4test			      			      	       	!5value1	!6value2
+xcnum		!12		!#####0		!$SST-Copy00-line07n = 'x'				    	!0		!$SST-Copy00-line12a
+xcnum		!12a		!#####0		!$SST-Copy00-line09n = 'x'				    	!0		!$SST-Copy00-line12b
+xcnum		!12b		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!0		!$SST-Copy00-line12c
+xcnum		!12c		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None'	!0		!$SST-Copy00-line12d
+
+
+xcnum		!2name		!3format	!4test			      			      	   	!5value1	!6value2
+xcnum		!13		!#####0		!$SST-Copy00-line07n = 'x'				    	!0		!$SST-Copy00-line13a
+xcnum		!13a		!#####0		!$SST-Copy00-line09n = 'x'				    	!0		!$SST-Copy00-line13b
+xcnum		!13b		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!0		!$SST-Copy00-line13c
+xcnum		!13c		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None' 	!0		!$SST-Copy00-line13d
+
+
+xcnum		!2name		!3format	!4test		      	      			    		!5value1	!6value2
+xcnum		!14		!#####0		!$SST-Copy00-line07n = 'x'					!0		!$SST-Copy00-line14a
+xcnum		!14a		!#####0		!$SST-Copy00-line09n = 'x'					!0		!$SST-Copy00-line14b
+xcnum		!14b		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!0		!$SST-Copy00-line14c
+xcnum		!14c		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None'	!0		!$SST-Copy00-line14d
+
+
+xcnum		!2name		!3format	!4test			      			      		!5value1	!6value2
+xcnum		!15		!#####0		!$SST-Copy00-line07n = 'x'					!0		!$SST-Copy00-line15a
+xcnum		!15a		!#####0		!$SST-Copy00-line09n = 'x'					!0		!$SST-Copy00-line15b
+xcnum		!15b		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!0		!$SST-Copy00-line15c
+xcnum		!15c		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None'	!0		!$SST-Copy00-line15d
+xcnum		!15d		!#####0		!$SST-Copy00-line11= 0 						!0		!$SST-Copy00-line15e
+
+
+xcnum		!2name		!3format	!4test			      			      		!5value1			!6value2
+xcnum		!16		!#####0		!$SST-Copy00-line07n = 'x'					!0				!$SST-Copy00-line16a
+xcnum		!16a		!#####0		!$SST-Copy00-line09n = 'x'					!0				!$SST-Copy00-line16b
+xcnum		!16b		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'Some'	!$SST-Copy00-line16e		!$SST-Copy00-line16c
+xcnum		!16c		!#####0		!$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'None'	!$SST-Copy00-line16e		!$SST-Copy00-line16d
+
+
+
+xcnum		!2name		!3format	!4test				!5value1	!value2
+xcnum		!17		!#####0		!$SST-Copy00-line07n = 'x'	!0		!$SST-Copy00-line17a
+xcnum		!17a		!#####0		!$SST-Copy00-line09n = 'x'	!0		!$SST-Copy00-line17b
+
+xcnum		!2name		!3format	!4test				!5value1	!value2
+xcnum		!18		!#####0		!$SST-Copy00-line07n = 'x'	!0		!$SST-Copy00-line18a
+xcnum		!18a		!#####0		!$SST-Copy00-line09n = 'x'	!0		!$SST-Copy00-line18b
+
+
+
+
+
+xctext   	!2name   	!3format  	!4test                  			!5value1	!6value2
+ctext    	!07n     	!		!$SST-Copy00-line06  &lt; $SST-Copy00-line05 	!''		!'x'
+ctext		!07y     	!        	!$SST-Copy00-line06  &lt; $SST-Copy00-line05 	!'x'		!''
+ctext   	!09n     	!        	!$SST-Copy00-line08  &lt; $SST-Copy00-line07	!''		!'x'
+ctext   	!09y     	!        	!$SST-Copy00-line08  &lt; $SST-Copy00-line07	!'x'		!''

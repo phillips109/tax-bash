@@ -1,0 +1,33 @@
+set_Form4952_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form4952 in which to enter or edit data:"
+echo
+echo "01 )    Enter investment expense paid or accrued in 2023."
+echo "02 )    Enter disallowed investment expense from 2022 Form4952 line07."
+echo "04a)    Enter gross income from property held for investment."
+echo "04b)    Enter qualified dividends included on line 4a."
+echo "04d)    Enter net gain from the disposition of property held for investment."
+echo "04e)    Enter the smaller of line 4d or your net capital gain from the disposition of property held for investment."
+echo "04g)    Enter the amount from lines 4b and 4e that you elect to include in investment income."
+echo "05 )    Enter investment expenses.         "
+echo
+echo "  q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form4952_line_data_choice
+echo
+     case $Form4952_line_data_choice in
+01 )    set_line_menu_number $1 $2  line01                               ;;
+02 )    set_line_menu_number $1 $2  line02                               ;;
+04a)    set_line_menu_number $1 $2  line04a                              ;;
+04b)    set_line_menu_number $1 $2  line04b                              ;;
+04d)    set_line_menu_number $1 $2  line04d                              ;;
+04e)    set_line_menu_number $1 $2  line04e                              ;;
+04g)    set_line_menu_number $1 $2  line04g                              ;;
+05 )    set_line_menu_number $1 $2  line05                               ;;
+q  )    break;;                       
+esac
+done
+}

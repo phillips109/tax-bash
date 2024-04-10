@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<Form name="Form1040ssa-Copy00">
+<copy00lineBox03 color="red">30541</copy00lineBox03>
+<copy00lineBox04 color="red">0</copy00lineBox04>
+<copy00lineBox06 color="red">0</copy00lineBox06>
+<copy00lineBox05 color="cyan">30541</copy00lineBox05>
+<copy00lineBox03d1 color="blue"/>
+<copy00lineBox03d2 color="blue"/>
+<copy00lineBox03d3 color="blue"/>
+<copy00lineBox03d4 color="blue"/>
+<copy00lineBox03d5 color="blue"/>
+<copy00lineBox03d6 color="blue"/>
+<copy00lineBox03d7 color="blue"/>
+<copy00lineBox03d8 color="blue"/>
+<copy00lineBox03e1 color="blue"/>
+<copy00lineBox03e2 color="blue"/>
+<copy00lineBox03e3 color="blue"/>
+<copy00lineBox03e4 color="blue"/>
+<copy00lineBox03e5 color="blue"/>
+<copy00lineBox03e7 color="blue"/>
+<copy00lineBox04d1 color="blue"/>
+<copy00lineBox04d2 color="blue"/>
+<copy00lineBox04d3 color="blue"/>
+<copy00lineBox04d4 color="blue"/>
+<copy00lineBox04d5 color="blue"/>
+<copy00lineBox04d6 color="blue"/>
+<copy00lineBox04d7 color="blue"/>
+<copy00lineBox04d8 color="blue"/>
+<copy00lineBox04e1 color="blue"/>
+<copy00lineBox04e2 color="blue"/>
+<copy00lineBox04e3 color="blue"/>
+<copy00lineBox04e4 color="blue"/>
+<copy00lineBox04e5 color="blue"/>
+<copy00lineBox04e6 color="blue"/>
+<copy00lineBox04e7 color="blue"/>
+<copy00lineBox04e8 color="blue"/>
+<copy00lineBox07 color="blue"/>
+<copy00lineBox07a color="blue"/>
+<copy00lineBox07b color="blue"/>
+<copy00lineBox08 color="blue"/>
+<copy00lineTFNI color="blue">John Q</copy00lineTFNI>
+<copy00lineTLN color="blue">Taxpayor</copy00lineTLN>
+<copy00lineTSSNoF color="blue">123</copy00lineTSSNoF>
+<copy00lineTSSNoL color="blue">6789</copy00lineTSSNoL>
+<copy00lineTSSNoM color="blue">45</copy00lineTSSNoM>
+</Form>
+</IRSForms>

@@ -39,7 +39,7 @@ $SchedC-Copy00-line38 +
 $SchedC-Copy00-line39"/>
 </xsl:variable>
 
-<xsl:variable name="SchedC-Copy00-linetotlO">
+<xsl:variable name="SchedC-Copy00-line48">
 <xsl:value-of select="$SchedC-Copy00-lineExp1 +
 $SchedC-Copy00-lineExp2 +
 $SchedC-Copy00-lineExp3 +
@@ -69,17 +69,6 @@ $SchedC-Copy00-lineExp9"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line02']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="SchedC-Copy00-line04">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line04'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line04'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line04']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -337,28 +326,6 @@ $SchedC-Copy00-lineExp9"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="SchedC-Copy00-line27a">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line27a'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line27a'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line27a']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="SchedC-Copy00-line27b">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line27b'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line27b'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line27b']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
 <xsl:variable name="SchedC-Copy00-line30">
 <xsl:choose>
 <xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-line30'])) != ''">
@@ -586,6 +553,39 @@ $SchedC-Copy00-lineExp9"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedC-Copy00-lineExp9']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="SchedC-Copy00-line04">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedC_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedC_Copy00.xml')//copy00line42"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="SchedC-Copy00-line27a">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedC_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedC_Copy00.xml')//copy00line48"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="SchedC-Copy00-line27b">
+<xsl:choose>
+<xsl:when test="document('../Output/Form7205_Copy00.xml')">
+<xsl:value-of select="document('../Output/Form7205_Copy00.xml')//copy00line01"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>

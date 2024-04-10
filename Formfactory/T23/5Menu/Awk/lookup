@@ -1,0 +1,29 @@
+#lookup.awk Looks up meaning of acronyms in a file called glossery
+
+awk '
+BEGIN {
+      FS  = "\t"
+      OFS = "\t"
+      printf("Enter a glossery term: ")
+      }
+
+FILENAME == "glossery" {
+	 entry[$1] = $2
+	 next
+	 }
+
+$0 ~ /^(quit|[qQ]|exit|[Xx])$/ {exit }
+
+$0 != "" {
+   if ( $0 in entry ) {
+      print entry[$0]  
+   }
+   else
+	print $0 " not found"
+}
+
+
+{
+	printf("Enter another glossery term (q to quit): ")
+	}
+' glossery -

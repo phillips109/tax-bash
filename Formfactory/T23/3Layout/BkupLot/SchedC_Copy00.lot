@@ -35,7 +35,7 @@ xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 dlin  	!01    	!3.80  	!100               	!            	!      	!      
 dlin  	!02    	!3.97  	!200               	!            	!      	!      
 dlin  	!03    	!4.14  	!300               	!            	!      	!      
-dlin  	!04    	!4.30  	!400               	!            	!      	!      
+dPull  	!04    	!4.30  	!400               	!SchedC        	!00    	!line42      
 dlin  	!05    	!4.48  	!500               	!            	!      	!      
 dlin  	!06    	!4.64  	!600               	!            	!      	!      
 dlin  	!07    	!4.80  	!700               	!            	!      	!      
@@ -50,7 +50,7 @@ dlin  	!24a   	!6.64  	!2401              	!            	!      	!
 dlin  	!24b   	!6.80  	!2302              	!            	!      	!      
 dlin  	!25    	!6.98  	!2500              	!            	!      	!      
 dlin  	!26    	!7.14  	!2600              	!            	!      	!      
-dlin  	!27a   	!7.31  	!2701              	!            	!      	!      
+dPull  	!27a   	!7.31  	!2701              	!SchedC        	!00    	!line48      
 dlin  	!27b   	!7.65  	!2702              	!            	!      	!      
 dlin  	!28    	!7.81  	!2800              	!            	!      	!      
 dlin  	!29    	!7.97  	!2900              	!            	!      	!      
@@ -211,7 +211,7 @@ tlin  	!D2    	!2.14  	!2                 	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!22    	!0.00  	!      	!6.60  	!6.80  
+col   	!22    	!0.00  	!center      	!6.60  	!6.80  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!B2    	!1.79  	!2                 	!            	!      	!      
 tlin  	!D3    	!2.14  	!3                 	!            	!      	!      
@@ -390,7 +390,7 @@ dlin  	!Exp6  	!9.30  	!6000              	!            	!      	!
 dlin  	!Exp7  	!9.63  	!7000              	!            	!      	!      
 dlin  	!Exp8  	!9.96  	!8000              	!            	!      	!      
 dlin  	!Exp9  	!10.3  	!9000              	!            	!      	!
-dlin	!Sum	!10.46	!45000			!		!	!
+dlin	!48	!10.46	!45000			!		!	!
 Endcol*******************     
                               
 Endcol*******************     

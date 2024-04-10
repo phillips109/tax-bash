@@ -101,7 +101,7 @@ choosePdf(){
     QDCGTaxWkst)        showsPdf qdcg;;
     SchedDTaxWkst)      showsPdf schd;;
     WSSchASalesTax)     showsPdf f1040;;
-    SSA_1099)           showsPdf ssa-1099-1040;;
+    Form1040ssa)        showsPdf f1040ssa;;
     SST)                showsPdf sst;;
     Wks)                showsPdf f1040;;
     CLCWkst)            showsPdf clcWkst;;
@@ -153,12 +153,18 @@ editEntries(){
 
 reorderColumns(){
 
-	awk -f ../Awk/reorderColumns.awk ../Entries/$1.ent > ../Pre/$1.pre
+	awk -f ../Awk/reorderColumns.awk form=$1 ../Entries/$1.ent > ../Pre/$1.pre
 }
 
 editPre(){
 
 	emacs ../Pre/$1.pre
+}
+
+rmEndSpacePre(){
+    sed -f ../Sed/rmEndSpace.sed ../Pre/$1.pre > $1.pre.tmp
+    cp $1.pre.tmp ../Pre/$1.pre
+    rm $1.pre.tmp
 }
 
 rmEmacsBkups(){
@@ -188,12 +194,19 @@ catMenus(){
 
 addColumns(){
 
-	awk  -f ../Awk/addColumns.awk ../Pre/$1.pre > ../Pre2/$1.pre2
+	awk -f ../Awk/addColumns.awk "form=$1" ../Pre/$1.pre   > $1.pre2.tmp
+	cp $1.pre2.tmp ../Pre2/$1.pre2
+	rm $1.pre2.tmp
 }
 
 
 editPre2(){
 	emacs ../Pre2/$1.pre2
+}
+
+backUpPre2(){
+
+	cp ../Pre2/$1.pre2 ../BkupPre2/$1.pre2
 }
 
 convertEnt2xml(){
@@ -232,16 +245,18 @@ set_menu_choices(){
 	echo "  4) Remove all but user entry lines from ../Text/$1.txt"
 	echo "  5) Check ../Entries/$1.ent to enter menuEntries"
 	echo "  6) Reorder columns to ../Pre/$1.pre"
-	echo "  7) Edit ../Pre/$1.pre" 
-	echo "  8) Make ../Menus/$1.men"
-	echo "  9) Edit ../Menus/$1.men to check result."
-	echo " 10) Combine all menus into ../Files/allMenus"
-	echo " 11) Add IRSInstructions ../Pre/$1.pre to ../Pre2/$1.pre2"
-	echo " 12) Edit ../Pre2/$1.pre2 to enter pgNo"
-	echo " 13) Convert .ent2 to xml"
-	echo " 14) Edit ../Xml/$1.xml"
-	echo " 15) Make data files"
-	echo " 16) Export data files to ../../7App/Data"
+	echo "  7) Edit ../Pre/$1.pre"
+	echo "  8) Remove endspace from ../Pre/$1.pre"
+	echo "  9) Make ../Menus/$1.men"
+	echo " 10) Edit ../Menus/$1.men to check result."
+	echo " 11) Combine all menus into ../Files/allMenus"
+	echo " 12) Add IRSInstructions ../Pre/$1.pre to ../Pre2/$1.pre2"
+	echo " 13) Edit ../Pre2/$1.pre2 to enter pgNo"
+	echo " 14) Backup ../Pre2/$1.pre2 to ../BkupPre2/$1.pre2"
+	echo " 15) Convert .ent2 to xml"
+	echo " 16) Edit ../Xml/$1.xml"
+	echo " 17) Make data files"
+	echo " 18) Export data files to ../../7App/Data"
 	echo
 	echo "  q) Quit"
 	echo
@@ -258,15 +273,17 @@ set_menu_choices(){
 	    5)  editEntries $1;;
 	    6)  reorderColumns $1;;
 	    7)  editPre $1;;
-	    8)  makeMenuFile $1;;
-	    9)  editMenu $1;;
-	   10)  catMenus $1;;
-	   11)  addColumns $1;;
-	   12)  editPre2 $1;; 
-	   13)  convertEnt2xml $1;;
-	   14)  editXml $1;; 
-	   15)  createData $1;;	     
-	   16)  exportData $1;;
+	    8)  rmEndSpacePre $1;;
+	    9)  makeMenuFile $1;;
+	   10)  editMenu $1;;
+	   11)  catMenus $1;;
+	   12)  addColumns $1;;
+	   13)  editPre2 $1;;
+	   14)  backUpPre2 $1;; 
+	   15)  convertEnt2xml $1;;
+	   16)  editXml $1;; 
+	   17)  createData $1;;	     
+	   18)  exportData $1;;
 
 	    q)  exit;;
 	    *)  echo "Sorry, choice not recognized."
@@ -626,7 +643,7 @@ do
       qdcg)  set_menu_choices QDCGTaxWkst       01;;
       schd)  set_menu_choices SchedDTaxWkst     01;;
       sales) set_menu_choices WSSchASalesTax    01;;
-      ssa)   set_menu_choices SSA_1099          01;;
+      ssa)   set_menu_choices Form1040ssa       01;;
       sst)   set_menu_choices SST               01;;
       wks)   set_menu_choices Wks               01;;
       cap)   set_menu_choices CLCWkst           01;;

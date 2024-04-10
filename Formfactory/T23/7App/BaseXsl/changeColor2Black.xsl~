@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xslt:stylesheet version="1.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:xslt="http://www.w3.org/1999/XSL/Transform"
+		xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+  <xslt:output method="xml"
+	      indent="yes"
+	      omit-xml-declaration="yes"/>
+  
+  <xslt:template match="@*|node()">
+    <xslt:copy>
+      <xslt:apply-templates select="@*|node()"/>
+    </xslt:copy>
+ </xslt:template>
+
+ <xslt:template match="fo:block/xslt:attribute[@name='color']">
+   <xslt:attribute name="color">
+     <xslt:value-of select="black"/>
+   </xslt:attribute>
+ </xslt:template>
+
+
+</xslt:stylesheet>

@@ -28,7 +28,6 @@ dlin	!24a	!065	!
 dlin	!24b	!066	!                              
 dlin	!25	!067	!                              
 dlin	!26	!068	!                              
-dlin	!27a	!069	!                              
 dlin	!30	!075	!                              
 dlin	!30a	!073	!
 dlin	!30b	!074	!                              
@@ -51,6 +50,7 @@ dlin	!Exp7	!119	!
 dlin	!Exp8	!117	!                              
 dlin	!Exp9	!119	!                              
 dPull	!04	!043	!                              
+dPull	!27a	!069	!                              
 dPull	!27b	!070	!                              
 subtr	!03	!042	!                              
 subtr	!29	!072	!                              

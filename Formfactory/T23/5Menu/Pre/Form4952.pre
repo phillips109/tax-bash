@@ -1,0 +1,9 @@
+type      	!name      	!seq       	!menuEntry
+dlin      	!01        	!001       	!Enter investment expense paid or accrued in 2023.
+dlin      	!02        	!002       	!Enter disallowed investment expense from 2022 Form4952 line07.
+dlin      	!04a       	!004       	!Enter gross income from property held for investment.
+dlin      	!04b       	!005       	!Enter qualified dividends included on line 4a.
+dlin      	!04d       	!007       	!Enter net gain from the disposition of property held for investment.
+dlin      	!04e       	!008       	!Enter the smaller of line 4d or your net capital gain from the disposition of property held for investment.
+dlin      	!04g       	!010       	!Enter the amount from lines 4b and 4e that you elect to include in investment income.
+dlin      	!05        	!012       	!Enter investment expenses.

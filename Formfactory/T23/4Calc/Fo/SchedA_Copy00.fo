@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+	  Copyright(C) 2019 Phillips Wedemeyer
+
+	  This file is part of a program called Tax-bash.
+
+	  Tax-bash is free software: you can redistibute it and/or modify
+	  it under the terms of the FNU General Public License as published by
+	  the Free Software Foundation, either version 3 of the License, or
+	  (at your option) any later version.
+	  
+	  Tax-bash is distributed in the hope that it will be useful,
+	  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  GNU General Public License for more details.
+	  
+	  You should have received a copy of the GNU General Public License
+	  along with Tax-bash.  If not, see %lt;https://www.gnu.org/licenses/%gt;.
+
+	<fo:layout-master-set><fo:simple-page-master master-name="page" page-height="11.00in" page-width="8.50in"><fo:region-body/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="page"><fo:flow flow-name="xsl-region-body"><fo:block-container background-image="../Jpg/f1040sa-page-001.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.12in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.93in" left="2.40in" top="0.00in" position="absolute"><fo:block-container top="1.32in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"><fo:basic-link external-destination="../Pdf/SchedA_Copy00.pdf">John Q</fo:basic-link></fo:block></fo:block-container><fo:block-container top="1.47in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"><fo:basic-link external-destination="../Pdf/SchedA_Copy00.pdf">Jean E</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="2.16in" left="4.40in" top="0.00in" position="absolute"><fo:block-container top="1.32in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"><fo:basic-link external-destination="../Pdf/SchedA_Copy00.pdf">Taxpayor</fo:basic-link></fo:block></fo:block-container><fo:block-container top="1.47in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"><fo:basic-link external-destination="../Pdf/SchedA_Copy00.pdf">Taxpayor</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.39in" left="6.65in" top="0.00in" position="absolute"><fo:block-container top="1.47in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"><fo:basic-link external-destination="../Pdf/SchedA_Copy00.pdf">123</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.21in" left="7.13in" top="0.00in" position="absolute"><fo:block-container top="1.47in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"><fo:basic-link external-destination="../Pdf/SchedA_Copy00.pdf">45</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.48in" left="7.48in" top="0.00in" position="absolute"><fo:block-container top="1.47in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"><fo:basic-link external-destination="../Pdf/SchedA_Copy00.pdf">6789</fo:basic-link></fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.9in" left="7.04in" top="0.00in" position="absolute"><fo:block-container top="2.30in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">100</fo:block></fo:block-container><fo:block-container top="4.47in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">2106</fo:block></fo:block-container><fo:block-container top="7.30in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">3306</fo:block></fo:block-container><fo:block-container top="8.29in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">3060</fo:block></fo:block-container><fo:block-container top="8.80in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">1050</fo:block></fo:block-container><fo:block-container top="9.30in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">1060</fo:block></fo:block-container><fo:block-container top="9.64in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">10682</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.91in" left="5.84in" top="0.00in" position="absolute"><fo:block-container top="1.80in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">100</fo:block></fo:block-container><fo:block-container top="2.14in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"/></fo:block-container><fo:block-container top="3.13in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">501</fo:block></fo:block-container><fo:block-container top="3.29in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">502</fo:block></fo:block-container><fo:block-container top="3.48in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">503</fo:block></fo:block-container><fo:block-container top="3.63in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">1506</fo:block></fo:block-container><fo:block-container top="3.97in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">1506</fo:block></fo:block-container><fo:block-container top="4.30in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">600</fo:block></fo:block-container><fo:block-container top="5.30in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">801</fo:block></fo:block-container><fo:block-container top="5.97in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">802</fo:block></fo:block-container><fo:block-container top="6.64in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">803</fo:block></fo:block-container><fo:block-container top="6.97in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">2406</fo:block></fo:block-container><fo:block-container top="7.14in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">900</fo:block></fo:block-container><fo:block-container top="7.64in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">1010</fo:block></fo:block-container><fo:block-container top="7.97in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">1020</fo:block></fo:block-container><fo:block-container top="8.14in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">1030</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.9in" left="4.64in" top="0.00in" position="absolute"><fo:block-container top="1.97in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in"/></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.09in" left="5.40in" top="0.00in" position="absolute"><fo:block-container top="3.12in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">x</fo:block></fo:block-container><fo:block-container top="4.95in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.59in" top="0.00in" position="absolute"><fo:block-container top="9.94in" position="absolute"><fo:block color="black" background-color="transparent" height="0.15in">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container></fo:flow></fo:page-sequence></fo:root>

@@ -36,13 +36,21 @@
 <fo:block-container position="absolute" top="0.00in" left="1.73in" width="1.9in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="1.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedD_Copy00_lineTFNI_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedD_Copy00_lineTFNI_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
+	purple</xslt:attribute>
+	<fo:basic-link external-destination="../Pdf/SchedD_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTFNI_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedD_Copy00_lineSFNI_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedD_Copy00_lineSFNI_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
+	purple</xslt:attribute>
+	<fo:basic-link external-destination="../Pdf/SchedD_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSFNI_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -66,8 +74,12 @@
 <fo:block-container position="absolute" top="0.00in" left="6.36in" width="0.37in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="1.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedD_Copy00_lineTSSNoF_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedD_Copy00_lineTSSNoF_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
+	purple</xslt:attribute>
+	<fo:basic-link external-destination="../Pdf/SchedD_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoF_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -76,8 +88,12 @@
 <fo:block-container position="absolute" top="0.00in" left="6.83in" width="0.21in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedD_Copy00_lineTSSNoM_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedD_Copy00_lineTSSNoM_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
+	purple</xslt:attribute>
+	<fo:basic-link external-destination="../Pdf/SchedD_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoM_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -86,8 +102,12 @@
 <fo:block-container position="absolute" top="0.00in" left="7.16in" width="0.54in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="1.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/SchedD_Copy00_lineTSSNoL_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/SchedD_Copy00_lineTSSNoL_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
+	purple</xslt:attribute>
+	<fo:basic-link external-destination="../Pdf/SchedD_Copy00.pdf">
+	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoL_text.xml')//text"/>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>

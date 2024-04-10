@@ -1,0 +1,197 @@
+<Form fname="Form1040ssa">
+<taxline name="Box03" type="dlin" color="black">
+<menuEntry>Enter benefits paid in 2023.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04" type="dlin" color="black">
+<menuEntry>Enter benefits repaid to SSA in 2003.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box06" type="dlin" color="black">
+<menuEntry>Enter voluntary federal income tax withhelld.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box07" type="tlin" color="black">
+<menuEntry>Enter name of taxpayor.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box07a" type="tlin" color="black">
+<menuEntry>Enter street address of taxpayor.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box07b" type="tlin" color="black">
+<menuEntry>Enter city, ST, zip of taxpayor.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box08" type="tlin" color="black">
+<menuEntry>Enter clain number (Use this number if you need to contact SSA.)</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d1" type="tlin" color="black">
+<menuEntry>Enter amount for box03d1.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d2" type="tlin" color="black">
+<menuEntry>Enter amount for box03d2.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d3" type="tlin" color="black">
+<menuEntry>Enter amount for box03d3.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d4" type="tlin" color="black">
+<menuEntry>Enter amount for box03d4.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d5" type="tlin" color="black">
+<menuEntry>Enter amount for box03d5.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d6" type="tlin" color="black">
+<menuEntry>Enter amount for box03d6.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d7" type="tlin" color="black">
+<menuEntry>Enter amount for box03d7.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03d8" type="tlin" color="black">
+<menuEntry>Enter amount for box03d8.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e1" type="tlin" color="black">
+<menuEntry>Enter entry for box03e1.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e2" type="tlin" color="black">
+<menuEntry>Enter entry for box03e2.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e3" type="tlin" color="black">
+<menuEntry>Enter entry for box03e3.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e4" type="tlin" color="black">
+<menuEntry>Enter entry for box03e4.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e5" type="tlin" color="black">
+<menuEntry>Enter entry for box03e5.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e6" type="tlin" color="black">
+<menuEntry>Enter entry for box03e6.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e7" type="tlin" color="black">
+<menuEntry>Enter entry for box03e7.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box03e8" type="tlin" color="black">
+<menuEntry>Enter entry for box03e8.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d1" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d1.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d2" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d2.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d3" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d3.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d4" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d4.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d5" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d5.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d6" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d6.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d7" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d7.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04d8" type="tlin" color="black">
+<menuEntry>Enter amount for box 04d8.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e1" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e1.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e2" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e2.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e3" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e3.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e4" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e4.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e5" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e5.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e6" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e6.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e7" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e7.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Box04e8" type="tlin" color="black">
+<menuEntry>Enter entry for box 04e8.</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+</Form>

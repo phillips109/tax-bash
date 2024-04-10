@@ -62,7 +62,7 @@
 <copy00line09h color="purple">0</copy00line09h>
 <copy00line10h color="purple">0</copy00line10h>
 <copy00line16pos color="red">140086</copy00line16pos>
-<copy00line21a color="blue">1500</copy00line21a>
+<copy00line21b color="blue">1500</copy00line21b>
 <copy00line17y color="blue"/>
 <copy00line17n color="blue"/>
 <copy00line20y color="blue"/>
@@ -70,6 +70,6 @@
 <copy00line22y color="blue"/>
 <copy00line22n color="blue">x</copy00line22n>
 <copy00line21 color="red">-1500</copy00line21>
-<copy00line21x color="red">1500</copy00line21x>
+<copy00line21a color="red">1500</copy00line21a>
 </Form>
 </IRSForms>

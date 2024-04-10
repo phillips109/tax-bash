@@ -310,9 +310,9 @@
   </copy00line16pos>
 
 
-<copy00line21a color="blue">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21a, '#####0')"/>
-  </copy00line21a>
+<copy00line21b color="blue">
+  <xsl:value-of select="format-number($SchedD-Copy00-line21b, '#####0')"/>
+  </copy00line21b>
 
 
 <copy00line17y color="blue">
@@ -350,8 +350,8 @@
   </copy00line21>
 
 
-<copy00line21x color="red">
-  <xsl:value-of select="format-number($SchedD-Copy00-line21x, '#####0')"/>
-  </copy00line21x>
+<copy00line21a color="red">
+  <xsl:value-of select="format-number($SchedD-Copy00-line21a, '#####0')"/>
+  </copy00line21a>
 
 </Form>

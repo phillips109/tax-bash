@@ -76,16 +76,15 @@ color='red'>
 <blank></blank>
 </dlin>
 
-<dlin number='04'
+<dPull name='04'
 top='4.30in'
 height='0.15in'
-color='red'>
+color='purple'>
 <dummy>400</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
+<form>SchedC</form>
+<copy>00</copy>
+<line2>line42</line2>
+</dPull>
 
 <dlin number='05'
 top='4.48in'
@@ -241,16 +240,15 @@ color='red'>
 <blank></blank>
 </dlin>
 
-<dlin number='27a'
+<dPull name='27a'
 top='7.31in'
 height='0.15in'
-color='red'>
+color='purple'>
 <dummy>2701</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
+<form>SchedC</form>
+<copy>00</copy>
+<line2>line48</line2>
+</dPull>
 
 <dlin number='27b'
 top='7.65in'
@@ -983,7 +981,7 @@ width='0.2in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
-text-align=''
+text-align='center'
 top='0.00in'>
 
 <tlin name='B2'
@@ -1806,7 +1804,7 @@ color='red'>
 <blank></blank>
 </dlin>
 
-<dlin number='Sum'
+<dlin number='48'
 top='10.46in'
 height='0.15in'
 color='red'>

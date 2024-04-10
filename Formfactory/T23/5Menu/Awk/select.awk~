@@ -1,0 +1,14 @@
+
+BEGIN{
+array[F1040] = "i1040gi.pdf"
+array[SchedC] = "i1040sd.pdf"
+array[Bkg] = "Bkg.pdf"
+}
+
+{
+#    print array[Form1040]    
+#    print array[Bkg]
+    print array[Form1040]
+    print array[item]
+}
+    

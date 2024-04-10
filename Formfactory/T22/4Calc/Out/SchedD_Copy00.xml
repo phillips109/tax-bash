@@ -248,13 +248,13 @@ linecmin1
 smOf
 #####0
 line16pos
-line21x
+line21a
 
 
 
 ctext
 CHOOS1
-WHEN01$SchedD-Copy00-line16 &gt; 0
+WHEN01$SchedD-Copy00-line16 &gt;= 0
 CHOOS1
 WHEN01$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0
 
@@ -262,41 +262,41 @@ WHEN01$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0
 
 ctext
 CHOOS1
-WHEN01$SchedD-Copy00-line16 &gt; 0
+WHEN01$SchedD-Copy00-line16 &gt;= 0
 CHOOS1
-WHEN01$SchedD-Copy00-line17y = ''
+WHEN01$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0
 
 
 
 ctext
 CHOOS1
-WHEN01$SchedD-Copy00-line16 &gt; 0
-CHOOS1
-WHEN01$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0 and not(document('../Output/Form4952-Copy00.xml'))
+WHEN01$SchedD-Copy00-line16 &lt;= 0
+VALUOF''
+WHEN02
 
 
 
 ctext
 CHOOS1
-WHEN01$SchedD-Copy00-line16 &gt; 0
-CHOOS1
-WHEN01$SchedD-Copy00-line20y = ''
+WHEN01$SchedD-Copy00-line16 &lt;= 0
+VALUOF''
+WHEN02
 
 
 
 ctext
+CHOOS1
+WHEN01$SchedD-Copy00-line16 &lt;= 0
 CHOOS1
 WHEN01$SchedD-Copy00-line104003a &gt; 0
-VALUOF'x'
-WHEN02
 
 
 
 ctext
 CHOOS1
-WHEN01$SchedD-Copy00-line22y = ''
-VALUOF'x'
-WHEN02
+WHEN01$SchedD-Copy00-line16 &lt;= 0
+CHOOS1
+WHEN01$SchedD-Copy00-line104003a &gt; 0
 
 
 
@@ -304,7 +304,7 @@ cnum
 #####0
 CHOOS1
 WHEN01$SchedD-Copy00-line16 &lt; 0
-VALUOF$SchedD-Copy00-line21a * $SchedD-Copy00-linecmin1
+VALUOF$SchedD-Copy00-line21b * $SchedD-Copy00-linecmin1
 
 
 

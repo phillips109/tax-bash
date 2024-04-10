@@ -15,32 +15,32 @@
   </copy00line12>
 
 
-<copy00line01 color="purple">
+<copy00line01 color="red">
   <xsl:value-of select="format-number($CLCWkst-Copy00-line01, '#####0')"/>
   </copy00line01>
 
 
-<copy00line02 color="purple">
+<copy00line02 color="red">
   <xsl:value-of select="format-number($CLCWkst-Copy00-line02, '#####0')"/>
   </copy00line02>
 
 
-<copy00line05 color="purple">
+<copy00line05 color="red">
   <xsl:value-of select="format-number($CLCWkst-Copy00-line05, '#####0')"/>
   </copy00line05>
 
 
-<copy00line06 color="purple">
+<copy00line06 color="red">
   <xsl:value-of select="format-number($CLCWkst-Copy00-line06, '#####0')"/>
   </copy00line06>
 
 
-<copy00line09 color="purple">
+<copy00line09 color="red">
   <xsl:value-of select="format-number($CLCWkst-Copy00-line09, '#####0')"/>
   </copy00line09>
 
 
-<copy00line10 color="purple">
+<copy00line10 color="red">
   <xsl:value-of select="format-number($CLCWkst-Copy00-line10, '#####0')"/>
   </copy00line10>
 

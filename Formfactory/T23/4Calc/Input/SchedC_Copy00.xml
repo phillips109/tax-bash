@@ -49,7 +49,7 @@
 <addend>line39</addend>
 </line>
 
-<line number='totlO'
+<line number='48'
  color='green'>
 <type>addit</type>
 <format>#####0</format>
@@ -74,15 +74,6 @@
 </dlin>
 
 <dlin number='02'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override></override>
-<blank></blank>
-</dlin>
-
-<dlin number='04'
  color='red'>
 <title></title>
 <type>dlin</type>
@@ -298,24 +289,6 @@
 <blank></blank>
 </dlin>
 
-<dlin number='27a'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override></override>
-<blank></blank>
-</dlin>
-
-<dlin number='27b'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override></override>
-<blank></blank>
-</dlin>
-
 <dlin number='30'
  color='red'>
 <title></title>
@@ -504,6 +477,39 @@
 <override></override>
 <blank></blank>
 </dlin>
+
+<line number='04'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedC</form>
+<copy>00</copy>
+<line2>line42</line2>
+</line>
+
+<line number='27a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedC</form>
+<copy>00</copy>
+<line2>line48</line2>
+</line>
+
+<line number='27b'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form7205</form>
+<copy>00</copy>
+<line2>line01</line2>
+</line>
 
 <line number='03'
  color='purple'>

@@ -192,7 +192,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form1099-B</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -203,7 +203,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form1099-B</form>
 <copy>01</copy>
 <line2>line02</line2>
@@ -214,7 +214,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -225,7 +225,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line02</line2>
@@ -236,7 +236,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line03</line2>
@@ -247,7 +247,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -258,7 +258,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line02</line2>
@@ -269,7 +269,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line03</line2>
@@ -280,7 +280,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -291,7 +291,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line02</line2>
@@ -302,7 +302,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line03</line2>
@@ -313,7 +313,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form6252</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -324,7 +324,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>SchedK1</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -335,7 +335,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>CLCWkst</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -346,7 +346,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form1099-B</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -357,7 +357,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form1099-B</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -368,7 +368,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -379,7 +379,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line02</line2>
@@ -390,7 +390,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line03</line2>
@@ -401,7 +401,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -412,7 +412,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line02</line2>
@@ -423,7 +423,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line03</line2>
@@ -434,7 +434,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -445,7 +445,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line02</line2>
@@ -456,7 +456,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form8849</form>
 <copy>01</copy>
 <line2>line03</line2>
@@ -467,7 +467,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form4797</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -478,7 +478,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>SchedK1</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -489,7 +489,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>CGD</form>
 <copy>01</copy>
 <line2>line01</line2>
@@ -500,7 +500,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>28RGWkst</form>
 <copy>01</copy>
 <line2>line07</line2>
@@ -511,7 +511,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>US1250GWkst</form>
 <copy>01</copy>
 <line2>line18</line2>
@@ -522,7 +522,7 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<dummy>0</dummy>
+<year>0</year>
 <form>Form1040</form>
 <copy>01</copy>
 <line2>line03a</line2>
@@ -600,19 +600,19 @@
 <multiplier>linecmin1</multiplier>
 </line>
 
-<line number='21a'
+<line number='21b'
  color='blue'>
 <type>smOf</type>
 <format>#####0</format>
 <first>line16pos</first>
-<second>line21x</second>
+<second>line21a</second>
 </line>
 
 <line number='17y'
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
+<test>WHEN01$SchedD-Copy00-line16 &gt;= 0</test>
 <value1>CHOOS1</value1>
 <value2>WHEN01$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</value2>
 </line>
@@ -621,45 +621,45 @@
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
+<test>WHEN01$SchedD-Copy00-line16 &gt;= 0</test>
 <value1>CHOOS1</value1>
-<value2>WHEN01$SchedD-Copy00-line17y = ''</value2>
+<value2>WHEN01$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0</value2>
 </line>
 
 <line number='20y'
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
-<value1>CHOOS1</value1>
-<value2>WHEN01$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0 and not(document('../Output/Form4952-Copy00.xml'))</value2>
+<test>WHEN01$SchedD-Copy00-line16 &lt;= 0</test>
+<value1>VALUOF''</value1>
+<value2>WHEN02</value2>
 </line>
 
 <line number='20n'
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01$SchedD-Copy00-line16 &gt; 0</test>
-<value1>CHOOS1</value1>
-<value2>WHEN01$SchedD-Copy00-line20y = ''</value2>
+<test>WHEN01$SchedD-Copy00-line16 &lt;= 0</test>
+<value1>VALUOF''</value1>
+<value2>WHEN02</value2>
 </line>
 
 <line number='22y'
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01$SchedD-Copy00-line104003a &gt; 0</test>
-<value1>VALUOF'x'</value1>
-<value2>WHEN02</value2>
+<test>WHEN01$SchedD-Copy00-line16 &lt;= 0</test>
+<value1>CHOOS1</value1>
+<value2>WHEN01$SchedD-Copy00-line104003a &gt; 0</value2>
 </line>
 
 <line number='22n'
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01$SchedD-Copy00-line22y = ''</test>
-<value1>VALUOF'x'</value1>
-<value2>WHEN02</value2>
+<test>WHEN01$SchedD-Copy00-line16 &lt;= 0</test>
+<value1>CHOOS1</value1>
+<value2>WHEN01$SchedD-Copy00-line104003a &gt; 0</value2>
 </line>
 
 <line number='21'
@@ -668,10 +668,10 @@
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
 <value1>WHEN01$SchedD-Copy00-line16 &lt; 0</value1>
-<value2>VALUOF$SchedD-Copy00-line21a * $SchedD-Copy00-linecmin1</value2>
+<value2>VALUOF$SchedD-Copy00-line21b * $SchedD-Copy00-linecmin1</value2>
 </line>
 
-<line number='21x'
+<line number='21a'
  color='red'>
 <type>cnum</type>
 <format>#####0</format>

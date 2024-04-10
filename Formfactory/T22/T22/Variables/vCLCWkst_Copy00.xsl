@@ -16,66 +16,66 @@ $CLCWkst-Copy00-line11"/>
 
 <xsl:variable name="CLCWkst-Copy00-line01">
 <xsl:choose>
-<xsl:when test="document('../../../T21/Output/Form1040_Copy01.xml')">
-<xsl:value-of select="document('../../../T21/Output/Form1040_Copy01.xml')//copy01line15"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line01'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line01'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="0"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line01']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="CLCWkst-Copy00-line02">
 <xsl:choose>
-<xsl:when test="document('../../../T21/Output/SchedD_Copy01.xml')">
-<xsl:value-of select="document('../../../T21/Output/SchedD_Copy01.xml')//copy01line21"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line02'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line02'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="0"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line02']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="CLCWkst-Copy00-line05">
 <xsl:choose>
-<xsl:when test="document('../../../T21/Output/SchedD_Copy01.xml')">
-<xsl:value-of select="document('../../../T21/Output/SchedD_Copy01.xml')//copy01line07"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line05'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line05'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="0"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line05']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="CLCWkst-Copy00-line06">
 <xsl:choose>
-<xsl:when test="document('../../../T21/Output/SchedD_Copy01.xml')">
-<xsl:value-of select="document('../../../T21/Output/SchedD_Copy01.xml')//copy01line15"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line06'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line06'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="0"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line06']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="CLCWkst-Copy00-line09">
 <xsl:choose>
-<xsl:when test="document('../../../T21/Output/SchedD_Copy01.xml')">
-<xsl:value-of select="document('../../../T21/Output/SchedD_Copy01.xml')//copy01line21"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line09'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line09'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="0"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line09']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="CLCWkst-Copy00-line10">
 <xsl:choose>
-<xsl:when test="document('../../../T21/Output/SchedD_Copy01.xml')">
-<xsl:value-of select="document('../../../T21/Output/SchedD_Copy01.xml')//copy01line07"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line10'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line10'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="0"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='CLCWkst-Copy00-line10']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>

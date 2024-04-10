@@ -72,14 +72,17 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.30in">
-<fo:block height="0.15in" background-color="transparent" color="black">
-	<xslt:choose>
-	<xslt:when test="copy00line04='0'">
-	</xslt:when>
-	<xslt:otherwise>
-	<xslt:value-of select="copy00line04"/>
-	</xslt:otherwise>
-	</xslt:choose>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/SchedC_Copy00_line42.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/SchedC_Copy00.xml')">
+      <xslt:value-of select="document('../Output/SchedC_Copy00.xml')//copy00line42"/>
+      </xslt:when>
+      <xslt:otherwise>
+      
+    </xslt:otherwise>
+      </xslt:choose>
+      </fo:basic-link>
       </fo:block>
 </fo:block-container>
 
@@ -252,14 +255,17 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.31in">
-<fo:block height="0.15in" background-color="transparent" color="black">
-	<xslt:choose>
-	<xslt:when test="copy00line27a='0'">
-	</xslt:when>
-	<xslt:otherwise>
-	<xslt:value-of select="copy00line27a"/>
-	</xslt:otherwise>
-	</xslt:choose>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/SchedC_Copy00_line48.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/SchedC_Copy00.xml')">
+      <xslt:value-of select="document('../Output/SchedC_Copy00.xml')//copy00line48"/>
+      </xslt:when>
+      <xslt:otherwise>
+      
+    </xslt:otherwise>
+      </xslt:choose>
+      </fo:basic-link>
       </fo:block>
 </fo:block-container>
 
@@ -776,7 +782,7 @@
 </fo:block-container>
 *******************************************************
 
-<fo:block-container position="absolute" top="0.00in" left="6.60in" width="0.2in" background-color="transparent" font-family="Times" font-size="12pt" text-align="">
+<fo:block-container position="absolute" top="0.00in" left="6.60in" width="0.2in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.79in">
 <fo:block height="0.15in" background-color="transparent" color="black">
@@ -1364,10 +1370,10 @@
 <fo:block-container position="absolute" top="10.46in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
-	<xslt:when test="copy00lineSum='0'">
+	<xslt:when test="copy00line48='0'">
 	</xslt:when>
 	<xslt:otherwise>
-	<xslt:value-of select="copy00lineSum"/>
+	<xslt:value-of select="copy00line48"/>
 	</xslt:otherwise>
 	</xslt:choose>
       </fo:block>

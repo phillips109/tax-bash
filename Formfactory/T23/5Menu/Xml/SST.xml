@@ -1,0 +1,12 @@
+<Form fname="SST">
+<taxline name="50" type="dlin" color="black">
+<menuEntry>Enter 0.50</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+<taxline name="85" type="dlin" color="black">
+<menuEntry>Enter 0.85</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+</Form>

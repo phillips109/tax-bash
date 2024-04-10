@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:vendor="http://www.gnucash.org/XML/vendor" xmlns:entry="http://www.gnucash.org/XML/entry" xmlns:invoice="http://www.gnucash.org/XML/invoice" xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox" xmlns:bt-days="http://www.gnucash.org/XML/bt-days" xmlns:billterm="http://www.gnucash.org/XML/billterm" xmlns:order="http://www.gnucash.org/XML/order" xmlns:employee="http://www.gnucash.org/XML/employee" xmlns:tte="http://www.gnucash.org/XML/tte" xmlns:taxtable="http://www.gnucash.org/XML/taxtable" xmlns:owner="http://www.gnucash.org/XML/owner" xmlns:addr="http://www.gnucash.org/XML/addr" xmlns:job="http://www.gnucash.org/XML/job" xmlns:cust="http://www.gnucash.org/XML/cust" xmlns:lot="http://www.gnucash.org/XML/lot" xmlns:recurrence="http://www.gnucash.org/XML/recurrence" xmlns:bgt="http://www.gnucash.org/XML/bgt" xmlns:fs="http://www.gnucash.org/XML/fs" xmlns:ts="http://www.gnucash.org/XML/ts" xmlns:trn="http://www.gnucash.org/XML/trn" xmlns:sx="http://www.gnucash.org/XML/sx" xmlns:split="http://www.gnucash.org/XML/split" xmlns:slot="http://www.gnucash.org/XML/slot" xmlns:price="http://www.gnucash.org/XML/price" xmlns:cmdty="http://www.gnucash.org/XML/cmdty" xmlns:cd="http://www.gnucash.org/XML/cd" xmlns:book="http://www.gnucash.org/XML/book" xmlns:act="http://www.gnucash.org/XML/act" xmlns:gnc="http://www.gnucash.org/XML/gnc">
+<taxlines>
+<taxline color="red">
+<linename>Form1040-Copy00-line01b</linename>
+<override>0</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line01c</linename>
+<override>0</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line01d</linename>
+<override>0</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line01h</linename>
+<override>0</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line01i</linename>
+<override>0</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line25c</linename>
+<override>2503</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line26</linename>
+<override>2600</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line27</linename>
+<override>2700</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line35a</linename>
+<override>1000</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line36</linename>
+<override>3600</override>
+</taxline>
+<taxline color="red">
+<linename>Form1040-Copy00-line38</linename>
+<override>50</override>
+</taxline>
+</taxlines>
+</IRSForms>

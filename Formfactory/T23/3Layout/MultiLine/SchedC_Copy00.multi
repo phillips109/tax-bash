@@ -76,15 +76,15 @@ form:
 copy:
 line2:
 
-type:dlin
+type:dPull
 name:04
 top:4.30
 height:0.15
-color:red
+color:purple
 dummy:400
-form:
-copy:
-line2:
+form:SchedC
+copy:00
+line2:line42
 
 type:dlin
 name:05
@@ -226,15 +226,15 @@ form:
 copy:
 line2:
 
-type:dlin
+type:dPull
 name:27a
 top:7.31
 height:0.15
-color:red
+color:purple
 dummy:2701
-form:
-copy:
-line2:
+form:SchedC
+copy:00
+line2:line48
 
 type:dlin
 name:27b
@@ -925,7 +925,7 @@ width:0.2
 background-color='pink'
 font-size:12
 font-family:Times
-align:
+align:center
 top:0.00
 
 type:tlin
@@ -1693,7 +1693,7 @@ copy:
 line2:
 
 type:dlin
-name:Sum
+name:48
 top:10.46
 height:0.15
 color:red

@@ -18,7 +18,7 @@ set_menu_choices() {
         case $action_choice in
            1) refreshTl $1 $2;;
            2) set_$1_line_data_choice $1 $2;;
-           3) showForm $1 $2;;
+           3) showForm2 $1 $2;;
 	  rm) removeForm $1;;
            q) break;;
         esac

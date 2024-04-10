@@ -1,0 +1,39 @@
+
+#addColumns.awk
+#This file add IRSInstructions to ../Entries/$1.ent > ../Pre/$1.pre
+#Input is expected to be seq type name menuEntry
+
+BEGIN {
+    FS="[ \t]*!"
+
+    printf("%-10s\t!%-10s\t!%-10s\t!%-110s\t!%-20s\t!%-5s\t!%-5s\n", "type", "name", "seq", "menuEntry", "IRSInstructions", "pgNo", "")
+
+}
+
+
+FILENAME == formNames {                     #refers to Main/formNames in Form1040, Bkg, SchedC order.
+    entry[$1] = $2
+    next
+    }
+{
+#printf("Hellow World.")                      #prints three times on one line
+#    printf("%s\n", $entry[item])             #prints index and term three times
+#    printf("%s\n", $entry[Form1040])         #same result
+#    printf("%s\n",  entry[Form1040])         #prints a blank line if privious line not #'d out
+#    printf("%s\n", entry["Forom1040"])       #same as above
+#    printf("%s\n", entry[SchedC])            #same as above
+#    printf("%s\n", entry["SchedC"])          #same as above
+# print entry["Bkg"]
+    for ( item in entry )
+	print item, entry[item]
+
+}
+
+
+#     print entry[Form1040]
+
+# This is the original code. It gives a blank result.
+#    NR > 1 {foo = entry[form]; printf("%-10s\t!%-10s\t!%-10s\t!%-100s\t!%-20s\t!%-5s\t!%-5s\n", $1, $2, $3, $4, foo, "", "")}
+#}
+
+

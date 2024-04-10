@@ -1,0 +1,494 @@
+<Form name=''>
+
+<line number='05'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line02</augend>
+<addend>line03</addend>
+<addend>line04</addend>
+</line>
+
+<line number='06'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line11s1</augend>
+<addend>line12s1</addend>
+<addend>line13s1</addend>
+<addend>line14s1</addend>
+<addend>line15s1</addend>
+<addend>line16s1</addend>
+<addend>line17s1</addend>
+<addend>line18s1</addend>
+<addend>line19as1</addend>
+<addend>line20s1</addend>
+<addend>line23s1</addend>
+<addend>line25s1</addend>
+</line>
+
+<line number='03'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01z1040</augend>
+<addend>line02b1040</addend>
+<addend>line03b1040</addend>
+<addend>line04b1040</addend>
+<addend>line05b1040</addend>
+<addend>line071040</addend>
+<addend>line081040</addend>
+</line>
+
+<line number='50'
+ color='blue'>
+<type>const</type>
+<format>#0.00#</format>
+<value>0.50</value>
+</line>
+
+<line number='85'
+ color='blue'>
+<type>const</type>
+<format>#0.00#</format>
+<value>0.85</value>
+</line>
+
+<line number='00'
+ color='blue'>
+<type>const</type>
+<format>#####0</format>
+<value>0.00</value>
+</line>
+
+<line number='01'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>1000</year>
+<form>Form1040ssa</form>
+<copy>01</copy>
+<line2>lineBox05</line2>
+</line>
+
+<line number='04'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line02a</line2>
+</line>
+
+<line number='01z1040'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line01z</line2>
+</line>
+
+<line number='02b1040'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line02b</line2>
+</line>
+
+<line number='03b1040'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line03b</line2>
+</line>
+
+<line number='04b1040'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line04b</line2>
+</line>
+
+<line number='05b1040'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line05b</line2>
+</line>
+
+<line number='071040'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line07</line2>
+</line>
+
+<line number='081040'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line08</line2>
+</line>
+
+<line number='11s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line11</line2>
+</line>
+
+<line number='12s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line12</line2>
+</line>
+
+<line number='13s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line13</line2>
+</line>
+
+<line number='14s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line114</line2>
+</line>
+
+<line number='15s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line15</line2>
+</line>
+
+<line number='16s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line16</line2>
+</line>
+
+<line number='17s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line17</line2>
+</line>
+
+<line number='18s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line18</line2>
+</line>
+
+<line number='19as1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line19a</line2>
+</line>
+
+<line number='20s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line20</line2>
+</line>
+
+<line number='23s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line23</line2>
+</line>
+
+<line number='25s1'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040s1</form>
+<copy>01</copy>
+<line2>line25</line2>
+</line>
+
+<line number='FS'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>FS</line2>
+</line>
+
+<line number='Apart'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>Apart</line2>
+</line>
+
+<line number='02'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line01</multiplicand>
+<multiplier>line50</multiplier>
+</line>
+
+<line number='12a'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line09</first>
+<second>line10</second>
+</line>
+
+<line number='14a'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line02</first>
+<second>line13</second>
+</line>
+
+<line number='18a'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line16</first>
+<second>line17</second>
+</line>
+
+<line number='11a'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line09</minuend>
+<subtrahend>line10</subtrahend>
+</line>
+
+<line number='07'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &lt; $SST-Copy00-line05</value1>
+<value2>VALUOF$SST-Copy00-line05 - $SST-Copy00-line06</value2>
+</line>
+
+<line number='08'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='09'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='10'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='11'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='12'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='13'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='14'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='15'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='16'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='17'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='18'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='07n'
+ color='blue'>
+<type>ctext</type>
+<format>BLANK</format>
+<test>CHOOS1</test>
+<value1>WHEN01$SST-Copy00-line06  &lt; $SST-Copy00-line05</value1>
+<value2>VALUOF''</value2>
+</line>
+
+<line number='07y'
+ color='blue'>
+<type>ctext</type>
+<format>blank</format>
+<test>CHOOS1</test>
+<value1>WHEN01$SST-Copy00-line06  &lt; $SST-Copy00-line05</value1>
+<value2>VALUOF'x'</value2>
+</line>
+
+<line number='09n'
+ color='blue'>
+<type>ctext</type>
+<format>BLANK</format>
+<test>CHOOS1</test>
+<value1>WHEN01$SST-Copy00-line08  &lt; $SST-Copy00-line07</value1>
+<value2>VALUOF''</value2>
+</line>
+
+<line number='09y'
+ color='blue'>
+<type>ctext</type>
+<format>blank</format>
+<test>CHOOS1</test>
+<value1>WHEN01$SST-Copy00-line08  &lt; $SST-Copy00-line07</value1>
+<value2>VALUOF'x'</value2>
+</line>
+</Form>

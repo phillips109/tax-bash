@@ -9,10 +9,6 @@
 <override/>
 </taxline>
 <taxline color="red">
-<linename>SchedC-Copy00-line04</linename>
-<override/>
-</taxline>
-<taxline color="red">
 <linename>SchedC-Copy00-line06</linename>
 <override/>
 </taxline>
@@ -102,14 +98,6 @@
 </taxline>
 <taxline color="red">
 <linename>SchedC-Copy00-line26</linename>
-<override/>
-</taxline>
-<taxline color="red">
-<linename>SchedC-Copy00-line27a</linename>
-<override/>
-</taxline>
-<taxline color="red">
-<linename>SchedC-Copy00-line27b</linename>
 <override/>
 </taxline>
 <taxline color="red">

@@ -273,7 +273,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 	  <xsl:value-of select="./form"/>
 	  <xsl:text>_Copy</xsl:text>
 	  <xsl:value-of select="./copy"/>
-	  <xsl:text>_line</xsl:text>
+	  <xsl:text>_</xsl:text>
 	  <xsl:value-of select="./line2"/>
 	  <xsl:text disable-output-escaping="yes">_text.xml')//text"/&gt;</xsl:text><xsl:text>
       </xsl:text>

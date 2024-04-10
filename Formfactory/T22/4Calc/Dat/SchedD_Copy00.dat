@@ -615,10 +615,10 @@ xsmOf
 5second
 
 smOf
-21a
+21b
 #####0
 line16pos
-line21x
+line21a
 
 x************************************************
 
@@ -897,11 +897,11 @@ ctext
 CHOOS1
 WHEN01$SchedD-Copy00-line16 &gt; 0
 CHOOS1
-WHEN01$SchedD-Copy00-line17y = ''
-VALUOF'x'
+WHEN01$SchedD-Copy00-line15 &gt; 0 and $SchedD-Copy00-line16 &gt; 0
+VALUOF''
 WHEN02
 OTHER1
-VALUOF''
+VALUOF'x'
 OTHER2
 CHOOS2
 WHEN02
@@ -910,18 +910,15 @@ VALUOF''
 OTHER2
 CHOOS2
 
+
 ctext
 20y
 CHOOS1
-WHEN01$SchedD-Copy00-line16 &gt; 0
-CHOOS1
+WHEN01$SchedD-Copy00-line16 &lt;= 0
+VALUOF''
+WHEN02
 WHEN01$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0 and not(document('../Output/Form4952-Copy00.xml'))
 VALUOF'x'
-WHEN02
-OTHER1
-VALUOF''
-OTHER2
-CHOOS2
 WHEN02
 OTHER1
 VALUOF''
@@ -932,23 +929,21 @@ CHOOS2
 ctext
 20n
 CHOOS1
-WHEN01$SchedD-Copy00-line16 &gt; 0
-CHOOS1
-WHEN01$SchedD-Copy00-line20y = ''
+WHEN01$SchedD-Copy00-line16 &lt;= 0
+VALUOF''
+WHEN02
+WHEN01$SchedD-Copy00-line18 = 0 and $SchedD-Copy00-line19 = 0 and not(document('../Output/Form4952-Copy00.xml'))
+VALUOF''
+WHEN02
+OTHER1
 VALUOF'x'
-WHEN02
-OTHER1
-VALUOF''
-OTHER2
-CHOOS2
-WHEN02
-OTHER1
-VALUOF''
 OTHER2
 CHOOS2
 
 ctext
 22y
+CHOOS1
+WHEN01$SchedD-Copy00-line16 &lt;= 0
 CHOOS1
 WHEN01$SchedD-Copy00-line104003a &gt; 0
 VALUOF'x'
@@ -957,17 +952,33 @@ OTHER1
 VALUOF''
 OTHER2
 CHOOS2
-
-ctext
-22n
-CHOOS1
-WHEN01$SchedD-Copy00-line22y = ''
-VALUOF'x'
 WHEN02
 OTHER1
 VALUOF''
 OTHER2
 CHOOS2
+
+
+
+
+ctext
+22n
+CHOOS1
+WHEN01$SchedD-Copy00-line16 &lt;= 0
+CHOOS1
+WHEN01$SchedD-Copy00-line104003a &gt; 0
+VALUOF''
+WHEN02
+OTHER1
+VALUOF'x'
+OTHER2
+CHOOS2
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
 
 # *********************************************
 
@@ -976,7 +987,7 @@ cnum
 #####0
 CHOOS1
 WHEN01$SchedD-Copy00-line16 &lt; 0
-VALUOF$SchedD-Copy00-line21a * $SchedD-Copy00-linecmin1
+VALUOF$SchedD-Copy00-line21b * $SchedD-Copy00-linecmin1
 WHEN02
 OTHER1
 VALUOF0
@@ -984,7 +995,7 @@ OTHER2
 CHOOS2
 
 cnum
-21x
+21a
 #####0
 CHOOS1
 WHEN01$SchedD-Copy00-lineFS = 'MFS'

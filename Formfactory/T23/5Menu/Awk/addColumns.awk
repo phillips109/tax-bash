@@ -1,19 +1,33 @@
 
 #addColumns.awk
-#This file add IRSInstructions to ../Entries/$1.ent > ../Pre/$1.pre
-#Input is expected to be seq type name menuEntry
+#This file add IRSInstructions to .../Pre/$1.pre  > ../Pre2/$1.pre2
+#Input is expected to be type name seq menuEntry
 
-BEGIN{
+BEGIN {
     FS="[ \t]*!"
 
-   
-    printf("%-10s\t!%-10s\t!%-10s\t!%-110s\t!%-20s\t!%-5s\t!%-5s\n", "type", "name", "seq", "menuEntry", "IRSInstructions", "pgNo", "")
-    array[Form1040] = "1040gi.pdf"
-    array[SchedC] = "i1040sc.pdf"
-    array[Bkg] = "Bkg.pdf"
+    printf("%-10s\t!%-10s\t!%-10s\t!%-100s\t!%-20s\t!%-5s\t!%-5s\n", "type", "name", "seq", "menuEntry", "IRSInstructions", "pgNo", "")
+
 
 }
 
-    
-    NR > 1 {foo = array[form]; printf("%-10s\t!%-10s\t!%-10s\t!%-100s\t!%-20s\t!%-5s\t!%-5s\n", $1, $2, $3, $4, foo, "", "")}
+{
+         if ( form == "Bkg" )         file = "Bkg.pdf"
+    else if ( form == "Form1040" )    file = "i1040gi.pdf"
+    else if ( form == "SchedA" )      file = "i1040sca.pdf"
+    else if ( form == "SchedB" )      file = "i1040sb.pdr" 
+    else if ( form == "SchedC" )      file = "i1040sc.pdf"
+    else if ( form == "SchedD" )      file = "i1040sd.pdf"	 
+    else if ( form == "Form1099div" ) file = "i1099div.pdf"	 
+    else if ( form == "Form1099int" ) file = "i1099int.pdf"	 
+    else if ( form == "Form1099r" )   file = "i1099r.pdf"
+    else if ( form == "SST" )         file = "i1040gi.pdf"
+    else if ( form == "Form4952" )    file = "f4952.pdf"	 
+    else                              file = "Instruction file not defined."	 
+
+	 echo $file
+    if ( NR > 1 )  printf("%-10s\t!%-10s\t!%-10s\t!%-100s\t!%-20s\t!%-5s\t!%-5s\n", $1, $2, $3, $4, file, "", "")
+}
+
+
 

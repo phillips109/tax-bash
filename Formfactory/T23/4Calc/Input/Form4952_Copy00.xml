@@ -1,0 +1,131 @@
+<Form name=''>
+
+<line number='03'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01</augend>
+<addend>line02</addend>
+</line>
+
+<line number='04h'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line04c</augend>
+<addend>line04f</addend>
+<addend>line04g</addend>
+</line>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='04a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='04b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='04d'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='04e'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='04g'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<line number='08'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line03</first>
+<second>line06</second>
+</line>
+
+<line number='06'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line04h</minuend>
+<subtrahend>line05</subtrahend>
+</line>
+
+<line number='07'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line03</minuend>
+<subtrahend>line06</subtrahend>
+</line>
+
+<line number='04c'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line04a</minuend>
+<subtrahend>line04b</subtrahend>
+</line>
+
+<line number='04f'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line04d</minuend>
+<subtrahend>line04e</subtrahend>
+</line>
+</Form>

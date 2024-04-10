@@ -78,7 +78,7 @@ Pdfshow(){
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
     UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;	    
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;; 
-       SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
+       f1040ssa) qpdfview ../Pdf/f1040ssa.pdf      &;;
             SST) qpdfview ../Pdf/sst.pdf           &;;
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;; 
              w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
@@ -820,7 +820,7 @@ do
       rg28)   set_menu_choices 28RGWkst         00;;
       schd)   set_menu_choices SchedDTaxWkst    00;;
       sales)  set_menu_choices WSSchASalesTax   00;;
-      ssa)    set_menu_choices SSA_1099         00;;
+      ssa)    set_menu_choices Form1040ssa      00;;
       sst)    set_menu_choices SST              00;;
       ur1250) set_menu_choices UR1250GWkst      00;;
       q)     break;;

@@ -1,0 +1,31 @@
+set_SchedB_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SchedB in which to enter or edit data:"
+echo
+echo "07a1y)    Enter x if you had a financial interest in a foreign account."
+echo "07a1n)    Enter x if you didn't have a financial interest in a foreign account."
+echo "07a2y)    Enter x if you are required to file FinCEN."
+echo "07a2n)    Enter x if you are not required to file FinCEN."
+echo "07b  )    Enter the name of the foreign country where the financial account is located."
+echo "08y  )    Enter x if you received a distribution from or were the grantor or transferor to a foreign trust."
+echo "08n  )    Enter x if you were not.           "
+echo
+echo "    q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SchedB_line_data_choice
+echo
+     case $SchedB_line_data_choice in
+07a1y)    set_line_menu_text   $1 $2  line07a1y                            ;;
+07a1n)    set_line_menu_text   $1 $2  line07a1n                            ;;
+07a2y)    set_line_menu_text   $1 $2  line07a2y                            ;;
+07a2n)    set_line_menu_text   $1 $2  line07a2n                            ;;
+07b  )    set_line_menu_text   $1 $2  line07b                              ;;
+08y  )    set_line_menu_text   $1 $2  line08y                              ;;
+08n  )    set_line_menu_text   $1 $2  line08n                              ;;
+q    )    break;;                       
+esac
+done
+}

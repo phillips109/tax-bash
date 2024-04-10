@@ -1,0 +1,62 @@
+<Form fname="Bkg">
+<taxline name="TFNI" type="tlin" color="black">
+<menuEntry>Enter taxpayor's first name and initial.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="TLN" type="tlin" color="black">
+<menuEntry>Enter taxpayor's last name.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="TSSNoF" type="tlin" color="black">
+<menuEntry>Enter first three digits of taxpayor's SS Number.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="TSSNoM" type="tlin" color="black">
+<menuEntry>Enter fourth and fifth digits of taxpayor's SS Number.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="TSSNoL" type="tlin" color="black">
+<menuEntry>Enter last four digits of taxpayor's SS Number.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="SFNI" type="tlin" color="black">
+<menuEntry>Enter spouse's first name and initial.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="SLN" type="tlin" color="black">
+<menuEntry>Enter Spouse's last name.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="SSNoF" type="tlin" color="black">
+<menuEntry>Enter first three digits of spouse's SS Number.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="SSSNoM" type="tlin" color="black">
+<menuEntry>Enter fourth and fifth digits of spouse's SS Number.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="SSSNoL" type="tlin" color="black">
+<menuEntry>Enter last four digits of spouse's SS Number.</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="FS" type="tlin" color="black">
+<menuEntry>Enter filing status (S, MFJ, MFS, QSS, or HOH)</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="Apart" type="tlin" color="black">
+<menuEntry>Enter time apart from spouse. (All, Some, None)</menuEntry>
+<IRSInstructions>i1040sc.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+</Form>

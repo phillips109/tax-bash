@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright(C) 2019 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00line color='blue'></copy00line>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepnam1 color='blue'>Grove City Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Incorp.</copy00linepnam2>
+<copy00linepadd1 color='blue'>700 Main Street</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 200</copy00linepadd2>
+<copy00lineptel color='blue'>724-629-5725</copy00lineptel>
+<copy00linername1 color='blue'>John Taxpayor</copy00linername1>
+<copy00linername2 color='blue'>Esquire</copy00linername2>
+<copy00lineraddr1 color='blue'>52 Maple Avenue</copy00lineraddr1>
+<copy00lineraddr2 color='blue'>Apt 5</copy00lineraddr2>
+<copy00lineactNo color='blue'>70625</copy00lineactNo>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linepcity color='blue'>Grove City</copy00linepcity>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>21543</copy00linepzip>
+<copy00linerzip color='blue'>15218</copy00linerzip>
+<copy00linerTIN color='blue'>27-23456</copy00linerTIN>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00line2TIN color='blue'>x</copy00line2TIN>
+<copy00line01a color='red'>10000</copy00line01a>
+<copy00line01b color='red'>5000</copy00line01b>
+<copy00line02a color='red'>2001</copy00line02a>
+<copy00line02c color='red'>2003</copy00line02c>
+<copy00line02e color='red'>2005</copy00line02e>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='red'>7000</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line02b color='red'>2002</copy00line02b>
+<copy00line02d color='red'>2004</copy00line02d>
+<copy00line02f color='red'>2006</copy00line02f>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='blue'>Germany</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line14a color='blue'>PA</copy00line14a>
+<copy00line14b color='blue'>OH</copy00line14b>
+<copy00line15a color='blue'>1357924</copy00line15a>
+<copy00line15b color='blue'>2079341</copy00line15b>
+<copy00line16a color='red'>16000</copy00line16a>
+<copy00line16b color='red'>16001</copy00line16b>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepnam1 color='blue'>Grove City Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Incorp.</copy00linepnam2>
+<copy00linepadd1 color='blue'>700 Main Street</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 200</copy00linepadd2>
+<copy00lineptel color='blue'>724-629-5725</copy00lineptel>
+<copy00linername1 color='blue'>John Taxpayor</copy00linername1>
+<copy00linername2 color='blue'>Esquire</copy00linername2>
+<copy00lineraddr1 color='blue'>52 Maple Avenue</copy00lineraddr1>
+<copy00lineraddr2 color='blue'>Apt 5</copy00lineraddr2>
+<copy00lineactNo color='blue'>70625</copy00lineactNo>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linepcity color='blue'>Grove City</copy00linepcity>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>21543</copy00linepzip>
+<copy00linerzip color='blue'>15218</copy00linerzip>
+<copy00linerTIN color='blue'>27-23456</copy00linerTIN>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00line01a color='red'>10000</copy00line01a>
+<copy00line01b color='red'>5000</copy00line01b>
+<copy00line02a color='red'>2001</copy00line02a>
+<copy00line02c color='red'>2003</copy00line02c>
+<copy00line02e color='red'>2005</copy00line02e>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='red'>7000</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line02b color='red'>2002</copy00line02b>
+<copy00line02d color='red'>2004</copy00line02d>
+<copy00line02f color='red'>2006</copy00line02f>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='blue'>Germany</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line14a color='blue'>PA</copy00line14a>
+<copy00line14b color='blue'>OH</copy00line14b>
+<copy00line15a color='blue'>1357924</copy00line15a>
+<copy00line15b color='blue'>2079341</copy00line15b>
+<copy00line16a color='red'>16000</copy00line16a>
+<copy00line16b color='red'>16001</copy00line16b>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepnam1 color='blue'>Grove City Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Incorp.</copy00linepnam2>
+<copy00linepadd1 color='blue'>700 Main Street</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 200</copy00linepadd2>
+<copy00lineptel color='blue'>724-629-5725</copy00lineptel>
+<copy00linername1 color='blue'>John Taxpayor</copy00linername1>
+<copy00linername2 color='blue'>Esquire</copy00linername2>
+<copy00lineraddr1 color='blue'>52 Maple Avenue</copy00lineraddr1>
+<copy00lineraddr2 color='blue'>Apt 5</copy00lineraddr2>
+<copy00lineactNo color='blue'>70625</copy00lineactNo>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linepcity color='blue'>Grove City</copy00linepcity>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>21543</copy00linepzip>
+<copy00linerzip color='blue'>15218</copy00linerzip>
+<copy00linerTIN color='blue'>27-23456</copy00linerTIN>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00line01a color='red'>10000</copy00line01a>
+<copy00line01b color='red'>5000</copy00line01b>
+<copy00line02a color='red'>2001</copy00line02a>
+<copy00line02c color='red'>2003</copy00line02c>
+<copy00line02e color='red'>2005</copy00line02e>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='red'>7000</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line02b color='red'>2002</copy00line02b>
+<copy00line02d color='red'>2004</copy00line02d>
+<copy00line02f color='red'>2006</copy00line02f>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='blue'>Germany</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line14a color='blue'>PA</copy00line14a>
+<copy00line14b color='blue'>OH</copy00line14b>
+<copy00line15a color='blue'>1357924</copy00line15a>
+<copy00line15b color='blue'>2079341</copy00line15b>
+<copy00line16a color='red'>16000</copy00line16a>
+<copy00line16b color='red'>16001</copy00line16b>
+<copy00line color='blue'></copy00line>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepnam1 color='blue'>Grove City Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Incorp.</copy00linepnam2>
+<copy00linepadd1 color='blue'>700 Main Street</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 200</copy00linepadd2>
+<copy00lineptel color='blue'>724-629-5725</copy00lineptel>
+<copy00linername1 color='blue'>John Taxpayor</copy00linername1>
+<copy00linername2 color='blue'>Esquire</copy00linername2>
+<copy00lineraddr1 color='blue'>52 Maple Avenue</copy00lineraddr1>
+<copy00lineraddr2 color='blue'>Apt 5</copy00lineraddr2>
+<copy00lineactNo color='blue'>70625</copy00lineactNo>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linepcity color='blue'>Grove City</copy00linepcity>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>21543</copy00linepzip>
+<copy00linerzip color='blue'>15218</copy00linerzip>
+<copy00linerTIN color='blue'>27-23456</copy00linerTIN>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00line01a color='red'>10000</copy00line01a>
+<copy00line01b color='red'>5000</copy00line01b>
+<copy00line02a color='red'>2001</copy00line02a>
+<copy00line02c color='red'>2003</copy00line02c>
+<copy00line02e color='red'>2005</copy00line02e>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='red'>7000</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line02b color='red'>2002</copy00line02b>
+<copy00line02d color='red'>2004</copy00line02d>
+<copy00line02f color='red'>2006</copy00line02f>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='blue'>Germany</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line14a color='blue'>PA</copy00line14a>
+<copy00line14b color='blue'>OH</copy00line14b>
+<copy00line15a color='blue'>1357924</copy00line15a>
+<copy00line15b color='blue'>2079341</copy00line15b>
+<copy00line16a color='red'>16000</copy00line16a>
+<copy00line16b color='red'>16001</copy00line16b>
+</Form>
+</IRSForms>

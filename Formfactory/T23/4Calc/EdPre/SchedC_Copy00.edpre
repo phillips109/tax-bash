@@ -18,15 +18,14 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 
 xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
-addit   	!07      	!#####0  	!line05        	!line06        	!        	!
-addit   	!28      	!#####0  	!line08        	!line09        	!line10        	!line11	!line12	!line13	!line14	!line15	!line16a	!line16b	!line17	!line18	!line19	!line20a	!line20b	!line21	!line22	!line23	!line24a	!line24b	!line25	!line26	!line17a	!line27b	
-addit   	!40      	!#####0  	!line35		!line36        	!line37        	!line38        	!line39
-addit   	!totlO   	!#####0  	!lineExp1      	!lineExp2      	!lineExp3      	!lineExp4	!lineExp5	!lineExp6	!lineExp7	!lineExp8	!lineExp9
+addit   	!07      	!#####0  	!        	!        	!        	!
+addit   	!28      	!#####0  	!        	!        	!        	!
+addit   	!40      	!#####0  	!        	!        	!        	!
+addit   	!totlO   	!#####0  	!        	!        	!        	!
 
 xdlin   	!2name   	!3format 	!4dummy              
 dlin    	!01      	!#####0  	!                    	!
 dlin    	!02      	!#####0  	!                    	!
-dlin    	!04      	!#####0  	!                    	!
 dlin    	!05      	!#####0  	!                    	!
 dlin    	!06      	!#####0  	!                    	!
 dlin    	!08      	!#####0  	!                    	!
@@ -51,8 +50,6 @@ dlin    	!24a     	!#####0  	!                    	!
 dlin    	!24b     	!#####0  	!                    	!
 dlin    	!25      	!#####0  	!                    	!
 dlin    	!26      	!#####0  	!                    	!
-dlin    	!27a     	!#####0  	!                    	!
-dlin    	!27b     	!#####0  	!                    	!
 dlin    	!30      	!#####0  	!                    	!
 dlin    	!30a     	!#####0  	!                    	!
 dlin    	!30b     	!#####0  	!                    	!
@@ -75,11 +72,16 @@ dlin    	!Exp7    	!#####0  	!                    	!
 dlin    	!Exp8    	!#####0  	!                    	!
 dlin    	!Exp9    	!#####0  	!                    	!
 
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!04      	!#####0  	!        	!        	!        	!
+dPull   	!27a     	!#####0  	!        	!        	!        	!
+dPull   	!27b     	!#####0  	!        	!        	!        	!
+
 xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
-subtr   	!03      	!#####0  	!line01        	!line02        	!
-subtr   	!29      	!#####0  	!line07        	!line28        	!
-subtr   	!31      	!#####0  	!line29        	!line30        	!
-subtr   	!42      	!#####0  	!line40        	!line41        	!
+subtr   	!03      	!#####0  	!        	!        	!
+subtr   	!29      	!#####0  	!        	!        	!
+subtr   	!31      	!#####0  	!        	!        	!
+subtr   	!42      	!#####0  	!        	!        	!
 
 xtlin   	!2name   	!3blank  	!4dummy  	!
 tlin    	!01Ck    	!        	!        	!

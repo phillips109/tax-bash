@@ -445,8 +445,10 @@ do
                   and Other Tax Favored Accounts"
   echo "   5405)  Repayment of First-Time Homebuyer Credit"
   echo "   5695)  Residential Energy Credits"
+  echo "   6198)  At-Risk Limitations"
   echo "   6251)  Alternative Minimum Tax--Individuals"
   echo "   6252)  Installment Sale Income"
+  echo "   7205)  Energy efficient commercial buildings deduction."
   echo "   8615)  Tax for Certain Children Who Have Unearned Income"
   echo "   8801)  Credit for Prior Year Minimum Tax--Individuals, Estates, and Trusts"
   echo "   8812)  Child Tax Credit"
@@ -508,8 +510,10 @@ do
       5329)      set_menu_choices  f5329;;
       5405)      set_menu_choices  f5405;;
       5695)      set_menu_choices  f5695;;
+      6198)      set_menu_choices  f6196;;
       6251)      set_menu_choices  f6251;;
       6252)      set_menu_choices  f6252;;
+      7205)      set_menu_choices  f7205;;
       8615)      set_menu_choices  f8615;;
       8801)      set_menu_choices  f8801;;
       8812)      set_menu_choices  f8812;;
@@ -568,13 +572,14 @@ do
 
     case $wkst_choice in
 
-      cap)    set_wksMenu_choices i1040sd;;	
+      cap)    set_wksMenu_choices i1040sd;;
       fei)    set_wksMenu_choices i1040gi;;
       sltr)   set_wksMenu_choices i1040gi;;
       qdcg)   set_wksMenu_choices i1040gi;;
       rg28)   set_wksMenu_choices i1040sd;;
       schd)   set_wksMenu_choices i1040sd;;
       sales)  set_wksMenu_choices i1040sca;;
+      ssa)    set_wksMenu_choices i1040gi;;
       sst)    set_wksMenu_choices i1040gi;;
       ug1250) set_wksMenu_choices i1040sd;;
       q)     break;;
