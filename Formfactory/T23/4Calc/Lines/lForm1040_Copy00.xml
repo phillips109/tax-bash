@@ -275,9 +275,9 @@
   </copy00lineQDCG>
 
 
-<copy00line4952 color="purple">
-  <xsl:value-of select="format-number($Form1040-Copy00-line4952, '#####0')"/>
-  </copy00line4952>
+<copy00line49524g color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-line49524g, '#####0')"/>
+  </copy00line49524g>
 
 
 <copy00line8814 color="purple">

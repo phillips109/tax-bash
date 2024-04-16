@@ -1593,7 +1593,7 @@ VALUOF$Form1040-Copy00-liner01
 cnum
 #####0
 CHOOS1
-WHEN01Form1040-Copy00-line07a02 = 'x'
+WHEN01$Form1040-Copy00-line07a02 = 'x'
 VALUOF$Form1040-Copy00-liner02
 
 
@@ -1745,8 +1745,8 @@ VALUOF$Form1040-Copy00-linet10
 cnum
 #####0
 CHOOS1
-WHEN01$Form1040-Copy00-line07 &gt; 0
-VALUOF$Form1040-Copy00-lineQDCG
+WHEN01$Form1040-Copy00-line49524g &gt; 0
+VALUOF$Form1040-Copy00-lineSDTW
 
 
 

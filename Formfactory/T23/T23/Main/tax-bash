@@ -1710,7 +1710,7 @@ do
       qdcg)  set_copy_number  QDCGTaxWkst    01;;
       schd)  set_copy_number  SchedDTaxWkst  01;;
       sales) set_copy_number  WSSchASalesTax 01;;
-      ssa)   set_copy_number  Form1040ssa    01;;
+      ssa)   set_copy_number  Form1099ssa    01;;
       sst)   set_copy_number  SST            01;;	
       q)     break;;
     esac
@@ -1997,7 +1997,7 @@ while true;
   echo "   f)  Show choice of Forms."
   echo "   s)  Show choice of Schedules."
   echo "   w)  Show choice of Worksheets."
-#  echo "   t)  Show choice of Tabless"
+#  echo "   t)  Show choice of Tables"
 echo 
   echo "   q) Quit"
  
@@ -2010,7 +2010,7 @@ echo
       1) importLastYrReturn;;
       2) importLastYrText;;
       3) importGnuCash;;
-      4) refreshAll $1;;
+      4) refreshAll;;
 
       ln) listAccounts;;
       at) oneAcct;;

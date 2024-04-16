@@ -28,7 +28,7 @@ do
       qdcg)  set_copy_number  QDCGTaxWkst    01;;
       schd)  set_copy_number  SchedDTaxWkst  01;;
       sales) set_copy_number  WSSchASalesTax 01;;
-      ssa)   set_copy_number  Form1040ssa    01;;
+      ssa)   set_copy_number  Form1099ssa    01;;
       sst)   set_copy_number  SST            01;;	
       q)     break;;
     esac

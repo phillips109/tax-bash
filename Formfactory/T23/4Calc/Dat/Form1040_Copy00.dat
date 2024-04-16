@@ -562,7 +562,7 @@ QDCGTaxWkst
 line25
 
 dPull
-4952
+49524g
 #####0
 0
 Form4952
@@ -1926,7 +1926,7 @@ cnum
 ira02
 #####0
 CHOOS1
-WHEN01Form1040-Copy00-line07a02 = 'x'
+WHEN01$Form1040-Copy00-line07a02 = 'x'
 VALUOF$Form1040-Copy00-liner02
 WHEN02
 OTHER1
@@ -2225,23 +2225,23 @@ CHOOS2
 xNote that the following approach to calculating line 16a did not work because the compiler could calculate each record in a different order each time.
 xThis gave different numerical results each time and necessitated a change to a multiline record format.
 
-xcnum
+cnum
 16a
 #####0
 CHOOS1
-WHEN01$Form1040-Copy00-line4952 > 0
+WHEN01$Form1040-Copy00-line49524g > 0
 VALUOF$Form1040-Copy00-lineSDTW
 WHEN02
 WHEN01document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0
 VALUOF$Form1040-Copy00-lineSDTW
 WHEN02
 WHEN01document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0
-VALUOF$Form1040-Copy00-lineSDTW
+VALUOF$Form1040-Copy00-lineQDCG
 WHEN02
 WHEN01$Form1040-Copy00-line03a > 0
 VALUOF$Form1040-Copy00-lineQDCG
 WHEN02
-WHEN01$Form1040-Copy00-line07 > 0
+WHEN01$Form1040-Copy00-line07 > 0 and $Form1040-Copy00-line07Ck = 'x'
 VALUOF$Form1040-Copy00-lineQDCG
 WHEN02
 OTHER1
@@ -2249,10 +2249,13 @@ VALUOF$Form1040-Copy00-lineCalc16
 OTHER2
 CHOOS2
 
-cnum
+xcnum
 16a
 #####0
 CHOOS1
+WHEN01$Form1040-Copy00-line49524g > 0
+VALUOF$Form1040-Copy00-lineSDTW
+WHEN02
 WHEN01$Form1040-Copy00-line07 > 0
 VALUOF$Form1040-Copy00-lineQDCG
 WHEN02

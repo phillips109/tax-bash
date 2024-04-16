@@ -594,7 +594,7 @@
 <line2>line25</line2>
 </line>
 
-<line number='4952'
+<line number='49524g'
  color='purple'>
 <title></title>
 <type>dPull</type>
@@ -2823,7 +2823,7 @@
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>WHEN01Form1040-Copy00-line07a02 = 'x'</value1>
+<value1>WHEN01$Form1040-Copy00-line07a02 = 'x'</value1>
 <value2>VALUOF$Form1040-Copy00-liner02</value2>
 </line>
 
@@ -2994,8 +2994,8 @@
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>WHEN01$Form1040-Copy00-line07 > 0</value1>
-<value2>VALUOF$Form1040-Copy00-lineQDCG</value2>
+<value1>WHEN01$Form1040-Copy00-line49524g > 0</value1>
+<value2>VALUOF$Form1040-Copy00-lineSDTW</value2>
 </line>
 
 <line number='S'

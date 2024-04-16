@@ -16,7 +16,7 @@ sed 's/copy00/copy02/g' ../MyLines/$f2.tmp > ../MyLines/$f2
 rm ../MyLines/$f2.tmp
 
 #This line combines the variable and lines to create ../Xsl/taxlogic.xsl
-../BasseXsl/maketaxlogicXsl.sh
+../BaseXsl/maketaxlogicXsl.sh
 
 
 

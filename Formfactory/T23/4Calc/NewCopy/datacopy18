@@ -6,7 +6,7 @@
 
       filea="$1_Copy00_line"
       fileb=${foo##*line}
-      filec="$1_Copy03_line"
+      filec="$1_Copy018_line"
 
       file1=$(echo $filea$fileb)
       file2=$(echo $filec$fileb)
