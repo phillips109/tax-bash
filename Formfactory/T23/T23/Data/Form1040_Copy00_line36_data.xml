@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line36</linename>
-<instructions>Enter the amount you want applied to your 2023 estimated tax</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#60</IRSInstructions>
 <notes/>
 <override/>

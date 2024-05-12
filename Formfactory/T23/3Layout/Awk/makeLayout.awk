@@ -257,6 +257,27 @@ BEGIN {
 	 print "</dPull>"
 	 }
 
+/^type:ctxt/ {
+	 print ""
+	 z = split($2, two, ":")
+	 print "<ctxt name='"two[2]"'"
+	 z = split($3, three, ":")
+	 print "top='"three[2]"in'"
+	 z = split($4, four, ":")
+	 print "height='"four[2]"in'"
+	 z = split($5, five, ":")
+	 print "color='"five[2]"'>"
+	 z = split($6, six, ":")
+	 print "<dummy>"six[2]"</dummy>"
+	 z = split($7, seven, ":")
+	 print "<form>"seven[2]"</form>"
+	 z = split($8, eight, ":")
+	 print "<copy>"eight[2]"</copy>"
+	 z = split($9, nine, ":")
+	 print "<line2>"nine[2]"</line2>"
+	 print "</ctxt>"
+	 }
+
 /^type:dRef/ {
 
 	 print ""

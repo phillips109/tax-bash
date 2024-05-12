@@ -145,8 +145,8 @@ showEntriesOnly(){
 #     awk -f ../Awk/showEntriesOnly2.awk form="$1" ../Entries/$1.txt | sort > ../Entries/$1.ent
 #    awk -f ../Awk/showEntriesOnly.awk form="$1" ../Txt/$1.txt | sort > ../Entries/$1.ent
 
-}
 
+}
 editEntries(){
     emacs ../Entries/$1.ent
 }

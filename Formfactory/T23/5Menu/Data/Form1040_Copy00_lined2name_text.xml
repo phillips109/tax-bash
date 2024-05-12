@@ -1,6 +1,6 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lined2name</linename>
-<instructions>Enter second dependent's first name</instructions>
+<instructions/>
 <IRSinstructions>../IRS/i1040gi.pdf#17</IRSinstructions>
 <notes/>
 <text/>

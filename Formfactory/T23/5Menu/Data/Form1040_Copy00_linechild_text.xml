@@ -1,7 +1,7 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-linechild</linename>
-<instructions>If MFS enter your spouse, if HOH or QSS enter child</instructions>
-<IRSinstructions>../IRS/i1040gi.pdf#12</IRSinstructions>
+<instructions/>
+<IRSinstructions>../IRS/i1040gi.pdf#14</IRSinstructions>
 <notes/>
 <text/>
 <license>

@@ -1,6 +1,6 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lineST</linename>
-<instructions>Enter address: state as ST</instructions>
+<instructions/>
 <IRSinstructions>../IRS/i1040gi.pdf#12</IRSinstructions>
 <notes/>
 <text/>

@@ -5,9 +5,11 @@ do
   clear
   echo "Schedules :"
   echo
+  echo "       1) Schedule 1"
+  echo "       2) Schedule 2"
+  echo "       3) Schedule 3"
   echo "       a) Schedule A"
   echo "       b) Schedule B"
-#  echo "      ca) Schedule Ca"
   echo "       c) Schedule C"
   echo "       d) Schedule D"  
 #  echo "       h) Show Schedule H."
@@ -24,9 +26,11 @@ do
   read sched_choice
 
     case $sched_choice in
+          1) set_copy_number  Sched1		;;
+          2) set_copy_number  Sched2		;;
+          3) set_copy_number  Sched3		;;
           a) set_copy_number  SchedA		;;
           b) set_copy_number  SchedB		;;
-         ca) set_copy_number  SchedCa		;;
           c) set_copy_number  SchedC		;;
           d) set_copy_number  SchedD		;;
           h) set_copy_number  SchedH		;;

@@ -8,7 +8,8 @@ tlin	!MFJ	!002	!
 tlin	!MFS	!003	!                              
 tlin	!HOH	!004	!                              
 tlin	!QSS	!005	!                              
-tlin	!child	!006	!                              
+tlin	!child	!006	!
+tlin	!SName	!006a	!
 tlin	!TFNI	!007	!                              
 tlin	!TLN	!008	!                              
 tlin	!TSSNoF	!009	!                              
@@ -79,7 +80,9 @@ tlin	!d4SL	!073	!
 tlin	!d4rel	!074	!                              
 tlin	!d4CTC	!075	!                              
 tlin	!d4cod	!076	!                              
-tlin	!dgt4	!077	!                              
+tlin	!dgt4	!077	!
+tlin	!Tphone	!077a	!
+tlin	!Temail	!077b	!
 dlin	!01a	!078	!                              
 dlin	!01b	!079	!                              
 dlin	!01c	!080	!                              

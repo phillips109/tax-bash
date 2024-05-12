@@ -1540,6 +1540,30 @@ tlin
 
 
 
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
+tlin
+
+
+
+
+
+
+
 
 
 
@@ -1787,5 +1811,53 @@ ctext
 CHOOS1
 WHEN01$Form1040-Copy00-lineFS = 'QSS'
 VALUOF'x'
+
+
+
+ctext
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSLNa
+
+
+
+ctext
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSFNIa
+
+
+
+ctext
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSSSNoFa
+
+
+
+ctext
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSSSNoMa
+
+
+
+ctext
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSSSNoLa
+
+
+
+ctext
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSName
 
 </Form>

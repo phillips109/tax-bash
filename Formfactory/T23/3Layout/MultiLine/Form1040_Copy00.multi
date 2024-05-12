@@ -165,7 +165,7 @@ value1:''
 value2:
 
 type:tcalc
-name:MFJ
+name:MFS
 top:2.70
 height:0.15
 color:red
@@ -187,7 +187,7 @@ align:center
 top:0.00
 
 type:tcalc
-name:MFS
+name:HOH
 top:2.36
 height:0.15
 color:red
@@ -196,7 +196,7 @@ value1:''
 value2:
 
 type:tcalc
-name:MFJ
+name:QSS
 top:2.70
 height:0.15
 color:red
@@ -217,12 +217,15 @@ font-family:Times
 align:left
 top:0.00
 
-type:tlin
-name:child
+type:ctxt
+name:Schild
 top:3.03
 height:0.15
-color:blue
+color:purple
 dummy:Francis Brown
+form:Form1040
+copy:00
+line2:Schild
 
 Endcol ************************************************
 
@@ -244,16 +247,17 @@ height:0.15
 color:purple
 form:Bkg
 copy:00
-line2:TFNI
+line2:lineTFNI
 
-type:tPull
+type:ctxt
 name:SFNI
 top:2.12
 height:0.15
 color:purple
+dummy:Jeanne E
 form:Bkg
 copy:00
-line2:SFNI
+line2:lineSFNI
 
 Endcol ************************************************
 
@@ -275,16 +279,17 @@ height:0.15
 color:purple
 form:Bkg
 copy:00
-line2:TLN
+line2:lineTLN
 
-type:tPull
+type:ctxt
 name:SLN
 top:2.12
 height:0.15
 color:purple
+dummy:Taxpayor
 form:Bkg
 copy:00
-line2:SLN
+line2:lineSLN
 
 Endcol ************************************************
 
@@ -306,16 +311,17 @@ height:0.15
 color:purple
 form:Bkg
 copy:00
-line2:TSSNoF
+line2:lineTSSNoF
 
-type:tPull
+type:ctxt
 name:SSSNoF
 top:2.12
 height:0.15
 color:purple
+dummy:987
 form:Bkg
 copy:00
-line2:SSSNoF
+line2:lineSSSNoF
 
 Endcol ************************************************
 
@@ -337,16 +343,17 @@ height:0.15
 color:purple
 form:Bkg
 copy:00
-line2:TSSNoM
+line2:lineTSSNoM
 
-type:tPull
+type:ctxt
 name:SSSNoM
 top:2.12
 height:0.15
 color:purple
+dummy:65
 form:Bkg
 copy:00
-line2:SSSNoM
+line2:lineSSSNoM
 
 Endcol ************************************************
 
@@ -368,16 +375,17 @@ height:0.15
 color:purple
 form:Bkg
 copy:00
-line2:TSSNoL
+line2:lineTSSNoL
 
-type:tPull
+type:ctxt
 name:SSSNoL
 top:2.12
 height:0.15
 color:purple
+dummy:4321
 form:Bkg
 copy:00
-line2:SSSNoL
+line2:lineSSSNoL
 
 Endcol ************************************************
 

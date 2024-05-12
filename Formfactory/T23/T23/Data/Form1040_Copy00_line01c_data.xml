@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line01c</linename>
-<instructions>Enter tip income not reported on line 1a</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#24</IRSInstructions>
 <notes/>
 <override/>

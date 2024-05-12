@@ -1,6 +1,6 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-linecampS</linename>
-<instructions>Enter x if spouse wants to give $3 to campaign</instructions>
+<instructions/>
 <IRSinstructions>../IRS/i1040gi.pdf#13</IRSinstructions>
 <notes/>
 <text/>

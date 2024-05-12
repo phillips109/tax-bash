@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line26</linename>
-<instructions>Enter 2022 estimated tax payments and amount applied from 2021 return</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#38</IRSInstructions>
 <notes/>
 <override/>

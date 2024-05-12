@@ -293,7 +293,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
     
 
   
-    <xsl:template match="dPull">
+    <xsl:template match=" dPull | ctxt ">
     
     <fo:block-container position="absolute">
       <xsl:attribute name="top">
@@ -314,9 +314,9 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 	
 	<xsl:text disable-output-escaping="yes">&lt;fo:basic-link external-destination="../Pdf/</xsl:text>	  
-	<xsl:value-of select="./form"/>
+	<xsl:value-of select="$form"/>
 	<xsl:text>_Copy</xsl:text>
-	<xsl:value-of select="./copy"/>
+	<xsl:value-of select="$copy"/>
 	<xsl:text>_</xsl:text>
 	<xsl:value-of select="./line2"/>
 	<xsl:text disable-output-escaping="yes">.pdf"&gt;</xsl:text><xsl:text>
@@ -326,16 +326,16 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
       </xsl:text>
       
         <xsl:text disable-output-escaping="yes">&lt;xslt:when test="document('../Output/</xsl:text>
-	<xsl:value-of select="./form"/>
+	<xsl:value-of select="$form"/>
 	<xsl:text>_Copy</xsl:text>
-	<xsl:value-of select="./copy"/>
+	<xsl:value-of select="$copy"/>
 	<xsl:text disable-output-escaping="yes">.xml')"&gt;</xsl:text><xsl:text>
       </xsl:text>
       
 	<xsl:text disable-output-escaping="yes">&lt;xslt:value-of select="document('../Output/</xsl:text>
-	<xsl:value-of select="./form"/>
+	<xsl:value-of select="$form"/>
 	<xsl:text>_Copy</xsl:text>
-	<xsl:value-of select="./copy"/>
+	<xsl:value-of select="$copy"/>
 	<xsl:text disable-output-escaping="yes">.xml')//copy</xsl:text>
 	<xsl:value-of select="./copy"/>
 	<xsl:value-of select="./line2"/>
@@ -348,7 +348,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
         <xsl:text disable-output-escaping="yes">&lt;xslt:otherwise&gt;</xsl:text><xsl:text>
       </xsl:text>
       
-      <xsl:value-of select="''"/><xsl:text>
+        <xsl:text disable-output-escaping="yes">&lt;xslt:value-of select="''"/&gt;</xsl:text><xsl:text>
     </xsl:text>
     
 	<xsl:text disable-output-escaping="yes">&lt;/xslt:otherwise&gt;</xsl:text><xsl:text>

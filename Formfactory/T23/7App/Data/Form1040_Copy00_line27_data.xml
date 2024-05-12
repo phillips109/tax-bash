@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line27</linename>
-<instructions>Enter earned income credit(EIC)</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#39</IRSInstructions>
 <notes/>
 <override/>

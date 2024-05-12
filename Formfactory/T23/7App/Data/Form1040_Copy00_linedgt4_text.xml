@@ -1,7 +1,7 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-linedgt4</linename>
-<instructions>Enter x if you have more than 4 dependents</instructions>
-<IRSinstructions>../IRS/i1040gi.pdf#17</IRSinstructions>
+<instructions/>
+<IRSinstructions>../IRS/i1040gi.pdf#16</IRSinstructions>
 <notes/>
 <text/>
 <license>

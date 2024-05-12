@@ -100,6 +100,13 @@ BEGIN {
     print "<copy"copy"line"two[2]" color='"five[2]"'>"six[2]"</copy"copy"line"two[2]">"
 }
 
+/^type:ctxt/ {
+    z = split($2, two, ":" )
+    z = split($5, five, ":" )
+    z = split($6, six, ":" )
+    print "<copy"copy"line"two[2]" color='"five[2]"'>"six[2]"</copy"copy"line"two[2]">"
+}
+
 /^type:dRef/ {
     z = split($2, two, ":" )
     z = split($5, five, ":" )

@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line04a</linename>
-<instructions>Enter nontaxable IRA distributions (usually 0)</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#26</IRSInstructions>
 <notes/>
 <override/>

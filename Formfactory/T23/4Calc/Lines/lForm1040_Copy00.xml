@@ -980,6 +980,11 @@
     </copy00linechild>
   
 
+<copy00lineSName color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSName"/>
+    </copy00lineSName>
+  
+
 <copy00linecity color="blue">
     <xsl:value-of select="$Form1040-Copy00-linecity"/>
     </copy00linecity>
@@ -1310,9 +1315,19 @@
     </copy00lineTdate>
   
 
+<copy00lineTemail color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineTemail"/>
+    </copy00lineTemail>
+  
+
 <copy00lineTocc color="blue">
     <xsl:value-of select="$Form1040-Copy00-lineTocc"/>
     </copy00lineTocc>
+  
+
+<copy00lineTphone color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineTphone"/>
+    </copy00lineTphone>
   
 
 <copy00lineYa58 color="blue">
@@ -1395,29 +1410,29 @@
     </copy00lineFS>
   
 
-<copy00lineSFNI color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSFNI"/>
-    </copy00lineSFNI>
+<copy00lineSFNIa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSFNIa"/>
+    </copy00lineSFNIa>
   
 
-<copy00lineSLN color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSLN"/>
-    </copy00lineSLN>
+<copy00lineSLNa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSLNa"/>
+    </copy00lineSLNa>
   
 
-<copy00lineSSSNoF color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSSSNoF"/>
-    </copy00lineSSSNoF>
+<copy00lineSSSNoFa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoFa"/>
+    </copy00lineSSSNoFa>
   
 
-<copy00lineSSSNoL color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSSSNoL"/>
-    </copy00lineSSSNoL>
+<copy00lineSSSNoLa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoLa"/>
+    </copy00lineSSSNoLa>
   
 
-<copy00lineSSSNoM color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSSSNoM"/>
-    </copy00lineSSSNoM>
+<copy00lineSSSNoMa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoMa"/>
+    </copy00lineSSSNoMa>
   
 
 <copy00lineTFNI color="blue">
@@ -1573,5 +1588,35 @@
 <copy00lineQSS color="blue">
     <xsl:value-of select="$Form1040-Copy00-lineQSS"/>
     </copy00lineQSS>
+  
+
+<copy00lineSLN color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSLN"/>
+    </copy00lineSLN>
+  
+
+<copy00lineSFNI color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSFNI"/>
+    </copy00lineSFNI>
+  
+
+<copy00lineSSSNoF color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoF"/>
+    </copy00lineSSSNoF>
+  
+
+<copy00lineSSSNoM color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoM"/>
+    </copy00lineSSSNoM>
+  
+
+<copy00lineSSSNoL color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoL"/>
+    </copy00lineSSSNoL>
+  
+
+<copy00lineSchild color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSchild"/>
+    </copy00lineSchild>
   
 </Form>

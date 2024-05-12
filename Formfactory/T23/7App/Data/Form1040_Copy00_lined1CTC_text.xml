@@ -1,6 +1,6 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lined1CTC</linename>
-<instructions>Enter x if first dependent qualifies for Child Tax Credit</instructions>
+<instructions/>
 <IRSinstructions>../IRS/i1040gi.pdf#17</IRSinstructions>
 <notes/>
 <text/>

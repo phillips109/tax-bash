@@ -1700,6 +1700,10 @@ $Form1040-Copy00-linepen10"/>
 <xsl:value-of select="document('../Data/Form1040_Copy00_linechild_text.xml')//text"/>
 </xsl:variable>
 
+<xsl:variable name="Form1040-Copy00-lineSName">
+<xsl:value-of select="document('../Data/Form1040_Copy00_lineSName_text.xml')//text"/>
+</xsl:variable>
+
 <xsl:variable name="Form1040-Copy00-linecity">
 <xsl:value-of select="document('../Data/Form1040_Copy00_linecity_text.xml')//text"/>
 </xsl:variable>
@@ -1964,8 +1968,16 @@ $Form1040-Copy00-linepen10"/>
 <xsl:value-of select="document('../Data/Form1040_Copy00_lineTdate_text.xml')//text"/>
 </xsl:variable>
 
+<xsl:variable name="Form1040-Copy00-lineTemail">
+<xsl:value-of select="document('../Data/Form1040_Copy00_lineTemail_text.xml')//text"/>
+</xsl:variable>
+
 <xsl:variable name="Form1040-Copy00-lineTocc">
 <xsl:value-of select="document('../Data/Form1040_Copy00_lineTocc_text.xml')//text"/>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineTphone">
+<xsl:value-of select="document('../Data/Form1040_Copy00_lineTphone_text.xml')//text"/>
 </xsl:variable>
 
 <xsl:variable name="Form1040-Copy00-lineYa58">
@@ -2109,7 +2121,7 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineSFNI">
+<xsl:variable name="Form1040-Copy00-lineSFNIa">
 <xsl:choose>
 <xsl:when test="document('../Data/Bkg_Copy00_lineSFNI_text.xml')">
 <xsl:value-of select="document('../Data/Bkg_Copy00_lineSFNI_text.xml')//text"/>
@@ -2120,7 +2132,7 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineSLN">
+<xsl:variable name="Form1040-Copy00-lineSLNa">
 <xsl:choose>
 <xsl:when test="document('../Data/Bkg_Copy00_lineSLN_text.xml')">
 <xsl:value-of select="document('../Data/Bkg_Copy00_lineSLN_text.xml')//text"/>
@@ -2131,7 +2143,7 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineSSSNoF">
+<xsl:variable name="Form1040-Copy00-lineSSSNoFa">
 <xsl:choose>
 <xsl:when test="document('../Data/Bkg_Copy00_lineSSSNoF_text.xml')">
 <xsl:value-of select="document('../Data/Bkg_Copy00_lineSSSNoF_text.xml')//text"/>
@@ -2142,7 +2154,7 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineSSSNoL">
+<xsl:variable name="Form1040-Copy00-lineSSSNoLa">
 <xsl:choose>
 <xsl:when test="document('../Data/Bkg_Copy00_lineSSSNoL_text.xml')">
 <xsl:value-of select="document('../Data/Bkg_Copy00_lineSSSNoL_text.xml')//text"/>
@@ -2153,7 +2165,7 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineSSSNoM">
+<xsl:variable name="Form1040-Copy00-lineSSSNoMa">
 <xsl:choose>
 <xsl:when test="document('../Data/Bkg_Copy00_lineSSSNoM_text.xml')">
 <xsl:value-of select="document('../Data/Bkg_Copy00_lineSSSNoM_text.xml')//text"/>
@@ -2510,6 +2522,78 @@ $Form1040-Copy00-linepen10"/>
 <xsl:choose>
 <xsl:when test="$Form1040-Copy00-lineFS = 'QSS'">
 <xsl:value-of select="'x'"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineSLN">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="$Form1040-Copy00-lineSLNa"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineSFNI">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="$Form1040-Copy00-lineSFNIa"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineSSSNoF">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoFa"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineSSSNoM">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoMa"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineSSSNoL">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoLa"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineSchild">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="$Form1040-Copy00-lineSName"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFS = 'HOH'">
+<xsl:value-of select="$Form1040-Copy00-linechild"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFS = 'QSS'">
+<xsl:value-of select="$Form1040-Copy00-linechild"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="''"/>
@@ -3857,6 +3941,764 @@ $Form4952-Copy00-line04g"/>
 
 <xsl:variable name="Form4952-Copy00-line04f">
 <xsl:value-of select="$Form4952-Copy00-line04d -  $Form4952-Copy00-line04e"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line04">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line02 +
+$QDCGTaxWkst-Copy00-line03"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line15">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line05 +
+$QDCGTaxWkst-Copy00-line09"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line19">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line09 +
+$QDCGTaxWkst-Copy00-line17"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line23">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line18 +
+$QDCGTaxWkst-Copy00-line21 +
+$QDCGTaxWkst-Copy00-line22"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line02">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040_Copy00.xml')">
+<xsl:value-of select="document('../Output/Form1040_Copy00.xml')//copy00line03a"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line15D">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedD_Copy00.xml')//copy00line15"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line16D">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedD_Copy00.xml')//copy00line16"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line10407">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040_Copy00.xml')">
+<xsl:value-of select="document('../Output/Form1040_Copy00.xml')//copy00line07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-lineFS">
+<xsl:choose>
+<xsl:when test="document('../Output/Bkg_Copy00.xml')">
+<xsl:value-of select="document('../Output/Bkg_Copy00.xml')//copy00lineFS"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-lineFEI3">
+<xsl:choose>
+<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
+<xsl:value-of select="document('../Output/FEITaxWkst_Copy00.xml')//copy00line03"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line104015">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040_Copy00.xml')">
+<xsl:value-of select="document('../Output/Form1040_Copy00.xml')//copy00line15"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line11">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line09"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-linep15">
+<xsl:value-of select="0.15"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-linep20">
+<xsl:value-of select="0.20"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line18">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line17 * $QDCGTaxWkst-Copy00-linep15"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line21">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line20 * $QDCGTaxWkst-Copy00-linep20"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line07">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line01 &gt;= $QDCGTaxWkst-Copy00-line06">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line06"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line08">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line05 &gt;= $QDCGTaxWkst-Copy00-line07">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line05"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line10">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line01 &gt;= $QDCGTaxWkst-Copy00-line04">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line04"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line14">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line01 &gt;= $QDCGTaxWkst-Copy00-line13">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line13"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line17">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line12 &gt;= $QDCGTaxWkst-Copy00-line16">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line16"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line12"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line25">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line23 &gt;= $QDCGTaxWkst-Copy00-line24">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line24"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line23"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line05">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line04 >= $QDCGTaxWkst-Copy00-line01">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line01 - $QDCGTaxWkst-Copy00-line04"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line16">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line15 >= $QDCGTaxWkst-Copy00-line14">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line14 - $QDCGTaxWkst-Copy00-line15"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line09">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line07 -  $QDCGTaxWkst-Copy00-line08"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line12">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line10 -  $QDCGTaxWkst-Copy00-line11"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line20">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line10 -  $QDCGTaxWkst-Copy00-line19"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line01">
+<xsl:choose>
+<xsl:when test="document('../Output/Form2555_Copy00.xml')">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-lineFEI3"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line104015"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line03">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line03y = 'x'">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line15D &lt;= 0 or QDCGTaxWkst-Copy00-line16D &lt;= 0">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-line15D &lt; $QDCGTaxWkst-Copy00-line16D">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line15D"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line16D"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line03y">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:value-of select="'x'"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line03n">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:value-of select="''"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="'x'"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line06">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'S'">
+<xsl:value-of select="41675"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFS'">
+<xsl:value-of select="41675"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="83350"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'QSS'">
+<xsl:value-of select="83350"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'HOH'">
+<xsl:value-of select="55800"/>
+</xsl:when>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line13">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'S'">
+<xsl:value-of select="459750"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFS'">
+<xsl:value-of select="258600"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFJ'">
+<xsl:value-of select="517200"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'QSS'">
+<xsl:value-of select="517200"/>
+</xsl:when>
+<xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'HOH'">
+<xsl:value-of select="488500"/>
+</xsl:when>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line22">
+<xsl:call-template name="taxCalc">
+<xsl:with-param name="filingStatus" select="$QDCGTaxWkst-Copy00-lineFS"/>
+<xsl:with-param name="lineToBeTaxed" select="$QDCGTaxWkst-Copy00-line05"/>
+</xsl:call-template>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-line24">
+<xsl:call-template name="taxCalc">
+<xsl:with-param name="filingStatus" select="$QDCGTaxWkst-Copy00-lineFS"/>
+<xsl:with-param name="lineToBeTaxed" select="$QDCGTaxWkst-Copy00-line01"/>
+</xsl:call-template>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line07">
+<xsl:value-of select="$Sched3-Copy00-line06a +
+$Sched3-Copy00-line06b +
+$Sched3-Copy00-line06c +
+$Sched3-Copy00-line06d +
+$Sched3-Copy00-line06f +
+$Sched3-Copy00-line06g +
+$Sched3-Copy00-line06h +
+$Sched3-Copy00-line06i +
+$Sched3-Copy00-line06j +
+$Sched3-Copy00-line06k +
+$Sched3-Copy00-line06l +
+$Sched3-Copy00-line06m +
+$Sched3-Copy00-line06z"/>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line08">
+<xsl:value-of select="$Sched3-Copy00-line01 +
+$Sched3-Copy00-line02 +
+$Sched3-Copy00-line03 +
+$Sched3-Copy00-line04 +
+$Sched3-Copy00-line05a +
+$Sched3-Copy00-line05b +
+$Sched3-Copy00-line07"/>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line14">
+<xsl:value-of select="$Sched3-Copy00-line13a +
+$Sched3-Copy00-line13b +
+$Sched3-Copy00-line13c +
+$Sched3-Copy00-line13d +
+$Sched3-Copy00-line13z"/>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line15">
+<xsl:value-of select="$Sched3-Copy00-line09 +
+$Sched3-Copy00-line10 +
+$Sched3-Copy00-line11 +
+$Sched3-Copy00-line12 +
+$Sched3-Copy00-line14"/>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06z">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06z'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06z'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06z']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line11">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line11'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line11'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line11']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line13b">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13b'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13b'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13b']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line13z">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13z'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13z'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13z']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line01">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line01'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line01'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line01']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line02">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line02'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line02'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line02']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line03">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line03'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line03'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line03']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line04">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line04'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line04'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line04']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line05a">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line05a'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line05a'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line05a']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line05b">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line05b'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line05b'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line05b']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06a">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06a'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06a'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06a']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06b">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06b'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06b'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06b']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06c">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06c'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06c'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06c']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06d">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06d'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06d'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06d']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06f">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06f'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06f'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06f']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06g">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06g'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06g'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06g']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06h">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06h'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06h'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06h']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06i">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06i'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06i'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06i']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06j">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06j'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06j'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06j']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06k">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06k'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06k'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06k']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06l">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06l'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06l'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06l']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06m">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06m'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06m'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line06m']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line09">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line09'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line09'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line09']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line10">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line10'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line10'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line10']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line12">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line12'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line12'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line12']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line13a">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13a'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13a'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13a']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line13c">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13c'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13c'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13c']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line13d">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13d'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13d'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched3-Copy00-line13d']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line06line">
+<xsl:value-of select="document('../Data/Sched3_Copy00_line06line_text.xml')//text"/>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-line13zline">
+<xsl:value-of select="document('../Data/Sched3_Copy00_line13zline_text.xml')//text"/>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-lineSFNI">
+<xsl:choose>
+<xsl:when test="document('../Data/Bkg_Copy00_lineSFNI_text.xml')">
+<xsl:value-of select="document('../Data/Bkg_Copy00_lineSFNI_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-lineSLN">
+<xsl:choose>
+<xsl:when test="document('../Data/Bkg_Copy00_lineSLN_text.xml')">
+<xsl:value-of select="document('../Data/Bkg_Copy00_lineSLN_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-lineTFNI">
+<xsl:choose>
+<xsl:when test="document('../Data/Bkg_Copy00_lineTFNI_text.xml')">
+<xsl:value-of select="document('../Data/Bkg_Copy00_lineTFNI_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-lineTLN">
+<xsl:choose>
+<xsl:when test="document('../Data/Bkg_Copy00_lineTLN_text.xml')">
+<xsl:value-of select="document('../Data/Bkg_Copy00_lineTLN_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-lineTSSNoF">
+<xsl:choose>
+<xsl:when test="document('../Data/Bkg_Copy00_lineTSSNoF_text.xml')">
+<xsl:value-of select="document('../Data/Bkg_Copy00_lineTSSNoF_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-lineTSSNol">
+<xsl:choose>
+<xsl:when test="document('../Data/Bkg_Copy00_lineTSSNol_text.xml')">
+<xsl:value-of select="document('../Data/Bkg_Copy00_lineTSSNol_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Sched3-Copy00-lineTSSNoM">
+<xsl:choose>
+<xsl:when test="document('../Data/Bkg_Copy00_lineTSSNoM_text.xml')">
+<xsl:value-of select="document('../Data/Bkg_Copy00_lineTSSNoM_text.xml')//text"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="''"/>
+</xsl:otherwise>
+</xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="SchedA-Copy00-line05d">
@@ -8644,6 +9486,11 @@ $SST-Copy00-line081040"/>
     </copy00linechild>
   
 
+<copy00lineSName color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSName"/>
+    </copy00lineSName>
+  
+
 <copy00linecity color="blue">
     <xsl:value-of select="$Form1040-Copy00-linecity"/>
     </copy00linecity>
@@ -8974,9 +9821,19 @@ $SST-Copy00-line081040"/>
     </copy00lineTdate>
   
 
+<copy00lineTemail color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineTemail"/>
+    </copy00lineTemail>
+  
+
 <copy00lineTocc color="blue">
     <xsl:value-of select="$Form1040-Copy00-lineTocc"/>
     </copy00lineTocc>
+  
+
+<copy00lineTphone color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineTphone"/>
+    </copy00lineTphone>
   
 
 <copy00lineYa58 color="blue">
@@ -9059,29 +9916,29 @@ $SST-Copy00-line081040"/>
     </copy00lineFS>
   
 
-<copy00lineSFNI color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSFNI"/>
-    </copy00lineSFNI>
+<copy00lineSFNIa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSFNIa"/>
+    </copy00lineSFNIa>
   
 
-<copy00lineSLN color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSLN"/>
-    </copy00lineSLN>
+<copy00lineSLNa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSLNa"/>
+    </copy00lineSLNa>
   
 
-<copy00lineSSSNoF color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSSSNoF"/>
-    </copy00lineSSSNoF>
+<copy00lineSSSNoFa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoFa"/>
+    </copy00lineSSSNoFa>
   
 
-<copy00lineSSSNoL color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSSSNoL"/>
-    </copy00lineSSSNoL>
+<copy00lineSSSNoLa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoLa"/>
+    </copy00lineSSSNoLa>
   
 
-<copy00lineSSSNoM color="blue">
-    <xsl:value-of select="$Form1040-Copy00-lineSSSNoM"/>
-    </copy00lineSSSNoM>
+<copy00lineSSSNoMa color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoMa"/>
+    </copy00lineSSSNoMa>
   
 
 <copy00lineTFNI color="blue">
@@ -9237,6 +10094,36 @@ $SST-Copy00-line081040"/>
 <copy00lineQSS color="blue">
     <xsl:value-of select="$Form1040-Copy00-lineQSS"/>
     </copy00lineQSS>
+  
+
+<copy00lineSLN color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSLN"/>
+    </copy00lineSLN>
+  
+
+<copy00lineSFNI color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSFNI"/>
+    </copy00lineSFNI>
+  
+
+<copy00lineSSSNoF color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoF"/>
+    </copy00lineSSSNoF>
+  
+
+<copy00lineSSSNoM color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoM"/>
+    </copy00lineSSSNoM>
+  
+
+<copy00lineSSSNoL color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSSSNoL"/>
+    </copy00lineSSSNoL>
+  
+
+<copy00lineSchild color="blue">
+    <xsl:value-of select="$Form1040-Copy00-lineSchild"/>
+    </copy00lineSchild>
   
 </Form><Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Form1040ssa-Copy00">
 
@@ -10278,6 +11165,388 @@ $SST-Copy00-line081040"/>
   <xsl:value-of select="format-number($Form4952-Copy00-line04f, '#####0')"/>
   </copy00line04f>
 
+</Form><Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="QDCGTaxWkst-Copy00">
+
+<copy00line04 color="green">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line04, '#####0')"/>
+  </copy00line04>
+
+
+<copy00line15 color="green">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line15, '#####0')"/>
+  </copy00line15>
+
+
+<copy00line19 color="green">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line19, '#####0')"/>
+  </copy00line19>
+
+
+<copy00line23 color="green">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line23, '#####0')"/>
+  </copy00line23>
+
+
+<copy00line02 color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line02, '#####0')"/>
+  </copy00line02>
+
+
+<copy00line15D color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line15D, '#####0')"/>
+  </copy00line15D>
+
+
+<copy00line16D color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line16D, '#####0')"/>
+  </copy00line16D>
+
+
+<copy00line10407 color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line10407, '#####0')"/>
+  </copy00line10407>
+
+
+<copy00lineFS color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-lineFS, '#####0')"/>
+  </copy00lineFS>
+
+
+<copy00lineFEI3 color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-lineFEI3, '#####0')"/>
+  </copy00lineFEI3>
+
+
+<copy00line104015 color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line104015, '#####0')"/>
+  </copy00line104015>
+
+
+<copy00line11 color="magenta">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line11, '#####0')"/>
+  </copy00line11>
+
+
+<copy00linep15 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-linep15, '0.00##')"/>
+  </copy00linep15>
+
+
+<copy00linep20 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-linep20, '0.00##')"/>
+  </copy00linep20>
+
+
+<copy00line18 color="red">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line18, '#####0')"/>
+  </copy00line18>
+
+
+<copy00line21 color="red">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line21, '#####0')"/>
+  </copy00line21>
+
+
+<copy00line07 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line07, '#####0')"/>
+  </copy00line07>
+
+
+<copy00line08 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line08, '#####0')"/>
+  </copy00line08>
+
+
+<copy00line10 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line10, '#####0')"/>
+  </copy00line10>
+
+
+<copy00line14 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line14, '#####0')"/>
+  </copy00line14>
+
+
+<copy00line17 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line17, '#####0')"/>
+  </copy00line17>
+
+
+<copy00line25 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line25, '#####0')"/>
+  </copy00line25>
+
+
+<copy00line05 color="cyan">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line05, '#####0')"/>
+  </copy00line05>
+
+
+<copy00line16 color="cyan">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line16, '#####0')"/>
+  </copy00line16>
+
+
+<copy00line09 color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line09, '#####0')"/>
+  </copy00line09>
+
+
+<copy00line12 color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line12, '#####0')"/>
+  </copy00line12>
+
+
+<copy00line20 color="purple">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line20, '#####0')"/>
+  </copy00line20>
+
+
+<copy00line01 color="red">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line01, '#####0')"/>
+  </copy00line01>
+
+
+<copy00line03 color="red">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line03, '#####0')"/>
+  </copy00line03>
+
+
+<copy00line03y color="blue">
+    <xsl:value-of select="$QDCGTaxWkst-Copy00-line03y"/>
+    </copy00line03y>
+  
+
+<copy00line03n color="blue">
+    <xsl:value-of select="$QDCGTaxWkst-Copy00-line03n"/>
+    </copy00line03n>
+  
+
+<copy00line06 color="blue">
+    <xsl:value-of select="$QDCGTaxWkst-Copy00-line06"/>
+    </copy00line06>
+  
+
+<copy00line13 color="blue">
+    <xsl:value-of select="$QDCGTaxWkst-Copy00-line13"/>
+    </copy00line13>
+  
+
+<copy00line22 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line22, '#####0')"/>
+  </copy00line22>
+
+
+<copy00line24 color="blue">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line24, '#####0')"/>
+  </copy00line24>
+
+</Form><Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Sched3-Copy00">
+
+<copy00line07 color="green">
+  <xsl:value-of select="format-number($Sched3-Copy00-line07, '#####0')"/>
+  </copy00line07>
+
+
+<copy00line08 color="green">
+  <xsl:value-of select="format-number($Sched3-Copy00-line08, '#####0')"/>
+  </copy00line08>
+
+
+<copy00line14 color="green">
+  <xsl:value-of select="format-number($Sched3-Copy00-line14, '#####0')"/>
+  </copy00line14>
+
+
+<copy00line15 color="green">
+  <xsl:value-of select="format-number($Sched3-Copy00-line15, '#####0')"/>
+  </copy00line15>
+
+
+<copy00line06z color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06z, '#####0')"/>
+  </copy00line06z>
+
+
+<copy00line11 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line11, '#####0')"/>
+  </copy00line11>
+
+
+<copy00line13b color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line13b, '#####0')"/>
+  </copy00line13b>
+
+
+<copy00line13z color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line13z, '#####0')"/>
+  </copy00line13z>
+
+
+<copy00line01 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line01, '#####0')"/>
+  </copy00line01>
+
+
+<copy00line02 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line02, '#####0')"/>
+  </copy00line02>
+
+
+<copy00line03 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line03, '#####0')"/>
+  </copy00line03>
+
+
+<copy00line04 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line04, '#####0')"/>
+  </copy00line04>
+
+
+<copy00line05a color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line05a, '#####0')"/>
+  </copy00line05a>
+
+
+<copy00line05b color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line05b, '#####0')"/>
+  </copy00line05b>
+
+
+<copy00line06a color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06a, '#####0')"/>
+  </copy00line06a>
+
+
+<copy00line06b color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06b, '#####0')"/>
+  </copy00line06b>
+
+
+<copy00line06c color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06c, '#####0')"/>
+  </copy00line06c>
+
+
+<copy00line06d color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06d, '#####0')"/>
+  </copy00line06d>
+
+
+<copy00line06f color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06f, '#####0')"/>
+  </copy00line06f>
+
+
+<copy00line06g color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06g, '#####0')"/>
+  </copy00line06g>
+
+
+<copy00line06h color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06h, '#####0')"/>
+  </copy00line06h>
+
+
+<copy00line06i color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06i, '#####0')"/>
+  </copy00line06i>
+
+
+<copy00line06j color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06j, '#####0')"/>
+  </copy00line06j>
+
+
+<copy00line06k color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06k, '#####0')"/>
+  </copy00line06k>
+
+
+<copy00line06l color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06l, '#####0')"/>
+  </copy00line06l>
+
+
+<copy00line06m color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line06m, '#####0')"/>
+  </copy00line06m>
+
+
+<copy00line09 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line09, '#####0')"/>
+  </copy00line09>
+
+
+<copy00line10 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line10, '#####0')"/>
+  </copy00line10>
+
+
+<copy00line12 color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line12, '#####0')"/>
+  </copy00line12>
+
+
+<copy00line13a color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line13a, '#####0')"/>
+  </copy00line13a>
+
+
+<copy00line13c color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line13c, '#####0')"/>
+  </copy00line13c>
+
+
+<copy00line13d color="red">
+  <xsl:value-of select="format-number($Sched3-Copy00-line13d, '#####0')"/>
+  </copy00line13d>
+
+
+<copy00line06line color="blue">
+    <xsl:value-of select="$Sched3-Copy00-line06line"/>
+    </copy00line06line>
+  
+
+<copy00line13zline color="blue">
+    <xsl:value-of select="$Sched3-Copy00-line13zline"/>
+    </copy00line13zline>
+  
+
+<copy00lineSFNI color="blue">
+    <xsl:value-of select="$Sched3-Copy00-lineSFNI"/>
+    </copy00lineSFNI>
+  
+
+<copy00lineSLN color="blue">
+    <xsl:value-of select="$Sched3-Copy00-lineSLN"/>
+    </copy00lineSLN>
+  
+
+<copy00lineTFNI color="blue">
+    <xsl:value-of select="$Sched3-Copy00-lineTFNI"/>
+    </copy00lineTFNI>
+  
+
+<copy00lineTLN color="blue">
+    <xsl:value-of select="$Sched3-Copy00-lineTLN"/>
+    </copy00lineTLN>
+  
+
+<copy00lineTSSNoF color="blue">
+    <xsl:value-of select="$Sched3-Copy00-lineTSSNoF"/>
+    </copy00lineTSSNoF>
+  
+
+<copy00lineTSSNol color="blue">
+    <xsl:value-of select="$Sched3-Copy00-lineTSSNol"/>
+    </copy00lineTSSNol>
+  
+
+<copy00lineTSSNoM color="blue">
+    <xsl:value-of select="$Sched3-Copy00-lineTSSNoM"/>
+    </copy00lineTSSNoM>
+  
 </Form><Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="SchedA-Copy00">
 
 <copy00line05d color="green">

@@ -1,7 +1,7 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lineendYr</linename>
-<instructions>Enter ending year of fiscal year.</instructions>
-<IRSinstructions>../IRS/i1040gi.pdf#14</IRSinstructions>
+<instructions/>
+<IRSinstructions>../IRS/i1040gi.pdf#12</IRSinstructions>
 <notes/>
 <text/>
 <license>

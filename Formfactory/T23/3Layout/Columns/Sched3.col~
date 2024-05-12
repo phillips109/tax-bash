@@ -1,0 +1,44 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+      	!001   	!TFNI    	!tPull 	!      	!      	!      
+      	!002   	!TLN     	!tPull 	!      	!      	!      
+      	!003   	!SFNI    	!tPull 	!      	!      	!      
+      	!004   	!SLN     	!tPull 	!      	!      	!      
+      	!005   	!TSSNoF  	!tPull 	!      	!      	!      
+      	!006   	!TSSNoM  	!tPull 	!      	!      	!      
+      	!007   	!TSSNol  	!tPull 	!      	!      	!      
+      	!008   	!01      	!dlin  	!      	!      	!      
+      	!009   	!02      	!dlin  	!      	!      	!      
+      	!010   	!03      	!dlin  	!      	!      	!      
+      	!011   	!04      	!dlin  	!      	!      	!      
+      	!012   	!05a     	!dlin  	!      	!      	!      
+      	!013   	!05b     	!dlin  	!      	!      	!      
+      	!014   	!06a     	!dlin  	!      	!      	!      
+      	!015   	!06b     	!dlin  	!      	!      	!      
+      	!016   	!06c     	!dlin  	!      	!      	!      
+      	!017   	!06d     	!dlin  	!      	!      	!      
+      	!018   	!06f     	!dlin  	!      	!      	!      
+      	!019   	!06g     	!dlin  	!      	!      	!      
+      	!020   	!06h     	!dlin  	!      	!      	!      
+      	!021   	!06i     	!dlin  	!      	!      	!      
+      	!022   	!06j     	!dlin  	!      	!      	!      
+      	!023   	!06k     	!dlin  	!      	!      	!      
+      	!024   	!06l     	!dlin  	!      	!      	!      
+      	!025   	!06m     	!dlin  	!      	!      	!      
+      	!026   	!06z     	!dlin  	!      	!      	!      
+      	!027   	!06line  	!tlin  	!      	!      	!      
+      	!028   	!07      	!dlin  	!      	!      	!      
+      	!029   	!08      	!dlin  	!      	!      	!      
+      	!030   	!09      	!dlin  	!      	!      	!      
+      	!031   	!10      	!dlin  	!      	!      	!      
+      	!032   	!11      	!dlin  	!      	!      	!      
+      	!033   	!12      	!dlin  	!      	!      	!      
+      	!034   	!13a     	!dlin  	!      	!      	!      
+      	!035   	!13b     	!dlin  	!      	!      	!      
+      	!036   	!13c     	!dlin  	!      	!      	!      
+      	!037   	!13d     	!dlin  	!      	!      	!      
+      	!038   	!13z     	!dlin  	!      	!      	!      
+      	!039   	!14      	!dlin  	!      	!      	!      
+      	!040   	!15      	!dlin  	!      	!      	!      

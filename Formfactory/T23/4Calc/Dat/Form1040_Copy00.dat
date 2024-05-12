@@ -1447,6 +1447,9 @@ tlin
 child
 
 tlin
+SName
+
+tlin
 city
 
 tlin
@@ -1645,7 +1648,13 @@ tlin
 Tdate
 
 tlin
+Temail
+
+tlin
 Tocc
+
+tlin
+Tphone
 
 tlin
 Ya58
@@ -1773,7 +1782,7 @@ Bkg
 FS
 
 tPull
-SFNI
+SFNIa
 ''
 ''
 Bkg
@@ -1781,7 +1790,7 @@ Bkg
 SFNI
 
 tPull
-SLN
+SLNa
 ''
 ''
 Bkg
@@ -1789,7 +1798,7 @@ Bkg
 SLN
 
 tPull
-SSSNoF
+SSSNoFa
 ''
 ''
 Bkg
@@ -1797,7 +1806,7 @@ Bkg
 SSSNoF
 
 tPull
-SSSNoL
+SSSNoLa
 ''
 ''
 Bkg
@@ -1805,7 +1814,7 @@ Bkg
 SSSNoL
 
 tPull
-SSSNoM
+SSSNoMa
 ''
 ''
 Bkg
@@ -2347,6 +2356,85 @@ QSS
 CHOOS1
 WHEN01$Form1040-Copy00-lineFS = 'QSS'
 VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+
+ctext
+SLN
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSLNa
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+ctext
+SFNI
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSFNIa
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+ctext
+SSSNoF
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSSSNoFa
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+ctext
+SSSNoM
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSSSNoMa
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+ctext
+SSSNoL
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF$Form1040-Copy00-lineSSSNoLa
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+ctext
+Schild
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'MFS'
+VALUOF$Form1040-Copy00-lineSName
+WHEN02
+WHEN01$Form1040-Copy00-lineFS = 'HOH'
+VALUOF$Form1040-Copy00-linechild
+WHEN02
+WHEN01$Form1040-Copy00-lineFS = 'QSS'
+VALUOF$Form1040-Copy00-linechild
 WHEN02
 OTHER1
 VALUOF''

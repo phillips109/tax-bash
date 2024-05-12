@@ -1,6 +1,6 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lined4SM</linename>
-<instructions>Enter next two digits of fourth dependent's SS number</instructions>
+<instructions/>
 <IRSinstructions>../IRS/i1040gi.pdf#17</IRSinstructions>
 <notes/>
 <text/>

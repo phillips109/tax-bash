@@ -1,7 +1,7 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lineFphone</linename>
-<instructions>Enter phone number of preparer</instructions>
-<IRSinstructions>../IRS/i1040gi.pdf#64</IRSinstructions>
+<instructions/>
+<IRSinstructions>../IRS/i1040gi.pdf#63</IRSinstructions>
 <notes/>
 <text/>
 <license>

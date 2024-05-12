@@ -1,6 +1,6 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lineaddr1</linename>
-<instructions>Enter address: line1</instructions>
+<instructions/>
 <IRSinstructions>../IRS/i1040gi.pdf#12</IRSinstructions>
 <notes/>
 <text/>

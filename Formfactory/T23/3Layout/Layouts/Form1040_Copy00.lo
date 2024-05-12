@@ -162,7 +162,7 @@ color='red'>
 <dummy>'x'</dummy>
 </calc>
 
-<calc number='MFJ'
+<calc number='MFS'
 top='2.70in'
 height='0.15in'
 color='red'>
@@ -182,14 +182,14 @@ font-family='Times'
 text-align='center'
 top='0.00in'>
 
-<calc number='MFS'
+<calc number='HOH'
 top='2.36in'
 height='0.15in'
 color='red'>
 <dummy>'x'</dummy>
 </calc>
 
-<calc number='MFJ'
+<calc number='QSS'
 top='2.70in'
 height='0.15in'
 color='red'>
@@ -209,13 +209,15 @@ font-family='Times'
 text-align='left'
 top='0.00in'>
 
-<tlin name='child'
+<ctxt name='Schild'
 top='3.03in'
 height='0.15in'
-color='blue'>
-<text>Francis Brown</text>
-<blank></blank>
-</tlin>
+color='purple'>
+<dummy>Francis Brown</dummy>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>Schild</line2>
+</ctxt>
 
 </col>
 *******************************************************
@@ -236,17 +238,18 @@ height='0.15in'
 color='purple'>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>TFNI</line2>
+<line2>lineTFNI</line2>
 </tPull>
 
-<tPull name='SFNI'
+<ctxt name='SFNI'
 top='2.12in'
 height='0.15in'
 color='purple'>
+<dummy>Jeanne E</dummy>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>SFNI</line2>
-</tPull>
+<line2>lineSFNI</line2>
+</ctxt>
 
 </col>
 *******************************************************
@@ -267,17 +270,18 @@ height='0.15in'
 color='purple'>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>TLN</line2>
+<line2>lineTLN</line2>
 </tPull>
 
-<tPull name='SLN'
+<ctxt name='SLN'
 top='2.12in'
 height='0.15in'
 color='purple'>
+<dummy>Taxpayor</dummy>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>SLN</line2>
-</tPull>
+<line2>lineSLN</line2>
+</ctxt>
 
 </col>
 *******************************************************
@@ -298,17 +302,18 @@ height='0.15in'
 color='purple'>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>TSSNoF</line2>
+<line2>lineTSSNoF</line2>
 </tPull>
 
-<tPull name='SSSNoF'
+<ctxt name='SSSNoF'
 top='2.12in'
 height='0.15in'
 color='purple'>
+<dummy>987</dummy>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>SSSNoF</line2>
-</tPull>
+<line2>lineSSSNoF</line2>
+</ctxt>
 
 </col>
 *******************************************************
@@ -329,17 +334,18 @@ height='0.15in'
 color='purple'>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>TSSNoM</line2>
+<line2>lineTSSNoM</line2>
 </tPull>
 
-<tPull name='SSSNoM'
+<ctxt name='SSSNoM'
 top='2.12in'
 height='0.15in'
 color='purple'>
+<dummy>65</dummy>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>SSSNoM</line2>
-</tPull>
+<line2>lineSSSNoM</line2>
+</ctxt>
 
 </col>
 *******************************************************
@@ -360,17 +366,18 @@ height='0.15in'
 color='purple'>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>TSSNoL</line2>
+<line2>lineTSSNoL</line2>
 </tPull>
 
-<tPull name='SSSNoL'
+<ctxt name='SSSNoL'
 top='2.12in'
 height='0.15in'
 color='purple'>
+<dummy>4321</dummy>
 <form>Bkg</form>
 <copy>00</copy>
-<line2>SSSNoL</line2>
-</tPull>
+<line2>lineSSSNoL</line2>
+</ctxt>
 
 </col>
 *******************************************************

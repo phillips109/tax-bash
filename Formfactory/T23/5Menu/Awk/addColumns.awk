@@ -14,6 +14,9 @@ BEGIN {
 {
          if ( form == "Bkg" )         file = "Bkg.pdf"
     else if ( form == "Form1040" )    file = "i1040gi.pdf"
+    else if ( form == "Sched1" )      file = "i1040gi.pdf"	 
+    else if ( form == "Sched2" )      file = "i1040gi.pdf"	 
+    else if ( form == "Sched3" )      file = "i1040gi.pdf"	 
     else if ( form == "SchedA" )      file = "i1040sca.pdf"
     else if ( form == "SchedB" )      file = "i1040sb.pdr" 
     else if ( form == "SchedC" )      file = "i1040sc.pdf"

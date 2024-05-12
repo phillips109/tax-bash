@@ -1,0 +1,31 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+dlin      	!01        	!008       	!Enter foreign tax credit from Form 1116.                                                            	!i1040gi.pdf         	!102   	!     
+dlin      	!02        	!009       	!Enter credit for chaild and dependent care expenses. Form 2441.                                     	!i1040gi.pdf         	!102  	!     
+dlin      	!03        	!010       	!Enter education credits from Form 8863 line 19.                                                     	!i1040gi.pdf         	!102  	!     
+dlin      	!04        	!011       	!Enter retirement savings contributions credit. Form 8880.                                           	!i1040gi.pdf         	!102  	!     
+dlin      	!05a       	!012       	!Enter residentioal clean energy credit. Form 5695 line.                                             	!i1040gi.pdf         	!103  	!     
+dlin      	!05b       	!013       	!Enter energy efficient home improvement credit. Forom 5695 line32.                                  	!i1040gi.pdf         	!103  	!     
+dlin      	!06a       	!014       	!Enter general business credit. Form 3800.                                                           	!i1040gi.pdf         	!103  	!     
+dlin      	!06b       	!015       	!Enter credit for prior year minimum tax. Form 3800.                                                 	!i1040gi.pdf         	!103  	!     
+dlin      	!06c       	!016       	!Enter adoption credit. Form8839.                                                                    	!i1040gi.pdf         	!103  	!     
+dlin      	!06d       	!017       	!Enter credit for the elderly or disables. Schedule R.                                               	!i1040gi.pdf         	!103  	!     
+dlin      	!06f       	!018       	!Enter clean vehicle credit. Fomr 8936.                                                              	!i1040gi.pdf         	!103  	!     
+dlin      	!06g       	!019       	!Enter mortgage interes credit. Form 8396.                                                           	!i1040gi.pdf         	!103  	!     
+dlin      	!06h       	!020       	!Enter District of Columbia firsts-time homebuyer credit. Form 8859.                                 	!i1040gi.pdf         	!103  	!     
+dlin      	!06i       	!021       	!Enter qualified electric credit. Form8834.                                                          	!i1040gi.pdf         	!103  	!     
+dlin      	!06j       	!022       	!Enter alternative fuel vehicle refueling property credit. Form 8911.                                	!i1040gi.pdf         	!103  	!     
+dlin      	!06k       	!023       	!Enter credit to holders of tax credit bonds. Form 8912.                                             	!i1040gi.pdf         	!103  	!     
+dlin      	!06l       	!024       	!Enter amount on Form  8978, line 14.                                                                	!i1040gi.pdf         	!103  	!     
+dlin      	!06m       	!025       	!Enter credit for previously owned clean vehicles. Form 8936.                                        	!i1040gi.pdf         	!104  	!     
+dlin      	!06z       	!026       	!Enter other nonrefundable credits.                                                                  	!i1040gi.pdf         	!104  	!     
+tlin      	!06line    	!027       	!Enter types of credit.                                                                              	!i1040gi.pdf         	!104  	!     
+dlin      	!09        	!030       	!Enter net premium tax credit. Form8962.                                                             	!i1040gi.pdf         	!104  	!     
+dlin      	!10        	!031       	!Enter amount paid with request for extension to file.                                               	!i1040gi.pdf         	!104  	!     
+dlin      	!11        	!032       	!Enter excess social security and tire 1 RRTA tax withheld.                                          	!i1040gi.pdf         	!104  	!     
+dlin      	!12        	!033       	!Enter credit for federal tax on fuels. Form 4136.                                                   	!i1040gi.pdf         	!104  	!     
+dlin      	!13a       	!034       	!Enter credits from Form2439.                                                                        	!i1040gi.pdf         	!104  	!     
+dlin      	!13b       	!035       	!Enter credit for repayment of amounts included in income from earlier years.                        	!i1040gi.pdf         	!104  	!     
+dlin      	!13c       	!036       	!Enter elective payment election amount. Form 3800, Paart III, line 6, column i.                     	!i1040gi.pdf         	!104  	!     
+dlin      	!13d       	!037       	!Enter deferred amount of net 966 tax liabiity.                                                      	!i1040gi.pdf         	!104  	!     
+dlin      	!13z       	!038       	!Enter other payments or refundable credits.                                                         	!i1040gi.pdf         	!104  	!     
+tlin      	!13zline   	!041       	!Enter types of credit.                                                                              	!i1040gi.pdf         	!104  	!     

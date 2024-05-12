@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line01b</linename>
-<instructions>Enter household employee wages not reported on Form(s) W-2</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#24</IRSInstructions>
 <notes/>
 <override/>

@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line05a</linename>
-<instructions>Enter nontaxable pension and annuity income (usually 0)</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#27</IRSInstructions>
 <notes/>
 <override/>

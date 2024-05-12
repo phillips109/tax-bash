@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><xslt:stylesheet xmlns:xslt="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0">
+<xslt:stylesheet xmlns:xslt="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0">
 <xslt:template match="Form">
 <fo:root>
 <xslt:text disable-output-escaping="yes">
@@ -36,7 +36,8 @@
 <fo:block-container position="absolute" top="0.00in" left="3.16in" width="0.78in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="0.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linestMon_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linestMon_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linestMon_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -46,7 +47,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.00in" width="0.2in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="0.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linestDay_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linestDay_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linestDay_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -56,7 +58,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.84in" width="0.84in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="0.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linestMon_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linestMon_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linestMon_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -66,7 +69,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.72in" width="0.2in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="0.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineendDay_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineendDay_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineendDay_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -76,7 +80,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.15in" width="0.25in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="0.48in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineendYr_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineendYr_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineendYr_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -86,9 +91,7 @@
 <fo:block-container position="absolute" top="0.00in" left="1.44in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.36in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineS/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineS='0'">
 	</xslt:when>
@@ -100,9 +103,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.53in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineMFJ/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00lineMFJ='0'">
 	</xslt:when>
@@ -114,14 +115,12 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.70in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineMFJ/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
-	<xslt:when test="copy00lineMFJ='0'">
+	<xslt:when test="copy00lineMFS='0'">
 	</xslt:when>
 	<xslt:otherwise>
-	<xslt:value-of select="copy00lineMFJ"/>
+	<xslt:value-of select="copy00lineMFS"/>
 	</xslt:otherwise>
 	</xslt:choose>
       </fo:block>
@@ -133,28 +132,24 @@
 <fo:block-container position="absolute" top="0.00in" left="4.94in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.36in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineMFS/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
-	<xslt:when test="copy00lineMFS='0'">
+	<xslt:when test="copy00lineHOH='0'">
 	</xslt:when>
 	<xslt:otherwise>
-	<xslt:value-of select="copy00lineMFS"/>
+	<xslt:value-of select="copy00lineHOH"/>
 	</xslt:otherwise>
 	</xslt:choose>
       </fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.70in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineMFJ/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
-	<xslt:when test="copy00lineMFJ='0'">
+	<xslt:when test="copy00lineQSS='0'">
 	</xslt:when>
 	<xslt:otherwise>
-	<xslt:value-of select="copy00lineMFJ"/>
+	<xslt:value-of select="copy00lineQSS"/>
 	</xslt:otherwise>
 	</xslt:choose>
       </fo:block>
@@ -166,8 +161,18 @@
 <fo:block-container position="absolute" top="0.00in" left="4.00in" width="3.83in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="3.03in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linechild_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linechild_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/Form1040_Copy00_Schild.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00Schild"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -176,8 +181,7 @@
 <fo:block-container position="absolute" top="-0.95in" left="0.53in" width="2.71in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="1.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
 	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTFNI_text.xml')//text"/>
       </fo:basic-link>
@@ -185,10 +189,16 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSFNI_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSFNI.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSFNI"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -199,8 +209,7 @@
 <fo:block-container position="absolute" top="-0.95in" left="3.34in" width="3.07in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="1.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
 	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTLN_text.xml')//text"/>
       </fo:basic-link>
@@ -208,10 +217,16 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSLN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSLN.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSLN"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -222,8 +237,7 @@
 <fo:block-container position="absolute" top="-0.93in" left="6.55in" width="0.35in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
 	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoF_text.xml')//text"/>
       </fo:basic-link>
@@ -231,10 +245,16 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSSSNoF_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSSSNoF.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSSSNoF"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -245,8 +265,7 @@
 <fo:block-container position="absolute" top="-0.93in" left="6.96in" width="0.25in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
 	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoM_text.xml')//text"/>
       </fo:basic-link>
@@ -254,10 +273,16 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSSSNoM_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSSSNoM.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSSSNoM"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -268,8 +293,7 @@
 <fo:block-container position="absolute" top="-0.93in" left="7.22in" width="0.68in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="1.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
 	<xslt:value-of select="document('../Data/Bkg_Copy00_lineTSSNoL_text.xml')//text"/>
       </fo:basic-link>
@@ -277,10 +301,16 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSSSNoL_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple">
+<fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSSSNoL.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSSSNoL"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -291,7 +321,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="0.53in" width="2.77in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="2.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineaddr1_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineaddr1_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineaddr1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -301,7 +332,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="3.34in" width="2.4in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="2.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineaddr2_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineaddr2_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineaddr2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -311,7 +343,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="5.85in" width="0.56in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineaptNo_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineaptNo_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineaptNo_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -321,7 +354,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="0.53in" width="4.11in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="2.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linecity_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linecity_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linecity_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -331,7 +365,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="4.74in" width="0.82in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineST_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineST_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineST_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -341,7 +376,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="5.64in" width="0.8in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linezip_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linezip_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linezip_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -351,7 +387,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="0.53in" width="3.01in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="3.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineFCntry_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineFCntry_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineFCntry_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -361,7 +398,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="3.67in" width="1.85in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="3.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineFprov_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineFprov_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineFprov_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -371,7 +409,8 @@
 <fo:block-container position="absolute" top="-0.93in" left="5.63in" width="0.82in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="3.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineFzip_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineFzip_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineFzip_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -381,12 +420,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.01in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.17in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linecampme_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linecampme_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linecampme_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.43in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linedigY_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linedigY_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linedigY_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -396,12 +437,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.51in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="2.17in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linecampS_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linecampS_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linecampS_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.43in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linedigN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linedigN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linedigN_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -411,7 +454,8 @@
 <fo:block-container position="absolute" top="0.00in" left="2.53in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="3.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineyoudep_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineyoudep_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineyoudep_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -421,7 +465,8 @@
 <fo:block-container position="absolute" top="0.00in" left="3.93in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="3.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineSdep_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineSdep_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineSdep_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -431,7 +476,8 @@
 <fo:block-container position="absolute" top="0.00in" left="1.34in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="3.78in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineSiUali_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineSiUali_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineSiUali_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -441,7 +487,8 @@
 <fo:block-container position="absolute" top="0.00in" left="1.64in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.02in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineYa58_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineYa58_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineYa58_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -451,7 +498,8 @@
 <fo:block-container position="absolute" top="0.00in" left="3.64in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.02in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineYblind_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineYblind_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineYblind_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -461,7 +509,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.03in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.02in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineSa58_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineSa58_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineSa58_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -471,7 +520,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.03in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.02in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineSblind_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineSblind_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineSblind_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -481,22 +531,26 @@
 <fo:block-container position="absolute" top="0.00in" left="1.32in" width="1.04in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="4.56in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1name_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1name_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1name_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2name_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2name_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2name_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3name_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3name_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3name_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4name_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4name_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4name_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -506,22 +560,26 @@
 <fo:block-container position="absolute" top="0.00in" left="2.40in" width="1.27in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="4.56in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1LN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1LN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1LN_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2LN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2LN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2LN_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3LN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3LN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3LN_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4LN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4LN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4LN_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -531,22 +589,26 @@
 <fo:block-container position="absolute" top="0.00in" left="3.73in" width="0.3in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.56in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1SF_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1SF_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1SF_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2SF_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2SF_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2SF_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3SF_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3SF_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3SF_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4SF_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4SF_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4SF_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -556,22 +618,26 @@
 <fo:block-container position="absolute" top="0.00in" left="4.09in" width="0.21in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.56in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1SM_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1SM_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1SM_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2SM_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2SM_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2SM_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3SM_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3SM_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3SM_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4SM_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4SM_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4SM_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -581,22 +647,26 @@
 <fo:block-container position="absolute" top="0.00in" left="4.36in" width="0.5in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.56in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1SL_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1SL_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1SL_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2SL_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2SL_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2SL_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3SL_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3SL_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3SL_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4SL_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4SL_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4SL_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -606,22 +676,26 @@
 <fo:block-container position="absolute" top="0.00in" left="4.93in" width="0.8in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.56in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1rel_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1rel_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1rel_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2rel_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2rel_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2rel_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3rel_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3rel_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3rel_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4rel_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4rel_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4rel_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -631,22 +705,26 @@
 <fo:block-container position="absolute" top="0.00in" left="6.30in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.53in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1CTC_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1CTC_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1CTC_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.70in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2CTC_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2CTC_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2CTC_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.86in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3CTC_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3CTC_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3CTC_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.03in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4CTC_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4CTC_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4CTC_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -656,22 +734,26 @@
 <fo:block-container position="absolute" top="0.00in" left="7.41in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.53in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined1cod_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined1cod_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined1cod_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.70in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined2cod_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined2cod_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined2cod_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.86in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined3cod_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined3cod_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined3cod_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.03in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lined4cod_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lined4cod_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lined4cod_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -681,7 +763,8 @@
 <fo:block-container position="absolute" top="0.00in" left="1.11in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="5.03in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linedgt4_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linedgt4_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linedgt4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -691,9 +774,7 @@
 <fo:block-container position="absolute" top="0.00in" left="7.03in" width="0.91in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="5.22in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01a='0'">
 	</xslt:when>
@@ -705,9 +786,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.39in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01b='0'">
 	</xslt:when>
@@ -719,9 +798,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.55in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01c/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01c='0'">
 	</xslt:when>
@@ -733,9 +810,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01d/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01d='0'">
 	</xslt:when>
@@ -747,9 +822,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01e/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01e='0'">
 	</xslt:when>
@@ -761,9 +834,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.06in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01f/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01f='0'">
 	</xslt:when>
@@ -775,9 +846,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.22in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01g/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01g='0'">
 	</xslt:when>
@@ -789,9 +858,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.38in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01h/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01h='0'">
 	</xslt:when>
@@ -803,9 +870,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line01z/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line01z='0'">
 	</xslt:when>
@@ -817,9 +882,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.89in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line02b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line02b='0'">
 	</xslt:when>
@@ -831,9 +894,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.07in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line03b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line03b='0'">
 	</xslt:when>
@@ -845,9 +906,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.22in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line04b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line04b='0'">
 	</xslt:when>
@@ -859,9 +918,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.38in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line05b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line05b='0'">
 	</xslt:when>
@@ -873,9 +930,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.55in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line06b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line06b='0'">
 	</xslt:when>
@@ -887,9 +942,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line07/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line07='0'">
 	</xslt:when>
@@ -901,9 +954,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line08/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line08='0'">
 	</xslt:when>
@@ -915,9 +966,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.22in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line09/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line09='0'">
 	</xslt:when>
@@ -929,9 +978,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.38in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line10/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line10='0'">
 	</xslt:when>
@@ -943,9 +990,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.56in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line11/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line11='0'">
 	</xslt:when>
@@ -957,9 +1002,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line12/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line12='0'">
 	</xslt:when>
@@ -971,9 +1014,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line13/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line13='0'">
 	</xslt:when>
@@ -985,9 +1026,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line14/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line14='0'">
 	</xslt:when>
@@ -999,9 +1038,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.22in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line15/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line15='0'">
 	</xslt:when>
@@ -1018,9 +1055,7 @@
 <fo:block-container position="absolute" top="0.00in" left="3.52in" width="0.91in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="6.89in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line02a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line02a='0'">
 	</xslt:when>
@@ -1032,9 +1067,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.07in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line03a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line03a='0'">
 	</xslt:when>
@@ -1046,9 +1079,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.22in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line04a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line04a='0'">
 	</xslt:when>
@@ -1060,9 +1091,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.38in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line05a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line05a='0'">
 	</xslt:when>
@@ -1074,9 +1103,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.55in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line06a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line06a='0'">
 	</xslt:when>
@@ -1093,9 +1120,7 @@
 <fo:block-container position="absolute" top="0.00in" left="5.74in" width="0.88in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="6.55in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line1i/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line1i='0'">
 	</xslt:when>
@@ -1112,12 +1137,14 @@
 <fo:block-container position="absolute" top="0.00in" left="6.47in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="7.69in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line06cCk_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line06cCk_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line06cCk_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.86in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line07Ck_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line07Ck_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line07Ck_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1138,7 +1165,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.13in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="0.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line8814_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line8814_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line8814_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1148,7 +1176,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.83in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="0.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line4972_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line4972_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line4972_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1158,7 +1187,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.53in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="0.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineOther_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineOther_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineOther_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1168,7 +1198,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.70in" width="0.46in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="0.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linetOther_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linetOther_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linetOther_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1178,9 +1209,7 @@
 <fo:block-container position="absolute" top="0.00in" left="7.03in" width="0.88in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="0.64in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line16/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line16='0'">
 	</xslt:when>
@@ -1192,9 +1221,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="0.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line17/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line17='0'">
 	</xslt:when>
@@ -1206,9 +1233,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="0.97in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line18/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line18='0'">
 	</xslt:when>
@@ -1220,9 +1245,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.13in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line19/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line19='0'">
 	</xslt:when>
@@ -1234,9 +1257,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line20/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line20='0'">
 	</xslt:when>
@@ -1248,9 +1269,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line21/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line21='0'">
 	</xslt:when>
@@ -1262,9 +1281,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line22/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line22='0'">
 	</xslt:when>
@@ -1276,9 +1293,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line23/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line23='0'">
 	</xslt:when>
@@ -1290,9 +1305,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="1.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line24/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line24='0'">
 	</xslt:when>
@@ -1304,9 +1317,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line25d/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line25d='0'">
 	</xslt:when>
@@ -1318,9 +1329,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line26/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line26='0'">
 	</xslt:when>
@@ -1332,9 +1341,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line32/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line32='0'">
 	</xslt:when>
@@ -1346,9 +1353,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.15in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line33/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line33='0'">
 	</xslt:when>
@@ -1360,9 +1365,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line34/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line34='0'">
 	</xslt:when>
@@ -1374,9 +1377,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line35a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line35a='0'">
 	</xslt:when>
@@ -1388,9 +1389,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line37/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line37='0'">
 	</xslt:when>
@@ -1407,9 +1406,7 @@
 <fo:block-container position="absolute" top="0.00in" left="5.74in" width="0.88in" background-color="transparent" font-family="Times" font-size="12pt" text-align="right">
 
 <fo:block-container position="absolute" top="2.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line25a/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line25a='0'">
 	</xslt:when>
@@ -1421,9 +1418,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line25b/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line25b='0'">
 	</xslt:when>
@@ -1435,9 +1430,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line25c/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line25c='0'">
 	</xslt:when>
@@ -1449,9 +1442,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.13in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line27/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line27='0'">
 	</xslt:when>
@@ -1463,9 +1454,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.30in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line28/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line28='0'">
 	</xslt:when>
@@ -1477,9 +1466,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.47in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line29/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line29='0'">
 	</xslt:when>
@@ -1491,9 +1478,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line31/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line31='0'">
 	</xslt:when>
@@ -1505,9 +1490,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.96in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line36/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line36='0'">
 	</xslt:when>
@@ -1519,9 +1502,7 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="5.46in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00line38/@color"/>
-	</xslt:attribute>
+<fo:block height="0.15in" background-color="transparent" color="black">
 	<xslt:choose>
 	<xslt:when test="copy00line38='0'">
 	</xslt:when>
@@ -1538,7 +1519,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.46in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.45in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35aCk_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35aCk_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35aCk_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1548,12 +1530,14 @@
 <fo:block-container position="absolute" top="0.00in" left="2.42in" width="0.15in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b1_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b1_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d1_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d1_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1563,12 +1547,14 @@
 <fo:block-container position="absolute" top="0.00in" left="2.62in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b2_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b2_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d2_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d2_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1578,12 +1564,14 @@
 <fo:block-container position="absolute" top="0.00in" left="2.82in" width="0.15in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b3_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b3_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d3_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d3_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1593,12 +1581,14 @@
 <fo:block-container position="absolute" top="0.00in" left="3.02in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b4_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b4_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d4_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d4_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1608,12 +1598,14 @@
 <fo:block-container position="absolute" top="0.00in" left="3.22in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b5_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b5_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d5_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d5_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1623,12 +1615,14 @@
 <fo:block-container position="absolute" top="0.00in" left="3.42in" width="0.15in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b6_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b6_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d6_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d6_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1638,12 +1632,14 @@
 <fo:block-container position="absolute" top="0.00in" left="3.62in" width="0.13in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b7_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b7_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b7_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d7_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d7_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d7_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1653,12 +1649,14 @@
 <fo:block-container position="absolute" top="0.00in" left="3.82in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b8_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b8_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b8_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d8_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d8_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d8_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1668,12 +1666,14 @@
 <fo:block-container position="absolute" top="0.00in" left="4.02in" width="0.17in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.62in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35b9_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35b9_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35b9_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d9_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d9_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d9_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1683,7 +1683,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.25in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35cCkg_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35cCkg_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35cCkg_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1693,7 +1694,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.04in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.63in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35cSvg_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35cSvg_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35cSvg_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1703,7 +1705,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.21in" width="0.17in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d10_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d10_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d10_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1713,7 +1716,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.42in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d11_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d11_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d11_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1723,7 +1727,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.62in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d12_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d12_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d12_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1733,7 +1738,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.82in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d13_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d13_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d13_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1743,7 +1749,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.02in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d14_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d14_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d14_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1753,7 +1760,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.22in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d15_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d15_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d15_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1763,7 +1771,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.42in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d16_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d16_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d16_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1773,7 +1782,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.62in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="4.80in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line35d17_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line35d17_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line35d17_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1783,7 +1793,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.70in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="5.76in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line39Y_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line39Y_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line39Y_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1793,7 +1804,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.10in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="5.76in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line39N_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line39N_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line39N_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1803,7 +1815,8 @@
 <fo:block-container position="absolute" top="0.00in" left="2.02in" width="2.05in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="6.04in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineDname_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineDname_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineDname_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1813,7 +1826,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.62in" width="1.25in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.04in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineDphone_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineDphone_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineDphone_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1823,7 +1837,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.02in" width="0.15in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.04in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line421_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line421_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line421_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1833,7 +1848,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.22in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.04in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line422_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line422_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line422_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1843,7 +1859,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.42in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.04in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line423_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line423_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line423_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1853,7 +1870,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.62in" width="0.16in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.04in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line424_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line424_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line424_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1863,7 +1881,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.82in" width="0.15in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.04in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line425_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line425_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line425_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1873,12 +1892,14 @@
 <fo:block-container position="absolute" top="0.00in" left="3.75in" width="0.85in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.75in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineTdate_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineTdate_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineTdate_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.19in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineSdate_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineSdate_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineSdate_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1888,12 +1909,14 @@
 <fo:block-container position="absolute" top="0.00in" left="4.62in" width="1.74in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.75in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineTocc_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineTocc_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineTocc_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.19in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineSocc_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineSocc_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineSocc_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1903,12 +1926,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.02in" width="0.12in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line431_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line431_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line431_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.21in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line441_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line441_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line441_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1918,12 +1943,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.18in" width="0.14in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line432_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line432_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line432_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.21in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line442_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line442_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line442_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1933,12 +1960,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.36in" width="0.12in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line433_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line433_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line433_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.21in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line443_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line443_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line443_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1948,12 +1977,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.52in" width="0.12in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line434_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line434_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line434_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.21in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line444_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line444_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line444_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1963,12 +1994,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.69in" width="0.12in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line435_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line435_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line435_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.21in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line445_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line445_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line445_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1978,12 +2011,14 @@
 <fo:block-container position="absolute" top="0.00in" left="7.86in" width="0.11in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="6.79in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line436_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line436_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line436_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.21in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_line446_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_line446_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_line446_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -1993,7 +2028,8 @@
 <fo:block-container position="absolute" top="0.00in" left="1.95in" width="1.81in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="7.38in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineTphone_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineTphone_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineTphone_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2003,7 +2039,8 @@
 <fo:block-container position="absolute" top="0.00in" left="4.52in" width="3.42in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="7.38in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineTemail_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineTemail_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineTemail_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2013,7 +2050,8 @@
 <fo:block-container position="absolute" top="0.00in" left="1.29in" width="1.66in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="7.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linePname_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linePname_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linePname_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2023,7 +2061,8 @@
 <fo:block-container position="absolute" top="0.00in" left="5.36in" width="0.9in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="7.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linePdate_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linePdate_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linePdate_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2033,7 +2072,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.24in" width="0.72in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="7.72in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linePTIN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linePTIN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_linePTIN_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2043,7 +2083,8 @@
 <fo:block-container position="absolute" top="0.00in" left="7.13in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
 
 <fo:block-container position="absolute" top="7.68in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineSECk_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineSECk_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineSECk_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2053,7 +2094,8 @@
 <fo:block-container position="absolute" top="0.00in" left="2.02in" width="4.31in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="7.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineFname_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineFname_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineFname_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2063,7 +2105,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.96in" width="0.96in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="7.88in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineFphone_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineFphone_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineFphone_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2073,7 +2116,8 @@
 <fo:block-container position="absolute" top="0.00in" left="2.12in" width="4.21in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="8.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineFaddr_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineFaddr_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineFaddr_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -2083,7 +2127,8 @@
 <fo:block-container position="absolute" top="0.00in" left="6.96in" width="0.96in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="8.05in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_lineFEIN_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_lineFEIN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineFEIN_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 

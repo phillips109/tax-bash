@@ -62,14 +62,14 @@ col   	!1a    	!0.00  	!center	!1.44  	!1.54
 xtcalc	!2name	!3top	!4dummy
 tcalc	!S	!2.36	!'x'		!''
 tcalc	!MFJ	!2.53	!'x'		!''
-tcalc	!MFJ	!2.70	!'x'		!''
+tcalc	!MFS	!2.70	!'x'		!''
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1aaa  	!0.00  	!center	!4.94  	!5.04
 xtcalc	!2name	!3top	!4dummy
-tcalc	!MFS	!2.36	!'x'		!''
-tcalc	!MFJ	!2.70	!'x'		!''
+tcalc	!HOH	!2.36	!'x'		!''
+tcalc	!QSS	!2.70	!'x'		!''
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -83,42 +83,42 @@ xEndcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1bb   	!0.00  	!left	!4.00  	!7.83
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!child 	!3.03  	!Francis Brown     	!            	!      	!
+ctxt  	!Schild	!3.03  	!Francis Brown     	!Form1040      	!00    	!Schild
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1bbb  	!-0.95 	!left  	!0.53  	!3.24
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TFNI  	!1.80  	!John Q            	!Bkg		!00    	!TFNI
-tPull 	!SFNI  	!2.12  	!Jeanne E          	!Bkg    	!00   	!SFNI
+tPull  	!TFNI  	!1.80  	!John Q            	!Bkg		!00    	!lineTFNI
+ctxt 	!SFNI  	!2.12  	!Jeanne E          	!Bkg    	!00   	!lineSFNI
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1bbbb 	!-0.95 	!left  	!3.34  	!6.41
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TLN   	!1.80  	!Taxpayor          	!Bkg        	!00    	!TLN
-tPull  	!SLN   	!2.12  	!Taxpayor          	!Bkg        	!00   	!SLN
+tPull  	!TLN   	!1.80  	!Taxpayor          	!Bkg        	!00    	!lineTLN
+ctxt  	!SLN   	!2.12  	!Taxpayor          	!Bkg        	!00   	!lineSLN
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1c    	!-0.93 	!center	!6.55  	!6.90
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TSSNoF	!1.80  	!123               	!Bkg         	!00    	!TSSNoF
-tPull 	!SSSNoF	!2.12  	!987               	!Bkg         	!00    	!SSSNoF
+tPull  	!TSSNoF	!1.80  	!123               	!Bkg         	!00    	!lineTSSNoF
+ctxt 	!SSSNoF	!2.12  	!987               	!Bkg         	!00    	!lineSSSNoF
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1cc   	!-0.93 	!center	!6.96  	!7.21
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TSSNoM	!1.80  	!45                	!Bkg         	!00    	!TSSNoM
-tPull 	!SSSNoM	!2.12  	!65                	!Bkg         	!00    	!SSSNoM
+tPull  	!TSSNoM	!1.80  	!45                	!Bkg         	!00    	!lineTSSNoM
+ctxt 	!SSSNoM	!2.12  	!65                	!Bkg         	!00    	!lineSSSNoM
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1ccc  	!-0.93 	!center	!7.22  	!7.90
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TSSNoL	!1.80  	!6789              	!Bkg         	!00    	!TSSNoL
-tPull 	!SSSNoL	!2.12  	!4321              	!Bkg          	!00    	!SSSNoL
+tPull  	!TSSNoL	!1.80  	!6789              	!Bkg         	!00    	!lineTSSNoL
+ctxt 	!SSSNoL	!2.12  	!4321              	!Bkg          	!00    	!lineSSSNoL
 Endcol*******************
 
 xcol  	!2name 	!3top 	!4align	!5left 	!6right

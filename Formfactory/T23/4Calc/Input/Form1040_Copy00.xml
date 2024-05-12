@@ -1993,6 +1993,15 @@
 <line2></line2>
 </line>
 
+<line name='SName'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
 <line name='city'
  color='blue'>
 <type>tlin</type>
@@ -2587,7 +2596,25 @@
 <line2></line2>
 </line>
 
+<line name='Temail'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
 <line name='Tocc'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Tphone'
  color='blue'>
 <type>tlin</type>
 <text></text>
@@ -2729,7 +2756,7 @@
 <line2>FS</line2>
 </line>
 
-<line number='SFNI'
+<line number='SFNIa'
  color='blue'>
 <type>tPull</type>
 <form>Bkg</form>
@@ -2737,7 +2764,7 @@
 <line2>SFNI</line2>
 </line>
 
-<line number='SLN'
+<line number='SLNa'
  color='blue'>
 <type>tPull</type>
 <form>Bkg</form>
@@ -2745,7 +2772,7 @@
 <line2>SLN</line2>
 </line>
 
-<line number='SSSNoF'
+<line number='SSSNoFa'
  color='blue'>
 <type>tPull</type>
 <form>Bkg</form>
@@ -2753,7 +2780,7 @@
 <line2>SSSNoF</line2>
 </line>
 
-<line number='SSSNoL'
+<line number='SSSNoLa'
  color='blue'>
 <type>tPull</type>
 <form>Bkg</form>
@@ -2761,7 +2788,7 @@
 <line2>SSSNoL</line2>
 </line>
 
-<line number='SSSNoM'
+<line number='SSSNoMa'
  color='blue'>
 <type>tPull</type>
 <form>Bkg</form>
@@ -3041,5 +3068,59 @@
 <test>CHOOS1</test>
 <value1>WHEN01$Form1040-Copy00-lineFS = 'QSS'</value1>
 <value2>VALUOF'x'</value2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value2>VALUOF$Form1040-Copy00-lineSLNa</value2>
+</line>
+
+<line number='SFNI'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value2>VALUOF$Form1040-Copy00-lineSFNIa</value2>
+</line>
+
+<line number='SSSNoF'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value2>VALUOF$Form1040-Copy00-lineSSSNoFa</value2>
+</line>
+
+<line number='SSSNoM'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value2>VALUOF$Form1040-Copy00-lineSSSNoMa</value2>
+</line>
+
+<line number='SSSNoL'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value2>VALUOF$Form1040-Copy00-lineSSSNoLa</value2>
+</line>
+
+<line number='Schild'
+ color='blue'>
+<type>ctext</type>
+<format>#####0</format>
+<test>CHOOS1</test>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value2>VALUOF$Form1040-Copy00-lineSName</value2>
 </line>
 </Form>

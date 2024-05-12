@@ -240,6 +240,22 @@ BEGIN {
 
 	 }
 
+
+/^ctxt/ {
+	 print ""
+	 print "type:"$1
+	 print "name:"$2
+	 print "top:"$3
+	 print "height:0.15"
+	 print "color:purple"
+	 print "dummy:"$4
+	 print "form:"$5
+	 print "copy:"$6
+	 print "line2:"$7
+
+	 }
+
+
 /^dRef/ {
 
     	 print ""

@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line01a</linename>
-<instructions>Enter the total amount from Form(s) W-2, box 1</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#23</IRSInstructions>
 <notes/>
 <override/>

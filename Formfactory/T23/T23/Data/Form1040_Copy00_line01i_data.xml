@@ -1,6 +1,6 @@
 <taxline type="dlin" color="black">
 <linename>Form1040-Copy00-line01i</linename>
-<instructions>Enter nontaxable combat pay election</instructions>
+<instructions/>
 <IRSInstructions>../IRS/i1040gi.pdf#25</IRSInstructions>
 <notes/>
 <override/>

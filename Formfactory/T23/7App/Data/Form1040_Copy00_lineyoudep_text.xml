@@ -1,6 +1,6 @@
 <taxline type="tlin" color="black">
 <linename>Form1040-Copy00-lineyoudep</linename>
-<instructions>Enter x if someone can claim you as a dependent</instructions>
+<instructions/>
 <IRSinstructions>../IRS/i1040gi.pdf#16</IRSinstructions>
 <notes/>
 <text/>
