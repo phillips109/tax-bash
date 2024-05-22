@@ -71,8 +71,8 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!d     	!0.00  	!center	!0.99  	!1.09  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!03y   	!2.63  	!x                 	!            	!      	!      
-tlin  	!03n   	!3.04  	!x                 	!            	!      	!      
+ctext  	!03y   	!2.63  	!x                 	!            	!      	!      
+ctext  	!03n   	!3.04  	!x                 	!            	!      	!      
 Endcol*******************     
                               
 Endcol*******************     

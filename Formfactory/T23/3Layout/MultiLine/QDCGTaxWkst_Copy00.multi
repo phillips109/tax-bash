@@ -335,19 +335,25 @@ font-family:Times
 align:center
 top:0.00
 
-type:tlin
+type:ctext
 name:03y
 top:2.63
 height:0.15
-color:blue
+color:red
 dummy:x
+form:
+copy:
+line2:
 
-type:tlin
+type:ctext
 name:03n
 top:3.04
 height:0.15
-color:blue
+color:red
 dummy:x
+form:
+copy:
+line2:
 
 Endcol ************************************************
 

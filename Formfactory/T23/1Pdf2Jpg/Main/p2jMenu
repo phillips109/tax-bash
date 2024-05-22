@@ -220,7 +220,7 @@ while true;
   echo "   1)  Download pdf view of form from IRS to ../Pdf"
   echo "   2)  dir ../Pdf"
   echo "   3)  View the ../.pdf file."
-  echo "   4)  Convert pdf to jpg and into ~/Downloads/.zip"
+  echo "   4)  Convert pdf to jpg and into ~/Downloads/.jpg"
   echo "   5)  dir ~/Downloads/*.jpg"
 #  echo "   6)  unzip zip file to ~/Downloads/*.jpg"
 #  echo "   7)  dir ~/Downloads/*"

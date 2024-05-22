@@ -1,10 +1,10 @@
-<taxline type="&#10;&#9;text&#10;      " color="blue">
-<linename>QDCGTaxWkst-Copy00-line03y</linename>
-<line>03y</line>
+<taxline type="number" color="red">
+<linename>SchedDTaxWkst-Copy00-line37</linename>
 <instructions/>
 <IRSinstructions/>
 <notes/>
-<text>x</text>
+<override>3700</override>
+<accounts/>
 <license>
 	  Copyright(C) 2019 Phillips Wedemeyer
 

@@ -352,14 +352,26 @@
 
 <fo:block-container position="absolute" top="2.63in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/QDCGTaxWkst_Copy00_line03y_text.xml')//text"/>
-	</fo:block>
+	<xslt:choose>
+	<xslt:when test="copy00line03y='0'">
+	</xslt:when>
+	<xslt:otherwise>
+	<xslt:value-of select="copy00line03y"/>
+	</xslt:otherwise>
+	</xslt:choose>
+      </fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="3.04in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/QDCGTaxWkst_Copy00_line03n_text.xml')//text"/>
-	</fo:block>
+	<xslt:choose>
+	<xslt:when test="copy00line03n='0'">
+	</xslt:when>
+	<xslt:otherwise>
+	<xslt:value-of select="copy00line03n"/>
+	</xslt:otherwise>
+	</xslt:choose>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>

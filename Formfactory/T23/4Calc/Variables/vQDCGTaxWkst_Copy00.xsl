@@ -248,7 +248,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line03y">
 <xsl:choose>
-<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:when test="document('../Output/SchedD_Copy01.xml')">
 <xsl:value-of select="'x'"/>
 </xsl:when>
 <xsl:otherwise>
@@ -259,7 +259,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line03n">
 <xsl:choose>
-<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:when test="document('../Output/SchedD_Copy01.xml')">
 <xsl:value-of select="''"/>
 </xsl:when>
 <xsl:otherwise>

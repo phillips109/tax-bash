@@ -10,11 +10,12 @@ while true;
   echo "   1)  Import last years return."
   echo "   2)  Import last year's text files."
   echo "   3)  Import data from GnuCash."
-  echo "   4)  Initialize or refresh all of your data."
   echo
   echo "   ln) List the names of all of the accounts in your GnuCash data."
   echo "   at) List the transactions in a specified account."
   echo "   ft) Show the accounts and transactions used for a specified form."
+  echo
+  echo "   4)  Initialize or refresh all of your data."
   echo 
   echo "   f)  Show choice of Forms."
   echo "   s)  Show choice of Schedules."

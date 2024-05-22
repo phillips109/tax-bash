@@ -317,7 +317,7 @@ x*******************************
 ctext
 03y
 CHOOS1
-WHEN01document('../Output/SchedD_Copy00.xml')
+WHEN01document('../Output/SchedD_Copy01.xml')
 VALUOF'x'
 WHEN02
 OTHER1
@@ -330,7 +330,7 @@ CHOOS2
 ctext
 03n
 CHOOS1
-WHEN01document('../Output/SchedD_Copy00.xml')
+WHEN01document('../Output/SchedD_Copy01.xml')
 VALUOF''
 WHEN02
 OTHER1

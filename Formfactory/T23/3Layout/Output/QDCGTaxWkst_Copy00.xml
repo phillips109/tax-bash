@@ -45,7 +45,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line02 color='red'>200</copy00line02>
 <copy00line03 color='red'>300</copy00line03>
 <copy00line04 color='red'>400</copy00line04>
-<copy00line03y color='blue'>x</copy00line03y>
-<copy00line03n color='blue'>x</copy00line03n>
+<copy00line03y color='red'>x</copy00line03y>
+<copy00line03n color='red'>x</copy00line03n>
 </Form>
 </IRSForms>

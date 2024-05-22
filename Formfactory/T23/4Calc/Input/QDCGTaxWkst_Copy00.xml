@@ -260,7 +260,7 @@
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01document('../Output/SchedD_Copy00.xml')</test>
+<test>WHEN01document('../Output/SchedD_Copy01.xml')</test>
 <value1>VALUOF'x'</value1>
 <value2>WHEN02</value2>
 </line>
@@ -269,7 +269,7 @@
  color='blue'>
 <type>ctext</type>
 <format>CHOOS1</format>
-<test>WHEN01document('../Output/SchedD_Copy00.xml')</test>
+<test>WHEN01document('../Output/SchedD_Copy01.xml')</test>
 <value1>VALUOF''</value1>
 <value2>WHEN02</value2>
 </line>

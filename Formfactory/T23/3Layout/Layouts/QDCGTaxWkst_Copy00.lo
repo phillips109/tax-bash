@@ -357,21 +357,19 @@ font-family='Times'
 text-align='center'
 top='0.00in'>
 
-<tlin name='03y'
+<calc number='03y'
 top='2.63in'
 height='0.15in'
-color='blue'>
-<text>x</text>
-<blank></blank>
-</tlin>
+color='red'>
+<dummy>x</dummy>
+</calc>
 
-<tlin name='03n'
+<calc number='03n'
 top='3.04in'
 height='0.15in'
-color='blue'>
-<text>x</text>
-<blank></blank>
-</tlin>
+color='red'>
+<dummy>x</dummy>
+</calc>
 
 </col>
 *******************************************************

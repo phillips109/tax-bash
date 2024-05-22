@@ -1685,6 +1685,20 @@ done
 
 }
 
+makeWksts(){
+	../NewCopy/2focopy01 QDCGTaxWkst
+	../NewCopy/xslcopy01 QDCGTaxWkst
+	../NewCopy/datacopy01 QDCGTaxWkst
+	../NewCopy/2focopy01 SchedDTaxWkst
+	../NewCopy/xslcopy01 SchedDTaxWkst
+	../NewCopy/datacopy01 SchedDTaxWkst
+	../NewCopy/2focopy01 Bkg
+	../NewCopy/xslcopy01 Bkg
+	../NewCopy/datacopy01 Bkg
+
+	refreshTl
+	set_menu_choice Bkg 01
+}
 set_wkst_choice() {
 while true;
 do
@@ -1992,11 +2006,12 @@ while true;
   echo "   1)  Import last years return."
   echo "   2)  Import last year's text files."
   echo "   3)  Import data from GnuCash."
-  echo "   4)  Initialize or refresh all of your data."
   echo
   echo "   ln) List the names of all of the accounts in your GnuCash data."
   echo "   at) List the transactions in a specified account."
   echo "   ft) Show the accounts and transactions used for a specified form."
+  echo
+  echo "   4)  Initialize or refresh all of your data."
   echo 
   echo "   f)  Show choice of Forms."
   echo "   s)  Show choice of Schedules."
@@ -2371,7 +2386,7 @@ initial(){
 	clear
 	echo
 	echo "The next menu you see upon choosing"
-	echo "  6)  Start using tax-bash"
+	echo "  7)  Start using tax-bash"
 	echo "from the previous menu"
 	echo "will have three sets of menu choices."
 	echo
@@ -2387,10 +2402,6 @@ initial(){
 	echo "You should choose 3) to make certain you are"
 	echo "using your most current gnucash data."
 	echo
-	echo "The 4th choice initializes you data."
-	echo "You should choose 4) before" 
-	echo "starting your work for the day."
-	echo
 	echo "The next three choices allow you to look at"
 	echo "your GnuCash data:"
 	echo "ln: will give you a listing of all the accounts"
@@ -2398,6 +2409,12 @@ initial(){
         echo "at: will show you the transactions in any account you choose."
 	echo "ft: will show you the transactions in all accounts"
 	echo "    that are associated with the form you are working on."
+	echo
+	echo  "The 4th choice must be performed before starting the program for the first time."
+	echo  "It creates any worksheets that are necessary for the calculation of your return."
+	echo  "It creates the background form (Bkg) on which to enter basic data and your filing status."
+	echo  "It calculates your entire return."
+	echo  "You don't need to, but you may wish to, make this choice before starting work each day."
 	echo
 	echo "The last 3 choices allow you to work with:"
 	echo "f forms"
