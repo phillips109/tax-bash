@@ -1,0 +1,11 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+tlin      	!addr1     	!005       	!Enter first line of addres                                                                          	!f4868.pdf           	!3     	!     
+tlin      	!addr2     	!006       	!Enter second line of address                                                                        	!f4868.pdf           	!3     	!     
+tlin      	!city      	!007       	!Enter city                                                                                          	!f4868.pdf           	!3     	!     
+tlin      	!ST        	!008       	!Enter State in ST format                                                                            	!f4868.pdf           	!3     	!     
+tlin      	!zip       	!009       	!Enter zip                                                                                           	!f4868.pdf           	!3     	!     
+dlin      	!tottax    	!016       	!Enter total tax liabiity                                                                            	!f4868.pdf           	!3     	!     
+dlin      	!t0tpay    	!017       	!Enter total 2022 payments                                                                           	!f4868.pdf           	!3     	!     
+dlin      	!amtpd     	!019       	!Enter amount you are paying                                                                         	!f4868.pdf           	!3     	!     
+tlin      	!away      	!020       	!Enter x if out of the country                                                                       	!f4868.pdf           	!3     	!     
+tlin      	!1040NR    	!021       	!Enter x if wages are not subject to withholding                                                     	!f4868.pdf           	!3     	!     

@@ -3348,6 +3348,43 @@ q     )    break;;
 esac
 done
 }
+set_Form4868_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form4868 in which to enter or edit data:"
+echo
+echo "addr1 )    Enter first line of addres         "
+echo "addr2 )    Enter second line of address       "
+echo "city  )    Enter city                         "
+echo "ST    )    Enter State in ST format           "
+echo "zip   )    Enter zip                          "
+echo "tottax)    Enter total tax liabiity           "
+echo "t0tpay)    Enter total 2022 payments          "
+echo "amtpd )    Enter amount you are paying        "
+echo "away  )    Enter x if out of the country      "
+echo "1040NR)    Enter x if wages are not subject to withholding"
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form4868_line_data_choice
+echo
+     case $Form4868_line_data_choice in
+addr1 )    set_line_menu_text   $1 $2  lineaddr1                            ;;
+addr2 )    set_line_menu_text   $1 $2  lineaddr2                            ;;
+city  )    set_line_menu_text   $1 $2  linecity                             ;;
+ST    )    set_line_menu_text   $1 $2  lineST                               ;;
+zip   )    set_line_menu_text   $1 $2  linezip                              ;;
+tottax)    set_line_menu_number $1 $2  linetottax                           ;;
+t0tpay)    set_line_menu_number $1 $2  linet0tpay                           ;;
+amtpd )    set_line_menu_number $1 $2  lineamtpd                            ;;
+away  )    set_line_menu_text   $1 $2  lineaway                             ;;
+1040NR)    set_line_menu_text   $1 $2  line1040NR                           ;;
+q     )    break;;                       
+esac
+done
+}
 set_Form4952_line_data_choice() {
 while true;
 do

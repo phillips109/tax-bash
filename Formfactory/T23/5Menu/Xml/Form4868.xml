@@ -1,0 +1,52 @@
+<Form fname="Form4868">
+<taxline name="addr1" type="tlin" color="black">
+<menuEntry>Enter first line of addres</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="addr2" type="tlin" color="black">
+<menuEntry>Enter second line of address</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="city" type="tlin" color="black">
+<menuEntry>Enter city</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="ST" type="tlin" color="black">
+<menuEntry>Enter State in ST format</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="zip" type="tlin" color="black">
+<menuEntry>Enter zip</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="tottax" type="dlin" color="black">
+<menuEntry>Enter total tax liabiity</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="t0tpay" type="dlin" color="black">
+<menuEntry>Enter total 2022 payments</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="amtpd" type="dlin" color="black">
+<menuEntry>Enter amount you are paying</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="away" type="tlin" color="black">
+<menuEntry>Enter x if out of the country</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="1040NR" type="tlin" color="black">
+<menuEntry>Enter x if wages are not subject to withholding</menuEntry>
+<IRSInstructions>f4868.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+</Form>

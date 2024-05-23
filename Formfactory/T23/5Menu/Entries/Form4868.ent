@@ -1,0 +1,10 @@
+005	!tlin	!addr1	!Enter first line of addres                              
+006	!tlin	!addr2	!Enter second line of address    
+007	!tlin	!city	!Enter city  
+008	!tlin	!ST	!Enter State in ST format                    
+009	!tlin	!zip	!Enter zip      
+016	!dlin	!tottax	!Enter total tax liabiity                     
+017	!dlin	!t0tpay	!Enter total 2022 payments      
+019	!dlin	!amtpd	!Enter amount you are paying      
+020	!tlin	!away	!Enter x if out of the country   
+021	!tlin	!1040NR	!Enter x if wages are not subject to withholding                              

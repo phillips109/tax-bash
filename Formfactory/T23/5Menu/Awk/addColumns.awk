@@ -24,8 +24,9 @@ BEGIN {
     else if ( form == "Form1099div" ) file = "i1099div.pdf"	 
     else if ( form == "Form1099int" ) file = "i1099int.pdf"	 
     else if ( form == "Form1099r" )   file = "i1099r.pdf"
-    else if ( form == "SST" )         file = "i1040gi.pdf"
+    else if ( form == "Form4868" )    file = "f4868.pdf"	 
     else if ( form == "Form4952" )    file = "f4952.pdf"	 
+    else if ( form == "SST" )         file = "i1040gi.pdf"
     else                              file = "Instruction file not defined."	 
 
 	 echo $file
