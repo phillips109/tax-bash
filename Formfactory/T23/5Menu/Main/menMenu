@@ -96,7 +96,7 @@ choosePdf(){
     Form1120SSchedK1)	showsPdf f1040;;
     Form8865SchedK1)	showsPdf f1040;;
 
-    FEITaxWkst)         showsPdf f1040;;
+    FEITaxWkst)         showsPdf fei;;
     WSln10)             showsPdf f1040;;
     QDCGTaxWkst)        showsPdf qdcg;;
     SchedDTaxWkst)      showsPdf schd;;
@@ -106,7 +106,7 @@ choosePdf(){
     Wks)                showsPdf f1040;;
     CLCWkst)            showsPdf clcWkst;;
     RG28Wks)            showsPdf f1040;;
-    UG1250)             showsPdf f1040;;
+    UG1250Wkst)         showsPdf ug1250;;
 
     esac			      
 }
@@ -242,7 +242,7 @@ set_menu_choices(){
 	echo "  1) Show image of the form"
 	echo "  2) Import text from ../4Calc or else ../2Sequence"
 	echo "  3) Edit ../Text/$1.txt to remove title line"
-	echo "  4) Remove all but user entry lines from ../Text/$1.txt"
+	echo "  4) Remove all but user entry lines from ../Txt/$1.txt"
 	echo "  5) Check ../Entries/$1.ent to enter menuEntries"
 	echo "  6) Reorder columns to ../Pre/$1.pre"
 	echo "  7) Edit ../Pre/$1.pre"
@@ -648,7 +648,7 @@ do
       wks)   set_menu_choices Wks               01;;
       cap)   set_menu_choices CLCWkst           01;;
       rg28)  set_menu_choices RG28Wks           01;;
-      1250)  set_menu_choices UG1250            01;;
+      1250)  set_menu_choices UG1250Wkst        01;;
       q)     break;;
     esac
 done

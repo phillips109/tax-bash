@@ -205,6 +205,28 @@ $QDCGTaxWkst-Copy00-line22"/>
 </xsl:choose>
 </xsl:variable>
 
+<xsl:variable name="QDCGTaxWkst-Copy00-linecgexcess">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line104015 >= $QDCGTaxWkst-Copy00-line04">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line04 - $QDCGTaxWkst-Copy00-line104015"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="QDCGTaxWkst-Copy00-lineunusedcge">
+<xsl:choose>
+<xsl:when test="$QDCGTaxWkst-Copy00-line03 >= $QDCGTaxWkst-Copy00-linecgexcess">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-linecgexcess - $QDCGTaxWkst-Copy00-line03"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="QDCGTaxWkst-Copy00-line09">
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line07 -  $QDCGTaxWkst-Copy00-line08"/>
 </xsl:variable>
@@ -219,7 +241,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line01">
 <xsl:choose>
-<xsl:when test="document('../Output/Form2555_Copy00.xml')">
+<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
 <xsl:value-of select="$QDCGTaxWkst-Copy00-lineFEI3"/>
 </xsl:when>
 <xsl:otherwise>
@@ -243,12 +265,15 @@ $QDCGTaxWkst-Copy00-line22"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGTaxWkst-Copy00-line10407"/>
+</xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line03y">
 <xsl:choose>
-<xsl:when test="document('../Output/SchedD_Copy01.xml')">
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
 <xsl:value-of select="'x'"/>
 </xsl:when>
 <xsl:otherwise>
@@ -259,7 +284,7 @@ $QDCGTaxWkst-Copy00-line22"/>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line03n">
 <xsl:choose>
-<xsl:when test="document('../Output/SchedD_Copy01.xml')">
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
 <xsl:value-of select="''"/>
 </xsl:when>
 <xsl:otherwise>
@@ -271,19 +296,19 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:variable name="QDCGTaxWkst-Copy00-line06">
 <xsl:choose>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'S'">
-<xsl:value-of select="41675"/>
+<xsl:value-of select="44625"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFS'">
-<xsl:value-of select="41675"/>
+<xsl:value-of select="44625"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFJ'">
-<xsl:value-of select="83350"/>
+<xsl:value-of select="89250"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'QSS'">
-<xsl:value-of select="83350"/>
+<xsl:value-of select="80250"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'HOH'">
-<xsl:value-of select="55800"/>
+<xsl:value-of select="59750"/>
 </xsl:when>
 </xsl:choose>
 </xsl:variable>
@@ -291,19 +316,19 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:variable name="QDCGTaxWkst-Copy00-line13">
 <xsl:choose>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'S'">
-<xsl:value-of select="459750"/>
+<xsl:value-of select="492300"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFS'">
-<xsl:value-of select="258600"/>
+<xsl:value-of select="276900"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFJ'">
-<xsl:value-of select="517200"/>
+<xsl:value-of select="5553850"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'QSS'">
-<xsl:value-of select="517200"/>
+<xsl:value-of select="5553850"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'HOH'">
-<xsl:value-of select="488500"/>
+<xsl:value-of select="523050"/>
 </xsl:when>
 </xsl:choose>
 </xsl:variable>

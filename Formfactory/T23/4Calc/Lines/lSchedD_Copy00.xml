@@ -290,6 +290,11 @@
   </copy00line49525>
 
 
+<copy00linecgexcess color="purple">
+  <xsl:value-of select="format-number($SchedD-Copy00-linecgexcess, '#####0')"/>
+  </copy00linecgexcess>
+
+
 <copy00line01ah color="purple">
   <xsl:value-of select="format-number($SchedD-Copy00-line01ah, '#####0')"/>
   </copy00line01ah>

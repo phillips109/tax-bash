@@ -1,0 +1,190 @@
+<Form name=''>
+
+<line number='06'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line03</augend>
+<addend>line04</addend>
+<addend>line05</addend>
+</line>
+
+<line number='16'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line16a</augend>
+<addend>linecgexcess</addend>
+</line>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='14'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='15'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='16a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<line number='479707'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>dummy</year>
+<form>Form4797</form>
+<copy>00</copy>
+<line2>line07</line2>
+</line>
+
+<line number='cgexcess'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####01</format>
+<year>dummy</year>
+<form>QDCGaTaxWkst</form>
+<copy>00</copy>
+<line2>linecgexcess</line2>
+</line>
+
+<line number='07'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line06</first>
+<second>line479707</second>
+</line>
+
+<line number='09'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line07</minuend>
+<subtrahend>line08</subtrahend>
+</line>
+
+<line number='18'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line13</minuend>
+<subtrahend>line17</subtrahend>
+</line>
+
+<line number='03'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line01</minuend>
+<subtrahend>line02</subtrahend>
+</line>
+
+<line number='17'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01UG1250Wkst-Copy01-line17a &lt; 0</value1>
+<value2>VALUOFUG1250Wkst=Copy00-iine17 * -1</value2>
+</line>
+</Form>

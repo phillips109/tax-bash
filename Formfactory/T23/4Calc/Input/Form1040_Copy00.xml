@@ -1353,6 +1353,50 @@
 <line2>line02</line2>
 </line>
 
+<line number='SchedJ23'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedJ</form>
+<copy>00</copy>
+<line2>line23</line2>
+</line>
+
+<line number='FEIT02a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>FEITaxWkst</form>
+<copy>00</copy>
+<line2>line02a</line2>
+</line>
+
+<line number='FEIT06'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>FEITaxWkst</form>
+<copy>00</copy>
+<line2>line06</line2>
+</line>
+
+<line number='861521'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form8615</form>
+<copy>00</copy>
+<line2>line21</line2>
+</line>
+
 <line number='15'
  color='cyan'>
 <type>subt0</type>
@@ -3021,8 +3065,8 @@
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>WHEN01$Form1040-Copy00-line49524g > 0</value1>
-<value2>VALUOF$Form1040-Copy00-lineSDTW</value2>
+<value1>WHEN01document('../Output/Form8615-Copy00.xml')</value1>
+<value2>VALUOF$Form1040-Copy00-line861521</value2>
 </line>
 
 <line number='S'
@@ -3120,7 +3164,7 @@
 <type>ctext</type>
 <format>#####0</format>
 <test>CHOOS1</test>
-<value1>WHEN01$Form1040-Copy00-lineFS = 'MFJ'</value1>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFS'</value1>
 <value2>VALUOF$Form1040-Copy00-lineSName</value2>
 </line>
 </Form>

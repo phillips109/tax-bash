@@ -95,6 +95,11 @@
   </copy00line119>
 
 
+<copy00line104015 color="purple">
+  <xsl:value-of select="format-number($SchedDTaxWkst-Copy00-line104015, '#####0')"/>
+  </copy00line104015>
+
+
 <copy00lineFS color="blue">
     <xsl:value-of select="$SchedDTaxWkst-Copy00-lineFS"/>
     </copy00lineFS>
@@ -228,6 +233,11 @@
 <copy00line39a color="cyan">
   <xsl:value-of select="format-number($SchedDTaxWkst-Copy00-line39a, '#####0')"/>
   </copy00line39a>
+
+
+<copy00linecgexcess color="cyan">
+  <xsl:value-of select="format-number($SchedDTaxWkst-Copy00-linecgexcess, '#####0')"/>
+  </copy00linecgexcess>
 
 
 <copy00line13 color="purple">

@@ -1,0 +1,197 @@
+<Form name=''>
+
+<line number='03'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01</augend>
+<addend>line02c</addend>
+</line>
+
+<dlin number='02a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>201</override>
+<blank></blank>
+</dlin>
+
+<dlin number='02b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>202</override>
+<blank></blank>
+</dlin>
+
+<line number='01'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>100</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line15</line2>
+</line>
+
+<line number='49524g'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form4952</form>
+<copy>00</copy>
+<line2>line04g</line2>
+</line>
+
+<line number='SDTW'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedDaTaxWkst</form>
+<copy>00</copy>
+<line2>line47</line2>
+</line>
+
+<line number='QDCG'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>QDCGaTaxWkst</form>
+<copy>00</copy>
+<line2>line25</line2>
+</line>
+
+<line number='D18'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line18</line2>
+</line>
+
+<line number='D19'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line19</line2>
+</line>
+
+<line number='D15'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line15</line2>
+</line>
+
+<line number='D16'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line16</line2>
+</line>
+
+<line number='10403a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line03a</line2>
+</line>
+
+<line number='104007'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>######0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line07</line2>
+</line>
+
+<line number='02c'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line02a</minuend>
+<subtrahend>line02b</subtrahend>
+</line>
+
+<line number='06'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line04</minuend>
+<subtrahend>line05</subtrahend>
+</line>
+
+<line number='04'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$FEITaxWkst-Copy00-line49524g > 0</value1>
+<value2>VALUOFFEITaxWlst_Copy00-lineSDTW</value2>
+</line>
+
+<line number='04a'
+ color='blue'>
+<type>tCalc</type>
+<format>#####0</format>
+<form>FEITaxWkst</form>
+<copy>00</copy>
+<line2>line03</line2>
+</line>
+
+<line number='05'
+ color='blue'>
+<type>tCalc</type>
+<format>#####0</format>
+<form>FEITaxWkst</form>
+<copy>00</copy>
+<line2>line02c</line2>
+</line>
+
+<line number='FS'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>FS</line2>
+</line>
+
+<line number='104007Ck'
+ color='blue'>
+<type>tPull</type>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>07Ck</line2>
+</line>
+</Form>

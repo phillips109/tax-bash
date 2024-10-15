@@ -120,6 +120,16 @@
   </copy00line16>
 
 
+<copy00linecgexcess color="cyan">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-linecgexcess, '#####0')"/>
+  </copy00linecgexcess>
+
+
+<copy00lineunusedcge color="cyan">
+  <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-lineunusedcge, '#####0')"/>
+  </copy00lineunusedcge>
+
+
 <copy00line09 color="purple">
   <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line09, '#####0')"/>
   </copy00line09>

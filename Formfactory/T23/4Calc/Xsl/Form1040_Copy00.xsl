@@ -1331,6 +1331,50 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
+<xsl:variable name="Form1040-Copy00-lineSchedJ23">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedJ_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedJ_Copy00.xml')//copy00line23"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineFEIT02a">
+<xsl:choose>
+<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
+<xsl:value-of select="document('../Output/FEITaxWkst_Copy00.xml')//copy00line02a"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineFEIT06">
+<xsl:choose>
+<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
+<xsl:value-of select="document('../Output/FEITaxWkst_Copy00.xml')//copy00line06"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-line861521">
+<xsl:choose>
+<xsl:when test="document('../Output/Form8615_Copy00.xml')">
+<xsl:value-of select="document('../Output/Form8615_Copy00.xml')//copy00line21"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="Form1040-Copy00-line15">
 <xsl:choose>
 <xsl:when test="$Form1040-Copy00-line14 >= $Form1040-Copy00-line11">
@@ -2403,6 +2447,15 @@ $Form1040-Copy00-linepen10"/>
 
 <xsl:variable name="Form1040-Copy00-line16a">
 <xsl:choose>
+<xsl:when test="document('../Output/Form8615-Copy00.xml')">
+<xsl:value-of select="$Form1040-Copy00-line861521"/>
+</xsl:when>
+<xsl:when test="document('../Output/SchedJ-Copy00.xml')">
+<xsl:value-of select="$Form1040-Copy00-lineSchedJ23"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFEIT02a > 0">
+<xsl:value-of select="$Form1040-Copy00-lineFEIT06"/>
+</xsl:when>
 <xsl:when test="$Form1040-Copy00-line49524g > 0">
 <xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
 </xsl:when>
@@ -2536,7 +2589,7 @@ $Form1040-Copy00-linepen10"/>
 
 <xsl:variable name="Form1040-Copy00-lineSchild">
 <xsl:choose>
-<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFS'">
 <xsl:value-of select="$Form1040-Copy00-lineSName"/>
 </xsl:when>
 <xsl:when test="$Form1040-Copy00-lineFS = 'HOH'">
@@ -3175,6 +3228,26 @@ $Form1040-Copy00-linepen10"/>
 <copy00linept10 color="purple">
   <xsl:value-of select="format-number($Form1040-Copy00-linept10, '#####0')"/>
   </copy00linept10>
+
+
+<copy00lineSchedJ23 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineSchedJ23, '#####0')"/>
+  </copy00lineSchedJ23>
+
+
+<copy00lineFEIT02a color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineFEIT02a, '#####0')"/>
+  </copy00lineFEIT02a>
+
+
+<copy00lineFEIT06 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-lineFEIT06, '#####0')"/>
+  </copy00lineFEIT06>
+
+
+<copy00line861521 color="purple">
+  <xsl:value-of select="format-number($Form1040-Copy00-line861521, '#####0')"/>
+  </copy00line861521>
 
 
 <copy00line15 color="cyan">

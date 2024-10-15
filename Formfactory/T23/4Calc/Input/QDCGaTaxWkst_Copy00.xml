@@ -1,0 +1,357 @@
+<Form name=''>
+
+<line number='04'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line02</augend>
+<addend>line03</addend>
+</line>
+
+<line number='15'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line05</augend>
+<addend>line09</addend>
+</line>
+
+<line number='19'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line09</augend>
+<addend>line17</addend>
+</line>
+
+<line number='23'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line18</augend>
+<addend>line21</addend>
+<addend>line22</addend>
+</line>
+
+<line number='01'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>FEITaxWkst</form>
+<copy>00</copy>
+<line2>line03</line2>
+</line>
+
+<line number='02a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line03a</line2>
+</line>
+
+<line number='15D'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line15</line2>
+</line>
+
+<line number='16D'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line16</line2>
+</line>
+
+<line number='10407'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line07</line2>
+</line>
+
+<line number='FS'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>lineFS</line2>
+</line>
+
+<line number='FEI3'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>FEITaxWkst</form>
+<copy>00</copy>
+<line2>line03</line2>
+</line>
+
+<line number='104015'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line15</line2>
+</line>
+
+<line number='QDCG04'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>QDCGTaxWkst</form>
+<copy>00</copy>
+<line2>line04</line2>
+</line>
+
+<line number='11'
+ color='magenta'>
+<title>0</title>
+<type>dRef</type>
+<format>#####0</format>
+<form>09</form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line number='p15'
+ color='blue'>
+<type>const</type>
+<format>0.00##</format>
+<value>0.15</value>
+</line>
+
+<line number='p20'
+ color='blue'>
+<type>const</type>
+<format>0.00##</format>
+<value>0.20</value>
+</line>
+
+<line number='18'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line17</multiplicand>
+<multiplier>linep15</multiplier>
+</line>
+
+<line number='21'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line20</multiplicand>
+<multiplier>linep20</multiplier>
+</line>
+
+<line number='07'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line01</first>
+<second>line06</second>
+</line>
+
+<line number='08'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line05</first>
+<second>line07</second>
+</line>
+
+<line number='10'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line01</first>
+<second>line04</second>
+</line>
+
+<line number='14'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line01</first>
+<second>line13</second>
+</line>
+
+<line number='17'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line12</first>
+<second>line16</second>
+</line>
+
+<line number='25'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line23</first>
+<second>line24</second>
+</line>
+
+<line number='05'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line01</minuend>
+<subtrahend>line04</subtrahend>
+</line>
+
+<line number='16'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line14</minuend>
+<subtrahend>line15</subtrahend>
+</line>
+
+<line number='cgexcess'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>lineQDCG04</minuend>
+<subtrahend>line104015</subtrahend>
+</line>
+
+<line number='03'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line03a</minuend>
+<subtrahend>linecgexcess</subtrahend>
+</line>
+
+<line number='unusedcge'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>linecgexcess</minuend>
+<subtrahend>line03a</subtrahend>
+</line>
+
+<line number='02'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line02a</minuend>
+<subtrahend>lineunusedcge</subtrahend>
+</line>
+
+<line number='09'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line07</minuend>
+<subtrahend>line08</subtrahend>
+</line>
+
+<line number='12'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line10</minuend>
+<subtrahend>line11</subtrahend>
+</line>
+
+<line number='20'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line10</minuend>
+<subtrahend>line19</subtrahend>
+</line>
+
+<line number='03a'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$QDCGaTaxWkst-Copy00-line03y = 'x'</value1>
+<value2>CHOOS1</value2>
+</line>
+
+<line number='03y'
+ color='blue'>
+<type>ctext</type>
+<format>CHOOS1</format>
+<test>WHEN01document('../Output/SchedD_Copy00.xml')</test>
+<value1>VALUOF'x'</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='03n'
+ color='blue'>
+<type>ctext</type>
+<format>CHOOS1</format>
+<test>WHEN01document('../Output/SchedD_Copy00.xml')</test>
+<value1>VALUOF''</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='06'
+ color='blue'>
+<type>ctext</type>
+<format>CHOOS1</format>
+<test>WHEN01$QDCGaTaxWkst-Copy00-lineFS = 'S'</test>
+<value1>VALUOF44625</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='13'
+ color='blue'>
+<type>ctext</type>
+<format>CHOOS1</format>
+<test>WHEN01$QDCGaTaxWkst-Copy00-lineFS = 'S'</test>
+<value1>VALUOF492300</value1>
+<value2>WHEN02</value2>
+</line>
+
+<line number='22'
+ color='blue'>
+<type>tCalc</type>
+<format>#####0</format>
+<form>QDCGaTaxWkst</form>
+<copy>00</copy>
+<line2>line05</line2>
+</line>
+
+<line number='24'
+ color='blue'>
+<type>tCalc</type>
+<format>#####0</format>
+<form>QDCGaTaxWkst</form>
+<copy>00</copy>
+<line2>line01</line2>
+</line>
+</Form>

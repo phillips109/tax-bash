@@ -1510,9 +1510,17 @@ set_menu_choices() {
 
         echo "Please enter your choice, then press return."
         read action_choice
+	
+#Note that choice 1) is a hack to get FEI calculated in the correct order.
 
         case $action_choice in
-           1) refreshTl $1 $2;;
+           1) refreshTl FEITaxWkst 01
+	      refreshTl QDCGTaxWkst 01
+	      refreshTl QDCGaTaxWkst
+	      refreshTL SchedDTaxWkst 01
+	      refreshTl SchedDaTaxWkst 01
+	      refreshTl FEITaxWkst 01
+	      refreshTl $1 $2;;
            2) set_$1_line_data_choice $1 $2;;
            3) showForm2 $1 $2;;
 	  rm) removeForm $1;;
@@ -1686,18 +1694,24 @@ done
 }
 
 makeWksts(){
-	../NewCopy/2focopy01 QDCGTaxWkst
-	../NewCopy/xslcopy01 QDCGTaxWkst
+	../NewCopy/2focopy01  QDCGTaxWkst
+	../NewCopy/xslcopy01  QDCGTaxWkst
 	../NewCopy/datacopy01 QDCGTaxWkst
-	../NewCopy/2focopy01 SchedDTaxWkst
-	../NewCopy/xslcopy01 SchedDTaxWkst
-	../NewCopy/datacopy01 SchedDTaxWkst
-	../NewCopy/2focopy01 Bkg
-	../NewCopy/xslcopy01 Bkg
+	../NewCopy/2focopy01   QDCGaTaxWkst
+	../NewCopy/xslcopy01   QDCGaTaxWkst
+	../NewCopy/datacopy01  QDCGaTaxWkst
+	../NewCopy/2focopy01    SchedDTaxWkst
+	../NewCopy/xslcopy01    SchedDTaxWkst
+	../NewCopy/datacopy01   SchedDTaxWkst
+	../NewCopy/2focopy01     SchedDaTaxWkst
+	../NewCopy/xslcopy01     SchedDaTaxWkst
+	../NewCopy/datacopy01    SchedDaTaxWkst
+	../NewCopy/2focopy01  Bkg
+	../NewCopy/xslcopy01  Bkg
 	../NewCopy/datacopy01 Bkg
 
 	refreshTl
-	set_menu_choice Bkg 01
+
 }
 set_wkst_choice() {
 while true;
@@ -1709,10 +1723,13 @@ do
   echo "   fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
   echo "   ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "   qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
-  echo "    schd) Schedule D worksheet."
+  echo "  qdcga)  Qualified Dividents & Capital Gain Alternative Tax Worksheet." 
+  echo "    schd) Schedule D Tax Worksheet."
+  echo "   schda) Schedule D Alternative Tax Workssheet."
   echo "   sales) State and Local Sales Tax Worksheet."
   echo "     ssa) Social Security Benefit Statement"
   echo "     sst) Social Security Tax Worksheet."
+  echo "    1250) Unrecaptured Section 1250 Gain Worksheet."
   
   
   echo "   q)     Return to Main Menu"
@@ -1726,10 +1743,13 @@ do
       fei)   set_copy_number  FEITaxWkst     01;;
       ln10)  set_copy_number  WSln10         01;;
       qdcg)  set_copy_number  QDCGTaxWkst    01;;
+     qdcga)  set_copy_number  QDCGaTaxWkst   01;; 
       schd)  set_copy_number  SchedDTaxWkst  01;;
+     schda)  set_copy_number  SchedDaTaxWkst 01;; 
       sales) set_copy_number  WSSchASalesTax 01;;
       ssa)   set_copy_number  Form1099ssa    01;;
-      sst)   set_copy_number  SST            01;;	
+      sst)   set_copy_number  SST            01;;
+      1250)  set_copy_number  UG1250Wkst     01;;
       q)     break;;
     esac
 done
@@ -2037,7 +2057,8 @@ echo
       
       f)  set_form_choice;;	
       s)  set_schedule_choice;;
-      w)  set_wkst_choice;;
+      w)  makeWksts
+          set_wkst_choice;;
 #      t)  set_table_choice;;
 
       q)  exit;;
@@ -2474,6 +2495,27 @@ SSSNoL)    set_line_menu_text   $1 $2  lineSSSNoL                           ;;
 FS    )    set_line_menu_text   $1 $2  lineFS                               ;;
 Apart )    set_line_menu_text   $1 $2  lineApart                            ;;
 q     )    break;;                       
+esac
+done
+}
+set_FEITaxWkst_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in FEITaxWkst in which to enter or edit data:"
+echo
+echo "02a)    Enter amounts from Form2555 lines 45 and 50"
+echo "02b)    Enter total amount of any deductions"
+echo
+echo "  q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read FEITaxWkst_line_data_choice
+echo
+     case $FEITaxWkst_line_data_choice in
+02a)    set_line_menu_number $1 $2  line02a                              ;;
+02b)    set_line_menu_number $1 $2  line02b                              ;;
+q  )    break;;                       
 esac
 done
 }
@@ -3912,6 +3954,45 @@ echo
      case $SST_line_data_choice in
 50)    set_line_menu_number $1 $2  line50                               ;;
 85)    set_line_menu_number $1 $2  line85                               ;;
+q )    break;;                       
+esac
+done
+}
+set_UG1250Wkst_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in UG1250Wkst in which to enter or edit data:"
+echo
+echo "01)    Enter data per instructions.       "
+echo "02)    Enter data per instructions.       "
+echo "04)    Enter data per instructions.       "
+echo "05)    Enter data per instructions.       "
+echo "08)    Enter data per instructions.       "
+echo "10)    Enter data per instructions.       "
+echo "11)    Enter data per instructions.       "
+echo "12)    Enter data per instructions.       "
+echo "14)    Enter data per instructions.       "
+echo "15)    Enter data per instructions.       "
+echo "16a)   Enter data per instructions for line 16..       "
+echo
+echo " q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read UG1250Wkst_line_data_choice
+echo
+     case $UG1250Wkst_line_data_choice in
+01)    set_line_menu_number $1 $2  line01                               ;;
+02)    set_line_menu_number $1 $2  line02                               ;;
+04)    set_line_menu_number $1 $2  line04                               ;;
+05)    set_line_menu_number $1 $2  line05                               ;;
+08)    set_line_menu_number $1 $2  line08                               ;;
+10)    set_line_menu_number $1 $2  line10                               ;;
+11)    set_line_menu_number $1 $2  line11                               ;;
+12)    set_line_menu_number $1 $2  line12                               ;;
+14)    set_line_menu_number $1 $2  line14                               ;;
+15)    set_line_menu_number $1 $2  line15                               ;;
+16a)   set_line_menu_number $1 $2  line16a                               ;;
 q )    break;;                       
 esac
 done

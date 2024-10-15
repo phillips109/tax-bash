@@ -573,6 +573,17 @@ $SchedD-Copy00-line10g"/>
 </xsl:choose>
 </xsl:variable>
 
+<xsl:variable name="SchedD-Copy00-linecgexcess">
+<xsl:choose>
+<xsl:when test="document('../Output/QDCGA_Copy01.xml')">
+<xsl:value-of select="document('../Output/QDCGA_Copy01.xml')//copy01linecgexcess"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="SchedD-Copy00-line01ah">
 <xsl:value-of select="$SchedD-Copy00-line01ad -  $SchedD-Copy00-line01ae"/>
 </xsl:variable>
@@ -629,7 +640,7 @@ $SchedD-Copy00-line10g"/>
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:when test="$SchedD-Copy00-line16 &gt; 0 and $SchedD-Copy00-line15 &gt; 0">
-<xsl:value-of select="$SchedD-Copy00-line18d"/>
+<xsl:value-of select="$SchedD-Copy00-line18d - linecgexcess"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>

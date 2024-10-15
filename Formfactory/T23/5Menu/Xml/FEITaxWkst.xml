@@ -1,0 +1,12 @@
+<Form fname="FEITaxWkst">
+<taxline name="02a" type="dlin" color="black">
+<menuEntry>Enter amounts from Form2555 lines 45 and 50</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>36</pgNo>
+</taxline>
+<taxline name="02b" type="dlin" color="black">
+<menuEntry>Enter total amount of any deductions</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>36</pgNo>
+</taxline>
+</Form>

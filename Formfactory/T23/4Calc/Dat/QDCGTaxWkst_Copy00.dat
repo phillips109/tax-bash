@@ -63,6 +63,14 @@ xdPull
 5form
 6copy
 
+xdPull
+01
+#####0
+0
+FEITaxWkst
+00
+line03
+
 dPull
 02
 #####0
@@ -71,6 +79,13 @@ Form1040
 00
 line03a
 
+xdPull
+11
+#####0
+0
+QDCGTaxWkst
+00
+line09
 
 dPull
 15D
@@ -119,6 +134,14 @@ dPull
 Form1040
 00
 line15
+
+xdPull
+QDCG04
+#####0
+0
+QDCGTaxWkst
+00
+line04
 
 x***********************************
 
@@ -235,6 +258,30 @@ subt0
 line14
 line15
 
+subt0
+cgexcess
+#####0
+line04
+line104015
+
+xsubt0
+03
+#####0
+line03a
+linecgexcess
+
+subt0
+unusedcge
+#####0
+linecgexcess
+line03
+
+xsubt0
+02
+#####0
+line02a
+lineunusedcge
+
 x*****************************
 
 xsubt
@@ -283,7 +330,7 @@ cnum
 01
 #####0
 CHOOS1
-WHEN01document('../Output/Form2555_Copy00.xml')
+WHEN01document('../Output/FEITaxWkst_Copy00.xml')
 VALUOF$QDCGTaxWkst-Copy00-lineFEI3
 WHEN02
 OTHER1
@@ -310,6 +357,9 @@ VALUOF$QDCGTaxWkst-Copy00-line16D
 OTHER2
 CHOOS2
 WHEN02
+OTHER1
+VALUOF$QDCGTaxWkst-Copy00-line10407
+OTHER2
 CHOOS2
 
 x*******************************
@@ -317,7 +367,7 @@ x*******************************
 ctext
 03y
 CHOOS1
-WHEN01document('../Output/SchedD_Copy01.xml')
+WHEN01document('../Output/SchedD_Copy00.xml')
 VALUOF'x'
 WHEN02
 OTHER1
@@ -330,7 +380,7 @@ CHOOS2
 ctext
 03n
 CHOOS1
-WHEN01document('../Output/SchedD_Copy01.xml')
+WHEN01document('../Output/SchedD_Copy00.xml')
 VALUOF''
 WHEN02
 OTHER1
@@ -343,19 +393,19 @@ ctext
 06
 CHOOS1
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
-VALUOF41675
+VALUOF44625
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFS'
-VALUOF41675
+VALUOF44625
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFJ'
-VALUOF83350
+VALUOF89250
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'QSS'
-VALUOF83350
+VALUOF80250
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'HOH'
-VALUOF55800
+VALUOF59750
 WHEN02
 CHOOS2
 
@@ -363,19 +413,19 @@ ctext
 13
 CHOOS1
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
-VALUOF459750
+VALUOF492300
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFS'
-VALUOF258600
+VALUOF276900
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'MFJ'
-VALUOF517200
+VALUOF5553850
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'QSS'
-VALUOF517200
+VALUOF5553850
 WHEN02
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'HOH'
-VALUOF488500
+VALUOF523050
 WHEN02
 CHOOS2
 

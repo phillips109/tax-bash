@@ -95,10 +95,10 @@
 <title></title>
 <type>dPull</type>
 <format>#####0</format>
-<year>252620</year>
-<form>Form1040</form>
+<year>0</year>
+<form>FEITaxWkst</form>
 <copy>00</copy>
-<line2>line15</line2>
+<line2>line03</line2>
 </line>
 
 <line number='02'
@@ -176,6 +176,17 @@
 <form>SchedD</form>
 <copy>00</copy>
 <line2>line19</line2>
+</line>
+
+<line number='104015'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line15</line2>
 </line>
 
 <line number='FS'
@@ -392,6 +403,14 @@
 <format>#####0</format>
 <minuend>line35</minuend>
 <subtrahend>line38</subtrahend>
+</line>
+
+<line number='cgexcess'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line10</minuend>
+<subtrahend>line104015</subtrahend>
 </line>
 
 <line number='13'

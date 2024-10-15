@@ -1,0 +1,10 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!6.82 	!7.81  	!right     	!
+a     	!tlin  	!01    	!      	!      	!1.66    	!100
+a     	!dlin  	!02a   	!      	!      	!1.86     	!201
+a     	!dlin  	!02b   	!      	!      	!2.16     	!202
+a     	!dlin  	!02c   	!      	!      	!2.37     	!203
+a     	!dlin  	!03    	!      	!      	!2.57     	!300
+a     	!dlin  	!04    	!      	!      	!3.27     	!400
+a     	!dlin  	!05    	!      	!      	!3.70     	!500
+a     	!dlin  	!06    	!      	!      	!4.02     	!600

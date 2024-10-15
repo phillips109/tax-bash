@@ -1,0 +1,57 @@
+<Form fname="UG1250Wkst">
+<taxline name="01" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-13</pgNo>
+</taxline>
+<taxline name="02" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-13</pgNo>
+</taxline>
+<taxline name="04" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-13</pgNo>
+</taxline>
+<taxline name="05" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-13</pgNo>
+</taxline>
+<taxline name="08" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-13</pgNo>
+</taxline>
+<taxline name="10" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-14</pgNo>
+</taxline>
+<taxline name="11" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-14</pgNo>
+</taxline>
+<taxline name="12" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-14</pgNo>
+</taxline>
+<taxline name="14" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-14</pgNo>
+</taxline>
+<taxline name="15" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-14</pgNo>
+</taxline>
+<taxline name="16a" type="dlin" color="black">
+<menuEntry>Enter data per instructions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>D-14</pgNo>
+</taxline>
+</Form>

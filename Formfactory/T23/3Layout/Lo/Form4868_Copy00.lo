@@ -31,19 +31,19 @@ col   	!      	!-0.12 	!left  	!0.00  	!8.50
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!a     	!0.00  	!      	!0.58  	!2.23
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TFNI  	!9.21  	!John E            	!Bkg           	!00    	!TFNI
-tPull 	!SFNI  	!9.31  	!Jean E            	!Bkg           	!00    	!SFNI
+tPull  	!TFNI  	!9.21  	!John E            	!Bkg           	!00    	!lineTFNI
+tPull 	!SFNI  	!9.31  	!Jean E            	!Bkg           	!00    	!lineSFNI
 tlin  	!addr1 	!9.59  	!129 Main Street   	!            	!      	!
 tlin  	!addr2 	!9.79  	!Apt 2             	!            	!      	!
 tlin  	!city  	!10.13 	!Chicago           	!            	!      	!
-tPull  	!TSSNoF	!10.45 	!123               	!Bkg           	!00    	!TSSNoF
+tPull  	!TSSNoF	!10.45 	!123               	!Bkg           	!00    	!lineTSSNoF
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!b     	!0.00  	!left  	!2.26  	!4.11
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TLN   	!9.21  	!Dough             	!Bkg          	!00    	!TLN
-tPull  	!SLN   	!9.31  	!Dough             	!Bkg         	!00    	!SLN
+tPull  	!TLN   	!9.21  	!Dough             	!Bkg          	!00    	!lineTLN
+tPull  	!SLN   	!9.31  	!Dough             	!Bkg         	!00    	!lineSLN
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -61,31 +61,31 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!k     	!0.00  	!center	!0.95  	!1.10
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TSSNoM	!10.45 	!45                	!Bkg          	!00    	!TSSNoM
+tPull  	!TSSNoM	!10.45 	!45                	!Bkg          	!00    	!lineTSSNoM
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!e     	!0.00  	!left  	!1.20  	!2.23
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!TSSNoL	!10.45 	!6789              	!Bkg          	!00    	!TSSNoL
+tPull  	!TSSNoL	!10.45 	!6789              	!Bkg          	!00    	!lineTSSNoL
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!f     	!0.00  	!left  	!2.37  	!2.82
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!SSSNoF	!10.45 	!987               	!Bkg    	!00 	!SSSNoF
+tPull  	!SSSNoF	!10.45 	!987               	!Bkg    	!00 	!lineSSSNoF
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!g     	!0.00  	!center	!2.80  	!3.00
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!SSSNoM	!10.45 	!65                	!Bkg           	!00    	!SSSNoM
+tPull  	!SSSNoM	!10.45 	!65                	!Bkg           	!00    	!lineSSSNoM
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!h     	!0.00  	!left  	!3.14  	!4.14
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull  	!SSSNoL	!10.45 	!4321              	!Bkg    	!00  	!SSSNoL
+tPull  	!SSSNoL	!10.45 	!4321              	!Bkg    	!00  	!lineSSSNoL
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right

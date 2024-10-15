@@ -1,0 +1,3 @@
+type      	!name      	!seq       	!menuEntry
+dlin      	!02a       	!002       	!Enter amounts from Form2555 lines 45 and 50
+dlin      	!02b       	!003       	!Enter total amount of any deductions

@@ -582,6 +582,17 @@
 <line2>line05</line2>
 </line>
 
+<line number='cgexcess'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>QDCGA</form>
+<copy>01</copy>
+<line2>linecgexcess</line2>
+</line>
+
 <line number='01ah'
  color='purple'>
 <type>subtr</type>

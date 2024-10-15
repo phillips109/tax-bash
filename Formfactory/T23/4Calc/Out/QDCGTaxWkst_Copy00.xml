@@ -128,6 +128,20 @@ line15
 
 
 
+subt0
+#####0
+line04
+line104015
+
+
+
+subt0
+#####0
+linecgexcess
+line03
+
+
+
 subtr
 #####0
 line07
@@ -152,7 +166,7 @@ line19
 cnum
 #####0
 CHOOS1
-WHEN01document('../Output/Form2555_Copy00.xml')
+WHEN01document('../Output/FEITaxWkst_Copy00.xml')
 VALUOF$QDCGTaxWkst-Copy00-lineFEI3
 
 
@@ -167,7 +181,7 @@ CHOOS1
 
 ctext
 CHOOS1
-WHEN01document('../Output/SchedD_Copy01.xml')
+WHEN01document('../Output/SchedD_Copy00.xml')
 VALUOF'x'
 WHEN02
 
@@ -175,7 +189,7 @@ WHEN02
 
 ctext
 CHOOS1
-WHEN01document('../Output/SchedD_Copy01.xml')
+WHEN01document('../Output/SchedD_Copy00.xml')
 VALUOF''
 WHEN02
 
@@ -184,7 +198,7 @@ WHEN02
 ctext
 CHOOS1
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
-VALUOF41675
+VALUOF44625
 WHEN02
 
 
@@ -192,7 +206,7 @@ WHEN02
 ctext
 CHOOS1
 WHEN01$QDCGTaxWkst-Copy00-lineFS = 'S'
-VALUOF459750
+VALUOF492300
 WHEN02
 
 

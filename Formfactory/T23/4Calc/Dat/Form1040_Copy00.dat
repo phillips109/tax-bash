@@ -1161,6 +1161,38 @@ Form1099r
 10
 line02
 
+dPull
+SchedJ23
+#####0
+0
+SchedJ
+00
+line23
+
+dPull
+FEIT02a
+#####0
+0
+FEITaxWkst
+00
+line02a
+
+dPull
+FEIT06
+#####0
+0
+FEITaxWkst
+00
+line06
+
+dPull
+861521
+#####0
+0
+Form8615
+00
+line21
+
 x*********************************************************
 
 xsubt0
@@ -2238,6 +2270,15 @@ cnum
 16a
 #####0
 CHOOS1
+WHEN01document('../Output/Form8615-Copy00.xml')
+VALUOF$Form1040-Copy00-line861521
+WHEN02
+WHEN01document('../Output/SchedJ-Copy00.xml')
+VALUOF$Form1040-Copy00-lineSchedJ23
+WHEN02
+WHEN01$Form1040-Copy00-lineFEIT02a > 0
+VALUOF$Form1040-Copy00-lineFEIT06
+WHEN02
 WHEN01$Form1040-Copy00-line49524g > 0
 VALUOF$Form1040-Copy00-lineSDTW
 WHEN02
@@ -2258,20 +2299,6 @@ VALUOF$Form1040-Copy00-lineCalc16
 OTHER2
 CHOOS2
 
-xcnum
-16a
-#####0
-CHOOS1
-WHEN01$Form1040-Copy00-line49524g > 0
-VALUOF$Form1040-Copy00-lineSDTW
-WHEN02
-WHEN01$Form1040-Copy00-line07 > 0
-VALUOF$Form1040-Copy00-lineQDCG
-WHEN02
-OTHER1
-VALUOF$Form1040-Copy00-lineCalc16
-OTHER2
-CHOOS2
 
 
 

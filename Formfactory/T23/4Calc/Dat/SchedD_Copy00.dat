@@ -526,6 +526,14 @@ Form4952
 01
 line05
 
+dPull
+cgexcess
+#####0
+0
+QDCGA
+01
+linecgexcess
+
 
 x***********************************************
 
@@ -639,7 +647,7 @@ WHEN01$SchedD-Copy00-line16 &lt; 0
 VALUOF0
 WHEN02
 WHEN01$SchedD-Copy00-line16 &gt; 0 and $SchedD-Copy00-line15 &gt; 0
-VALUOF$SchedD-Copy00-line18d
+VALUOF$SchedD-Copy00-line18d - linecgexcess
 WHEN02
 OTHER1
 VALUOF0

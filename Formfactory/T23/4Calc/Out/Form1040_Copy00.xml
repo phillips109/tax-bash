@@ -396,6 +396,14 @@ const
 
 
 
+
+
+
+
+
+
+
+
 subt0
 #####0
 line11
@@ -1769,8 +1777,8 @@ VALUOF$Form1040-Copy00-linet10
 cnum
 #####0
 CHOOS1
-WHEN01$Form1040-Copy00-line49524g &gt; 0
-VALUOF$Form1040-Copy00-lineSDTW
+WHEN01document('../Output/Form8615-Copy00.xml')
+VALUOF$Form1040-Copy00-line861521
 
 
 
@@ -1857,7 +1865,7 @@ VALUOF$Form1040-Copy00-lineSSSNoLa
 ctext
 #####0
 CHOOS1
-WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+WHEN01$Form1040-Copy00-lineFS = 'MFS'
 VALUOF$Form1040-Copy00-lineSName
 
 </Form>

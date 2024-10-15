@@ -86,13 +86,14 @@ Pdfshow(){
          1120Sk) qpdfview ../Pdf/f1040s1.pdf       &;;
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
-    UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;
+    UR1250Wkst)  qpdfview ../Pdf/UR1250Wkst.pdf    &;;
         CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
             SST) qpdfview ../Pdf/sst.pdf           &;;
        SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
-             w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
+             w2) qpdfview ../Pdf/fw2.pdf           &;;
+     FEITaxWkst) qpdfview ../Pdf/fei.pdf           &;;
           q) break;;	
     esac		
    
@@ -170,8 +171,8 @@ while true;
   echo "   4)  Change order of fields ../Nos/"$1".num > ../Text/"$1".text"
   echo "   5)  Remove first line from ../Text/"$1".text to ../Txt/"$1".txt"
   echo "   6)  Edit ../Txt/"$1".txt to check result"
-  echo "   7)  Copy ../Txt/"$1".txt to ../../3layout/Text/"
-  echo "   8)  Copy ../Txt/"$1".txt to ../../4Calc/Text/"
+  echo "   7)  Copy ../Txt/"$1".txt to ../../3layout/Txt/"
+  echo "   8)  Copy ../Txt/"$1".txt to ../../4Calc/Txt/"
 
 echo "   q) Quit"
  
@@ -403,6 +404,7 @@ do
   echo "   2106)  Employee Business Expenses"          
   echo "   2439)  Notice to Shareholder of Long-Term Undistributed Capital Gains"
   echo "   2441)  Child and Dependent Care Expenses"
+  exho "   2555)  Foreign Earned Income"
   echo "   3800)  General Business Credit"
   echo "   3903)  Moving Expenses"
   echo "   4137)  Social Security and Medicare Tax on Unreported Tip Income"
@@ -465,6 +467,7 @@ do
       2106)        set_menu_choices Form2106;;
       2439)        set_menu_choices Form2439;;
       2441)        set_menu_choices Form2441;;
+      2555)        set_menu_choices Form2555;;
       3800)        set_menu_choices Form3800;;
       3903)        set_menu_choices Form3903;;
       4137)        set_menu_choices Form4137;;
@@ -546,7 +549,7 @@ do
       wks)   set_menu_choices Wks               01;;
       cap)   set_menu_choices CLCWkst           01;;
       28rg)  set_menu_choices 28RGWkst          01;;
-      1250)  set_menu_choices UR1250GWkst       01;;
+      1250)  set_menu_choices UG1250Wkst        01;;
       q)     break;;
     esac
 done

@@ -41,7 +41,8 @@ echo
       
       f)  set_form_choice;;	
       s)  set_schedule_choice;;
-      w)  set_wkst_choice;;
+      w)  makeWksts
+          set_wkst_choice;;
 #      t)  set_table_choice;;
 
       q)  exit;;

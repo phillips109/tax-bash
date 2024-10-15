@@ -63,13 +63,16 @@ Pdfshow(){
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
 	CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
-    UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;
+     UG1250Wkst) qpdfview ../Pdf/ug1250.pdf        &;;
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
+   QDCGaTaxWkst) qpdfview ../Pdf/qdcga.pdf	   &;;
     Form1040ssa) qpdfview ../Pdf/f1040ssa.pdf      &;;
 	    SST) qpdfview ../Pdf/sst.pdf           &;; 
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
+ SchedDaTaxWkst) qpdfview ../Pdf/schda.pdf	   &;; 
              w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
-	    Bkg) qpdfview ../Pdf/fBkg.pdf          &;; 
+	    Bkg) qpdfview ../Pdf/fBkg.pdf          &;;
+     FEITaxWkst) qpdfview ../Pdf/fei.pdf           &;;	    
           q) break;;	
     esac		
    
@@ -771,7 +774,9 @@ do
   echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44"
   echo "    ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "    qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44"
-  echo "    schd)  Schedule D worksheet"
+  echo "   qdcga)  Qualified Dividends & Capital Gain Alternat Tax Worksheet"
+  echo "    schd)  Schedule D Tax worksheet"
+  echo "   schda)  Schedule D Alternate Tax Worksheet"
   echo "   sales)  State and Local Sales Tax Worksheet"
   echo "     ssa)  Social Security Benefit Statement"
   echo "     sst)  Social Security Tax Worksheet"
@@ -790,14 +795,16 @@ do
        fei)   set_menu_choices  FEITaxWkst        00;; #set_copy_number allows for more than one copy.
       ln10)   set_menu_choices  WSln10            00;; #set_menu_choices allows for only one copy.
       qdcg)   set_menu_choices  QDCGTaxWkst       00;;
+     qdcga)   set_menu_choices  QDCGaTaxWkst      00;;
       schd)   set_menu_choices  SchedDTaxWkst     00;;
+     schda)   set_menu_choices  SchedDaTaxWkst    00;; 
      sales)   set_menu_choices  WSSchASalesTax    00;;
        ssa)   set_menu_choices  Form1040ssa	  00;;
        sst)   set_menu_choices  SST               00;;
        wks)   set_menu_choices  Wks               00;;
        cap)   set_menu_choices  CLCWkst           00;;
       28rg)   set_menu_choices  28RGWkst          00;;
-      1250)   set_menu_choices  UR1250GWkst       00;;
+      1250)   set_menu_choices  UG1250Wkst        00;;
       
          q)     break;;
     esac

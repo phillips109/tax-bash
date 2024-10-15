@@ -83,7 +83,7 @@ xEndcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1bb   	!0.00  	!left	!4.00  	!7.83
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-ctxt  	!Schild	!3.03  	!Francis Brown     	!Form1040      	!00    	!Schild
+ctxt  	!Schild	!3.03  	!Francis Brown     	!Form1040      	!00    	!lineSchild
 Endcol*******************
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right

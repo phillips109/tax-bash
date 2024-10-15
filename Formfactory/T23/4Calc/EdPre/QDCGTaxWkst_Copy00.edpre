@@ -65,8 +65,8 @@ subtr   	!20      	!#####0  	!line10        	!line19        	!
 xtlin   	!2name   	!3bllank 	!4dummy 	!
 
 
-xcnum   	!2name   	!3format 	!4test													!5value1				!6value2				!
-cnum		!01		!#####0		!$QDCGTaxWkst-Copy00-lineFEI3 &gt; 0  									!$QDCGTaxWkst-Copy00-lineFEI3		!$QDCGTaxWkst-Copy00-line01a		!
+xcnum   	!2name   	!3format 	!4test		!5value1				!6value2				!
+cnum		!01		!#####0		!$QDCGTaxWkst-Copy00-lineFEI3 &gt; 0                                                    								   !$QDCGTaxWkst-Copy00-lineFEI3		!$QDCGTaxWkst-Copy00-line01a		!
 cnum		!01a		!#####0		!$QDCGTaxWkst-Copy00-line104015 &gt; 0									!$QDCGTaxWkst-Copy00-line104015		!0					!
 
 cnum    	!03      	!#####0  	!$QDCGTaxWkst-Copy00-line03y = 'x'     									!$QDCGTaxWkst-Copy00-line03a		!$QDCGTaxWkst-Copy00-line10407		!

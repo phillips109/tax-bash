@@ -144,10 +144,10 @@ xdPull
 dPull
 01
 #####0
-252620
-Form1040
+0
+FEITaxWkst
 00
-line15
+line03
 
 dPull
 02
@@ -212,6 +212,14 @@ dPull
 SchedD
 00
 line19
+
+dPull
+104015
+#####0
+0
+Form1040
+00
+line15
 
 X******************************
 
@@ -451,6 +459,18 @@ subt0
 line35
 line38
 
+subt0
+cgexcess
+#####0
+line10
+line104015
+
+xsubt0
+unusedcge
+#####0
+linecgexcess
+line09
+
 x************************
 
 xsubt
@@ -589,7 +609,7 @@ WHEN01$SchedDTaxWkst-Copy00-lineFS = 'S'
 VALUOF492300
 WHEN02
 WHEN01$SchedDTaxWkst-Copy00-lineFS = 'MFS'
-VALUOF2769000
+VALUOF276900
 WHEN02
 WHEN01$SchedDTaxWkst-Copy00-lineFS = 'MFJ' or $SchedDTaxWkst-Copy00-lineFS = 'QSS'
 VALUOF553850

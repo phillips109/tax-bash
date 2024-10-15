@@ -1,0 +1,21 @@
+set_FEITaxWkst_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in FEITaxWkst in which to enter or edit data:"
+echo
+echo "02a)    Enter amounts from Form2555 lines 45 and 50"
+echo "02b)    Enter total amount of any deductions"
+echo
+echo "  q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read FEITaxWkst_line_data_choice
+echo
+     case $FEITaxWkst_line_data_choice in
+02a)    set_line_menu_number $1 $2  line02a                              ;;
+02b)    set_line_menu_number $1 $2  line02b                              ;;
+q  )    break;;                       
+esac
+done
+}

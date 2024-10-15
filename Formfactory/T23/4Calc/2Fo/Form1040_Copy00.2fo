@@ -115,25 +115,6 @@
 
 <fo:block-container position="absolute" top="2.70in">
 <fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineMFJ/@color"/>
-	</xslt:attribute>
-	<xslt:choose>
-	<xslt:when test="copy00lineMFJ='0'">
-	</xslt:when>
-	<xslt:otherwise>
-	<xslt:value-of select="copy00lineMFJ"/>
-	</xslt:otherwise>
-	</xslt:choose>
-      </fo:block>
-</fo:block-container>
-
-</fo:block-container>
-*******************************************************
-
-<fo:block-container position="absolute" top="0.00in" left="4.94in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
-
-<fo:block-container position="absolute" top="2.36in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
 	<xslt:value-of select="copy00lineMFS/@color"/>
 	</xslt:attribute>
 	<xslt:choose>
@@ -146,15 +127,34 @@
       </fo:block>
 </fo:block-container>
 
-<fo:block-container position="absolute" top="2.70in">
+</fo:block-container>
+*******************************************************
+
+<fo:block-container position="absolute" top="0.00in" left="4.94in" width="0.1in" background-color="transparent" font-family="Times" font-size="12pt" text-align="center">
+
+<fo:block-container position="absolute" top="2.36in">
 <fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	<xslt:value-of select="copy00lineMFJ/@color"/>
+	<xslt:value-of select="copy00lineHOH/@color"/>
 	</xslt:attribute>
 	<xslt:choose>
-	<xslt:when test="copy00lineMFJ='0'">
+	<xslt:when test="copy00lineHOH='0'">
 	</xslt:when>
 	<xslt:otherwise>
-	<xslt:value-of select="copy00lineMFJ"/>
+	<xslt:value-of select="copy00lineHOH"/>
+	</xslt:otherwise>
+	</xslt:choose>
+      </fo:block>
+</fo:block-container>
+
+<fo:block-container position="absolute" top="2.70in">
+<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
+	<xslt:value-of select="copy00lineQSS/@color"/>
+	</xslt:attribute>
+	<xslt:choose>
+	<xslt:when test="copy00lineQSS='0'">
+	</xslt:when>
+	<xslt:otherwise>
+	<xslt:value-of select="copy00lineQSS"/>
 	</xslt:otherwise>
 	</xslt:choose>
       </fo:block>
@@ -166,8 +166,17 @@
 <fo:block-container position="absolute" top="0.00in" left="4.00in" width="3.83in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="3.03in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Form1040_Copy00_linechild_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Form1040_Copy00_linechild_text.xml')//text"/>
-	</fo:block>
+<fo:block height="0.15in" background-color="transparent" color="purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSchild.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSchild"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
+      </fo:basic-link>
+      </fo:block>
 </fo:block-container>
 
 </fo:block-container>
@@ -185,10 +194,15 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSFNI_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSFNI.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSFNI"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -208,10 +222,15 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSLN_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSLN.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSLN"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -231,10 +250,15 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSSSNoF_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSSSNoF.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSSSNoF"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -254,10 +278,15 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSSSNoM_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSSSNoM.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSSSNoM"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>
@@ -277,10 +306,15 @@
 </fo:block-container>
 
 <fo:block-container position="absolute" top="2.12in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color">
-	purple</xslt:attribute>
-	<fo:basic-link external-destination="../Pdf/Form1040_Copy00.pdf">
-	<xslt:value-of select="document('../Data/Bkg_Copy00_lineSSSNoL_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent" color="purple"><fo:basic-link external-destination="../Pdf/Form1040_Copy00_lineSSSNoL.pdf">
+      <xslt:choose>
+      <xslt:when test="document('../Output/Form1040_Copy00.xml')">
+      <xslt:value-of select="document('../Output/Form1040_Copy00.xml')//copy00lineSSSNoL"/>
+      </xslt:when>
+      <xslt:otherwise>
+      <xslt:value-of select="''"/>
+    </xslt:otherwise>
+      </xslt:choose>
       </fo:basic-link>
       </fo:block>
 </fo:block-container>

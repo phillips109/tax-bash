@@ -14,9 +14,17 @@ set_menu_choices() {
 
         echo "Please enter your choice, then press return."
         read action_choice
+	
+#Note that choice 1) is a hack to get FEI calculated in the correct order.
 
         case $action_choice in
-           1) refreshTl $1 $2;;
+           1) refreshTl FEITaxWkst 01
+	      refreshTl QDCGTaxWkst 01
+	      refreshTl QDCGaTaxWkst
+	      refreshTL SchedDTaxWkst 01
+	      refreshTl SchedDaTaxWkst 01
+	      refreshTl FEITaxWkst 01
+	      refreshTl $1 $2;;
            2) set_$1_line_data_choice $1 $2;;
            3) showForm2 $1 $2;;
 	  rm) removeForm $1;;

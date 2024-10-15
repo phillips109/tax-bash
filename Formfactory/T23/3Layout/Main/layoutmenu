@@ -76,13 +76,15 @@ Pdfshow(){
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
         CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
-    UR1250GWkst) qpdfview ../Pdf/UR1250GWkst.pdf   &;;	    
-    QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;; 
+    UG1250Wkst) qpdfview  ../Pdf/UG1250Wkst.pdf    &;;	    
+    QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
+   QDCGaTaxWkst) qpdfview ../Pdf/qdcga.pdf         &;;
        f1040ssa) qpdfview ../Pdf/f1040ssa.pdf      &;;
             SST) qpdfview ../Pdf/sst.pdf           &;;
+ SchedDaTaxWkst) qpdfview ../Pdf/schda.pdf         &;;      
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;; 
-             w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
-         
+             w2) qpdfview ../Pdf/fw2.pdf           &;;
+     FEITaxWkst) qpdfview ../Pdf/fei.pdf           &;;             
 
           q) break;;	
     esac		
@@ -798,12 +800,14 @@ do
   echo "   fei)    Foreign Earned Income Tax Worksheet--f1040-line44."
   echo "   ln10)   State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "   qdcg)   Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
+  echo "  qdcga)   Qualified Dividends & Capital Gain Alternative Tax Worksheet" 
   echo "   rg28)   RGains 28%"
-  echo "   schd)   Schedule D worksheet."
+  echo "   schd)   Schedule D Tax Worksheet."
+  echo "  schda)   Schedule D Tax Worksheet." 
   echo "   sales)  State and Local Sales Tax Worksheet."
   echo "   ssa)    Social Security Benefit Statement."
   echo "   sst)    Social Security Tax Worksheet."
-  echo "   ur1250) Unreported Capital Gains"
+  echo "   1250)   Unrecaptured Section 1250 Gain Worksheet"
   
   
   echo "   q)      Return to Main Menu"
@@ -817,12 +821,14 @@ do
       fei)    set_menu_choices FEITaxWkst       00;;
       ln10)   set_menu_choices WSln10           00;;
       qdcg)   set_menu_choices QDCGTaxWkst      00;;
+     qdcga)   set_menu_choices QDCGaTaxWkst     00;; 
       rg28)   set_menu_choices 28RGWkst         00;;
       schd)   set_menu_choices SchedDTaxWkst    00;;
+     schda)   set_menu_choices SchedDaTaxWkst   00;; 
       sales)  set_menu_choices WSSchASalesTax   00;;
       ssa)    set_menu_choices Form1040ssa      00;;
       sst)    set_menu_choices SST              00;;
-      ur1250) set_menu_choices UR1250GWkst      00;;
+      1250)   set_menu_choices UG1250Wkst       00;;
       q)     break;;
     esac
 done

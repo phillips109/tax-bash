@@ -58,11 +58,11 @@ $SchedDTaxWkst-Copy00-line44"/>
 
 <xsl:variable name="SchedDTaxWkst-Copy00-line01">
 <xsl:choose>
-<xsl:when test="document('../Output/Form1040_Copy00.xml')">
-<xsl:value-of select="document('../Output/Form1040_Copy00.xml')//copy00line15"/>
+<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
+<xsl:value-of select="document('../Output/FEITaxWkst_Copy00.xml')//copy00line03"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="252620"/>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -137,6 +137,17 @@ $SchedDTaxWkst-Copy00-line44"/>
 <xsl:choose>
 <xsl:when test="document('../Output/SchedD_Copy00.xml')">
 <xsl:value-of select="document('../Output/SchedD_Copy00.xml')//copy00line19"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="SchedDTaxWkst-Copy00-line104015">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040_Copy00.xml')">
+<xsl:value-of select="document('../Output/Form1040_Copy00.xml')//copy00line15"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -413,6 +424,17 @@ $SchedDTaxWkst-Copy00-line44"/>
 </xsl:choose>
 </xsl:variable>
 
+<xsl:variable name="SchedDTaxWkst-Copy00-linecgexcess">
+<xsl:choose>
+<xsl:when test="$SchedDTaxWkst-Copy00-line104015 >= $SchedDTaxWkst-Copy00-line10">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$SchedDTaxWkst-Copy00-line10 - $SchedDTaxWkst-Copy00-line104015"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="SchedDTaxWkst-Copy00-line13">
 <xsl:value-of select="$SchedDTaxWkst-Copy00-line10 -  $SchedDTaxWkst-Copy00-line12"/>
 </xsl:variable>
@@ -505,7 +527,7 @@ $SchedDTaxWkst-Copy00-line44"/>
 <xsl:value-of select="492300"/>
 </xsl:when>
 <xsl:when test="$SchedDTaxWkst-Copy00-lineFS = 'MFS'">
-<xsl:value-of select="2769000"/>
+<xsl:value-of select="276900"/>
 </xsl:when>
 <xsl:when test="$SchedDTaxWkst-Copy00-lineFS = 'MFJ' or $SchedDTaxWkst-Copy00-lineFS = 'QSS'">
 <xsl:value-of select="553850"/>
