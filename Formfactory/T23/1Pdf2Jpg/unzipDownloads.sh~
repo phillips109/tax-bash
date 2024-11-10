@@ -1,5 +1,0 @@
-#!/bin/bash
-
-cd ~/Downloads
-unzip *.zip
-cd ~/Projects/Tax-bash/Formfactory/T22/1Pdf2Jpg/Main
