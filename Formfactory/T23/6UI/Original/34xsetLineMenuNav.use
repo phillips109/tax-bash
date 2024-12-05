@@ -1,0 +1,28 @@
+
+set_line_menu_nav() {
+while true;
+do
+
+    echo
+ echo  " 1) Show local instructions for this line."   
+ echo  " 2) show IRS instructions for this line" 
+ echo  " 3) Show current contents of the line"
+ echo  " 4) Comes from"
+ echo  " 5) Goes to"
+
+ echo  " q) quit"
+ echo "Please enter number of your choice and press Enter."
+ read action_choice
+  
+ case $action_choice in
+        1) showInstructions	 $1 $2 $3 $4;;
+	2) showIRSinstructions	 $1 $2 $3 $4;;
+	3) showDataFile		 $1 $2 $3 $4;;
+	4) comesFrom		 $1 $2 $3 $4;;
+	5) goesTo		 $1 $2 $3 $4;;
+	q) break;;
+    esac
+
+done
+
+}

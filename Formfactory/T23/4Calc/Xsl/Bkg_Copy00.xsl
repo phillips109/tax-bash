@@ -6,6 +6,22 @@
                 exclude-result-prefixes="xalan">
 
   <xsl:output indent="yes"/>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
 
 <xsl:variable name="Bkg-Copy00-lineApart">
 <xsl:value-of select="document('../Data/Bkg_Copy00_lineApart_text.xml')//text"/>
@@ -59,67 +75,72 @@
 
 <xsl:template match="/">
 <IRSForms>
+<!--
+
+Copyright (C) 2024 Phillips Wedemeyer
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
 <Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Bkg-Copy00">
 
 <copy00lineApart color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineApart"/>
-    </copy00lineApart>
-  
+<xsl:value-of select="$Bkg-Copy00-lineApart"/>
+</copy00lineApart>
 
 <copy00lineFS color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineFS"/>
-    </copy00lineFS>
-  
+<xsl:value-of select="$Bkg-Copy00-lineFS"/>
+</copy00lineFS>
 
 <copy00lineSFNI color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineSFNI"/>
-    </copy00lineSFNI>
-  
+<xsl:value-of select="$Bkg-Copy00-lineSFNI"/>
+</copy00lineSFNI>
 
 <copy00lineSLN color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineSLN"/>
-    </copy00lineSLN>
-  
+<xsl:value-of select="$Bkg-Copy00-lineSLN"/>
+</copy00lineSLN>
 
 <copy00lineSSSNoF color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineSSSNoF"/>
-    </copy00lineSSSNoF>
-  
+<xsl:value-of select="$Bkg-Copy00-lineSSSNoF"/>
+</copy00lineSSSNoF>
 
 <copy00lineSSSNoL color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineSSSNoL"/>
-    </copy00lineSSSNoL>
-  
+<xsl:value-of select="$Bkg-Copy00-lineSSSNoL"/>
+</copy00lineSSSNoL>
 
 <copy00lineSSSNoM color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineSSSNoM"/>
-    </copy00lineSSSNoM>
-  
+<xsl:value-of select="$Bkg-Copy00-lineSSSNoM"/>
+</copy00lineSSSNoM>
 
 <copy00lineTFNI color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineTFNI"/>
-    </copy00lineTFNI>
-  
+<xsl:value-of select="$Bkg-Copy00-lineTFNI"/>
+</copy00lineTFNI>
 
 <copy00lineTLN color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineTLN"/>
-    </copy00lineTLN>
-  
+<xsl:value-of select="$Bkg-Copy00-lineTLN"/>
+</copy00lineTLN>
 
 <copy00lineTSSNoF color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineTSSNoF"/>
-    </copy00lineTSSNoF>
-  
+<xsl:value-of select="$Bkg-Copy00-lineTSSNoF"/>
+</copy00lineTSSNoF>
 
 <copy00lineTSSNoL color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineTSSNoL"/>
-    </copy00lineTSSNoL>
-  
+<xsl:value-of select="$Bkg-Copy00-lineTSSNoL"/>
+</copy00lineTSSNoL>
 
 <copy00lineTSSNoM color="blue">
-    <xsl:value-of select="$Bkg-Copy00-lineTSSNoM"/>
-    </copy00lineTSSNoM>
-  
-</Form></IRSForms>
+<xsl:value-of select="$Bkg-Copy00-lineTSSNoM"/>
+</copy00lineTSSNoM>
+</Form>
+</IRSForms>
 </xsl:template>
 </xsl:stylesheet>

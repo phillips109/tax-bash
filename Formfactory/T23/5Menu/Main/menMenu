@@ -1,17 +1,17 @@
 
 #!/bin/bash
-#Copyright(C) 2019 Phillips Wedemeyer
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
 #
 #This file is part of a program called Tax-bash.
 #
 #Tax-bash is free software: you can redistibute it and/or modify
-#it under the terms of the FNU General Public License as published by
+#it under the terms of the GNU General Public License as published by
 #the Free Software Foundation, either version 3 of the License, or
 #(at your option) any later version.
 #
 #Tax-bash is distributed in the hope that it will be useful,
 #but WITHOUT ANY WARRANTY; without even the implied warranty of
-#MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #GNU General Public License for more details.
 #
 #You should have received a copy of the GNU General Public License
@@ -172,24 +172,32 @@ rmEmacsBkups(){
 }
 
 
-#makeMenuFile2(){
-#   awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Txt/$1.alins > ../Menus/$1.data.men
-#}
 
 
 makeMenuFile(){
     awk -f ../Awk/menu2.awk -f ../Awk/sortd.awk "form=$1" ../Pre/$1.pre > ../Menus/$1.men
-    }
+    cat ../Files/licenseNotice ../Menus/$1.men > ../Menus/$1.men.tmp
+    mv ../Menus/$1.men.tmp ../Menus/$1.men
+     }
 
 editMenu(){
     emacs ../Menus/$1.men
 }
-    
+
+#This combines all menu files into one ../Files/allMenus
 catMenus(){
-#This combines all menu files into one ../Files/all
-    rm ../Files/*
-#    rm ../Menus/*~
-    cat ../Menus/*.men > ../Files/allMenus
+    rm ../Files/allMenus
+    dir ../Files
+    for file in $(dir ../Menus)
+    do
+    echo $file
+    sed '/^#/d' ../Menus/$file > ../Files/$file.tmp
+    cat ../Files/$file.tmp >> ../Files/allMenus
+    done
+    
+    cat ../Files/licenseNotice ../Files/allMenus > ../Files/allMenus.tmp
+    mv ../Files/allMenus.tmp ../Files/allMenus
+    rm ../Files/*.tmp
     }
 
 addColumns(){

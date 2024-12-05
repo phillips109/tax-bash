@@ -1,0 +1,47 @@
+
+oneAcct() {
+#This file now depends on refreshAll bringing data up to date.
+list=""
+echo
+echo "This function will list the transactions for one account." 
+echo "You will need to supply the name of the one account you want to see."
+echo
+echo "Do you need to see a list of all available accounts?"
+echo "Enter y or n."
+read list
+
+if [ "$list" = "y" ]
+  then
+#   echo $list
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/totl.xml -xsl ../BaseXsl/listAccounts.xsl -out ../BaseData/listAccounts.xml
+
+firefox -new-tab ../BaseData/listAccounts.xml > /dev/null 2>&1 &
+#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
+fi
+
+echo
+echo "Type the name of the account you want to see:"
+read account
+echo
+echo "The transactions will be sorted by date-posted."
+echo "Would you prefer the transactions be sorted by description? If so enter 'yes'."
+read description
+
+if [ "$description" = "yes" ]
+  then
+echo "description = "yes"."
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/totl.xml -xsl ../BaseXsl/oneAcctDesc.xsl -out ../BaseData/oneAcct.xml -PARAM AName $account
+ else
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/totl.xml  -xsl ../BaseXsl/oneAcctDate.xsl -out ../BaseData/oneAcct.xml -PARAM AName $account
+fi
+
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/oneAcct.xml -xsl ../Base2Fo/trnsPerAcct4.2fo -out ../Fo/oneAcct.fo
+
+#java $FOPJAVAJAR org.apache.fop.cli.Main  ../Fo/oneAcct.fo ../Pdf/oneAcct.pdf
+fop ../Fo/oneAcct.fo ../Pdf/oneAcct.pdf
+
+#firefox -new-tab ../Pdf/oneAcct.pdf > /dev/null 2>&1 &
+qpdfview --unique ../Pdf/oneAcct.pdf > /dev/null 2>&1 &
+
+}
+

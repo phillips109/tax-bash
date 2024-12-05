@@ -1,0 +1,61 @@
+
+changeColor(){
+#The $# is the number of parameters.     
+params=$#
+#echo "$params"
+if [ $params = "3" ]; then
+    infile="../Data/$1_Copy$2_*.xml"
+    tempfile="../Data/$1_Copy$2_*.tmp"
+elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+fi
+echo "infile is $infile."
+
+clear
+echo "When an entry is overriden its color is changed to red"
+echo "When a note is entered on a line its color,"
+echo "if not overriden, is changed to dark blue."
+echo "Red and dark blue print like black."
+echo "You may change the color of an overriden entry"
+echo "or an entry containing a note"
+echo "or any entry"
+echo "by using this fuction."
+echo
+echo "Do you wish to change the color of the text of this entry?"
+echo "Enter y or n"
+read this
+if yOrn "$this"
+
+then
+    echo "Please enter the color you wish::"
+    read color
+#    sed 's/<taxline color=".*">/<taxline color="'"$color"'">/' $infile > $tempfile
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorin.xsl -PARAM shade $color -out $tempfile
+#   cat $tempfile
+    mv $tempfile $infile
+    echo
+    cat $infile
+    clear
+    echo
+    echo "The color of the text is now:"
+#    sed -n '/<taxline color=".*">/s/<taxline color="//;s/">//p'  $infile
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorout.xsl
+    echo
+    return		
+else
+    clear
+    echo " "
+    echo "The color value has been kept unchanged:"
+    echo "The color value is:"
+#    sed -n '/<taxline color=".*">/s/<taxline color="//;s/">//p'  $infile
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorout.xsl
+    echo
+
+    return
+    
+fi    
+
+return
+}    
+

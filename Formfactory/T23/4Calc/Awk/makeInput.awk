@@ -3,9 +3,51 @@
 
 #10/20/2023 changed FS from "[ \t]*!" to "\n"(new line); changed RS from "\n" to ""(blank line)
 
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+
 BEGIN {
       FS = "\n"
       RS = ""
+      print "<?xml version = \"1.0\"?>"
+      print "<!--"
+      print "Copyright(C) 2023, 2024 Phillips Wedemeyer"
+      print ""
+      print "This file is part of a program called Tax-bash."
+      print ""
+print "Tax-bash is free software: you can redistibute it and/or modify"
+print "it under the terms of the GNU General Public License as published by"
+print "the Free Software Foundation, either version 3 of the License, or"
+print "(at your option) any later version."
+print ""
+print "Tax-bash is distributed in the hope that it will be useful,"
+print "but WITHOUT ANY WARRANTY; without even the implied warranty of"
+print "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the"
+print "GNU General Public License for more details."
+print ""
+print "You should have received a copy of the GNU General Public License"
+print "along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>."
+print ""
+print "-->"
+
       print "<Form name='"$1"'>"
       } 
 

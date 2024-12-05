@@ -6,6 +6,22 @@
                 exclude-result-prefixes="xalan">
 
   <xsl:output indent="yes"/>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
 
 <xsl:variable name="Sched3-Copy00-line07">
 <xsl:value-of select="$Sched3-Copy00-line06a +
@@ -446,212 +462,188 @@ $Sched3-Copy00-line14"/>
 
 <xsl:template match="/">
 <IRSForms>
+<!--
+
+Copyright (C) 2024 Phillips Wedemeyer
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
 <Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Sched3-Copy00">
 
-<copy00line07 color="green">
-  <xsl:value-of select="format-number($Sched3-Copy00-line07, '#####0')"/>
-  </copy00line07>
+<copy00line07 color="red">
+<xsl:value-of select="format-number($Sched3-Copy00-line07, '#####0')"/>
+</copy00line07>
 
+<copy00line08 color="red">
+<xsl:value-of select="format-number($Sched3-Copy00-line08, '#####0')"/>
+</copy00line08>
 
-<copy00line08 color="green">
-  <xsl:value-of select="format-number($Sched3-Copy00-line08, '#####0')"/>
-  </copy00line08>
+<copy00line14 color="red">
+<xsl:value-of select="format-number($Sched3-Copy00-line14, '#####0')"/>
+</copy00line14>
 
-
-<copy00line14 color="green">
-  <xsl:value-of select="format-number($Sched3-Copy00-line14, '#####0')"/>
-  </copy00line14>
-
-
-<copy00line15 color="green">
-  <xsl:value-of select="format-number($Sched3-Copy00-line15, '#####0')"/>
-  </copy00line15>
-
+<copy00line15 color="red">
+<xsl:value-of select="format-number($Sched3-Copy00-line15, '#####0')"/>
+</copy00line15>
 
 <copy00line06z color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06z, '#####0')"/>
-  </copy00line06z>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06z, '#####0')"/>
+</copy00line06z>
 
 <copy00line11 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line11, '#####0')"/>
-  </copy00line11>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line11, '#####0')"/>
+</copy00line11>
 
 <copy00line13b color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line13b, '#####0')"/>
-  </copy00line13b>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line13b, '#####0')"/>
+</copy00line13b>
 
 <copy00line13z color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line13z, '#####0')"/>
-  </copy00line13z>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line13z, '#####0')"/>
+</copy00line13z>
 
 <copy00line01 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line01, '#####0')"/>
-  </copy00line01>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line01, '#####0')"/>
+</copy00line01>
 
 <copy00line02 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line02, '#####0')"/>
-  </copy00line02>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line02, '#####0')"/>
+</copy00line02>
 
 <copy00line03 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line03, '#####0')"/>
-  </copy00line03>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line03, '#####0')"/>
+</copy00line03>
 
 <copy00line04 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line04, '#####0')"/>
-  </copy00line04>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line04, '#####0')"/>
+</copy00line04>
 
 <copy00line05a color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line05a, '#####0')"/>
-  </copy00line05a>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line05a, '#####0')"/>
+</copy00line05a>
 
 <copy00line05b color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line05b, '#####0')"/>
-  </copy00line05b>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line05b, '#####0')"/>
+</copy00line05b>
 
 <copy00line06a color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06a, '#####0')"/>
-  </copy00line06a>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06a, '#####0')"/>
+</copy00line06a>
 
 <copy00line06b color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06b, '#####0')"/>
-  </copy00line06b>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06b, '#####0')"/>
+</copy00line06b>
 
 <copy00line06c color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06c, '#####0')"/>
-  </copy00line06c>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06c, '#####0')"/>
+</copy00line06c>
 
 <copy00line06d color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06d, '#####0')"/>
-  </copy00line06d>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06d, '#####0')"/>
+</copy00line06d>
 
 <copy00line06f color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06f, '#####0')"/>
-  </copy00line06f>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06f, '#####0')"/>
+</copy00line06f>
 
 <copy00line06g color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06g, '#####0')"/>
-  </copy00line06g>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06g, '#####0')"/>
+</copy00line06g>
 
 <copy00line06h color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06h, '#####0')"/>
-  </copy00line06h>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06h, '#####0')"/>
+</copy00line06h>
 
 <copy00line06i color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06i, '#####0')"/>
-  </copy00line06i>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06i, '#####0')"/>
+</copy00line06i>
 
 <copy00line06j color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06j, '#####0')"/>
-  </copy00line06j>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06j, '#####0')"/>
+</copy00line06j>
 
 <copy00line06k color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06k, '#####0')"/>
-  </copy00line06k>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06k, '#####0')"/>
+</copy00line06k>
 
 <copy00line06l color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06l, '#####0')"/>
-  </copy00line06l>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06l, '#####0')"/>
+</copy00line06l>
 
 <copy00line06m color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line06m, '#####0')"/>
-  </copy00line06m>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line06m, '#####0')"/>
+</copy00line06m>
 
 <copy00line09 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line09, '#####0')"/>
-  </copy00line09>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line09, '#####0')"/>
+</copy00line09>
 
 <copy00line10 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line10, '#####0')"/>
-  </copy00line10>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line10, '#####0')"/>
+</copy00line10>
 
 <copy00line12 color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line12, '#####0')"/>
-  </copy00line12>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line12, '#####0')"/>
+</copy00line12>
 
 <copy00line13a color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line13a, '#####0')"/>
-  </copy00line13a>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line13a, '#####0')"/>
+</copy00line13a>
 
 <copy00line13c color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line13c, '#####0')"/>
-  </copy00line13c>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line13c, '#####0')"/>
+</copy00line13c>
 
 <copy00line13d color="red">
-  <xsl:value-of select="format-number($Sched3-Copy00-line13d, '#####0')"/>
-  </copy00line13d>
-
+<xsl:value-of select="format-number($Sched3-Copy00-line13d, '#####0')"/>
+</copy00line13d>
 
 <copy00line06line color="blue">
-    <xsl:value-of select="$Sched3-Copy00-line06line"/>
-    </copy00line06line>
-  
+<xsl:value-of select="$Sched3-Copy00-line06line"/>
+</copy00line06line>
 
 <copy00line13zline color="blue">
-    <xsl:value-of select="$Sched3-Copy00-line13zline"/>
-    </copy00line13zline>
-  
+<xsl:value-of select="$Sched3-Copy00-line13zline"/>
+</copy00line13zline>
 
 <copy00lineSFNI color="blue">
-    <xsl:value-of select="$Sched3-Copy00-lineSFNI"/>
-    </copy00lineSFNI>
-  
+<xsl:value-of select="$Sched3-Copy00-lineSFNI"/>
+</copy00lineSFNI>
 
 <copy00lineSLN color="blue">
-    <xsl:value-of select="$Sched3-Copy00-lineSLN"/>
-    </copy00lineSLN>
-  
+<xsl:value-of select="$Sched3-Copy00-lineSLN"/>
+</copy00lineSLN>
 
 <copy00lineTFNI color="blue">
-    <xsl:value-of select="$Sched3-Copy00-lineTFNI"/>
-    </copy00lineTFNI>
-  
+<xsl:value-of select="$Sched3-Copy00-lineTFNI"/>
+</copy00lineTFNI>
 
 <copy00lineTLN color="blue">
-    <xsl:value-of select="$Sched3-Copy00-lineTLN"/>
-    </copy00lineTLN>
-  
+<xsl:value-of select="$Sched3-Copy00-lineTLN"/>
+</copy00lineTLN>
 
 <copy00lineTSSNoF color="blue">
-    <xsl:value-of select="$Sched3-Copy00-lineTSSNoF"/>
-    </copy00lineTSSNoF>
-  
+<xsl:value-of select="$Sched3-Copy00-lineTSSNoF"/>
+</copy00lineTSSNoF>
 
 <copy00lineTSSNol color="blue">
-    <xsl:value-of select="$Sched3-Copy00-lineTSSNol"/>
-    </copy00lineTSSNol>
-  
+<xsl:value-of select="$Sched3-Copy00-lineTSSNol"/>
+</copy00lineTSSNol>
 
 <copy00lineTSSNoM color="blue">
-    <xsl:value-of select="$Sched3-Copy00-lineTSSNoM"/>
-    </copy00lineTSSNoM>
-  
-</Form></IRSForms>
+<xsl:value-of select="$Sched3-Copy00-lineTSSNoM"/>
+</copy00lineTSSNoM>
+</Form>
+</IRSForms>
 </xsl:template>
 </xsl:stylesheet>

@@ -6,7 +6,7 @@
 # sortd(arrayname, NUM)
 
 
-#Copyright(C) 2023 Phillips Wedemeyer
+#Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 #This file is part of a program called Tax-bash.
 #
@@ -17,7 +17,7 @@
 #
 #Tax-bash is distributed in the hope that it will be useful,
 #but WITHOUT ANY WARRANTY; without even the implied warranty of
-#MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #GNU General Public License for more details.
 #
 #You should have received a copy of the GNU General Public License

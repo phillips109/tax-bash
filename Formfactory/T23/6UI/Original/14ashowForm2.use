@@ -1,0 +1,24 @@
+showForm2() {
+#This version of showForm() handles the linked files
+
+for file in ../2Fo/$1_Copy$2*.2fo
+do
+#    echo $file
+    file1=${file#../2Fo/}
+#    echo $file1
+   file2=${file1%2fo}
+#    echo $file2
+    file2+="fo"
+#    echo $file2
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/$1_Copy$2.xml -xsl ../2Fo/$file1 -out ../Fo/$file2
+    file3=${file1%2fo}
+#    echo $file3
+    file3+="pdf"
+#    echo $file3
+    fop ../Fo/$file2 ../Pdf/$file3
+done
+
+qpdfview --unique ../Pdf/$1_Copy$2.pdf >/dev/null 2>&1 &
+
+return
+}

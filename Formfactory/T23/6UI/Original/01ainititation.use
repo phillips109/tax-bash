@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+#This file is copy-left.
+viewReadMe(){
+cat README | less
+return
+}
+

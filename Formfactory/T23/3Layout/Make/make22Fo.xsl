@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright(C) 2019 Phillips Wedemeyer
+
+This file is Tax-bash/Formfactory/T??/3Layout/Make/make22Fo.xsl
+The purpose is to create the ../2Fo/.2fo file from ../Layouts/$1_Copy$2.lo
+
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
 Tax-bash is free software: you can redistibute it and/or modify
-it under the terms of the FNU General Public License as published by
+it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
 Tax-bash is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
@@ -47,18 +51,18 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 	  <fo:root>
 	      <xslt:text disable-output-escaping="yes">
 
-	  Copyright(C) 2019 Phillips Wedemeyer
+	  Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 	  This file is part of a program called Tax-bash.
 
 	  Tax-bash is free software: you can redistibute it and/or modify
-	  it under the terms of the FNU General Public License as published by
+	  it under the terms of the GNU General Public License as published by
 	  the Free Software Foundation, either version 3 of the License, or
 	  (at your option) any later version.
 	  
 	  Tax-bash is distributed in the hope that it will be useful,
 	  but WITHOUT ANY WARRANTY; without even the implied warranty of
-	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	  GNU General Public License for more details.
 	  
 	  You should have received a copy of the GNU General Public License

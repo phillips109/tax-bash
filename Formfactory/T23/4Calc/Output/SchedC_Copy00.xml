@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <Form name="SchedC-Copy00">
-<copy00line07 color="green">0</copy00line07>
-<copy00line28 color="green">0</copy00line28>
-<copy00line40 color="green">0</copy00line40>
-<copy00line48 color="green">0</copy00line48>
+<copy00line07 color="red">0</copy00line07>
+<copy00line28 color="red">0</copy00line28>
+<copy00line40 color="red">0</copy00line40>
+<copy00line48 color="red">0</copy00line48>
 <copy00line01 color="red">0</copy00line01>
 <copy00line02 color="red">0</copy00line02>
 <copy00line06 color="red">0</copy00line06>
@@ -50,14 +50,14 @@
 <copy00lineExp7 color="red">0</copy00lineExp7>
 <copy00lineExp8 color="red">0</copy00lineExp8>
 <copy00lineExp9 color="red">0</copy00lineExp9>
-<copy00line04 color="purple">0</copy00line04>
-<copy00line27a color="purple">0</copy00line27a>
-<copy00line27b color="purple">0</copy00line27b>
-<copy00line03 color="purple">0</copy00line03>
-<copy00line05 color="purple">0</copy00line05>
-<copy00line29 color="purple">0</copy00line29>
-<copy00line31 color="purple">0</copy00line31>
-<copy00line42 color="purple">0</copy00line42>
+<copy00line04 color="red">0</copy00line04>
+<copy00line27a color="red">0</copy00line27a>
+<copy00line27b color="red">0</copy00line27b>
+<copy00line03 color="red">0</copy00line03>
+<copy00line05 color="red">0</copy00line05>
+<copy00line29 color="red">0</copy00line29>
+<copy00line31 color="red">0</copy00line31>
+<copy00line42 color="red">0</copy00line42>
 <copy00line01Ck color="blue"/>
 <copy00line32a color="blue"/>
 <copy00line32b color="blue"/>

@@ -1,0 +1,106 @@
+
+edit-numberline(){
+#This function edit the accounts used to calculate a number value.
+#Each account is an <item> under <accounts>.
+
+#The $# is the number of parameters. It is $0 $1 $2 and perhaps $3 for a total of either 3 or 4.    
+params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile. tempfile=$tempfile."
+
+echo "This line has a numerical value."
+echo "Preferably this value is drawn from your GnuCash data."
+echo "This is done by adding up the totals of the accounts you specify here."
+echo "This method allows the program to enter the amount automatically in the future."
+echo 
+echo "If the value to be entered here is not in your GnuCash accounts, or"
+echo "if you wish to temporarily override the value of this line,"
+echo "you can return to the previous menu and override the value."
+echo "Overriding normally changes the color to red,"
+echo "but on the previous menu you may set the color as you wish."
+echo
+clear
+echo "The totals of the following accounts are currently"
+echo "being added together to produce the value of the line."
+#this sed expression removes the markup of each item(account) and prints the accounts
+#sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl acctout.xsl
+
+echo
+echo "Do you wish to add an account? Enter y or n."
+read choice
+
+while yOrn $choice
+do      
+       echo "Enter the name of the account you wish to add."
+       read add
+#      sed '/<\/accounts>/i\
+#<item>'"$add"'<\/item>' $infile > $tempfile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctadd.xsl -out $tempfile -PARAM item "$add"
+
+       mv $tempfile $infile
+#      cat $infile       
+       echo "The following accounts are now listed:"
+#      sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
+       echo "Do you wish to add the name of another account? Enter y or n."
+       read choice
+done
+clear
+echo "Do you wish to remove an account? Enter y or n."
+read choice2
+
+while yOrn $choice2 
+do      
+       echo "Enter the name of the account you wish to remove."
+       read remove
+#      sed '/<item>'"$remove"'<\/item>/s///' $infile > $tempfile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctremove.xsl -PARAM acct "$remove" -out $tempfile
+#      cat $tempfile
+       mv $tempfile $infile
+#      cat $infile
+       clear
+       echo "The following accounts are now listed:"
+#      sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
+
+       echo "If you wish to remove the name of another account? Enter y or n."
+       read choice2
+done
+
+echo "The following accounts are now listed:"
+#    sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
+
+echo
+
+echo
+echo "Remember that this change will not show up"
+echo "until you have refreshed (recalculated) your data."
+echo "Since refreshing your data takes about 30 seconds,"
+echo "You may wish to make other changes to your data"
+echo "before you recalculate all your data."
+echo 
+echo "Do you wish to refresh your data now?"
+echo "This will take about 30 seconds."
+echo "Enter y or n"
+read this
+if yOrn "$this"
+   then
+       refreshTl $1 $2
+   else
+       echo "Data has not been refreshed."
+fi
+
+
+
+
+return
+}
