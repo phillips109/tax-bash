@@ -1,4 +1,0 @@
-type	!name	!seq	!menuEntry
-tlin	!QOFy	!	!Enter x if you disposed of any investment in a qualified opportunity fund during the tax year.
-tlin	!QOFn	!	!Enter x if you did not.
-dlin	!14	!	!Enter long-term capital loss carryover. This is line 13 of your Capital Loss Carryover Worksheet.

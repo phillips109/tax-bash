@@ -1,7 +1,0 @@
-type	!name	!seq	!menuEntry
-dlin	!01	!008	!Enter investment interest expense paid or accrues in 2022            
-dlin	!04a	!011	!Enter gross income from property held for investment                        
-dlin	!04b	!012	!Enter qualified dividents included on line 4a                              
-dlin	!04d	!014	!Enter net gain from dispositon of propert held for investment               
-dlin	!04g	!017	!Enter the amount from lines 4b or yournet capital gain from the disposition of property held for investsment                              
-dlin	!05	!019	!Enter investment expenses                              

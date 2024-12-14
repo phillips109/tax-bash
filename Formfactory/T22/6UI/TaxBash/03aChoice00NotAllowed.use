@@ -1,5 +1,0 @@
-
-choice00NotAllowed(){
-	echo "Choice $1 is not allowed."
-	sleep 5
-}

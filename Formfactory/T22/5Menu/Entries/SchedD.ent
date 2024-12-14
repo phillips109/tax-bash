@@ -1,5 +1,0 @@
-type	!name	!seq	!menuEntry
-tlin	!QOFy	!008	!Enter x if you disposed of any investment(s) in a qualified opportunity fund during the tax year.                             
-tlin	!QOFn	!009	!Enter x if you did not.                           
-dlin	!15	!0408	!Enter amt for line 15                              
-dlin	!16	!049	!Enter amoutn for line16                              

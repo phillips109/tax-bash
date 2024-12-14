@@ -1,8 +1,0 @@
-#! /bin/bash
-f1=$1_Copy00.2fo
-f2=$1_Copy10.2fo
-cp $f1 $f2
-sed 's/Copy00/Copy10/g' $f2 > $f2.tmp
-sed 's/copy00/copy10/g' $f2.tmp > $f2
-rm $f2.tmp
-#./pretty.sh $f2

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for file in                                      \
-                1Pdf2Jpg/Main/p2jMenu          \
+                1Pdf2Jpg/Main/p2jMenu            \
 		1Pdf2Jpg/Main/licNotice          \
 		1Pdf2Jpg/Sed/convertpdf2jpg.sh   \
 		1Pdf2Jpg/Sed/unzipDownloads.sh   \
