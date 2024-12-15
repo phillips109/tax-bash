@@ -4,7 +4,7 @@ It is similar to commercial programs such as Tax-cut and TurboTax except that it
 
 ## Differences from Tax-Cut@ or TurboTax@
 The program currently does not have a guide to help you collect your data, it does not offer any tax or financial advice, and it does not e-file. 
-These features could be added in the future, if desired.
+These features can be added in the future.
 
 The program does not access the internet to either pull information from financial institutions nor does it supply your data to be e-filed. 
 Your data is confidential and is designed to be printed on paper and filed by "snail mail". 
@@ -19,16 +19,16 @@ If a form A expects to pull data from Form B and Form B does not yet exist,
 Form A will assume for calcultion purposes that the value is zero and 
 for visual purposes the entry on the form will be left blank. 
 This allows the filer to start with any form he chooses and 
-allows him to add or remove forms from his return without one form impinging on any other.(
-This behavior is made possible by the use of Xsl as the backend calculating language.)
+allows him to add or remove forms from his return without one form impinging on any other.
+(This behavior is made possible by the use of Xsl as the backend calculating language.)
 
 ## Formfactory
 FormFactory is a program to create the forms that comprise the Tax-bash program.
 Creation of a form consists of several steps. Doing this does not require any programming. The user simply follows the steps indicated by the main menus. 
 What is created at each step is a text file that is an awk database that tells the program what code to write.
 
-## Folder /1pdf2jpg perform the first step.
-The first step is to create an image to use as the background of the file. 
+## Folder /1pdf2jpg performs the first step.
+The first step is to create an image to use as the background of the form. 
 This image is available as a pdf file from the IRS web site. 
 Because the formating language fop currently can only use jpg images, 
 the pdf file must be converted to jpg. 
@@ -40,7 +40,7 @@ This menu will guide you through the process.
 The second step is to set the short names for each entry on the form and the sequence in which they will most likely be entered. 
 The names set here will be used in all subsequent steps and the sequence will be used to create the menus for entering data. 
 This process is contained in the 2Sequence folder with the main menu seqMenu located, as usual, in the Main subdirectory. 
-The resultant document is an awk file in the Text folder with a name such as f1040.txt. 
+The resultant document is an awk file in the Txt folder with a name such as f1040.txt. 
 
 ## Separation of concerns
 Steps 3,4, and 5 import this file as the start of their processes. 
@@ -48,7 +48,7 @@ These steps are independent of each other.
 Once the .jpg file and the .txt file are available, division of labor (separation of concerns) can take over. 
 Steps 3,4,and 5 can occur in any order or simultaneously by diferent users.
 
-## Foldere /3Layout puts the data in the correct blanks on the form.
+## Folder /3Layout puts the data in the correct blanks on the form.
 The third step, contained in 3Layout folder, is the process of determining the location on the form where the data will be entered. 
 The main menu, layoutmenu, is in the Main subdirectory. 
 The result is a .2fo file that is an Xsl file containg the location information.
@@ -64,7 +64,7 @@ The main menu, menMenu, is in the Main subdirectory.
 The result of the process is a menu that will be included in the user interface. 
 Also created at this step is a data file for each user entry.
 
-## Folder /6gui merges the menus into the gui and creates the data files to contain the entered data.
+## Folder /6gui creates the user interface and merges the menus into it.
 The sixth step, contained in the 6UI folder, is the creation of the user interface. 
 The main menu is uiMenu located in the Main subdirectory. 
 The user interface is written in bash, a script found on most linux computers. 
@@ -85,35 +85,34 @@ It contains for each form, in the Main folder, a new tax-bash interface file con
 ## How to download the /7App folder, which is the program tax-bash, to your computer
 
 1. Create a tar file of the folder /7App
- 
- Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
- which will create the tar file of 7App in a directory called T22.
+   Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
+   which will create the tar file of 7App in a directory called T23.
 
 2. Create a folder for your tax-bash program. 
    I would suggests ~/Tax-bash but you could use something like ~//TB to hide the program from prying eyes. 
    Under the Tax-bash folder you could have a directory made up of your initials in case you decide to calculate taxes for anyone other than yourself.
 
-3. Copy the shell file downloadT22.sh to your folder.
-   Go to your ~/Tax-bash/PW/ directory and copy ~/FormFactory/T22/downloadT22.sh to it. 
+3. Copy the shell file downloadT23.sh to your folder.
+   Go to your ~/Tax-bash/PW/ directory and copy ~/FormFactory/T23/downloadT23.sh to it. 
 
-4. Run that shell file (./downloadT22.sh)
+4. Run that shell file (./downloadT23.sh)
    This will create a directory T22 and the files from 7App will be extracted into it.
 
-5. Change to the newly created /Tax-bash/PW/T22/Main directory.
+5. Change to the newly created /Tax-bash/PW/T23/Main directory.
 
 6. Type ./tax-bash to start the program.
 
 ## How to update your program with any changes from Formfactory.
 
-   Simply run the /Tax-bash/PW/T22/downloadT22.sh file again.
+   Simply run the /Tax-bash/PW/T23/downloadT23.sh file again.
    Any new forms or changes to the program will be updated, but your data will not be overwritten.
 
 ## To summarize: The end user who wants to use tax-bash to do his taxes will
-1. Create a Tax-bash directory with an optional subdirectory consisting of their innitials. 
-2. From this subdirectory  they will download the downloadT22.sh file. 
+1. Create a Tax-bash directory with an optional subdirectory consisting of his initials. 
+2. Into this subdirectory  he will copy the downloadT23.sh file. 
 3. Running this .sh file will download the Tax-bash application ready for use to create a tax return. 
+   Running this .sh file at a later date will uupdate the application without overwriting the user's data.
 
-Running the same program at a latter date will update the program without overwriting the user's data.
 
 
 
