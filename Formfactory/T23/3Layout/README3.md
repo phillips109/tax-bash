@@ -21,8 +21,8 @@
 
 
 You do not need to know how to program in Xsl or other languages.
-With a text editor,yYou will create an awk database that will tell the program what needs to be programmed.
-An Awk database is written in plain text and is human readable and writabale.
+With a text editor, you will create an awk database that will tell the program what needs to be programmed.
+An Awk database is written in plain text and is human readable and writable.
 Each line is a record.
 Each line contains fields that are ordinarily delineated by spaces.
 Below is an example:
@@ -58,7 +58,7 @@ The tlin is one into which the taxpayor enters data.
 The tPull is one which pulls its data from another form.
 
 Change directories to Layout/Main.
-The shell file to guide your work is callled layoutmenu.
+The shell file to guide your work is called layoutmenu.
 It is invoked from the Main directory with the ./layoutmenu command.
 (Note the leading ./ because it is assumed that the working directory
 is not in your PATH for security reasons.)
@@ -123,7 +123,7 @@ The result will look like this:
 On the form itself, picture 3 columns running from the top of the page to the bottom.
 In column 01 are TFNI, addr01, addr02, and city at heights in the column to be indicated later.
 In column 02 are TLN and ST.
-In colnm 03 is zip
+In colunm 03 is zip
 
 ### Choice 1g
 This choice makes a backup file in the BkgupColumns directory.
@@ -337,7 +337,6 @@ If this fails, run the steps 2-8 one by one to look for the error.
 ### Choice 10
 This choice opens up a sub menu that takes you through the steps to create a copy of the form that has a yellow background for data that is drawn by other forms.
 This is a hack to allow the taxpayor to link from one form to another.
-It is not yet fully implemented.
 
 ### Choice 11
 This choice copies the .2Fo file that is created to the 7App folder to become part of the Tax return.
