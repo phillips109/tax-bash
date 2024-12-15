@@ -1,6 +1,6 @@
-This is the README file for the 2Sequence folder of Tax-bash
+# This is the README file for the 2Sequence folder of Tax-bash
 
-Copyright(C) 2023 Phillips Wedemeyer
+Copyright(C) 2023 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -11,7 +11,7 @@ the Free Software Foundation, either version 3 of the License, or
 
 Tax-bash is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
@@ -19,7 +19,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 
 
-In this folder two things are accomplished.
+# In this folder two things are accomplished.
 1. The entry spaces on the form are given **short names**
 2. The **sequence** in which the forms are likely to be filled out is specified.
 
