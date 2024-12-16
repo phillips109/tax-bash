@@ -1,4 +1,4 @@
-# Awk Basics
+# Awk basics: (This file will be easier to read in edit mode.)
 
 #Copyright(C) 2023, 2024 Phillips Wedemeyer
 #
