@@ -1,4 +1,5 @@
 # This folder, 4Calc, is where the calculations of the form are performed.
+## (This file will be easier to read in edit mode.)
 As usual the menu file is in the Main directory:calcMenu.
 
 1. The first choice is to display the ,pdf view of the form.
