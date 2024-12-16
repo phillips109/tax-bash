@@ -127,7 +127,7 @@ XSL-FO backbone. Before going to a different user interface, try this bash
 one. It is quick, and after a short learning curve, very easy to use.
 
        A note on installation: The program's overall folder is called Tax-bash.
-It currently contains one sub-folder:T15 which contains all the folders necessary for the year 2015. The program for the 2016 year should be installed as T16.
-Tax-bash can be installed anywhere, but intallation in your    folder is suggested. 
+It currently contains one sub-folder:T23 which contains all the folders necessary for the year 2023. The program for the 2024 year will be installed as T24.
+Tax-bash can be installed anywhere on your computer.
       The program uses the java programs for XSL and FO. The C based version does not work. Therefore you must specify your JAVAHOME and the classpath for the xalan2.jar and the fop.jar need to be specified. The next few paragraphs will
 describe how to do this.
