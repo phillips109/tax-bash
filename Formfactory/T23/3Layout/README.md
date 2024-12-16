@@ -1,4 +1,3 @@
-# Awk Basics
 
 #Copyright(C) 2023, 2024 Phillips Wedemeyer
 #
