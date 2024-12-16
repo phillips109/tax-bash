@@ -32,4 +32,49 @@ As usual the menu file is in the Main directory:calcMenu.
 29. Step 17 converts the .fo file to .pdf.
 30. Step 18 displays the form with txt data and some calculated data.
 31. Step 19 is a shortcut to do steps 16-18.
-32. Step 20 exports the variables and lines to 7App/ 
+32. Step 20 exports the variables and lines to 7App.
+# These steps require your attention
+
+In step 1d you will presented with a .txt file from /2Sequence.
+This awk  database will have four fields: type name sequence and a blank column.
+You will alter the type entry to be more specific.
+You will designate the type field to be:
+addit for addition
+mult for multiplication
+subtr for subtraction
+subt0 for subtraction down to zero
+smOf for smaller of
+lgOf for larger of
+div for division
+cnum for logical calculation resulting in a number
+ctext for a logical calculation resulting in a ttexual result.
+
+In step 1i thewill be presented to you in a new format ( a new awk database)
+xtPull  !2name  !3blank  !4dummy  !5form  !6copy  !7line  !
+tPull   !SFNI   !         !        !Bkg    !00    SFNI
+
+xtlin    !2name  !3blank  !4dummy  !
+tlin      !QOFn  !        !x       !
+
+xdlin    !2name  !3format  !4dummy
+dlin     !3000   !#####0   !3000
+
+xaddit    !2name  !3format  !4augend  !5addend  !6addend  !
+addit     !07     !#####0   !line04    !line06  !line07  !
+
+xdPull    !2name  !3format  !4dummy    !5form    !6copy  !7line
+dPull     !01ad   !#####0   !0         !Form1099-B  !01  !line01
+
+xsubtr    !2name  !3format  !4minuend  !5subtrahend  !
+subtr     !02h    !#####0   !line02d   !line02e      !
+
+xcnum
+
+xctext
+  
+The first line in each pair is preceded by an x which causes awk to ignore it.
+The first line is there to tell you what goes in each field(column).
+The second line will be there with the name.
+You will have to supply the other fields.
+Blank is lft blank. Dummy is a dummy value that you may insert.
+Dummy should be set at 0 for dPull lines.
