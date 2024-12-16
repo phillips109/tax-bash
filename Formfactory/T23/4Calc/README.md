@@ -156,8 +156,9 @@ CHOOS2
 Steps 2-6 create the .xsl file that calculates the form.
 Steps 7-10 uses the available data the results for each entry line.
 The result is the /Output file which is shown in step 10.
-There should be no results such as NAN (not a number,
+There should be no results such as NAN (not a number),
 but the values are mostly zero.
 To test the form you must test it with your own data by
 running the tax-bash program after 7App is completed.
 
+## Step 20 exports the /Variables file and the /Lines file to /7App.
