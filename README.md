@@ -82,36 +82,12 @@ It contains for each form, in the XSl folder, an xsl file from step 4,
 It contains for each form, in the Data folder, data files for each user entry created in step 5, 
 It contains for each form, in the Main folder, a new tax-bash interface file containing the menus created in step 6.
 
-## How to download the /7App folder, which is the program tax-bash, to your computer
+## Create a tar file of folder 7App
 
-1. Create a tar file of the folder /7App
-   Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
-   which will create the tar file of 7App in a directory called T23.
+Create a tar file of the folder /7App
+Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
+which will create the tar file of 7App in a directory called T23.
 
-2. Create a folder for your tax-bash program. 
-   I would suggests ~/Tax-bash but you could use something like ~//TB to hide the program from prying eyes. 
-   Under the Tax-bash folder you could have a directory made up of your initials in case you decide to calculate taxes for anyone other than yourself.
-
-3. Copy the shell file downloadT23.sh to your folder.
-   Go to your ~/Tax-bash/PW/ directory and copy ~/FormFactory/T23/downloadT23.sh to it. 
-
-4. Run that shell file (./downloadT23.sh)
-   This will create a directory T22 and the files from 7App will be extracted into it.
-
-5. Change to the newly created /Tax-bash/PW/T23/Main directory.
-
-6. Type ./tax-bash to start the program.
-
-## How to update your program with any changes from Formfactory.
-
-   Simply run the /Tax-bash/PW/T23/downloadT23.sh file again.
-   Any new forms or changes to the program will be updated, but your data will not be overwritten.
-
-## To summarize: The end user who wants to use tax-bash to do his taxes will
-1. Create a Tax-bash directory with an optional subdirectory consisting of his initials. 
-2. Into this subdirectory  he will copy the downloadT23.sh file. 
-3. Running this .sh file will download the Tax-bash application ready for use to create a tax return. 
-   Running this .sh file at a later date will uupdate the application without overwriting the user's data.
 
 
 
