@@ -31,6 +31,14 @@ This will download these two files to your computer usually to ~/Downloads.
 8. Go to T23/Main and type ./tax-bash to start Tax-bash.
    You wil be presented with a menu that will guide you as well as a README file.
 
+Tp update your program at any time:
+1. Download T23.tar.gz
+2. Go to your equivalent of TB/PW
+3. Move T23.tar.gz from ~/Downloads to TB/PW
+4. Run deTarT23.sh (./deTarT23.sh)
+
+Your program will be updated without overwriting your previously entered data.
+
 ## USING FORMFACTORY
 
 I have not used github previously so I do not know exactly how the work will proceed.
@@ -38,7 +46,7 @@ I think it will be something like this:
 1. You will fork Tax-bash to your account.
 2. You will clone tax-bash to your computer.
 3. You will creae a branch for the form you intend to work on.
-4. You will follow the steps folder by folder.
+4. You will follow the steps folder by folder. (See README.md for a description.
    1Pdf2jpg
    2Sequence
    3Layout
