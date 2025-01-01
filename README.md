@@ -88,7 +88,7 @@ Create a tar file of the folder /7App
 Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
 which will create the tar file of 7App in a directory called T23.
 
-
+## See CONTRIBUTING.md for directions on how to move the program to your computer.
 
 
 
