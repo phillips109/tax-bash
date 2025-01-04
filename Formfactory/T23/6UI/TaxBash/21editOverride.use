@@ -49,10 +49,10 @@ echo "or you wish to temporarily or permanently override the value"
 echo "obtained from the accounts method described above,"
 echo "you may enter the desired number as an override here."
  
-echo "If you wish to temporarily override the value of this line,"
+#echo "If you wish to temporarily override the value of this line,"
      "you can procede here."
-echo "Overriding normally changes the color to red,"
-echo "but on the previous menu you may set the color as you wish."
+#echo "Overriding normally changes the color to red,"
+#echo "but on the previous menu you may set the color as you wish."
 
 echo " "
 #The next 5 lines are not complete and give an error if used.
@@ -97,7 +97,7 @@ echo "You may wish to make other changes to your data"
 echo "before you recalculate all your data."
 echo 
 echo "Do you wish to refresh your data now?"
-echo "This will take about 30 seconds."
+#echo "This will take about 30 seconds."
 echo "Enter y or n"
 read this
 if yOrn "$this"

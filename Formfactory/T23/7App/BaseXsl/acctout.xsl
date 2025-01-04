@@ -15,7 +15,7 @@
   <xsl:template match="instructions">
   </xsl:template>
 
-  <xsl:template match="IRSinstructions">
+  <xsl:template match="IRSInstructions">
   </xsl:template>
 
   <xsl:template match="notes">
@@ -30,6 +30,9 @@
 
   <xsl:template match="item">
     <xsl:value-of select="."/>
+  </xsl:template>
+
+  <xsl:template match="license">
   </xsl:template>
     
 </xsl:stylesheet>

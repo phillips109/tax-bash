@@ -1,21 +1,54 @@
 #!/bin/bash
 
-#This file is copy-left.
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+
+
+
 viewReadMe(){
 cat README | less
 return
 }
+
+
+
+
+viewReadMe(){
+emacs README.md
+return
+}
+
+
 
 choice00NotAllowed(){
 	echo "Choice $1 is not allowed."
 	sleep 5
 }
 
+
+
 importLastYrReturn(){
 echo "Importing last year's return."
 sleep 1
 
-#IMPORT LAST YEARS RETURN
 if [ -f ../../T16/Xml/taxlogic.final ]
 then
 cp ../../T16/Xml/taxlogic.final ../Xml/taxlogic.PrevYear
@@ -26,8 +59,9 @@ cp ../Xml/taxlogic.frame ../Xml/taxlogic.PrevYear
 fi
 return
 }
+
+
 importLastYrData(){
-#IMPORT DATA FROM LAST YEAR'S DATA FILES
 
 if [ -d ../../T16/Data/ ]
 then
@@ -39,21 +73,15 @@ echo "in that directory."
 cp ../../T16/Data/*_data.xml ../Data
 
 
-#This takes last years data files and puts them in
-#  the correct format and outputs this in a .temp file.
 for file in ../Data/Background*_data.xml
 do
     echo "Processing $file"
     
-#This eliminates the <text/> format to make the file predictable.
-#It does not insert the <number></number> line
 sed 's/<instructions\/>/<instructions><\/instructions>/;s/<text\/>/<text><\/text>/;s/<number\/>/<number><\/number>/;s/<override\/>/<override><\/override>/;s/<item\/>/<item><\/item>/' ../Data/$file  >  ../Data/$file.tmp
 
-#The next two lines eliminate any <number> lines to avoid duplication
 sed '/<number>/d' ../Data/$file.tmp  >  ../Data/$file.tmp2
 sed '/<number\/>/d' ../Data/$file.tmp2 > ../Data/$file.tmp3
 
-#The next line inserts the <number> line in correct format.
 sed '/<override>/i\
 <number><\/number>
 <goesTo>
@@ -61,31 +89,19 @@ sed '/<override>/i\
 <comesFrom>
 </comesFrom>' ../Data/$file.tmp3  >  ../Data/$file.tmp4
 
-#This line was supposed to put the whole file in proper format,
-#but it puts back the <text/> usage
-#It may not be necessary.
-#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Data/$file.tmp4 -xsl ../Xsl/setupData.xsl -out ../Data/$file.tmp5
 
-#This eliminates the <text/> format once more to make the file predictable.
-#It also eliminates any unused <item></item> entries.
 sed 's/<instructions\/>/<instructions><\/instructions>/;s/<text\/>/<text><\/text>/;s/<number\/>/<number><\/number>/;s/<override\/>/<override><\/override>/;s/<item\/>//' ../Data/$file.tmp5  >  ../Data/$file.tmp6
 
-#This line removes any blank lines.
-#This may have been done by the java step already.
 sed 's/^$/d' ../Data/$file.tmp6 ../Data/$file.temp
 
-#This moves the changes back to the original file.
 mv ../Data/$file.temp ../Data/$file
 
 done
 
 
-#This line removes the .temp extension
-#rename 's/.temp//' ../Data/*.temp
 
  
 
-#These lines remove the T16 .tmp files.
 rm ../Data/*.tmp
 rm ../Data/*.tmp2
 rm ../Data/*.tmp3
@@ -93,10 +109,6 @@ rm ../Data/*.tmp4
 rm ../Data/*.tmp5
 echo
 
-#Here there will have to be a set of copy files to put last years 
-#formatted data files (../../Data/*.temp) in the correct 
-#lines (file names) for this years forms.
-#This is because the formatting and logic may have changed.
 
 
 echo "Last years data files have now been verified for their format."
@@ -111,48 +123,25 @@ fi
 return
 }
 
+
+
 importGnuCash(){
-#IMPORT DATA FROM GNUCASH
 
-#The location of the GnuCash backup files needs to be specified
-#in the constant GNUCASHFILES.
-#This is best defined by placing the following 2 lines in ~/.bashrc
-#  GNUCASHFILES=~/.gnucash.data  (substitute your absolute path to the data here)
-#  export GNUCASHFILES
 
-#This line defines the constant YR
-#This will make it easier to hardwire this file next year.
-#YR=21
-#export YR
 
-#This line select the backup files of gnucash in reverse order.
-#   Thus the desired (most recent) backup is the first in the group.
-#   The break; command ensures that only this first file is used.
 
 for file in $(dir -ra $GNUCASHFILES/*.gnucash)
 do
 
-#The name of the first file is put into foo.
 foo=$file
-#echo $foo
 
-#This removes everything from the filename up to and including the 2 in $YEAR.
 newname=${foo#~/*.2}
-#echo $newname
 
-#The next line puts the 2(of $YEAR) back in the name.
 newername='2'$newname
-#echo $newername
 
-#This copies the file to GnuCash leaving the original backups unchanged.
 cp $foo ../GnuCash/$newername.gz
-#dir ..//GnuCash
-#This unzips the file.
 gunzip ../GnuCash/$newername.gz
-#echo $newername
 
-#This adds the .current extension expected by  refreshAll().
-#dir ../GnuCash/
 rm ../GnuCash/*.current
 cp ../GnuCash/$newername ../GnuCash/$newername.current
 dir ../GnuCash
@@ -164,148 +153,92 @@ done
 }
 
 
-refreshAll() {
-#This file creates the ../BaseData/totl.xml file for use by refreshTl().
-#This file also creates ../Accounts directory with its account files which can be edited if needed.
-#That is, this file does all the calculations that can be done with the GnuCash data before
-#the taxpayor starts filling out the files in ../Data.
 
-#In Ubuntu xalan is available in /usr/sbin but it points to the c version
-#which has no implementation of format-number()
-#I therefore used the classpath option to get the java version
+
+refreshAll() {
+
 
 echo "Your data is being refreshed. This will take about 50 seconds."
 echo "Please wait for the program to return." 
 
-#These lines empty the Accounts and Work directories
-#This is probably not needed.
-#rm ../Accounts/* 2 > /device/null
-#rm ../Work/* 2 > /device/null
 
-#This line removes any non-current-year transactions.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../GnuCash/*.current -xsl ../BaseXsl/year.xsl -out ../BaseData/year.xml
 
-#This line places the transactions under their appropriate account name.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/year.xml -xsl ../BaseXsl/splita.xsl -out ../BaseData/split.xml
 
-#This line divides all the dollarvalues by 100.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/split.xml -xsl ../BaseXsl/dollarvalue.xsl -out ../BaseData/dollarvalue.xml
 
 
-#*********The next few lines would allow the creation and editing of account files *******
 
-#This line separates the accounts into individual files in ../Accounts.init
-#This directory will hold the account files as produced by GnuCash.
-#This is in case you need to see your GnuCash unaltered.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/dollarvalue.xml -xsl ../BaseXsl/accounts.xsl -out ../Accounts.init/accounts.xml
 
-#This file simply copies the account files in ../Accounts.init to ../Accounts
 cp -r ../Accounts.init/* ../Accounts
 
-#*****************************************************************************************************
 
 
-#If one wants to edit an account, simply copy the account.xml file to ../Accounts.edited.
-#There one can use emacs to edit the file.
-#In this location the edited file will not be overwritten if the GnuCash file is updated and copied to ../Accounts.init/ and ../Accounts/
 
-#Once edited, the file is copied on top of the corresponding file in ../Accounts/
-#to maintain any edits previously made.
 cp -r ../Accounts.edited/* ../Accounts
 
-#***************************************************************************************
 
-#This removes dollarvalue.xml to allow one to see if it is recreated.
-#This line is probably not needed.
 rm ../BaseData/dollarvalue.xml
 
 
-#This line rejoins the individual account files into a new version of ../BaseData/dollarvalue.xml called ../BaseData/dollarvalue.xml
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Accounts/accounts.xml -xsl ../BaseXsl/rejoin.xsl -out ../BaseData/dollarvalue.xml
 
-#*******************************************************************************************
 
-#This line totals the transactions under each account
-#This line has to occur after any editing of the accounts.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/dollarvalue.xml -xsl ../BaseXsl/totl.xsl -out ../BaseData/totl.xml
 
 return 
 }
 
+
+
 refreshTl() {
 
-#This file refreshes the data starting with ../BaseData/totl.xml. created at the end of RefreshAll()
-#It takes about half the time required by starting with gnucash file.
-#fs = [ java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Data/Bkg_Copy00_lineFS
-#If text [ -f ../Data/Bkg_Copy00_lineFS.text.xml ]
-#   then
-#      echo "File ../Data/Bkg_Copy00_lineFS.text.xml exists."
-#      fs=[ java $XALANJAVAJAR org.apache.xalan.xslt.Process -in   
-#else
-#	echo "File ../Data/Bkg_Copy_lineFS.text.xml doesn't exist."
-#	echo "Please enter data into Bkg Form."
 
-#if [ -f ../Data/Bkg_Copy00_lineFS_text.xml ]
-#   then
-#	echo "File ../Data/Bkg_Copy00_lineFS_text.xml exists."
-#	java -$XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Data/Bkg_Copy00_lineFS_text.xsl -xsl ../Xsl/readFS.xsl -out -
-#else
-#	echo "File ../Data/Bkg_Copy00_lineFS_text.xml doesn't exist."
-#	echo "Install/Open Form Bkg to enter your filing status."
-#fi
 	
 
 echo "Your data is being refreshed. This will take about 30 seconds."
 echo "Please wait for the program to return." 
 
 
-#The next line primes ../BaseData/totl.xml created in refreshAll to attach ../Xml/All.xml created in previous step
 sed 's/<\/IRSForms>/include(\.\.\/Xml\/all.xml)<\/IRSForms>/' ../BaseData/totl.xml > ../BaseData/sedtotl.xml
 
-#This lines removes ../Xml/all.xml to make room for a new version.
-#rm ../Xml/$1_Copy$2.xml
 rm ../Xml/all.xml
 
-#These lines create ../Xml/all.xml by amalgamating the data files in ../Data.
 cat ../Data/*.xml >> ../Xml/all.xml
 
-#This line adds the ../Xml/all.xml lines to the end of ../BaseData/sedtotl.xml  to get ../Total/totlall.xml
 m4 ../BaseData/sedtotl.xml > ../Total/totlall.xml
 
-#This line puts the accounts under the proper taxlines.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Total/totlall.xml -xsl ../BaseXsl/taxlines.xsl -out ../Taxlines/linesall.xml
 
-#This works. There are no Form1040 variables in the xsl, but the file refers to taxlines file.
-#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Taxlines/linesall.xml  -xsl ../Xsl/SchedA_Copy01.xsl -out ../Output/all.xml
 
-#This line uses the logic in taxlogic.xsl to create the final data.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Taxlines/linesall.xml  -xsl ../Xsl/taxlogic.xsl -out ../Output/all.xml
 
-#This changes the -Copy for _Copy in all.xml
 sed 's/-Copy/_Copy/' ../Output/all.xml > ../Output/all.tmp
 cp ../Output/all.tmp ../Output/all.xml
 rm ../Output/all.tmp
 
-#This line will split ../Output/all.xml into individual files for each form.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/all.xml -xsl ../BaseXsl/makeOutputFiles.xsl -out ../Out/outputforms.xml
 
 return 
 }
 
 
+
+
 showValue(){
 sed -n '/<$1>/s/>$3>//;s/<\/$3//p' $1 $2
 }    
 
-#The following is an attempt to get a list to work in a for construction.
+
+
 listAccountsPlus() {
-#This function displays an aphabetically sorted list of all your accounts in Firefox. 
 
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/totl.xml -xsl ../Xsl/listAccounts.xsl -out ../Work/listAccounts.xml
 
 sed 's/<?xml version="1.0".*?>//;s/<Accounts.*gnc">//;s/<account>//g;s/<\/account>/\n/g;s/<\/Accounts>//' ../Work/listAccounts.xml > ../Work/listAccounts.xml.tmp
 
-#The tmp is a list with one account per line, but the names have spaces.
 cat ../Work/listAccounts.xml.tmp
 
 
@@ -315,28 +248,25 @@ do
         
 done
 
-#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
 firefox -new-tab ../Work/listAccounts.xml.tmp > /dev/null 2>&1 &
-#qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
 return
 }
 
 
+
+
 listAccounts() {
-#This function displays an aphabetically sorted list of all your accounts in Firefox. 
 
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/totl.xml -xsl ../Xsl/listAccounts.xsl -out ../Work/listAccounts.xml
 
 
-#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
 firefox -new-tab ../Work/listAccounts.xml > /dev/null 2>&1 &
-#qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
 return
 }
 
+
+
 showAccounts(){
-#This function displays the transactions and total for each account used by a particular form or schedule.
-#This file now depends on refreshAll bringing data up to date.
 clear
 echo "In order to show the accounts associated with a particular"
 echo "Form or Schedule you need to specify the form or schedule you desire."
@@ -345,38 +275,29 @@ echo "The possibilities are:"
 echo "SchedA"
 echo "SchedB"
 echo "SchedC"
-#echo "SchedD"
 echo "SchedH"
-#echo "SchedSE"
 echo "1040"
-#echo "4562"
-#echo "4868"
-#echo "6251"
 echo "8829"
 
 
 echo "For which form or schedule would you like to see the accounts and their transactions? Enter a form or schedule from the list above."
 read formSch
-#echo $formSch
 
-#This line removes all accounts except those associated with the specified form or schedule.
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/taxlines.xml -xsl ../Xsl/oneForm.xsl -PARAM form $formSch -out ../Work/oneForm.xml 
 
-#This line prepares the fo file to be displayed
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/oneForm.xml -xsl ../2Fo/trnsPerTaxline.2fo -out ../Work/trnsPerForm.fo
 
-#This line converts the fo file to pdf.
 java $FOPJAVAJAR org.apache.fop.cli.Main ../Work/trnsPerForm.fo ../Pdf/trnsPerForm.pdf
 
-#This line displays the pdf in a tab of qpdfview.
 qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
 
 return
 }
 
 
+
+
 oneAcct() {
-#This file now depends on refreshAll bringing data up to date.
 list=""
 echo
 echo "This function will list the transactions for one account." 
@@ -388,11 +309,9 @@ read list
 
 if [ "$list" = "y" ]
   then
-#   echo $list
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/totl.xml -xsl ../BaseXsl/listAccounts.xsl -out ../BaseData/listAccounts.xml
 
 firefox -new-tab ../BaseData/listAccounts.xml > /dev/null 2>&1 &
-#Note: listAccounts.xml cannot be opened by qpdfview because it is not pdf.
 fi
 
 echo
@@ -413,13 +332,13 @@ fi
 
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../BaseData/oneAcct.xml -xsl ../Base2Fo/trnsPerAcct4.2fo -out ../Fo/oneAcct.fo
 
-#java $FOPJAVAJAR org.apache.fop.cli.Main  ../Fo/oneAcct.fo ../Pdf/oneAcct.pdf
 fop ../Fo/oneAcct.fo ../Pdf/oneAcct.pdf
 
-#firefox -new-tab ../Pdf/oneAcct.pdf > /dev/null 2>&1 &
 qpdfview --unique ../Pdf/oneAcct.pdf > /dev/null 2>&1 &
 
 }
+
+
 
 
 edit_account(){
@@ -440,7 +359,6 @@ if [ "$list" = "y" ]
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/totl.xml -xsl ../Xsl/listAccounts.xsl -out ../Work/listAccounts.xml
 
 firefox ../Work/listAccounts.xml > /dev/null 2>&1 &
-#Note: listAccounts.xml cannot be opened bye qpdfview because it is not pdf.
  #   qpdfview --unique ../Work/listAccounts.xml > /dev/null 2>&1 &
 fi
 
@@ -456,14 +374,11 @@ else
 fi
 
 
-#When you change GnuCash and update your data, the files in
-#/Accounts.edited are copied over your new data.
-#In other words, when you edit and account, it becomes immutable
-#until you either reedit it in /Accounts.edited or delete it
-#from /Accounts.edited.
 
 return
 }
+
+
 
 
 yOrn(){
@@ -481,23 +396,18 @@ case "$response" in
 esac
 done    
 }
+
+
 showForm2() {
-#This version of showForm() handles the linked files
 
 for file in ../2Fo/$1_Copy$2*.2fo
 do
-#    echo $file
     file1=${file#../2Fo/}
-#    echo $file1
    file2=${file1%2fo}
-#    echo $file2
     file2+="fo"
-#    echo $file2
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/$1_Copy$2.xml -xsl ../2Fo/$file1 -out ../Fo/$file2
     file3=${file1%2fo}
-#    echo $file3
     file3+="pdf"
-#    echo $file3
     fop ../Fo/$file2 ../Pdf/$file3
 done
 
@@ -506,10 +416,10 @@ qpdfview --unique ../Pdf/$1_Copy$2.pdf >/dev/null 2>&1 &
 return
 }
 
-showFormLocal() {
-#This is the version of showForm to be called from a particular line. It displays the line with yellow background color.
 
-#The $# is the number of parameters.     
+
+showFormLocal() {
+
 params=$#
 echo "$params"
 if [ $params = "3" ]; then
@@ -521,14 +431,12 @@ elif [ $params = "4" ]; then
 fi
 echo "infile is $infile. tempfile=$tempfile."
 
-#This sets the background-color to yellow for the line.
 sed '/<bgcolor>/s/^.*$/<bgcolor>yellow<\/bgcolor>/' $infile > $tempfile
 mv $tempfile $infile
 
 showForm $1 $2
 
 
-#This restores the back-ground color to blank.
 sed '/<bgcolor>/s/^.*$/<bgcolor><\/bgcolor>/' $infile > $tempfile
 mv $tempfile $infile
 
@@ -536,24 +444,16 @@ return
 }
 
 
+
+
 editDInstructions(){
     echo "Editing instructions is only for development."
     echo "This ability will be removed from the working program."
 
-#The $# is the number of parameters.     
-#params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_*.xml"
-#    tempfile="../Data/$1_$2_*.tmp"
-#elif [ $params = "4" ]; then
     infile="../Data/$1_$2_$3_*.xml"
     tempfile="../Data/$1_$2_$3_*.tmp"
-#fi
-#echo "infile is $infile. tempfile=$tempfile."
 
 echo "The local instructions for this line are:"
-#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
 
 echo "Do you wish to enter or change the local instructions for this line?"
@@ -565,10 +465,7 @@ then
        echo "Editing instructions is not currently possible."
        echo "Please enter any instructions you wish to give:"
        read instructions
-#      echo "instructions"
-#       sed '/<instructions>/s/<instructions>.*<\/instructions>/<instructions>'"$instructions"'<\/instructions>/' $infile > $tempfile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instDin.xsl -PARAM instructions "$instructions" -out $tempfile
-#      cat $tempfile
 	mv $tempfile $infile
 	cat $infile
 else
@@ -576,28 +473,19 @@ else
 fi
 
 echo "The local instructions for this line are:"
-#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
 
 }    
+
+
 editTInstructions(){
     echo "Editing instructions is only for development."
     echo "This ability will be removed from the working program."
 
-#The $# is the number of parameters.     
-#params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_*.xml"
-#    tempfile="../Data/$1_$2_*.tmp"
-#elif [ $params = "4" ]; then
     infile="../Data/$1_$2_$3_*.xml"
     tempfile="../Data/$1_$2_$3_*.tmp"
-#fi
-#echo "infile is $infile. tempfile=$tempfile."
 
 echo "The local instructions for this line are:"
-#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
 echo "Do you wish to enter or change the local instructions for this line?"
 echo "Enter y or n."
@@ -608,10 +496,7 @@ then
        echo "Editing existing instructions is not currently possible."
        echo "Please enter anew any instructions you wish to give:"
        read instructions
-#       echo "$instructions"
-#       sed '/<instructions>/s/<instructions>.*<\/instructions>/<instructions>'"$instructions"'<\/instructions>/' $infile > $tempfile 
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instTin.xsl -PARAM instructions "$instructions" -out $tempfile
-#       cat $tempfile
        mv $tempfile $infile
        cat $infile
 else
@@ -619,16 +504,14 @@ else
 fi
 
 echo "The local instructions for this line are:"
-#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
 }    
 
+
+
 showInstructions(){
-#This fuction shows the local instruction for this line.
     #The value of this line is shown as <instructions> in the data file:
-#The $# is the number of parameters.     
 params=$#
-#echo "$params"
 if [ $params = "3" ]; then
     infile="../Data/$1_Copy$2_*.xml"
     tempfile="../Data/$1_Copy$2_*.tmp"
@@ -639,7 +522,6 @@ fi
 echo "infile is $infile. tempfile=$tempfile."
     
 echo "The local instructions for this line are:"
-#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl   
 echo
 
@@ -647,8 +529,9 @@ return
 }
 
 
+
+
 showIRSinstructions(){
-#The $# is the number of parameters.     
 params=$#
 echo "$params"
 if [ $params = "3" ]; then
@@ -659,19 +542,15 @@ elif [ $params = "4" ]; then
     
 fi
 echo $pgNo    
-#qpdfview --unique ~/Downloads/i1040gi.pdf#$1  --search "$2"  &
 qpdfview --unique ../IRS/i1040gi.pdf#$pgNo &
 return
 }
 
+
+
 showDataFile(){
 clear
-#The $# is the number of parameters.     
 params=$#
-#echo "$params"
-#echo $1
-#echo $2
-#echo $3
 if [ $params = "3" ]; then
     infile="../Data/$1_Copy$2_$3_*.xml"
     tempfile="../Data/$1_Copy$2_$3_*.tmp"
@@ -679,21 +558,16 @@ elif [ $params = "4" ]; then
     infile="../Data/$1_Copy$2_$3_*.xml"
     tempfile="../Data/$1_Copy$2_$3_*.tmp"
 fi
-#echo "infile is $infile tempfile=$tempfile"
 
-#The next two lines remove any blank lines or lines containing only spaces.
 sed '/^ *$/d' $infile > $tempfile
 mv $tempfile $infile
 
-#This removes any leading spaces.
 sed 's/^ *//' $infile > $tempfile
 mv $tempfile $infile
 
-#This removes any blank items, i.e. <item></item>
 sed '/<item><\/item>/d' $infile > $tempfile
 mv $tempfile $infile
 
-#clear
 
 cat $infile
 echo " "
@@ -707,21 +581,13 @@ fi
 }
 
 
-edit-numberline(){
-#This function edit the accounts used to calculate a number value.
-#Each account is an <item> under <accounts>.
 
-#The $# is the number of parameters. It is $0 $1 $2 and perhaps $3 for a total of either 3 or 4.    
+
+edit-numberline(){
+
 params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_*.xml"
-#    tempfile="../Data/$1_$2_*.tmp"
-#elif [ $params = "4" ]; then
     infile="../Data/$1_$2_$3_*.xml"
     tempfile="../Data/$1_$2_$3_*.tmp"
-#fi
-#echo "infile is $infile. tempfile=$tempfile."
 
 echo "This line has a numerical value."
 echo "Preferably this value is drawn from your GnuCash data."
@@ -731,14 +597,10 @@ echo
 echo "If the value to be entered here is not in your GnuCash accounts, or"
 echo "if you wish to temporarily override the value of this line,"
 echo "you can return to the previous menu and override the value."
-echo "Overriding normally changes the color to red,"
-echo "but on the previous menu you may set the color as you wish."
 echo
 clear
 echo "The totals of the following accounts are currently"
 echo "being added together to produce the value of the line."
-#this sed expression removes the markup of each item(account) and prints the accounts
-#sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl acctout.xsl
 
 echo
@@ -749,14 +611,10 @@ while yOrn $choice
 do      
        echo "Enter the name of the account you wish to add."
        read add
-#      sed '/<\/accounts>/i\
-#<item>'"$add"'<\/item>' $infile > $tempfile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctadd.xsl -out $tempfile -PARAM item "$add"
 
        mv $tempfile $infile
-#      cat $infile       
        echo "The following accounts are now listed:"
-#      sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
        echo "Do you wish to add the name of another account? Enter y or n."
        read choice
@@ -769,14 +627,10 @@ while yOrn $choice2
 do      
        echo "Enter the name of the account you wish to remove."
        read remove
-#      sed '/<item>'"$remove"'<\/item>/s///' $infile > $tempfile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctremove.xsl -PARAM acct "$remove" -out $tempfile
-#      cat $tempfile
        mv $tempfile $infile
-#      cat $infile
        clear
        echo "The following accounts are now listed:"
-#      sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
 
        echo "If you wish to remove the name of another account? Enter y or n."
@@ -784,7 +638,6 @@ do
 done
 
 echo "The following accounts are now listed:"
-#    sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
 
 echo
@@ -792,12 +645,8 @@ echo
 echo
 echo "Remember that this change will not show up"
 echo "until you have refreshed (recalculated) your data."
-echo "Since refreshing your data takes about 30 seconds,"
-echo "You may wish to make other changes to your data"
-echo "before you recalculate all your data."
 echo 
 echo "Do you wish to refresh your data now?"
-echo "This will take about 30 seconds."
 echo "Enter y or n"
 read this
 if yOrn "$this"
@@ -813,45 +662,28 @@ fi
 return
 }
 
-edit_textline(){
-#This fuction edits the text value of a data file.
-#The value of this line is shown as <text> in the data file:
 
-#The $# is the number of parameters.     
-#params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_text.xml"
-#    tempfile="../Data/$1_$2_text.tmp"
-#elif [ $params = "4" ]; then
+
+edit_textline(){
+
     infile="../Data/$1_Copy$2_$3_text.xml"
     tempfile="../Data/$1_Copy$2_$3_text.tmp"
-#fi
 echo "infile is $infile. tempfile=$tempfile."
 
-#The next two lines remove any blank lines or lines containing only spaces.
 sed '/^ *$/d' $infile > $tempfile
 mv $tempfile $infile
 
-#This removes any leading spaces.
 sed 's/^ *//' $infile > $tempfile
 mv $tempfile $infile
 
-#The next two lines change <text/> to <text></text> if necessary.
 sed 's/<text\/>/<text><\/text>/' $infile > $tempfile 
 mv $tempfile $infile
 
-#The next two lines show the <text> line in the data file.
 echo
 echo "The value of this line is currently:"
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textout.xsl
 
-#sed -n '/<text>/s/<text>//;s/<\/text>//p' $infile
-#pattern=$infile//text
-#echo $pattern
 
-#Now you can choose to change the line or leave it unchanged.
-#The function yOrn returns 0 if y, 1 if n.
 echo
 echo "Do you wish to change the value of this text line?" 
 echo "Enter y or n"
@@ -861,34 +693,14 @@ if yOrn "$this"
        echo
        echo "To change the text value of this line, please enter the new value now:"
        read text
-#       sed '/<text>/s/<text>.*<\/text>/<text>'"$text"'<\/text>/' $infile > $tempfile 
-#       mv $tempfile $infile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textin.xsl -out $tempfile -PARAM text "$text"
-#      cat $tempfile
        mv $tempfile $infile
        echo
        #Now you are shown the final value of the text line. 
        echo "This text line now reads:"
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textout.xsl
-#       sed -n '/<text>/s/<text>//;s/<\/text>//p' $infile
        echo	
        #This is not applicable to text files.
-#       echo "Remember that this change will not show up"
-#       echo "until you have refreshed (recalculated) your data."
-#       echo "Since refreshing your data takes about 30 seconds,"
-#       echo "You may wish to make other changes to your data"
-#       echo "before you recalculate all your data."
-#       echo 
-#       echo "Do you wish to refresh your data now?"
-#       echo "This will take about 30 seconds."
-#       echo "Enter y or n"
-#       read this
-#       if yOrn "$this"
-#	   then
-#	       refreshTl $1 $2
-#       else
-#       echo "Data has not been refreshed."
-#       fi
 else
     echo
     echo "The text value has been kept unchanged."
@@ -900,23 +712,13 @@ return
 }
 
 
-edit-override(){
-#This fuction edits the override value of a data file.
-#The value of this line is shown as <override> in the data file:
-#echo "The data file currently reads:"
-#cat ../Data/$1_$2_data.xml
 
-#The $# is the number of parameters. It is $0 $1 $2 and perhaps $3 for a total of either 3 or 4.    
+
+edit-override(){
+
 params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_data.xml"
-#    tempfile="../Data/$1_$2_data.tmp"
-#elif [ $params = "4" ]; then
     infile="../Data/$1_Copy$2_$3_data.xml"
     tempfile="../Data/$1_Copy$2_$3_data.tmp"
-#fi
-#echo "infile is $infile. tempfile=$tempfile."
 
 echo "This line has a numerical value."
 echo "Preferably this value is drawn from you GnuCash data."
@@ -930,26 +732,14 @@ echo "or you wish to temporarily or permanently override the value"
 echo "obtained from the accounts method described above,"
 echo "you may enter the desired number as an override here."
  
-echo "If you wish to temporarily override the value of this line,"
      "you can procede here."
-echo "Overriding normally changes the color to red,"
-echo "but on the previous menu you may set the color as you wish."
 
 echo " "
-#The next 5 lines are not complete and give an error if used.
-#echo "Are you ready to continue?"
-#echo "If so, press y or n."
-#read this
-#if yOrn $this
-#then
 
-#These two lines echo the current value of the override line.
 echo
 echo "The value of the override is currently:"
-#sed -n '/<override>/s/<override>//;s/<\/override>//p' $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overout.xsl
 
-#Do you want to change it?
 echo
 echo "Do you wish to change this override? Enter y or n."
 read choice
@@ -958,8 +748,6 @@ while yOrn $choice
 do
 echo "To change the value of the override, enter the new value now:"
 read override
-#echo "$override"
-#sed '/<override>/s/<override>.*<\/override>/<override>'"$override"'<\/override>/' $infile > $tempfile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overin.xsl -out $tempfile -PARAM override "$override"
 mv $tempfile $infile
 choice="n"
@@ -967,7 +755,6 @@ done
 
 clear
 echo "The value of the override is currently:"
-#sed -n '/<override>/s/<override>//;s/<\/override>//p'  $infile
 java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overout.xsl
 
 echo
@@ -978,7 +765,6 @@ echo "You may wish to make other changes to your data"
 echo "before you recalculate all your data."
 echo 
 echo "Do you wish to refresh your data now?"
-echo "This will take about 30 seconds."
 echo "Enter y or n"
 read this
 if yOrn "$this"
@@ -993,19 +779,12 @@ return
 }
 
 
-comesFrom(){
-#This function shows the navigation for this line.
 
-#The $# is the number of parameters.     
-#params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_*.xml"
-#    tempfile="../Data/$1_$2_*.tmp"
-#elif [ $params = "4" ]; then
+
+comesFrom(){
+
     infile="../Data/$1_$2_$3_*.xml"
     tempfile="../Data/$1_$2_$3_*.tmp"
-#fi
 echo "infile is $infile tempfile is $tempfile"
 
 echo "This line comes from:"
@@ -1028,17 +807,11 @@ return
 }    
 
 
+
+
 comes_from2(){
-#The $# is the number of parameters.     
-#params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_*.xml"
-#    tempfile="../Data/$1_$2_*.tmp"
-#elif [ $params = "4" ]; then
     infile="../Data/$1_$2_$3_*.xml"
     tempfile="../Data/$1_$2_$3_*.tmp"
-#fi
 echo "infile is $infile tempfile is $tempfile"
 
 echo "This line comes from:"
@@ -1053,20 +826,12 @@ do
 done
 }
 
-goesTo(){
-#This function shows the navigation for this line.
 
-#The $# is the number of parameters.     
-#params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_*.xml"
-#    tempfile="../Data/$1_$2_*.tmp"
-#elif [ $params = "4" ]; then
+
+goesTo(){
+
     infile="../Data/$1_$2_$3_*.xml"
     tempfile="../Data/$1_$2_$3_*.tmp"
-#fi
-#echo "infile is $infile tempfile is $tempfile"
 
 
 echo "This line goes to:"
@@ -1087,30 +852,16 @@ done
 return
 }
 
-#goes_to2() {
-#select file in $(sed -n '/<to>//;s/<\/to>//p $infile);
-#do
-#    set_line_menu_text $file
-#done
-#}
+
+
+
+
 
 
 enterNotes(){
-#Now you can choose to change the line or leave it unchanged.
-#The function yOrn returns 0 if y, 1 if n.
-#The $# is the number of parameters.     
 
-#params=$#
-#echo "$params"
-#if [ $params = "3" ]; then
-#    infile="../Data/$1_$2_*.xml"
-#    tempfile="../Data/$1_$2_*.tmp"
-#elif [ $params = "4" ]; then
     infile="../Data/$1_$2_$3_*.xml"
     tempfile="../Data/$1_$2_$3_*.tmp"
-#fi
-#echo "infile is $infile."
-#echo "tempfile is $tempfile"
 
     echo "Currently, your notes on this line read:"
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesout.xsl
@@ -1125,11 +876,9 @@ then
        echo "Editing your notes is not currently possible."
        echo "Please enter any notes you wish to make:"
        read note
-#	sed '/<notes>/s/<notes>.*<\/notes>/<notes>'"$note"'<\/notes>/' $infile > $tempfile
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesin.xsl -PARAM notes "$note" -out $tempfile
 	mv $tempfile $infile
 	echo
-#	cat $infile
 	echo "Your notes now read:"
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesout.xsl
        echo
@@ -1145,10 +894,10 @@ fi
 return
 }    
 
+
+
 changeColor(){
-#The $# is the number of parameters.     
 params=$#
-#echo "$params"
 if [ $params = "3" ]; then
     infile="../Data/$1_Copy$2_*.xml"
     tempfile="../Data/$1_Copy$2_*.tmp"
@@ -1176,16 +925,13 @@ if yOrn "$this"
 then
     echo "Please enter the color you wish::"
     read color
-#    sed 's/<taxline color=".*">/<taxline color="'"$color"'">/' $infile > $tempfile
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorin.xsl -PARAM shade $color -out $tempfile
-#   cat $tempfile
     mv $tempfile $infile
     echo
     cat $infile
     clear
     echo
     echo "The color of the text is now:"
-#    sed -n '/<taxline color=".*">/s/<taxline color="//;s/">//p'  $infile
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorout.xsl
     echo
     return		
@@ -1194,7 +940,6 @@ else
     echo " "
     echo "The color value has been kept unchanged:"
     echo "The color value is:"
-#    sed -n '/<taxline color=".*">/s/<taxline color="//;s/">//p'  $infile
     java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/colorout.xsl
     echo
 
@@ -1204,6 +949,8 @@ fi
 
 return
 }    
+
+
 
 
 check_copy_existence(){
@@ -1216,6 +963,8 @@ check_copy_existence(){
 	fi
     done	
     }
+
+
 set_copy_number() {
     while true;
     do
@@ -1298,6 +1047,8 @@ set_copy_number() {
 	done
 
 }
+
+
 
 create_new_copy() {
     while true;
@@ -1456,6 +1207,8 @@ create_new_copy() {
 }
 
 
+
+
 removeForm(){
         echo "Please enter the number of the copy"
 	echo "   of Form&1 you wish to remove."
@@ -1464,9 +1217,7 @@ removeForm(){
 	echo "These are the files that will be removed:"
 
 
-#I decided to leave the old data so that, if you decide to resurect it, the data is still there.
 
-#	dir ../Data/$1_Copy$number*
 	dir ../2Fo/$1_Copy$number*
 	dir ../MyVariables/v$1_Copy$number*
 	dir ../MyLines/l$1_Copy$number*
@@ -1478,27 +1229,24 @@ removeForm(){
 	read this
 	if yOrn "$this"
 	   then
-#	     rm ../Data/$1_Copy$number*
 	     rm ../2Fo/$1_Copy$number*
 	     rm ../MyVariables/v$1_Copy$number*
 	     rm ../MyLines/l$1_Copy$number*
 	     rm ../Output/all.xml
 	     rm ../Output/$1_Copy$number*
 
-#This line recreates ../Xsl/taxlogic from the remaining MyVaribles and MyLines
-#Thus the logic in ../Xsl/taxlogic will not see any xsl from the removed form
 	     ../BaseXsl/maketaxlogicXsl.sh
-#This line recreates ../Output/all.xml and its derivative form specific files
 	     refreshTl
 	    
 else
 	     echo "$1_Copy$number will not be removed."
 	fi     
 }
+
+
 set_menu_choices() {
     while true;
     do
-#	clear
 	echo "Actions to be taken on "$1"_Copy"$2"."
 	echo
 	echo "  1) Refresh data"
@@ -1511,12 +1259,11 @@ set_menu_choices() {
         echo "Please enter your choice, then press return."
         read action_choice
 	
-#Note that choice 1) is a hack to get FEI calculated in the correct order.
 
         case $action_choice in
            1) refreshTl FEITaxWkst 01
 	      refreshTl QDCGTaxWkst 01
-	      refreshTl QDCGaTaxWkst
+	      refreshTl QDCGaTaxWkst 01
 	      refreshTL SchedDTaxWkst 01
 	      refreshTl SchedDaTaxWkst 01
 	      refreshTl FEITaxWkst 01
@@ -1528,6 +1275,8 @@ set_menu_choices() {
         esac
     done
     }
+
+
 
 
 set_schedule_choice() {
@@ -1543,13 +1292,6 @@ do
   echo "       b) Schedule B"
   echo "       c) Schedule C"
   echo "       d) Schedule D"  
-#  echo "       h) Show Schedule H."
-#  echo "   1041k) Show Form1041SchedK1"
-#  echo "   1065k) Show Form1065SchedK1"
-#  echo "  1065Bk) Show Form1065BSchedK1" 
-#  echo "  1120Sk) Show Form1120SSchedK1" 
-#  echo "   8865k) Show Form8865SchedK1"
-#  echo "      se) Show Schedule SE."
   
   echo "       q) Return to Main Menu"
   echo
@@ -1578,6 +1320,8 @@ done
 }
 
 
+
+
 set_form_choice() {
 while true;
 do
@@ -1586,45 +1330,12 @@ do
   echo
   echo "   1040)  U.S. Individual Income Tax Return" 
   echo "   1116)  Foreign Tax Credit"
-#  echo "   2106)  Employee Business Expenses"          
-#  echo "   2439)  Notice to Shareholder of Long-Term Undistributed Capital Gains"
-#  echo "   2441)  Child and Dependent Care Expenses"
-#  echo "   3800)  General Business Credit"
-#  echo "   3903)  Moving Expenses"
-#  echo "   4137)  Social Security and Medicare Tax on Unreported Tip Income"
-#  echo "   4562)  Depreciation and Amortization"
-#  echo "   4797)  Sales of Business Property"
   echo "   4868)  Application for Automatic Extension of Time to file"
   echo "   4952)  Investment Interest Expenses Deduction"
-#  echo "   4972)  Tax on Lump-Sum Distributions"
-#  echo "   5329)  Additional Taxes on Qualified Plans (inclucing IRAs) and Other Tax Favored Accounts"
-#  echo "   5405)  Repayment of First-Time Homebuyer Credit"
-#  echo "   5695)  Residential Energy Credits"
   echo "   6251)  Alternative Minimum Tax--Individuals"
-#  echo "   6252)  Installment Sale Income"
-#  echo "   8801)  Credit for Prior Year Minimum Tax--Individuals, Estates, and Trusts"
-#  echo "   8812)  Child Tax Credit"
-#  echo "   8814)  Parents' Election to Report Child's Interest and Dividends"
-#  echo "   8815)  Exclusion of Interest from Series EE and I U.S. Savings Bonds"
-#  echo "   8829)  Expenses for Business Use of Your Home"
-#  echo "   8863)  Education Credits (American Opportunity and Lifetime Learning Credits)"
-#  echo "   8880)  Credit for Qualified Retirement Savings Contributions"
-#  echo "   8885)  Health Coverage Tax Credit"
-#  echo "   8888)  Allocation of Refund (Including Savings Bond Purchases)"
-#  echo "   8889)  Health Savings Accounts (HSAs)"  
-#  echo "   8903)  Domestic PRoduction Activities Deduction"
-#  echo "   8917)  Tuition and Fees Deduction"
-#  echo "   8919)  Uncollected Social Security and Medicare Taxes on Wages"
   echo
-#  echo "   8949a) Sales and Other Dispositons of Capital Assets, basis reported on Form 1099-B."
-#  echo "   8949b) Sales and Other Dispositons of Capital Assets, basis not reported on Form 1099-B."
-#  echo "   8949c) Sales and Other Dispositons of Capital Assets, not on Form 1099-B."
   echo
-#  echo "   8959)  Additional Medicare Tax"
-#  echo "   8960)  Net Investment Income Tax--Individuals, Estates, and Trusts"
-#  echo "   8962)  Premium Tax Credit (PTC)"
   echo
-#  echo "   1099b)    Proceeds from Broker and Barter Exchange Transactions"
   echo "   1099div)  Dividends and Distributions"
   echo "   1099int)  Interest Income"
   echo "   1099r)    Distributions from Pensions, Annuities, Retirement etc."
@@ -1693,6 +1404,8 @@ done
 
 }
 
+
+
 makeWksts(){
 	../NewCopy/2focopy01  QDCGTaxWkst
 	../NewCopy/xslcopy01  QDCGTaxWkst
@@ -1713,6 +1426,8 @@ makeWksts(){
 	refreshTl
 
 }
+
+
 set_wkst_choice() {
 while true;
 do
@@ -1755,6 +1470,8 @@ do
 done
  
 }
+
+
 
 
 set_data_form_choice() {
@@ -1870,6 +1587,8 @@ done
 }
 
 
+
+
 set_line_menu_text() {
 while true;
 do
@@ -1894,7 +1613,6 @@ do
         4) edit_textline $1 $2 $3;;
         5) showFormLocal $1 $2 $3;;
 	5a)changeColor $1 $2 $3 $4;;
-#	6) comes_from2 $1 $2 $3;;
 	6) params=$#
 	   echo $params
 	   if [ "$params" = "3" ]; then
@@ -1914,13 +1632,10 @@ do
 	   do
                echo "You have selected" $fname \($REPLY\)
 	       par=$fname
-#	       echo $par
 	       parminus=${par#*_}
-#	       echo $parminus
 	       par1=${parminus%%_*}
 	       echo $par1
 	       parminus2=${parminus#*_}
-#	       echo $parminus2
 	       par2=${parminus2%%_*}
 	       echo $par2
 	       par3=${parminus2##*_}
@@ -1932,7 +1647,6 @@ do
 	       echo $par1
 	       echo $par1 $par2 $par3
 	       set $(echo $par1 $par2 $par3)
-#	       set_line_menu_text 1040 lineTaxpayorLastName 13
                set_line_menu_text $1 $2 $3
 	       break;
             done
@@ -1944,6 +1658,8 @@ do
 done
 
 }
+
+
 
 set_line_menu_number() {
 while true;
@@ -1987,6 +1703,8 @@ done
 
 }
 
+
+
 set_line_menu_nav() {
 while true;
 do
@@ -2015,10 +1733,11 @@ done
 
 }
 
+
+
 set_menu_choice() {
 while true;
   do     
-#  clear
   echo
   echo "Welcome to Tax-bash."
   echo
@@ -2036,7 +1755,6 @@ while true;
   echo "   f)  Show choice of Forms."
   echo "   s)  Show choice of Schedules."
   echo "   w)  Show choice of Worksheets."
-#  echo "   t)  Show choice of Tables"
 echo 
   echo "   q) Quit"
  
@@ -2059,13 +1777,14 @@ echo
       s)  set_schedule_choice;;
       w)  makeWksts
           set_wkst_choice;;
-#      t)  set_table_choice;;
 
       q)  exit;;
       *)  echo "Sorry, choice not recognized."
     esac
   done  
 }
+
+
 
 
 
@@ -2176,10 +1895,11 @@ done
 
 
 
+
+
 description(){
     while true;
     do
-    clear
     echo
     echo "1) View description of tax-bash"
     echo "   and how to use it."
@@ -2196,6 +1916,8 @@ description(){
 done
     
 }
+
+
 
 
 dependencies(){
@@ -2227,6 +1949,8 @@ dependencies(){
 done
 
 }
+
+
 
 
 variables(){
@@ -2269,6 +1993,8 @@ done
 
 }
     
+
+
     
 setupfop(){
     while true;
@@ -2324,6 +2050,8 @@ setupfop(){
 }
 
 
+
+
 setupxalan(){
     while true;
     do
@@ -2367,6 +2095,8 @@ setupxalan(){
 
 }
 
+
+
 setupX11(){
 while true
 do
@@ -2401,6 +2131,8 @@ You may toggle your windowing system under Ubuntu by:
      esac
 done
 }
+
+
 initial(){
     while true;
     do
@@ -2454,9 +2186,15 @@ initial(){
 }
     
 
+
+
 viewReadMe(){
     cat ../README
     }
+
+
+
+
 set_Bkg_line_data_choice() {
 while true;
 do
@@ -2498,6 +2236,399 @@ q     )    break;;
 esac
 done
 }
+
+
+set_Form1099div_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form1099div in which to enter or edit data:"
+echo
+echo "void  )    Enter x if form is void.           "
+echo "corr  )    Enter x if form has been corrected."
+echo "pnam1 )    Emter payor's name line1.          "
+echo "pnam2 )    Enter payor's name line2.          "
+echo "padd1 )    Enter line1 of payor's address.    "
+echo "padd2 )    Enter line2 of payor's address.    "
+echo "pcity )    Enter payor's city.                "
+echo "pST   )    Emter payor's state.               "
+echo "pctry )    Enter payor's country.             "
+echo "pzip  )    Enter payor's zip.                 "
+echo "ptel  )    Emter payor's telephone number.    "
+echo "pTIN  )    Enter payor's TIN.                 "
+echo "rTIN  )    Enter recipient's TIN.             "
+echo "rname1)    Enter recipient's name line1.      "
+echo "rname2)    Enter recipient's name line2.      "
+echo "raddr1)    Enter line1 of recipient's address,"
+echo "raddr2)    Enter line2 of recipient's addresss,"
+echo "rcity )    Enter recipient's city.            "
+echo "rST   )    Emter recipient's state.           "
+echo "rctry )    Enter recipient's country.         "
+echo "rzip  )    Enter recipient's zip.             "
+echo "FATCA )    Enter x if FATCA is required.      "
+echo "actNo )    Enter accounts number.             "
+echo "2TIN  )    Enter x if second TIN.             "
+echo "01a   )    Enter total ordinary dividends.    "
+echo "01b   )    Enter qualified dividends.         "
+echo "20yr  )    Enter last two digits of year of report."
+echo "02a   )    Enter total capital gain distribution."
+echo "02b   )    Enter unrecaptured Sec. 1250 gain. "
+echo "02c   )    Enter Sec. 1250 gain.              "
+echo "02d   )    Enter collectibles (28%) gain.     "
+echo "02e   )    Enter Section 897 ordinary dividends."
+echo "02f   )    Enter Section 897 capital gain.    "
+echo "03    )    Enter nondividend distributions.   "
+echo "04    )    Enter federal income tax withheld. "
+echo "05    )    Enter Section 199A dividends.      "
+echo "06    )    Enter Investment expenses.         "
+echo "07    )    Enter foreign tax paid.            "
+echo "08    )    Enter foreign country or US possession."
+echo "09    )    Enter cash liquidation distributions."
+echo "10    )    Enter noncash liquidation distrivutions."
+echo "12    )    Enter exempt-interest dividends.   "
+echo "13    )    Enter specified private activity bond interest dividends."
+echo "14a   )    Enter first state with tax withheld."
+echo "15a   )    Enter first state's ID number.     "
+echo "16a   )    Enter tax withheld by first state. "
+echo "14b   )    Enter second state with tax withheld."
+echo "15b   )    Enter second state's ID number.    "
+echo "16b   )    Enter tax withheld by second state."
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form1099div_line_data_choice
+echo
+     case $Form1099div_line_data_choice in
+void  )    set_line_menu_text   $1 $2  linevoid                             ;;
+corr  )    set_line_menu_text   $1 $2  linecorr                             ;;
+pnam1 )    set_line_menu_text   $1 $2  linepnam1                            ;;
+pnam2 )    set_line_menu_text   $1 $2  linepnam2                            ;;
+padd1 )    set_line_menu_text   $1 $2  linepadd1                            ;;
+padd2 )    set_line_menu_text   $1 $2  linepadd2                            ;;
+pcity )    set_line_menu_text   $1 $2  linepcity                            ;;
+pST   )    set_line_menu_text   $1 $2  linepST                              ;;
+pctry )    set_line_menu_text   $1 $2  linepctry                            ;;
+pzip  )    set_line_menu_text   $1 $2  linepzip                             ;;
+ptel  )    set_line_menu_text   $1 $2  lineptel                             ;;
+pTIN  )    set_line_menu_text   $1 $2  linepTIN                             ;;
+rTIN  )    set_line_menu_text   $1 $2  linerTIN                             ;;
+rname1)    set_line_menu_text   $1 $2  linername1                           ;;
+rname2)    set_line_menu_text   $1 $2  linername2                           ;;
+raddr1)    set_line_menu_text   $1 $2  lineraddr1                           ;;
+raddr2)    set_line_menu_text   $1 $2  lineraddr2                           ;;
+rcity )    set_line_menu_text   $1 $2  linercity                            ;;
+rST   )    set_line_menu_text   $1 $2  linerST                              ;;
+rctry )    set_line_menu_text   $1 $2  linerctry                            ;;
+rzip  )    set_line_menu_text   $1 $2  linerzip                             ;;
+FATCA )    set_line_menu_text   $1 $2  lineFATCA                            ;;
+actNo )    set_line_menu_text   $1 $2  lineactNo                            ;;
+2TIN  )    set_line_menu_text   $1 $2  line2TIN                             ;;
+01a   )    set_line_menu_number $1 $2  line01a                              ;;
+01b   )    set_line_menu_number $1 $2  line01b                              ;;
+20yr  )    set_line_menu_text   $1 $2  line20yr                             ;;
+02a   )    set_line_menu_number $1 $2  line02a                              ;;
+02b   )    set_line_menu_number $1 $2  line02b                              ;;
+02c   )    set_line_menu_number $1 $2  line02c                              ;;
+02d   )    set_line_menu_number $1 $2  line02d                              ;;
+02e   )    set_line_menu_number $1 $2  line02e                              ;;
+02f   )    set_line_menu_number $1 $2  line02f                              ;;
+03    )    set_line_menu_number $1 $2  line03                               ;;
+04    )    set_line_menu_number $1 $2  line04                               ;;
+05    )    set_line_menu_number $1 $2  line05                               ;;
+06    )    set_line_menu_number $1 $2  line06                               ;;
+07    )    set_line_menu_number $1 $2  line07                               ;;
+08    )    set_line_menu_text   $1 $2  line08                               ;;
+09    )    set_line_menu_number $1 $2  line09                               ;;
+10    )    set_line_menu_number $1 $2  line10                               ;;
+12    )    set_line_menu_number $1 $2  line12                               ;;
+13    )    set_line_menu_text   $1 $2  line13                               ;;
+14a   )    set_line_menu_text   $1 $2  line14a                              ;;
+15a   )    set_line_menu_text   $1 $2  line15a                              ;;
+16a   )    set_line_menu_number $1 $2  line16a                              ;;
+14b   )    set_line_menu_text   $1 $2  line14b                              ;;
+15b   )    set_line_menu_text   $1 $2  line15b                              ;;
+16b   )    set_line_menu_number $1 $2  line16b                              ;;
+q     )    break;;                       
+esac
+done
+}
+
+
+set_Form4952_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form4952 in which to enter or edit data:"
+echo
+echo "01 )    Enter investment expense paid or accrued in 2023."
+echo "02 )    Enter disallowed investment expense from 2022 Form4952 line07."
+echo "04a)    Enter gross income from property held for investment."
+echo "04b)    Enter qualified dividends included on line 4a."
+echo "04d)    Enter net gain from the disposition of property held for investment."
+echo "04e)    Enter the smaller of line 4d or your net capital gain from the disposition of property held for investment."
+echo "04g)    Enter the amount from lines 4b and 4e that you elect to include in investment income."
+echo "05 )    Enter investment expenses.         "
+echo
+echo "  q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form4952_line_data_choice
+echo
+     case $Form4952_line_data_choice in
+01 )    set_line_menu_number $1 $2  line01                               ;;
+02 )    set_line_menu_number $1 $2  line02                               ;;
+04a)    set_line_menu_number $1 $2  line04a                              ;;
+04b)    set_line_menu_number $1 $2  line04b                              ;;
+04d)    set_line_menu_number $1 $2  line04d                              ;;
+04e)    set_line_menu_number $1 $2  line04e                              ;;
+04g)    set_line_menu_number $1 $2  line04g                              ;;
+05 )    set_line_menu_number $1 $2  line05                               ;;
+q  )    break;;                       
+esac
+done
+}
+
+
+set_SchedC_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SchedC in which to enter or edit data:"
+echo
+echo "PrBus )    Enter the principal business or profession engaged in.                                              	  "
+echo "B1    )    Enter the first code number.                                                                        	  "
+echo "B2    )    Enter the second code number.                                                                       	  "
+echo "B3    )    Enter the third code number.                                                                        	  "
+echo "B4    )    Enter the fourth code number.                                                                       	  "
+echo "B5    )    Enter the fifth code number.                                                                        	  "
+echo "B6    )    Enter the sixth code number.                                                                        	  "
+echo "BusNm )    Enter the business name if separate from line A.                                                    	  "
+echo "D1    )    Enter the first code number.                                                                        	  "
+echo "D2    )    Enter the second code number.                                                                       	  "
+echo "D3    )    Enter the third code number.                                                                        	  "
+echo "D4    )    Enter the fourth code number.                                                                       	  "
+echo "D5    )    Enter the fifth code number.                                                                        	  "
+echo "D6    )    Enter the sixth code number.                                                                        	  "
+echo "D7    )    Enter the seventh code number.                                                                      	  "
+echo "D8    )    Enter the eighth code number.                                                                       	  "
+echo "D9    )    Enter the ninth code number.                                                                        	  "
+echo "Addr1 )    Enter the first address line of the business.                                                       	  "
+echo "Addr2 )    Enter the second address line of the business.                                                      	  "
+echo "City  )    Enter the ciy in which the business is located.                                                     	  "
+echo "ST    )    Enter the state (ST) in which the buseiness is located.                                             	  "
+echo "zip   )    Enter the zip code of the business.                                                                 	  "
+echo "cash  )    Enter x if the accounting method is cash based.                                                     	  "
+echo "accru )    Enter x if the accounting method is accrual based.                                                  	  "
+echo "other )    Enter x if an other accounting method was used.                                                     	  "
+echo "specif)    Specify the accounting method used.                                                                 	  "
+echo "Gy    )    Emter x if you materially participated in the operation of the business during 2023.              	  "
+echo "Gn    )    Enter x if you did not materially participate in the operation of the business during 2023.       	  "
+echo "Hx    )    Enter x if you started or acquired this business during 2023.                                       	  "
+echo "Iy    )    Enter x if you made any payments in 2023 that would require filing Form(s) 1099.                    	  "
+echo "In    )    Enter x if you did not make any payments in 2023 thot would require filing Form(s) 1099.            	  "
+echo "Jy    )    Enter x if you did or will file any required Form(s) 1099.                                          	  "
+echo "Jn    )    Enter x if you did not and will not file any required Form(s) 1099.                                 	  "
+echo "01Ck  )    Enter x if income on line01 was reported to you on FormW2 and Statutory employee was checked.      	  "
+echo "01    )    Enter gross receipts or sales.                                                                      	  "
+echo "02    )    Enter returns anad allowances.                                                                      	  "
+echo "04    )    Enter cost of goods sold from line 42.                                                              	  "
+echo "06    )    Enter other income.                                                                                 	  "
+echo "08    )    Enter advertising expenses.                                                                         	  "
+echo "09    )    Enter car and truck expenses.                                                                       	  "
+echo "10    )    Enter commission and fee expenses.                                                                  	  "
+echo "11    )    Enter contract labor expenses.                                                                      	  "
+echo "12    )    Enter depletion expenses.                                                                           	  "
+echo "13    )    Enter depreciation and section 179 expenses.                                                        	  "
+echo "14    )    Enter employee benefit program expenses.                                                            	  "
+echo "15    )    enter insurance (other than heallth) expenses.                                                      	  "
+echo "16a   )    Enter mortage interest expenses.                                                                    	  "
+echo "16b   )    Enter other interest expenses.                                                                      	  "
+echo "17    )    Enter legal and professional services expenses.                                                     	  "
+echo "18    )    Enter office expenses.                                                                              	  "
+echo "19    )    Enter pension and profit-sharing plan expenses.                                                     	  "
+echo "20a   )    Enter rent or lease expenses for vehicles, machinery and equipment.                                 	  "
+echo "20b   )    Enter rent or lease expenses for other business property.                                           	  "
+echo "21    )    Enter repair and maintenance expenses.                                                              	  "
+echo "22    )    Enter expenses for supplies.                                                                        	  "
+echo "23    )    Enter tax and license expenses.                                                                     	  "
+echo "24a   )    Enter travel expenses.                                                                              	  "
+echo "24b   )    Enter meal deductions.                                                                              	  "
+echo "25    )    Enter utility expenses.                                                                             	  "
+echo "26    )    Enter wage expenses (less employment credits).                                                      	  "
+echo "27a   )    Enter other expenses from line 48.                                                                  	  "
+echo "27b   )    Enter deduction for energy efficient commercial buildings.(Form 7205)                               	  "
+echo "30a   )    For simplified method: Enter total square footage of your home.                                     	  "
+echo "30b   )    For simplified method: Enter ssquare footage used for business.                                     	  "
+echo "30    )    Enter expenses for the business use of your home. (Form 8829)                                       	  "
+echo "32a   )    Enter x if all investment is at risk.                                                               	  "
+echo "32b   )    Enter x if some of the investment is not at risk.                                                   	  "
+echo "33a   )    Enter x if the method used to value closing inventory was cash.                                   	  "
+echo "33b   )    Enter x if the method used to value closing inventory was lower of cost or market.                	  "
+echo "33c   )    Enter s if another method was used to value closing inventory.                                      	  "
+echo "34y   )    Enter x if there was any change in determininig quantities, costs, or valualtions                   	  "
+echo "34n   )    Enter x if there was not any such change.                                                           	  "
+echo "35    )    Enter value of inventory at the beginning of the year.                                              	  "
+echo "36    )    Enter cost of purchases less cost of items withdrawn for personal use.                              	  "
+echo "37    )    Enter cost of labor.                                                                                	  "
+echo "38    )    Enter cost of materials and supplies.                                                               	  "
+echo "39    )    Enter other costs.                                                                                  	  "
+echo "41    )    Enter value of inventory at the end of the year.                                                    	  "
+echo "43m   )    Enter the month (mm) your vehicle was placed in service for business purposes.                      	  "
+echo "43d   )    Enter the day (dd) your vehicle was placed in service for business purposes.                        	  "
+echo "43y   )    Enter the year (yyyy) your vehicle was placed in service for business purposes.                     	  "
+echo "44a   )    Enter the number of miles you drove your vehicle for business during 2023.                          	  "
+echo "44b   )    Enter the number of miles you drove your vehicle for commuting during 2023.                         	  "
+echo "44c   )    Enter the number of miles you drove your vehicle for other purposes during 2023.                    	  "
+echo "45y   )    Enter x if your vehicle was available for personal use during off-duty hours.                       	  "
+echo "45n   )    Enter x if your vehicle was not available for personal use during off-duty hours.                   	  "
+echo "46y   )    Enter x if you or your spouse have anothe vehicle available for personal use.                       	  "
+echo "46n   )    Enter x if you or your spouse do not have anothe vehicle availabel for personal use.                	  "
+echo "47ay  )    Enter x if you have evidence to support your deduction.                                             	  "
+echo "47an  )    Enter x if you do not have evidence to support your deduction.                                      	  "
+echo "47by  )    Enter x if your evidence is not written.                                                            	  "
+echo "47bn  )    Enter x if your evidence is written.                                                                	  "
+echo "Exp1nm)    Enter the name of the first business expense catagory.                                              	  "
+echo "Exp1  )    Enter the amount expensedvfor the first expense catagory.                                           	  "
+echo "Exp2nm)    Enter the name of the second business expensecatagory.                                              	  "
+echo "Exp2  )    Enter the amount expensed for the second expense catagory                                           	  "
+echo "Exp3nm)    Enter the name of the thiird business expense catagory.                                             	  "
+echo "Exp3  )    Enter the amount expensed for the third expense catagory.                                           	  "
+echo "Exp4nm)    Enter the name of the fourth business expense catagory.                                             	  "
+echo "Exp4  )    Enter the amount expensed for the fourth expense catagory.                                          	  "
+echo "Exp5nm)    Enter the name of the fifth business expense catagory.                                              	  "
+echo "Exp5  )    Enter the amount expensed for the fifth expense catagory.                                           	  "
+echo "Exp6nm)    Enter the name of the sixth business expense catagory.                                              	  "
+echo "Exp6  )    Enter the amount expensed for the sixthe expense catagory.                                          	  "
+echo "Exp7nm)    Enter the name of the seventh business expense catagory.                                            	  "
+echo "Exp7  )    Enter the amount expensed for the seventh expense catagory.                                         	  "
+echo "Exp8nm)    Enter the name of the eighth business expense catagory.                                             	  "
+echo "Exp8  )    Enter the amount expensed for the eight expense catagory.                                           	  "
+echo "Exp9nm)    Enter the name of the ninth business expense catagory.                                              	  "
+echo "Exp9  )    Enter the amount expensed for the ninth expenses catagory.                                          	  "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SchedC_line_data_choice
+echo
+     case $SchedC_line_data_choice in
+PrBus )    set_line_menu_text   $1 $2  linePrBus                            ;;
+B1    )    set_line_menu_text   $1 $2  lineB1                               ;;
+B2    )    set_line_menu_text   $1 $2  lineB2                               ;;
+B3    )    set_line_menu_text   $1 $2  lineB3                               ;;
+B4    )    set_line_menu_text   $1 $2  lineB4                               ;;
+B5    )    set_line_menu_text   $1 $2  lineB5                               ;;
+B6    )    set_line_menu_text   $1 $2  lineB6                               ;;
+BusNm )    set_line_menu_text   $1 $2  lineBusNm                            ;;
+D1    )    set_line_menu_text   $1 $2  lineD1                               ;;
+D2    )    set_line_menu_text   $1 $2  lineD2                               ;;
+D3    )    set_line_menu_text   $1 $2  lineD3                               ;;
+D4    )    set_line_menu_text   $1 $2  lineD4                               ;;
+D5    )    set_line_menu_text   $1 $2  lineD5                               ;;
+D6    )    set_line_menu_text   $1 $2  lineD6                               ;;
+D7    )    set_line_menu_text   $1 $2  lineD7                               ;;
+D8    )    set_line_menu_text   $1 $2  lineD8                               ;;
+D9    )    set_line_menu_text   $1 $2  lineD9                               ;;
+Addr1 )    set_line_menu_text   $1 $2  lineAddr1                            ;;
+Addr2 )    set_line_menu_text   $1 $2  lineAddr2                            ;;
+City  )    set_line_menu_text   $1 $2  lineCity                             ;;
+ST    )    set_line_menu_text   $1 $2  lineST                               ;;
+zip   )    set_line_menu_text   $1 $2  linezip                              ;;
+cash  )    set_line_menu_text   $1 $2  linecash                             ;;
+accru )    set_line_menu_text   $1 $2  lineaccru                            ;;
+other )    set_line_menu_text   $1 $2  lineother                            ;;
+specif)    set_line_menu_text   $1 $2  linespecif                           ;;
+Gy    )    set_line_menu_text   $1 $2  lineGy                               ;;
+Gn    )    set_line_menu_text   $1 $2  lineGn                               ;;
+Hx    )    set_line_menu_text   $1 $2  lineHx                               ;;
+Iy    )    set_line_menu_text   $1 $2  lineIy                               ;;
+In    )    set_line_menu_text   $1 $2  lineIn                               ;;
+Jy    )    set_line_menu_text   $1 $2  lineJy                               ;;
+Jn    )    set_line_menu_text   $1 $2  lineJn                               ;;
+01Ck  )    set_line_menu_text   $1 $2  line01Ck                             ;;
+01    )    set_line_menu_number $1 $2  line01                               ;;
+02    )    set_line_menu_number $1 $2  line02                               ;;
+04    )    set_line_menu_number $1 $2  line04                               ;;
+06    )    set_line_menu_number $1 $2  line06                               ;;
+08    )    set_line_menu_number $1 $2  line08                               ;;
+09    )    set_line_menu_number $1 $2  line09                               ;;
+10    )    set_line_menu_number $1 $2  line10                               ;;
+11    )    set_line_menu_number $1 $2  line11                               ;;
+12    )    set_line_menu_number $1 $2  line12                               ;;
+13    )    set_line_menu_number $1 $2  line13                               ;;
+14    )    set_line_menu_number $1 $2  line14                               ;;
+15    )    set_line_menu_number $1 $2  line15                               ;;
+16a   )    set_line_menu_number $1 $2  line16a                              ;;
+16b   )    set_line_menu_number $1 $2  line16b                              ;;
+17    )    set_line_menu_number $1 $2  line17                               ;;
+18    )    set_line_menu_number $1 $2  line18                               ;;
+19    )    set_line_menu_number $1 $2  line19                               ;;
+20a   )    set_line_menu_number $1 $2  line20a                              ;;
+20b   )    set_line_menu_number $1 $2  line20b                              ;;
+21    )    set_line_menu_number $1 $2  line21                               ;;
+22    )    set_line_menu_number $1 $2  line22                               ;;
+23    )    set_line_menu_number $1 $2  line23                               ;;
+24a   )    set_line_menu_number $1 $2  line24a                              ;;
+24b   )    set_line_menu_number $1 $2  line24b                              ;;
+25    )    set_line_menu_number $1 $2  line25                               ;;
+26    )    set_line_menu_number $1 $2  line26                               ;;
+27a   )    set_line_menu_number $1 $2  line27a                              ;;
+27b   )    set_line_menu_number $1 $2  line27b                              ;;
+30a   )    set_line_menu_number $1 $2  line30a                              ;;
+30b   )    set_line_menu_number $1 $2  line30b                              ;;
+30    )    set_line_menu_number $1 $2  line30                               ;;
+32a   )    set_line_menu_text   $1 $2  line32a                              ;;
+32b   )    set_line_menu_text   $1 $2  line32b                              ;;
+33a   )    set_line_menu_text   $1 $2  line33a                              ;;
+33b   )    set_line_menu_text   $1 $2  line33b                              ;;
+33c   )    set_line_menu_text   $1 $2  line33c                              ;;
+34y   )    set_line_menu_text   $1 $2  line34y                              ;;
+34n   )    set_line_menu_text   $1 $2  line34n                              ;;
+35    )    set_line_menu_number $1 $2  line35                               ;;
+36    )    set_line_menu_number $1 $2  line36                               ;;
+37    )    set_line_menu_number $1 $2  line37                               ;;
+38    )    set_line_menu_number $1 $2  line38                               ;;
+39    )    set_line_menu_number $1 $2  line39                               ;;
+41    )    set_line_menu_number $1 $2  line41                               ;;
+43m   )    set_line_menu_text   $1 $2  line43m                              ;;
+43d   )    set_line_menu_text   $1 $2  line43d                              ;;
+43y   )    set_line_menu_text   $1 $2  line43y                              ;;
+44a   )    set_line_menu_number $1 $2  line44a                              ;;
+44b   )    set_line_menu_number $1 $2  line44b                              ;;
+44c   )    set_line_menu_number $1 $2  line44c                              ;;
+45y   )    set_line_menu_text   $1 $2  line45y                              ;;
+45n   )    set_line_menu_text   $1 $2  line45n                              ;;
+46y   )    set_line_menu_text   $1 $2  line46y                              ;;
+46n   )    set_line_menu_text   $1 $2  line46n                              ;;
+47ay  )    set_line_menu_text   $1 $2  line47ay                             ;;
+47an  )    set_line_menu_text   $1 $2  line47an                             ;;
+47by  )    set_line_menu_text   $1 $2  line47by                             ;;
+47bn  )    set_line_menu_text   $1 $2  line47bn                             ;;
+Exp1nm)    set_line_menu_text   $1 $2  lineExp1nm                           ;;
+Exp1  )    set_line_menu_number $1 $2  lineExp1                             ;;
+Exp2nm)    set_line_menu_text   $1 $2  lineExp2nm                           ;;
+Exp2  )    set_line_menu_number $1 $2  lineExp2                             ;;
+Exp3nm)    set_line_menu_text   $1 $2  lineExp3nm                           ;;
+Exp3  )    set_line_menu_number $1 $2  lineExp3                             ;;
+Exp4nm)    set_line_menu_text   $1 $2  lineExp4nm                           ;;
+Exp4  )    set_line_menu_number $1 $2  lineExp4                             ;;
+Exp5nm)    set_line_menu_text   $1 $2  lineExp5nm                           ;;
+Exp5  )    set_line_menu_number $1 $2  lineExp5                             ;;
+Exp6nm)    set_line_menu_text   $1 $2  lineExp6nm                           ;;
+Exp6  )    set_line_menu_number $1 $2  lineExp6                             ;;
+Exp7nm)    set_line_menu_text   $1 $2  lineExp7nm                           ;;
+Exp7  )    set_line_menu_number $1 $2  lineExp7                             ;;
+Exp8nm)    set_line_menu_text   $1 $2  lineExp8nm                           ;;
+Exp8  )    set_line_menu_number $1 $2  lineExp8                             ;;
+Exp9nm)    set_line_menu_text   $1 $2  lineExp9nm                           ;;
+Exp9  )    set_line_menu_number $1 $2  lineExp9                             ;;
+q     )    break;;                       
+esac
+done
+}
+
+
 set_FEITaxWkst_line_data_choice() {
 while true;
 do
@@ -2519,6 +2650,283 @@ q  )    break;;
 esac
 done
 }
+
+
+set_Form1099int_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form1099int in which to enter or edit data:"
+echo
+echo "void )    Enter x if form is void.           "
+echo "corr )    Enter x if Form has been corrected."
+echo "pnam1)    Enter line 1 of payor's name.      "
+echo "pnam2)    Enter line 2 of payor's name.      "
+echo "padd1)    Enter line 1 of payor's address.   "
+echo "padd2)    Enter line 2 of payor's address.   "
+echo "pcity)    Enter payor's city.                "
+echo "pST  )    Enter payor's state.               "
+echo "pcnty)    Enter payor's county.              "
+echo "pctry)    Enter payor's country.             "
+echo "pzip )    Enter payor's zip.                 "
+echo "ptel )    Enter payor's telephone number.    "
+echo "pTIN )    Enter payor's TIN.                 "
+echo "rTIN )    Enter recipient's TIN.             "
+echo "rnam1)    Enter line 1 of recipient's name.  "
+echo "rnam2)    Enter line 2 of recipient's name.  "
+echo "radd1)    Enter line 1 of recipient's address."
+echo "radd2)    Enter line 2 of recipient's address."
+echo "rcity)    Enter recipient's city.            "
+echo "rST  )    Enter recipient's state.           "
+echo "rcnty)    Enter recipient's county.          "
+echo "rctry)    Enter recipient's country.         "
+echo "rzip )    Enter recipient's zip.             "
+echo "FATCA)    Enter x if FATCA filing required.  "
+echo "actNo)    Enter account number.              "
+echo "2TIN )    Enter x if 2nd TIN.                "
+echo "pRTN )    Enter recipient's RTN (optional).  "
+echo "20yr )    Enter last 2 digits of filing year."
+echo "01   )    Enter interest income.             "
+echo "02   )    Enter early withdrawal penalty.    "
+echo "03   )    Enter interest on US Savings Bonds and Treasury obligations."
+echo "04   )    Enter federal income tax withheld. "
+echo "05   )    Enter investment expenses.         "
+echo "06   )    Enter foreign tax paid.            "
+echo "07   )    Enter the foreign country or US possession."
+echo "08   )    Enter tax-exempt interest.         "
+echo "09   )    Enter specified private activity bond interest."
+echo "10   )    Enter market discount.             "
+echo "11   )    Enter bond premium.                "
+echo "12   )    Enter bond premium on Treasury obligations."
+echo "13   )    Enter Bond premium on tax-exempt bond."
+echo "14   )    Enter tax-exempt and tax credit bond CUSIP number."
+echo "15a  )    Enter first state where tax was withheld."
+echo "16a  )    Enter ID number of first state.    "
+echo "17a  )    Enter tax withheld by first state. "
+echo "15b  )    Enter second state wher tax was withheld."
+echo "16b  )    Enter ID number of second state.   "
+echo "17b  )    Enter tax withheld by second state."
+echo
+echo "    q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form1099int_line_data_choice
+echo
+     case $Form1099int_line_data_choice in
+void )    set_line_menu_text   $1 $2  linevoid                             ;;
+corr )    set_line_menu_text   $1 $2  linecorr                             ;;
+pnam1)    set_line_menu_text   $1 $2  linepnam1                            ;;
+pnam2)    set_line_menu_text   $1 $2  linepnam2                            ;;
+padd1)    set_line_menu_text   $1 $2  linepadd1                            ;;
+padd2)    set_line_menu_text   $1 $2  linepadd2                            ;;
+pcity)    set_line_menu_text   $1 $2  linepcity                            ;;
+pST  )    set_line_menu_text   $1 $2  linepST                              ;;
+pcnty)    set_line_menu_text   $1 $2  linepcnty                            ;;
+pctry)    set_line_menu_text   $1 $2  linepctry                            ;;
+pzip )    set_line_menu_text   $1 $2  linepzip                             ;;
+ptel )    set_line_menu_text   $1 $2  lineptel                             ;;
+pTIN )    set_line_menu_text   $1 $2  linepTIN                             ;;
+rTIN )    set_line_menu_text   $1 $2  linerTIN                             ;;
+rnam1)    set_line_menu_text   $1 $2  linernam1                            ;;
+rnam2)    set_line_menu_text   $1 $2  linernam2                            ;;
+radd1)    set_line_menu_text   $1 $2  lineradd1                            ;;
+radd2)    set_line_menu_text   $1 $2  lineradd2                            ;;
+rcity)    set_line_menu_text   $1 $2  linercity                            ;;
+rST  )    set_line_menu_text   $1 $2  linerST                              ;;
+rcnty)    set_line_menu_text   $1 $2  linercnty                            ;;
+rctry)    set_line_menu_text   $1 $2  linerctry                            ;;
+rzip )    set_line_menu_text   $1 $2  linerzip                             ;;
+FATCA)    set_line_menu_text   $1 $2  lineFATCA                            ;;
+actNo)    set_line_menu_text   $1 $2  lineactNo                            ;;
+2TIN )    set_line_menu_text   $1 $2  line2TIN                             ;;
+pRTN )    set_line_menu_text   $1 $2  linepRTN                             ;;
+20yr )    set_line_menu_text   $1 $2  line20yr                             ;;
+01   )    set_line_menu_number $1 $2  line01                               ;;
+02   )    set_line_menu_number $1 $2  line02                               ;;
+03   )    set_line_menu_number $1 $2  line03                               ;;
+04   )    set_line_menu_number $1 $2  line04                               ;;
+05   )    set_line_menu_number $1 $2  line05                               ;;
+06   )    set_line_menu_number $1 $2  line06                               ;;
+07   )    set_line_menu_text   $1 $2  line07                               ;;
+08   )    set_line_menu_number $1 $2  line08                               ;;
+09   )    set_line_menu_number $1 $2  line09                               ;;
+10   )    set_line_menu_number $1 $2  line10                               ;;
+11   )    set_line_menu_number $1 $2  line11                               ;;
+12   )    set_line_menu_number $1 $2  line12                               ;;
+13   )    set_line_menu_number $1 $2  line13                               ;;
+14   )    set_line_menu_number $1 $2  line14                               ;;
+15a  )    set_line_menu_text   $1 $2  line15a                              ;;
+16a  )    set_line_menu_text   $1 $2  line16a                              ;;
+17a  )    set_line_menu_number $1 $2  line17a                              ;;
+15b  )    set_line_menu_text   $1 $2  line15b                              ;;
+16b  )    set_line_menu_text   $1 $2  line16b                              ;;
+17b  )    set_line_menu_number $1 $2  line17b                              ;;
+q    )    break;;                       
+esac
+done
+}
+
+
+set_Sched3_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Sched3 in which to enter or edit data:"
+echo
+echo "01     )    Enter foreign tax credit from Form 1116."
+echo "02     )    Enter credit for chaild and dependent care expenses. Form 2441."
+echo "03     )    Enter education credits from Form 8863 line 19."
+echo "04     )    Enter retirement savings contributions credit. Form 8880."
+echo "05a    )    Enter residentioal clean energy credit. Form 5695 line."
+echo "05b    )    Enter energy efficient home improvement credit. Forom 5695 line32."
+echo "06a    )    Enter general business credit. Form 3800."
+echo "06b    )    Enter credit for prior year minimum tax. Form 3800."
+echo "06c    )    Enter adoption credit. Form8839.   "
+echo "06d    )    Enter credit for the elderly or disables. Schedule R."
+echo "06f    )    Enter clean vehicle credit. Fomr 8936."
+echo "06g    )    Enter mortgage interes credit. Form 8396."
+echo "06h    )    Enter District of Columbia firsts-time homebuyer credit. Form 8859."
+echo "06i    )    Enter qualified electric credit. Form8834."
+echo "06j    )    Enter alternative fuel vehicle refueling property credit. Form 8911."
+echo "06k    )    Enter credit to holders of tax credit bonds. Form 8912."
+echo "06l    )    Enter amount on Form  8978, line 14."
+echo "06m    )    Enter credit for previously owned clean vehicles. Form 8936."
+echo "06z    )    Enter other nonrefundable credits. "
+echo "06line )    Enter types of credit.             "
+echo "09     )    Enter net premium tax credit. Form8962."
+echo "10     )    Enter amount paid with request for extension to file."
+echo "11     )    Enter excess social security and tire 1 RRTA tax withheld."
+echo "12     )    Enter credit for federal tax on fuels. Form 4136."
+echo "13a    )    Enter credits from Form2439.       "
+echo "13b    )    Enter credit for repayment of amounts included in income from earlier years."
+echo "13c    )    Enter elective payment election amount. Form 3800, Paart III, line 6, column i."
+echo "13d    )    Enter deferred amount of net 966 tax liabiity."
+echo "13z    )    Enter other payments or refundable credits."
+echo "13zline)    Enter types of credit.             "
+echo
+echo "      q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Sched3_line_data_choice
+echo
+     case $Sched3_line_data_choice in
+01     )    set_line_menu_number $1 $2  line01                               ;;
+02     )    set_line_menu_number $1 $2  line02                               ;;
+03     )    set_line_menu_number $1 $2  line03                               ;;
+04     )    set_line_menu_number $1 $2  line04                               ;;
+05a    )    set_line_menu_number $1 $2  line05a                              ;;
+05b    )    set_line_menu_number $1 $2  line05b                              ;;
+06a    )    set_line_menu_number $1 $2  line06a                              ;;
+06b    )    set_line_menu_number $1 $2  line06b                              ;;
+06c    )    set_line_menu_number $1 $2  line06c                              ;;
+06d    )    set_line_menu_number $1 $2  line06d                              ;;
+06f    )    set_line_menu_number $1 $2  line06f                              ;;
+06g    )    set_line_menu_number $1 $2  line06g                              ;;
+06h    )    set_line_menu_number $1 $2  line06h                              ;;
+06i    )    set_line_menu_number $1 $2  line06i                              ;;
+06j    )    set_line_menu_number $1 $2  line06j                              ;;
+06k    )    set_line_menu_number $1 $2  line06k                              ;;
+06l    )    set_line_menu_number $1 $2  line06l                              ;;
+06m    )    set_line_menu_number $1 $2  line06m                              ;;
+06z    )    set_line_menu_number $1 $2  line06z                              ;;
+06line )    set_line_menu_text   $1 $2  line06line                           ;;
+09     )    set_line_menu_number $1 $2  line09                               ;;
+10     )    set_line_menu_number $1 $2  line10                               ;;
+11     )    set_line_menu_number $1 $2  line11                               ;;
+12     )    set_line_menu_number $1 $2  line12                               ;;
+13a    )    set_line_menu_number $1 $2  line13a                              ;;
+13b    )    set_line_menu_number $1 $2  line13b                              ;;
+13c    )    set_line_menu_number $1 $2  line13c                              ;;
+13d    )    set_line_menu_number $1 $2  line13d                              ;;
+13z    )    set_line_menu_number $1 $2  line13z                              ;;
+13zline)    set_line_menu_text   $1 $2  line13zline                          ;;
+q      )    break;;                       
+esac
+done
+}
+
+
+set_SchedD_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SchedD in which to enter or edit data:"
+echo
+echo "QOFy)    Enter x if you disposed of any investments in a qualified opportunity fund during the tax year."
+echo "QOFn)    Enter x if you did not.            "
+echo "01ad)    Enter proceeds for 1a.             "
+echo "01ae)    Enter basis of 1a.                 "
+echo "01bd)    Enter Proceeds for 1b.             "
+echo "01be)    Enter basis for 1b.                "
+echo "01bg)    Enter adjustments to 1b.           "
+echo "02d )    Enter Proceed for 2.               "
+echo "02e )    Enter basis for 2.                 "
+echo "02g )    Enter adjustments to 2.            "
+echo "03d )    Enter proceeds of 3.               "
+echo "03e )    Enter bases of 3.                  "
+echo "03g )    Enter adjustments to 3.            "
+echo "04  )    Enter short term gain form Forms 6252, 4684, 6781 and 8824."
+echo "05  )    Enter short term gain or loss from partnerships, estates and trusts."
+echo "06  )    Enter short term capital loss carryover."
+echo "08ad)    Enter proceeds from 8a.            "
+echo "08ae)    Enter basis for 8a.                "
+echo "08bd)    Enter proceeds from 8b.            "
+echo "08be)    Enter basis for 8b.                "
+echo "08bg)    Enter adjustments to 8b.           "
+echo "09d )    Enter proceeds from 9.             "
+echo "09e )    Enter basis for 9.                 "
+echo "09g )    Enter adjustments to 9.            "
+echo "10d )    Enter proceeds from 10.            "
+echo "10e )    Enter basis for 10.                "
+echo "10g )    Enter adjustments to 10.           "
+echo "11  )    Enter long term gain from Form4797, 2439, 6252, 4684, 6781, and 8824."
+echo "12  )    Enter long term gain from partnerships, S corporations, estates and trusts."
+echo "13  )    Enter capital gain distsributions. "
+echo "14  )    Enter long term capital loss carryover."
+echo
+echo "   q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SchedD_line_data_choice
+echo
+     case $SchedD_line_data_choice in
+QOFy)    set_line_menu_number $1 $2  lineQOFy                             ;;
+QOFn)    set_line_menu_number $1 $2  lineQOFn                             ;;
+01ad)    set_line_menu_number $1 $2  line01ad                             ;;
+01ae)    set_line_menu_number $1 $2  line01ae                             ;;
+01bd)    set_line_menu_number $1 $2  line01bd                             ;;
+01be)    set_line_menu_number $1 $2  line01be                             ;;
+01bg)    set_line_menu_number $1 $2  line01bg                             ;;
+02d )    set_line_menu_number $1 $2  line02d                              ;;
+02e )    set_line_menu_number $1 $2  line02e                              ;;
+02g )    set_line_menu_number $1 $2  line02g                              ;;
+03d )    set_line_menu_number $1 $2  line03d                              ;;
+03e )    set_line_menu_number $1 $2  line03e                              ;;
+03g )    set_line_menu_number $1 $2  line03g                              ;;
+04  )    set_line_menu_number $1 $2  line04                               ;;
+05  )    set_line_menu_number $1 $2  line05                               ;;
+06  )    set_line_menu_number $1 $2  line06                               ;;
+08ad)    set_line_menu_number $1 $2  line08ad                             ;;
+08ae)    set_line_menu_number $1 $2  line08ae                             ;;
+08bd)    set_line_menu_number $1 $2  line08bd                             ;;
+08be)    set_line_menu_number $1 $2  line08be                             ;;
+08bg)    set_line_menu_number $1 $2  line08bg                             ;;
+09d )    set_line_menu_number $1 $2  line09d                              ;;
+09e )    set_line_menu_number $1 $2  line09e                              ;;
+09g )    set_line_menu_number $1 $2  line09g                              ;;
+10d )    set_line_menu_number $1 $2  line10d                              ;;
+10e )    set_line_menu_number $1 $2  line10e                              ;;
+10g )    set_line_menu_number $1 $2  line10g                              ;;
+11  )    set_line_menu_number $1 $2  line11                               ;;
+12  )    set_line_menu_number $1 $2  line12                               ;;
+13  )    set_line_menu_number $1 $2  line13                               ;;
+14  )    set_line_menu_number $1 $2  line14                               ;;
+q   )    break;;                       
+esac
+done
+}
+
+
 set_Form1040_line_data_choice() {
 while true;
 do
@@ -2946,329 +3354,8 @@ q     )    break;;
 esac
 done
 }
-set_Form1040ssa_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in Form1040ssa in which to enter or edit data:"
-echo
-echo "Box03  )    Enter benefits paid in 2023.       "
-echo "Box04  )    Enter benefits repaid to SSA in 2003."
-echo "Box06  )    Enter voluntary federal income tax withhelld."
-echo "Box07  )    Enter name of taxpayor.            "
-echo "Box07a )    Enter street address of taxpayor.  "
-echo "Box07b )    Enter city, ST, zip of taxpayor.   "
-echo "Box08  )    Enter clain number (Use this number if you need to contact SSA.)"
-echo "Box03d1)    Enter amount for box03d1.          "
-echo "Box03d2)    Enter amount for box03d2.          "
-echo "Box03d3)    Enter amount for box03d3.          "
-echo "Box03d4)    Enter amount for box03d4.          "
-echo "Box03d5)    Enter amount for box03d5.          "
-echo "Box03d6)    Enter amount for box03d6.          "
-echo "Box03d7)    Enter amount for box03d7.          "
-echo "Box03d8)    Enter amount for box03d8.          "
-echo "Box03e1)    Enter entry for box03e1.           "
-echo "Box03e2)    Enter entry for box03e2.           "
-echo "Box03e3)    Enter entry for box03e3.           "
-echo "Box03e4)    Enter entry for box03e4.           "
-echo "Box03e5)    Enter entry for box03e5.           "
-echo "Box03e6)    Enter entry for box03e6.           "
-echo "Box03e7)    Enter entry for box03e7.           "
-echo "Box03e8)    Enter entry for box03e8.           "
-echo "Box04d1)    Enter amount for box 04d1.         "
-echo "Box04d2)    Enter amount for box 04d2.         "
-echo "Box04d3)    Enter amount for box 04d3.         "
-echo "Box04d4)    Enter amount for box 04d4.         "
-echo "Box04d5)    Enter amount for box 04d5.         "
-echo "Box04d6)    Enter amount for box 04d6.         "
-echo "Box04d7)    Enter amount for box 04d7.         "
-echo "Box04d8)    Enter amount for box 04d8.         "
-echo "Box04e1)    Enter entry for box 04e1.          "
-echo "Box04e2)    Enter entry for box 04e2.          "
-echo "Box04e3)    Enter entry for box 04e3.          "
-echo "Box04e4)    Enter entry for box 04e4.          "
-echo "Box04e5)    Enter entry for box 04e5.          "
-echo "Box04e6)    Enter entry for box 04e6.          "
-echo "Box04e7)    Enter entry for box 04e7.          "
-echo "Box04e8)    Enter entry for box 04e8.          "
-echo
-echo "      q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read Form1040ssa_line_data_choice
-echo
-     case $Form1040ssa_line_data_choice in
-Box03  )    set_line_menu_number $1 $2  lineBox03                            ;;
-Box04  )    set_line_menu_number $1 $2  lineBox04                            ;;
-Box06  )    set_line_menu_number $1 $2  lineBox06                            ;;
-Box07  )    set_line_menu_text   $1 $2  lineBox07                            ;;
-Box07a )    set_line_menu_text   $1 $2  lineBox07a                           ;;
-Box07b )    set_line_menu_text   $1 $2  lineBox07b                           ;;
-Box08  )    set_line_menu_text   $1 $2  lineBox08                            ;;
-Box03d1)    set_line_menu_text   $1 $2  lineBox03d1                          ;;
-Box03d2)    set_line_menu_text   $1 $2  lineBox03d2                          ;;
-Box03d3)    set_line_menu_text   $1 $2  lineBox03d3                          ;;
-Box03d4)    set_line_menu_text   $1 $2  lineBox03d4                          ;;
-Box03d5)    set_line_menu_text   $1 $2  lineBox03d5                          ;;
-Box03d6)    set_line_menu_text   $1 $2  lineBox03d6                          ;;
-Box03d7)    set_line_menu_text   $1 $2  lineBox03d7                          ;;
-Box03d8)    set_line_menu_text   $1 $2  lineBox03d8                          ;;
-Box03e1)    set_line_menu_text   $1 $2  lineBox03e1                          ;;
-Box03e2)    set_line_menu_text   $1 $2  lineBox03e2                          ;;
-Box03e3)    set_line_menu_text   $1 $2  lineBox03e3                          ;;
-Box03e4)    set_line_menu_text   $1 $2  lineBox03e4                          ;;
-Box03e5)    set_line_menu_text   $1 $2  lineBox03e5                          ;;
-Box03e6)    set_line_menu_text   $1 $2  lineBox03e6                          ;;
-Box03e7)    set_line_menu_text   $1 $2  lineBox03e7                          ;;
-Box03e8)    set_line_menu_text   $1 $2  lineBox03e8                          ;;
-Box04d1)    set_line_menu_text   $1 $2  lineBox04d1                          ;;
-Box04d2)    set_line_menu_text   $1 $2  lineBox04d2                          ;;
-Box04d3)    set_line_menu_text   $1 $2  lineBox04d3                          ;;
-Box04d4)    set_line_menu_text   $1 $2  lineBox04d4                          ;;
-Box04d5)    set_line_menu_text   $1 $2  lineBox04d5                          ;;
-Box04d6)    set_line_menu_text   $1 $2  lineBox04d6                          ;;
-Box04d7)    set_line_menu_text   $1 $2  lineBox04d7                          ;;
-Box04d8)    set_line_menu_text   $1 $2  lineBox04d8                          ;;
-Box04e1)    set_line_menu_text   $1 $2  lineBox04e1                          ;;
-Box04e2)    set_line_menu_text   $1 $2  lineBox04e2                          ;;
-Box04e3)    set_line_menu_text   $1 $2  lineBox04e3                          ;;
-Box04e4)    set_line_menu_text   $1 $2  lineBox04e4                          ;;
-Box04e5)    set_line_menu_text   $1 $2  lineBox04e5                          ;;
-Box04e6)    set_line_menu_text   $1 $2  lineBox04e6                          ;;
-Box04e7)    set_line_menu_text   $1 $2  lineBox04e7                          ;;
-Box04e8)    set_line_menu_text   $1 $2  lineBox04e8                          ;;
-q      )    break;;                       
-esac
-done
-}
-set_Form1099div_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in Form1099div in which to enter or edit data:"
-echo
-echo "void  )    Enter x if form is void.           "
-echo "corr  )    Enter x if form has been corrected."
-echo "pnam1 )    Emter payor's name line1.          "
-echo "pnam2 )    Enter payor's name line2.          "
-echo "padd1 )    Enter line1 of payor's address.    "
-echo "padd2 )    Enter line2 of payor's address.    "
-echo "pcity )    Enter payor's city.                "
-echo "pST   )    Emter payor's state.               "
-echo "pctry )    Enter payor's country.             "
-echo "pzip  )    Enter payor's zip.                 "
-echo "ptel  )    Emter payor's telephone number.    "
-echo "pTIN  )    Enter payor's TIN.                 "
-echo "rTIN  )    Enter recipient's TIN.             "
-echo "rname1)    Enter recipient's name line1.      "
-echo "rname2)    Enter recipient's name line2.      "
-echo "raddr1)    Enter line1 of recipient's address,"
-echo "raddr2)    Enter line2 of recipient's addresss,"
-echo "rcity )    Enter recipient's city.            "
-echo "rST   )    Emter recipient's state.           "
-echo "rctry )    Enter recipient's country.         "
-echo "rzip  )    Enter recipient's zip.             "
-echo "FATCA )    Enter x if FATCA is required.      "
-echo "actNo )    Enter accounts number.             "
-echo "2TIN  )    Enter x if second TIN.             "
-echo "01a   )    Enter total ordinary dividends.    "
-echo "01b   )    Enter qualified dividends.         "
-echo "20yr  )    Enter last two digits of year of report."
-echo "02a   )    Enter total capital gain distribution."
-echo "02b   )    Enter unrecaptured Sec. 1250 gain. "
-echo "02c   )    Enter Sec. 1250 gain.              "
-echo "02d   )    Enter collectibles (28%) gain.     "
-echo "02e   )    Enter Section 897 ordinary dividends."
-echo "02f   )    Enter Section 897 capital gain.    "
-echo "03    )    Enter nondividend distributions.   "
-echo "04    )    Enter federal income tax withheld. "
-echo "05    )    Enter Section 199A dividends.      "
-echo "06    )    Enter Investment expenses.         "
-echo "07    )    Enter foreign tax paid.            "
-echo "08    )    Enter foreign country or US possession."
-echo "09    )    Enter cash liquidation distributions."
-echo "10    )    Enter noncash liquidation distrivutions."
-echo "12    )    Enter exempt-interest dividends.   "
-echo "13    )    Enter specified private activity bond interest dividends."
-echo "14a   )    Enter first state with tax withheld."
-echo "15a   )    Enter first state's ID number.     "
-echo "16a   )    Enter tax withheld by first state. "
-echo "14b   )    Enter second state with tax withheld."
-echo "15b   )    Enter second state's ID number.    "
-echo "16b   )    Enter tax withheld by second state."
-echo
-echo "     q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read Form1099div_line_data_choice
-echo
-     case $Form1099div_line_data_choice in
-void  )    set_line_menu_text   $1 $2  linevoid                             ;;
-corr  )    set_line_menu_text   $1 $2  linecorr                             ;;
-pnam1 )    set_line_menu_text   $1 $2  linepnam1                            ;;
-pnam2 )    set_line_menu_text   $1 $2  linepnam2                            ;;
-padd1 )    set_line_menu_text   $1 $2  linepadd1                            ;;
-padd2 )    set_line_menu_text   $1 $2  linepadd2                            ;;
-pcity )    set_line_menu_text   $1 $2  linepcity                            ;;
-pST   )    set_line_menu_text   $1 $2  linepST                              ;;
-pctry )    set_line_menu_text   $1 $2  linepctry                            ;;
-pzip  )    set_line_menu_text   $1 $2  linepzip                             ;;
-ptel  )    set_line_menu_text   $1 $2  lineptel                             ;;
-pTIN  )    set_line_menu_text   $1 $2  linepTIN                             ;;
-rTIN  )    set_line_menu_text   $1 $2  linerTIN                             ;;
-rname1)    set_line_menu_text   $1 $2  linername1                           ;;
-rname2)    set_line_menu_text   $1 $2  linername2                           ;;
-raddr1)    set_line_menu_text   $1 $2  lineraddr1                           ;;
-raddr2)    set_line_menu_text   $1 $2  lineraddr2                           ;;
-rcity )    set_line_menu_text   $1 $2  linercity                            ;;
-rST   )    set_line_menu_text   $1 $2  linerST                              ;;
-rctry )    set_line_menu_text   $1 $2  linerctry                            ;;
-rzip  )    set_line_menu_text   $1 $2  linerzip                             ;;
-FATCA )    set_line_menu_text   $1 $2  lineFATCA                            ;;
-actNo )    set_line_menu_text   $1 $2  lineactNo                            ;;
-2TIN  )    set_line_menu_text   $1 $2  line2TIN                             ;;
-01a   )    set_line_menu_number $1 $2  line01a                              ;;
-01b   )    set_line_menu_number $1 $2  line01b                              ;;
-20yr  )    set_line_menu_text   $1 $2  line20yr                             ;;
-02a   )    set_line_menu_number $1 $2  line02a                              ;;
-02b   )    set_line_menu_number $1 $2  line02b                              ;;
-02c   )    set_line_menu_number $1 $2  line02c                              ;;
-02d   )    set_line_menu_number $1 $2  line02d                              ;;
-02e   )    set_line_menu_number $1 $2  line02e                              ;;
-02f   )    set_line_menu_number $1 $2  line02f                              ;;
-03    )    set_line_menu_number $1 $2  line03                               ;;
-04    )    set_line_menu_number $1 $2  line04                               ;;
-05    )    set_line_menu_number $1 $2  line05                               ;;
-06    )    set_line_menu_number $1 $2  line06                               ;;
-07    )    set_line_menu_number $1 $2  line07                               ;;
-08    )    set_line_menu_text   $1 $2  line08                               ;;
-09    )    set_line_menu_number $1 $2  line09                               ;;
-10    )    set_line_menu_number $1 $2  line10                               ;;
-12    )    set_line_menu_number $1 $2  line12                               ;;
-13    )    set_line_menu_text   $1 $2  line13                               ;;
-14a   )    set_line_menu_text   $1 $2  line14a                              ;;
-15a   )    set_line_menu_text   $1 $2  line15a                              ;;
-16a   )    set_line_menu_number $1 $2  line16a                              ;;
-14b   )    set_line_menu_text   $1 $2  line14b                              ;;
-15b   )    set_line_menu_text   $1 $2  line15b                              ;;
-16b   )    set_line_menu_number $1 $2  line16b                              ;;
-q     )    break;;                       
-esac
-done
-}
-set_Form1099int_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in Form1099int in which to enter or edit data:"
-echo
-echo "void )    Enter x if form is void.           "
-echo "corr )    Enter x if Form has been corrected."
-echo "pnam1)    Enter line 1 of payor's name.      "
-echo "pnam2)    Enter line 2 of payor's name.      "
-echo "padd1)    Enter line 1 of payor's address.   "
-echo "padd2)    Enter line 2 of payor's address.   "
-echo "pcity)    Enter payor's city.                "
-echo "pST  )    Enter payor's state.               "
-echo "pcnty)    Enter payor's county.              "
-echo "pctry)    Enter payor's country.             "
-echo "pzip )    Enter payor's zip.                 "
-echo "ptel )    Enter payor's telephone number.    "
-echo "pTIN )    Enter payor's TIN.                 "
-echo "rTIN )    Enter recipient's TIN.             "
-echo "rnam1)    Enter line 1 of recipient's name.  "
-echo "rnam2)    Enter line 2 of recipient's name.  "
-echo "radd1)    Enter line 1 of recipient's address."
-echo "radd2)    Enter line 2 of recipient's address."
-echo "rcity)    Enter recipient's city.            "
-echo "rST  )    Enter recipient's state.           "
-echo "rcnty)    Enter recipient's county.          "
-echo "rctry)    Enter recipient's country.         "
-echo "rzip )    Enter recipient's zip.             "
-echo "FATCA)    Enter x if FATCA filing required.  "
-echo "actNo)    Enter account number.              "
-echo "2TIN )    Enter x if 2nd TIN.                "
-echo "pRTN )    Enter recipient's RTN (optional).  "
-echo "20yr )    Enter last 2 digits of filing year."
-echo "01   )    Enter interest income.             "
-echo "02   )    Enter early withdrawal penalty.    "
-echo "03   )    Enter interest on US Savings Bonds and Treasury obligations."
-echo "04   )    Enter federal income tax withheld. "
-echo "05   )    Enter investment expenses.         "
-echo "06   )    Enter foreign tax paid.            "
-echo "07   )    Enter the foreign country or US possession."
-echo "08   )    Enter tax-exempt interest.         "
-echo "09   )    Enter specified private activity bond interest."
-echo "10   )    Enter market discount.             "
-echo "11   )    Enter bond premium.                "
-echo "12   )    Enter bond premium on Treasury obligations."
-echo "13   )    Enter Bond premium on tax-exempt bond."
-echo "14   )    Enter tax-exempt and tax credit bond CUSIP number."
-echo "15a  )    Enter first state where tax was withheld."
-echo "16a  )    Enter ID number of first state.    "
-echo "17a  )    Enter tax withheld by first state. "
-echo "15b  )    Enter second state wher tax was withheld."
-echo "16b  )    Enter ID number of second state.   "
-echo "17b  )    Enter tax withheld by second state."
-echo
-echo "    q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read Form1099int_line_data_choice
-echo
-     case $Form1099int_line_data_choice in
-void )    set_line_menu_text   $1 $2  linevoid                             ;;
-corr )    set_line_menu_text   $1 $2  linecorr                             ;;
-pnam1)    set_line_menu_text   $1 $2  linepnam1                            ;;
-pnam2)    set_line_menu_text   $1 $2  linepnam2                            ;;
-padd1)    set_line_menu_text   $1 $2  linepadd1                            ;;
-padd2)    set_line_menu_text   $1 $2  linepadd2                            ;;
-pcity)    set_line_menu_text   $1 $2  linepcity                            ;;
-pST  )    set_line_menu_text   $1 $2  linepST                              ;;
-pcnty)    set_line_menu_text   $1 $2  linepcnty                            ;;
-pctry)    set_line_menu_text   $1 $2  linepctry                            ;;
-pzip )    set_line_menu_text   $1 $2  linepzip                             ;;
-ptel )    set_line_menu_text   $1 $2  lineptel                             ;;
-pTIN )    set_line_menu_text   $1 $2  linepTIN                             ;;
-rTIN )    set_line_menu_text   $1 $2  linerTIN                             ;;
-rnam1)    set_line_menu_text   $1 $2  linernam1                            ;;
-rnam2)    set_line_menu_text   $1 $2  linernam2                            ;;
-radd1)    set_line_menu_text   $1 $2  lineradd1                            ;;
-radd2)    set_line_menu_text   $1 $2  lineradd2                            ;;
-rcity)    set_line_menu_text   $1 $2  linercity                            ;;
-rST  )    set_line_menu_text   $1 $2  linerST                              ;;
-rcnty)    set_line_menu_text   $1 $2  linercnty                            ;;
-rctry)    set_line_menu_text   $1 $2  linerctry                            ;;
-rzip )    set_line_menu_text   $1 $2  linerzip                             ;;
-FATCA)    set_line_menu_text   $1 $2  lineFATCA                            ;;
-actNo)    set_line_menu_text   $1 $2  lineactNo                            ;;
-2TIN )    set_line_menu_text   $1 $2  line2TIN                             ;;
-pRTN )    set_line_menu_text   $1 $2  linepRTN                             ;;
-20yr )    set_line_menu_text   $1 $2  line20yr                             ;;
-01   )    set_line_menu_number $1 $2  line01                               ;;
-02   )    set_line_menu_number $1 $2  line02                               ;;
-03   )    set_line_menu_number $1 $2  line03                               ;;
-04   )    set_line_menu_number $1 $2  line04                               ;;
-05   )    set_line_menu_number $1 $2  line05                               ;;
-06   )    set_line_menu_number $1 $2  line06                               ;;
-07   )    set_line_menu_text   $1 $2  line07                               ;;
-08   )    set_line_menu_number $1 $2  line08                               ;;
-09   )    set_line_menu_number $1 $2  line09                               ;;
-10   )    set_line_menu_number $1 $2  line10                               ;;
-11   )    set_line_menu_number $1 $2  line11                               ;;
-12   )    set_line_menu_number $1 $2  line12                               ;;
-13   )    set_line_menu_number $1 $2  line13                               ;;
-14   )    set_line_menu_number $1 $2  line14                               ;;
-15a  )    set_line_menu_text   $1 $2  line15a                              ;;
-16a  )    set_line_menu_text   $1 $2  line16a                              ;;
-17a  )    set_line_menu_number $1 $2  line17a                              ;;
-15b  )    set_line_menu_text   $1 $2  line15b                              ;;
-16b  )    set_line_menu_text   $1 $2  line16b                              ;;
-17b  )    set_line_menu_number $1 $2  line17b                              ;;
-q    )    break;;                       
-esac
-done
-}
+
+
 set_Form1099r_line_data_choice() {
 while true;
 do
@@ -3390,153 +3477,8 @@ q     )    break;;
 esac
 done
 }
-set_Form4868_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in Form4868 in which to enter or edit data:"
-echo
-echo "addr1 )    Enter first line of addres         "
-echo "addr2 )    Enter second line of address       "
-echo "city  )    Enter city                         "
-echo "ST    )    Enter State in ST format           "
-echo "zip   )    Enter zip                          "
-echo "tottax)    Enter total tax liabiity           "
-echo "t0tpay)    Enter total 2022 payments          "
-echo "amtpd )    Enter amount you are paying        "
-echo "away  )    Enter x if out of the country      "
-echo "1040NR)    Enter x if wages are not subject to withholding"
-echo
-echo "     q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read Form4868_line_data_choice
-echo
-     case $Form4868_line_data_choice in
-addr1 )    set_line_menu_text   $1 $2  lineaddr1                            ;;
-addr2 )    set_line_menu_text   $1 $2  lineaddr2                            ;;
-city  )    set_line_menu_text   $1 $2  linecity                             ;;
-ST    )    set_line_menu_text   $1 $2  lineST                               ;;
-zip   )    set_line_menu_text   $1 $2  linezip                              ;;
-tottax)    set_line_menu_number $1 $2  linetottax                           ;;
-t0tpay)    set_line_menu_number $1 $2  linet0tpay                           ;;
-amtpd )    set_line_menu_number $1 $2  lineamtpd                            ;;
-away  )    set_line_menu_text   $1 $2  lineaway                             ;;
-1040NR)    set_line_menu_text   $1 $2  line1040NR                           ;;
-q     )    break;;                       
-esac
-done
-}
-set_Form4952_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in Form4952 in which to enter or edit data:"
-echo
-echo "01 )    Enter investment expense paid or accrued in 2023."
-echo "02 )    Enter disallowed investment expense from 2022 Form4952 line07."
-echo "04a)    Enter gross income from property held for investment."
-echo "04b)    Enter qualified dividends included on line 4a."
-echo "04d)    Enter net gain from the disposition of property held for investment."
-echo "04e)    Enter the smaller of line 4d or your net capital gain from the disposition of property held for investment."
-echo "04g)    Enter the amount from lines 4b and 4e that you elect to include in investment income."
-echo "05 )    Enter investment expenses.         "
-echo
-echo "  q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read Form4952_line_data_choice
-echo
-     case $Form4952_line_data_choice in
-01 )    set_line_menu_number $1 $2  line01                               ;;
-02 )    set_line_menu_number $1 $2  line02                               ;;
-04a)    set_line_menu_number $1 $2  line04a                              ;;
-04b)    set_line_menu_number $1 $2  line04b                              ;;
-04d)    set_line_menu_number $1 $2  line04d                              ;;
-04e)    set_line_menu_number $1 $2  line04e                              ;;
-04g)    set_line_menu_number $1 $2  line04g                              ;;
-05 )    set_line_menu_number $1 $2  line05                               ;;
-q  )    break;;                       
-esac
-done
-}
-set_Sched3_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in Sched3 in which to enter or edit data:"
-echo
-echo "01     )    Enter foreign tax credit from Form 1116."
-echo "02     )    Enter credit for chaild and dependent care expenses. Form 2441."
-echo "03     )    Enter education credits from Form 8863 line 19."
-echo "04     )    Enter retirement savings contributions credit. Form 8880."
-echo "05a    )    Enter residentioal clean energy credit. Form 5695 line."
-echo "05b    )    Enter energy efficient home improvement credit. Forom 5695 line32."
-echo "06a    )    Enter general business credit. Form 3800."
-echo "06b    )    Enter credit for prior year minimum tax. Form 3800."
-echo "06c    )    Enter adoption credit. Form8839.   "
-echo "06d    )    Enter credit for the elderly or disables. Schedule R."
-echo "06f    )    Enter clean vehicle credit. Fomr 8936."
-echo "06g    )    Enter mortgage interes credit. Form 8396."
-echo "06h    )    Enter District of Columbia firsts-time homebuyer credit. Form 8859."
-echo "06i    )    Enter qualified electric credit. Form8834."
-echo "06j    )    Enter alternative fuel vehicle refueling property credit. Form 8911."
-echo "06k    )    Enter credit to holders of tax credit bonds. Form 8912."
-echo "06l    )    Enter amount on Form  8978, line 14."
-echo "06m    )    Enter credit for previously owned clean vehicles. Form 8936."
-echo "06z    )    Enter other nonrefundable credits. "
-echo "06line )    Enter types of credit.             "
-echo "09     )    Enter net premium tax credit. Form8962."
-echo "10     )    Enter amount paid with request for extension to file."
-echo "11     )    Enter excess social security and tire 1 RRTA tax withheld."
-echo "12     )    Enter credit for federal tax on fuels. Form 4136."
-echo "13a    )    Enter credits from Form2439.       "
-echo "13b    )    Enter credit for repayment of amounts included in income from earlier years."
-echo "13c    )    Enter elective payment election amount. Form 3800, Paart III, line 6, column i."
-echo "13d    )    Enter deferred amount of net 966 tax liabiity."
-echo "13z    )    Enter other payments or refundable credits."
-echo "13zline)    Enter types of credit.             "
-echo
-echo "      q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read Sched3_line_data_choice
-echo
-     case $Sched3_line_data_choice in
-01     )    set_line_menu_number $1 $2  line01                               ;;
-02     )    set_line_menu_number $1 $2  line02                               ;;
-03     )    set_line_menu_number $1 $2  line03                               ;;
-04     )    set_line_menu_number $1 $2  line04                               ;;
-05a    )    set_line_menu_number $1 $2  line05a                              ;;
-05b    )    set_line_menu_number $1 $2  line05b                              ;;
-06a    )    set_line_menu_number $1 $2  line06a                              ;;
-06b    )    set_line_menu_number $1 $2  line06b                              ;;
-06c    )    set_line_menu_number $1 $2  line06c                              ;;
-06d    )    set_line_menu_number $1 $2  line06d                              ;;
-06f    )    set_line_menu_number $1 $2  line06f                              ;;
-06g    )    set_line_menu_number $1 $2  line06g                              ;;
-06h    )    set_line_menu_number $1 $2  line06h                              ;;
-06i    )    set_line_menu_number $1 $2  line06i                              ;;
-06j    )    set_line_menu_number $1 $2  line06j                              ;;
-06k    )    set_line_menu_number $1 $2  line06k                              ;;
-06l    )    set_line_menu_number $1 $2  line06l                              ;;
-06m    )    set_line_menu_number $1 $2  line06m                              ;;
-06z    )    set_line_menu_number $1 $2  line06z                              ;;
-06line )    set_line_menu_text   $1 $2  line06line                           ;;
-09     )    set_line_menu_number $1 $2  line09                               ;;
-10     )    set_line_menu_number $1 $2  line10                               ;;
-11     )    set_line_menu_number $1 $2  line11                               ;;
-12     )    set_line_menu_number $1 $2  line12                               ;;
-13a    )    set_line_menu_number $1 $2  line13a                              ;;
-13b    )    set_line_menu_number $1 $2  line13b                              ;;
-13c    )    set_line_menu_number $1 $2  line13c                              ;;
-13d    )    set_line_menu_number $1 $2  line13d                              ;;
-13z    )    set_line_menu_number $1 $2  line13z                              ;;
-13zline)    set_line_menu_text   $1 $2  line13zline                          ;;
-q      )    break;;                       
-esac
-done
-}
+
+
 set_SchedA_line_data_choice() {
 while true;
 do
@@ -3590,6 +3532,167 @@ q    )    break;;
 esac
 done
 }
+
+
+set_SST_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SST in which to enter or edit data:"
+echo
+echo "50)    Enter 0.50                         "
+echo "85)    Enter 0.85                         "
+echo
+echo " q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SST_line_data_choice
+echo
+     case $SST_line_data_choice in
+50)    set_line_menu_number $1 $2  line50                               ;;
+85)    set_line_menu_number $1 $2  line85                               ;;
+q )    break;;                       
+esac
+done
+}
+
+
+set_Form1040ssa_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form1040ssa in which to enter or edit data:"
+echo
+echo "Box03  )    Enter benefits paid in 2023.       "
+echo "Box04  )    Enter benefits repaid to SSA in 2003."
+echo "Box06  )    Enter voluntary federal income tax withhelld."
+echo "Box07  )    Enter name of taxpayor.            "
+echo "Box07a )    Enter street address of taxpayor.  "
+echo "Box07b )    Enter city, ST, zip of taxpayor.   "
+echo "Box08  )    Enter clain number (Use this number if you need to contact SSA.)"
+echo "Box03d1)    Enter amount for box03d1.          "
+echo "Box03d2)    Enter amount for box03d2.          "
+echo "Box03d3)    Enter amount for box03d3.          "
+echo "Box03d4)    Enter amount for box03d4.          "
+echo "Box03d5)    Enter amount for box03d5.          "
+echo "Box03d6)    Enter amount for box03d6.          "
+echo "Box03d7)    Enter amount for box03d7.          "
+echo "Box03d8)    Enter amount for box03d8.          "
+echo "Box03e1)    Enter entry for box03e1.           "
+echo "Box03e2)    Enter entry for box03e2.           "
+echo "Box03e3)    Enter entry for box03e3.           "
+echo "Box03e4)    Enter entry for box03e4.           "
+echo "Box03e5)    Enter entry for box03e5.           "
+echo "Box03e6)    Enter entry for box03e6.           "
+echo "Box03e7)    Enter entry for box03e7.           "
+echo "Box03e8)    Enter entry for box03e8.           "
+echo "Box04d1)    Enter amount for box 04d1.         "
+echo "Box04d2)    Enter amount for box 04d2.         "
+echo "Box04d3)    Enter amount for box 04d3.         "
+echo "Box04d4)    Enter amount for box 04d4.         "
+echo "Box04d5)    Enter amount for box 04d5.         "
+echo "Box04d6)    Enter amount for box 04d6.         "
+echo "Box04d7)    Enter amount for box 04d7.         "
+echo "Box04d8)    Enter amount for box 04d8.         "
+echo "Box04e1)    Enter entry for box 04e1.          "
+echo "Box04e2)    Enter entry for box 04e2.          "
+echo "Box04e3)    Enter entry for box 04e3.          "
+echo "Box04e4)    Enter entry for box 04e4.          "
+echo "Box04e5)    Enter entry for box 04e5.          "
+echo "Box04e6)    Enter entry for box 04e6.          "
+echo "Box04e7)    Enter entry for box 04e7.          "
+echo "Box04e8)    Enter entry for box 04e8.          "
+echo
+echo "      q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form1040ssa_line_data_choice
+echo
+     case $Form1040ssa_line_data_choice in
+Box03  )    set_line_menu_number $1 $2  lineBox03                            ;;
+Box04  )    set_line_menu_number $1 $2  lineBox04                            ;;
+Box06  )    set_line_menu_number $1 $2  lineBox06                            ;;
+Box07  )    set_line_menu_text   $1 $2  lineBox07                            ;;
+Box07a )    set_line_menu_text   $1 $2  lineBox07a                           ;;
+Box07b )    set_line_menu_text   $1 $2  lineBox07b                           ;;
+Box08  )    set_line_menu_text   $1 $2  lineBox08                            ;;
+Box03d1)    set_line_menu_text   $1 $2  lineBox03d1                          ;;
+Box03d2)    set_line_menu_text   $1 $2  lineBox03d2                          ;;
+Box03d3)    set_line_menu_text   $1 $2  lineBox03d3                          ;;
+Box03d4)    set_line_menu_text   $1 $2  lineBox03d4                          ;;
+Box03d5)    set_line_menu_text   $1 $2  lineBox03d5                          ;;
+Box03d6)    set_line_menu_text   $1 $2  lineBox03d6                          ;;
+Box03d7)    set_line_menu_text   $1 $2  lineBox03d7                          ;;
+Box03d8)    set_line_menu_text   $1 $2  lineBox03d8                          ;;
+Box03e1)    set_line_menu_text   $1 $2  lineBox03e1                          ;;
+Box03e2)    set_line_menu_text   $1 $2  lineBox03e2                          ;;
+Box03e3)    set_line_menu_text   $1 $2  lineBox03e3                          ;;
+Box03e4)    set_line_menu_text   $1 $2  lineBox03e4                          ;;
+Box03e5)    set_line_menu_text   $1 $2  lineBox03e5                          ;;
+Box03e6)    set_line_menu_text   $1 $2  lineBox03e6                          ;;
+Box03e7)    set_line_menu_text   $1 $2  lineBox03e7                          ;;
+Box03e8)    set_line_menu_text   $1 $2  lineBox03e8                          ;;
+Box04d1)    set_line_menu_text   $1 $2  lineBox04d1                          ;;
+Box04d2)    set_line_menu_text   $1 $2  lineBox04d2                          ;;
+Box04d3)    set_line_menu_text   $1 $2  lineBox04d3                          ;;
+Box04d4)    set_line_menu_text   $1 $2  lineBox04d4                          ;;
+Box04d5)    set_line_menu_text   $1 $2  lineBox04d5                          ;;
+Box04d6)    set_line_menu_text   $1 $2  lineBox04d6                          ;;
+Box04d7)    set_line_menu_text   $1 $2  lineBox04d7                          ;;
+Box04d8)    set_line_menu_text   $1 $2  lineBox04d8                          ;;
+Box04e1)    set_line_menu_text   $1 $2  lineBox04e1                          ;;
+Box04e2)    set_line_menu_text   $1 $2  lineBox04e2                          ;;
+Box04e3)    set_line_menu_text   $1 $2  lineBox04e3                          ;;
+Box04e4)    set_line_menu_text   $1 $2  lineBox04e4                          ;;
+Box04e5)    set_line_menu_text   $1 $2  lineBox04e5                          ;;
+Box04e6)    set_line_menu_text   $1 $2  lineBox04e6                          ;;
+Box04e7)    set_line_menu_text   $1 $2  lineBox04e7                          ;;
+Box04e8)    set_line_menu_text   $1 $2  lineBox04e8                          ;;
+q      )    break;;                       
+esac
+done
+}
+
+
+set_Form4868_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form4868 in which to enter or edit data:"
+echo
+echo "addr1 )    Enter first line of addres         "
+echo "addr2 )    Enter second line of address       "
+echo "city  )    Enter city                         "
+echo "ST    )    Enter State in ST format           "
+echo "zip   )    Enter zip                          "
+echo "tottax)    Enter total tax liabiity           "
+echo "t0tpay)    Enter total 2022 payments          "
+echo "amtpd )    Enter amount you are paying        "
+echo "away  )    Enter x if out of the country      "
+echo "1040NR)    Enter x if wages are not subject to withholding"
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form4868_line_data_choice
+echo
+     case $Form4868_line_data_choice in
+addr1 )    set_line_menu_text   $1 $2  lineaddr1                            ;;
+addr2 )    set_line_menu_text   $1 $2  lineaddr2                            ;;
+city  )    set_line_menu_text   $1 $2  linecity                             ;;
+ST    )    set_line_menu_text   $1 $2  lineST                               ;;
+zip   )    set_line_menu_text   $1 $2  linezip                              ;;
+tottax)    set_line_menu_number $1 $2  linetottax                           ;;
+t0tpay)    set_line_menu_number $1 $2  linet0tpay                           ;;
+amtpd )    set_line_menu_number $1 $2  lineamtpd                            ;;
+away  )    set_line_menu_text   $1 $2  lineaway                             ;;
+1040NR)    set_line_menu_text   $1 $2  line1040NR                           ;;
+q     )    break;;                       
+esac
+done
+}
+
+
 set_SchedB_line_data_choice() {
 while true;
 do
@@ -3621,343 +3724,8 @@ q    )    break;;
 esac
 done
 }
-set_SchedC_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in SchedC in which to enter or edit data:"
-echo
-echo "PrBus )    Enter the principal business or profession engaged in.                                              	  "
-echo "B1    )    Enter the first code number.                                                                        	  "
-echo "B2    )    Enter the second code number.                                                                       	  "
-echo "B3    )    Enter the third code number.                                                                        	  "
-echo "B4    )    Enter the fourth code number.                                                                       	  "
-echo "B5    )    Enter the fifth code number.                                                                        	  "
-echo "B6    )    Enter the sixth code number.                                                                        	  "
-echo "BusNm )    Enter the business name if separate from line A.                                                    	  "
-echo "D1    )    Enter the first code number.                                                                        	  "
-echo "D2    )    Enter the second code number.                                                                       	  "
-echo "D3    )    Enter the third code number.                                                                        	  "
-echo "D4    )    Enter the fourth code number.                                                                       	  "
-echo "D5    )    Enter the fifth code number.                                                                        	  "
-echo "D6    )    Enter the sixth code number.                                                                        	  "
-echo "D7    )    Enter the seventh code number.                                                                      	  "
-echo "D8    )    Enter the eighth code number.                                                                       	  "
-echo "D9    )    Enter the ninth code number.                                                                        	  "
-echo "Addr1 )    Enter the first address line of the business.                                                       	  "
-echo "Addr2 )    Enter the second address line of the business.                                                      	  "
-echo "City  )    Enter the ciy in which the business is located.                                                     	  "
-echo "ST    )    Enter the state (ST) in which the buseiness is located.                                             	  "
-echo "zip   )    Enter the zip code of the business.                                                                 	  "
-echo "cash  )    Enter x if the accounting method is cash based.                                                     	  "
-echo "accru )    Enter x if the accounting method is accrual based.                                                  	  "
-echo "other )    Enter x if an other accounting method was used.                                                     	  "
-echo "specif)    Specify the accounting method used.                                                                 	  "
-echo "Gy    )    Emter x if you materially participated in the operation of the business during 2023.              	  "
-echo "Gn    )    Enter x if you did not materially participate in the operation of the business during 2023.       	  "
-echo "Hx    )    Enter x if you started or acquired this business during 2023.                                       	  "
-echo "Iy    )    Enter x if you made any payments in 2023 that would require filing Form(s) 1099.                    	  "
-echo "In    )    Enter x if you did not make any payments in 2023 thot would require filing Form(s) 1099.            	  "
-echo "Jy    )    Enter x if you did or will file any required Form(s) 1099.                                          	  "
-echo "Jn    )    Enter x if you did not and will not file any required Form(s) 1099.                                 	  "
-echo "01Ck  )    Enter x if income on line01 was reported to you on FormW2 and Statutory employee was checked.      	  "
-echo "01    )    Enter gross receipts or sales.                                                                      	  "
-echo "02    )    Enter returns anad allowances.                                                                      	  "
-echo "04    )    Enter cost of goods sold from line 42.                                                              	  "
-echo "06    )    Enter other income.                                                                                 	  "
-echo "08    )    Enter advertising expenses.                                                                         	  "
-echo "09    )    Enter car and truck expenses.                                                                       	  "
-echo "10    )    Enter commission and fee expenses.                                                                  	  "
-echo "11    )    Enter contract labor expenses.                                                                      	  "
-echo "12    )    Enter depletion expenses.                                                                           	  "
-echo "13    )    Enter depreciation and section 179 expenses.                                                        	  "
-echo "14    )    Enter employee benefit program expenses.                                                            	  "
-echo "15    )    enter insurance (other than heallth) expenses.                                                      	  "
-echo "16a   )    Enter mortage interest expenses.                                                                    	  "
-echo "16b   )    Enter other interest expenses.                                                                      	  "
-echo "17    )    Enter legal and professional services expenses.                                                     	  "
-echo "18    )    Enter office expenses.                                                                              	  "
-echo "19    )    Enter pension and profit-sharing plan expenses.                                                     	  "
-echo "20a   )    Enter rent or lease expenses for vehicles, machinery and equipment.                                 	  "
-echo "20b   )    Enter rent or lease expenses for other business property.                                           	  "
-echo "21    )    Enter repair and maintenance expenses.                                                              	  "
-echo "22    )    Enter expenses for supplies.                                                                        	  "
-echo "23    )    Enter tax and license expenses.                                                                     	  "
-echo "24a   )    Enter travel expenses.                                                                              	  "
-echo "24b   )    Enter meal deductions.                                                                              	  "
-echo "25    )    Enter utility expenses.                                                                             	  "
-echo "26    )    Enter wage expenses (less employment credits).                                                      	  "
-echo "27a   )    Enter other expenses from line 48.                                                                  	  "
-echo "27b   )    Enter deduction for energy efficient commercial buildings.(Form 7205)                               	  "
-echo "30a   )    For simplified method: Enter total square footage of your home.                                     	  "
-echo "30b   )    For simplified method: Enter ssquare footage used for business.                                     	  "
-echo "30    )    Enter expenses for the business use of your home. (Form 8829)                                       	  "
-echo "32a   )    Enter x if all investment is at risk.                                                               	  "
-echo "32b   )    Enter x if some of the investment is not at risk.                                                   	  "
-echo "33a   )    Enter x if the method used to value closing inventory was cash.                                   	  "
-echo "33b   )    Enter x if the method used to value closing inventory was lower of cost or market.                	  "
-echo "33c   )    Enter s if another method was used to value closing inventory.                                      	  "
-echo "34y   )    Enter x if there was any change in determininig quantities, costs, or valualtions                   	  "
-echo "34n   )    Enter x if there was not any such change.                                                           	  "
-echo "35    )    Enter value of inventory at the beginning of the year.                                              	  "
-echo "36    )    Enter cost of purchases less cost of items withdrawn for personal use.                              	  "
-echo "37    )    Enter cost of labor.                                                                                	  "
-echo "38    )    Enter cost of materials and supplies.                                                               	  "
-echo "39    )    Enter other costs.                                                                                  	  "
-echo "41    )    Enter value of inventory at the end of the year.                                                    	  "
-echo "43m   )    Enter the month (mm) your vehicle was placed in service for business purposes.                      	  "
-echo "43d   )    Enter the day (dd) your vehicle was placed in service for business purposes.                        	  "
-echo "43y   )    Enter the year (yyyy) your vehicle was placed in service for business purposes.                     	  "
-echo "44a   )    Enter the number of miles you drove your vehicle for business during 2023.                          	  "
-echo "44b   )    Enter the number of miles you drove your vehicle for commuting during 2023.                         	  "
-echo "44c   )    Enter the number of miles you drove your vehicle for other purposes during 2023.                    	  "
-echo "45y   )    Enter x if your vehicle was available for personal use during off-duty hours.                       	  "
-echo "45n   )    Enter x if your vehicle was not available for personal use during off-duty hours.                   	  "
-echo "46y   )    Enter x if you or your spouse have anothe vehicle available for personal use.                       	  "
-echo "46n   )    Enter x if you or your spouse do not have anothe vehicle availabel for personal use.                	  "
-echo "47ay  )    Enter x if you have evidence to support your deduction.                                             	  "
-echo "47an  )    Enter x if you do not have evidence to support your deduction.                                      	  "
-echo "47by  )    Enter x if your evidence is not written.                                                            	  "
-echo "47bn  )    Enter x if your evidence is written.                                                                	  "
-echo "Exp1nm)    Enter the name of the first business expense catagory.                                              	  "
-echo "Exp1  )    Enter the amount expensedvfor the first expense catagory.                                           	  "
-echo "Exp2nm)    Enter the name of the second business expensecatagory.                                              	  "
-echo "Exp2  )    Enter the amount expensed for the second expense catagory                                           	  "
-echo "Exp3nm)    Enter the name of the thiird business expense catagory.                                             	  "
-echo "Exp3  )    Enter the amount expensed for the third expense catagory.                                           	  "
-echo "Exp4nm)    Enter the name of the fourth business expense catagory.                                             	  "
-echo "Exp4  )    Enter the amount expensed for the fourth expense catagory.                                          	  "
-echo "Exp5nm)    Enter the name of the fifth business expense catagory.                                              	  "
-echo "Exp5  )    Enter the amount expensed for the fifth expense catagory.                                           	  "
-echo "Exp6nm)    Enter the name of the sixth business expense catagory.                                              	  "
-echo "Exp6  )    Enter the amount expensed for the sixthe expense catagory.                                          	  "
-echo "Exp7nm)    Enter the name of the seventh business expense catagory.                                            	  "
-echo "Exp7  )    Enter the amount expensed for the seventh expense catagory.                                         	  "
-echo "Exp8nm)    Enter the name of the eighth business expense catagory.                                             	  "
-echo "Exp8  )    Enter the amount expensed for the eight expense catagory.                                           	  "
-echo "Exp9nm)    Enter the name of the ninth business expense catagory.                                              	  "
-echo "Exp9  )    Enter the amount expensed for the ninth expenses catagory.                                          	  "
-echo
-echo "     q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read SchedC_line_data_choice
-echo
-     case $SchedC_line_data_choice in
-PrBus )    set_line_menu_text   $1 $2  linePrBus                            ;;
-B1    )    set_line_menu_text   $1 $2  lineB1                               ;;
-B2    )    set_line_menu_text   $1 $2  lineB2                               ;;
-B3    )    set_line_menu_text   $1 $2  lineB3                               ;;
-B4    )    set_line_menu_text   $1 $2  lineB4                               ;;
-B5    )    set_line_menu_text   $1 $2  lineB5                               ;;
-B6    )    set_line_menu_text   $1 $2  lineB6                               ;;
-BusNm )    set_line_menu_text   $1 $2  lineBusNm                            ;;
-D1    )    set_line_menu_text   $1 $2  lineD1                               ;;
-D2    )    set_line_menu_text   $1 $2  lineD2                               ;;
-D3    )    set_line_menu_text   $1 $2  lineD3                               ;;
-D4    )    set_line_menu_text   $1 $2  lineD4                               ;;
-D5    )    set_line_menu_text   $1 $2  lineD5                               ;;
-D6    )    set_line_menu_text   $1 $2  lineD6                               ;;
-D7    )    set_line_menu_text   $1 $2  lineD7                               ;;
-D8    )    set_line_menu_text   $1 $2  lineD8                               ;;
-D9    )    set_line_menu_text   $1 $2  lineD9                               ;;
-Addr1 )    set_line_menu_text   $1 $2  lineAddr1                            ;;
-Addr2 )    set_line_menu_text   $1 $2  lineAddr2                            ;;
-City  )    set_line_menu_text   $1 $2  lineCity                             ;;
-ST    )    set_line_menu_text   $1 $2  lineST                               ;;
-zip   )    set_line_menu_text   $1 $2  linezip                              ;;
-cash  )    set_line_menu_text   $1 $2  linecash                             ;;
-accru )    set_line_menu_text   $1 $2  lineaccru                            ;;
-other )    set_line_menu_text   $1 $2  lineother                            ;;
-specif)    set_line_menu_text   $1 $2  linespecif                           ;;
-Gy    )    set_line_menu_text   $1 $2  lineGy                               ;;
-Gn    )    set_line_menu_text   $1 $2  lineGn                               ;;
-Hx    )    set_line_menu_text   $1 $2  lineHx                               ;;
-Iy    )    set_line_menu_text   $1 $2  lineIy                               ;;
-In    )    set_line_menu_text   $1 $2  lineIn                               ;;
-Jy    )    set_line_menu_text   $1 $2  lineJy                               ;;
-Jn    )    set_line_menu_text   $1 $2  lineJn                               ;;
-01Ck  )    set_line_menu_text   $1 $2  line01Ck                             ;;
-01    )    set_line_menu_number $1 $2  line01                               ;;
-02    )    set_line_menu_number $1 $2  line02                               ;;
-04    )    set_line_menu_number $1 $2  line04                               ;;
-06    )    set_line_menu_number $1 $2  line06                               ;;
-08    )    set_line_menu_number $1 $2  line08                               ;;
-09    )    set_line_menu_number $1 $2  line09                               ;;
-10    )    set_line_menu_number $1 $2  line10                               ;;
-11    )    set_line_menu_number $1 $2  line11                               ;;
-12    )    set_line_menu_number $1 $2  line12                               ;;
-13    )    set_line_menu_number $1 $2  line13                               ;;
-14    )    set_line_menu_number $1 $2  line14                               ;;
-15    )    set_line_menu_number $1 $2  line15                               ;;
-16a   )    set_line_menu_number $1 $2  line16a                              ;;
-16b   )    set_line_menu_number $1 $2  line16b                              ;;
-17    )    set_line_menu_number $1 $2  line17                               ;;
-18    )    set_line_menu_number $1 $2  line18                               ;;
-19    )    set_line_menu_number $1 $2  line19                               ;;
-20a   )    set_line_menu_number $1 $2  line20a                              ;;
-20b   )    set_line_menu_number $1 $2  line20b                              ;;
-21    )    set_line_menu_number $1 $2  line21                               ;;
-22    )    set_line_menu_number $1 $2  line22                               ;;
-23    )    set_line_menu_number $1 $2  line23                               ;;
-24a   )    set_line_menu_number $1 $2  line24a                              ;;
-24b   )    set_line_menu_number $1 $2  line24b                              ;;
-25    )    set_line_menu_number $1 $2  line25                               ;;
-26    )    set_line_menu_number $1 $2  line26                               ;;
-27a   )    set_line_menu_number $1 $2  line27a                              ;;
-27b   )    set_line_menu_number $1 $2  line27b                              ;;
-30a   )    set_line_menu_number $1 $2  line30a                              ;;
-30b   )    set_line_menu_number $1 $2  line30b                              ;;
-30    )    set_line_menu_number $1 $2  line30                               ;;
-32a   )    set_line_menu_text   $1 $2  line32a                              ;;
-32b   )    set_line_menu_text   $1 $2  line32b                              ;;
-33a   )    set_line_menu_text   $1 $2  line33a                              ;;
-33b   )    set_line_menu_text   $1 $2  line33b                              ;;
-33c   )    set_line_menu_text   $1 $2  line33c                              ;;
-34y   )    set_line_menu_text   $1 $2  line34y                              ;;
-34n   )    set_line_menu_text   $1 $2  line34n                              ;;
-35    )    set_line_menu_number $1 $2  line35                               ;;
-36    )    set_line_menu_number $1 $2  line36                               ;;
-37    )    set_line_menu_number $1 $2  line37                               ;;
-38    )    set_line_menu_number $1 $2  line38                               ;;
-39    )    set_line_menu_number $1 $2  line39                               ;;
-41    )    set_line_menu_number $1 $2  line41                               ;;
-43m   )    set_line_menu_text   $1 $2  line43m                              ;;
-43d   )    set_line_menu_text   $1 $2  line43d                              ;;
-43y   )    set_line_menu_text   $1 $2  line43y                              ;;
-44a   )    set_line_menu_number $1 $2  line44a                              ;;
-44b   )    set_line_menu_number $1 $2  line44b                              ;;
-44c   )    set_line_menu_number $1 $2  line44c                              ;;
-45y   )    set_line_menu_text   $1 $2  line45y                              ;;
-45n   )    set_line_menu_text   $1 $2  line45n                              ;;
-46y   )    set_line_menu_text   $1 $2  line46y                              ;;
-46n   )    set_line_menu_text   $1 $2  line46n                              ;;
-47ay  )    set_line_menu_text   $1 $2  line47ay                             ;;
-47an  )    set_line_menu_text   $1 $2  line47an                             ;;
-47by  )    set_line_menu_text   $1 $2  line47by                             ;;
-47bn  )    set_line_menu_text   $1 $2  line47bn                             ;;
-Exp1nm)    set_line_menu_text   $1 $2  lineExp1nm                           ;;
-Exp1  )    set_line_menu_number $1 $2  lineExp1                             ;;
-Exp2nm)    set_line_menu_text   $1 $2  lineExp2nm                           ;;
-Exp2  )    set_line_menu_number $1 $2  lineExp2                             ;;
-Exp3nm)    set_line_menu_text   $1 $2  lineExp3nm                           ;;
-Exp3  )    set_line_menu_number $1 $2  lineExp3                             ;;
-Exp4nm)    set_line_menu_text   $1 $2  lineExp4nm                           ;;
-Exp4  )    set_line_menu_number $1 $2  lineExp4                             ;;
-Exp5nm)    set_line_menu_text   $1 $2  lineExp5nm                           ;;
-Exp5  )    set_line_menu_number $1 $2  lineExp5                             ;;
-Exp6nm)    set_line_menu_text   $1 $2  lineExp6nm                           ;;
-Exp6  )    set_line_menu_number $1 $2  lineExp6                             ;;
-Exp7nm)    set_line_menu_text   $1 $2  lineExp7nm                           ;;
-Exp7  )    set_line_menu_number $1 $2  lineExp7                             ;;
-Exp8nm)    set_line_menu_text   $1 $2  lineExp8nm                           ;;
-Exp8  )    set_line_menu_number $1 $2  lineExp8                             ;;
-Exp9nm)    set_line_menu_text   $1 $2  lineExp9nm                           ;;
-Exp9  )    set_line_menu_number $1 $2  lineExp9                             ;;
-q     )    break;;                       
-esac
-done
-}
-set_SchedD_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in SchedD in which to enter or edit data:"
-echo
-echo "QOFy)    Enter x if you disposed of any investments in a qualified opportunity fund during the tax year."
-echo "QOFn)    Enter x if you did not.            "
-echo "01ad)    Enter proceeds for 1a.             "
-echo "01ae)    Enter basis of 1a.                 "
-echo "01bd)    Enter Proceeds for 1b.             "
-echo "01be)    Enter basis for 1b.                "
-echo "01bg)    Enter adjustments to 1b.           "
-echo "02d )    Enter Proceed for 2.               "
-echo "02e )    Enter basis for 2.                 "
-echo "02g )    Enter adjustments to 2.            "
-echo "03d )    Enter proceeds of 3.               "
-echo "03e )    Enter bases of 3.                  "
-echo "03g )    Enter adjustments to 3.            "
-echo "04  )    Enter short term gain form Forms 6252, 4684, 6781 and 8824."
-echo "05  )    Enter short term gain or loss from partnerships, estates and trusts."
-echo "06  )    Enter short term capital loss carryover."
-echo "08ad)    Enter proceeds from 8a.            "
-echo "08ae)    Enter basis for 8a.                "
-echo "08bd)    Enter proceeds from 8b.            "
-echo "08be)    Enter basis for 8b.                "
-echo "08bg)    Enter adjustments to 8b.           "
-echo "09d )    Enter proceeds from 9.             "
-echo "09e )    Enter basis for 9.                 "
-echo "09g )    Enter adjustments to 9.            "
-echo "10d )    Enter proceeds from 10.            "
-echo "10e )    Enter basis for 10.                "
-echo "10g )    Enter adjustments to 10.           "
-echo "11  )    Enter long term gain from Form4797, 2439, 6252, 4684, 6781, and 8824."
-echo "12  )    Enter long term gain from partnerships, S corporations, estates and trusts."
-echo "13  )    Enter capital gain distsributions. "
-echo "14  )    Enter long term capital loss carryover."
-echo
-echo "   q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read SchedD_line_data_choice
-echo
-     case $SchedD_line_data_choice in
-QOFy)    set_line_menu_number $1 $2  lineQOFy                             ;;
-QOFn)    set_line_menu_number $1 $2  lineQOFn                             ;;
-01ad)    set_line_menu_number $1 $2  line01ad                             ;;
-01ae)    set_line_menu_number $1 $2  line01ae                             ;;
-01bd)    set_line_menu_number $1 $2  line01bd                             ;;
-01be)    set_line_menu_number $1 $2  line01be                             ;;
-01bg)    set_line_menu_number $1 $2  line01bg                             ;;
-02d )    set_line_menu_number $1 $2  line02d                              ;;
-02e )    set_line_menu_number $1 $2  line02e                              ;;
-02g )    set_line_menu_number $1 $2  line02g                              ;;
-03d )    set_line_menu_number $1 $2  line03d                              ;;
-03e )    set_line_menu_number $1 $2  line03e                              ;;
-03g )    set_line_menu_number $1 $2  line03g                              ;;
-04  )    set_line_menu_number $1 $2  line04                               ;;
-05  )    set_line_menu_number $1 $2  line05                               ;;
-06  )    set_line_menu_number $1 $2  line06                               ;;
-08ad)    set_line_menu_number $1 $2  line08ad                             ;;
-08ae)    set_line_menu_number $1 $2  line08ae                             ;;
-08bd)    set_line_menu_number $1 $2  line08bd                             ;;
-08be)    set_line_menu_number $1 $2  line08be                             ;;
-08bg)    set_line_menu_number $1 $2  line08bg                             ;;
-09d )    set_line_menu_number $1 $2  line09d                              ;;
-09e )    set_line_menu_number $1 $2  line09e                              ;;
-09g )    set_line_menu_number $1 $2  line09g                              ;;
-10d )    set_line_menu_number $1 $2  line10d                              ;;
-10e )    set_line_menu_number $1 $2  line10e                              ;;
-10g )    set_line_menu_number $1 $2  line10g                              ;;
-11  )    set_line_menu_number $1 $2  line11                               ;;
-12  )    set_line_menu_number $1 $2  line12                               ;;
-13  )    set_line_menu_number $1 $2  line13                               ;;
-14  )    set_line_menu_number $1 $2  line14                               ;;
-q   )    break;;                       
-esac
-done
-}
-set_SST_line_data_choice() {
-while true;
-do
-clear
-echo "Lines in SST in which to enter or edit data:"
-echo
-echo "50)    Enter 0.50                         "
-echo "85)    Enter 0.85                         "
-echo
-echo " q)    Return to Previous Menu"      
-echo
-echo "Please enter the letter(s) of your choice then press return."
-     read SST_line_data_choice
-echo
-     case $SST_line_data_choice in
-50)    set_line_menu_number $1 $2  line50                               ;;
-85)    set_line_menu_number $1 $2  line85                               ;;
-q )    break;;                       
-esac
-done
-}
+
+
 set_UG1250Wkst_line_data_choice() {
 while true;
 do
@@ -3998,6 +3766,7 @@ esac
 done
 }
     
+
 while true;
       do    
   clear
@@ -4030,7 +3799,6 @@ while true;
 	
 done	
     
-#Tidy up and leave
 
 echo "Finished"
 

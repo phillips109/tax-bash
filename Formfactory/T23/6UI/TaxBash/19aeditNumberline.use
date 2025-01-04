@@ -30,8 +30,8 @@ params=$#
 #    infile="../Data/$1_$2_*.xml"
 #    tempfile="../Data/$1_$2_*.tmp"
 #elif [ $params = "4" ]; then
-    infile="../Data/$1_$2_$3_*.xml"
-    tempfile="../Data/$1_$2_$3_*.tmp"
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
 #fi
 #echo "infile is $infile. tempfile=$tempfile."
 
@@ -43,15 +43,15 @@ echo
 echo "If the value to be entered here is not in your GnuCash accounts, or"
 echo "if you wish to temporarily override the value of this line,"
 echo "you can return to the previous menu and override the value."
-echo "Overriding normally changes the color to red,"
-echo "but on the previous menu you may set the color as you wish."
+#echo "Overriding normally changes the color to red,"
+#echo "but on the previous menu you may set the color as you wish."
 echo
-clear
+#clear
 echo "The totals of the following accounts are currently"
 echo "being added together to produce the value of the line."
 #this sed expression removes the markup of each item(account) and prints the accounts
 #sed -n '/<item>/s/<item>//;s/<\/item>//p' $infile
-java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl acctout.xsl
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
 
 echo
 echo "Do you wish to add an account? Enter y or n."
@@ -104,12 +104,12 @@ echo
 echo
 echo "Remember that this change will not show up"
 echo "until you have refreshed (recalculated) your data."
-echo "Since refreshing your data takes about 30 seconds,"
-echo "You may wish to make other changes to your data"
-echo "before you recalculate all your data."
+#echo "Since refreshing your data takes about 30 seconds,"
+#echo "You may wish to make other changes to your data"
+#echo "before you recalculate all your data."
 echo 
 echo "Do you wish to refresh your data now?"
-echo "This will take about 30 seconds."
+#echo "This will take about 30 seconds."
 echo "Enter y or n"
 read this
 if yOrn "$this"
