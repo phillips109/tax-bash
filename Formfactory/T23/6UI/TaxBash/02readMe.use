@@ -20,6 +20,6 @@
 
 
 viewReadMe(){
-emacs README
+cat ../README | less
 return
 }

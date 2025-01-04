@@ -32,7 +32,7 @@ return
 
 
 viewReadMe(){
-emacs README
+cat ../README | less
 return
 }
 
@@ -2092,8 +2092,10 @@ setupxalan(){
 
 }
 
-qpdfview is included in Ubuntu and many distributions.
-If need be go to https://qpdf.readthedocs.io to dowdnload.
+installqpdf(){
+
+cat ../installqpdf.txt | less
+}
 
 
 initial(){
@@ -3752,7 +3754,7 @@ while true;
    2) variables;;
    3) setupxalan;;
    4) setupfop;;
-   5) setupX11;;
+   5) installqpdf;; 
    6) initial;;
    7) set_menu_choice;;
    q) exit;;   
