@@ -29,7 +29,8 @@ while true;
   echo "2)  What global variables should be set?"
   echo "3)  How to set up Xalan to use the java version."
   echo "4)  How to set up FOP"
-  echo "5)  Setting windowing system under Ubuntu"
+#  echo "5)  Setting windowing system under Ubuntu"
+  echo "5)  Installing qpdf"  
   echo "6)  Initial actions to take with tax-bash."
   echo "7)  Start using tax-bash"
   echo

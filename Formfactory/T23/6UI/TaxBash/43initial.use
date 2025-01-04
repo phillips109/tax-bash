@@ -41,13 +41,13 @@ initial(){
 	echo "You should choose 3) to make certain you are"
 	echo "using your most current gnucash data."
 	echo
-	echo "The next three choices allow you to look at"
+	echo "The next two choices allow you to look at"
 	echo "your GnuCash data:"
 	echo "ln: will give you a listing of all the accounts"
 	echo "    in your GnuCash data."
         echo "at: will show you the transactions in any account you choose."
-	echo "ft: will show you the transactions in all accounts"
-	echo "    that are associated with the form you are working on."
+#	echo "ft: will show you the transactions in all accounts"
+#	echo "    that are associated with the form you are working on."
 	echo
 	echo  "The 4th choice must be performed before starting the program for the first time."
 	echo  "It creates any worksheets that are necessary for the calculation of your return."

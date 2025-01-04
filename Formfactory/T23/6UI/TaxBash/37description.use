@@ -22,7 +22,7 @@
 description(){
     while true;
     do
-#    clear
+    clear
     echo
     echo "1) View description of tax-bash"
     echo "   and how to use it."

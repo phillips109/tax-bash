@@ -586,8 +586,8 @@ fi
 edit-numberline(){
 
 params=$#
-    infile="../Data/$1_$2_$3_*.xml"
-    tempfile="../Data/$1_$2_$3_*.tmp"
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
 
 echo "This line has a numerical value."
 echo "Preferably this value is drawn from your GnuCash data."
@@ -598,10 +598,9 @@ echo "If the value to be entered here is not in your GnuCash accounts, or"
 echo "if you wish to temporarily override the value of this line,"
 echo "you can return to the previous menu and override the value."
 echo
-clear
 echo "The totals of the following accounts are currently"
 echo "being added together to produce the value of the line."
-java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl acctout.xsl
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/acctout.xsl
 
 echo
 echo "Do you wish to add an account? Enter y or n."
@@ -1252,7 +1251,6 @@ set_menu_choices() {
 	echo "  1) Refresh data"
 	echo "  2) Enter or alter data."
 	echo "  3) Show form, schedule, or worksheet."
-	echo " rm) Remove a copy of "$1"." 
 	echo	
 	echo "  q) Return to previous menu."
 
@@ -1264,13 +1262,12 @@ set_menu_choices() {
            1) refreshTl FEITaxWkst 01
 	      refreshTl QDCGTaxWkst 01
 	      refreshTl QDCGaTaxWkst 01
-	      refreshTL SchedDTaxWkst 01
+	      refreshTl SchedDTaxWkst 01
 	      refreshTl SchedDaTaxWkst 01
 	      refreshTl FEITaxWkst 01
 	      refreshTl $1 $2;;
            2) set_$1_line_data_choice $1 $2;;
            3) showForm2 $1 $2;;
-	  rm) removeForm $1;;
            q) break;;
         esac
     done
@@ -1748,7 +1745,6 @@ while true;
   echo
   echo "   ln) List the names of all of the accounts in your GnuCash data."
   echo "   at) List the transactions in a specified account."
-  echo "   ft) Show the accounts and transactions used for a specified form."
   echo
   echo "   4)  Initialize or refresh all of your data."
   echo 
@@ -1900,6 +1896,7 @@ done
 description(){
     while true;
     do
+    clear
     echo
     echo "1) View description of tax-bash"
     echo "   and how to use it."
@@ -1930,7 +1927,7 @@ dependencies(){
     echo "bash    : bash is the shell in which tax-bash is written."
     echo "sed     : sed is probably already be installed by your distsribution."
     echo "awk     : awk is probably already be installed by your distribution."
-    echo "m4      : m4 need to be installed."
+    echo "m4      : m4 needs to be installed."
     echo "xalan   : The java version is used (Not the C++ version) because"
     echo "          when I last checked the C++ version did not include "
     echo "          the format-number() function used extensively in tax-bash"
@@ -2015,27 +2012,27 @@ setupfop(){
     echo
     echo  "Download from the Apache FOP website"
     echo "the most recent tarball which currently is"
-    echo "  fop-2.6.tar.gz"
+    echo "  fop-2.10-bin.tar.gz"
     echo
     echo "Move this tarball from ~/Downloads to the directory of your choice."
-    echo "I created the directory ~/Fop and moved the tarball there."
+    echo "I created the directory ~/Fop-2.10 and moved the tarball there."
     echo
-    echo "Change directory into ~/Fop and issue the following command:"
-    echo "  tar -xvfz fop-2.6.tar.gz"
+    echo "Change directory into ~/Fop-2.10 and issue the following command:"
+    echo "  tar -xvfz fop-2.10-bin.tar.gz"
     echo
-    echo "This will create the directory fop-2.6 under ~/Fop"
+    echo "This will create the directory fop-2.10 under ~/Fop-2.10"
     echo "and unpack the fop files into it."
     echo
     echo "The path to the executive file becomes:"
-    echo "  ~/Fop/fop-2.6/fop"
+    echo "  ~/Fop-2.610/fop-2.10/fop"
     echo
     echo "The final step was to add this path to the start"
     echo "of your global variable PATH"
-    echo "   PATH=~/Fop/fop-2.6/fop:\$PATH"
+    echo "   PATH=~/Fop-2.10/fop-2.10/fop:$PATH"
     echo
     echo "You can do this each time you run tax-bash"
     echo "or you can add the following 2 lines to the end of ~/.bashrc"
-    echo "  PATH=~/Fop/fop-2.6/fop\$PATH"
+    echo "  PATH=~/Fop-2.10/fop-2.10/fop:$PATH"
     echo "  export PATH"
     echo
     echo "Enter q to return to the previous menu."
@@ -2063,24 +2060,24 @@ setupxalan(){
     echo
     echo " The following steps will achieve that:"
     echo
-    echo " Download from the Apache FOP website"
+    echo " Download from the Apache Xalan website"
     echo " the most recent tarball which currently is"
-    echo "   xalan-j_2_7_2.tar.gz"
+    echo "   xalan-j_2_7_3.tar.gz"
     echo
     echo " Move this tarball from ~/Downloads to the directory of your choice."
-    echo " I created the directory ~/Xalan-j_2_7_2/ and moved the tarball there."
+    echo " I created the directory ~/Xalan-j_2_7_3/ and moved the tarball there."
     echo
-    echo " Change directory into ~/Xalan-j_2_7_2/ and issue the following command:"
-    echo " tar -xvfz xalan-j_2_7_2.tar.gz"
+    echo " Change directory into ~/Xalan-j_2_7_3/ and issue the following command:"
+    echo " tar -xvfz xalan-j_2_7_3.tar.gz"
     echo
-    echo " This will create the directory xalan-j_2_7_2/ under ~/Xalan-j_2_7_2/"
+    echo " This will create the directory xalan-j_2_7_3/ under ~/Xalan-j_2_7_3/"
     echo " and unpacked the fop files into it."
     echo
     echo " This will also create in /usr/share/java"
-    echo " the file xalan2-2.7.2.jar"
+    echo " the file xalan2-2.7.3.jar"
     echo
     echo " The variable XALANJAVAJAR should be set to"
-    echo "   '-cp /usr/share/java/xalan2-2.7.2.jar'"
+    echo "   '-cp /usr/share/java/xalan2-2.7.3.jar'"
     echo " preferabllly in ~/.bashrc"
     echo " (The -cp is the option in java which sets the class path)"
     echo
@@ -2095,42 +2092,8 @@ setupxalan(){
 
 }
 
-
-
-setupX11(){
-while true
-do
-echo "
-Newer versions of Ubuntu, which I use, have changed the default windowing system to wayland. I have found that qpdfview give error messages under weyland. Although the program still works, you can eliminate the error messages by changing the windowing system back to X11.
-
-You may toggle your windowing system under Ubuntu by:
-    1.  Click on the power 0n/Off button at top right to show its menu
-    2.  Choose Settings/Users
-    3.  Disable automatic login
-    4.  Logout, then login
-    5.  Press a key to have the screen ask for you password.
-    6.  At this point there will be a small settings icon in the lower right.
-    7.  Click on the icon.
-    8.  Two clickable choices are presented for use during this log-in session.
-       	   Ubuntu
-	   Ubuntu on X.org
-    9.  Click on 'Ubuntu' to use wayland or
-   10.  Click on 'Ubuntu on X.org' to use X11
-
- To return to the previous menu enter 'q'. 
-
-   q) Return to previous menu."
-
-   read click
-
-     case "$click" in
-
-        q) return;;
-	*) echo "Choice not recognized."
-	   echo "Enter q to return to the previous menu.";;
-     esac
-done
-}
+qpdfview is included in Ubuntu and many distributions.
+If need be go to https://qpdf.readthedocs.io to dowdnload.
 
 
 initial(){
@@ -2155,13 +2118,11 @@ initial(){
 	echo "You should choose 3) to make certain you are"
 	echo "using your most current gnucash data."
 	echo
-	echo "The next three choices allow you to look at"
+	echo "The next two choices allow you to look at"
 	echo "your GnuCash data:"
 	echo "ln: will give you a listing of all the accounts"
 	echo "    in your GnuCash data."
         echo "at: will show you the transactions in any account you choose."
-	echo "ft: will show you the transactions in all accounts"
-	echo "    that are associated with the form you are working on."
 	echo
 	echo  "The 4th choice must be performed before starting the program for the first time."
 	echo  "It creates any worksheets that are necessary for the calculation of your return."
@@ -3778,7 +3739,7 @@ while true;
   echo "2)  What global variables should be set?"
   echo "3)  How to set up Xalan to use the java version."
   echo "4)  How to set up FOP"
-  echo "5)  Setting windowing system under Ubuntu"
+  echo "5)  Installing qpdf"  
   echo "6)  Initial actions to take with tax-bash."
   echo "7)  Start using tax-bash"
   echo

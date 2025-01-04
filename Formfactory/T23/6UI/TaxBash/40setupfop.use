@@ -38,27 +38,27 @@ setupfop(){
     echo
     echo  "Download from the Apache FOP website"
     echo "the most recent tarball which currently is"
-    echo "  fop-2.6.tar.gz"
+    echo "  fop-2.10-bin.tar.gz"
     echo
     echo "Move this tarball from ~/Downloads to the directory of your choice."
-    echo "I created the directory ~/Fop and moved the tarball there."
+    echo "I created the directory ~/Fop-2.10 and moved the tarball there."
     echo
-    echo "Change directory into ~/Fop and issue the following command:"
-    echo "  tar -xvfz fop-2.6.tar.gz"
+    echo "Change directory into ~/Fop-2.10 and issue the following command:"
+    echo "  tar -xvfz fop-2.10-bin.tar.gz"
     echo
-    echo "This will create the directory fop-2.6 under ~/Fop"
+    echo "This will create the directory fop-2.10 under ~/Fop-2.10"
     echo "and unpack the fop files into it."
     echo
     echo "The path to the executive file becomes:"
-    echo "  ~/Fop/fop-2.6/fop"
+    echo "  ~/Fop-2.610/fop-2.10/fop"
     echo
     echo "The final step was to add this path to the start"
     echo "of your global variable PATH"
-    echo "   PATH=~/Fop/fop-2.6/fop:\$PATH"
+    echo "   PATH=~/Fop-2.10/fop-2.10/fop:$PATH"
     echo
     echo "You can do this each time you run tax-bash"
     echo "or you can add the following 2 lines to the end of ~/.bashrc"
-    echo "  PATH=~/Fop/fop-2.6/fop\$PATH"
+    echo "  PATH=~/Fop-2.10/fop-2.10/fop:$PATH"
     echo "  export PATH"
     echo
     echo "Enter q to return to the previous menu."

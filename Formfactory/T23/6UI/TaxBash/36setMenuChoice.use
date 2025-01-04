@@ -33,7 +33,7 @@ while true;
   echo
   echo "   ln) List the names of all of the accounts in your GnuCash data."
   echo "   at) List the transactions in a specified account."
-  echo "   ft) Show the accounts and transactions used for a specified form."
+#  echo "   ft) Show the accounts and transactions used for a specified form."
   echo
   echo "   4)  Initialize or refresh all of your data."
   echo 

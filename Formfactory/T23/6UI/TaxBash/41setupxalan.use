@@ -30,24 +30,24 @@ setupxalan(){
     echo
     echo " The following steps will achieve that:"
     echo
-    echo " Download from the Apache FOP website"
+    echo " Download from the Apache Xalan website"
     echo " the most recent tarball which currently is"
-    echo "   xalan-j_2_7_2.tar.gz"
+    echo "   xalan-j_2_7_3.tar.gz"
     echo
     echo " Move this tarball from ~/Downloads to the directory of your choice."
-    echo " I created the directory ~/Xalan-j_2_7_2/ and moved the tarball there."
+    echo " I created the directory ~/Xalan-j_2_7_3/ and moved the tarball there."
     echo
-    echo " Change directory into ~/Xalan-j_2_7_2/ and issue the following command:"
-    echo " tar -xvfz xalan-j_2_7_2.tar.gz"
+    echo " Change directory into ~/Xalan-j_2_7_3/ and issue the following command:"
+    echo " tar -xvfz xalan-j_2_7_3.tar.gz"
     echo
-    echo " This will create the directory xalan-j_2_7_2/ under ~/Xalan-j_2_7_2/"
+    echo " This will create the directory xalan-j_2_7_3/ under ~/Xalan-j_2_7_3/"
     echo " and unpacked the fop files into it."
     echo
     echo " This will also create in /usr/share/java"
-    echo " the file xalan2-2.7.2.jar"
+    echo " the file xalan2-2.7.3.jar"
     echo
     echo " The variable XALANJAVAJAR should be set to"
-    echo "   '-cp /usr/share/java/xalan2-2.7.2.jar'"
+    echo "   '-cp /usr/share/java/xalan2-2.7.3.jar'"
     echo " preferabllly in ~/.bashrc"
     echo " (The -cp is the option in java which sets the class path)"
     echo

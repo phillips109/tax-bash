@@ -29,7 +29,7 @@ dependencies(){
     echo "bash    : bash is the shell in which tax-bash is written."
     echo "sed     : sed is probably already be installed by your distsribution."
     echo "awk     : awk is probably already be installed by your distribution."
-    echo "m4      : m4 need to be installed."
+    echo "m4      : m4 needs to be installed."
     echo "xalan   : The java version is used (Not the C++ version) because"
     echo "          when I last checked the C++ version did not include "
     echo "          the format-number() function used extensively in tax-bash"

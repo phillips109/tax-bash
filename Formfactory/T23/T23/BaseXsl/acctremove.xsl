@@ -30,10 +30,10 @@
     </instructions>
   </xsl:template>
 
-  <xsl:template match="IRSinstructions">
-    <IRSinstructions>
+  <xsl:template match="IRSInstructions">
+    <IRSInstructions>
       <xsl:value-of select="."/>
-    </IRSinstructions>
+    </IRSInstructions>
   </xsl:template>
 
   <xsl:template match="notes">
@@ -57,4 +57,11 @@
       </xsl:for-each>
     </accounts>
   </xsl:template>
+
+  <xsl:template match="license">
+    <license>
+      <xsl:value-of select="."/>
+    </license>
+  </xsl:template>
+  
 </xsl:stylesheet>
