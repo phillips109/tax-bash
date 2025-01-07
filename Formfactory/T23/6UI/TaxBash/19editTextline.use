@@ -77,8 +77,8 @@ if yOrn "$this"
        echo "This text line now reads:"
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textout.xsl
 #       sed -n '/<text>/s/<text>//;s/<\/text>//p' $infile
-       echo	
-       #This is not applicable to text files.
+       echo
+#       This is not applicable to text files.
 #       echo "Remember that this change will not show up"
 #       echo "until you have refreshed (recalculated) your data."
 #       echo "Since refreshing your data takes about 30 seconds,"

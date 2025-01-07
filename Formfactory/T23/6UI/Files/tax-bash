@@ -698,8 +698,7 @@ if yOrn "$this"
        #Now you are shown the final value of the text line. 
        echo "This text line now reads:"
        java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/textout.xsl
-       echo	
-       #This is not applicable to text files.
+       echo
 else
     echo
     echo "The text value has been kept unchanged."
@@ -1240,7 +1239,13 @@ removeForm(){
 else
 	     echo "$1_Copy$number will not be removed."
 	fi     
-}
+}#!/bin/bash
+
+for file ine ../Data/$1_Copy01_line*_text.xml
+do
+cp ~/Tax-bash/PW/T23/Data/$1_Copy01_line*_text.xml .
+done
+
 
 
 set_menu_choices() {
@@ -1249,8 +1254,9 @@ set_menu_choices() {
 	echo "Actions to be taken on "$1"_Copy"$2"."
 	echo
 	echo "  1) Refresh data"
+	echo "  2) Import last years text for this form."
 	echo "  2) Enter or alter data."
-	echo "  3) Show form, schedule, or worksheet."
+	echo "  4) Show form, schedule, or worksheet."
 	echo	
 	echo "  q) Return to previous menu."
 
@@ -1266,8 +1272,9 @@ set_menu_choices() {
 	      refreshTl SchedDaTaxWkst 01
 	      refreshTl FEITaxWkst 01
 	      refreshTl $1 $2;;
-           2) set_$1_line_data_choice $1 $2;;
-           3) showForm2 $1 $2;;
+	   2) importText;;   
+           3) set_$1_line_data_choice $1 $2;;
+           4) showForm2 $1 $2;;
            q) break;;
         esac
     done
@@ -1664,34 +1671,26 @@ do
  clear
  echo "The following actions can be taken on $1_$2_$3"
  echo   
- echo  "  0) edit local instructions for this line"
  echo  "  1) show local instructions for this line"
  echo  "  2) show IRS instructions for this line" 
  echo  "  3) show current contents of the line"
  echo  "  4) specify accounts from which to draw data for this line"
  echo  "  5) enter number directly or override value obtained in (4)"
  echo  "  6) redisplay the form, Schedule, or worksheet"
- echo  "  7) Comes from:"
- echo  "  8) Goes to:"
- echo  "  9) Enter notes about this line"
- echo  " 10) Change the color of this line."
+ echo  "  7) Enter notes about this line"
 
  echo  " q) quit"
  echo "Please enter number of your choice and press Enter."
  read action_choice
   
  case $action_choice in
-        0) editInstructions    $1 $2 $3 $4;;
         1) showInstructions    $1 $2 $3 $4;;
 	2) showIRSinstructions $1 $2 $3 $4;;
 	3) showDataFile	       $1 $2 $3 $4;;
         4) edit-numberline     $1 $2 $3 $4;;
         5) edit-override       $1 $2 $3 $4;;
 	6) showForm	       $1 $2 $3 $4;;
-	7) comesFrom2	       $1 $2 $3 $4;;
-	8) goesTo	       $1 $2 $3 $4;;
-        9) enterNotes	       $1 $2 $3 $4;;
-       10) changeColor	       $1 $2 $3 $4;;
+        7) enterNotes	       $1 $2 $3 $4;;
 
 	q) break;;
     esac
@@ -1767,7 +1766,6 @@ echo
 
       ln) listAccounts;;
       at) oneAcct;;
-      ft) showAccounts;;
       
       f)  set_form_choice;;	
       s)  set_schedule_choice;;

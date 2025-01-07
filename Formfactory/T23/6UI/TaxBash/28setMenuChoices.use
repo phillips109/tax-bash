@@ -26,8 +26,9 @@ set_menu_choices() {
 	echo "Actions to be taken on "$1"_Copy"$2"."
 	echo
 	echo "  1) Refresh data"
+	echo "  2) Import last years text for this form."
 	echo "  2) Enter or alter data."
-	echo "  3) Show form, schedule, or worksheet."
+	echo "  4) Show form, schedule, or worksheet."
 #	echo " rm) Remove a copy of "$1"." 
 	echo	
 	echo "  q) Return to previous menu."
@@ -45,8 +46,9 @@ set_menu_choices() {
 	      refreshTl SchedDaTaxWkst 01
 	      refreshTl FEITaxWkst 01
 	      refreshTl $1 $2;;
-           2) set_$1_line_data_choice $1 $2;;
-           3) showForm2 $1 $2;;
+	   2) importText;;   
+           3) set_$1_line_data_choice $1 $2;;
+           4) showForm2 $1 $2;;
 #	  rm) removeForm $1;;
            q) break;;
         esac

@@ -57,7 +57,7 @@ echo
 
       ln) listAccounts;;
       at) oneAcct;;
-      ft) showAccounts;;
+#      ft) showAccounts;;
       
       f)  set_form_choice;;	
       s)  set_schedule_choice;;

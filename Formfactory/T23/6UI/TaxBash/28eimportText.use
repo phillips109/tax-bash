@@ -1,0 +1,7 @@
+#!/bin/bash
+#importText.use
+
+for file ine ../Data/$1_Copy01_line*_text.xml
+do
+cp ~/Tax-bash/PW/T23/Data/$1_Copy01_line*_text.xml .
+done
