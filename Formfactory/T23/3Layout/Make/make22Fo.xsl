@@ -217,7 +217,9 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 	  <xsl:value-of select="$form"/>
 	  <xsl:text>_Copy</xsl:text>
 	  <xsl:value-of select="$copy"/>
+	  <!--
 	  <xsl:text>_line</xsl:text>
+	  -->
 	  <xsl:value-of select="@name"/>
 	  <xsl:text disable-output-escaping="yes">_text.xml')//taxline/@color"/&gt;</xsl:text>
 	  <xsl:text disable-output-escaping="yes">&lt;/xslt:attribute&gt;</xsl:text>
@@ -227,7 +229,9 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 	  <xsl:value-of select="$form"/>
 	  <xsl:text>_Copy</xsl:text>
 	  <xsl:value-of select="$copy"/>
+	  <!--
 	  <xsl:text>_line</xsl:text>
+	  -->
 	  <xsl:value-of select="@name"/>
 	  <xsl:text disable-output-escaping="yes">_text.xml')//text"/&gt;</xsl:text><xsl:text>
 	</xsl:text>

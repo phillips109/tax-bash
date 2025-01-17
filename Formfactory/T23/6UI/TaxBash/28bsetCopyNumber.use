@@ -54,17 +54,13 @@ set_copy_number() {
 	echo "it means $1 is not yet"
 	echo "part of the tax-bash program."
 	echo
-        echo "Enter the number of the copy"
-	echo "with which you wish to work"
+        echo "Enter the number of the copy with which you wish to work."
 	echo
-	echo "If you wish to create a new copy of $1, then"
-	echo "enter new"
+	echo "If you wish to create a new copy of $1, then enter new."
 	echo
-	echo "If you wish to remove a copy of $1, then"
-	echo "enter rm"
+	echo "If you wish to remove a copy of $1, then enter rm."
 	echo
-	echo "To return to the previous menu"
-	echo "enter q"
+	echo "To return to the previous menu enter q."
 	echo
 	echo "  Enter your choice:"
         read copy_number
