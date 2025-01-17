@@ -999,17 +999,13 @@ set_copy_number() {
 	echo "it means $1 is not yet"
 	echo "part of the tax-bash program."
 	echo
-        echo "Enter the number of the copy"
-	echo "with which you wish to work"
+        echo "Enter the number of the copy with which you wish to work."
 	echo
-	echo "If you wish to create a new copy of $1, then"
-	echo "enter new"
+	echo "If you wish to create a new copy of $1, then enter new."
 	echo
-	echo "If you wish to remove a copy of $1, then"
-	echo "enter rm"
+	echo "If you wish to remove a copy of $1, then enter rm."
 	echo
-	echo "To return to the previous menu"
-	echo "enter q"
+	echo "To return to the previous menu enter q."
 	echo
 	echo "  Enter your choice:"
         read copy_number
@@ -1239,24 +1235,30 @@ removeForm(){
 else
 	     echo "$1_Copy$number will not be removed."
 	fi     
-}#!/bin/bash
+}#Copyright(C) 2023, 2024 Phillips Wedemeyer
 
-for file ine ../Data/$1_Copy01_line*_text.xml
+importText(){
+
+for file in $(dir ../Data/$1_Copy01_line*_text.xml)
 do
-cp ~/Tax-bash/PW/T23/Data/$1_Copy01_line*_text.xml .
+    #cp ~/Tax-bash/PW/T23/Data/$1_Copy01_line*_text.xml .
+    cp ~/TB/PW/T22/$file ../Data/
 done
+set_menu_choices $1 $2
+}
 
 
 
 set_menu_choices() {
     while true;
     do
+	clear
 	echo "Actions to be taken on "$1"_Copy"$2"."
 	echo
+	echo "  0) Import last years text for this form."
 	echo "  1) Refresh data"
-	echo "  2) Import last years text for this form."
 	echo "  2) Enter or alter data."
-	echo "  4) Show form, schedule, or worksheet."
+	echo "  3) Show form, schedule, or worksheet."
 	echo	
 	echo "  q) Return to previous menu."
 
@@ -1265,6 +1267,7 @@ set_menu_choices() {
 	
 
         case $action_choice in
+	   0) importText $1 $2;;   
            1) refreshTl FEITaxWkst 01
 	      refreshTl QDCGTaxWkst 01
 	      refreshTl QDCGaTaxWkst 01
@@ -1272,9 +1275,8 @@ set_menu_choices() {
 	      refreshTl SchedDaTaxWkst 01
 	      refreshTl FEITaxWkst 01
 	      refreshTl $1 $2;;
-	   2) importText;;   
-           3) set_$1_line_data_choice $1 $2;;
-           4) showForm2 $1 $2;;
+           2) set_$1_line_data_choice $1 $2;;
+           3) showForm2 $1 $2;;
            q) break;;
         esac
     done
