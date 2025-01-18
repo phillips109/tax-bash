@@ -1,3 +1,4 @@
+
 #Copyright(C) 2023, 2024 Phillips Wedemeyer
 #
 #This file is part of a program called Tax-bash.
@@ -19,9 +20,9 @@
 
 importText(){
 
-for file in $(dir ../Data/$1_Copy01_line*_text.xml)
+for file in $(dir ../Data/$1_Copy$2_*_text.xml)
 do
-    #cp ~/Tax-bash/PW/T23/Data/$1_Copy01_line*_text.xml .
+#    cp ~/Tax-bash/PW/T23/Data/$1_Copy01_line*_text.xml .
     cp ~/TB/PW/T22/$file ../Data/
 done
 set_menu_choices $1 $2
