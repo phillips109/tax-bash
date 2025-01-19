@@ -38,10 +38,10 @@
 <copy00lineBox07a color="blue"/>
 <copy00lineBox07b color="blue"/>
 <copy00lineBox08 color="blue"/>
-<copy00lineTFNI color="blue">John Q</copy00lineTFNI>
-<copy00lineTLN color="blue">Taxpayor</copy00lineTLN>
-<copy00lineTSSNoF color="blue">123</copy00lineTSSNoF>
-<copy00lineTSSNoL color="blue">6789</copy00lineTSSNoL>
-<copy00lineTSSNoM color="blue">45</copy00lineTSSNoM>
+<copy00lineTFNI color="blue"/>
+<copy00lineTLN color="blue"/>
+<copy00lineTSSNoF color="blue"/>
+<copy00lineTSSNoL color="blue"/>
+<copy00lineTSSNoM color="blue"/>
 </Form>
 </IRSForms>

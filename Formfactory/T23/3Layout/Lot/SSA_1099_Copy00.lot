@@ -31,7 +31,7 @@ col   	!      	!-0.12	!left  	!0.00  	!8.50
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!a     	!0.00  	!left  	!0.72  	!2.50
 xtype 	!2name 		!3top  	!4dummy				!5form       	!6copy 	!7line2
-tPull 	!TFNI  		!5.94  	!John E        			!Bkg           	!00    	!lineTFNI      
+tPull 	!TFNI  		!5.94  	!John E        			!Bkg           	!00    	!TFNI      
 tlin  	!Box03d1	!6.68  	!Box03d1           		!            	!    	!      
 tlin  	!Box03d2	!6.88  	!Box03d2           		!            	!    	!      
 tlin  	!Box03d3	!7.08  	!Medicare PartB premiums        !            	!    	!      
@@ -51,7 +51,7 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!b     	!0.00  	!left  	!2.53  	!4.29  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull 	!TLN   	!5.94  	!Dough             	!Bkg           	!00    	!lineTLN      
+tPull 	!TLN   	!5.94  	!Dough             	!Bkg           	!00    	!TLN      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -76,19 +76,19 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!c     	!0.00  	!right  	!4.43  	!4.84  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull 	!TSSNoF	!5.94  	!                  	!Bkg           	!00    	!lineTSSNoF      
+tPull 	!TSSNoF	!5.94  	!                  	!Bkg           	!00    	!TSSNoF      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!d     	!0.00  	!center	!4.90  	!5.37  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull 	!TSSNoM	!5.94  	!                  	!Bkg           	!00    	!lineTSSNoM      
+tPull 	!TSSNoM	!5.94  	!                  	!Bkg           	!00    	!TSSNoM      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!e     	!0.00  	!left 	!5.40  	!6.17  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tPull 	!TSSNoL	!5.94  	!                  	!Bkg           	!00    	!lineTSSNoL      
+tPull 	!TSSNoL	!5.94  	!                  	!Bkg           	!00    	!TSSNoL      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right

@@ -3,7 +3,7 @@
 <fo:root>
 <xslt:text disable-output-escaping="yes">
 
-	  Copyright(C) 2023, 2024 Phillips Wedemeyer
+	  Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 	  This file is part of a program called Tax-bash.
 
@@ -45,49 +45,49 @@
 
 <fo:block-container position="absolute" top="6.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d1_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.88in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d2_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.08in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d3_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.28in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d4_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.48in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d5_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d6_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.88in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d7_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d7_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.08in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03d8_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03d8_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -145,49 +145,49 @@
 
 <fo:block-container position="absolute" top="6.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e1_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.88in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e2_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.08in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e3_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.28in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e4_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.48in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e5_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e6_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.88in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e7_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e7_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.08in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox03e8_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box03e8_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -254,61 +254,61 @@
 
 <fo:block-container position="absolute" top="6.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04d1_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04d1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.88in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04d2_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04d2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.08in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04d3_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04d3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.28in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04d4_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04d4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.48in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04d5_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04d5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04d6_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04d6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.72in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox07_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box07_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="8.92in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox07a_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box07a_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.12in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox07b_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box07b_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="9.96in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox08_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box08_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
@@ -336,37 +336,37 @@
 
 <fo:block-container position="absolute" top="6.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04e1_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04e1_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="6.88in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04e2_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04e2_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.08in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04e3_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04e3_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.28in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04e4_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04e4_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.48in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04e5_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04e5_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
 <fo:block-container position="absolute" top="7.68in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040ssa_Copy00_lineBox04e6_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040ssa_Copy00Box04e6_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 
