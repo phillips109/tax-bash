@@ -47,7 +47,7 @@ BEGIN {
     else if ( form == "Form4952" )    file = "f4952.pdf"	 
     else if ( form == "SST" )         file = "i1040gi.pdf"
     else if ( form == "FEITaxWkst" )  file = "i1040gi.pdf"
-    else if ( form == "UG1250TaxWkst" ) file = "i1040sd.pdf"	 
+    else if ( form == "UG1250TaxWkst" ) file = "i1040sd.pdf"
     else                              file = "Instruction file not defined."	 
 
 	 echo $file
