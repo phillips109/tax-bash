@@ -404,6 +404,8 @@ const
 
 
 
+
+
 subt0
 #####0
 line11
@@ -1614,6 +1616,8 @@ tlin
 
 
 
+
+
 cnum
 #####0
 CHOOS1
@@ -1771,6 +1775,22 @@ cnum
 CHOOS1
 WHEN01$Form1040-Copy00-line07a10 = ''
 VALUOF$Form1040-Copy00-linet10
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = ''
+VALUOF0
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineScA18ck = 'x'
+VALUOF$Form1040-Copy00-lineschA17
 
 
 

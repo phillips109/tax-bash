@@ -528,6 +528,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($Form1040-Copy00-line861521, '#####0')"/>
 </copy00line861521>
 
+<copy00lineschA17 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineschA17, '#####0')"/>
+</copy00lineschA17>
+
 <copy00line15 color="red">
 <xsl:value-of select="format-number($Form1040-Copy00-line15, '#####0')"/>
 </copy00line15>
@@ -1200,6 +1204,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="$Form1040-Copy00-lineTSSNoM"/>
 </copy00lineTSSNoM>
 
+<copy00lineScA18ck color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineScA18ck"/>
+</copy00lineScA18ck>
+
 <copy00lineira01 color="red">
 <xsl:value-of select="format-number($Form1040-Copy00-lineira01, '#####0')"/>
 </copy00lineira01>
@@ -1279,6 +1287,14 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00linepen10 color="red">
 <xsl:value-of select="format-number($Form1040-Copy00-linepen10, '#####0')"/>
 </copy00linepen10>
+
+<copy00linecount color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linecount, '#####0')"/>
+</copy00linecount>
+
+<copy00line12 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line12, '#####0')"/>
+</copy00line12>
 
 <copy00line16a color="red">
 <xsl:value-of select="format-number($Form1040-Copy00-line16a, '#####0')"/>

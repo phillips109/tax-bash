@@ -1193,6 +1193,15 @@ Form8615
 00
 line21
 
+dPull
+schA17
+#####0
+0
+SchedA
+00
+line17
+
+
 x*********************************************************
 
 xsubt0
@@ -1893,6 +1902,14 @@ Bkg
 00
 TSSNoM
 
+tPull
+ScA18ck
+''
+''
+SchedA
+00
+18ck
+
 x**************************************************************
 
 xNote that cnum and ctest use the full name
@@ -2260,8 +2277,99 @@ VALUOF0
 OTHER2
 CHOOS2
 
+cnum
+count
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = ''
+VALUOF0
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF4
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = ''
+VALUOF1
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = ''
+VALUOF1
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = ''
+VALUOF1
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF1
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = ''
+VALUOF2
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = ''
+VALUOF2
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF2
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF2
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = ''
+VALUOF2
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF2
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = ''
+VALUOF3
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF3
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF4
+WHEN02
+WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = 'x'
+VALUOF4
+WHEN02
+CHOOS2
 
-
+cnum
+12
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-lineScA18ck = 'x'
+VALUOF$Form1040-Copy00-lineschA17
+WHEN02
+WHEN01$Form1040-Copy00-lineyoudep = 'x'
+VALUOF$Form1040-Copy00-lineschA17
+WHEN02
+WHEN01$Form1040-Copy00-lineSdep = 'x'
+VALUOF$Form1040-Copy00-lineschA17
+WHEN02
+WHEN01$Form1040-Copy00-lineyoudep = 'x'
+VALUOF$Form1040-Copy00-lineschA17
+WHEN02
+WHEN01$Form1040-Copy00-lineSiUali = 'x'
+VALUOF$Form1040-Copy00-lineschA17
+WHEN02
+OTHER1
+CHOOS1
+WHEN01$Form1040-Copy00-lineFS = 'S'
+VALUOF13850 + (1850 * $Form1040-Copy00-linecount)
+WHEN02
+WHEN01$Form1040-Copy00-lineFS = 'HOH'
+VALUOF20800 + (1850 * $Form1040-Copy00-linecount)
+WHEN02
+WHEN01$Form1040-Copy00-lineFS = 'MFJ'
+VALUOF27700 + (1500 * $Form1040-Copy00-linecount)
+WHEN02
+WHEN01$Form1040-Copy00-lineFS = 'QSS'
+VALUOF27700 + (1500 * $Form1040-Copy00-linecount)
+WHEN02
+WHEN01$Form1040-Copy00-lineFS = 'MFS'
+VALUOF13850 + (1500 * $Form1040-Copy00-linecount)
+WHEN02
+CHOOS2
+OTHER2
+CHOOS2
 
 xNote that the following approach to calculating line 16a did not work because the compiler could calculate each record in a different order each time.
 xThis gave different numerical results each time and necessitated a change to a multiline record format.

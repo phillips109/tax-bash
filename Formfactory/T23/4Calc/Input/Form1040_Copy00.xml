@@ -1417,6 +1417,17 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <line2>line21</line2>
 </line>
 
+<line number='schA17'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>line17</line2>
+</line>
+
 <line number='15'
  color='cyan'>
 <type>subt0</type>
@@ -2900,6 +2911,14 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <line2>TSSNoM</line2>
 </line>
 
+<line number='ScA18ck'
+ color='blue'>
+<type>tPull</type>
+<form>SchedA</form>
+<copy>00</copy>
+<line2>18ck</line2>
+</line>
+
 <line number='ira01'
  color='red'>
 <type>cnum</type>
@@ -3078,6 +3097,24 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <testvalue>CHOOS1</testvalue>
 <value1>WHEN01$Form1040-Copy00-line07a10 = ''</value1>
 <value2>VALUOF$Form1040-Copy00-linet10</value2>
+</line>
+
+<line number='count'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = ''</value1>
+<value2>VALUOF0</value2>
+</line>
+
+<line number='12'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-lineScA18ck = 'x'</value1>
+<value2>VALUOF$Form1040-Copy00-lineschA17</value2>
 </line>
 
 <line number='16a'
