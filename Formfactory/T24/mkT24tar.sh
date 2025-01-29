@@ -17,6 +17,6 @@ sleep 3
 
 echo "Making ziptarball of T24"
 sleep 3
-tar -zcvf T23.tar.gz T24
+tar -zcvf T24.tar.gz T24
 
 exit 0
