@@ -1,0 +1,111 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+set_schedA_line_data_choice() {
+while true;
+do
+  clear
+  echo "lines in Schedule A in which to enter or edit data :"
+  echo
+  echo "   01)     Medical and dental expenses"
+  echo "   05a)	   Income Taxes"
+  echo "   05b)    General sales taxes"
+  echo "   06) 	   Real estate taxes"
+  echo "   07)     Personal property taxes" 
+  echo "   081a)   First other tax: name."
+  echo "   081b)   First other tax: amount."
+  echo "   082a)   Second other tax: name."
+  echo "   082b)   Second other tax: amount."
+  echo "   10) 	   Home Mortgage interest and points reported to you on Form1098"
+  echo "   11a)    Home mortgage interest not on Form 1098: name"
+  echo "   11b)    Home mortgage interest not on Form 1098: IDNo"
+  echo "   11c)    Home mortgage interest not on Form 1098: Address."
+  echo "   11)     Home mortgage interest not on Form 1098: amount."
+  echo "   12) 	   Points not reported to you on Form 1098."
+  echo "   13) 	   Mortgage insurance premiums."
+  echo "   14) 	   Investment interest."
+  echo "   16)     Gifts by cash or check. If you made any gift of $250 or more see instructions."
+  echo "   17)     Gifts other than by cash or check."
+  echo "   18)     Carryover from prior year."
+  echo "   21) 	   Unreimbursed employee expenses"
+  echo "   22) 	   Tax preparation fees"
+  echo "   231a)   First other expense: Type"
+  echo "   231b)   First other expense: Amount"
+  echo "   232a)   Second other expense: Type"
+  echo "   232b)   Second other expense: Amount"
+  echo "   233a)   Third other expense: Type"
+  echo "   233b)   Third other expense: Amount"
+  echo "   281a)   First other miscellaneous deduction: Type"
+  echo "   281b)   First other miscellaneous deduction: Amount"
+  echo "   282a)   Second other miscellaneous deduction: Type"
+  echo "   282b)   Second other miscellaneous deduction: Amount"
+  echo "   283a)   Third other miscellaneous deduction: Type"
+  echo "   283b)   Third other miscellaneous deduction: Amount"
+  echo "   30check)Check if you elect to itemize deductions."
+  echo
+  echo "   q)      Return to Previous Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read schedA_line_data_choice
+
+    case $schedA_line_data_choice in
+
+      01)     set_line_menu_text SchedA line01;;
+      05a)    set_line_menu2 SchedA line05a;;
+      05b)    set_line_menu2 SchedA line05b;;
+      06)     set_line_menu2 SchedA line06;;
+      07)     set_line_menu2 SchedA line07;;	
+      081a)   set_line_menu2 SchedA line081a;;
+      081b)   set_line_menu2 SchedA line081b;;
+      082a)   set_line_menu2 SchedA line082a;;
+      082b)   set_line_menu2 SchedA line082b;;
+      10)     set_line_menu2 SchedA line10;;
+      11a)    set_line_menu2 SchedA line11a;;
+      11b)    set_line_menu2 SchedA line11b;;
+      11c)    set_line_menu2 SchedA line11c;;
+      11)     set_line_menu2 SchedA line11;;
+      12)     set_line_menu2 SchedA line12;;
+      13)     set_line_menu2 SchedA line13;;
+      14)     set_line_menu2 SchedA line14;;
+      16)     set_line_menu2 SchedA line16;;
+      17)     set_line_menu2 SchedA line16;;
+      18)     set_line_menu2 SchedA line18;;
+      20)     set_line_menu2 SchedA line20;;
+      21)     set_line_menu2 SchedA line21;;
+      22)     set_line_menu2 SchedA line22;;
+      231a)   set_line_menu2 SchedA line231a;;
+      231b)   set_line_menu2 SchedA line231b;;
+      232a)   set_line_menu2 SchedA line232a;;
+      232b)   set_line_menu2 SchedA line232b;;
+      233a)   set_line_menu2 SchedA line233a;;
+      233b)   set_line_menu2 SchedA line233b;;
+      281a)   set_line_menu2 SchedA line281a;;
+      281b)   set_line_menu2 SchedA line281b;;
+      282a)   set_line_menu2 SchedA line282a;;
+      282b)   set_line_menu2 SchedA line282b;;
+      283a)   set_line_menu2 SchedA line283a;;
+      283b)   set_line_menu2 SchedA line283b;;
+      30check)set_line_menu2 SchedA line30;;
+      q)      exit1;;
+    esac
+  done
+ 
+}

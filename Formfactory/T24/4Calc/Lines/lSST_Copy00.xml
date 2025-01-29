@@ -1,0 +1,252 @@
+<Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="SST-Copy00">
+
+<copy00line05 color="green">
+  <xsl:value-of select="format-number($SST-Copy00-line05, '#####0')"/>
+  </copy00line05>
+
+
+<copy00line06 color="green">
+  <xsl:value-of select="format-number($SST-Copy00-line06, '#####0')"/>
+  </copy00line06>
+
+
+<copy00line03 color="green">
+  <xsl:value-of select="format-number($SST-Copy00-line03, '#####0')"/>
+  </copy00line03>
+
+
+<copy00line50 color="blue">
+  <xsl:value-of select="format-number($SST-Copy00-line50, '#0.00#')"/>
+  </copy00line50>
+
+
+<copy00line85 color="blue">
+  <xsl:value-of select="format-number($SST-Copy00-line85, '#0.00#')"/>
+  </copy00line85>
+
+
+<copy00line00 color="blue">
+  <xsl:value-of select="format-number($SST-Copy00-line00, '#####0')"/>
+  </copy00line00>
+
+
+<copy00line01 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line01, '#####0')"/>
+  </copy00line01>
+
+
+<copy00line04 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line04, '#####0')"/>
+  </copy00line04>
+
+
+<copy00line01z1040 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line01z1040, '#####0')"/>
+  </copy00line01z1040>
+
+
+<copy00line02b1040 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line02b1040, '#####0')"/>
+  </copy00line02b1040>
+
+
+<copy00line03b1040 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line03b1040, '#####0')"/>
+  </copy00line03b1040>
+
+
+<copy00line04b1040 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line04b1040, '#####0')"/>
+  </copy00line04b1040>
+
+
+<copy00line05b1040 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line05b1040, '#####0')"/>
+  </copy00line05b1040>
+
+
+<copy00line071040 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line071040, '#####0')"/>
+  </copy00line071040>
+
+
+<copy00line081040 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line081040, '#####0')"/>
+  </copy00line081040>
+
+
+<copy00line11s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line11s1, '#####0')"/>
+  </copy00line11s1>
+
+
+<copy00line12s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line12s1, '#####0')"/>
+  </copy00line12s1>
+
+
+<copy00line13s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line13s1, '#####0')"/>
+  </copy00line13s1>
+
+
+<copy00line14s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line14s1, '#####0')"/>
+  </copy00line14s1>
+
+
+<copy00line15s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line15s1, '#####0')"/>
+  </copy00line15s1>
+
+
+<copy00line16s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line16s1, '#####0')"/>
+  </copy00line16s1>
+
+
+<copy00line17s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line17s1, '#####0')"/>
+  </copy00line17s1>
+
+
+<copy00line18s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line18s1, '#####0')"/>
+  </copy00line18s1>
+
+
+<copy00line19as1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line19as1, '#####0')"/>
+  </copy00line19as1>
+
+
+<copy00line20s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line20s1, '#####0')"/>
+  </copy00line20s1>
+
+
+<copy00line23s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line23s1, '#####0')"/>
+  </copy00line23s1>
+
+
+<copy00line25s1 color="purple">
+  <xsl:value-of select="format-number($SST-Copy00-line25s1, '#####0')"/>
+  </copy00line25s1>
+
+
+<copy00lineFS color="blue">
+    <xsl:value-of select="$SST-Copy00-lineFS"/>
+    </copy00lineFS>
+  
+
+<copy00lineApart color="blue">
+    <xsl:value-of select="$SST-Copy00-lineApart"/>
+    </copy00lineApart>
+  
+
+<copy00line02 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line02, '#####0')"/>
+  </copy00line02>
+
+
+<copy00line12a color="blue">
+  <xsl:value-of select="format-number($SST-Copy00-line12a, '#####0')"/>
+  </copy00line12a>
+
+
+<copy00line14a color="blue">
+  <xsl:value-of select="format-number($SST-Copy00-line14a, '#####0')"/>
+  </copy00line14a>
+
+
+<copy00line18a color="blue">
+  <xsl:value-of select="format-number($SST-Copy00-line18a, '#####0')"/>
+  </copy00line18a>
+
+
+<copy00line11a color="cyan">
+  <xsl:value-of select="format-number($SST-Copy00-line11a, '#####0')"/>
+  </copy00line11a>
+
+
+<copy00line07 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line07, '#####0')"/>
+  </copy00line07>
+
+
+<copy00line08 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line08, '#####0')"/>
+  </copy00line08>
+
+
+<copy00line09 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line09, '#####0')"/>
+  </copy00line09>
+
+
+<copy00line10 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line10, '#####0')"/>
+  </copy00line10>
+
+
+<copy00line11 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line11, '#####0')"/>
+  </copy00line11>
+
+
+<copy00line12 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line12, '#####0')"/>
+  </copy00line12>
+
+
+<copy00line13 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line13, '#####0')"/>
+  </copy00line13>
+
+
+<copy00line14 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line14, '#####0')"/>
+  </copy00line14>
+
+
+<copy00line15 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line15, '#####0')"/>
+  </copy00line15>
+
+
+<copy00line16 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line16, '#####0')"/>
+  </copy00line16>
+
+
+<copy00line17 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line17, '#####0')"/>
+  </copy00line17>
+
+
+<copy00line18 color="red">
+  <xsl:value-of select="format-number($SST-Copy00-line18, '#####0')"/>
+  </copy00line18>
+
+
+<copy00line07n color="blue">
+    <xsl:value-of select="$SST-Copy00-line07n"/>
+    </copy00line07n>
+  
+
+<copy00line07y color="blue">
+    <xsl:value-of select="$SST-Copy00-line07y"/>
+    </copy00line07y>
+  
+
+<copy00line09n color="blue">
+    <xsl:value-of select="$SST-Copy00-line09n"/>
+    </copy00line09n>
+  
+
+<copy00line09y color="blue">
+    <xsl:value-of select="$SST-Copy00-line09y"/>
+    </copy00line09y>
+  
+</Form>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<Form name="Sched3-Copy00">
+<copy00line07 color="red">NaN</copy00line07>
+<copy00line08 color="red">NaN</copy00line08>
+<copy00line14 color="red">NaN</copy00line14>
+<copy00line15 color="red">NaN</copy00line15>
+<copy00line06z color="red">613</copy00line06z>
+<copy00line11 color="red">1100</copy00line11>
+<copy00line13b color="red">1302</copy00line13b>
+<copy00line13z color="red">1305</copy00line13z>
+<copy00line01 color="red">NaN</copy00line01>
+<copy00line02 color="red">NaN</copy00line02>
+<copy00line03 color="red">NaN</copy00line03>
+<copy00line04 color="red">NaN</copy00line04>
+<copy00line05a color="red">NaN</copy00line05a>
+<copy00line05b color="red">NaN</copy00line05b>
+<copy00line06a color="red">NaN</copy00line06a>
+<copy00line06b color="red">NaN</copy00line06b>
+<copy00line06c color="red">NaN</copy00line06c>
+<copy00line06d color="red">NaN</copy00line06d>
+<copy00line06f color="red">NaN</copy00line06f>
+<copy00line06g color="red">NaN</copy00line06g>
+<copy00line06h color="red">NaN</copy00line06h>
+<copy00line06i color="red">NaN</copy00line06i>
+<copy00line06j color="red">NaN</copy00line06j>
+<copy00line06k color="red">NaN</copy00line06k>
+<copy00line06l color="red">NaN</copy00line06l>
+<copy00line06m color="red">NaN</copy00line06m>
+<copy00line09 color="red">NaN</copy00line09>
+<copy00line10 color="red">NaN</copy00line10>
+<copy00line12 color="red">NaN</copy00line12>
+<copy00line13a color="red">NaN</copy00line13a>
+<copy00line13c color="red">NaN</copy00line13c>
+<copy00line13d color="red">NaN</copy00line13d>
+<copy00line06line color="blue"/>
+<copy00line13zline color="blue"/>
+<copy00lineSFNI color="blue">Jean E</copy00lineSFNI>
+<copy00lineSLN color="blue">Taxpayor</copy00lineSLN>
+<copy00lineTFNI color="blue">John Q</copy00lineTFNI>
+<copy00lineTLN color="blue">Taxpayor</copy00lineTLN>
+<copy00lineTSSNoF color="blue">123</copy00lineTSSNoF>
+<copy00lineTSSNol color="blue"/>
+<copy00lineTSSNoM color="blue">45</copy00lineTSSNoM>
+</Form>
+</IRSForms>

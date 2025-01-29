@@ -1,0 +1,130 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<line name='Apart'
+ color='blue'>
+<type>tlin</type>
+<text>None</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='FS'
+ color='blue'>
+<type>tlin</type>
+<text>MFS</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='SFNI'
+ color='blue'>
+<type>tlin</type>
+<text>Jean S</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='SLN'
+ color='blue'>
+<type>tlin</type>
+<text>Dough</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='SSSNoF'
+ color='blue'>
+<type>tlin</type>
+<text>9876</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='SSSNoL'
+ color='blue'>
+<type>tlin</type>
+<text>321</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='SSSNoM'
+ color='blue'>
+<type>tlin</type>
+<text>54</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TFNI'
+ color='blue'>
+<type>tlin</type>
+<text>John E</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TLN'
+ color='blue'>
+<type>tlin</type>
+<text>Dough</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TSSNoF'
+ color='blue'>
+<type>tlin</type>
+<text>123</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TSSNoL'
+ color='blue'>
+<type>tlin</type>
+<text>6789</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TSSNoM'
+ color='blue'>
+<type>tlin</type>
+<text>45</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+</Form>

@@ -1,0 +1,45 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!03      	!#####0  	!        	!        	!        	!
+addit   	!04h     	!#####0  	!        	!        	!        	!
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!01      	!#####0  	!                    	!
+dlin    	!04a     	!#####0  	!                    	!
+dlin    	!04b     	!#####0  	!                    	!
+dlin    	!04d     	!#####0  	!                    	!
+dlin    	!04e     	!#####0  	!                    	!
+dlin    	!04g     	!#####0  	!                    	!
+dlin    	!05      	!#####0  	!                    	!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!02      	!#####0  	!        	!        	!        	!
+
+xsmOf   	!2name   	!3format 	!4first  	!5second 	!
+smOf    	!08      	!#####0  	!        	!        	!
+
+xsubt0  	!2name   	!3format 	!4minuend	!5subtrahend	!
+subt0   	!06      	!#####0  	!        	!        	!
+subt0   	!07      	!#####0  	!        	!        	!
+
+xsubt   	!2name   	!3format 	!4minuend	!5subtrahend	!
+subtr   	!04c     	!#####0  	!        	!        	!
+subtr   	!04f     	!#####0  	!        	!        	!

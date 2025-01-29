@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00lineBox03d1 color='blue'>Box03d1</copy00lineBox03d1>
+<copy00lineBox03d2 color='blue'>Box03d2</copy00lineBox03d2>
+<copy00lineBox03d3 color='blue'>Medicare PartB premiums</copy00lineBox03d3>
+<copy00lineBox03d4 color='blue'>Box03d4</copy00lineBox03d4>
+<copy00lineBox03d5 color='blue'>Box03d5</copy00lineBox03d5>
+<copy00lineBox03d6 color='blue'>Box03d6</copy00lineBox03d6>
+<copy00lineBox03d7 color='blue'>Box03d7</copy00lineBox03d7>
+<copy00lineBox03d8 color='blue'>Box03d8</copy00lineBox03d8>
+<copy00lineBox03 color='red'>2000</copy00lineBox03>
+<copy00lineBox04 color='red'>1000</copy00lineBox04>
+<copy00lineBox03e1 color='blue'>Box03e1</copy00lineBox03e1>
+<copy00lineBox03e2 color='blue'>Box03e2</copy00lineBox03e2>
+<copy00lineBox03e3 color='blue'>Box03e3</copy00lineBox03e3>
+<copy00lineBox03e4 color='blue'>Box03e4</copy00lineBox03e4>
+<copy00lineBox03e5 color='blue'>Box03e5</copy00lineBox03e5>
+<copy00lineBox03e6 color='blue'>Box03e6</copy00lineBox03e6>
+<copy00lineBox03e7 color='blue'>Box03e7</copy00lineBox03e7>
+<copy00lineBox03e8 color='blue'>Box03e8</copy00lineBox03e8>
+<copy00lineBox05 color='red'>5000</copy00lineBox05>
+<copy00lineBox04d1 color='blue'>Box04d1</copy00lineBox04d1>
+<copy00lineBox04d2 color='blue'>Box04d2</copy00lineBox04d2>
+<copy00lineBox04d3 color='blue'>Box04d3</copy00lineBox04d3>
+<copy00lineBox04d4 color='blue'>Box04d4</copy00lineBox04d4>
+<copy00lineBox04d5 color='blue'>Box04d5</copy00lineBox04d5>
+<copy00lineBox04d6 color='blue'>Box04d6</copy00lineBox04d6>
+<copy00lineBox07 color='blue'>JAMES P KNOX</copy00lineBox07>
+<copy00lineBox07a color='blue'>100 MARKET STREET</copy00lineBox07a>
+<copy00lineBox07b color='blue'>PITTSBURGH PA 15018</copy00lineBox07b>
+<copy00lineBox08 color='blue'>070-90-9131A</copy00lineBox08>
+<copy00lineBox06 color='red'>6000</copy00lineBox06>
+<copy00lineBox04e1 color='blue'>Box04e1</copy00lineBox04e1>
+<copy00lineBox04e2 color='blue'>Box04e2</copy00lineBox04e2>
+<copy00lineBox04e3 color='blue'>Box04e3</copy00lineBox04e3>
+<copy00lineBox04e4 color='blue'>Box04e4</copy00lineBox04e4>
+<copy00lineBox04e5 color='blue'>Box04e5</copy00lineBox04e5>
+<copy00lineBox04e6 color='blue'>Box04e6</copy00lineBox04e6>
+</Form>
+</IRSForms>

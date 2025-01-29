@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<Form>
+
+<pgS name='Single'
+bkgImage='../Jpg/sst-page-001.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.12in'>
+
+<col name='a'
+left='6.83in'
+right='7.68in'
+width='0.85in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='02'
+top='2.59in'
+height='0.15in'
+color='red'>
+<dummy>200</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+top='2.79in'
+height='0.15in'
+color='red'>
+<dummy>300</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+top='2.99in'
+height='0.15in'
+color='red'>
+<dummy>400</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+top='3.19in'
+height='0.15in'
+color='red'>
+<dummy>500</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+top='3.40in'
+height='0.15in'
+color='red'>
+<dummy>600</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='07'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>700</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+top='4.97in'
+height='0.15in'
+color='red'>
+<dummy>800</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='09'
+top='6.33in'
+height='0.15in'
+color='red'>
+<dummy>900</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+top='6.78in'
+height='0.15in'
+color='red'>
+<dummy>1000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+top='6.98in'
+height='0.15in'
+color='red'>
+<dummy>1100</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+top='7.19in'
+height='0.15in'
+color='red'>
+<dummy>1200</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+top='7.39in'
+height='0.15in'
+color='red'>
+<dummy>1300</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='14'
+top='7.59in'
+height='0.15in'
+color='red'>
+<dummy>1400</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='15'
+top='7.79in'
+height='0.15in'
+color='red'>
+<dummy>1500</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='16'
+top='7.99in'
+height='0.15in'
+color='red'>
+<dummy>1600</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='17'
+top='8.20in'
+height='0.15in'
+color='red'>
+<dummy>1700</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='18'
+top='8.50in'
+height='0.15in'
+color='red'>
+<dummy>1800</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='b'
+left='5.56in'
+right='6.38in'
+width='0.82in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='01'
+top='2.39in'
+height='0.15in'
+color='red'>
+<dummy>100</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='c'
+left='1.02in'
+right='1.12in'
+width='0.1in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='center'
+top='0.00in'>
+
+<calc number='07n'
+top='3.78in'
+height='0.15in'
+color='red'>
+<dummy>x</dummy>
+</calc>
+
+<calc number='07y'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>x</dummy>
+</calc>
+
+<calc number='09n'
+top='5.78in'
+height='0.15in'
+color='red'>
+<dummy>x</dummy>
+</calc>
+
+<calc number='09y'
+top='6.34in'
+height='0.15in'
+color='red'>
+<dummy>x</dummy>
+</calc>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgS>
+</Form>

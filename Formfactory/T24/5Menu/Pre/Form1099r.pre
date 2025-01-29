@@ -1,0 +1,53 @@
+type	!name	!seq	!menuEntry
+tlin	!pname1	!001	!Enter part 1 of payor's name.
+tlin	!pname2	!002	!Enter part 2 of payor's name.
+tlin	!paddr1	!003	!Enter part 1 of payor's address.
+tlin	!paddr2	!004	!Enter part 2 of payor's address.
+tlin	!pcity	!005	!Enter payor's city.
+tlin	!pST	!006	!Enter payor's State.
+tlin	!pzip	!007	!Enter payor's zip code.
+tlin	!pCntry	!007a	!Emter [aupr's country.
+tlin	!ptel	!007b	!Enter payor's telephone number.
+tlin	!pTIN	!008	!Enter payor's TIN number.
+tlin	!rTIN	!009	!Enter recipient's TIN number.
+tlin	!rname1	!010	!Enter part 1 of recipient's name.
+tlin	!rname2	!011	!Enter part 2 of recipient's name.
+tlin	!raddr1	!012	!Emter part 1 pf recipient's address.
+tlin	!raddr2	!013	!Enter part 2 of recipient's address.
+tlin	!rcity	!014	!Enter recipient's city.
+tlin	!rST	!015	!Enter recipient's State.
+tlin	!rzip	!016	!Enter recipiemt's zip code.
+tlin	!rCntry	!016a	!Enter recipient's country.
+tlin	!acctNo	!017	!Enter account number.
+dlin	!01	!018	!Enter gross distribution.
+dlin	!02a	!019	!Enter taxable amount.
+tlin	!02b1	!020	!Enter an x if the taxable amount has not been determined.
+tlin	!02b2	!021	!Enter an x if it is the total distribution.
+dlin	!03	!022	!Enter capital gain includled in box 2a.
+dlin	!04	!023	!Enter federal income tax withheld.
+dlin	!05	!024	!Enter employee contributions/designated Roth contributions or insurance premiums.
+dlin	!06	!025	!Emter met imrea;ozed a[[recoatopm om e,[;puer's securities.
+tlin	!07	!026	!Enter the distribution code(s).
+tlin	!07a	!027	!Emter x if IRA/SEP/SIMPLE.
+dlin	!08	!028	!Emter Other.
+tlin	!08pct	!029	!Enter the precentage.
+dlin	!09a	!030	!Enter your percentage of total distribution.
+dlin	!09b	!031	!Enter total employee contributions.
+dlin	!10	!032	!Enter amount allocatable to IRR within 5 years.
+dlin	!11	!033	!Emter first year of deisgnated Roth contribution.
+tlin	!12Ck	!034	!ESnter x if FATCA filing requirement.
+dlin	!13	!035	!Enter date of payameant.
+dlin	!14a	!036	!Enter first State's tax withheld.
+tlin	!15a	!037	!Enter first State/Payer's State number.
+dlin	!16a	!038	!Enter first State distribution.
+dlin	!14b	!039	!Enter second State's tax withheld.
+tlin	!15b	!040	!Enter second State/Payer's State number.
+dlin	!16b	!041	!Enter second State distribution.
+dlin	!17a	!042	!Enter first locality tax withheld.
+tlin	!18a	!043	!Enter first locality name.
+dlin	!19a	!044	!Enter first locality distribution.
+dlin	!17b	!045	!Enter second locality tax withheld.
+tlin	!18b	!046	!Enter second locality name.
+dlin	!19b	!047	!Enter second locality distribution.
+tlin	!void	!048	!Enter x if form is void.
+tlin	!corr	!049	!Enter x if form is corrected.

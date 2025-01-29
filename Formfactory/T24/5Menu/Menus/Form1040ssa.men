@@ -1,0 +1,115 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+set_Form1040ssa_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form1040ssa in which to enter or edit data:"
+echo
+echo "Box03  )    Enter benefits paid in 2023.       "
+echo "Box04  )    Enter benefits repaid to SSA in 2003."
+echo "Box06  )    Enter voluntary federal income tax withhelld."
+echo "Box07  )    Enter name of taxpayor.            "
+echo "Box07a )    Enter street address of taxpayor.  "
+echo "Box07b )    Enter city, ST, zip of taxpayor.   "
+echo "Box08  )    Enter clain number (Use this number if you need to contact SSA.)"
+echo "Box03d1)    Enter amount for box03d1.          "
+echo "Box03d2)    Enter amount for box03d2.          "
+echo "Box03d3)    Enter amount for box03d3.          "
+echo "Box03d4)    Enter amount for box03d4.          "
+echo "Box03d5)    Enter amount for box03d5.          "
+echo "Box03d6)    Enter amount for box03d6.          "
+echo "Box03d7)    Enter amount for box03d7.          "
+echo "Box03d8)    Enter amount for box03d8.          "
+echo "Box03e1)    Enter entry for box03e1.           "
+echo "Box03e2)    Enter entry for box03e2.           "
+echo "Box03e3)    Enter entry for box03e3.           "
+echo "Box03e4)    Enter entry for box03e4.           "
+echo "Box03e5)    Enter entry for box03e5.           "
+echo "Box03e6)    Enter entry for box03e6.           "
+echo "Box03e7)    Enter entry for box03e7.           "
+echo "Box03e8)    Enter entry for box03e8.           "
+echo "Box04d1)    Enter amount for box 04d1.         "
+echo "Box04d2)    Enter amount for box 04d2.         "
+echo "Box04d3)    Enter amount for box 04d3.         "
+echo "Box04d4)    Enter amount for box 04d4.         "
+echo "Box04d5)    Enter amount for box 04d5.         "
+echo "Box04d6)    Enter amount for box 04d6.         "
+echo "Box04d7)    Enter amount for box 04d7.         "
+echo "Box04d8)    Enter amount for box 04d8.         "
+echo "Box04e1)    Enter entry for box 04e1.          "
+echo "Box04e2)    Enter entry for box 04e2.          "
+echo "Box04e3)    Enter entry for box 04e3.          "
+echo "Box04e4)    Enter entry for box 04e4.          "
+echo "Box04e5)    Enter entry for box 04e5.          "
+echo "Box04e6)    Enter entry for box 04e6.          "
+echo "Box04e7)    Enter entry for box 04e7.          "
+echo "Box04e8)    Enter entry for box 04e8.          "
+echo
+echo "      q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form1040ssa_line_data_choice
+echo
+     case $Form1040ssa_line_data_choice in
+Box03  )    set_line_menu_number $1 $2  lineBox03                            ;;
+Box04  )    set_line_menu_number $1 $2  lineBox04                            ;;
+Box06  )    set_line_menu_number $1 $2  lineBox06                            ;;
+Box07  )    set_line_menu_text   $1 $2  lineBox07                            ;;
+Box07a )    set_line_menu_text   $1 $2  lineBox07a                           ;;
+Box07b )    set_line_menu_text   $1 $2  lineBox07b                           ;;
+Box08  )    set_line_menu_text   $1 $2  lineBox08                            ;;
+Box03d1)    set_line_menu_text   $1 $2  lineBox03d1                          ;;
+Box03d2)    set_line_menu_text   $1 $2  lineBox03d2                          ;;
+Box03d3)    set_line_menu_text   $1 $2  lineBox03d3                          ;;
+Box03d4)    set_line_menu_text   $1 $2  lineBox03d4                          ;;
+Box03d5)    set_line_menu_text   $1 $2  lineBox03d5                          ;;
+Box03d6)    set_line_menu_text   $1 $2  lineBox03d6                          ;;
+Box03d7)    set_line_menu_text   $1 $2  lineBox03d7                          ;;
+Box03d8)    set_line_menu_text   $1 $2  lineBox03d8                          ;;
+Box03e1)    set_line_menu_text   $1 $2  lineBox03e1                          ;;
+Box03e2)    set_line_menu_text   $1 $2  lineBox03e2                          ;;
+Box03e3)    set_line_menu_text   $1 $2  lineBox03e3                          ;;
+Box03e4)    set_line_menu_text   $1 $2  lineBox03e4                          ;;
+Box03e5)    set_line_menu_text   $1 $2  lineBox03e5                          ;;
+Box03e6)    set_line_menu_text   $1 $2  lineBox03e6                          ;;
+Box03e7)    set_line_menu_text   $1 $2  lineBox03e7                          ;;
+Box03e8)    set_line_menu_text   $1 $2  lineBox03e8                          ;;
+Box04d1)    set_line_menu_text   $1 $2  lineBox04d1                          ;;
+Box04d2)    set_line_menu_text   $1 $2  lineBox04d2                          ;;
+Box04d3)    set_line_menu_text   $1 $2  lineBox04d3                          ;;
+Box04d4)    set_line_menu_text   $1 $2  lineBox04d4                          ;;
+Box04d5)    set_line_menu_text   $1 $2  lineBox04d5                          ;;
+Box04d6)    set_line_menu_text   $1 $2  lineBox04d6                          ;;
+Box04d7)    set_line_menu_text   $1 $2  lineBox04d7                          ;;
+Box04d8)    set_line_menu_text   $1 $2  lineBox04d8                          ;;
+Box04e1)    set_line_menu_text   $1 $2  lineBox04e1                          ;;
+Box04e2)    set_line_menu_text   $1 $2  lineBox04e2                          ;;
+Box04e3)    set_line_menu_text   $1 $2  lineBox04e3                          ;;
+Box04e4)    set_line_menu_text   $1 $2  lineBox04e4                          ;;
+Box04e5)    set_line_menu_text   $1 $2  lineBox04e5                          ;;
+Box04e6)    set_line_menu_text   $1 $2  lineBox04e6                          ;;
+Box04e7)    set_line_menu_text   $1 $2  lineBox04e7                          ;;
+Box04e8)    set_line_menu_text   $1 $2  lineBox04e8                          ;;
+q      )    break;;                       
+esac
+done
+}

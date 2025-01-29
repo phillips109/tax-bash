@@ -1,0 +1,11 @@
+8type      	!name      	!seq       	!menuEntry                                                                                           
+tlin      	!addr1     	!005       	!Enter first line of addres                                                                          
+tlin      	!addr2     	!006       	!Enter second line of address                                                                        
+tlin      	!city      	!007       	!Enter city                                                                                          
+tlin      	!ST        	!008       	!Enter State in ST format                                                                            
+tlin      	!zip       	!009       	!Enter zip                                                                                           
+dlin      	!tottax    	!016       	!Enter total tax liabiity                                                                            
+dlin      	!t0tpay    	!017       	!Enter total 2022 payments                                                                           
+dlin      	!amtpd     	!019       	!Enter amount you are paying                                                                         
+tlin      	!away      	!020       	!Enter x if out of the country                                                                       
+tlin      	!1040NR    	!021       	!Enter x if wages are not subject to withholding                                                     

@@ -1,0 +1,13 @@
+type      	!name      	!seq       	!menuEntry                                                                                           
+tlin      	!TFNI      	!001       	!Enter taxpayor first name initial                                                                                                    
+tlin      	!TLN       	!002       	!Enter taxpayor last name                                                                   
+tlin      	!TSSNoF    	!003       	!Enter first 3 digits of taxpayor's SS No.                                                                            
+tlin      	!TSSNoM    	!004       	!Enter middle 2 digits of taxpayor's SS No.                                                            
+tlin      	!TSSNoL    	!005       	!Enter last 4 digits of taxpayor's SS No.                                                                                
+tlin      	!SFNI      	!006       	!Enter spouse's first name initial                                                            
+tlin      	!SLN       	!007       	!Enter spouse's last name                                                                   
+tlin      	!SSSNoF     	!008       	!Enter first 3 digits of spouse's SS No.                                                                            
+tlin      	!SSSNoM    	!009       	!Enter middle 2 digits of spouse's SS No.                                                             
+tlin      	!SSSNoL    	!010       	!Enter last 4 digits of spouse's SS No.                                                            
+tlin      	!FS        	!011       	!Enter filing status (S, MFJ, MFS, HOH, QSS)
+tlin      	!Apart     	!012       	!Enter time living apart (All, Some, None)                                                         

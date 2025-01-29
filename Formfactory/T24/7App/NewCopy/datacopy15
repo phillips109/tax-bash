@@ -1,0 +1,31 @@
+#! /bin/bash
+
+    for file in $(dir ../Data/$1_Copy00*)
+    do
+      foo=$file
+
+      filea="$1_Copy00_line"
+      fileb=${foo##*line}
+      filec="$1_Copy15_line"
+
+      file1=$(echo $filea$fileb)
+      file2=$(echo $filec$fileb)
+
+
+      if [ -f ../Data/$file2 ]
+	 
+      then
+	  echo "$file2 data left untouched."
+      else
+
+      cp ../Data/$file1 ../Data/$file2
+      sed 's/Copy00/Copy15/g' ../Data/$file2 > ../Data/$file2.tmp
+      sed 's/copy00/copy15/g' ../Data/$file2.tmp > ../Data/$file2
+      rm ../Data/$file2.tmp
+      echo "$file2 added to data files."
+
+
+      fi
+	    
+
+    done    

@@ -1,0 +1,73 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+set_menu_choice() {
+while true;
+  do     
+#  clear
+  echo
+  echo "Welcome to Tax-bash."
+  echo
+  echo "   0)  Update (Download program again)"
+  echo "   1)  Import last years return."
+  echo "   2)  Import last year's text files."
+  echo "   3)  Import data from GnuCash."
+  echo
+  echo "   ln) List the names of all of the accounts in your GnuCash data."
+  echo "   at) List the transactions in a specified account."
+#  echo "   ft) Show the accounts and transactions used for a specified form."
+  echo
+  echo "   4)  Initialize or refresh all of your data."
+  echo 
+  echo "   f)  Show choice of Forms."
+  echo "   s)  Show choice of Schedules."
+  echo "   w)  Show choice of Worksheets."
+#  echo "   t)  Show choice of Tables"
+echo 
+  echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+      0) ../../downloadT22.sh
+      	 update;;	 
+      1) importLastYrReturn;;
+      2) importLastYrText;;
+      3) importGnuCash;;
+      4) refreshAll;;
+
+      ln) listAccounts;;
+      at) oneAcct;;
+#      ft) showAccounts;;
+      
+      f)  set_form_choice;;	
+      s)  set_schedule_choice;;
+      w)  makeWksts
+          set_wkst_choice;;
+#      t)  set_table_choice;;
+
+      q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}
+

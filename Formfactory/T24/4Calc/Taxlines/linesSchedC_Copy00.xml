@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:vendor="http://www.gnucash.org/XML/vendor" xmlns:entry="http://www.gnucash.org/XML/entry" xmlns:invoice="http://www.gnucash.org/XML/invoice" xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox" xmlns:bt-days="http://www.gnucash.org/XML/bt-days" xmlns:billterm="http://www.gnucash.org/XML/billterm" xmlns:order="http://www.gnucash.org/XML/order" xmlns:employee="http://www.gnucash.org/XML/employee" xmlns:tte="http://www.gnucash.org/XML/tte" xmlns:taxtable="http://www.gnucash.org/XML/taxtable" xmlns:owner="http://www.gnucash.org/XML/owner" xmlns:addr="http://www.gnucash.org/XML/addr" xmlns:job="http://www.gnucash.org/XML/job" xmlns:cust="http://www.gnucash.org/XML/cust" xmlns:lot="http://www.gnucash.org/XML/lot" xmlns:recurrence="http://www.gnucash.org/XML/recurrence" xmlns:bgt="http://www.gnucash.org/XML/bgt" xmlns:fs="http://www.gnucash.org/XML/fs" xmlns:ts="http://www.gnucash.org/XML/ts" xmlns:trn="http://www.gnucash.org/XML/trn" xmlns:sx="http://www.gnucash.org/XML/sx" xmlns:split="http://www.gnucash.org/XML/split" xmlns:slot="http://www.gnucash.org/XML/slot" xmlns:price="http://www.gnucash.org/XML/price" xmlns:cmdty="http://www.gnucash.org/XML/cmdty" xmlns:cd="http://www.gnucash.org/XML/cd" xmlns:book="http://www.gnucash.org/XML/book" xmlns:act="http://www.gnucash.org/XML/act" xmlns:gnc="http://www.gnucash.org/XML/gnc">
+<taxlines>
+<taxline color="red">
+<linename>SchedC-Copy00-line01</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line02</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line06</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line08</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line09</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line10</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line11</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line12</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line13</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line14</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line15</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line16a</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line16b</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line17</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line18</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line19</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line20a</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line20b</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line21</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line22</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line23</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line24a</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line24b</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line25</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line26</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line30a</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line30b</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line30</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line35</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line36</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line37</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line38</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line39</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line41</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line44a</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line44b</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-line44c</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp1</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp2</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp3</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp4</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp5</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp6</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp7</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp8</linename>
+<override/>
+</taxline>
+<taxline color="red">
+<linename>SchedC-Copy00-lineExp9</linename>
+<override/>
+</taxline>
+</taxlines>
+</IRSForms>

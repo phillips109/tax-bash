@@ -1,0 +1,30 @@
+008	!dlin	!01	!Enter foreign tax credit from Form 1116.                    
+009	!dlin	!02	!Enter credit for chaild and dependent care expenses. Form 2441.                              
+010	!dlin	!03	!Enter education credits from Form 8863 line 19.
+011	!dlin	!04	!Enter retirement savings contributions credit. Form 8880.
+012	!dlin	!05a	!Enter residentioal clean energy credit. Form 5695 line.                              
+013	!dlin	!05b	!Enter energy efficient home improvement credit. Forom 5695 line32.
+014	!dlin	!06a	!Enter general business credit. Form 3800.
+015	!dlin	!06b	!Enter credit for prior year minimum tax. Form 3800.
+016	!dlin	!06c	!Enter adoption credit. Form8839.
+017	!dlin	!06d	!Enter credit for the elderly or disables. Schedule R.
+018	!dlin	!06f	!Enter clean vehicle credit. Fomr 8936.
+019	!dlin	!06g	!Enter mortgage interes credit. Form 8396.
+020	!dlin	!06h	!Enter District of Columbia firsts-time homebuyer credit. Form 8859.                 
+021	!dlin	!06i	!Enter qualified electric credit. Form8834.
+022	!dlin	!06j	!Enter alternative fuel vehicle refueling property credit. Form 8911.
+023	!dlin	!06k	!Enter credit to holders of tax credit bonds. Form 8912.
+024	!dlin	!06l	!Enter amount on Form  8978, line 14.
+025	!dlin	!06m	!Enter credit for previously owned clean vehicles. Form 8936.
+026	!dlin	!06z	!Enter other nonrefundable credits.
+027	!tlin	!06line	!Enter types of credit.
+030	!dlin	!09	!Enter net premium tax credit. Form8962.      
+031	!dlin	!10	!Enter amount paid with request for extension to file.
+032	!dlin	!11	!Enter excess social security and tire 1 RRTA tax withheld.
+033	!dlin	!12	!Enter credit for federal tax on fuels. Form 4136.
+034	!dlin	!13a	!Enter credits from Form2439.
+035	!dlin	!13b	!Enter credit for repayment of amounts included in income from earlier years.  
+036	!dlin	!13c	!Enter elective payment election amount. Form 3800, Paart III, line 6, column i.
+037	!dlin	!13d	!Enter deferred amount of net 966 tax liabiity.
+038	!dlin	!13z	!Enter other payments or refundable credits.
+041	!tlin	!13zline	!Enter types of credit.

@@ -1,0 +1,102 @@
+<!--
+
+Copyright (C) 2024 Phillips Wedemeyer
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
+<Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="UG1250Wkst-Copy00">
+
+<copy00line06 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line06, '#####0')"/>
+</copy00line06>
+
+<copy00line16 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line16, '#####0')"/>
+</copy00line16>
+
+<copy00line01 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line01, '#####0')"/>
+</copy00line01>
+
+<copy00line02 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line02, '#####0')"/>
+</copy00line02>
+
+<copy00line04 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line04, '#####0')"/>
+</copy00line04>
+
+<copy00line05 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line05, '#####0')"/>
+</copy00line05>
+
+<copy00line08 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line08, '#####0')"/>
+</copy00line08>
+
+<copy00line10 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line10, '#####0')"/>
+</copy00line10>
+
+<copy00line11 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line11, '#####0')"/>
+</copy00line11>
+
+<copy00line12 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line12, '#####0')"/>
+</copy00line12>
+
+<copy00line13 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line13, '#####0')"/>
+</copy00line13>
+
+<copy00line14 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line14, '#####0')"/>
+</copy00line14>
+
+<copy00line15 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line15, '#####0')"/>
+</copy00line15>
+
+<copy00line16a color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line16a, '#####0')"/>
+</copy00line16a>
+
+<copy00line479707 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line479707, '#####0')"/>
+</copy00line479707>
+
+<copy00linecgexcess color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-linecgexcess, '#####0')"/>
+</copy00linecgexcess>
+
+<copy00line07 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line07, '#####0')"/>
+</copy00line07>
+
+<copy00line09 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line09, '#####0')"/>
+</copy00line09>
+
+<copy00line18 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line18, '#####0')"/>
+</copy00line18>
+
+<copy00line03 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line03, '#####0')"/>
+</copy00line03>
+
+<copy00line17 color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-line17, '#####0')"/>
+</copy00line17>
+</Form>

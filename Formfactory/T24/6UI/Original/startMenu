@@ -1,0 +1,64 @@
+set_start_menu() {
+while true;
+  do     
+  clear
+  echo
+  echo "Welcome to Tax-bash. We recommend that you"
+  echo "   0) Read the README file"
+  echo  
+  echo "When you start the the program for the first time"
+  echo "the following actions need to be taken."
+  echo
+  echo "   1) Make certain that Mozilla, sed, pdfview, and GnuCash are functioning."
+  echo "   2) Set up certain environmental variables in your rc file."
+  echo
+  echo "If you did not use this program last tax year,"
+  echo "   3)  Enter data from last year's return."
+  echo
+  echo "If you used this program last tax year,"
+  echo "   4)  Import the data from last year's return."
+  echo "   5)  Import data from GnuCash."
+  echo "   6)  Initialize or refresh all of your data."
+  echo "   c)  Continue with the program"
+  echo
+  echo "If you are returning to the program you can skip the above steps."
+  echo "   c) Continue with the program"
+  echo
+  echo "If, when you return, you have altered your GnuCash data for this tax year,"
+  echo "   5) Import data from GnuCash."
+  echo "   6) Refresh all of your data."
+  echo "   c) Continue with the program."
+  echo 
+  echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+	0) viewReadMe;;
+	1) set_env_variables;;
+	2) check_supporting_programs;;
+	3) importLastYrReturn;;
+	4) importLastYrData;;
+	5) importGnuCash;;
+	6) refreshAll;;
+	c) set_menu_choice;;
+	q)  exit;;
+	*)  echo "Sorry, choice not recognized."
+    esac
+done  
+}
+
+
+
+
+while true;
+do
+    set_start_menu	
+done
+
+#Tidy up and leave
+
+echo "Finished"
+
+exit 0

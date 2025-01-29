@@ -1,0 +1,157 @@
+<Form fname="SchedD">
+<taxline name="QOFy" type="dlin" color="black">
+<menuEntry>Enter x if you disposed of any investments in a qualified opportunity fund during the tax year.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="QOFn" type="dlin" color="black">
+<menuEntry>Enter x if you did not.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="01ad" type="dlin" color="black">
+<menuEntry>Enter proceeds for 1a.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="01ae" type="dlin" color="black">
+<menuEntry>Enter basis of 1a.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="01bd" type="dlin" color="black">
+<menuEntry>Enter Proceeds for 1b.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="01be" type="dlin" color="black">
+<menuEntry>Enter basis for 1b.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="01bg" type="dlin" color="black">
+<menuEntry>Enter adjustments to 1b.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="02d" type="dlin" color="black">
+<menuEntry>Enter Proceed for 2.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="02e" type="dlin" color="black">
+<menuEntry>Enter basis for 2.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="02g" type="dlin" color="black">
+<menuEntry>Enter adjustments to 2.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="03d" type="dlin" color="black">
+<menuEntry>Enter proceeds of 3.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="03e" type="dlin" color="black">
+<menuEntry>Enter bases of 3.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="03g" type="dlin" color="black">
+<menuEntry>Enter adjustments to 3.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="04" type="dlin" color="black">
+<menuEntry>Enter short term gain form Forms 6252, 4684, 6781 and 8824.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="05" type="dlin" color="black">
+<menuEntry>Enter short term gain or loss from partnerships, estates and trusts.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="06" type="dlin" color="black">
+<menuEntry>Enter short term capital loss carryover.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="08ad" type="dlin" color="black">
+<menuEntry>Enter proceeds from 8a.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="08ae" type="dlin" color="black">
+<menuEntry>Enter basis for 8a.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="08bd" type="dlin" color="black">
+<menuEntry>Enter proceeds from 8b.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="08be" type="dlin" color="black">
+<menuEntry>Enter basis for 8b.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="08bg" type="dlin" color="black">
+<menuEntry>Enter adjustments to 8b.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="09d" type="dlin" color="black">
+<menuEntry>Enter proceeds from 9.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="09e" type="dlin" color="black">
+<menuEntry>Enter basis for 9.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="09g" type="dlin" color="black">
+<menuEntry>Enter adjustments to 9.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="10d" type="dlin" color="black">
+<menuEntry>Enter proceeds from 10.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="10e" type="dlin" color="black">
+<menuEntry>Enter basis for 10.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="10g" type="dlin" color="black">
+<menuEntry>Enter adjustments to 10.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="11" type="dlin" color="black">
+<menuEntry>Enter long term gain from Form4797, 2439, 6252, 4684, 6781, and 8824.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="12" type="dlin" color="black">
+<menuEntry>Enter long term gain from partnerships, S corporations, estates and trusts.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="13" type="dlin" color="black">
+<menuEntry>Enter capital gain distsributions.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="14" type="dlin" color="black">
+<menuEntry>Enter long term capital loss carryover.</menuEntry>
+<IRSInstructions>i1040sd.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+</Form>

@@ -1,0 +1,19 @@
+type      	!name      	!seq       	!menuEntry
+dlin      	!01        	!008       	!Enter neducak abd debtak expenses.
+dlin      	!05a       	!012       	!Enter State abd kicak ubcine taxes ir geberak sakes taxes.
+dlin      	!05b       	!013       	!Enter State and local real estate taxes.
+dlin      	!05c       	!014       	!enter State and local personal property taxes.
+dlin      	!06        	!017       	!Enter Other taxes.
+tlin      	!06a       	!019       	!Enter type of other taxes.
+dlin      	!08        	!019a      	!Enter home mortgage interes and points.
+dlin      	!08a       	!019b      	!Enter home mortgage interes and points reported on Form1096.
+dlin      	!08b       	!020       	!Enter mortgage interes not reported to you on Form1098.
+dlin      	!08c       	!021       	!Enter points not reported to your on Form 1098.
+dlin      	!09        	!024       	!Investment interest.
+dlin      	!11        	!026       	!Enter charity gifts by cash or check.
+dlin      	!12        	!027       	!Enter charity gifts ny other than cash or check.
+dlin      	!13        	!027       	!Enter charity gifts from prior year.
+dlin      	!15        	!027       	!Enter casualty and theft losses from a federally declared disaster.
+dlin      	!16        	!027       	!Enter other itemized deductions.
+tlin      	!05ack     	!027       	!Enter x if you elect to include gereral sales taxes.
+tlin      	!18ck      	!027       	!Enter x if you elect to itemize deductions even though less than standard deduction.

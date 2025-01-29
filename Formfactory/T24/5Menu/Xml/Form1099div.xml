@@ -1,0 +1,247 @@
+<Form fname="Form1099div">
+<taxline name="void" type="tlin" color="black">
+<menuEntry>Enter x if form is void.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="corr" type="tlin" color="black">
+<menuEntry>Enter x if form has been corrected.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pnam1" type="tlin" color="black">
+<menuEntry>Emter payor's name line1.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pnam2" type="tlin" color="black">
+<menuEntry>Enter payor's name line2.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="padd1" type="tlin" color="black">
+<menuEntry>Enter line1 of payor's address.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="padd2" type="tlin" color="black">
+<menuEntry>Enter line2 of payor's address.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pcity" type="tlin" color="black">
+<menuEntry>Enter payor's city.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pST" type="tlin" color="black">
+<menuEntry>Emter payor's state.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pctry" type="tlin" color="black">
+<menuEntry>Enter payor's country.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pzip" type="tlin" color="black">
+<menuEntry>Enter payor's zip.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="ptel" type="tlin" color="black">
+<menuEntry>Emter payor's telephone number.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pTIN" type="tlin" color="black">
+<menuEntry>Enter payor's TIN.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rTIN" type="tlin" color="black">
+<menuEntry>Enter recipient's TIN.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rname1" type="tlin" color="black">
+<menuEntry>Enter recipient's name line1.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rname2" type="tlin" color="black">
+<menuEntry>Enter recipient's name line2.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="raddr1" type="tlin" color="black">
+<menuEntry>Enter line1 of recipient's address,</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="raddr2" type="tlin" color="black">
+<menuEntry>Enter line2 of recipient's addresss,</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rcity" type="tlin" color="black">
+<menuEntry>Enter recipient's city.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rST" type="tlin" color="black">
+<menuEntry>Emter recipient's state.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rctry" type="tlin" color="black">
+<menuEntry>Enter recipient's country.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rzip" type="tlin" color="black">
+<menuEntry>Enter recipient's zip.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="FATCA" type="tlin" color="black">
+<menuEntry>Enter x if FATCA is required.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="actNo" type="tlin" color="black">
+<menuEntry>Enter accounts number.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="2TIN" type="tlin" color="black">
+<menuEntry>Enter x if second TIN.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="01a" type="dlin" color="black">
+<menuEntry>Enter total ordinary dividends.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>2</pgNo>
+</taxline>
+<taxline name="01b" type="dlin" color="black">
+<menuEntry>Enter qualified dividends.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="20yr" type="tlin" color="black">
+<menuEntry>Enter last two digits of year of report.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="02a" type="dlin" color="black">
+<menuEntry>Enter total capital gain distribution.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="02b" type="dlin" color="black">
+<menuEntry>Enter unrecaptured Sec. 1250 gain.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="02c" type="dlin" color="black">
+<menuEntry>Enter Sec. 1250 gain.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="02d" type="dlin" color="black">
+<menuEntry>Enter collectibles (28%) gain.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="02e" type="dlin" color="black">
+<menuEntry>Enter Section 897 ordinary dividends.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="02f" type="dlin" color="black">
+<menuEntry>Enter Section 897 capital gain.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="03" type="dlin" color="black">
+<menuEntry>Enter nondividend distributions.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="04" type="dlin" color="black">
+<menuEntry>Enter federal income tax withheld.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="05" type="dlin" color="black">
+<menuEntry>Enter Section 199A dividends.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="06" type="dlin" color="black">
+<menuEntry>Enter Investment expenses.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="07" type="dlin" color="black">
+<menuEntry>Enter foreign tax paid.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="08" type="tlin" color="black">
+<menuEntry>Enter foreign country or US possession.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="09" type="dlin" color="black">
+<menuEntry>Enter cash liquidation distributions.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="10" type="dlin" color="black">
+<menuEntry>Enter noncash liquidation distrivutions.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="12" type="dlin" color="black">
+<menuEntry>Enter exempt-interest dividends.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="13" type="tlin" color="black">
+<menuEntry>Enter specified private activity bond interest dividends.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="14a" type="tlin" color="black">
+<menuEntry>Enter first state with tax withheld.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="15a" type="tlin" color="black">
+<menuEntry>Enter first state's ID number.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="16a" type="dlin" color="black">
+<menuEntry>Enter tax withheld by first state.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="14b" type="tlin" color="black">
+<menuEntry>Enter second state with tax withheld.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="15b" type="tlin" color="black">
+<menuEntry>Enter second state's ID number.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+<taxline name="16b" type="dlin" color="black">
+<menuEntry>Enter tax withheld by second state.</menuEntry>
+<IRSInstructions>i1099div.pdf</IRSInstructions>
+<pgNo>5</pgNo>
+</taxline>
+</Form>

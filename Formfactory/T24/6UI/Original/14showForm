@@ -1,0 +1,40 @@
+
+showForm() {
+#This function creates ../Pdf/f$1.pdf from ../Work/taxlogic.xml and displays it.
+#It uses as a parameter the name of the form, schedule, or worksheet(as noted in ~/Tax-bash/T15/Developer/Lines/lF$1.xml).
+
+foo=$1
+#echo "$foo"
+#echo "${foo%%_*}"
+#This line removes all lines which do not belong to the form being displayed.
+#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/taxlogic.xml -xsl ../Xsl/notForm.xsl  -out ../Work/formOnly.xml -PARAM form ${foo%%_*}
+
+#This line refreshes the data for the form or schedule.
+#refreshTl $1_$2
+
+#****************************************************************************************************
+#This line creates the fo file from the xml file.
+#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/formOnly.xml -xsl ../2Fo/f$1.2fo -out ../Work/form.fo
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Output/$1_Copy$2.xml -xsl ../2Fo/$1_Copy$2.2fo -out ../Fo/$1_Copy$2.fo
+
+#This line creates the pdf file from the fo file.
+#This no longer works after Ubuntu update in Oct 2020.
+#java $FOPJAVAJAR org.apache.fop.cli.Main ../Fo/$1_$2.fo ../Pdf/$1_$2.pdf
+#Now using fop directly works:
+fop ../Fo/$1_Copy$2.fo ../Pdf/$1_Copy$2.pdf
+
+#The previous fop file that started fop was /usr/bin/fop.
+#Since I had downloaded Fop version 2.5 to ~/Fop-2.5 I changed my PATH
+#in .bashrc placing ~/Fop-2.5/fop-2.5/fop at the beginning to ensure
+#the use of the newest fop shell file to start fop.
+
+
+#Three ways of displaying the data are possible. qpdfview is preferable. 
+#The form is displayed in the background, allowing return to the menu.
+
+#evince ../Pdf/$1_Copy$2.pdf
+#firefox -new-tab ../Pdf/$1_Copy$2.pdf > /dev/null 2>&1 &
+qpdfview --unique ../Pdf/$1_Copy$2.pdf >/dev/null 2>&1 &
+
+return
+}

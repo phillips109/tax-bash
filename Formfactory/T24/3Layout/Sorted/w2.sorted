@@ -1,0 +1,70 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!6.35 	!7.92  	!right   	!
+a     	!dlin  	!02    	!      	!      	!1.12     	!200
+a     	!dlin  	!04    	!      	!      	!1.46     	!400
+a     	!dlin  	!06    	!      	!      	!1.80     	!600
+a     	!dlin  	!08    	!      	!      	!2.12     	!800
+a     	!dlin  	!10    	!      	!      	!2.46     	!1000
+a     	!tlin  	!12a   	!      	!      	!2.90   	!XX1201
+a     	!tlin  	!12b   	!      	!      	!3.13    	!XX1202
+a     	!tlin  	!12c   	!      	!      	!3.46     	!XX1203
+a     	!tlin  	!12d   	!      	!      	!3.79     	!XX1204
+Col   	!col   	!b     	!4.66  	!6.24  	!right   	!
+b     	!dlin  	!01    	!      	!      	!1.12     	!100
+b     	!dlin  	!03    	!      	!      	!1.46     	!300
+b     	!dlin  	!05    	!      	!      	!1.80     	!500
+b     	!dlin  	!07    	!      	!      	!2.12     	!700
+b     	!dlin  	!09    	!      	!      	!2.46     	!900
+b     	!dlin  	!11    	!      	!      	!2.90   	!1100
+b     	!tlin  	!14    	!      	!      	!3.46     	!1400
+Col   	!col   	!c     	!4.83 	!4.97 	!center        	!
+c     	!tlin  	!13a   	!      	!      	!3.11   	!x
+Col   	!col   	!d     	!5.35  	!5.48  	!center   	!
+d     	!tlin  	!13b   	!      	!      	!3.11   	!x
+Col   	!col   	!e     	!5.84  	!5.96  	!center     	!
+e     	!tlin  	!13c   	!      	!      	!3.11   	!x
+Col   	!col   	!f     	!0.62  	!4.54  	!left         	!
+f     	!tlin  	!pname 	!      	!      	!1.46     	!A.B. Smith Co
+f     	!tlin  	!payrID	!      	!      	!1.12     	!12-123456
+f     	!tlin  	!paddr1	!      	!      	!1.80     	!13 River Street
+f     	!tlin  	!paddr2	!      	!      	!1.96     	!Suite 300
+f     	!tlin  	!pcity 	!      	!      	!2.12     	!Boston
+f     	!tlin  	!ctrNo 	!      	!      	!2.40    	!987654321
+f     	!tlin  	!TFNI  	!      	!      	!2.90    	!John E.
+f     	!tlin  	!raddr1	!      	!      	!3.22     	!300 Grant Street
+f     	!tlin  	!raddr2	!      	!      	!3.53     	!Apt 3
+f     	!tlin  	!rcity 	!      	!      	!3.78     	!Pittsburgh
+f     	!tlin  	!15sa  	!      	!      	!4.23     	!PA 1501
+f     	!dlin  	!15b   	!      	!      	!4.63     	!MA 1502
+Col   	!col   	!g     	!2.15 	!2.32  	!left  	!
+g     	!tlin  	!pST   	!      	!      	!2.12     	!MA
+g     	!tlin  	!rST   	!      	!      	!3.78     	!PA
+Col   	!col   	!h     	!3.68  	!4.54  	!left    	!
+h     	!tlin  	!pzip  	!      	!      	!2.12     	!01006
+h     	!tlin  	!rzip  	!      	!      	!3.78     	!15123
+Col   	!col   	!i     	!2.20 	!2.49  	!center  	!
+i     	!tlin  	!TSSNoF	!      	!      	!0.79     	!123
+i     	!tlin  	!TLN   	!      	!      	!2.90   	!Dough
+Col   	!col   	!j     	!2.55 	!2.74  	!center       	!
+j     	!tlin  	!TSSNoM	!  	! 	!0.79       	!45
+Col   	!col   	!k     	!3.00  	!3.85  	!center   	!
+k     	!tlin  	!TSSNoL	!      	!      	!0.79     	!6789
+Col   	!col   	!l     	!4.34  	!4.57  	!left   	!
+l     	!tlin  	!tsuff 	!      	!      	!2.90     	!Jr
+Col   	!col   	!m     	!0.65  	!2.64  	!left         	!
+m     	!dlin  	!16a   	!      	!      	!4.23     	!1601
+m     	!dlin  	!16b   	!      	!      	!4.63   	!1602
+Col   	!col   	!n     	!3.95  	!4.96  	!right    	!
+n     	!dlin  	!17a   	!      	!      	!4.23     	!1701
+n     	!dlin  	!17b   	!      	!      	!4.63     	!1702
+Col   	!col   	!o     	!5.06  	!6.12  	!right   	!
+o     	!dlin  	!18a   	!      	!      	!4.23     	!1801
+o     	!dlin  	!18b   	!      	!      	!4.63     	!1802
+Col   	!col   	!p     	!6.24  	!7.22  	!right   	!
+p     	!dlin  	!19a   	!      	!      	!4.23         	!1901
+p     	!dlin  	!19b   	!      	!      	!4.63     	!1902
+Col   	!col   	!q     	!7.36 	!7.90 	!left    	!
+q     	!tlin  	!20a   	!      	!      	!4.23         	!2001
+q     	!tlin  	!20b   	!      	!      	!4.63     	!2012
+Col   	!col   	!r     	!1.85  	!1.97  	!center     	!
+r     	!tlin  	!void  	!      	!      	!0.68         	!x

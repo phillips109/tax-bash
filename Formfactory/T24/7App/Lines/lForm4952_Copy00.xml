@@ -1,0 +1,78 @@
+<!--
+
+Copyright (C) 2024 Phillips Wedemeyer
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
+<Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Form4952-Copy00">
+
+<copy00line03 color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line03, '#####0')"/>
+</copy00line03>
+
+<copy00line04h color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04h, '#####0')"/>
+</copy00line04h>
+
+<copy00line01 color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line01, '#####0')"/>
+</copy00line01>
+
+<copy00line02 color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line02, '#####0')"/>
+</copy00line02>
+
+<copy00line04a color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04a, '#####0')"/>
+</copy00line04a>
+
+<copy00line04b color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04b, '#####0')"/>
+</copy00line04b>
+
+<copy00line04d color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04d, '#####0')"/>
+</copy00line04d>
+
+<copy00line04e color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04e, '#####0')"/>
+</copy00line04e>
+
+<copy00line04g color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04g, '#####0')"/>
+</copy00line04g>
+
+<copy00line05 color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line05, '#####0')"/>
+</copy00line05>
+
+<copy00line08 color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line08, '#####0')"/>
+</copy00line08>
+
+<copy00line06 color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line06, '#####0')"/>
+</copy00line06>
+
+<copy00line07 color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line07, '#####0')"/>
+</copy00line07>
+
+<copy00line04c color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04c, '#####0')"/>
+</copy00line04c>
+
+<copy00line04f color="red">
+<xsl:value-of select="format-number($Form4952-Copy00-line04f, '#####0')"/>
+</copy00line04f>
+</Form>

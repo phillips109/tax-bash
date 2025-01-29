@@ -1,0 +1,273 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+
+it under the terms of the GNU General Public License as published by
+
+the Free Software Foundation, either version 3 of the License, or
+
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+xdlin
+2name
+3format
+4dummy
+
+dlin
+Box03
+#####0
+30541.20
+
+dlin
+Box04
+#####0
+0
+
+dlin
+Box06
+#####0
+0
+
+xsubt0
+2name
+3format
+4minuend
+5subtrahend
+
+subt0
+Box05
+#####0
+lineBox03
+lineBox04
+
+xtlin
+2name
+3blank
+4dummy
+
+tlin
+Box03d1
+blank
+Paid by ck/dd
+
+tlin
+Box03d2
+blank
+Medicare PartB premiums
+
+tlin
+Box03d3
+blank
+Total Additions
+
+tlin
+Box03d4
+blank
+Benefits for 2022
+
+tlin
+Box03d5
+
+tlin
+Box03d6
+
+tlin
+Box03d7
+
+tlin
+Box03d8
+
+tlin
+Box03e1
+blank
+$28,500.00
+
+tlin
+Box03e2
+blank
+$2,041.20
+
+tlin
+Box03e3
+blank
+$30,541.20
+
+tlin
+Box03e4
+blank
+$30,541.20
+
+tlin
+Box03e5
+blank
+tlin
+Box03e6
+
+tlin
+Box03e7
+blank
+tlin
+Box03e8
+
+tlin
+Box04d1
+blank
+Paid by ck/dd
+
+tlin
+Box04d2
+blank
+Medicare Part B premiums
+
+tlin
+Box04d3
+blank
+Total Additions
+
+tlin
+Box04d4
+blank
+Benefits for 2022
+
+tlin
+Box04d5
+blank
+Paid by ck/dd
+
+tlin
+Box04d6
+blank
+Medicare Part B premiums
+
+tlin
+Box04d7
+blank
+Total Additions
+
+tlin
+Box04d8
+blank
+Benefits for 2022
+
+tlin
+Box04e1
+blank
+$28,500.00
+
+tlin
+Box04e2
+blank
+$2,041.20
+
+tlin
+Box04e3
+blank
+$30,541.20
+
+tlin
+Box04e4
+blank
+$30,541.20
+
+tlin
+Box04e5
+blank
+$28,500.00
+
+tlin
+Box04e6
+blank
+$2,041.20
+
+tlin
+Box04e7
+blank
+$30,541.20
+
+tlin
+Box04e8
+blank
+$30,541.20
+
+tlin
+Box07
+blank
+JOHN Q TAXPAYOR
+
+tlin
+Box07a
+blank
+300 MARKET STREET
+
+tlin
+Box07b
+blank
+PITTSBURGH PA 15218
+
+tlin
+Box08
+blank
+090-99-9999A
+
+xtPull
+2name
+3blank
+4dummy
+5form
+6copy
+7line
+
+tPull
+TFNI
+blank
+blank
+Bkg
+00
+TFNI
+
+tPull
+TLN
+blank
+blank
+Bkg
+00
+TLN
+
+tPull
+TSSNoF
+blank
+blank
+Bkg
+00
+TSSNoF
+
+tPull
+TSSNoL
+blank
+blank
+Bkg
+00
+TSSNoL
+
+tPull
+TSSNoM
+blank
+blank
+Bkg
+00
+TSSNoM
+

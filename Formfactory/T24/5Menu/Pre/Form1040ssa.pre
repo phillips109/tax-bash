@@ -1,0 +1,40 @@
+type      	!name      	!seq       	!menuEntry
+dlin      	!Box03     	!006       	!Enter benefits paid in 2023.
+dlin      	!Box04     	!007       	!Enter benefits repaid to SSA in 2003.
+dlin      	!Box06     	!009       	!Enter voluntary federal income tax withhelld.
+tlin      	!Box07     	!010       	!Enter name of taxpayor.
+tlin      	!Box07a    	!011       	!Enter street address of taxpayor.
+tlin      	!Box07b    	!012       	!Enter city, ST, zip of taxpayor.
+tlin      	!Box08     	!013       	!Enter clain number (Use this number if you need to contact SSA.)
+tlin      	!Box03d1   	!014       	!Enter amount for box03d1.
+tlin      	!Box03d2   	!015       	!Enter amount for box03d2.
+tlin      	!Box03d3   	!016       	!Enter amount for box03d3.
+tlin      	!Box03d4   	!017       	!Enter amount for box03d4.
+tlin      	!Box03d5   	!018       	!Enter amount for box03d5.
+tlin      	!Box03d6   	!019       	!Enter amount for box03d6.
+tlin      	!Box03d7   	!020       	!Enter amount for box03d7.
+tlin      	!Box03d8   	!021       	!Enter amount for box03d8.
+tlin      	!Box03e1   	!022       	!Enter entry for box03e1.
+tlin      	!Box03e2   	!023       	!Enter entry for box03e2.
+tlin      	!Box03e3   	!024       	!Enter entry for box03e3.
+tlin      	!Box03e4   	!025       	!Enter entry for box03e4.
+tlin      	!Box03e5   	!026       	!Enter entry for box03e5.
+tlin      	!Box03e6   	!027       	!Enter entry for box03e6.
+tlin      	!Box03e7   	!028       	!Enter entry for box03e7.
+tlin      	!Box03e8   	!029       	!Enter entry for box03e8.
+tlin      	!Box04d1   	!030       	!Enter amount for box 04d1.
+tlin      	!Box04d2   	!031       	!Enter amount for box 04d2.
+tlin      	!Box04d3   	!032       	!Enter amount for box 04d3.
+tlin      	!Box04d4   	!033       	!Enter amount for box 04d4.
+tlin      	!Box04d5   	!034       	!Enter amount for box 04d5.
+tlin      	!Box04d6   	!035       	!Enter amount for box 04d6.
+tlin      	!Box04d7   	!036       	!Enter amount for box 04d7.
+tlin      	!Box04d8   	!037       	!Enter amount for box 04d8.
+tlin      	!Box04e1   	!038       	!Enter entry for box 04e1.
+tlin      	!Box04e2   	!039       	!Enter entry for box 04e2.
+tlin      	!Box04e3   	!040       	!Enter entry for box 04e3.
+tlin      	!Box04e4   	!041       	!Enter entry for box 04e4.
+tlin      	!Box04e5   	!042       	!Enter entry for box 04e5.
+tlin      	!Box04e6   	!043       	!Enter entry for box 04e6.
+tlin      	!Box04e7   	!044       	!Enter entry for box 04e7.
+tlin      	!Box04e8   	!045       	!Enter entry for box 04e8.

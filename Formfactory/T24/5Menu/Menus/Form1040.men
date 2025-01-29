@@ -1,0 +1,447 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+set_Form1040_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Form1040 in which to enter or edit data:"
+echo
+echo "endYr )                                       "
+echo "stMon )                                       "
+echo "stDay )                                       "
+echo "EndMon)                                       "
+echo "endDay)                                       "
+echo "single)                                       "
+echo "MFJ   )                                       "
+echo "MFS   )                                       "
+echo "HOH   )                                       "
+echo "QSS   )                                       "
+echo "child )                                       "
+echo "SName )                                       "
+echo "TFNI  )                                       "
+echo "TLN   )                                       "
+echo "TSSNoF)                                       "
+echo "TSSNoM)                                       "
+echo "TSSNoL)                                       "
+echo "SFNI  )                                       "
+echo "SLN   )                                       "
+echo "SSSNoF)                                       "
+echo "SSSNoM)                                       "
+echo "SSSNoL)                                       "
+echo "addr1 )                                       "
+echo "addr2 )                                       "
+echo "aptNo )                                       "
+echo "city  )                                       "
+echo "ST    )                                       "
+echo "zip   )                                       "
+echo "FCntry)                                       "
+echo "Fprov )                                       "
+echo "Fzip  )                                       "
+echo "campme)                                       "
+echo "campS )                                       "
+echo "digY  )                                       "
+echo "digN  )                                       "
+echo "youdep)                                       "
+echo "Sdep  )                                       "
+echo "SiUali)                                       "
+echo "Ya58  )                                       "
+echo "Yblind)                                       "
+echo "Sa58  )                                       "
+echo "Sblind)                                       "
+echo "d1name)                                       "
+echo "d1LN  )                                       "
+echo "d1SF  )                                       "
+echo "d1SM  )                                       "
+echo "d1SL  )                                       "
+echo "d1rel )                                       "
+echo "d1CTC )                                       "
+echo "d1cod )                                       "
+echo "d1name)                                       "
+echo "d1LN  )                                       "
+echo "d1SF  )                                       "
+echo "d1SM  )                                       "
+echo "d1SL  )                                       "
+echo "d1rel )                                       "
+echo "d1CTC )                                       "
+echo "d1cod )                                       "
+echo "d2name)                                       "
+echo "d2LN  )                                       "
+echo "d2SF  )                                       "
+echo "d2SM  )                                       "
+echo "d2SL  )                                       "
+echo "d2rel )                                       "
+echo "d2CTC )                                       "
+echo "d2cod )                                       "
+echo "d3name)                                       "
+echo "d3LN  )                                       "
+echo "d3SF  )                                       "
+echo "d3SM  )                                       "
+echo "d3SL  )                                       "
+echo "d3rel )                                       "
+echo "d3CTC )                                       "
+echo "d3cod )                                       "
+echo "d4name)                                       "
+echo "d4LN  )                                       "
+echo "d4SF  )                                       "
+echo "d4SM  )                                       "
+echo "d4SL  )                                       "
+echo "d4rel )                                       "
+echo "d4CTC )                                       "
+echo "d4cod )                                       "
+echo "Tphone)                                       "
+echo "Temail)                                       "
+echo "dgt4  )                                       "
+echo "01a   )                                       "
+echo "01b   )                                       "
+echo "01c   )                                       "
+echo "01d   )                                       "
+echo "01e   )                                       "
+echo "01f   )                                       "
+echo "01g   )                                       "
+echo "01h   )                                       "
+echo "01i   )                                       "
+echo "01z   )                                       "
+echo "02a   )                                       "
+echo "02b   )                                       "
+echo "03a   )                                       "
+echo "03b   )                                       "
+echo "04a   )                                       "
+echo "04b   )                                       "
+echo "05a   )                                       "
+echo "05b   )                                       "
+echo "06a   )                                       "
+echo "06b   )                                       "
+echo "06cCk )                                       "
+echo "07Ck  )                                       "
+echo "07    )                                       "
+echo "08    )                                       "
+echo "09    )                                       "
+echo "10    )                                       "
+echo "11    )                                       "
+echo "12    )                                       "
+echo "13    )                                       "
+echo "14    )                                       "
+echo "15    )                                       "
+echo "8814  )                                       "
+echo "4972  )                                       "
+echo "Other )                                       "
+echo "16    )                                       "
+echo "17    )                                       "
+echo "18    )                                       "
+echo "19    )                                       "
+echo "20    )                                       "
+echo "21    )                                       "
+echo "22    )                                       "
+echo "23    )                                       "
+echo "24    )                                       "
+echo "25a   )                                       "
+echo "25b   )                                       "
+echo "25c   )                                       "
+echo "25d   )                                       "
+echo "26    )                                       "
+echo "27    )                                       "
+echo "28    )                                       "
+echo "29    )                                       "
+echo "31    )                                       "
+echo "32    )                                       "
+echo "33    )                                       "
+echo "34    )                                       "
+echo "35a   )                                       "
+echo "35aCk )                                       "
+echo "35b1  )                                       "
+echo "35b2  )                                       "
+echo "35b3  )                                       "
+echo "35b4  )                                       "
+echo "35b5  )                                       "
+echo "35b6  )                                       "
+echo "35b7  )                                       "
+echo "35b8  )                                       "
+echo "35b9  )                                       "
+echo "35cCkg)                                       "
+echo "35cSvg)                                       "
+echo "35d1  )                                       "
+echo "35d2  )                                       "
+echo "35d3  )                                       "
+echo "35d4  )                                       "
+echo "35d5  )                                       "
+echo "35d6  )                                       "
+echo "35d7  )                                       "
+echo "35d8  )                                       "
+echo "35d9  )                                       "
+echo "35d10 )                                       "
+echo "35d11 )                                       "
+echo "35d12 )                                       "
+echo "35d13 )                                       "
+echo "35d14 )                                       "
+echo "35d15 )                                       "
+echo "35d16 )                                       "
+echo "35d17 )                                       "
+echo "36    )                                       "
+echo "37    )                                       "
+echo "38    )                                       "
+echo "39Y   )                                       "
+echo "39N   )                                       "
+echo "Dname )                                       "
+echo "Dphone)                                       "
+echo "421   )                                       "
+echo "422   )                                       "
+echo "423   )                                       "
+echo "424   )                                       "
+echo "425   )                                       "
+echo "Tdate )                                       "
+echo "Tocc  )                                       "
+echo "431   )                                       "
+echo "432   )                                       "
+echo "433   )                                       "
+echo "434   )                                       "
+echo "435   )                                       "
+echo "436   )                                       "
+echo "Sdate )                                       "
+echo "Socc  )                                       "
+echo "441   )                                       "
+echo "442   )                                       "
+echo "443   )                                       "
+echo "444   )                                       "
+echo "445   )                                       "
+echo "Pname )                                       "
+echo "Pdate )                                       "
+echo "PTIN  )                                       "
+echo "SECk  )                                       "
+echo "Fname )                                       "
+echo "Fphone)                                       "
+echo "Faddr )                                       "
+echo "FEIN  )                                       "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Form1040_line_data_choice
+echo
+     case $Form1040_line_data_choice in
+endYr )    set_line_menu_text   $1 $2  lineendYr                            ;;
+stMon )    set_line_menu_text   $1 $2  linestMon                            ;;
+stDay )    set_line_menu_text   $1 $2  linestDay                            ;;
+EndMon)    set_line_menu_text   $1 $2  lineEndMon                           ;;
+endDay)    set_line_menu_text   $1 $2  lineendDay                           ;;
+single)    set_line_menu_text   $1 $2  linesingle                           ;;
+MFJ   )    set_line_menu_text   $1 $2  lineMFJ                              ;;
+MFS   )    set_line_menu_text   $1 $2  lineMFS                              ;;
+HOH   )    set_line_menu_text   $1 $2  lineHOH                              ;;
+QSS   )    set_line_menu_text   $1 $2  lineQSS                              ;;
+child )    set_line_menu_text   $1 $2  linechild                            ;;
+SName )    set_line_menu_text   $1 $2  lineSName                            ;;
+TFNI  )    set_line_menu_text   $1 $2  lineTFNI                             ;;
+TLN   )    set_line_menu_text   $1 $2  lineTLN                              ;;
+TSSNoF)    set_line_menu_text   $1 $2  lineTSSNoF                           ;;
+TSSNoM)    set_line_menu_text   $1 $2  lineTSSNoM                           ;;
+TSSNoL)    set_line_menu_text   $1 $2  lineTSSNoL                           ;;
+SFNI  )    set_line_menu_text   $1 $2  lineSFNI                             ;;
+SLN   )    set_line_menu_text   $1 $2  lineSLN                              ;;
+SSSNoF)    set_line_menu_text   $1 $2  lineSSSNoF                           ;;
+SSSNoM)    set_line_menu_text   $1 $2  lineSSSNoM                           ;;
+SSSNoL)    set_line_menu_text   $1 $2  lineSSSNoL                           ;;
+addr1 )    set_line_menu_text   $1 $2  lineaddr1                            ;;
+addr2 )    set_line_menu_text   $1 $2  lineaddr2                            ;;
+aptNo )    set_line_menu_text   $1 $2  lineaptNo                            ;;
+city  )    set_line_menu_text   $1 $2  linecity                             ;;
+ST    )    set_line_menu_text   $1 $2  lineST                               ;;
+zip   )    set_line_menu_text   $1 $2  linezip                              ;;
+FCntry)    set_line_menu_text   $1 $2  lineFCntry                           ;;
+Fprov )    set_line_menu_text   $1 $2  lineFprov                            ;;
+Fzip  )    set_line_menu_text   $1 $2  lineFzip                             ;;
+campme)    set_line_menu_text   $1 $2  linecampme                           ;;
+campS )    set_line_menu_text   $1 $2  linecampS                            ;;
+digY  )    set_line_menu_text   $1 $2  linedigY                             ;;
+digN  )    set_line_menu_text   $1 $2  linedigN                             ;;
+youdep)    set_line_menu_text   $1 $2  lineyoudep                           ;;
+Sdep  )    set_line_menu_text   $1 $2  lineSdep                             ;;
+SiUali)    set_line_menu_text   $1 $2  lineSiUali                           ;;
+Ya58  )    set_line_menu_text   $1 $2  lineYa58                             ;;
+Yblind)    set_line_menu_text   $1 $2  lineYblind                           ;;
+Sa58  )    set_line_menu_text   $1 $2  lineSa58                             ;;
+Sblind)    set_line_menu_text   $1 $2  lineSblind                           ;;
+d1name)    set_line_menu_text   $1 $2  lined1name                           ;;
+d1LN  )    set_line_menu_text   $1 $2  lined1LN                             ;;
+d1SF  )    set_line_menu_text   $1 $2  lined1SF                             ;;
+d1SM  )    set_line_menu_text   $1 $2  lined1SM                             ;;
+d1SL  )    set_line_menu_text   $1 $2  lined1SL                             ;;
+d1rel )    set_line_menu_text   $1 $2  lined1rel                            ;;
+d1CTC )    set_line_menu_text   $1 $2  lined1CTC                            ;;
+d1cod )    set_line_menu_text   $1 $2  lined1cod                            ;;
+d1name)    set_line_menu_text   $1 $2  lined1name                           ;;
+d1LN  )    set_line_menu_text   $1 $2  lined1LN                             ;;
+d1SF  )    set_line_menu_text   $1 $2  lined1SF                             ;;
+d1SM  )    set_line_menu_text   $1 $2  lined1SM                             ;;
+d1SL  )    set_line_menu_text   $1 $2  lined1SL                             ;;
+d1rel )    set_line_menu_text   $1 $2  lined1rel                            ;;
+d1CTC )    set_line_menu_text   $1 $2  lined1CTC                            ;;
+d1cod )    set_line_menu_text   $1 $2  lined1cod                            ;;
+d2name)    set_line_menu_text   $1 $2  lined2name                           ;;
+d2LN  )    set_line_menu_text   $1 $2  lined2LN                             ;;
+d2SF  )    set_line_menu_text   $1 $2  lined2SF                             ;;
+d2SM  )    set_line_menu_text   $1 $2  lined2SM                             ;;
+d2SL  )    set_line_menu_text   $1 $2  lined2SL                             ;;
+d2rel )    set_line_menu_text   $1 $2  lined2rel                            ;;
+d2CTC )    set_line_menu_text   $1 $2  lined2CTC                            ;;
+d2cod )    set_line_menu_text   $1 $2  lined2cod                            ;;
+d3name)    set_line_menu_text   $1 $2  lined3name                           ;;
+d3LN  )    set_line_menu_text   $1 $2  lined3LN                             ;;
+d3SF  )    set_line_menu_text   $1 $2  lined3SF                             ;;
+d3SM  )    set_line_menu_text   $1 $2  lined3SM                             ;;
+d3SL  )    set_line_menu_text   $1 $2  lined3SL                             ;;
+d3rel )    set_line_menu_text   $1 $2  lined3rel                            ;;
+d3CTC )    set_line_menu_text   $1 $2  lined3CTC                            ;;
+d3cod )    set_line_menu_text   $1 $2  lined3cod                            ;;
+d4name)    set_line_menu_text   $1 $2  lined4name                           ;;
+d4LN  )    set_line_menu_text   $1 $2  lined4LN                             ;;
+d4SF  )    set_line_menu_text   $1 $2  lined4SF                             ;;
+d4SM  )    set_line_menu_text   $1 $2  lined4SM                             ;;
+d4SL  )    set_line_menu_text   $1 $2  lined4SL                             ;;
+d4rel )    set_line_menu_text   $1 $2  lined4rel                            ;;
+d4CTC )    set_line_menu_text   $1 $2  lined4CTC                            ;;
+d4cod )    set_line_menu_text   $1 $2  lined4cod                            ;;
+Tphone)    set_line_menu_text   $1 $2  lineTphone                           ;;
+Temail)    set_line_menu_text   $1 $2  lineTemail                           ;;
+dgt4  )    set_line_menu_text   $1 $2  linedgt4                             ;;
+01a   )    set_line_menu_number $1 $2  line01a                              ;;
+01b   )    set_line_menu_number $1 $2  line01b                              ;;
+01c   )    set_line_menu_number $1 $2  line01c                              ;;
+01d   )    set_line_menu_number $1 $2  line01d                              ;;
+01e   )    set_line_menu_number $1 $2  line01e                              ;;
+01f   )    set_line_menu_number $1 $2  line01f                              ;;
+01g   )    set_line_menu_number $1 $2  line01g                              ;;
+01h   )    set_line_menu_number $1 $2  line01h                              ;;
+01i   )    set_line_menu_number $1 $2  line01i                              ;;
+01z   )    set_line_menu_number $1 $2  line01z                              ;;
+02a   )    set_line_menu_number $1 $2  line02a                              ;;
+02b   )    set_line_menu_number $1 $2  line02b                              ;;
+03a   )    set_line_menu_number $1 $2  line03a                              ;;
+03b   )    set_line_menu_number $1 $2  line03b                              ;;
+04a   )    set_line_menu_number $1 $2  line04a                              ;;
+04b   )    set_line_menu_number $1 $2  line04b                              ;;
+05a   )    set_line_menu_number $1 $2  line05a                              ;;
+05b   )    set_line_menu_number $1 $2  line05b                              ;;
+06a   )    set_line_menu_number $1 $2  line06a                              ;;
+06b   )    set_line_menu_number $1 $2  line06b                              ;;
+06cCk )    set_line_menu_text   $1 $2  line06cCk                            ;;
+07Ck  )    set_line_menu_text   $1 $2  line07Ck                             ;;
+07    )    set_line_menu_number $1 $2  line07                               ;;
+08    )    set_line_menu_number $1 $2  line08                               ;;
+09    )    set_line_menu_number $1 $2  line09                               ;;
+10    )    set_line_menu_number $1 $2  line10                               ;;
+11    )    set_line_menu_number $1 $2  line11                               ;;
+12    )    set_line_menu_number $1 $2  line12                               ;;
+13    )    set_line_menu_number $1 $2  line13                               ;;
+14    )    set_line_menu_number $1 $2  line14                               ;;
+15    )    set_line_menu_number $1 $2  line15                               ;;
+8814  )    set_line_menu_text   $1 $2  line8814                             ;;
+4972  )    set_line_menu_text   $1 $2  line4972                             ;;
+Other )    set_line_menu_text   $1 $2  lineOther                            ;;
+16    )    set_line_menu_number $1 $2  line16                               ;;
+17    )    set_line_menu_number $1 $2  line17                               ;;
+18    )    set_line_menu_number $1 $2  line18                               ;;
+19    )    set_line_menu_number $1 $2  line19                               ;;
+20    )    set_line_menu_number $1 $2  line20                               ;;
+21    )    set_line_menu_number $1 $2  line21                               ;;
+22    )    set_line_menu_number $1 $2  line22                               ;;
+23    )    set_line_menu_number $1 $2  line23                               ;;
+24    )    set_line_menu_number $1 $2  line24                               ;;
+25a   )    set_line_menu_number $1 $2  line25a                              ;;
+25b   )    set_line_menu_number $1 $2  line25b                              ;;
+25c   )    set_line_menu_number $1 $2  line25c                              ;;
+25d   )    set_line_menu_number $1 $2  line25d                              ;;
+26    )    set_line_menu_number $1 $2  line26                               ;;
+27    )    set_line_menu_number $1 $2  line27                               ;;
+28    )    set_line_menu_number $1 $2  line28                               ;;
+29    )    set_line_menu_number $1 $2  line29                               ;;
+31    )    set_line_menu_number $1 $2  line31                               ;;
+32    )    set_line_menu_number $1 $2  line32                               ;;
+33    )    set_line_menu_number $1 $2  line33                               ;;
+34    )    set_line_menu_number $1 $2  line34                               ;;
+35a   )    set_line_menu_number $1 $2  line35a                              ;;
+35aCk )    set_line_menu_text   $1 $2  line35aCk                            ;;
+35b1  )    set_line_menu_text   $1 $2  line35b1                             ;;
+35b2  )    set_line_menu_text   $1 $2  line35b2                             ;;
+35b3  )    set_line_menu_text   $1 $2  line35b3                             ;;
+35b4  )    set_line_menu_text   $1 $2  line35b4                             ;;
+35b5  )    set_line_menu_text   $1 $2  line35b5                             ;;
+35b6  )    set_line_menu_text   $1 $2  line35b6                             ;;
+35b7  )    set_line_menu_text   $1 $2  line35b7                             ;;
+35b8  )    set_line_menu_text   $1 $2  line35b8                             ;;
+35b9  )    set_line_menu_text   $1 $2  line35b9                             ;;
+35cCkg)    set_line_menu_text   $1 $2  line35cCkg                           ;;
+35cSvg)    set_line_menu_text   $1 $2  line35cSvg                           ;;
+35d1  )    set_line_menu_text   $1 $2  line35d1                             ;;
+35d2  )    set_line_menu_text   $1 $2  line35d2                             ;;
+35d3  )    set_line_menu_text   $1 $2  line35d3                             ;;
+35d4  )    set_line_menu_text   $1 $2  line35d4                             ;;
+35d5  )    set_line_menu_text   $1 $2  line35d5                             ;;
+35d6  )    set_line_menu_text   $1 $2  line35d6                             ;;
+35d7  )    set_line_menu_text   $1 $2  line35d7                             ;;
+35d8  )    set_line_menu_text   $1 $2  line35d8                             ;;
+35d9  )    set_line_menu_text   $1 $2  line35d9                             ;;
+35d10 )    set_line_menu_text   $1 $2  line35d10                            ;;
+35d11 )    set_line_menu_text   $1 $2  line35d11                            ;;
+35d12 )    set_line_menu_text   $1 $2  line35d12                            ;;
+35d13 )    set_line_menu_text   $1 $2  line35d13                            ;;
+35d14 )    set_line_menu_text   $1 $2  line35d14                            ;;
+35d15 )    set_line_menu_text   $1 $2  line35d15                            ;;
+35d16 )    set_line_menu_text   $1 $2  line35d16                            ;;
+35d17 )    set_line_menu_text   $1 $2  line35d17                            ;;
+36    )    set_line_menu_number $1 $2  line36                               ;;
+37    )    set_line_menu_number $1 $2  line37                               ;;
+38    )    set_line_menu_number $1 $2  line38                               ;;
+39Y   )    set_line_menu_text   $1 $2  line39Y                              ;;
+39N   )    set_line_menu_text   $1 $2  line39N                              ;;
+Dname )    set_line_menu_text   $1 $2  lineDname                            ;;
+Dphone)    set_line_menu_text   $1 $2  lineDphone                           ;;
+421   )    set_line_menu_text   $1 $2  line421                              ;;
+422   )    set_line_menu_text   $1 $2  line422                              ;;
+423   )    set_line_menu_text   $1 $2  line423                              ;;
+424   )    set_line_menu_text   $1 $2  line424                              ;;
+425   )    set_line_menu_text   $1 $2  line425                              ;;
+Tdate )    set_line_menu_text   $1 $2  lineTdate                            ;;
+Tocc  )    set_line_menu_text   $1 $2  lineTocc                             ;;
+431   )    set_line_menu_text   $1 $2  line431                              ;;
+432   )    set_line_menu_text   $1 $2  line432                              ;;
+433   )    set_line_menu_text   $1 $2  line433                              ;;
+434   )    set_line_menu_text   $1 $2  line434                              ;;
+435   )    set_line_menu_text   $1 $2  line435                              ;;
+436   )    set_line_menu_text   $1 $2  line436                              ;;
+Sdate )    set_line_menu_text   $1 $2  lineSdate                            ;;
+Socc  )    set_line_menu_text   $1 $2  lineSocc                             ;;
+441   )    set_line_menu_text   $1 $2  line441                              ;;
+442   )    set_line_menu_text   $1 $2  line442                              ;;
+443   )    set_line_menu_text   $1 $2  line443                              ;;
+444   )    set_line_menu_text   $1 $2  line444                              ;;
+445   )    set_line_menu_text   $1 $2  line445                              ;;
+Pname )    set_line_menu_text   $1 $2  linePname                            ;;
+Pdate )    set_line_menu_text   $1 $2  linePdate                            ;;
+PTIN  )    set_line_menu_text   $1 $2  linePTIN                             ;;
+SECk  )    set_line_menu_text   $1 $2  lineSECk                             ;;
+Fname )    set_line_menu_text   $1 $2  lineFname                            ;;
+Fphone)    set_line_menu_text   $1 $2  lineFphone                           ;;
+Faddr )    set_line_menu_text   $1 $2  lineFaddr                            ;;
+FEIN  )    set_line_menu_text   $1 $2  lineFEIN                             ;;
+q     )    break;;                       
+esac
+done
+}

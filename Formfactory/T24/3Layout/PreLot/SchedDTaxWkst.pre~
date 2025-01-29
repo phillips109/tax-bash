@@ -1,0 +1,118 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+                              
+This file is part of a program called Tax-bash
+                              
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+                              
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+                              
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+                              
+                              
+For direction on how to separate pages see ../notes.
+
+                              
+Form
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgS    
+                              
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!7.05  	!7.69  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!2.60  	!100               	!            	!      	!      
+dlin  	!13    	!5.28  	!1300              	!            	!      	!      
+dlin  	!14    	!5.45  	!1400              	!            	!      	!      
+dlin  	!31    	!1.04  	!3100              	!            	!      	!      
+dlin  	!34    	!1.85  	!3400              	!            	!      	!      
+dlin  	!40    	!3.30  	!4000              	!            	!      	!      
+dlin  	!43    	!4.09  	!4300              	!            	!      	!      
+dlin  	!44    	!4.43  	!4400              	!            	!      	!      
+dlin  	!45    	!4.64  	!4500              	!            	!      	!      
+dlin  	!46    	!4.97  	!4600              	!            	!      	!      
+dlin  	!47    	!5.62  	!4700              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!6.05  	!6.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!10    	!4.76  	!1000              	!            	!      	!      
+dlin  	!12    	!5.10  	!1200              	!            	!      	!      
+dlin  	!16    	!6.38  	!1600              	!            	!      	!      
+dlin  	!21    	!7.94  	!2100              	!            	!      	!      
+dlin  	!22    	!8.12  	!2200              	!            	!      	!      
+dlin  	!30    	!10.25 	!3000              	!            	!      	!      
+dlin  	!33    	!1.64  	!3300              	!            	!      	!      
+dlin  	!39    	!3.08  	!3900              	!            	!      	!      
+dlin  	!41    	!3.68  	!4100              	!            	!      	!      
+dlin  	!42    	!3.89  	!4200              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!right 	!5.10  	!5.61  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!06    	!3.96  	!600               	!            	!      	!      
+dlin  	!09    	!4.57  	!900               	!            	!      	!      
+dlin  	!11    	!4.92  	!1100              	!            	!      	!      
+dlin  	!15    	!5.98  	!1500              	!            	!      	!      
+dlin  	!17    	!6.56  	!1700              	!            	!      	!      
+dlin  	!23    	!8.44  	!2300              	!            	!      	!      
+dlin  	!24    	!8.61  	!2400              	!            	!      	!      
+dlin  	!25    	!8.78  	!2500              	!            	!      	!      
+dlin  	!26    	!9.34  	!2600              	!            	!      	!      
+dlin  	!27    	!9.72  	!2700              	!            	!      	!      
+dlin  	!28    	!9.91  	!2800              	!            	!      	!      
+dlin  	!29    	!10.0  	!2900              	!            	!      	!      
+dlin  	!32    	!1.26  	!3200              	!            	!      	!      
+dlin  	!35    	!2.24  	!3500              	!            	!      	!      
+dlin  	!38    	!2.86  	!3800              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!right 	!4.11  	!4.67  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!2.87  	!200               	!            	!      	!      
+dlin  	!05    	!3.79  	!500               	!            	!      	!      
+dlin  	!07    	!4.22  	!700               	!            	!      	!      
+dlin  	!08    	!4.40  	!800               	!            	!      	!      
+dlin  	!18    	!6.83  	!1800              	!            	!      	!      
+dlin  	!19    	!7.36  	!1900              	!            	!      	!      
+dlin  	!20    	!7.76  	!2000              	!            	!      	!      
+dlin  	!36    	!2.45  	!3600              	!            	!      	!      
+dlin  	!37    	!2.66  	!3700              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!right 	!3.41  	!3.77  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!03    	!3.24  	!300               	!            	!      	!      
+dlin  	!04    	!3.52  	!400               	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgS    
+EndForm

@@ -1,0 +1,257 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+set_SchedC_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SchedC in which to enter or edit data:"
+echo
+echo "PrBus )    Enter the principal business or profession engaged in.                                              	  "
+echo "B1    )    Enter the first code number.                                                                        	  "
+echo "B2    )    Enter the second code number.                                                                       	  "
+echo "B3    )    Enter the third code number.                                                                        	  "
+echo "B4    )    Enter the fourth code number.                                                                       	  "
+echo "B5    )    Enter the fifth code number.                                                                        	  "
+echo "B6    )    Enter the sixth code number.                                                                        	  "
+echo "BusNm )    Enter the business name if separate from line A.                                                    	  "
+echo "D1    )    Enter the first code number.                                                                        	  "
+echo "D2    )    Enter the second code number.                                                                       	  "
+echo "D3    )    Enter the third code number.                                                                        	  "
+echo "D4    )    Enter the fourth code number.                                                                       	  "
+echo "D5    )    Enter the fifth code number.                                                                        	  "
+echo "D6    )    Enter the sixth code number.                                                                        	  "
+echo "D7    )    Enter the seventh code number.                                                                      	  "
+echo "D8    )    Enter the eighth code number.                                                                       	  "
+echo "D9    )    Enter the ninth code number.                                                                        	  "
+echo "Addr1 )    Enter the first address line of the business.                                                       	  "
+echo "Addr2 )    Enter the second address line of the business.                                                      	  "
+echo "City  )    Enter the ciy in which the business is located.                                                     	  "
+echo "ST    )    Enter the state (ST) in which the buseiness is located.                                             	  "
+echo "zip   )    Enter the zip code of the business.                                                                 	  "
+echo "cash  )    Enter x if the accounting method is cash based.                                                     	  "
+echo "accru )    Enter x if the accounting method is accrual based.                                                  	  "
+echo "other )    Enter x if an other accounting method was used.                                                     	  "
+echo "specif)    Specify the accounting method used.                                                                 	  "
+echo "Gy    )    Emter x if you materially participated in the operation of the business during 2023.              	  "
+echo "Gn    )    Enter x if you did not materially participate in the operation of the business during 2023.       	  "
+echo "Hx    )    Enter x if you started or acquired this business during 2023.                                       	  "
+echo "Iy    )    Enter x if you made any payments in 2023 that would require filing Form(s) 1099.                    	  "
+echo "In    )    Enter x if you did not make any payments in 2023 thot would require filing Form(s) 1099.            	  "
+echo "Jy    )    Enter x if you did or will file any required Form(s) 1099.                                          	  "
+echo "Jn    )    Enter x if you did not and will not file any required Form(s) 1099.                                 	  "
+echo "01Ck  )    Enter x if income on line01 was reported to you on FormW2 and Statutory employee was checked.      	  "
+echo "01    )    Enter gross receipts or sales.                                                                      	  "
+echo "02    )    Enter returns anad allowances.                                                                      	  "
+echo "04    )    Enter cost of goods sold from line 42.                                                              	  "
+echo "06    )    Enter other income.                                                                                 	  "
+echo "08    )    Enter advertising expenses.                                                                         	  "
+echo "09    )    Enter car and truck expenses.                                                                       	  "
+echo "10    )    Enter commission and fee expenses.                                                                  	  "
+echo "11    )    Enter contract labor expenses.                                                                      	  "
+echo "12    )    Enter depletion expenses.                                                                           	  "
+echo "13    )    Enter depreciation and section 179 expenses.                                                        	  "
+echo "14    )    Enter employee benefit program expenses.                                                            	  "
+echo "15    )    enter insurance (other than heallth) expenses.                                                      	  "
+echo "16a   )    Enter mortage interest expenses.                                                                    	  "
+echo "16b   )    Enter other interest expenses.                                                                      	  "
+echo "17    )    Enter legal and professional services expenses.                                                     	  "
+echo "18    )    Enter office expenses.                                                                              	  "
+echo "19    )    Enter pension and profit-sharing plan expenses.                                                     	  "
+echo "20a   )    Enter rent or lease expenses for vehicles, machinery and equipment.                                 	  "
+echo "20b   )    Enter rent or lease expenses for other business property.                                           	  "
+echo "21    )    Enter repair and maintenance expenses.                                                              	  "
+echo "22    )    Enter expenses for supplies.                                                                        	  "
+echo "23    )    Enter tax and license expenses.                                                                     	  "
+echo "24a   )    Enter travel expenses.                                                                              	  "
+echo "24b   )    Enter meal deductions.                                                                              	  "
+echo "25    )    Enter utility expenses.                                                                             	  "
+echo "26    )    Enter wage expenses (less employment credits).                                                      	  "
+echo "27a   )    Enter other expenses from line 48.                                                                  	  "
+echo "27b   )    Enter deduction for energy efficient commercial buildings.(Form 7205)                               	  "
+echo "30a   )    For simplified method: Enter total square footage of your home.                                     	  "
+echo "30b   )    For simplified method: Enter ssquare footage used for business.                                     	  "
+echo "30    )    Enter expenses for the business use of your home. (Form 8829)                                       	  "
+echo "32a   )    Enter x if all investment is at risk.                                                               	  "
+echo "32b   )    Enter x if some of the investment is not at risk.                                                   	  "
+echo "33a   )    Enter x if the method used to value closing inventory was cash.                                   	  "
+echo "33b   )    Enter x if the method used to value closing inventory was lower of cost or market.                	  "
+echo "33c   )    Enter s if another method was used to value closing inventory.                                      	  "
+echo "34y   )    Enter x if there was any change in determininig quantities, costs, or valualtions                   	  "
+echo "34n   )    Enter x if there was not any such change.                                                           	  "
+echo "35    )    Enter value of inventory at the beginning of the year.                                              	  "
+echo "36    )    Enter cost of purchases less cost of items withdrawn for personal use.                              	  "
+echo "37    )    Enter cost of labor.                                                                                	  "
+echo "38    )    Enter cost of materials and supplies.                                                               	  "
+echo "39    )    Enter other costs.                                                                                  	  "
+echo "41    )    Enter value of inventory at the end of the year.                                                    	  "
+echo "43m   )    Enter the month (mm) your vehicle was placed in service for business purposes.                      	  "
+echo "43d   )    Enter the day (dd) your vehicle was placed in service for business purposes.                        	  "
+echo "43y   )    Enter the year (yyyy) your vehicle was placed in service for business purposes.                     	  "
+echo "44a   )    Enter the number of miles you drove your vehicle for business during 2023.                          	  "
+echo "44b   )    Enter the number of miles you drove your vehicle for commuting during 2023.                         	  "
+echo "44c   )    Enter the number of miles you drove your vehicle for other purposes during 2023.                    	  "
+echo "45y   )    Enter x if your vehicle was available for personal use during off-duty hours.                       	  "
+echo "45n   )    Enter x if your vehicle was not available for personal use during off-duty hours.                   	  "
+echo "46y   )    Enter x if you or your spouse have anothe vehicle available for personal use.                       	  "
+echo "46n   )    Enter x if you or your spouse do not have anothe vehicle availabel for personal use.                	  "
+echo "47ay  )    Enter x if you have evidence to support your deduction.                                             	  "
+echo "47an  )    Enter x if you do not have evidence to support your deduction.                                      	  "
+echo "47by  )    Enter x if your evidence is not written.                                                            	  "
+echo "47bn  )    Enter x if your evidence is written.                                                                	  "
+echo "Exp1nm)    Enter the name of the first business expense catagory.                                              	  "
+echo "Exp1  )    Enter the amount expensedvfor the first expense catagory.                                           	  "
+echo "Exp2nm)    Enter the name of the second business expensecatagory.                                              	  "
+echo "Exp2  )    Enter the amount expensed for the second expense catagory                                           	  "
+echo "Exp3nm)    Enter the name of the thiird business expense catagory.                                             	  "
+echo "Exp3  )    Enter the amount expensed for the third expense catagory.                                           	  "
+echo "Exp4nm)    Enter the name of the fourth business expense catagory.                                             	  "
+echo "Exp4  )    Enter the amount expensed for the fourth expense catagory.                                          	  "
+echo "Exp5nm)    Enter the name of the fifth business expense catagory.                                              	  "
+echo "Exp5  )    Enter the amount expensed for the fifth expense catagory.                                           	  "
+echo "Exp6nm)    Enter the name of the sixth business expense catagory.                                              	  "
+echo "Exp6  )    Enter the amount expensed for the sixthe expense catagory.                                          	  "
+echo "Exp7nm)    Enter the name of the seventh business expense catagory.                                            	  "
+echo "Exp7  )    Enter the amount expensed for the seventh expense catagory.                                         	  "
+echo "Exp8nm)    Enter the name of the eighth business expense catagory.                                             	  "
+echo "Exp8  )    Enter the amount expensed for the eight expense catagory.                                           	  "
+echo "Exp9nm)    Enter the name of the ninth business expense catagory.                                              	  "
+echo "Exp9  )    Enter the amount expensed for the ninth expenses catagory.                                          	  "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SchedC_line_data_choice
+echo
+     case $SchedC_line_data_choice in
+PrBus )    set_line_menu_text   $1 $2  linePrBus                            ;;
+B1    )    set_line_menu_text   $1 $2  lineB1                               ;;
+B2    )    set_line_menu_text   $1 $2  lineB2                               ;;
+B3    )    set_line_menu_text   $1 $2  lineB3                               ;;
+B4    )    set_line_menu_text   $1 $2  lineB4                               ;;
+B5    )    set_line_menu_text   $1 $2  lineB5                               ;;
+B6    )    set_line_menu_text   $1 $2  lineB6                               ;;
+BusNm )    set_line_menu_text   $1 $2  lineBusNm                            ;;
+D1    )    set_line_menu_text   $1 $2  lineD1                               ;;
+D2    )    set_line_menu_text   $1 $2  lineD2                               ;;
+D3    )    set_line_menu_text   $1 $2  lineD3                               ;;
+D4    )    set_line_menu_text   $1 $2  lineD4                               ;;
+D5    )    set_line_menu_text   $1 $2  lineD5                               ;;
+D6    )    set_line_menu_text   $1 $2  lineD6                               ;;
+D7    )    set_line_menu_text   $1 $2  lineD7                               ;;
+D8    )    set_line_menu_text   $1 $2  lineD8                               ;;
+D9    )    set_line_menu_text   $1 $2  lineD9                               ;;
+Addr1 )    set_line_menu_text   $1 $2  lineAddr1                            ;;
+Addr2 )    set_line_menu_text   $1 $2  lineAddr2                            ;;
+City  )    set_line_menu_text   $1 $2  lineCity                             ;;
+ST    )    set_line_menu_text   $1 $2  lineST                               ;;
+zip   )    set_line_menu_text   $1 $2  linezip                              ;;
+cash  )    set_line_menu_text   $1 $2  linecash                             ;;
+accru )    set_line_menu_text   $1 $2  lineaccru                            ;;
+other )    set_line_menu_text   $1 $2  lineother                            ;;
+specif)    set_line_menu_text   $1 $2  linespecif                           ;;
+Gy    )    set_line_menu_text   $1 $2  lineGy                               ;;
+Gn    )    set_line_menu_text   $1 $2  lineGn                               ;;
+Hx    )    set_line_menu_text   $1 $2  lineHx                               ;;
+Iy    )    set_line_menu_text   $1 $2  lineIy                               ;;
+In    )    set_line_menu_text   $1 $2  lineIn                               ;;
+Jy    )    set_line_menu_text   $1 $2  lineJy                               ;;
+Jn    )    set_line_menu_text   $1 $2  lineJn                               ;;
+01Ck  )    set_line_menu_text   $1 $2  line01Ck                             ;;
+01    )    set_line_menu_number $1 $2  line01                               ;;
+02    )    set_line_menu_number $1 $2  line02                               ;;
+04    )    set_line_menu_number $1 $2  line04                               ;;
+06    )    set_line_menu_number $1 $2  line06                               ;;
+08    )    set_line_menu_number $1 $2  line08                               ;;
+09    )    set_line_menu_number $1 $2  line09                               ;;
+10    )    set_line_menu_number $1 $2  line10                               ;;
+11    )    set_line_menu_number $1 $2  line11                               ;;
+12    )    set_line_menu_number $1 $2  line12                               ;;
+13    )    set_line_menu_number $1 $2  line13                               ;;
+14    )    set_line_menu_number $1 $2  line14                               ;;
+15    )    set_line_menu_number $1 $2  line15                               ;;
+16a   )    set_line_menu_number $1 $2  line16a                              ;;
+16b   )    set_line_menu_number $1 $2  line16b                              ;;
+17    )    set_line_menu_number $1 $2  line17                               ;;
+18    )    set_line_menu_number $1 $2  line18                               ;;
+19    )    set_line_menu_number $1 $2  line19                               ;;
+20a   )    set_line_menu_number $1 $2  line20a                              ;;
+20b   )    set_line_menu_number $1 $2  line20b                              ;;
+21    )    set_line_menu_number $1 $2  line21                               ;;
+22    )    set_line_menu_number $1 $2  line22                               ;;
+23    )    set_line_menu_number $1 $2  line23                               ;;
+24a   )    set_line_menu_number $1 $2  line24a                              ;;
+24b   )    set_line_menu_number $1 $2  line24b                              ;;
+25    )    set_line_menu_number $1 $2  line25                               ;;
+26    )    set_line_menu_number $1 $2  line26                               ;;
+27a   )    set_line_menu_number $1 $2  line27a                              ;;
+27b   )    set_line_menu_number $1 $2  line27b                              ;;
+30a   )    set_line_menu_number $1 $2  line30a                              ;;
+30b   )    set_line_menu_number $1 $2  line30b                              ;;
+30    )    set_line_menu_number $1 $2  line30                               ;;
+32a   )    set_line_menu_text   $1 $2  line32a                              ;;
+32b   )    set_line_menu_text   $1 $2  line32b                              ;;
+33a   )    set_line_menu_text   $1 $2  line33a                              ;;
+33b   )    set_line_menu_text   $1 $2  line33b                              ;;
+33c   )    set_line_menu_text   $1 $2  line33c                              ;;
+34y   )    set_line_menu_text   $1 $2  line34y                              ;;
+34n   )    set_line_menu_text   $1 $2  line34n                              ;;
+35    )    set_line_menu_number $1 $2  line35                               ;;
+36    )    set_line_menu_number $1 $2  line36                               ;;
+37    )    set_line_menu_number $1 $2  line37                               ;;
+38    )    set_line_menu_number $1 $2  line38                               ;;
+39    )    set_line_menu_number $1 $2  line39                               ;;
+41    )    set_line_menu_number $1 $2  line41                               ;;
+43m   )    set_line_menu_text   $1 $2  line43m                              ;;
+43d   )    set_line_menu_text   $1 $2  line43d                              ;;
+43y   )    set_line_menu_text   $1 $2  line43y                              ;;
+44a   )    set_line_menu_number $1 $2  line44a                              ;;
+44b   )    set_line_menu_number $1 $2  line44b                              ;;
+44c   )    set_line_menu_number $1 $2  line44c                              ;;
+45y   )    set_line_menu_text   $1 $2  line45y                              ;;
+45n   )    set_line_menu_text   $1 $2  line45n                              ;;
+46y   )    set_line_menu_text   $1 $2  line46y                              ;;
+46n   )    set_line_menu_text   $1 $2  line46n                              ;;
+47ay  )    set_line_menu_text   $1 $2  line47ay                             ;;
+47an  )    set_line_menu_text   $1 $2  line47an                             ;;
+47by  )    set_line_menu_text   $1 $2  line47by                             ;;
+47bn  )    set_line_menu_text   $1 $2  line47bn                             ;;
+Exp1nm)    set_line_menu_text   $1 $2  lineExp1nm                           ;;
+Exp1  )    set_line_menu_number $1 $2  lineExp1                             ;;
+Exp2nm)    set_line_menu_text   $1 $2  lineExp2nm                           ;;
+Exp2  )    set_line_menu_number $1 $2  lineExp2                             ;;
+Exp3nm)    set_line_menu_text   $1 $2  lineExp3nm                           ;;
+Exp3  )    set_line_menu_number $1 $2  lineExp3                             ;;
+Exp4nm)    set_line_menu_text   $1 $2  lineExp4nm                           ;;
+Exp4  )    set_line_menu_number $1 $2  lineExp4                             ;;
+Exp5nm)    set_line_menu_text   $1 $2  lineExp5nm                           ;;
+Exp5  )    set_line_menu_number $1 $2  lineExp5                             ;;
+Exp6nm)    set_line_menu_text   $1 $2  lineExp6nm                           ;;
+Exp6  )    set_line_menu_number $1 $2  lineExp6                             ;;
+Exp7nm)    set_line_menu_text   $1 $2  lineExp7nm                           ;;
+Exp7  )    set_line_menu_number $1 $2  lineExp7                             ;;
+Exp8nm)    set_line_menu_text   $1 $2  lineExp8nm                           ;;
+Exp8  )    set_line_menu_number $1 $2  lineExp8                             ;;
+Exp9nm)    set_line_menu_text   $1 $2  lineExp9nm                           ;;
+Exp9  )    set_line_menu_number $1 $2  lineExp9                             ;;
+q     )    break;;                       
+esac
+done
+}

@@ -1,0 +1,50 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+tlin      	!void      	!001       	!Enter x if form is void.                                                                            	!i1099div.pdf        	!1     	!     
+tlin      	!corr      	!002       	!Enter x if form has been corrected.                                                                 	!i1099div.pdf        	!1     	!     
+tlin      	!pnam1     	!003       	!Emter payor's name line1.                                                                           	!i1099div.pdf        	!1     	!     
+tlin      	!pnam2     	!004       	!Enter payor's name line2.                                                                           	!i1099div.pdf        	!1     	!     
+tlin      	!padd1     	!005       	!Enter line1 of payor's address.                                                                     	!i1099div.pdf        	!1     	!     
+tlin      	!padd2     	!006       	!Enter line2 of payor's address.                                                                     	!i1099div.pdf        	!1     	!     
+tlin      	!pcity     	!007       	!Enter payor's city.                                                                                 	!i1099div.pdf        	!1     	!     
+tlin      	!pST       	!008       	!Emter payor's state.                                                                                	!i1099div.pdf        	!1     	!     
+tlin      	!pctry     	!009       	!Enter payor's country.                                                                              	!i1099div.pdf        	!1     	!     
+tlin      	!pzip      	!010       	!Enter payor's zip.                                                                                  	!i1099div.pdf        	!1     	!     
+tlin      	!ptel      	!011       	!Emter payor's telephone number.                                                                     	!i1099div.pdf        	!1     	!     
+tlin      	!pTIN      	!012       	!Enter payor's TIN.                                                                                  	!i1099div.pdf        	!1     	!     
+tlin      	!rTIN      	!013       	!Enter recipient's TIN.                                                                              	!i1099div.pdf        	!1     	!     
+tlin      	!rname1    	!014       	!Enter recipient's name line1.                                                                       	!i1099div.pdf        	!1     	!     
+tlin      	!rname2    	!015       	!Enter recipient's name line2.                                                                       	!i1099div.pdf        	!1     	!     
+tlin      	!raddr1    	!016       	!Enter line1 of recipient's address,                                                                 	!i1099div.pdf        	!1     	!     
+tlin      	!raddr2    	!017       	!Enter line2 of recipient's addresss,                                                                	!i1099div.pdf        	!1     	!     
+tlin      	!rcity     	!018       	!Enter recipient's city.                                                                             	!i1099div.pdf        	!1     	!     
+tlin      	!rST       	!019       	!Emter recipient's state.                                                                            	!i1099div.pdf        	!1     	!     
+tlin      	!rctry     	!020       	!Enter recipient's country.                                                                          	!i1099div.pdf        	!1     	!     
+tlin      	!rzip      	!021       	!Enter recipient's zip.                                                                              	!i1099div.pdf        	!1     	!     
+tlin      	!FATCA     	!022       	!Enter x if FATCA is required.                                                                       	!i1099div.pdf        	!1     	!     
+tlin      	!actNo     	!023       	!Enter accounts number.                                                                              	!i1099div.pdf        	!1     	!     
+tlin      	!2TIN      	!024       	!Enter x if second TIN.                                                                              	!i1099div.pdf        	!1     	!     
+dlin      	!01a       	!025       	!Enter total ordinary dividends.                                                                     	!i1099div.pdf        	!2     	!     
+dlin      	!01b       	!026       	!Enter qualified dividends.                                                                          	!i1099div.pdf        	!4     	!     
+tlin      	!20yr      	!027       	!Enter last two digits of year of report.                                                            	!i1099div.pdf        	!4     	!     
+dlin      	!02a       	!028       	!Enter total capital gain distribution.                                                              	!i1099div.pdf        	!4     	!     
+dlin      	!02b       	!029       	!Enter unrecaptured Sec. 1250 gain.                                                                  	!i1099div.pdf        	!4     	!     
+dlin      	!02c       	!030       	!Enter Sec. 1250 gain.                                                                               	!i1099div.pdf        	!4     	!     
+dlin      	!02d       	!031       	!Enter collectibles (28%) gain.                                                                      	!i1099div.pdf        	!4     	!     
+dlin      	!02e       	!032       	!Enter Section 897 ordinary dividends.                                                               	!i1099div.pdf        	!4     	!     
+dlin      	!02f       	!033       	!Enter Section 897 capital gain.                                                                     	!i1099div.pdf        	!4     	!     
+dlin      	!03        	!034       	!Enter nondividend distributions.                                                                    	!i1099div.pdf        	!5     	!     
+dlin      	!04        	!035       	!Enter federal income tax withheld.                                                                  	!i1099div.pdf        	!5     	!     
+dlin      	!05        	!036       	!Enter Section 199A dividends.                                                                       	!i1099div.pdf        	!5     	!     
+dlin      	!06        	!037       	!Enter Investment expenses.                                                                          	!i1099div.pdf        	!5     	!     
+dlin      	!07        	!038       	!Enter foreign tax paid.                                                                             	!i1099div.pdf        	!5     	!     
+tlin      	!08        	!039       	!Enter foreign country or US possession.                                                             	!i1099div.pdf        	!5     	!     
+dlin      	!09        	!040       	!Enter cash liquidation distributions.                                                               	!i1099div.pdf        	!5     	!     
+dlin      	!10        	!041       	!Enter noncash liquidation distrivutions.                                                            	!i1099div.pdf        	!5     	!     
+dlin      	!12        	!042       	!Enter exempt-interest dividends.                                                                    	!i1099div.pdf        	!5     	!     
+tlin      	!13        	!043       	!Enter specified private activity bond interest dividends.                                           	!i1099div.pdf        	!5     	!     
+tlin      	!14a       	!044       	!Enter first state with tax withheld.                                                                	!i1099div.pdf        	!5     	!     
+tlin      	!15a       	!045       	!Enter first state's ID number.                                                                      	!i1099div.pdf        	!5     	!     
+dlin      	!16a       	!046       	!Enter tax withheld by first state.                                                                  	!i1099div.pdf        	!5     	!     
+tlin      	!14b       	!047       	!Enter second state with tax withheld.                                                               	!i1099div.pdf        	!5     	!     
+tlin      	!15b       	!048       	!Enter second state's ID number.                                                                     	!i1099div.pdf        	!5     	!     
+dlin      	!16b       	!049       	!Enter tax withheld by second state.                                                                 	!i1099div.pdf        	!5     	!     

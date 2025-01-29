@@ -1,0 +1,42 @@
+editTInstructions(){
+    echo "Editing instructions is only for development."
+    echo "This ability will be removed from the working program."
+
+#The $# is the number of parameters.     
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile. tempfile=$tempfile."
+
+echo "The local instructions for this line are:"
+#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
+echo "Do you wish to enter or change the local instructions for this line?"
+echo "Enter y or n."
+read this
+
+if yOrn $this
+then
+       echo "Editing existing instructions is not currently possible."
+       echo "Please enter anew any instructions you wish to give:"
+       read instructions
+#       echo "$instructions"
+#       sed '/<instructions>/s/<instructions>.*<\/instructions>/<instructions>'"$instructions"'<\/instructions>/' $infile > $tempfile 
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instTin.xsl -PARAM instructions "$instructions" -out $tempfile
+#       cat $tempfile
+       mv $tempfile $infile
+       cat $infile
+else
+	echo "The instructions have been kept unchanged."
+fi
+
+echo "The local instructions for this line are:"
+#sed -n '/<instructions>/s/<instructions>//;s/<\/instructions>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/instout.xsl
+}    

@@ -1,0 +1,51 @@
+#! /bin/bash
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+    for file in $(dir ../Data/$1_Copy00*)
+    do
+      foo=$file
+
+      filea="$1_Copy00_line"
+      fileb=${foo##*line}
+      filec="$1_Copy13_line"
+
+      file1=$(echo $filea$fileb)
+      file2=$(echo $filec$fileb)
+
+
+      if [ -f ../Data/$file2 ]
+	 
+      then
+	  echo "$file2 data left untouched."
+      else
+
+      cp ../Data/$file1 ../Data/$file2
+      sed 's/Copy00/Copy13/g' ../Data/$file2 > ../Data/$file2.tmp
+      sed 's/copy00/copy13/g' ../Data/$file2.tmp > ../Data/$file2
+      rm ../Data/$file2.tmp
+      echo "$file2 added to data files."
+
+
+      fi
+	    
+
+    done    

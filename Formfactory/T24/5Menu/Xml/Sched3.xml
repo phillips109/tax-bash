@@ -1,0 +1,152 @@
+<Form fname="Sched3">
+<taxline name="01" type="dlin" color="black">
+<menuEntry>Enter foreign tax credit from Form 1116.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>102</pgNo>
+</taxline>
+<taxline name="02" type="dlin" color="black">
+<menuEntry>Enter credit for chaild and dependent care expenses. Form 2441.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>102</pgNo>
+</taxline>
+<taxline name="03" type="dlin" color="black">
+<menuEntry>Enter education credits from Form 8863 line 19.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>102</pgNo>
+</taxline>
+<taxline name="04" type="dlin" color="black">
+<menuEntry>Enter retirement savings contributions credit. Form 8880.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>102</pgNo>
+</taxline>
+<taxline name="05a" type="dlin" color="black">
+<menuEntry>Enter residentioal clean energy credit. Form 5695 line.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="05b" type="dlin" color="black">
+<menuEntry>Enter energy efficient home improvement credit. Forom 5695 line32.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06a" type="dlin" color="black">
+<menuEntry>Enter general business credit. Form 3800.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06b" type="dlin" color="black">
+<menuEntry>Enter credit for prior year minimum tax. Form 3800.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06c" type="dlin" color="black">
+<menuEntry>Enter adoption credit. Form8839.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06d" type="dlin" color="black">
+<menuEntry>Enter credit for the elderly or disables. Schedule R.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06f" type="dlin" color="black">
+<menuEntry>Enter clean vehicle credit. Fomr 8936.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06g" type="dlin" color="black">
+<menuEntry>Enter mortgage interes credit. Form 8396.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06h" type="dlin" color="black">
+<menuEntry>Enter District of Columbia firsts-time homebuyer credit. Form 8859.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06i" type="dlin" color="black">
+<menuEntry>Enter qualified electric credit. Form8834.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06j" type="dlin" color="black">
+<menuEntry>Enter alternative fuel vehicle refueling property credit. Form 8911.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06k" type="dlin" color="black">
+<menuEntry>Enter credit to holders of tax credit bonds. Form 8912.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06l" type="dlin" color="black">
+<menuEntry>Enter amount on Form  8978, line 14.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>103</pgNo>
+</taxline>
+<taxline name="06m" type="dlin" color="black">
+<menuEntry>Enter credit for previously owned clean vehicles. Form 8936.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="06z" type="dlin" color="black">
+<menuEntry>Enter other nonrefundable credits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="06line" type="tlin" color="black">
+<menuEntry>Enter types of credit.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="09" type="dlin" color="black">
+<menuEntry>Enter net premium tax credit. Form8962.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="10" type="dlin" color="black">
+<menuEntry>Enter amount paid with request for extension to file.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="11" type="dlin" color="black">
+<menuEntry>Enter excess social security and tire 1 RRTA tax withheld.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="12" type="dlin" color="black">
+<menuEntry>Enter credit for federal tax on fuels. Form 4136.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="13a" type="dlin" color="black">
+<menuEntry>Enter credits from Form2439.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="13b" type="dlin" color="black">
+<menuEntry>Enter credit for repayment of amounts included in income from earlier years.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="13c" type="dlin" color="black">
+<menuEntry>Enter elective payment election amount. Form 3800, Paart III, line 6, column i.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="13d" type="dlin" color="black">
+<menuEntry>Enter deferred amount of net 966 tax liabiity.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="13z" type="dlin" color="black">
+<menuEntry>Enter other payments or refundable credits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+<taxline name="13zline" type="tlin" color="black">
+<menuEntry>Enter types of credit.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>104</pgNo>
+</taxline>
+</Form>

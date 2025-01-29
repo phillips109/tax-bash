@@ -1,0 +1,17 @@
+
+showIRSinstructions(){
+#The $# is the number of parameters.     
+params=$#
+echo "$params"
+if [ $params = "3" ]; then
+    pgNo="$3"
+   
+elif [ $params = "4" ]; then
+    pgNo=$4
+    
+fi
+echo $pgNo    
+#qpdfview --unique ~/Downloads/i1040gi.pdf#$1  --search "$2"  &
+qpdfview --unique ../IRS/i1040gi.pdf#$pgNo &
+return
+}

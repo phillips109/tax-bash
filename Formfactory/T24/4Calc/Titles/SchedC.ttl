@@ -1,0 +1,130 @@
+xaddit	!2name 	!3format	!4augend     	!5addend     	!6+addend
+addit 	!07    	!046    	!                              	!            	!            
+addit 	!28    	!071    	!                              	!            	!            
+addit 	!40    	!089    	!                              	!            	!            
+addit 	!totlO 	!120    	!                              	!            	!            
+xdlin 	!2name 	!3format	!4dummy
+dlin  	!01    	!040    	!                              
+dlin  	!02    	!041    	!                              
+dlin  	!05    	!044    	!                              
+dlin  	!06    	!045    	!                              
+dlin  	!08    	!047    	!                              
+dlin  	!09    	!048    	!                              
+dlin  	!10    	!049    	!                              
+dlin  	!11    	!050    	!                              
+dlin  	!12    	!051    	!                              
+dlin  	!13    	!052    	!                              
+dlin  	!14    	!053    	!                              
+dlin  	!15    	!054    	!                              
+dlin  	!16a   	!055    	!                              
+dlin  	!16b   	!056    	!                              
+dlin  	!17    	!057    	!                              
+dlin  	!18    	!058    	!                              
+dlin  	!19    	!059    	!                              
+dlin  	!20a   	!060    	!                              
+dlin  	!20b   	!061    	!                              
+dlin  	!21    	!062    	!                              
+dlin  	!22    	!063    	!                              
+dlin  	!23    	!064    	!                              
+dlin  	!24a   	!065    	!                              
+dlin  	!24b   	!066    	!                              
+dlin  	!25    	!067    	!                              
+dlin  	!26    	!068    	!                              
+dlin  	!30    	!075    	!                              
+dlin  	!30a   	!073    	!
+dlin  	!30b   	!074    	!                              
+dlin  	!35    	!084    	!                              
+dlin  	!36    	!085    	!                              
+dlin  	!37    	!086    	!                              
+dlin  	!38    	!087    	!                              
+dlin  	!39    	!088    	!                              
+dlin  	!41    	!090    	!                              
+dlin  	!44a   	!095    	!                              
+dlin  	!44b   	!096    	!                              
+dlin  	!44c   	!097    	!                              
+dlin  	!Exp1  	!107    	!                              
+dlin  	!Exp2  	!109    	!                              
+dlin  	!Exp3  	!111    	!                              
+dlin  	!Exp4  	!113    	!                              
+dlin  	!Exp5  	!115    	!                              
+dlin  	!Exp6  	!117    	!                              
+dlin  	!Exp7  	!119    	!                              
+dlin  	!Exp8  	!117    	!                              
+dlin  	!Exp9  	!119    	!                              
+xdPull	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dPull 	!04    	!043    	!                              	!            	!      	!
+dPull 	!27a   	!069    	!                              	!            	!      	!
+dPull 	!27b   	!070    	!                              	!            	!      	!
+xsubtr	!2name 	!3format	!4minuend    	!5subtrahend
+subtr 	!03    	!042    	!                              	!
+subtr 	!29    	!072    	!                              	!
+subtr 	!31    	!076    	!                              	!
+subtr 	!42    	!091    	!                              	!
+xtlin 	!2name 	!3form       	!4copy 	!5line
+tlin  	!01Ck  	!039         	!                              	!
+tlin  	!32a   	!077         	!                              	!
+tlin  	!32b   	!078         	!                              	!
+tlin  	!33a   	!079         	!                              	!
+tlin  	!33b   	!080         	!                              	!
+tlin  	!33c   	!081         	!                              	!
+tlin  	!34n   	!083         	!                              	!
+tlin  	!34y   	!082         	!                              	!
+tlin  	!43d   	!093         	!                              	!
+tlin  	!43m   	!092         	!                              	!
+tlin  	!43y   	!094         	!                              	!
+tlin  	!45n   	!099         	!                              	!
+tlin  	!45y   	!098         	!                              	!
+tlin  	!46n   	!101         	!                              	!
+tlin  	!46y   	!100         	!                              	!
+tlin  	!47an  	!103         	!                              	!
+tlin  	!47ay  	!102         	!                              	!
+tlin  	!47bn  	!105         	!                              	!
+tlin  	!47by  	!104         	!                              	!
+tlin  	!accru 	!029         	!                              	!
+tlin  	!Addr1 	!023         	!                              	!
+tlin  	!Addr2 	!024         	!                              	!
+tlin  	!B1    	!007         	!                              	!
+tlin  	!B2    	!008         	!                              	!
+tlin  	!B3    	!009         	!                              	!
+tlin  	!B4    	!010         	!                              	!
+tlin  	!B5    	!011         	!                              	!
+tlin  	!B6    	!012         	!                              	!
+tlin  	!BusNm 	!013         	!                              	!
+tlin  	!cash  	!028         	!                              	!
+tlin  	!City  	!025         	!                              	!
+tlin  	!D1    	!014         	!                              	!
+tlin  	!D2    	!015         	!                              	!
+tlin  	!D3    	!016         	!                              	!
+tlin  	!D4    	!017         	!                              	!
+tlin  	!D5    	!018         	!                              	!
+tlin  	!D6    	!019         	!                              	!
+tlin  	!D7    	!020         	!                              	!
+tlin  	!D8    	!021         	!                              	!
+tlin  	!D9    	!022         	!                              	!
+tlin  	!Exp1nm	!106         	!                              	!
+tlin  	!Exp2nm	!108         	!                              	!
+tlin  	!Exp3nm	!110         	!                              	!
+tlin  	!Exp4nm	!112         	!                              	!
+tlin  	!Exp5nm	!114         	!                              	!
+tlin  	!Exp6nm	!116         	!                              	!
+tlin  	!Exp7nm	!118         	!                              	!
+tlin  	!Exp8nm	!116         	!                              	!
+tlin  	!Exp9nm	!118         	!                              	!
+tlin  	!Gn    	!033         	!                              	!
+tlin  	!Gy    	!032         	!                              	!
+tlin  	!Hx    	!034         	!                              	!
+tlin  	!In    	!036         	!                              	!
+tlin  	!Iy    	!035         	!                              	!
+tlin  	!Jn    	!038         	!                              	!
+tlin  	!Jy    	!037         	!                              	!
+tlin  	!other 	!030         	!                              	!
+tlin  	!PrBus 	!006         	!                              	!
+tlin  	!specif	!031         	!                              	!
+tlin  	!ST    	!026         	!                              	!
+tlin  	!zip   	!027         	!                              	!
+xtPull	!2name 	!3form       	!4copy 	!5line
+tPull 	!TFNI  	!001         	!                              	!
+tPull 	!TLN   	!002         	!                              	!
+tPull 	!TSSNoF	!003         	!                              	!
+tPull 	!TSSNoL	!005         	!                              	!
+tPull 	!TSSNoM	!004         	!                              	!

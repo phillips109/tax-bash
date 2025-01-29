@@ -1,0 +1,99 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+set_SchedD_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in SchedD in which to enter or edit data:"
+echo
+echo "QOFy)    Enter x if you disposed of any investments in a qualified opportunity fund during the tax year."
+echo "QOFn)    Enter x if you did not.            "
+echo "01ad)    Enter proceeds for 1a.             "
+echo "01ae)    Enter basis of 1a.                 "
+echo "01bd)    Enter Proceeds for 1b.             "
+echo "01be)    Enter basis for 1b.                "
+echo "01bg)    Enter adjustments to 1b.           "
+echo "02d )    Enter Proceed for 2.               "
+echo "02e )    Enter basis for 2.                 "
+echo "02g )    Enter adjustments to 2.            "
+echo "03d )    Enter proceeds of 3.               "
+echo "03e )    Enter bases of 3.                  "
+echo "03g )    Enter adjustments to 3.            "
+echo "04  )    Enter short term gain form Forms 6252, 4684, 6781 and 8824."
+echo "05  )    Enter short term gain or loss from partnerships, estates and trusts."
+echo "06  )    Enter short term capital loss carryover."
+echo "08ad)    Enter proceeds from 8a.            "
+echo "08ae)    Enter basis for 8a.                "
+echo "08bd)    Enter proceeds from 8b.            "
+echo "08be)    Enter basis for 8b.                "
+echo "08bg)    Enter adjustments to 8b.           "
+echo "09d )    Enter proceeds from 9.             "
+echo "09e )    Enter basis for 9.                 "
+echo "09g )    Enter adjustments to 9.            "
+echo "10d )    Enter proceeds from 10.            "
+echo "10e )    Enter basis for 10.                "
+echo "10g )    Enter adjustments to 10.           "
+echo "11  )    Enter long term gain from Form4797, 2439, 6252, 4684, 6781, and 8824."
+echo "12  )    Enter long term gain from partnerships, S corporations, estates and trusts."
+echo "13  )    Enter capital gain distsributions. "
+echo "14  )    Enter long term capital loss carryover."
+echo
+echo "   q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read SchedD_line_data_choice
+echo
+     case $SchedD_line_data_choice in
+QOFy)    set_line_menu_number $1 $2  lineQOFy                             ;;
+QOFn)    set_line_menu_number $1 $2  lineQOFn                             ;;
+01ad)    set_line_menu_number $1 $2  line01ad                             ;;
+01ae)    set_line_menu_number $1 $2  line01ae                             ;;
+01bd)    set_line_menu_number $1 $2  line01bd                             ;;
+01be)    set_line_menu_number $1 $2  line01be                             ;;
+01bg)    set_line_menu_number $1 $2  line01bg                             ;;
+02d )    set_line_menu_number $1 $2  line02d                              ;;
+02e )    set_line_menu_number $1 $2  line02e                              ;;
+02g )    set_line_menu_number $1 $2  line02g                              ;;
+03d )    set_line_menu_number $1 $2  line03d                              ;;
+03e )    set_line_menu_number $1 $2  line03e                              ;;
+03g )    set_line_menu_number $1 $2  line03g                              ;;
+04  )    set_line_menu_number $1 $2  line04                               ;;
+05  )    set_line_menu_number $1 $2  line05                               ;;
+06  )    set_line_menu_number $1 $2  line06                               ;;
+08ad)    set_line_menu_number $1 $2  line08ad                             ;;
+08ae)    set_line_menu_number $1 $2  line08ae                             ;;
+08bd)    set_line_menu_number $1 $2  line08bd                             ;;
+08be)    set_line_menu_number $1 $2  line08be                             ;;
+08bg)    set_line_menu_number $1 $2  line08bg                             ;;
+09d )    set_line_menu_number $1 $2  line09d                              ;;
+09e )    set_line_menu_number $1 $2  line09e                              ;;
+09g )    set_line_menu_number $1 $2  line09g                              ;;
+10d )    set_line_menu_number $1 $2  line10d                              ;;
+10e )    set_line_menu_number $1 $2  line10e                              ;;
+10g )    set_line_menu_number $1 $2  line10g                              ;;
+11  )    set_line_menu_number $1 $2  line11                               ;;
+12  )    set_line_menu_number $1 $2  line12                               ;;
+13  )    set_line_menu_number $1 $2  line13                               ;;
+14  )    set_line_menu_number $1 $2  line14                               ;;
+q   )    break;;                       
+esac
+done
+}

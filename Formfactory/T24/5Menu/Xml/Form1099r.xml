@@ -1,0 +1,262 @@
+<Form fname="Form1099r">
+<taxline name="pname1" type="tlin" color="black">
+<menuEntry>Enter part 1 of payor's name.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pname2" type="tlin" color="black">
+<menuEntry>Enter part 2 of payor's name.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="paddr1" type="tlin" color="black">
+<menuEntry>Enter part 1 of payor's address.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="paddr2" type="tlin" color="black">
+<menuEntry>Enter part 2 of payor's address.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pcity" type="tlin" color="black">
+<menuEntry>Enter payor's city.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pST" type="tlin" color="black">
+<menuEntry>Enter payor's State.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pzip" type="tlin" color="black">
+<menuEntry>Enter payor's zip code.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pCntry" type="tlin" color="black">
+<menuEntry>Emter [aupr's country.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="ptel" type="tlin" color="black">
+<menuEntry>Enter payor's telephone number.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="pTIN" type="tlin" color="black">
+<menuEntry>Enter payor's TIN number.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>9</pgNo>
+</taxline>
+<taxline name="rTIN" type="tlin" color="black">
+<menuEntry>Enter recipient's TIN number.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rname1" type="tlin" color="black">
+<menuEntry>Enter part 1 of recipient's name.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rname2" type="tlin" color="black">
+<menuEntry>Enter part 2 of recipient's name.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="raddr1" type="tlin" color="black">
+<menuEntry>Emter part 1 pf recipient's address.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="raddr2" type="tlin" color="black">
+<menuEntry>Enter part 2 of recipient's address.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rcity" type="tlin" color="black">
+<menuEntry>Enter recipient's city.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rST" type="tlin" color="black">
+<menuEntry>Enter recipient's State.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rzip" type="tlin" color="black">
+<menuEntry>Enter recipiemt's zip code.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="rCntry" type="tlin" color="black">
+<menuEntry>Enter recipient's country.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="acctNo" type="tlin" color="black">
+<menuEntry>Enter account number.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>9</pgNo>
+</taxline>
+<taxline name="01" type="dlin" color="black">
+<menuEntry>Enter gross distribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>9</pgNo>
+</taxline>
+<taxline name="02a" type="dlin" color="black">
+<menuEntry>Enter taxable amount.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>10</pgNo>
+</taxline>
+<taxline name="02b1" type="tlin" color="black">
+<menuEntry>Enter an x if the taxable amount has not been determined.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="02b2" type="tlin" color="black">
+<menuEntry>Enter an x if it is the total distribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="03" type="dlin" color="black">
+<menuEntry>Enter capital gain includled in box 2a.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="04" type="dlin" color="black">
+<menuEntry>Enter federal income tax withheld.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="05" type="dlin" color="black">
+<menuEntry>Enter employee contributions/designated Roth contributions or insurance premiums.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="06" type="dlin" color="black">
+<menuEntry>Emter net unrealized appreciation in employer's securities.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="07" type="tlin" color="black">
+<menuEntry>Enter the distribution code(s).</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="07a" type="tlin" color="black">
+<menuEntry>Emter x if IRA/SEP/SIMPLE.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="08" type="dlin" color="black">
+<menuEntry>Emter Other.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>14</pgNo>
+</taxline>
+<taxline name="08pct" type="tlin" color="black">
+<menuEntry>Enter the precentage.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>14</pgNo>
+</taxline>
+<taxline name="09a" type="dlin" color="black">
+<menuEntry>Enter your percentage of total distribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>14</pgNo>
+</taxline>
+<taxline name="09b" type="dlin" color="black">
+<menuEntry>Enter total employee contributions.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>14</pgNo>
+</taxline>
+<taxline name="10" type="dlin" color="black">
+<menuEntry>Enter amount allocatable to IRR within 5 years.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>14</pgNo>
+</taxline>
+<taxline name="11" type="dlin" color="black">
+<menuEntry>Emter first year of designated Roth contribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>14</pgNo>
+</taxline>
+<taxline name="12Ck" type="tlin" color="black">
+<menuEntry>Enter x if FATCA filing requirement.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="13" type="dlin" color="black">
+<menuEntry>Enter date of payment.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="14a" type="dlin" color="black">
+<menuEntry>Enter first State's tax withheld.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="15a" type="tlin" color="black">
+<menuEntry>Enter first State/Payer's State number.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="16a" type="dlin" color="black">
+<menuEntry>Enter first State distribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="14b" type="dlin" color="black">
+<menuEntry>Enter second State's tax withheld.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="15b" type="tlin" color="black">
+<menuEntry>Enter second State/Payer's State number.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="16b" type="dlin" color="black">
+<menuEntry>Enter second State distribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="17a" type="dlin" color="black">
+<menuEntry>Enter first locality tax withheld.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="18a" type="tlin" color="black">
+<menuEntry>Enter first locality name.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="19a" type="dlin" color="black">
+<menuEntry>Enter first locality distribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="17b" type="dlin" color="black">
+<menuEntry>Enter second locality tax withheld.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="18b" type="tlin" color="black">
+<menuEntry>Enter second locality name.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="19b" type="dlin" color="black">
+<menuEntry>Enter second locality distribution.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="void" type="tlin" color="black">
+<menuEntry>Enter x if form is void.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>1</pgNo>
+</taxline>
+<taxline name="corr" type="tlin" color="black">
+<menuEntry>Enter x if form is corrected.</menuEntry>
+<IRSInstructions>i1099r.pdf</IRSInstructions>
+<pgNo>8</pgNo>
+</taxline>
+</Form>

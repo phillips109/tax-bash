@@ -1,0 +1,402 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<line number='07'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line06a</augend>
+<addend>line06b</addend>
+<addend>line06c</addend>
+<addend>line06d</addend>
+<addend>line06f</addend>
+<addend>line06g</addend>
+<addend>line06h</addend>
+<addend>line06i</addend>
+<addend>line06j</addend>
+<addend>line06k</addend>
+<addend>line06l</addend>
+<addend>line06m</addend>
+<addend>line06z</addend>
+</line>
+
+<line number='08'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01</augend>
+<addend>line02</addend>
+<addend>line03</addend>
+<addend>line04</addend>
+<addend>line05a</addend>
+<addend>line05b</addend>
+<addend>line07</addend>
+</line>
+
+<line number='14'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line13a</augend>
+<addend>line13b</addend>
+<addend>line13c</addend>
+<addend>line13d</addend>
+<addend>line13z</addend>
+</line>
+
+<line number='15'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line09</augend>
+<addend>line10</addend>
+<addend>line11</addend>
+<addend>line12</addend>
+<addend>line14</addend>
+</line>
+
+<dlin number='06z'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>613</override>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1302</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13z'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1305</override>
+<blank></blank>
+</dlin>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06d'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06f'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06g'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06h'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06i'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06j'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06k'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06l'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06m'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='09'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13d'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>dummy</override>
+<blank></blank>
+</dlin>
+
+<line name='06line'
+ color='blue'>
+<type>tlin</type>
+<text>This is line 06.</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='13zline'
+ color='blue'>
+<type>tlin</type>
+<text>This is line 13.</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line number='SFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SFNI</line2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SLN</line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNol'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNol</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</line>
+</Form>

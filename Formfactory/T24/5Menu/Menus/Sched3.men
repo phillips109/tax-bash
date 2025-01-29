@@ -1,0 +1,97 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+set_Sched3_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Sched3 in which to enter or edit data:"
+echo
+echo "01     )    Enter foreign tax credit from Form 1116."
+echo "02     )    Enter credit for chaild and dependent care expenses. Form 2441."
+echo "03     )    Enter education credits from Form 8863 line 19."
+echo "04     )    Enter retirement savings contributions credit. Form 8880."
+echo "05a    )    Enter residentioal clean energy credit. Form 5695 line."
+echo "05b    )    Enter energy efficient home improvement credit. Forom 5695 line32."
+echo "06a    )    Enter general business credit. Form 3800."
+echo "06b    )    Enter credit for prior year minimum tax. Form 3800."
+echo "06c    )    Enter adoption credit. Form8839.   "
+echo "06d    )    Enter credit for the elderly or disables. Schedule R."
+echo "06f    )    Enter clean vehicle credit. Fomr 8936."
+echo "06g    )    Enter mortgage interes credit. Form 8396."
+echo "06h    )    Enter District of Columbia firsts-time homebuyer credit. Form 8859."
+echo "06i    )    Enter qualified electric credit. Form8834."
+echo "06j    )    Enter alternative fuel vehicle refueling property credit. Form 8911."
+echo "06k    )    Enter credit to holders of tax credit bonds. Form 8912."
+echo "06l    )    Enter amount on Form  8978, line 14."
+echo "06m    )    Enter credit for previously owned clean vehicles. Form 8936."
+echo "06z    )    Enter other nonrefundable credits. "
+echo "06line )    Enter types of credit.             "
+echo "09     )    Enter net premium tax credit. Form8962."
+echo "10     )    Enter amount paid with request for extension to file."
+echo "11     )    Enter excess social security and tire 1 RRTA tax withheld."
+echo "12     )    Enter credit for federal tax on fuels. Form 4136."
+echo "13a    )    Enter credits from Form2439.       "
+echo "13b    )    Enter credit for repayment of amounts included in income from earlier years."
+echo "13c    )    Enter elective payment election amount. Form 3800, Paart III, line 6, column i."
+echo "13d    )    Enter deferred amount of net 966 tax liabiity."
+echo "13z    )    Enter other payments or refundable credits."
+echo "13zline)    Enter types of credit.             "
+echo
+echo "      q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Sched3_line_data_choice
+echo
+     case $Sched3_line_data_choice in
+01     )    set_line_menu_number $1 $2  line01                               ;;
+02     )    set_line_menu_number $1 $2  line02                               ;;
+03     )    set_line_menu_number $1 $2  line03                               ;;
+04     )    set_line_menu_number $1 $2  line04                               ;;
+05a    )    set_line_menu_number $1 $2  line05a                              ;;
+05b    )    set_line_menu_number $1 $2  line05b                              ;;
+06a    )    set_line_menu_number $1 $2  line06a                              ;;
+06b    )    set_line_menu_number $1 $2  line06b                              ;;
+06c    )    set_line_menu_number $1 $2  line06c                              ;;
+06d    )    set_line_menu_number $1 $2  line06d                              ;;
+06f    )    set_line_menu_number $1 $2  line06f                              ;;
+06g    )    set_line_menu_number $1 $2  line06g                              ;;
+06h    )    set_line_menu_number $1 $2  line06h                              ;;
+06i    )    set_line_menu_number $1 $2  line06i                              ;;
+06j    )    set_line_menu_number $1 $2  line06j                              ;;
+06k    )    set_line_menu_number $1 $2  line06k                              ;;
+06l    )    set_line_menu_number $1 $2  line06l                              ;;
+06m    )    set_line_menu_number $1 $2  line06m                              ;;
+06z    )    set_line_menu_number $1 $2  line06z                              ;;
+06line )    set_line_menu_text   $1 $2  line06line                           ;;
+09     )    set_line_menu_number $1 $2  line09                               ;;
+10     )    set_line_menu_number $1 $2  line10                               ;;
+11     )    set_line_menu_number $1 $2  line11                               ;;
+12     )    set_line_menu_number $1 $2  line12                               ;;
+13a    )    set_line_menu_number $1 $2  line13a                              ;;
+13b    )    set_line_menu_number $1 $2  line13b                              ;;
+13c    )    set_line_menu_number $1 $2  line13c                              ;;
+13d    )    set_line_menu_number $1 $2  line13d                              ;;
+13z    )    set_line_menu_number $1 $2  line13z                              ;;
+13zline)    set_line_menu_text   $1 $2  line13zline                          ;;
+q      )    break;;                       
+esac
+done
+}

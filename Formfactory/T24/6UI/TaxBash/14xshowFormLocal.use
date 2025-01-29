@@ -1,0 +1,50 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+showFormLocal() {
+#This is the version of showForm to be called from a particular line. It displays the line with yellow background color.
+
+#The $# is the number of parameters.     
+params=$#
+echo "$params"
+if [ $params = "3" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_*.xml"
+    tempfile="../Data/$1_Copy$2_$3_*.tmp"
+fi
+echo "infile is $infile. tempfile=$tempfile."
+
+#This sets the background-color to yellow for the line.
+sed '/<bgcolor>/s/^.*$/<bgcolor>yellow<\/bgcolor>/' $infile > $tempfile
+mv $tempfile $infile
+
+showForm $1 $2
+
+
+#This restores the back-ground color to blank.
+sed '/<bgcolor>/s/^.*$/<bgcolor><\/bgcolor>/' $infile > $tempfile
+mv $tempfile $infile
+
+return
+}
+

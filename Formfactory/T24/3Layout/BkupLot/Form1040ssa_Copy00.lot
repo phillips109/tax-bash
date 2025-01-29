@@ -1,0 +1,135 @@
+Copyright(C) 2019 Phillips Wedemeyer
+                              
+This file is part of a program called Tax-bash
+                              
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the FNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+                              
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+GNU General Public License for more details.
+                              
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+                              
+                              
+For direction on how to separate pages see ../notes.
+
+                              
+Form
+                              
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/f1040ssa-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.12	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!0.72  	!2.50
+xtype 	!2name 		!3top  	!4dummy				!5form       	!6copy 	!7line2
+tPull 	!TFNI  		!5.94  	!John E        			!Bkg           	!00    	!lineTFNI      
+tlin  	!Box03d1	!6.68  	!Box03d1           		!            	!    	!      
+tlin  	!Box03d2	!6.88  	!Box03d2           		!            	!    	!      
+tlin  	!Box03d3	!7.08  	!Medicare PartB premiums        !            	!    	!      
+tlin  	!Box03d4	!7.28  	!Box03d4           		!            	!    	!      
+tlin  	!Box03d5	!7.48  	!Box03d5           		!            	!      	!      
+tlin  	!Box03d6	!7.68  	!Box03d6           		!            	!      	!      
+tlin  	!Box03d7	!7.88  	!Box03d7           		!            	!      	!      
+tlin  	!Box03d8	!8.08  	!Box03d8           		!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a1    	!0.00  	!right 	!0.72  	!2.50  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!Box03 	!6.34  	!2000              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!left  	!2.53  	!4.29  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull 	!TLN   	!5.94  	!Dough             	!Bkg           	!00    	!lineTLN      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b1    	!0.00  	!right	!2.53  	!4.29  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!Box04 	!6.34  	!1000              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b2    	!0.00  	!right 	!2.53  	!3.40  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!Box03e1	!6.68  	!Box03e1       	!            	!      	!      
+tlin  	!Box03e2	!6.88  	!Box03e2       	!            	!      	!      
+tlin  	!Box03e3	!7.08  	!Box03e3       	!            	!      	!      
+tlin  	!Box03e4	!7.28  	!Box03e4       	!            	!      	!      
+tlin  	!Box03e5	!7.48  	!Box03e5       	!            	!      	!      
+tlin  	!Box03e6	!7.68  	!Box03e6       	!            	!      	!      
+tlin  	!Box03e7	!7.88  	!Box03e7       	!            	!      	!      
+tlin  	!Box03e8	!8.08  	!Box03e8       	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!right  	!4.43  	!4.84  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull 	!TSSNoF	!5.94  	!                  	!Bkg           	!00    	!lineTSSNoF      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!center	!4.90  	!5.37  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull 	!TSSNoM	!5.94  	!                  	!Bkg           	!00    	!lineTSSNoM      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!left 	!5.40  	!6.17  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull 	!TSSNoL	!5.94  	!                  	!Bkg           	!00    	!lineTSSNoL      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!right 	!4.43  	!6.17  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!Box05 	!6.34  	!5000                  	!           	!    	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!3.48  	!6.17  
+xtype 	!2name 		!3top  	!4dummy          	!5form       	!6copy 	!7line2
+tlin  	!Box04d1	!6.68  	!Box04d1             	!            	!      	!      
+tlin  	!Box04d2	!6.88  	!Box04d2       		!            	!      	!      
+tlin  	!Box04d3	!7.08  	!Box04d3       		!            	!      	!      
+tlin  	!Box04d4	!7.28  	!Box04d4       		!            	!      	!      
+tlin  	!Box04d5	!7.48  	!Box04d5       		!            	!      	!      
+tlin  	!Box04d6	!7.68  	!Box04d6       		!            	!      	!      
+tlin  	!Box07 		!8.72  	!JAMES P KNOX		!            	!      	!      
+tlin  	!Box07a		!8.92  	!100 MARKET STREET      !            	!      	!      
+tlin 	!Box07b		!9.12  	!PITTSBURGH PA 15018	!            	!      	!      
+tlin  	!Box08 		!9.96  	!070-90-9131A  		!            	!      	!      
+Endcol*******************     
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g1     	!0.00  	!right 	!3.48  	!6.17  
+xtype 	!2name 		!3top  	!4dummy          	!5form       	!6copy 	!7line2
+dlin  	!Box06		!8.25  	!6000          		!            	!      	!      
+Endcol*******************     
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!right 	!5.20  	!6.17  
+xtype 	!2name 		!3top  	!4dummy        	!5form       	!6copy 	!7line2
+tlin  	!Box04e1	!6.68  	!Box04e1       	!            	!      	!      
+tlin  	!Box04e2	!6.88  	!Box04e2       	!            	!      	!      
+tlin  	!Box04e3	!7.08  	!Box04e3       	!            	!      	!      
+tlin  	!Box04e4	!7.28  	!Box04e4       	!            	!      	!      
+tlin  	!Box04e5	!7.48  	!Box04e5       	!            	!      	!      
+tlin  	!Box04e6	!7.68  	!Box04e6       	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgS    
+EndForm

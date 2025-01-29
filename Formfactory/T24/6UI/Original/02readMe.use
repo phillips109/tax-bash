@@ -1,0 +1,5 @@
+
+viewReadMe(){
+cat README | less
+return
+}

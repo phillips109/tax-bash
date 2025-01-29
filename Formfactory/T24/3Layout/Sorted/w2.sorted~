@@ -1,0 +1,70 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!a     	!      	!      	!         	!
+a     	!dlin  	!02    	!      	!      	!         	!200
+a     	!dlin  	!04    	!      	!      	!         	!400
+a     	!dlin  	!06    	!      	!      	!         	!600
+a     	!dlin  	!08    	!      	!      	!         	!800
+a     	!dlin  	!10    	!      	!      	!         	!1000
+a     	!tlin  	!12a   	!      	!      	!         	!XX1201
+a     	!tlin  	!12b   	!      	!      	!         	!XX1202
+a     	!tlin  	!12c   	!      	!      	!         	!XX1203
+a     	!tlin  	!12d   	!      	!      	!         	!XX1204
+Col   	!col   	!b     	!      	!      	!         	!
+b     	!dlin  	!01    	!      	!      	!         	!100
+b     	!dlin  	!03    	!      	!      	!         	!300
+b     	!dlin  	!05    	!      	!      	!         	!500
+b     	!dlin  	!07    	!      	!      	!         	!700
+b     	!dlin  	!09    	!      	!      	!         	!900
+b     	!dlin  	!11    	!      	!      	!         	!1100
+b     	!tlin  	!14    	!      	!      	!         	!1400
+Col   	!col   	!c     	!      	!      	!         	!
+c     	!tlin  	!13a   	!      	!      	!         	!x
+Col   	!col   	!d     	!      	!      	!         	!
+d     	!tlin  	!13b   	!      	!      	!         	!x
+Col   	!col   	!e     	!      	!      	!         	!
+e     	!tlin  	!13c   	!      	!      	!         	!x
+Col   	!col   	!f     	!      	!      	!         	!
+f     	!tlin  	!pname 	!      	!      	!         	!A.B. Smith Co
+f     	!tlin  	!payrID	!      	!      	!         	!12-123456
+f     	!tlin  	!paddr1	!      	!      	!         	!13 River Street
+f     	!tlin  	!paddr2	!      	!      	!         	!Suite 300
+f     	!tlin  	!pcity 	!      	!      	!         	!Boston
+f     	!tlin  	!ctrNo 	!      	!      	!         	!987654321
+f     	!tlin  	!TFNI  	!      	!      	!         	!John E.
+f     	!tlin  	!raddr1	!      	!      	!         	!300 Grant Street
+f     	!tlin  	!raddr2	!      	!      	!         	!Apt 3
+f     	!tlin  	!rcity 	!      	!      	!         	!Pittsburgh
+f     	!tlin  	!15sa  	!      	!      	!         	!PA 1501
+f     	!dlin  	!15b   	!      	!      	!         	!MA 1502
+Col   	!col   	!g     	!      	!      	!         	!
+g     	!tlin  	!pST   	!      	!      	!         	!MA
+g     	!tlin  	!rST   	!      	!      	!         	!PA
+Col   	!col   	!h     	!      	!      	!         	!
+h     	!tlin  	!pzip  	!      	!      	!         	!01006
+h     	!tlin  	!rzip  	!      	!      	!         	!15123
+Col   	!col   	!i     	!      	!      	!         	!
+i     	!tlin  	!TSSNoF	!      	!      	!         	!123
+i     	!tlin  	!TLN   	!      	!      	!         	!Dough
+Col   	!col   	!j     	!      	!      	!         	!
+j     	!tlin  	!TSSNoM	!      	!      	!         	!45
+Col   	!col   	!k     	!      	!      	!         	!
+k     	!tlin  	!TSSNoL	!      	!      	!         	!6789
+Col   	!col   	!l     	!      	!      	!         	!
+l     	!tlin  	!tsuff 	!      	!      	!         	!Jr
+Col   	!col   	!m     	!      	!      	!         	!
+m     	!dlin  	!16a   	!      	!      	!         	!1601
+m     	!dlin  	!16b   	!      	!      	!         	!1602
+Col   	!col   	!n     	!      	!      	!         	!
+n     	!dlin  	!17a   	!      	!      	!         	!1701
+n     	!dlin  	!17b   	!      	!      	!         	!1702
+Col   	!col   	!o     	!      	!      	!         	!
+o     	!dlin  	!18a   	!      	!      	!         	!1801
+o     	!dlin  	!18b   	!      	!      	!         	!1802
+Col   	!col   	!p     	!      	!      	!         	!
+p     	!dlin  	!19a   	!      	!      	!         	!1901
+p     	!dlin  	!19b   	!      	!      	!         	!1902
+Col   	!col   	!q     	!      	!      	!         	!
+q     	!tlin  	!20a   	!      	!      	!         	!2001
+q     	!tlin  	!20b   	!      	!      	!         	!2012
+Col   	!col   	!r     	!      	!      	!         	!
+r     	!tlin  	!void  	!      	!      	!         	!x

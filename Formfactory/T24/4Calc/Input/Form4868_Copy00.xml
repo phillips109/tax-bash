@@ -1,0 +1,200 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<dlin number='amtpd'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='t0tpay'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='tottax'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<line number='bal'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>linetottax</minuend>
+<subtrahend>linet0tpay</subtrahend>
+</line>
+
+<line name='1040NR'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='addr1'
+ color='blue'>
+<type>tlin</type>
+<text>23 Front Street</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='addr2'
+ color='blue'>
+<type>tlin</type>
+<text>Apt 204</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='away'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='city'
+ color='blue'>
+<type>tlin</type>
+<text>Pittsburgh</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='ST'
+ color='blue'>
+<type>tlin</type>
+<text>PA</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='zip'
+ color='blue'>
+<type>tlin</type>
+<text>15218</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line number='SFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SFNI</line2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SLN</line2>
+</line>
+
+<line number='SSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SSSNoF</line2>
+</line>
+
+<line number='SSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SSSNoL</line2>
+</line>
+
+<line number='SSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SSSNoM</line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoL</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</line>
+</Form>

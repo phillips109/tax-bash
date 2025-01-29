@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<Form>
+
+<pgS name='Single'
+bkgImage='../Jpg/fei-page-001.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.12in'>
+
+<col name='a'
+left='6.82in'
+right='7.81in'
+width='0.99in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='01'
+top='1.66in'
+height='0.15in'
+color='red'>
+<dummy>100</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='02a'
+top='1.86in'
+height='0.15in'
+color='red'>
+<dummy>201</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='02b'
+top='2.16in'
+height='0.15in'
+color='red'>
+<dummy>202</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='02c'
+top='2.37in'
+height='0.15in'
+color='red'>
+<dummy>203</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+top='2.57in'
+height='0.15in'
+color='red'>
+<dummy>300</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+top='3.27in'
+height='0.15in'
+color='red'>
+<dummy>400</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+top='3.70in'
+height='0.15in'
+color='red'>
+<dummy>500</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+top='4.02in'
+height='0.15in'
+color='red'>
+<dummy>600</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgS>
+</Form>

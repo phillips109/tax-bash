@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:vendor="http://www.gnucash.org/XML/vendor" xmlns:entry="http://www.gnucash.org/XML/entry" xmlns:invoice="http://www.gnucash.org/XML/invoice" xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox" xmlns:bt-days="http://www.gnucash.org/XML/bt-days" xmlns:billterm="http://www.gnucash.org/XML/billterm" xmlns:order="http://www.gnucash.org/XML/order" xmlns:employee="http://www.gnucash.org/XML/employee" xmlns:tte="http://www.gnucash.org/XML/tte" xmlns:taxtable="http://www.gnucash.org/XML/taxtable" xmlns:owner="http://www.gnucash.org/XML/owner" xmlns:addr="http://www.gnucash.org/XML/addr" xmlns:job="http://www.gnucash.org/XML/job" xmlns:cust="http://www.gnucash.org/XML/cust" xmlns:lot="http://www.gnucash.org/XML/lot" xmlns:recurrence="http://www.gnucash.org/XML/recurrence" xmlns:bgt="http://www.gnucash.org/XML/bgt" xmlns:fs="http://www.gnucash.org/XML/fs" xmlns:ts="http://www.gnucash.org/XML/ts" xmlns:trn="http://www.gnucash.org/XML/trn" xmlns:sx="http://www.gnucash.org/XML/sx" xmlns:split="http://www.gnucash.org/XML/split" xmlns:slot="http://www.gnucash.org/XML/slot" xmlns:price="http://www.gnucash.org/XML/price" xmlns:cmdty="http://www.gnucash.org/XML/cmdty" xmlns:cd="http://www.gnucash.org/XML/cd" xmlns:book="http://www.gnucash.org/XML/book" xmlns:act="http://www.gnucash.org/XML/act" xmlns:gnc="http://www.gnucash.org/XML/gnc">
+<taxlines>
+<taxline color="red">
+<linename>SchedD-Copy00-line14</linename>
+<override>-138586</override>
+</taxline>
+<taxline color="red">
+<linename>SchedD-Copy00-line1500</linename>
+<override>1500</override>
+</taxline>
+<taxline color="red">
+<linename>SchedD-Copy00-line3000</linename>
+<override>3000</override>
+</taxline>
+<taxline color="red">
+<linename>SchedD-Copy00-linemin1</linename>
+<override>-1.00</override>
+</taxline>
+</taxlines>
+</IRSForms>

@@ -1,0 +1,13 @@
+type      	!name      	!seq       	!menuEntry                                                                                            	!IRSInstructions     	!pgNo 	!     
+tlin      	!TFNI      	!001       	!Enter taxpayor first name initial                                                                     	!Bkg.pdf             	!1     	!     
+tlin      	!TLN       	!002       	!Enter taxpayor last name                                                                            	!Bkg.pdf             	!1     	!     
+tlin      	!TSSNoF    	!003       	!Enter first 3 digits of taxpayor's SS No.                                                             	!Bkg.pdf             	!1     	!     
+tlin      	!TSSNoM    	!004       	!Enter middle 2 digits of taxpayor's SS No.                                                     	!Bkg.pdf             	!1     	!     
+tlin      	!TSSNoL    	!005       	!Enter last 4 digits of taxpayor's SS No.                                                              	!Bkg.pdf             	!1     	!     
+tlin      	!SFNI      	!006       	!Enter spouse's first name initial                                                                   	!Bkg.pdf             	!1     	!     
+tlin      	!SLN       	!007       	!Enter spouse's last name                                                                            	!Bkg.pdf             	!1     	!     
+tlin      	!SSSNoF    	!008       	!Enter first 3 digits of spouse's SS No.                                                               	!Bkg.pdf             	!1     	!     
+tlin      	!SSSNoM    	!009       	!Enter middle 2 digits of spouse's SS No.                                                             	!Bkg.pdf             	!1     	!     
+tlin      	!SSSNoL    	!010       	!Enter last 4 digits of spouse's SS No.                                                              	!Bkg.pdf             	!1     	!     
+tlin      	!FS        	!011       	!Enter filing status (S, MFJ, MFS, HOH, QSS)                                                         	!Bkg.pdf             	!1     	!     
+tlin      	!Apart     	!012       	!Enter time living apart (All, Some, None)                                                           	!Bkg.pdf             	!1     	!     

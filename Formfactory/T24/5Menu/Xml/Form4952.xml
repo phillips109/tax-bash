@@ -1,0 +1,42 @@
+<Form fname="Form4952">
+<taxline name="01" type="dlin" color="black">
+<menuEntry>Enter investment expense paid or accrued in 2023.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="02" type="dlin" color="black">
+<menuEntry>Enter disallowed investment expense from 2022 Form4952 line07.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="04a" type="dlin" color="black">
+<menuEntry>Enter gross income from property held for investment.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="04b" type="dlin" color="black">
+<menuEntry>Enter qualified dividends included on line 4a.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="04d" type="dlin" color="black">
+<menuEntry>Enter net gain from the disposition of property held for investment.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="04e" type="dlin" color="black">
+<menuEntry>Enter the smaller of line 4d or your net capital gain from the disposition of property held for investment.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+<taxline name="04g" type="dlin" color="black">
+<menuEntry>Enter the amount from lines 4b and 4e that you elect to include in investment income.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="05" type="dlin" color="black">
+<menuEntry>Enter investment expenses.</menuEntry>
+<IRSInstructions>f4952.pdf</IRSInstructions>
+<pgNo>4</pgNo>
+</taxline>
+</Form>

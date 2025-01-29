@@ -1,0 +1,31 @@
+008	!dlin	!QOFy	!Enter x if you disposed of any investments in a qualified opportunity fund during the tax year.                              
+009	!dlin	!QOFn	!Enter x if you did not.
+010	!dlin	!01ad	!Enter proceeds for 1a.
+011	!dlin	!01ae	!Enter basis of 1a.        
+013	!dlin	!01bd	!Enter Proceeds for 1b.            
+014	!dlin	!01be	!Enter basis for 1b.        
+015	!dlin	!01bg	!Enter adjustments to 1b.           
+017	!dlin	!02d	!Enter Proceed for 2.
+018	!dlin	!02e	!Enter basis for 2.
+019	!dlin	!02g	!Enter adjustments to 2.
+021	!dlin	!03d	!Enter proceeds of 3.
+022	!dlin	!03e	!Enter bases of 3.
+023	!dlin	!03g	!Enter adjustments to 3.
+025	!dlin	!04	!Enter short term gain form Forms 6252, 4684, 6781 and 8824.       
+026	!dlin	!05	!Enter short term gain or loss from partnerships, estates and trusts.                              
+027	!dlin	!06	!Enter short term capital loss carryover.          
+029	!dlin	!08ad	!Enter proceeds from 8a.                              
+030	!dlin	!08ae	!Enter basis for 8a.       
+032	!dlin	!08bd	!Enter proceeds from 8b.           
+033	!dlin	!08be	!Enter basis for 8b.       
+034	!dlin	!08bg	!Enter adjustments to 8b.           
+036	!dlin	!09d	!Enter proceeds from 9.      
+037	!dlin	!09e	!Enter basis for 9.        
+038	!dlin	!09g	!Enter adjustments to 9.            
+040	!dlin	!10d	!Enter proceeds from 10.       
+041	!dlin	!10e	!Enter basis for 10.       
+042	!dlin	!10g	!Enter adjustments to 10.           
+044	!dlin	!11	!Enter long term gain from Form4797, 2439, 6252, 4684, 6781, and 8824.      
+045	!dlin	!12	!Enter long term gain from partnerships, S corporations, estates and trusts.                              
+046	!dlin	!13	!Enter capital gain distsributions.              
+047	!dlin	!14	!Enter ong term capital loss carryover.

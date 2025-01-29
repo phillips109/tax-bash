@@ -1,0 +1,64 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+setupxalan(){
+    while true;
+    do
+    clear
+			
+    echo " tax-bash needs to use the java version of xalan."
+    echo " This is because the C(++) version does not implement"
+    echo " format-number() which tax-bash uses extensively."
+    echo
+    echo " The following steps will achieve that:"
+    echo
+    echo " Download from the Apache Xalan website"
+    echo " the most recent tarball which currently is"
+    echo "   xalan-j_2_7_3.tar.gz"
+    echo
+    echo " Move this tarball from ~/Downloads to the directory of your choice."
+    echo " I created the directory ~/Xalan-j_2_7_3/ and moved the tarball there."
+    echo
+    echo " Change directory into ~/Xalan-j_2_7_3/ and issue the following command:"
+    echo " tar -xvfz xalan-j_2_7_3.tar.gz"
+    echo
+    echo " This will create the directory xalan-j_2_7_3/ under ~/Xalan-j_2_7_3/"
+    echo " and unpacked the fop files into it."
+    echo
+    echo " This will also create in /usr/share/java"
+    echo " the file xalan2-2.7.3.jar"
+    echo
+    echo " The variable XALANJAVAJAR should be set to"
+    echo "   '-cp /usr/share/java/xalan2-2.7.3.jar'"
+    echo " preferabllly in ~/.bashrc"
+    echo " (The -cp is the option in java which sets the class path)"
+    echo
+    echo " Enter q to return to the previous menu."
+	read choice
+
+	case "$choice" in
+	    q) break;;
+	esac
+    done
+    
+
+}
+

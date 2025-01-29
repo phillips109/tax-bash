@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+	  Copyright(C) 2019 Phillips Wedemeyer
+
+	  This file is part of a program called Tax-bash.
+
+	  Tax-bash is free software: you can redistibute it and/or modify
+	  it under the terms of the FNU General Public License as published by
+	  the Free Software Foundation, either version 3 of the License, or
+	  (at your option) any later version.
+	  
+	  Tax-bash is distributed in the hope that it will be useful,
+	  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  GNU General Public License for more details.
+	  
+	  You should have received a copy of the GNU General Public License
+	  along with Tax-bash.  If not, see %lt;https://www.gnu.org/licenses/%gt;.
+
+	<fo:layout-master-set><fo:simple-page-master master-name="page" page-height="11.00in" page-width="8.50in"><fo:region-body/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="page"><fo:flow flow-name="xsl-region-body"><fo:block-container background-image="../Jpg/fei-page-001.jpg" height="11in" width="8.5in" left="0.00in" top="0.00in" position="absolute"><fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="8.5in" left="0.00in" top="-0.12in" position="absolute"><fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.99in" left="6.82in" top="0.00in" position="absolute"><fo:block-container top="1.66in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">100</fo:block></fo:block-container><fo:block-container top="1.86in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">201</fo:block></fo:block-container><fo:block-container top="2.16in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">202</fo:block></fo:block-container><fo:block-container top="2.37in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">203</fo:block></fo:block-container><fo:block-container top="2.57in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">300</fo:block></fo:block-container><fo:block-container top="3.27in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">400</fo:block></fo:block-container><fo:block-container top="3.70in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">500</fo:block></fo:block-container><fo:block-container top="4.02in" position="absolute"><fo:block background-color="yellow" height="0.15in" color="red">600</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+</fo:block-container>
+*******************************************************
+
+</fo:block-container></fo:flow></fo:page-sequence></fo:root>

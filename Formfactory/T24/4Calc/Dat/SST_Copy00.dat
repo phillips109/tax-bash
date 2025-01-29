@@ -1,0 +1,642 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+
+it under the terms of the GNU General Public License as published by
+
+the Free Software Foundation, either version 3 of the License, or
+
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+xaddit
+2name
+3format
+4augend
+5addend
+6addend
+
+addit
+05
+#####0
+line02
+line03
+line04
+
+addit
+06
+#####0
+line11s1
+line12s1
+line13s1
+line14s1
+line15s1
+line16s1
+line17s1
+line18s1
+line19as1
+line20s1
+line23s1
+line25s1
+
+addit
+03
+#####0
+line01z1040
+line02b1040
+line03b1040
+line04b1040
+line05b1040
+line071040
+line081040
+
+x*************************************
+
+xconst
+2name
+3format
+4dummy
+
+const
+50
+#0.00#
+0.50
+
+const
+85
+#0.00#
+0.85
+
+const
+00
+#####0
+0.00
+
+x*************************************
+
+xdPull
+2name
+3format
+4dummy
+5form
+6copy
+7line2
+
+dPull
+01
+#####0
+1000
+Form1040ssa
+01
+lineBox05
+
+
+dPull
+04
+#####0
+0
+Form1040
+01
+line02a
+
+dPull
+01z1040
+#####0
+0
+Form1040
+01
+line01z
+
+dPull
+02b1040
+#####0
+0
+Form1040
+01
+line02b
+
+dPull
+03b1040
+#####0
+0
+Form1040
+01
+line03b
+
+dPull
+04b1040
+#####0
+0
+Form1040
+01
+line04b
+
+dPull
+05b1040
+#####0
+0
+Form1040
+01
+line05b
+
+dPull
+071040
+#####0
+0
+Form1040
+01
+line07
+
+dPull
+081040
+#####0
+0
+Form1040
+01
+line08
+
+dPull
+11s1
+#####0
+0
+Form1040s1
+01
+line11
+
+dPull
+12s1
+#####0
+0
+Form1040s1
+01
+line12
+
+dPull
+13s1
+#####0
+0
+Form1040s1
+01
+line13
+
+dPull
+14s1
+#####0
+0
+Form1040s1
+01
+line114
+
+dPull
+15s1
+#####0
+0
+Form1040s1
+01
+line15
+
+dPull
+16s1
+#####0
+0
+Form1040s1
+01
+line16
+
+dPull
+17s1
+#####0
+0
+Form1040s1
+01
+line17
+
+dPull
+18s1
+#####0
+0
+Form1040s1
+01
+line18
+
+dPull
+19as1
+#####0
+0
+Form1040s1
+01
+line19a
+
+dPull
+20s1
+#####0
+0
+Form1040s1
+01
+line20
+
+dPull
+23s1
+#####0
+0
+Form1040s1
+01
+line23
+
+dPull
+25s1
+#####0
+0
+Form1040s1
+01
+line25
+
+
+
+x**************************************
+
+xtPull
+2name
+blank
+4dummy
+5form
+6copy
+7line2
+
+tPull
+FS
+blank
+blank
+Bkg
+00
+FS
+
+tPull
+Apart
+blank
+blank
+Bkg
+00
+Apart
+
+x*************************************
+
+xmult
+2name
+3format
+4multiplicand
+5multiplier
+
+mult
+02
+#####0
+line01
+line50
+
+x******************************************
+
+
+xsmOf
+2name
+3format
+4first
+5second
+
+smOf
+12a
+#####0
+line09
+line10
+
+smOf
+14a
+#####0
+line02
+line13
+
+smOf
+18a
+#####0
+line16
+line17
+
+x*************************************************
+
+xsubt0
+2name
+3format
+4minuend
+5subtrahend
+
+
+subt0
+11a
+#####0
+line09
+line10
+
+x***********************************************8
+
+cnum
+07
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &lt; $SST-Copy00-line05
+VALUOF$SST-Copy00-line05 - $SST-Copy00-line06
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+
+
+cnum
+08
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFJ'
+VALUOF32000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'S'
+VALUOF25000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'HOH'
+VALUOF25000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'QSS'
+VALUOF25000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'All'
+VALUOF25000
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+cnum
+09
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &lt; $SST-Copy00-line07
+VALUOF$SST-Copy00-line07 - $SST-Copy00-line08
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+cnum
+10
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFJ'
+VALUOF12000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'S'
+VALUOF9000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'HOH'
+VALUOF9000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'QSS'
+VALUOF9000
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart = 'All'
+VALUOF9000
+WHEN02
+CHOOS2
+
+cnum
+11
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line11a
+OTHER2
+CHOOS2
+
+cnum
+12
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line12a
+OTHER2
+CHOOS2
+
+cnum
+13
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line12 * $SST-Copy00-line50
+OTHER2
+CHOOS2
+
+cnum
+14
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line14a
+OTHER2
+CHOOS2
+
+
+
+
+cnum
+15
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line11 = 0
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line11 * $SST-Copy00-line85
+OTHER2
+CHOOS2
+
+cnum
+16
+#####0
+CHOOS1
+WHEN01SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-lineFS = 'MFS' and $SST-Copy00-lineApart != 'All'
+VALUOF$SST-Copy00-line07 * $SST-Copy00-line85
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line14 + $SST-Copy00-line15
+OTHER2
+CHOOS2
+
+cnum
+17
+#####0
+CHOOS1
+WHEN01SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line01 * $SST-Copy00-line85
+OTHER2
+CHOOS2
+
+cnum
+18
+#####0
+CHOOS1
+WHEN01$SST-Copy00-line06 &gt;= $SST-Copy00-line05
+VALUOF0
+WHEN02
+WHEN01$SST-Copy00-line08 &gt;= $SST-Copy00-line07
+VALUOF0
+WHEN02
+OTHER1
+VALUOF$SST-Copy00-line18a
+OTHER2
+CHOOS2
+
+
+xctext
+2name
+3format
+4test
+5value1
+6value2
+
+ctext
+07n
+BLANK
+CHOOS1
+WHEN01$SST-Copy00-line06  &lt; $SST-Copy00-line05
+VALUOF''
+WHEN02
+OTHER1
+VALUOF'x'
+OTHER2
+CHOOS2
+
+ctext
+07y
+blank
+CHOOS1
+WHEN01$SST-Copy00-line06  &lt; $SST-Copy00-line05
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+ctext
+09n
+BLANK
+CHOOS1
+WHEN01$SST-Copy00-line08  &lt; $SST-Copy00-line07
+VALUOF''
+WHEN02
+OTHER1
+VALUOF'x'
+OTHER2
+CHOOS2
+
+ctext
+09y
+blank
+CHOOS1
+WHEN01$SST-Copy00-line08  &lt; $SST-Copy00-line07
+VALUOF'x'
+WHEN02
+OTHER1
+VALUOF''
+OTHER2
+CHOOS2
+
+

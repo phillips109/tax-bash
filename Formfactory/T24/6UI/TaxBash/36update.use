@@ -1,0 +1,128 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+
+
+update(){
+
+for file in $(dir ../2Fo/)
+do
+    foo=$file
+    echo $foo
+    bar=${foo%%.2fo*}
+    echo $bar
+    copy=${bar##*Copy}
+    echo $copy
+    form=${foo%%_Copy*}
+    echo $form		  
+
+	
+    case $copy in
+	00) ;;
+	01) echo "Copy01 invoked."
+	    ../NewCopy/2focopy01 $form
+	    ../NewCopy/xslcopy01 $form
+	    ../NewCopy/datacopy01 $form
+	    ;;
+	02) echo "Copy02 invoked."
+	    ../NewCopy/2focopy02 $form
+	    ../NewCopy/xslcopy02 $form
+	    ../NewCopy/datacopy02 $form
+	    ;;
+	03) ../NewCopy/2focopy03 $form
+	    ../NewCopy/xslcopy03 $form
+	    ../NewCopy/datacopy03 $form
+	    ;;
+	04) ../NewCopy/2focopy04 $form
+	    ../NewCopy/xslcopy04 $form
+	    ../NewCopy/datacopy04 $form
+	    ;;
+	05) ../NewCopy/2focopy05 $form
+	    ../NewCopy/xslcopy05 $form
+	    ../NewCopy/datacopy05 $form
+	    ;;
+	06) ../NewCopy/2focopy06 $form
+	    ../NewCopy/xslcopy06 $form
+	    ../NewCopy/datacopy06 $form
+	    ;;
+	07) ../NewCopy/2focopy07 $form
+	    ../NewCopy/xslcopy07 $form
+	    ../NewCopy/datacopy07 $form
+	    ;;
+	08) ../NewCopy/2focopy08 $form
+	    ../NewCopy/xslcopy08 $form
+	    ../NewCopy/datacopy08 $form
+	    ;;
+	09) ../NewCopy/2focopy09 $form
+	    ../NewCopy/xslcopy09 $form
+	    ../NewCopy/datacopy09 $form
+	    ;;
+	10) ../NewCopy/2focopy10 $form
+	    ../NewCopy/xslcopy10 $form
+	    ../NewCopy/datacopy10 $form
+	    ;;
+	11) ../NewCopy/2focopy11 $form
+	    ../NewCopy/xslcopy11 $form
+	    ../NewCopy/datacopy11 $form
+	    ;;
+	12) ../NewCopy/2focopy12 $form
+	    ../NewCopy/xslcopy12 $form
+	    ../NewCopy/datacopy12 $form
+	    ;;
+	13) ../NewCopy/2focopy13 $form
+	    ../NewCopy/xslcopy13 $form
+	    ../NewCopy/datacopy13 $form
+	    ;;
+	14) ../NewCopy/2focopy14 $form
+	    ../NewCopy/xslcopy14 $form
+	    ../NewCopy/datacopy14 $form
+	    ;;
+	15) ../NewCopy/2focopy15 $form
+	    ../NewCopy/xslcopy15 $form
+	    ../NewCopy/datacopy15 $form
+	    ;;
+	16) ../NewCopy/2focopy16 $form
+	    ../NewCopy/xslcopy16 $form
+	    ../NewCopy/datacopy16 $form
+	    ;;
+	17) ../NewCopy/2focopy17 $form
+	    ../NewCopy/xslcopy17 $form
+	    ../NewCopy/datacopy17 $form
+	    ;;
+	18) ../NewCopy/2focopy18 $form
+	    ../NewCopy/xslcopy18 $form
+	    ../NewCopy/datacopy18 $form
+	    ;;
+	19) ../NewCopy/2focopy19 $form
+	    ../NewCopy/xslcopy19 $form
+	    ../NewCopy/datacopy19 $form
+	    ;;
+	20) ../NewCopy/2focopy20 $form
+	    ../NewCopy/xslcopy20 $form
+	    ../NewCopy/datacopy20 $form
+	    ;;
+
+    esac
+		
+done	
+}
+
+

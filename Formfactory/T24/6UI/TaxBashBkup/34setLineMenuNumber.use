@@ -1,0 +1,62 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+set_line_menu_number() {
+while true;
+do
+ clear
+ echo "The following actions can be taken on $1_$2_$3"
+ echo   
+ echo  "  0) edit local instructions for this line"
+ echo  "  1) show local instructions for this line"
+ echo  "  2) show IRS instructions for this line" 
+ echo  "  3) show current contents of the line"
+ echo  "  4) specify accounts from which to draw data for this line"
+ echo  "  5) enter number directly or override value obtained in (4)"
+ echo  "  6) redisplay the form, Schedule, or worksheet"
+ echo  "  7) Comes from:"
+ echo  "  8) Goes to:"
+ echo  "  9) Enter notes about this line"
+ echo  " 10) Change the color of this line."
+
+ echo  " q) quit"
+ echo "Please enter number of your choice and press Enter."
+ read action_choice
+  
+ case $action_choice in
+        0) editInstructions    $1 $2 $3 $4;;
+        1) showInstructions    $1 $2 $3 $4;;
+	2) showIRSinstructions $1 $2 $3 $4;;
+	3) showDataFile	       $1 $2 $3 $4;;
+        4) edit-numberline     $1 $2 $3 $4;;
+        5) edit-override       $1 $2 $3 $4;;
+	6) showForm	       $1 $2 $3 $4;;
+	7) comesFrom2	       $1 $2 $3 $4;;
+	8) goesTo	       $1 $2 $3 $4;;
+        9) enterNotes	       $1 $2 $3 $4;;
+       10) changeColor	       $1 $2 $3 $4;;
+
+	q) break;;
+    esac
+
+done
+
+}

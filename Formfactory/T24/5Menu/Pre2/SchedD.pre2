@@ -1,0 +1,32 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+dlin      	!QOFy      	!008       	!Enter x if you disposed of any investments in a qualified opportunity fund during the tax year.     	!i1040sd.pdf         	!11    	!     
+dlin      	!QOFn      	!009       	!Enter x if you did not.                                                                             	!i1040sd.pdf         	!11   	!     
+dlin      	!01ad      	!010       	!Enter proceeds for 1a.                                                                              	!i1040sd.pdf         	!11   	!     
+dlin      	!01ae      	!011       	!Enter basis of 1a.                                                                                  	!i1040sd.pdf         	!11   	!     
+dlin      	!01bd      	!013       	!Enter Proceeds for 1b.                                                                              	!i1040sd.pdf         	!11   	!     
+dlin      	!01be      	!014       	!Enter basis for 1b.                                                                                 	!i1040sd.pdf         	!11   	!     
+dlin      	!01bg      	!015       	!Enter adjustments to 1b.                                                                            	!i1040sd.pdf         	!11   	!     
+dlin      	!02d       	!017       	!Enter Proceed for 2.                                                                                	!i1040sd.pdf         	!11    	!     
+dlin      	!02e       	!018       	!Enter basis for 2.                                                                                  	!i1040sd.pdf         	!11   	!     
+dlin      	!02g       	!019       	!Enter adjustments to 2.                                                                             	!i1040sd.pdf         	!11   	!     
+dlin      	!03d       	!021       	!Enter proceeds of 3.                                                                                	!i1040sd.pdf         	!11   	!     
+dlin      	!03e       	!022       	!Enter bases of 3.                                                                                   	!i1040sd.pdf         	!11   	!     
+dlin      	!03g       	!023       	!Enter adjustments to 3.                                                                             	!i1040sd.pdf         	!11   	!     
+dlin      	!04        	!025       	!Enter short term gain form Forms 6252, 4684, 6781 and 8824.                                         	!i1040sd.pdf         	!11   	!     
+dlin      	!05        	!026       	!Enter short term gain or loss from partnerships, estates and trusts.                                	!i1040sd.pdf         	!11   	!     
+dlin      	!06        	!027       	!Enter short term capital loss carryover.                                                            	!i1040sd.pdf         	!11   	!     
+dlin      	!08ad      	!029       	!Enter proceeds from 8a.                                                                             	!i1040sd.pdf         	!11   	!     
+dlin      	!08ae      	!030       	!Enter basis for 8a.                                                                                 	!i1040sd.pdf         	!12   	!     
+dlin      	!08bd      	!032       	!Enter proceeds from 8b.                                                                             	!i1040sd.pdf         	!12   	!     
+dlin      	!08be      	!033       	!Enter basis for 8b.                                                                                 	!i1040sd.pdf         	!12   	!     
+dlin      	!08bg      	!034       	!Enter adjustments to 8b.                                                                            	!i1040sd.pdf         	!12   	!     
+dlin      	!09d       	!036       	!Enter proceeds from 9.                                                                              	!i1040sd.pdf         	!12   	!     
+dlin      	!09e       	!037       	!Enter basis for 9.                                                                                  	!i1040sd.pdf         	!12   	!     
+dlin      	!09g       	!038       	!Enter adjustments to 9.                                                                             	!i1040sd.pdf         	!12   	!     
+dlin      	!10d       	!040       	!Enter proceeds from 10.                                                                             	!i1040sd.pdf         	!12   	!     
+dlin      	!10e       	!041       	!Enter basis for 10.                                                                                 	!i1040sd.pdf         	!12   	!     
+dlin      	!10g       	!042       	!Enter adjustments to 10.                                                                            	!i1040sd.pdf         	!12   	!     
+dlin      	!11        	!044       	!Enter long term gain from Form4797, 2439, 6252, 4684, 6781, and 8824.                               	!i1040sd.pdf         	!12   	!     
+dlin      	!12        	!045       	!Enter long term gain from partnerships, S corporations, estates and trusts.                         	!i1040sd.pdf         	!12   	!     
+dlin      	!13        	!046       	!Enter capital gain distsributions.                                                                  	!i1040sd.pdf         	!12   	!     
+dlin      	!14        	!047       	!Enter long term capital loss carryover.                                                             	!i1040sd.pdf         	!12   	!     

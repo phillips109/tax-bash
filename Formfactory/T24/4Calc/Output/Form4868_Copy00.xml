@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<Form name="Form4868-Copy00">
+<copy00lineamtpd color="red">0</copy00lineamtpd>
+<copy00linet0tpay color="red">0</copy00linet0tpay>
+<copy00linetottax color="red">0</copy00linetottax>
+<copy00linebal color="red">0</copy00linebal>
+<copy00line1040NR color="blue"/>
+<copy00lineaddr1 color="blue"/>
+<copy00lineaddr2 color="blue"/>
+<copy00lineaway color="blue"/>
+<copy00linecity color="blue"/>
+<copy00lineST color="blue"/>
+<copy00linezip color="blue"/>
+<copy00lineSFNI color="blue"/>
+<copy00lineSLN color="blue"/>
+<copy00lineSSSNoF color="blue"/>
+<copy00lineSSSNoL color="blue"/>
+<copy00lineSSSNoM color="blue"/>
+<copy00lineTFNI color="blue"/>
+<copy00lineTLN color="blue"/>
+<copy00lineTSSNoF color="blue"/>
+<copy00lineTSSNoL color="blue"/>
+<copy00lineTSSNoM color="blue"/>
+</Form>
+</IRSForms>

@@ -1,0 +1,60 @@
+    
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+while true;
+      do    
+  clear
+  echo
+  echo "Welcome to Tax-bash."
+  echo
+  echo "0)  Read a description of the program"
+  echo "1)  On which programs is tax-bash dependent?"
+  echo "2)  What global variables should be set?"
+  echo "3)  How to set up Xalan to use the java version."
+  echo "4)  How to set up FOP"
+#  echo "5)  Setting windowing system under Ubuntu"
+  echo "5)  Installing qpdf"  
+  echo "6)  Initial actions to take with tax-bash."
+  echo "7)  Start using tax-bash"
+  echo
+  echo "q)  Exit the program"
+  read choice
+
+  case "$choice" in
+   0) description;;   
+   1) dependencies;;
+   2) variables;;
+   3) setupxalan;;
+   4) setupfop;;
+#   5) setupX11;;
+   5) installqpdf;; 
+   6) initial;;
+   7) set_menu_choice;;
+   q) exit;;   
+  esac
+	
+done	
+    
+#Tidy up and leave
+
+echo "Finished"
+
+exit 0
+

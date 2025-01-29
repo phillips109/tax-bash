@@ -1,0 +1,31 @@
+type      	!name      	!seq       	!menuEntry
+dlin      	!01        	!008       	!Enter foreign tax credit from Form 1116.
+dlin      	!02        	!009       	!Enter credit for chaild and dependent care expenses. Form 2441.
+dlin      	!03        	!010       	!Enter education credits from Form 8863 line 19.
+dlin      	!04        	!011       	!Enter retirement savings contributions credit. Form 8880.
+dlin      	!05a       	!012       	!Enter residentioal clean energy credit. Form 5695 line.
+dlin      	!05b       	!013       	!Enter energy efficient home improvement credit. Forom 5695 line32.
+dlin      	!06a       	!014       	!Enter general business credit. Form 3800.
+dlin      	!06b       	!015       	!Enter credit for prior year minimum tax. Form 3800.
+dlin      	!06c       	!016       	!Enter adoption credit. Form8839.
+dlin      	!06d       	!017       	!Enter credit for the elderly or disables. Schedule R.
+dlin      	!06f       	!018       	!Enter clean vehicle credit. Fomr 8936.
+dlin      	!06g       	!019       	!Enter mortgage interes credit. Form 8396.
+dlin      	!06h       	!020       	!Enter District of Columbia firsts-time homebuyer credit. Form 8859.
+dlin      	!06i       	!021       	!Enter qualified electric credit. Form8834.
+dlin      	!06j       	!022       	!Enter alternative fuel vehicle refueling property credit. Form 8911.
+dlin      	!06k       	!023       	!Enter credit to holders of tax credit bonds. Form 8912.
+dlin      	!06l       	!024       	!Enter amount on Form  8978, line 14.
+dlin      	!06m       	!025       	!Enter credit for previously owned clean vehicles. Form 8936.
+dlin      	!06z       	!026       	!Enter other nonrefundable credits.
+tlin      	!06line    	!027       	!Enter types of credit.
+dlin      	!09        	!030       	!Enter net premium tax credit. Form8962.
+dlin      	!10        	!031       	!Enter amount paid with request for extension to file.
+dlin      	!11        	!032       	!Enter excess social security and tire 1 RRTA tax withheld.
+dlin      	!12        	!033       	!Enter credit for federal tax on fuels. Form 4136.
+dlin      	!13a       	!034       	!Enter credits from Form2439.
+dlin      	!13b       	!035       	!Enter credit for repayment of amounts included in income from earlier years.
+dlin      	!13c       	!036       	!Enter elective payment election amount. Form 3800, Paart III, line 6, column i.
+dlin      	!13d       	!037       	!Enter deferred amount of net 966 tax liabiity.
+dlin      	!13z       	!038       	!Enter other payments or refundable credits.
+tlin      	!13zline   	!041       	!Enter types of credit.

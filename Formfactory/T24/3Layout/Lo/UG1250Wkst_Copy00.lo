@@ -1,0 +1,62 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+For direction on how to separate pages see ../notes.
+
+
+Form
+
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/ug1250-page-001.jpg
+
+xcol  	!2name 	!top   	!align 	!left  	!right
+col   	!      	!-0.12 	!left  	!0.00  	!8.50
+
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.90  	!7.63
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.37  	!1000              	!            	!      	!
+dlin  	!02    	!1.54  	!2000              	!            	!      	!
+dlin  	!03    	!1.70  	!3000              	!            	!      	!
+dlin  	!04    	!1.93  	!4000              	!            	!      	!
+dlin  	!05    	!2.20  	!5000              	!            	!      	!
+dlin  	!06    	!2.37  	!6000              	!            	!      	!
+dlin  	!09    	!2.88  	!9000              	!            	!      	!
+dlin  	!10    	!3.12  	!10000             	!            	!      	!
+dlin  	!11    	!3.48  	!11000             	!            	!      	!
+dlin  	!12    	!3.84  	!12000             	!            	!      	!
+dlin  	!13    	!4.00  	!13000             	!            	!      	!
+dlin  	!17    	!5.00  	!17000             	!            	!      	!
+dlin  	!18    	!5.25  	!18000             	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!5.68  	!6.19
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!07    	!2.54  	!7000              	!            	!      	!
+dlin  	!08    	!2.70  	!8000              	!            	!      	!
+dlin  	!14    	!4.25  	!14000             	!            	!      	!
+dlin  	!15    	!4.51  	!15000             	!            	!      	!
+dlin  	!16    	!4.76  	!16000             	!            	!      	!
+Endcol*******************
+
+Endcol*******************
+
+EndpgS
+EndForm

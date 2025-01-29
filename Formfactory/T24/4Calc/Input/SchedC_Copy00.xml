@@ -1,0 +1,1162 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<line number='07'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line05</augend>
+<addend>line06</addend>
+</line>
+
+<line number='28'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08</augend>
+<addend>line09</addend>
+<addend>line10</addend>
+<addend>line11</addend>
+<addend>line12</addend>
+<addend>line13</addend>
+<addend>line14</addend>
+<addend>line15</addend>
+<addend>line16a</addend>
+<addend>line16b</addend>
+<addend>line17</addend>
+<addend>line18</addend>
+<addend>line19</addend>
+<addend>line20a</addend>
+<addend>line20b</addend>
+<addend>line21</addend>
+<addend>line22</addend>
+<addend>line23</addend>
+<addend>line24a</addend>
+<addend>line24b</addend>
+<addend>line25</addend>
+<addend>line26</addend>
+<addend>line27a</addend>
+<addend>line27b</addend>
+</line>
+
+<line number='40'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line35</augend>
+<addend>line36</addend>
+<addend>line37</addend>
+<addend>line38</addend>
+<addend>line39</addend>
+</line>
+
+<line number='48'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>lineExp1</augend>
+<addend>lineExp2</addend>
+<addend>lineExp3</addend>
+<addend>lineExp4</addend>
+<addend>lineExp5</addend>
+<addend>lineExp6</addend>
+<addend>lineExp7</addend>
+<addend>lineExp8</addend>
+<addend>lineExp9</addend>
+</line>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='09'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='14'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='15'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='16a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='16b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='17'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='18'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='19'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='20a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='20b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='21'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='22'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='23'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='24a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='24b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='25'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='26'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='30'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='30a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='30b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='35'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='36'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='37'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='38'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='39'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='41'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='44a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='44b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='44c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp1'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp2'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp3'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp4'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp5'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp6'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp7'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp8'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<dlin number='Exp9'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
+<line number='04'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedC</form>
+<copy>00</copy>
+<line2>line42</line2>
+</line>
+
+<line number='27a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedC</form>
+<copy>00</copy>
+<line2>line48</line2>
+</line>
+
+<line number='27b'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form7205</form>
+<copy>00</copy>
+<line2>line01</line2>
+</line>
+
+<line number='03'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line01</minuend>
+<subtrahend>line02</subtrahend>
+</line>
+
+<line number='05'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line03</minuend>
+<subtrahend>line04</subtrahend>
+</line>
+
+<line number='29'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line07</minuend>
+<subtrahend>line28</subtrahend>
+</line>
+
+<line number='31'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line29</minuend>
+<subtrahend>line30</subtrahend>
+</line>
+
+<line number='42'
+ color='purple'>
+<type>subtr</type>
+<format>#####0</format>
+<minuend>line40</minuend>
+<subtrahend>line41</subtrahend>
+</line>
+
+<line name='01Ck'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='32a'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='32b'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='33a'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='33b'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='33c'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='34n'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='34y'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='43d'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='43m'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='43y'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='45n'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='45y'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='46n'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='46y'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='47an'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='47ay'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='47bn'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='47by'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='accru'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Addr1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Addr2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='B1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='B2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='B3'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='B4'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='B5'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='B6'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='BusNm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='cash'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='City'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D1'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D2'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D3'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D4'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D5'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D6'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D7'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D8'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='D9'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp1nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp2nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp3nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp4nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp5nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp6nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp7nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp8nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Exp9nm'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Gn'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Gy'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Hx'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='In'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Iy'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Jn'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='Jy'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='other'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='PrBus'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='specif'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='ST'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='zip'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TSSNoL</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>01</copy>
+<line2>TSSNoM</line2>
+</line>
+</Form>

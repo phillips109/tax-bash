@@ -1,0 +1,1000 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+                              
+This file is part of a program called Tax-bash
+                              
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+                              
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+                              
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+                              
+                              
+For direction on how to separate pages see ../notes.
+
+                              
+Form
+xpgF  	!2name 	!3BkgImage
+pgF   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgF    
+                              
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-002.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.35  	!7.92  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!1.12  	!200               	!            	!      	!      
+dlin  	!04    	!1.46  	!400               	!            	!      	!      
+dlin  	!06    	!1.80  	!600               	!            	!      	!      
+dlin  	!08    	!2.12  	!800               	!            	!      	!      
+dlin  	!10    	!2.46  	!1000              	!            	!      	!      
+tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
+tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
+tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!4.66  	!6.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.12  	!100               	!            	!      	!      
+dlin  	!03    	!1.46  	!300               	!            	!      	!      
+dlin  	!05    	!1.80  	!500               	!            	!      	!      
+dlin  	!07    	!2.12  	!700               	!            	!      	!      
+dlin  	!09    	!2.46  	!900               	!            	!      	!      
+dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+tlin  	!14    	!3.46  	!1400              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!center	!4.83  	!4.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13a   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!center	!5.35  	!5.48  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13b   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!center	!5.84  	!5.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13c   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!0.62  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname 	!1.46  	!A.B. Smith Co     	!            	!      	!      
+tlin  	!payrID	!1.12  	!12-123456         	!            	!      	!      
+tlin  	!paddr1	!1.80  	!13 River Street   	!            	!      	!      
+tlin  	!paddr2	!1.96  	!Suite 300         	!            	!      	!      
+tlin  	!pcity 	!2.12  	!Boston            	!            	!      	!      
+tlin  	!ctrNo 	!2.40  	!987654321         	!            	!      	!      
+tlin  	!TFNI  	!2.90  	!John E.           	!            	!      	!      
+tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!      
+tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
+tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
+tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
+dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!2.15  	!2.32  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!2.12  	!MA                	!            	!      	!      
+tlin  	!rST   	!3.78  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!left  	!3.68  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!2.12  	!01006             	!            	!      	!      
+tlin  	!rzip  	!3.78  	!15123             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!2.20  	!2.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!0.79  	!123               	!            	!      	!      
+tlin  	!TLN   	!2.90  	!Dough             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!2.55  	!2.74  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!0.79  	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!center	!3.00  	!3.85  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!0.79  	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!left  	!4.34  	!4.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!right 	!3.95  	!4.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!17a   	!4.23  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.63  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!right 	!5.06  	!6.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!18a   	!4.23  	!1801              	!            	!      	!      
+dlin  	!18b   	!4.63  	!1802              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!right 	!6.24  	!7.22  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!19a   	!4.23  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.63  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!left  	!7.36  	!7.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!20a   	!4.23  	!2001              	!            	!      	!      
+tlin  	!20b   	!4.63  	!2012              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!r     	!0.00  	!center	!1.85  	!1.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.68  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-003.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.35  	!7.92  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!1.12  	!200               	!            	!      	!      
+dlin  	!04    	!1.46  	!400               	!            	!      	!      
+dlin  	!06    	!1.80  	!600               	!            	!      	!      
+dlin  	!08    	!2.12  	!800               	!            	!      	!      
+dlin  	!10    	!2.46  	!1000              	!            	!      	!      
+tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
+tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
+tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!4.66  	!6.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.12  	!100               	!            	!      	!      
+dlin  	!03    	!1.46  	!300               	!            	!      	!      
+dlin  	!05    	!1.80  	!500               	!            	!      	!      
+dlin  	!07    	!2.12  	!700               	!            	!      	!      
+dlin  	!09    	!2.46  	!900               	!            	!      	!      
+dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+tlin  	!14    	!3.46  	!1400              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!center	!4.83  	!4.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13a   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!center	!5.35  	!5.48  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13b   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!center	!5.84  	!5.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13c   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!0.62  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname 	!1.46  	!A.B. Smith Co     	!            	!      	!      
+tlin  	!payrID	!1.12  	!12-123456         	!            	!      	!      
+tlin  	!paddr1	!1.80  	!13 River Street   	!            	!      	!      
+tlin  	!paddr2	!1.96  	!Suite 300         	!            	!      	!      
+tlin  	!pcity 	!2.12  	!Boston            	!            	!      	!      
+tlin  	!ctrNo 	!2.40  	!987654321         	!            	!      	!      
+tlin  	!TFNI  	!2.90  	!John E.           	!            	!      	!      
+tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!      
+tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
+tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
+tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
+dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!2.15  	!2.32  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!2.12  	!MA                	!            	!      	!      
+tlin  	!rST   	!3.78  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!left  	!3.68  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!2.12  	!01006             	!            	!      	!      
+tlin  	!rzip  	!3.78  	!15123             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!2.20  	!2.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!0.79  	!123               	!            	!      	!      
+tlin  	!TLN   	!2.90  	!Dough             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!2.55  	!2.74  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!0.79  	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!center	!3.00  	!3.85  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!0.79  	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!left  	!4.34  	!4.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!right 	!3.95  	!4.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!17a   	!4.23  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.63  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!right 	!5.06  	!6.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!18a   	!4.23  	!1801              	!            	!      	!      
+dlin  	!18b   	!4.63  	!1802              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!right 	!6.24  	!7.22  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!19a   	!4.23  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.63  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!left  	!7.36  	!7.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!20a   	!4.23  	!2001              	!            	!      	!      
+tlin  	!20b   	!4.63  	!2012              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!r     	!0.00  	!center	!1.85  	!1.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.68  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-004.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.35  	!7.92  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!1.12  	!200               	!            	!      	!      
+dlin  	!04    	!1.46  	!400               	!            	!      	!      
+dlin  	!06    	!1.80  	!600               	!            	!      	!      
+dlin  	!08    	!2.12  	!800               	!            	!      	!      
+dlin  	!10    	!2.46  	!1000              	!            	!      	!      
+tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
+tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
+tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!4.66  	!6.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.12  	!100               	!            	!      	!      
+dlin  	!03    	!1.46  	!300               	!            	!      	!      
+dlin  	!05    	!1.80  	!500               	!            	!      	!      
+dlin  	!07    	!2.12  	!700               	!            	!      	!      
+dlin  	!09    	!2.46  	!900               	!            	!      	!      
+dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+tlin  	!14    	!3.46  	!1400              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!center	!4.83  	!4.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13a   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!center	!5.35  	!5.48  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13b   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!center	!5.84  	!5.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13c   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!0.62  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname 	!1.46  	!A.B. Smith Co     	!            	!      	!      
+tlin  	!payrID	!1.12  	!12-123456         	!            	!      	!      
+tlin  	!paddr1	!1.80  	!13 River Street   	!            	!      	!      
+tlin  	!paddr2	!1.96  	!Suite 300         	!            	!      	!      
+tlin  	!pcity 	!2.12  	!Boston            	!            	!      	!      
+tlin  	!ctrNo 	!2.40  	!987654321         	!            	!      	!      
+tlin  	!TFNI  	!2.90  	!John E.           	!            	!      	!      
+tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!      
+tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
+tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
+tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
+dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!2.15  	!2.32  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!2.12  	!MA                	!            	!      	!      
+tlin  	!rST   	!3.78  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!left  	!3.68  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!2.12  	!01006             	!            	!      	!      
+tlin  	!rzip  	!3.78  	!15123             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!2.20  	!2.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!0.79  	!123               	!            	!      	!      
+tlin  	!TLN   	!2.90  	!Dough             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!2.55  	!2.74  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!0.79  	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!center	!3.00  	!3.85  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!0.79  	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!left  	!4.34  	!4.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!right 	!3.95  	!4.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!17a   	!4.23  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.63  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!right 	!5.06  	!6.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!18a   	!4.23  	!1801              	!            	!      	!      
+dlin  	!18b   	!4.63  	!1802              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!right 	!6.24  	!7.22  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!19a   	!4.23  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.63  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!left  	!7.36  	!7.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!20a   	!4.23  	!2001              	!            	!      	!      
+tlin  	!20b   	!4.63  	!2012              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!r     	!0.00  	!center	!1.85  	!1.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.68  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+xpgM  	!2name 	!3BkgImage
+pgF   	!Single	!../Jpg/f1040sb-page-005.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-006.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.35  	!7.92  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!1.12  	!200               	!            	!      	!      
+dlin  	!04    	!1.46  	!400               	!            	!      	!      
+dlin  	!06    	!1.80  	!600               	!            	!      	!      
+dlin  	!08    	!2.12  	!800               	!            	!      	!      
+dlin  	!10    	!2.46  	!1000              	!            	!      	!      
+tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
+tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
+tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!4.66  	!6.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.12  	!100               	!            	!      	!      
+dlin  	!03    	!1.46  	!300               	!            	!      	!      
+dlin  	!05    	!1.80  	!500               	!            	!      	!      
+dlin  	!07    	!2.12  	!700               	!            	!      	!      
+dlin  	!09    	!2.46  	!900               	!            	!      	!      
+dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+tlin  	!14    	!3.46  	!1400              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!center	!4.83  	!4.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13a   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!center	!5.35  	!5.48  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13b   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!center	!5.84  	!5.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13c   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!0.62  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname 	!1.46  	!A.B. Smith Co     	!            	!      	!      
+tlin  	!payrID	!1.12  	!12-123456         	!            	!      	!      
+tlin  	!paddr1	!1.80  	!13 River Street   	!            	!      	!      
+tlin  	!paddr2	!1.96  	!Suite 300         	!            	!      	!      
+tlin  	!pcity 	!2.12  	!Boston            	!            	!      	!      
+tlin  	!ctrNo 	!2.40  	!987654321         	!            	!      	!      
+tlin  	!TFNI  	!2.90  	!John E.           	!            	!      	!      
+tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!      
+tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
+tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
+tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
+dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!2.15  	!2.32  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!2.12  	!MA                	!            	!      	!      
+tlin  	!rST   	!3.78  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!left  	!3.68  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!2.12  	!01006             	!            	!      	!      
+tlin  	!rzip  	!3.78  	!15123             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!2.20  	!2.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!0.79  	!123               	!            	!      	!      
+tlin  	!TLN   	!2.90  	!Dough             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!2.55  	!2.74  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!0.79  	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!center	!3.00  	!3.85  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!0.79  	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!left  	!4.34  	!4.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!right 	!3.95  	!4.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!17a   	!4.23  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.63  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!right 	!5.06  	!6.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!18a   	!4.23  	!1801              	!            	!      	!      
+dlin  	!18b   	!4.63  	!1802              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!right 	!6.24  	!7.22  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!19a   	!4.23  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.63  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!left  	!7.36  	!7.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!20a   	!4.23  	!2001              	!            	!      	!      
+tlin  	!20b   	!4.63  	!2012              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!r     	!0.00  	!center	!1.85  	!1.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.68  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+xpgM  	!2name 	!3BkgImage
+pgF   	!Single	!../Jpg/f1040sb-page-007.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-008.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.35  	!7.92  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!1.12  	!200               	!            	!      	!      
+dlin  	!04    	!1.46  	!400               	!            	!      	!      
+dlin  	!06    	!1.80  	!600               	!            	!      	!      
+dlin  	!08    	!2.12  	!800               	!            	!      	!      
+dlin  	!10    	!2.46  	!1000              	!            	!      	!      
+tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
+tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
+tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!4.66  	!6.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.12  	!100               	!            	!      	!      
+dlin  	!03    	!1.46  	!300               	!            	!      	!      
+dlin  	!05    	!1.80  	!500               	!            	!      	!      
+dlin  	!07    	!2.12  	!700               	!            	!      	!      
+dlin  	!09    	!2.46  	!900               	!            	!      	!      
+dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+tlin  	!14    	!3.46  	!1400              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!center	!4.83  	!4.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13a   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!center	!5.35  	!5.48  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13b   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!center	!5.84  	!5.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13c   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!0.62  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname 	!1.46  	!A.B. Smith Co     	!            	!      	!      
+tlin  	!payrID	!1.12  	!12-123456         	!            	!      	!      
+tlin  	!paddr1	!1.80  	!13 River Street   	!            	!      	!      
+tlin  	!paddr2	!1.96  	!Suite 300         	!            	!      	!      
+tlin  	!pcity 	!2.12  	!Boston            	!            	!      	!      
+tlin  	!ctrNo 	!2.40  	!987654321         	!            	!      	!      
+tlin  	!TFNI  	!2.90  	!John E.           	!            	!      	!      
+tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!      
+tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
+tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
+tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
+dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!2.15  	!2.32  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!2.12  	!MA                	!            	!      	!      
+tlin  	!rST   	!3.78  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!left  	!3.68  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!2.12  	!01006             	!            	!      	!      
+tlin  	!rzip  	!3.78  	!15123             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!2.20  	!2.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!0.79  	!123               	!            	!      	!      
+tlin  	!TLN   	!2.90  	!Dough             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!2.55  	!2.74  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!0.79  	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!center	!3.00  	!3.85  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!0.79  	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!left  	!4.34  	!4.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!right 	!3.95  	!4.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!17a   	!4.23  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.63  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!right 	!5.06  	!6.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!18a   	!4.23  	!1801              	!            	!      	!      
+dlin  	!18b   	!4.63  	!1802              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!right 	!6.24  	!7.22  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!19a   	!4.23  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.63  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!left  	!7.36  	!7.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!20a   	!4.23  	!2001              	!            	!      	!      
+tlin  	!20b   	!4.63  	!2012              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!r     	!0.00  	!center	!1.85  	!1.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.68  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+xpgM  	!2name 	!3BkgImage
+pgF   	!Single	!../Jpg/f1040sb-page-009.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgM    
+
+xpgM  	!2name 	!3BkgImage
+pgM   	!Single	!../Jpg/f1040sb-page-010.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.35  	!7.92  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!02    	!1.12  	!200               	!            	!      	!      
+dlin  	!04    	!1.46  	!400               	!            	!      	!      
+dlin  	!06    	!1.80  	!600               	!            	!      	!      
+dlin  	!08    	!2.12  	!800               	!            	!      	!      
+dlin  	!10    	!2.46  	!1000              	!            	!      	!      
+tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
+tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
+tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!right 	!4.66  	!6.24  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.12  	!100               	!            	!      	!      
+dlin  	!03    	!1.46  	!300               	!            	!      	!      
+dlin  	!05    	!1.80  	!500               	!            	!      	!      
+dlin  	!07    	!2.12  	!700               	!            	!      	!      
+dlin  	!09    	!2.46  	!900               	!            	!      	!      
+dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+tlin  	!14    	!3.46  	!1400              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!center	!4.83  	!4.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13a   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!center	!5.35  	!5.48  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13b   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!center	!5.84  	!5.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!13c   	!3.11  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!0.00  	!left  	!0.62  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pname 	!1.46  	!A.B. Smith Co     	!            	!      	!      
+tlin  	!payrID	!1.12  	!12-123456         	!            	!      	!      
+tlin  	!paddr1	!1.80  	!13 River Street   	!            	!      	!      
+tlin  	!paddr2	!1.96  	!Suite 300         	!            	!      	!      
+tlin  	!pcity 	!2.12  	!Boston            	!            	!      	!      
+tlin  	!ctrNo 	!2.40  	!987654321         	!            	!      	!      
+tlin  	!TFNI  	!2.90  	!John E.           	!            	!      	!      
+tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!      
+tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
+tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
+tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
+dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!0.00  	!left  	!2.15  	!2.32  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pST   	!2.12  	!MA                	!            	!      	!      
+tlin  	!rST   	!3.78  	!PA                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!0.00  	!left  	!3.68  	!4.54  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!pzip  	!2.12  	!01006             	!            	!      	!      
+tlin  	!rzip  	!3.78  	!15123             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!center	!2.20  	!2.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoF	!0.79  	!123               	!            	!      	!      
+tlin  	!TLN   	!2.90  	!Dough             	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!center	!2.55  	!2.74  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoM	!0.79  	!45                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!center	!3.00  	!3.85  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!TSSNoL	!0.79  	!6789              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!l     	!0.00  	!left  	!4.34  	!4.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!n     	!0.00  	!right 	!3.95  	!4.96  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!17a   	!4.23  	!1701              	!            	!      	!      
+dlin  	!17b   	!4.63  	!1702              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!o     	!0.00  	!right 	!5.06  	!6.12  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!18a   	!4.23  	!1801              	!            	!      	!      
+dlin  	!18b   	!4.63  	!1802              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!p     	!0.00  	!right 	!6.24  	!7.22  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!19a   	!4.23  	!1901              	!            	!      	!      
+dlin  	!19b   	!4.63  	!1902              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!q     	!0.00  	!left  	!7.36  	!7.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!20a   	!4.23  	!2001              	!            	!      	!      
+tlin  	!20b   	!4.63  	!2012              	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!r     	!0.00  	!center	!1.85  	!1.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!void  	!0.68  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgM
+
+xpgL  	!2name 	!3BkgImage
+pgL   	!Single	!../Jpg/f1040sb-page-011.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!      	!      	!      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!      	!      	!                  	!            	!      	!      
+Endcol*******************     
+Endcol*******************     
+EndpgL    
+
+EndForm

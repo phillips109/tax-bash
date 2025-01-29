@@ -1,0 +1,113 @@
+#!/bin/bash
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+importMenus(){
+    cp ../../5Menu/Files/allMenus ../Files
+    }
+
+checkTaxBash(){
+    cd ../TaxBash
+    rm -i *~
+    cd ../Main
+    }
+
+createTaxBash(){
+    rm ../Files/tax-bash
+    echo "../Files/tax-bash has been removed."
+    
+    #The following line is not necessary. It has already  been done.
+    #../Make/addLicense.sh
+    #echo "../Files/licenseNotice has been prepended to each file in ../TaxBash/"
+    
+    ../Make/makeTaxBash.sh
+    echo "../TaxBash/*.use concatenated to form../Files/tax-bash."
+    
+    cat ../Files/allMenus >> ../Files/tax-bash
+    echo "../Files/allMenus have been added to tax-bash"
+    
+    cat ../Files/startMenu2 >> ../Files/tax-bash
+    echo "../Files/setMenu2 added to tax-bash"
+        
+    sed '/^#/d' ../Files/tax-bash > ../Files/tax-bash.tmp
+    mv ../Files/tax-bash.tmp ../Files/tax-bash
+    echo "Comments and license notices have been removed from ../Files/tax-bash."
+    
+    cat ../Files/binLicenseNotice ../Files/tax-bash > ../Files/tax-bash.tmp
+    mv ../Files/tax-bash.tmp ../Files/tax-bash
+    echo "One llcense notice has been prepended to ../Files/tax-bash."
+    
+    chmod 755 ../Files/tax-bash
+    echo "Permissions on tax-bash set to 755."
+    
+    sleep 3
+    #This allows you to read the lines written above.
+} 
+
+exportTax-bash(){
+    cp ../Files/tax-bash ../../7App/Main/tax-bash
+#    cp ../Files/tax-bash ../../T21/Main/tax-bash
+    }
+
+
+set_menu_choices() {
+while true;
+  do     
+#  clear
+  echo
+  echo "This menu is for Developers writing the UI file tax-bash."
+  echo
+  echo "   1)  import allMenus"
+  echo "   2)  remove any backup(~) files from ../TaxBash"
+  echo "   3)  create tax-bash"
+  echo "   4)  export tax-bash"
+  echo 
+  echo "   q) Quit"
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+  case "$menu_choice" in
+      
+      1)  importMenus;;
+      2)  checkTaxBash;;
+      3)  createTaxBash;;
+      4)  exportTax-bash;;
+      q)  exit;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}
+
+
+
+
+while true;
+do
+    set_menu_choices	
+done
+    
+#Tidy up and leave
+
+echo "Finished"
+
+exit 0
+
