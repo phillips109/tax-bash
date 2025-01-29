@@ -2860,10 +2860,10 @@ $Form1040-Copy00-linepen10"/>
 <xsl:value-of select="3"/>
 </xsl:when>
 <xsl:when test="$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = 'x'">
-<xsl:value-of select="4"/>
+<xsl:value-of select="3"/>
 </xsl:when>
 <xsl:when test="$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = 'x'">
-<xsl:value-of select="4"/>
+<xsl:value-of select="3"/>
 </xsl:when>
 </xsl:choose>
 </xsl:variable>
