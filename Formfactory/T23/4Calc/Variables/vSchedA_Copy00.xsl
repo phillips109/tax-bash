@@ -159,13 +159,13 @@ $SchedA-Copy00-line16"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="SchedA-Copy00-line11a">
+<xsl:variable name="SchedA-Copy00-line11">
 <xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11a'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11a'], '#####0')"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11a']), '#####0')"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11']) * -1, '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -227,10 +227,6 @@ $SchedA-Copy00-line16"/>
 
 <xsl:variable name="SchedA-Copy00-line03">
 <xsl:value-of select="$SchedA-Copy00-line02 * $SchedA-Copy00-line75"/>
-</xsl:variable>
-
-<xsl:variable name="SchedA-Copy00-line11">
-<xsl:value-of select="$SchedA-Copy00-line11a * $SchedA-Copy00-lineminus1"/>
 </xsl:variable>
 
 <xsl:variable name="SchedA-Copy00-line05e">

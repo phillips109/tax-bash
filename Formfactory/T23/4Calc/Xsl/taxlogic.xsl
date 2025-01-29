@@ -6090,13 +6090,13 @@ $SchedA-Copy00-line16"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="SchedA-Copy00-line11a">
+<xsl:variable name="SchedA-Copy00-line11">
 <xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11a'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11a'], '#####0')"/>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11a']), '#####0')"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -6158,10 +6158,6 @@ $SchedA-Copy00-line16"/>
 
 <xsl:variable name="SchedA-Copy00-line03">
 <xsl:value-of select="$SchedA-Copy00-line02 * $SchedA-Copy00-line75"/>
-</xsl:variable>
-
-<xsl:variable name="SchedA-Copy00-line11">
-<xsl:value-of select="$SchedA-Copy00-line11a * $SchedA-Copy00-lineminus1"/>
 </xsl:variable>
 
 <xsl:variable name="SchedA-Copy00-line05e">
@@ -14979,9 +14975,9 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($SchedA-Copy00-line09, '#####0')"/>
 </copy00line09>
 
-<copy00line11a color="red">
-<xsl:value-of select="format-number($SchedA-Copy00-line11a, '#####0')"/>
-</copy00line11a>
+<copy00line11 color="red">
+<xsl:value-of select="format-number($SchedA-Copy00-line11, '#####0')"/>
+</copy00line11>
 
 <copy00line12 color="red">
 <xsl:value-of select="format-number($SchedA-Copy00-line12, '#####0')"/>
@@ -15006,10 +15002,6 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00line03 color="red">
 <xsl:value-of select="format-number($SchedA-Copy00-line03, '#####0')"/>
 </copy00line03>
-
-<copy00line11 color="red">
-<xsl:value-of select="format-number($SchedA-Copy00-line11, '#####0')"/>
-</copy00line11>
 
 <copy00line05e color="red">
 <xsl:value-of select="format-number($SchedA-Copy00-line05e, '#####0')"/>
