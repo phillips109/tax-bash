@@ -78,6 +78,11 @@ xconst
 4value
 
 const
+minus1
+#####0
+-1
+
+const
 75
 #0.000
 0.075
@@ -133,7 +138,7 @@ dlin
 900
 
 dlin
-11
+11a
 #####0
 1010
 
@@ -183,6 +188,12 @@ mult
 #####0
 line02
 line75
+
+mult
+11
+#####0
+line11a
+lineminus1
 
 xsmOf
 2name

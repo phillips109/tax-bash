@@ -51,6 +51,12 @@ line16
 
 
 const
+#####0
+-1
+
+
+
+const
 #0.000
 0.075
 
@@ -90,6 +96,13 @@ mult
 #####0
 line02
 line75
+
+
+
+mult
+#####0
+line11a
+lineminus1
 
 
 

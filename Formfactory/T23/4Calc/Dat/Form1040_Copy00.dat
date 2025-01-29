@@ -2324,10 +2324,10 @@ WHEN01$Form1040-Copy00-lineYa58 = '' and $Form1040-Copy00-lineYblind = 'x' and $
 VALUOF3
 WHEN02
 WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = '' and $Form1040-Copy00-lineSa58 = 'x' and $Form1040-Copy00-lineSblind = 'x'
-VALUOF4
+VALUOF3
 WHEN02
 WHEN01$Form1040-Copy00-lineYa58 = 'x' and $Form1040-Copy00-lineYblind = 'x' and $Form1040-Copy00-lineSa58 = '' and $Form1040-Copy00-lineSblind = 'x'
-VALUOF4
+VALUOF3
 WHEN02
 CHOOS2
 
