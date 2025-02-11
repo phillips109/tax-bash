@@ -2743,6 +2743,24 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <line2></line2>
 </line>
 
+<line name='ailS'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='aSname'
+ color='blue'>
+<type>tlin</type>
+<text></text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
 <line number='07a01'
  color='blue'>
 <type>tPull</type>

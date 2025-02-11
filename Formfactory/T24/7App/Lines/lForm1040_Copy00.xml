@@ -1120,6 +1120,14 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="$Form1040-Copy00-linex00"/>
 </copy00linex00>
 
+<copy00lineailS color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineailS"/>
+</copy00lineailS>
+
+<copy00lineaSname color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineaSname"/>
+</copy00lineaSname>
+
 <copy00line07a01 color="blue">
 <xsl:value-of select="$Form1040-Copy00-line07a01"/>
 </copy00line07a01>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -515,10 +515,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.41in'
+top='1.43in'
 height='0.15in'
 color='blue'>
-<text>2022</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 
@@ -1169,10 +1169,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.41in'
+top='1.43in'
 height='0.15in'
 color='blue'>
-<text>2022</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 
@@ -1802,10 +1802,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.41in'
+top='1.43in'
 height='0.15in'
 color='blue'>
-<text>2022</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 
@@ -2495,10 +2495,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.41in'
+top='1.43in'
 height='0.15in'
 color='blue'>
-<text>2022</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 

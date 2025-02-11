@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -20,7 +20,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 <Form>
 
-<pgF name='Single'
+<pgS name='Single'
 bkgImage='../Jpg/f1040s3-page-001.jpg'>
 
 <col name=''
@@ -149,7 +149,7 @@ font-family='Times'
 text-align='center'
 top='0.00in'>
 
-<tPull name='TSSNol'
+<tPull name='TSSNoL'
 top='1.47in'
 height='0.15in'
 color='purple'>
@@ -172,7 +172,7 @@ text-align='right'
 top='0.00in'>
 
 <dlin number='01'
-top='1.98in'
+top='1.80in'
 height='0.15in'
 color='red'>
 <dummy>100</dummy>
@@ -183,7 +183,7 @@ color='red'>
 </dlin>
 
 <dlin number='02'
-top='2.39in'
+top='1.97in'
 height='0.15in'
 color='red'>
 <dummy>200</dummy>
@@ -194,7 +194,7 @@ color='red'>
 </dlin>
 
 <dlin number='03'
-top='2.64in'
+top='2.13in'
 height='0.15in'
 color='red'>
 <dummy>300</dummy>
@@ -205,7 +205,7 @@ color='red'>
 </dlin>
 
 <dlin number='04'
-top='2.89in'
+top='2.30in'
 height='0.15in'
 color='red'>
 <dummy>400</dummy>
@@ -216,7 +216,7 @@ color='red'>
 </dlin>
 
 <dlin number='05a'
-top='3.14in'
+top='2.47in'
 height='0.15in'
 color='red'>
 <dummy>501</dummy>
@@ -227,7 +227,7 @@ color='red'>
 </dlin>
 
 <dlin number='05b'
-top='3.39in'
+top='2.63in'
 height='0.15in'
 color='red'>
 <dummy>502</dummy>
@@ -238,7 +238,7 @@ color='red'>
 </dlin>
 
 <dlin number='07'
-top='7.64in'
+top='5.47in'
 height='0.15in'
 color='red'>
 <dummy>700</dummy>
@@ -249,7 +249,7 @@ color='red'>
 </dlin>
 
 <dlin number='08'
-top='8.05in'
+top='5.64in'
 height='0.15in'
 color='red'>
 <dummy>800</dummy>
@@ -259,216 +259,8 @@ color='red'>
 <blank></blank>
 </dlin>
 
-</col>
-*******************************************************
-
-<col name='7'
-left='5.75in'
-right='6.65in'
-width='0.9in'
-background-color='pink'
-font-size='12pt'
-font-family='Times'
-text-align='right'
-top='0.00in'>
-
-<dlin number='06a'
-top='3.89in'
-height='0.15in'
-color='red'>
-<dummy>601</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06b'
-top='4.14in'
-height='0.15in'
-color='red'>
-<dummy>602</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06c'
-top='4.39in'
-height='0.15in'
-color='red'>
-<dummy>603</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06d'
-top='4.64in'
-height='0.15in'
-color='red'>
-<dummy>604</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06f'
-top='5.15in'
-height='0.15in'
-color='red'>
-<dummy>605</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06g'
-top='5.39in'
-height='0.15in'
-color='red'>
-<dummy>606</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06h'
-top='5.64in'
-height='0.15in'
-color='red'>
-<dummy>607</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06i'
-top='5.89in'
-height='0.15in'
-color='red'>
-<dummy>608</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06j'
-top='6.14in'
-height='0.15in'
-color='red'>
-<dummy>609</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06k'
-top='6.39in'
-height='0.15in'
-color='red'>
-<dummy>610</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06l'
-top='6.64in'
-height='0.15in'
-color='red'>
-<dummy>611</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06m'
-top='6.89in'
-height='0.15in'
-color='red'>
-<dummy>612</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-<dlin number='06z'
-top='7.39in'
-height='0.15in'
-color='red'>
-<dummy>613</dummy>
-<form></form>
-<copy></copy>
-<line2></line2>
-<blank></blank>
-</dlin>
-
-</col>
-*******************************************************
-
-<col name='9'
-left='0.91in'
-right='5.27in'
-width='4.36in'
-background-color='pink'
-font-size='12pt'
-font-family='Times'
-text-align='left'
-top='0.00in'>
-
-<tlin name='06line'
-top='7.39in'
-height='0.15in'
-color='blue'>
-<text>This is line 06.</text>
-<blank></blank>
-</tlin>
-
-</col>
-*******************************************************
-
-</col>
-*******************************************************
-
-</pgF>
-
-<pgL name='Single'
-bkgImage='../Jpg/f1040s3-page-002.jpg'>
-
-<col name=''
-left='0.00in'
-right='8.50in'
-width='8.5in'
-background-color='pink'
-font-size='12pt'
-font-family='Times'
-text-align='left'
-top='-0.12in'>
-
-<col name='6'
-left='7.05in'
-right='7.96in'
-width='0.91in'
-background-color='pink'
-font-size='12pt'
-font-family='Times'
-text-align='right'
-top='0.00in'>
-
 <dlin number='09'
-top='1.12in'
+top='5.97in'
 height='0.15in'
 color='red'>
 <dummy>900</dummy>
@@ -479,7 +271,7 @@ color='red'>
 </dlin>
 
 <dlin number='10'
-top='1.38in'
+top='6.14in'
 height='0.15in'
 color='red'>
 <dummy>1000</dummy>
@@ -490,7 +282,7 @@ color='red'>
 </dlin>
 
 <dlin number='11'
-top='1.63in'
+top='6.31in'
 height='0.15in'
 color='red'>
 <dummy>1100</dummy>
@@ -501,7 +293,7 @@ color='red'>
 </dlin>
 
 <dlin number='12'
-top='1.88in'
+top='6.47in'
 height='0.15in'
 color='red'>
 <dummy>1200</dummy>
@@ -512,7 +304,7 @@ color='red'>
 </dlin>
 
 <dlin number='14'
-top='4.21in'
+top='7.96in'
 height='0.15in'
 color='red'>
 <dummy>1400</dummy>
@@ -523,7 +315,7 @@ color='red'>
 </dlin>
 
 <dlin number='15'
-top='4.63in'
+top='8.13in'
 height='0.15in'
 color='red'>
 <dummy>1500</dummy>
@@ -546,8 +338,151 @@ font-family='Times'
 text-align='right'
 top='0.00in'>
 
+<dlin number='06a'
+top='2.96in'
+height='0.15in'
+color='red'>
+<dummy>601</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06b'
+top='3.14in'
+height='0.15in'
+color='red'>
+<dummy>602</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06c'
+top='3.30in'
+height='0.15in'
+color='red'>
+<dummy>603</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06d'
+top='3.47in'
+height='0.15in'
+color='red'>
+<dummy>604</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06f'
+top='3.80in'
+height='0.15in'
+color='red'>
+<dummy>605</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06g'
+top='3.97in'
+height='0.15in'
+color='red'>
+<dummy>606</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06h'
+top='4.13in'
+height='0.15in'
+color='red'>
+<dummy>607</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06i'
+top='4.30in'
+height='0.15in'
+color='red'>
+<dummy>608</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06j'
+top='4.47in'
+height='0.15in'
+color='red'>
+<dummy>609</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06k'
+top='4.62in'
+height='0.15in'
+color='red'>
+<dummy>610</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06l'
+top='4.81in'
+height='0.15in'
+color='red'>
+<dummy>611</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06m'
+top='4.97in'
+height='0.15in'
+color='red'>
+<dummy>612</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06z'
+top='5.30in'
+height='0.15in'
+color='red'>
+<dummy>613</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
 <dlin number='13a'
-top='2.38in'
+top='6.80in'
 height='0.15in'
 color='red'>
 <dummy>1301</dummy>
@@ -558,7 +493,7 @@ color='red'>
 </dlin>
 
 <dlin number='13b'
-top='2.80in'
+top='7.14in'
 height='0.15in'
 color='red'>
 <dummy>1302</dummy>
@@ -569,7 +504,7 @@ color='red'>
 </dlin>
 
 <dlin number='13c'
-top='3.22in'
+top='7.30in'
 height='0.15in'
 color='red'>
 <dummy>1303</dummy>
@@ -580,7 +515,7 @@ color='red'>
 </dlin>
 
 <dlin number='13d'
-top='3.48in'
+top='7.46in'
 height='0.15in'
 color='red'>
 <dummy>1304</dummy>
@@ -591,7 +526,7 @@ color='red'>
 </dlin>
 
 <dlin number='13z'
-top='3.96in'
+top='7.80in'
 height='0.15in'
 color='red'>
 <dummy>1305</dummy>
@@ -604,8 +539,79 @@ color='red'>
 </col>
 *******************************************************
 
+<col name='9'
+left='3.82in'
+right='5.27in'
+width='1.45in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='06za'
+top='5.14in'
+height='0.15in'
+color='blue'>
+<text>This is line 06za</text>
+<blank></blank>
+</tlin>
+
 </col>
 *******************************************************
 
-</pgL>
+<col name='10'
+left='0.91in'
+right='5.27in'
+width='4.36in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='06zb'
+top='5.30in'
+height='0.15in'
+color='blue'>
+<text>This is line 06zb</text>
+<blank></blank>
+</tlin>
+
+<tlin name='13zb'
+top='7.80in'
+height='0.15in'
+color='blue'>
+<text>This is line 13zb</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='11'
+left='3.33in'
+right='5.27in'
+width='1.94in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='13za'
+top='7.64in'
+height='0.15in'
+color='blue'>
+<text>This is line 13za</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgS>
 </Form>

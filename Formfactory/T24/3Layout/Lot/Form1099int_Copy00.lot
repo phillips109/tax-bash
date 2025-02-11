@@ -146,9 +146,9 @@ dlin  	!17b   	!4.96  	!17001             	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!m     	!0.00  	!left  	!6.25  	!6.50  
+col   	!m     	!0.00  	!left  	!6.00  	!6.40  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!20yr  	!1.44  	!22                	!            	!      	!      
+tlin  	!20yr  	!1.41  	!2024                	!            	!      	!      
 Endcol*******************     
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -280,9 +280,9 @@ dlin  	!17b   	!4.96  	!17001             	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!m     	!0.00  	!left  	!6.25  	!6.50  
+col   	!m     	!0.00  	!left  	!6.00  	!6.40  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!20yr  	!1.44  	!22                	!            	!      	!      
+tlin  	!20yr  	!1.41  	!2024                	!            	!      	!      
 Endcol*******************     
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -414,9 +414,9 @@ dlin  	!17b   	!4.96  	!17001             	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!m     	!0.00  	!left  	!6.25  	!6.50  
+col   	!m     	!0.00  	!left  	!6.00  	!6.40  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!20yr  	!1.44  	!22                	!            	!      	!      
+tlin  	!20yr  	!1.41  	!2024                	!            	!      	!      
 Endcol*******************     
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -562,9 +562,9 @@ dlin  	!17b   	!4.96  	!17001             	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!m     	!0.00  	!left  	!6.25  	!6.50  
+col   	!m     	!0.00  	!left  	!6.00  	!6.40  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!20yr  	!1.44  	!22                	!            	!      	!      
+tlin  	!20yr  	!1.41  	!2024                	!            	!      	!      
 Endcol*******************     
 
 xcol  	!2name 	!3top  	!4align	!5left 	!6right

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
-	  Copyright(C) 2019 Phillips Wedemeyer
+	  Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 	  This file is part of a program called Tax-bash.
 
 	  Tax-bash is free software: you can redistibute it and/or modify
-	  it under the terms of the FNU General Public License as published by
+	  it under the terms of the GNU General Public License as published by
 	  the Free Software Foundation, either version 3 of the License, or
 	  (at your option) any later version.
 	  
 	  Tax-bash is distributed in the hope that it will be useful,
 	  but WITHOUT ANY WARRANTY; without even the implied warranty of
-	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	  GNU General Public License for more details.
 	  
 	  You should have received a copy of the GNU General Public License
@@ -46,6 +46,18 @@
 *******************************************************
 
 <fo:block-container text-align="center" font-size="12pt" font-family="Times" background-color="transparent" width="0.1in" left="6.59in" top="0.00in" position="absolute"><fo:block-container top="9.94in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">x</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="3.88in" left="1.61in" top="0.00in" position="absolute"><fo:block-container top="4.29in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">This is line 06b.</fo:block></fo:block-container><fo:block-container top="6.13in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">This is line 08ba.</fo:block></fo:block-container><fo:block-container top="6.29in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">This is line 08bb.</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="1.92in" left="3.57in" top="0.00in" position="absolute"><fo:block-container top="4.13in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">This is line 06a.</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="2.14in" left="4.62in" top="0.00in" position="absolute"><fo:block-container top="8.97in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">This is line 16a.</fo:block></fo:block-container></fo:block-container>
+*******************************************************
+
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="5.14in" left="1.61in" top="0.00in" position="absolute"><fo:block-container top="9.13in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">This is line 16b.</fo:block></fo:block-container></fo:block-container>
 *******************************************************
 
 </fo:block-container>

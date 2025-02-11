@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -589,9 +589,9 @@ Endcol ************************************************
 
 type:col
 name:m
-left:6.25
-right:6.50
-width:0.25
+left:6.00
+right:6.40
+width:0.4
 background-color='pink'
 font-size:12
 font-family:Times
@@ -600,10 +600,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.44
+top:1.41
 height:0.15
 color:blue
-dummy:22
+dummy:2024
 
 Endcol ************************************************
 
@@ -1174,9 +1174,9 @@ Endcol ************************************************
 
 type:col
 name:m
-left:6.25
-right:6.50
-width:0.25
+left:6.00
+right:6.40
+width:0.4
 background-color='pink'
 font-size:12
 font-family:Times
@@ -1185,10 +1185,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.44
+top:1.41
 height:0.15
 color:blue
-dummy:22
+dummy:2024
 
 Endcol ************************************************
 
@@ -1759,9 +1759,9 @@ Endcol ************************************************
 
 type:col
 name:m
-left:6.25
-right:6.50
-width:0.25
+left:6.00
+right:6.40
+width:0.4
 background-color='pink'
 font-size:12
 font-family:Times
@@ -1770,10 +1770,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.44
+top:1.41
 height:0.15
 color:blue
-dummy:22
+dummy:2024
 
 Endcol ************************************************
 
@@ -2363,9 +2363,9 @@ Endcol ************************************************
 
 type:col
 name:m
-left:6.25
-right:6.50
-width:0.25
+left:6.00
+right:6.40
+width:0.4
 background-color='pink'
 font-size:12
 font-family:Times
@@ -2374,10 +2374,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.44
+top:1.41
 height:0.15
 color:blue
-dummy:22
+dummy:2024
 
 Endcol ************************************************
 

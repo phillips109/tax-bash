@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -47,5 +47,11 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line05ack color='blue'>x</copy00line05ack>
 <copy00line08ck color='blue'>x</copy00line08ck>
 <copy00line18ck color='blue'>x</copy00line18ck>
+<copy00line06b color='blue'>This is line 06b.</copy00line06b>
+<copy00line08ba color='blue'>This is line 08ba.</copy00line08ba>
+<copy00line08bb color='blue'>This is line 08bb.</copy00line08bb>
+<copy00line06a color='blue'>This is line 06a.</copy00line06a>
+<copy00line16a color='blue'>This is line 16a.</copy00line16a>
+<copy00line16b color='blue'>This is line 16b.</copy00line16b>
 </Form>
 </IRSForms>

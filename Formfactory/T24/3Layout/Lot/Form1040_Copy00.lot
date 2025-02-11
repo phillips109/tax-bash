@@ -63,6 +63,8 @@ xtcalc	!2name	!3top	!4dummy
 tcalc	!S	!2.36	!'x'		!''
 tcalc	!MFJ	!2.53	!'x'		!''
 tcalc	!MFS	!2.70	!'x'		!''
+xtlin	!2name	!3top	!dummy
+tlin	!aliS	!3.20	!'x'
 Endcol*******************     
                              
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -85,7 +87,13 @@ col   	!1bb   	!0.00  	!left	!4.00  	!7.83
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 ctxt  	!Schild	!3.03  	!Francis Brown     	!Form1040      	!00    	!lineSchild      
 Endcol*******************     
-                              
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!1bb   	!0.00  	!left	!4.75  	!7.83  
+xtype 	!2name 	!3top  	!4dummy
+tlin  	!aSname	!3.38  	!Conchita LaBanana      
+Endcol*******************     
+
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1bbb  	!-0.95 	!left  	!0.53  	!3.24  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
@@ -175,18 +183,41 @@ col   	!1g    	!-0.93 	!center	!5.63  	!6.45
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!Fzip  	!3.12  	!PAR12             	!            	!      	!      
 Endcol*******************     
-                              
+
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1gg   	!0.00  	!center	!7.01  	!7.11  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!campme	!2.17  	!x                 	!            	!      	!      
-tlin  	!digY  	!3.43  	!x                 	!            	!      	!      
+xtlin  	!digY  	!3.43  	!x                 	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1ggg  	!0.00  	!center	!7.51  	!7.61  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!campS 	!2.17  	!x                 	!            	!      	!      
+xtlin  	!digN  	!3.43  	!x                 	!            	!      	!      
+Endcol*******************     
+
+
+
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!1gg   	!0.33  	!center	!0.00  	!8.50  
+
+
+
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!1gg   	!0.00  	!center	!7.01  	!7.11  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+xtlin  	!campme	!2.17  	!x                 	!            	!      	!      
+tlin  	!digY  	!3.43  	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!1ggg  	!0.00  	!center	!7.51  	!7.61  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+xtlin  	!campS 	!2.17  	!x                 	!            	!      	!      
 tlin  	!digN  	!3.43  	!x                 	!            	!      	!      
 Endcol*******************     
                               
@@ -309,7 +340,18 @@ col   	!1l    	!0.00  	!center	!1.11  	!1.21
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!dgt4  	!5.03  	!x                 	!            	!      	!      
 Endcol*******************     
-                              
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!1w    	!0.00  	!center	!6.47  	!6.57  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!06cCk 	!7.69  	!x                 	!            	!      	!      
+tlin  	!07Ck  	!7.86  	!x                 	!            	!      	!      
+Endcol*******************     
+
+
+Endcol*******************     
+
+
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1u    	!0.33  	!right 	!7.03  	!7.94  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
@@ -356,11 +398,11 @@ dlin  	!1i    	!6.55  	!109               	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!1w    	!0.00  	!center	!6.47  	!6.57  
+xcol   	!1w    	!0.00  	!center	!6.47  	!6.57  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!06cCk 	!7.69  	!x                 	!            	!      	!      
-tlin  	!07Ck  	!7.86  	!x                 	!            	!      	!      
-Endcol*******************     
+xtlin  	!06cCk 	!7.69  	!x                 	!            	!      	!      
+xtlin  	!07Ck  	!7.86  	!x                 	!            	!      	!      
+xEndcol*******************     
 
 Endcol*******************     
 
@@ -385,25 +427,25 @@ col   	!      	!-0.12 	!left  	!0.00  	!8.50
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1x    	!0.00  	!center	!4.13  	!4.23  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!8814  	!0.63  	!x                 	!            	!      	!      
+tlin  	!8814  	!0.61  	!x                 	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1y    	!0.00  	!center	!4.83  	!4.93  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!4972  	!0.63  	!x                 	!            	!      	!      
+tlin  	!4972  	!0.61  	!x                 	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1z    	!0.00  	!center	!5.53  	!5.63  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Other 	!0.63  	!x                 	!            	!      	!      
+tlin  	!Other 	!0.61  	!x                 	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!1z1   	!0.00  	!left  	!5.70  	!6.16  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!tOther	!0.63  	!tOther            	!            	!      	!      
+tlin  	!tOther	!0.63  	!Other            	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -600,13 +642,13 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2j    	!0.00  	!left  	!2.02  	!4.07  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Dname 	!6.04  	!Michael Levin     	!            	!      	!      
+tlin  	!Dname 	!6.04  	!Martin Levine     	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2k    	!0.00  	!center	!4.62  	!5.87  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Dphone	!6.04  	!412-745-8765      	!            	!      	!      
+tlin  	!Dphone	!6.04  	!412-789-1234      	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -642,8 +684,8 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2m    	!0.00  	!center	!3.75  	!4.60  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Tdate 	!6.75  	!04/14/2023        	!            	!      	!      
-tlin  	!Sdate 	!7.19  	!04/15/2023        	!            	!      	!      
+tlin  	!Tdate 	!6.75  	!04/14/25        	!            	!      	!      
+tlin  	!Sdate 	!7.19  	!04/15/25        	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -698,31 +740,31 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2q    	!0.00  	!left  	!1.95  	!3.76  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Tphone	!7.38  	!724-987-3541      	!            	!      	!      
+tlin  	!Tphone	!7.38  	!412-789-1234      	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2r    	!0.00  	!left  	!4.52  	!7.94  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Temail	!7.38  	!jqtax@gmail.com   	!            	!      	!      
+tlin  	!Temail	!7.38  	!pwtax@gmail.com   	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2s    	!0.00  	!left  	!1.29  	!2.95  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Pname 	!7.72  	!Michael Levin     	!            	!      	!      
+tlin  	!Pname 	!7.72  	!Martin Levine     	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2t    	!0.00  	!center	!5.36  	!6.26  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Pdate 	!7.72  	!04/10/2023        	!            	!      	!      
+tlin  	!Pdate 	!7.72  	!04/10/25        	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2u    	!0.00  	!center	!6.24  	!6.96  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!PTIN  	!7.72  	!257986            	!            	!      	!      
+tlin  	!PTIN  	!7.72  	!256789            	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -740,7 +782,7 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2x    	!0.00  	!left  	!6.96  	!7.92  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!Fphone	!7.88  	!412-768-3921      	!            	!      	!      
+tlin  	!Fphone	!7.88  	!412-765-1234      	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -752,7 +794,7 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!2z    	!0.00  	!left  	!6.96  	!7.92  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!FEIN  	!8.05  	!35-79823          	!            	!      	!      
+tlin  	!FEIN  	!8.05  	!12-34567          	!            	!      	!      
 Endcol*******************     
                               
 Endcol*******************     

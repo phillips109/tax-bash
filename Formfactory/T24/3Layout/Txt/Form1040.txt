@@ -7,8 +7,10 @@ tlin	!single	!001	!
 tlin	!MFJ	!002	!                              
 tlin	!MFS	!003	!                              
 tlin	!HOH	!004	!                              
-tlin	!QSS	!005	!                              
-tlin	!child	!006	!                              
+tlin	!QSS	!005	!
+tlin	!aliS	!005a	!
+tlin	!child	!006	!
+tlin	!aSname	!006a	!
 tlin	!TFNI	!007	!                              
 tlin	!TLN	!008	!                              
 tlin	!TSSNoF	!009	!                              

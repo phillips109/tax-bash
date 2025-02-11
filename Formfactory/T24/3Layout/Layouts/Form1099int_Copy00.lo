@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -631,9 +631,9 @@ color='red'>
 *******************************************************
 
 <col name='m'
-left='6.25in'
-right='6.50in'
-width='0.25in'
+left='6.00in'
+right='6.40in'
+width='0.4in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
@@ -641,10 +641,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.44in'
+top='1.41in'
 height='0.15in'
 color='blue'>
-<text>22</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 
@@ -1262,9 +1262,9 @@ color='red'>
 *******************************************************
 
 <col name='m'
-left='6.25in'
-right='6.50in'
-width='0.25in'
+left='6.00in'
+right='6.40in'
+width='0.4in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
@@ -1272,10 +1272,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.44in'
+top='1.41in'
 height='0.15in'
 color='blue'>
-<text>22</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 
@@ -1893,9 +1893,9 @@ color='red'>
 *******************************************************
 
 <col name='m'
-left='6.25in'
-right='6.50in'
-width='0.25in'
+left='6.00in'
+right='6.40in'
+width='0.4in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
@@ -1903,10 +1903,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.44in'
+top='1.41in'
 height='0.15in'
 color='blue'>
-<text>22</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 
@@ -2542,9 +2542,9 @@ color='red'>
 *******************************************************
 
 <col name='m'
-left='6.25in'
-right='6.50in'
-width='0.25in'
+left='6.00in'
+right='6.40in'
+width='0.4in'
 background-color='pink'
 font-size='12pt'
 font-family='Times'
@@ -2552,10 +2552,10 @@ text-align='left'
 top='0.00in'>
 
 <tlin name='20yr'
-top='1.44in'
+top='1.41in'
 height='0.15in'
 color='blue'>
-<text>22</text>
+<text>2024</text>
 <blank></blank>
 </tlin>
 

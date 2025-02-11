@@ -169,6 +169,14 @@ color='red'>
 <dummy>'x'</dummy>
 </calc>
 
+<tlin name='aliS'
+top='3.20in'
+height='0.15in'
+color='blue'>
+<text>'x'</text>
+<blank></blank>
+</tlin>
+
 </col>
 *******************************************************
 
@@ -218,6 +226,27 @@ color='purple'>
 <copy>00</copy>
 <line2>lineSchild</line2>
 </ctxt>
+
+</col>
+*******************************************************
+
+<col name='1bb'
+left='4.75in'
+right='7.83in'
+width='3.08in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='aSname'
+top='3.38in'
+height='0.15in'
+color='blue'>
+<text>Conchita LaBanana</text>
+<blank></blank>
+</tlin>
 
 </col>
 *******************************************************
@@ -589,14 +618,6 @@ color='blue'>
 <blank></blank>
 </tlin>
 
-<tlin name='digY'
-top='3.43in'
-height='0.15in'
-color='blue'>
-<text>x</text>
-<blank></blank>
-</tlin>
-
 </col>
 *******************************************************
 
@@ -617,6 +638,50 @@ color='blue'>
 <text>x</text>
 <blank></blank>
 </tlin>
+
+</col>
+*******************************************************
+
+<col name='1gg'
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='center'
+top='0.33in'>
+
+<col name='1gg'
+left='7.01in'
+right='7.11in'
+width='0.1in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='center'
+top='0.00in'>
+
+<tlin name='digY'
+top='3.43in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='1ggg'
+left='7.51in'
+right='7.61in'
+width='0.1in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='center'
+top='0.00in'>
 
 <tlin name='digN'
 top='3.43in'
@@ -1157,6 +1222,38 @@ color='blue'>
 </col>
 *******************************************************
 
+<col name='1w'
+left='6.47in'
+right='6.57in'
+width='0.1in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='center'
+top='0.00in'>
+
+<tlin name='06cCk'
+top='7.69in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+<tlin name='07Ck'
+top='7.86in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
 <col name='1u'
 left='7.03in'
 right='7.94in'
@@ -1515,35 +1612,6 @@ color='red'>
 </col>
 *******************************************************
 
-<col name='1w'
-left='6.47in'
-right='6.57in'
-width='0.1in'
-background-color='pink'
-font-size='12pt'
-font-family='Times'
-text-align='center'
-top='0.00in'>
-
-<tlin name='06cCk'
-top='7.69in'
-height='0.15in'
-color='blue'>
-<text>x</text>
-<blank></blank>
-</tlin>
-
-<tlin name='07Ck'
-top='7.86in'
-height='0.15in'
-color='blue'>
-<text>x</text>
-<blank></blank>
-</tlin>
-
-</col>
-*******************************************************
-
 </col>
 *******************************************************
 
@@ -1573,7 +1641,7 @@ text-align='center'
 top='0.00in'>
 
 <tlin name='8814'
-top='0.63in'
+top='0.61in'
 height='0.15in'
 color='blue'>
 <text>x</text>
@@ -1594,7 +1662,7 @@ text-align='center'
 top='0.00in'>
 
 <tlin name='4972'
-top='0.63in'
+top='0.61in'
 height='0.15in'
 color='blue'>
 <text>x</text>
@@ -1615,7 +1683,7 @@ text-align='center'
 top='0.00in'>
 
 <tlin name='Other'
-top='0.63in'
+top='0.61in'
 height='0.15in'
 color='blue'>
 <text>x</text>
@@ -1639,7 +1707,7 @@ top='0.00in'>
 top='0.63in'
 height='0.15in'
 color='blue'>
-<text>tOther</text>
+<text>Other</text>
 <blank></blank>
 </tlin>
 
@@ -2495,7 +2563,7 @@ top='0.00in'>
 top='6.04in'
 height='0.15in'
 color='blue'>
-<text>Michael Levin</text>
+<text>Martin Levine</text>
 <blank></blank>
 </tlin>
 
@@ -2516,7 +2584,7 @@ top='0.00in'>
 top='6.04in'
 height='0.15in'
 color='blue'>
-<text>412-745-8765</text>
+<text>412-789-1234</text>
 <blank></blank>
 </tlin>
 
@@ -2642,7 +2710,7 @@ top='0.00in'>
 top='6.75in'
 height='0.15in'
 color='blue'>
-<text>04/14/2023</text>
+<text>04/14/25</text>
 <blank></blank>
 </tlin>
 
@@ -2650,7 +2718,7 @@ color='blue'>
 top='7.19in'
 height='0.15in'
 color='blue'>
-<text>04/15/2023</text>
+<text>04/15/25</text>
 <blank></blank>
 </tlin>
 
@@ -2874,7 +2942,7 @@ top='0.00in'>
 top='7.38in'
 height='0.15in'
 color='blue'>
-<text>724-987-3541</text>
+<text>412-789-1234</text>
 <blank></blank>
 </tlin>
 
@@ -2895,7 +2963,7 @@ top='0.00in'>
 top='7.38in'
 height='0.15in'
 color='blue'>
-<text>jqtax@gmail.com</text>
+<text>pwtax@gmail.com</text>
 <blank></blank>
 </tlin>
 
@@ -2916,7 +2984,7 @@ top='0.00in'>
 top='7.72in'
 height='0.15in'
 color='blue'>
-<text>Michael Levin</text>
+<text>Martin Levine</text>
 <blank></blank>
 </tlin>
 
@@ -2937,7 +3005,7 @@ top='0.00in'>
 top='7.72in'
 height='0.15in'
 color='blue'>
-<text>04/10/2023</text>
+<text>04/10/25</text>
 <blank></blank>
 </tlin>
 
@@ -2958,7 +3026,7 @@ top='0.00in'>
 top='7.72in'
 height='0.15in'
 color='blue'>
-<text>257986</text>
+<text>256789</text>
 <blank></blank>
 </tlin>
 
@@ -3021,7 +3089,7 @@ top='0.00in'>
 top='7.88in'
 height='0.15in'
 color='blue'>
-<text>412-768-3921</text>
+<text>412-765-1234</text>
 <blank></blank>
 </tlin>
 
@@ -3063,7 +3131,7 @@ top='0.00in'>
 top='8.05in'
 height='0.15in'
 color='blue'>
-<text>35-79823</text>
+<text>12-34567</text>
 <blank></blank>
 </tlin>
 

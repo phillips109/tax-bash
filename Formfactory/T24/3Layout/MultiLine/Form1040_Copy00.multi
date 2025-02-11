@@ -173,6 +173,13 @@ testvalue:'x'
 value1:''
 value2:
 
+type:tlin
+name:aliS
+top:3.20
+height:0.15
+color:blue
+dummy:'x'
+
 Endcol ************************************************
 
 type:col
@@ -226,6 +233,26 @@ dummy:Francis Brown
 form:Form1040
 copy:00
 line2:lineSchild
+
+Endcol ************************************************
+
+type:col
+name:1bb
+left:4.75
+right:7.83
+width:3.08
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:aSname
+top:3.38
+height:0.15
+color:blue
+dummy:Conchita LaBanana
 
 Endcol ************************************************
 
@@ -587,13 +614,6 @@ height:0.15
 color:blue
 dummy:x
 
-type:tlin
-name:digY
-top:3.43
-height:0.15
-color:blue
-dummy:x
-
 Endcol ************************************************
 
 type:col
@@ -613,6 +633,50 @@ top:2.17
 height:0.15
 color:blue
 dummy:x
+
+Endcol ************************************************
+
+type:col
+name:1gg
+left:0.00
+right:8.50
+width:8.5
+background-color='pink'
+font-size:12
+font-family:Times
+align:center
+top:0.33
+
+type:col
+name:1gg
+left:7.01
+right:7.11
+width:0.1
+background-color='pink'
+font-size:12
+font-family:Times
+align:center
+top:0.00
+
+type:tlin
+name:digY
+top:3.43
+height:0.15
+color:blue
+dummy:x
+
+Endcol ************************************************
+
+type:col
+name:1ggg
+left:7.51
+right:7.61
+width:0.1
+background-color='pink'
+font-size:12
+font-family:Times
+align:center
+top:0.00
 
 type:tlin
 name:digN
@@ -1112,6 +1176,35 @@ dummy:x
 Endcol ************************************************
 
 type:col
+name:1w
+left:6.47
+right:6.57
+width:0.1
+background-color='pink'
+font-size:12
+font-family:Times
+align:center
+top:0.00
+
+type:tlin
+name:06cCk
+top:7.69
+height:0.15
+color:blue
+dummy:x
+
+type:tlin
+name:07Ck
+top:7.86
+height:0.15
+color:blue
+dummy:x
+
+Endcol ************************************************
+
+Endcol ************************************************
+
+type:col
 name:1u
 left:7.03
 right:7.94
@@ -1440,33 +1533,6 @@ line2:
 
 Endcol ************************************************
 
-type:col
-name:1w
-left:6.47
-right:6.57
-width:0.1
-background-color='pink'
-font-size:12
-font-family:Times
-align:center
-top:0.00
-
-type:tlin
-name:06cCk
-top:7.69
-height:0.15
-color:blue
-dummy:x
-
-type:tlin
-name:07Ck
-top:7.86
-height:0.15
-color:blue
-dummy:x
-
-Endcol ************************************************
-
 Endcol ************************************************
 
 EndpgF
@@ -1499,7 +1565,7 @@ top:0.00
 
 type:tlin
 name:8814
-top:0.63
+top:0.61
 height:0.15
 color:blue
 dummy:x
@@ -1519,7 +1585,7 @@ top:0.00
 
 type:tlin
 name:4972
-top:0.63
+top:0.61
 height:0.15
 color:blue
 dummy:x
@@ -1539,7 +1605,7 @@ top:0.00
 
 type:tlin
 name:Other
-top:0.63
+top:0.61
 height:0.15
 color:blue
 dummy:x
@@ -1562,7 +1628,7 @@ name:tOther
 top:0.63
 height:0.15
 color:blue
-dummy:tOther
+dummy:Other
 
 Endcol ************************************************
 
@@ -2361,7 +2427,7 @@ name:Dname
 top:6.04
 height:0.15
 color:blue
-dummy:Michael Levin
+dummy:Martin Levine
 
 Endcol ************************************************
 
@@ -2381,7 +2447,7 @@ name:Dphone
 top:6.04
 height:0.15
 color:blue
-dummy:412-745-8765
+dummy:412-789-1234
 
 Endcol ************************************************
 
@@ -2501,14 +2567,14 @@ name:Tdate
 top:6.75
 height:0.15
 color:blue
-dummy:04/14/2023
+dummy:04/14/25
 
 type:tlin
 name:Sdate
 top:7.19
 height:0.15
 color:blue
-dummy:04/15/2023
+dummy:04/15/25
 
 Endcol ************************************************
 
@@ -2717,7 +2783,7 @@ name:Tphone
 top:7.38
 height:0.15
 color:blue
-dummy:724-987-3541
+dummy:412-789-1234
 
 Endcol ************************************************
 
@@ -2737,7 +2803,7 @@ name:Temail
 top:7.38
 height:0.15
 color:blue
-dummy:jqtax@gmail.com
+dummy:pwtax@gmail.com
 
 Endcol ************************************************
 
@@ -2757,7 +2823,7 @@ name:Pname
 top:7.72
 height:0.15
 color:blue
-dummy:Michael Levin
+dummy:Martin Levine
 
 Endcol ************************************************
 
@@ -2777,7 +2843,7 @@ name:Pdate
 top:7.72
 height:0.15
 color:blue
-dummy:04/10/2023
+dummy:04/10/25
 
 Endcol ************************************************
 
@@ -2797,7 +2863,7 @@ name:PTIN
 top:7.72
 height:0.15
 color:blue
-dummy:257986
+dummy:256789
 
 Endcol ************************************************
 
@@ -2857,7 +2923,7 @@ name:Fphone
 top:7.88
 height:0.15
 color:blue
-dummy:412-768-3921
+dummy:412-765-1234
 
 Endcol ************************************************
 
@@ -2897,7 +2963,7 @@ name:FEIN
 top:8.05
 height:0.15
 color:blue
-dummy:35-79823
+dummy:12-34567
 
 Endcol ************************************************
 

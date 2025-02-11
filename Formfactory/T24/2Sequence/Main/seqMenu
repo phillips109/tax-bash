@@ -150,7 +150,7 @@ editNos(){
 changeOrder(){
     echo $1
 #    awk -f ../Awk/changeOrder.awk ../Seqs/$1.seq > ../Text/$1.text
-     awk -f ../Awk/changeOrder.awk ../Nos/$1.num  > ../Text/$1.text 
+     awk -f ../Awk/changeOrder.awk ../Nos/$1.num  > ../Txt/$1.text 
 }
 
 
@@ -161,7 +161,7 @@ changeOrder(){
 #}
 
 remove1stLine(){
-    sed 1d ../Text/$1.text > ../Txt/$1.txt
+    sed 1d ../Txt/$1.text > ../Txt/$1.txt
 }
 
 editTxt(){

@@ -112,6 +112,32 @@ xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!18ck  	!9.94  	!x                 	!            	!      	!
 Endcol*******************
 
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!left	!1.61  	!5.49
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!06b  	!4.29  	!This is line 06b.     	!            	!      	!
+tlin  	!08ba  	!6.13  	!This is line 08ba. 	!            	!      	!
+tlin  	!08bb  	!6.29  	!This is line 08bb.	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!left	!3.57  	!5.49
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!06a 	!4.13  	!This is line 06a. 	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!left	!4.62  	!6.76
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!16a 	!8.97  	!This is line 16a. 	!            	!      	!
+Endcol*******************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!left	!1.61	!6.75
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!16b 	!9.13  	!This is line 16b. 	!            	!      	!
+Endcol*******************
+
 Endcol*******************
 
 EndpgS

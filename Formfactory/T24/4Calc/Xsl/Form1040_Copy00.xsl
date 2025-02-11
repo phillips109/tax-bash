@@ -2021,6 +2021,14 @@ $Form1040-Copy00-linepen10"/>
 <xsl:value-of select="document('../Data/Form1040_Copy00_linex00_text.xml')//text"/>
 </xsl:variable>
 
+<xsl:variable name="Form1040-Copy00-lineailS">
+<xsl:value-of select="document('../Data/Form1040_Copy00_lineailS_text.xml')//text"/>
+</xsl:variable>
+
+<xsl:variable name="Form1040-Copy00-lineaSname">
+<xsl:value-of select="document('../Data/Form1040_Copy00_lineaSname_text.xml')//text"/>
+</xsl:variable>
+
 <xsl:variable name="Form1040-Copy00-line07a01">
 <xsl:choose>
 <xsl:when test="document('../Data/Form1099r_Copy01_line07a_text.xml')">
@@ -3859,6 +3867,14 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00linex00 color="blue">
 <xsl:value-of select="$Form1040-Copy00-linex00"/>
 </copy00linex00>
+
+<copy00lineailS color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineailS"/>
+</copy00lineailS>
+
+<copy00lineaSname color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineaSname"/>
+</copy00lineaSname>
 
 <copy00line07a01 color="blue">
 <xsl:value-of select="$Form1040-Copy00-line07a01"/>

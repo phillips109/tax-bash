@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -66,7 +66,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line16b color='blue'>274592</copy00line16b>
 <copy00line17a color='red'>17000</copy00line17a>
 <copy00line17b color='red'>17001</copy00line17b>
-<copy00line20yr color='blue'>22</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00linevoid color='blue'>x</copy00linevoid>
 <copy00linecorr color='blue'>x</copy00linecorr>
 <copy00linepnam1 color='blue'>Hopkins Coal Co.</copy00linepnam1>
@@ -113,7 +113,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line16b color='blue'>274592</copy00line16b>
 <copy00line17a color='red'>17000</copy00line17a>
 <copy00line17b color='red'>17001</copy00line17b>
-<copy00line20yr color='blue'>22</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00linevoid color='blue'>x</copy00linevoid>
 <copy00linecorr color='blue'>x</copy00linecorr>
 <copy00linepnam1 color='blue'>Hopkins Coal Co.</copy00linepnam1>
@@ -160,7 +160,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line16b color='blue'>274592</copy00line16b>
 <copy00line17a color='red'>17000</copy00line17a>
 <copy00line17b color='red'>17001</copy00line17b>
-<copy00line20yr color='blue'>22</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00linecorr color='blue'>x</copy00linecorr>
 <copy00line color='blue'></copy00line>
 <copy00linepnam1 color='blue'>Hopkins Coal Co.</copy00linepnam1>
@@ -207,7 +207,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line16b color='blue'>274592</copy00line16b>
 <copy00line17a color='red'>17000</copy00line17a>
 <copy00line17b color='red'>17001</copy00line17b>
-<copy00line20yr color='blue'>22</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00linecorr color='blue'>x</copy00linecorr>
 <copy00line color='blue'></copy00line>
 </Form>

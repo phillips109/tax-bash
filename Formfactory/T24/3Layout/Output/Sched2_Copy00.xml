@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00line01e1 color='blue'>x</copy00line01e1>
+<copy00line01e3 color='blue'>x</copy00line01e3>
+<copy00line01f1 color='blue'>x</copy00line01f1>
+<copy00line01f3 color='blue'>x</copy00line01f3>
+<copy00line01e2 color='blue'>x</copy00line01e2>
+<copy00line01e4 color='blue'>x</copy00line01e4>
+<copy00line01f2 color='blue'>x</copy00line01f2>
+<copy00line01f4 color='blue'>x</copy00line01f4>
+<copy00line01ytxt color='blue'>Other additions</copy00line01ytxt>
+<copy00line01a color='red'>101</copy00line01a>
+<copy00line01b color='red'>102</copy00line01b>
+<copy00line01c color='red'>103</copy00line01c>
+<copy00line01d color='red'>104</copy00line01d>
+<copy00line01e color='red'>105</copy00line01e>
+<copy00line01f color='red'>106</copy00line01f>
+<copy00line01y color='red'>107</copy00line01y>
+<copy00line05 color='red'>500</copy00line05>
+<copy00line06 color='red'>600</copy00line06>
+<copy00line01z color='red'>108</copy00line01z>
+<copy00line02 color='red'>200</copy00line02>
+<copy00line03 color='red'>300</copy00line03>
+<copy00line04 color='red'>400</copy00line04>
+<copy00line07 color='red'>700</copy00line07>
+<copy00line08 color='red'>800</copy00line08>
+<copy00line09 color='red'>900</copy00line09>
+<copy00line10 color='red'>1000</copy00line10>
+<copy00line11 color='red'>1100</copy00line11>
+<copy00line12 color='red'>1200</copy00line12>
+<copy00line13 color='red'>1300</copy00line13>
+<copy00line14 color='red'>1400</copy00line14>
+<copy00line15 color='red'>1500</copy00line15>
+<copy00line16 color='red'>1600</copy00line16>
+<copy00line08ck color='blue'>x</copy00line08ck>
+<copy00line17atxt color='blue'>This is line 17atext.</copy00line17atxt>
+<copy00line17a color='red'>1701</copy00line17a>
+<copy00line17b color='red'>1702</copy00line17b>
+<copy00line17c color='red'>1703</copy00line17c>
+<copy00line17d color='red'>1704</copy00line17d>
+<copy00line17e color='red'>1705</copy00line17e>
+<copy00line17f color='red'>1706</copy00line17f>
+<copy00line17g color='red'>1707</copy00line17g>
+<copy00line17h color='red'>1708</copy00line17h>
+<copy00line17i color='red'>1709</copy00line17i>
+<copy00line17j color='red'>1710</copy00line17j>
+<copy00line17k color='red'>1711</copy00line17k>
+<copy00line17l color='red'>1712</copy00line17l>
+<copy00line17m color='red'>1713</copy00line17m>
+<copy00line17n color='red'>1714</copy00line17n>
+<copy00line17o color='red'>1715</copy00line17o>
+<copy00line17p color='red'>1716</copy00line17p>
+<copy00line17q color='red'>1717</copy00line17q>
+<copy00line17z color='red'>1718</copy00line17z>
+<copy00line20 color='red'>2000</copy00line20>
+<copy00line18 color='red'>1800</copy00line18>
+<copy00line19 color='red'>1900</copy00line19>
+<copy00line21 color='red'>2100</copy00line21>
+<copy00line17za color='blue'>This is line 17za.</copy00line17za>
+<copy00line17zb color='blue'>This is line 17zb.</copy00line17zb>
+</Form>
+</IRSForms>

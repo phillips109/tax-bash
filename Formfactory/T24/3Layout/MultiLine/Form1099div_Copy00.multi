@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -485,10 +485,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.41
+top:1.43
 height:0.15
 color:blue
-dummy:2022
+dummy:2024
 
 Endcol ************************************************
 
@@ -1092,10 +1092,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.41
+top:1.43
 height:0.15
 color:blue
-dummy:2022
+dummy:2024
 
 Endcol ************************************************
 
@@ -1679,10 +1679,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.41
+top:1.43
 height:0.15
 color:blue
-dummy:2022
+dummy:2024
 
 Endcol ************************************************
 
@@ -2325,10 +2325,10 @@ top:0.00
 
 type:tlin
 name:20yr
-top:1.41
+top:1.43
 height:0.15
 color:blue
-dummy:2022
+dummy:2024
 
 Endcol ************************************************
 

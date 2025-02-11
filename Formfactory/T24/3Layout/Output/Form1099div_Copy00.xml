@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -55,7 +55,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line07 color='red'>7000</copy00line07>
 <copy00line09 color='red'>9000</copy00line09>
 <copy00line12 color='red'>12000</copy00line12>
-<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00line02b color='red'>2002</copy00line02b>
 <copy00line02d color='red'>2004</copy00line02d>
 <copy00line02f color='red'>2006</copy00line02f>
@@ -103,7 +103,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line07 color='red'>7000</copy00line07>
 <copy00line09 color='red'>9000</copy00line09>
 <copy00line12 color='red'>12000</copy00line12>
-<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00line02b color='red'>2002</copy00line02b>
 <copy00line02d color='red'>2004</copy00line02d>
 <copy00line02f color='red'>2006</copy00line02f>
@@ -150,7 +150,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line07 color='red'>7000</copy00line07>
 <copy00line09 color='red'>9000</copy00line09>
 <copy00line12 color='red'>12000</copy00line12>
-<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00line02b color='red'>2002</copy00line02b>
 <copy00line02d color='red'>2004</copy00line02d>
 <copy00line02f color='red'>2006</copy00line02f>
@@ -199,7 +199,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line07 color='red'>7000</copy00line07>
 <copy00line09 color='red'>9000</copy00line09>
 <copy00line12 color='red'>12000</copy00line12>
-<copy00line20yr color='blue'>2022</copy00line20yr>
+<copy00line20yr color='blue'>2024</copy00line20yr>
 <copy00line02b color='red'>2002</copy00line02b>
 <copy00line02d color='red'>2004</copy00line02d>
 <copy00line02f color='red'>2006</copy00line02f>

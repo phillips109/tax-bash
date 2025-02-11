@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -28,6 +28,12 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line05b color='red'>502</copy00line05b>
 <copy00line07 color='red'>700</copy00line07>
 <copy00line08 color='red'>800</copy00line08>
+<copy00line09 color='red'>900</copy00line09>
+<copy00line10 color='red'>1000</copy00line10>
+<copy00line11 color='red'>1100</copy00line11>
+<copy00line12 color='red'>1200</copy00line12>
+<copy00line14 color='red'>1400</copy00line14>
+<copy00line15 color='red'>1500</copy00line15>
 <copy00line06a color='red'>601</copy00line06a>
 <copy00line06b color='red'>602</copy00line06b>
 <copy00line06c color='red'>603</copy00line06c>
@@ -41,17 +47,14 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <copy00line06l color='red'>611</copy00line06l>
 <copy00line06m color='red'>612</copy00line06m>
 <copy00line06z color='red'>613</copy00line06z>
-<copy00line06line color='blue'>This is line 06.</copy00line06line>
-<copy00line09 color='red'>900</copy00line09>
-<copy00line10 color='red'>1000</copy00line10>
-<copy00line11 color='red'>1100</copy00line11>
-<copy00line12 color='red'>1200</copy00line12>
-<copy00line14 color='red'>1400</copy00line14>
-<copy00line15 color='red'>1500</copy00line15>
 <copy00line13a color='red'>1301</copy00line13a>
 <copy00line13b color='red'>1302</copy00line13b>
 <copy00line13c color='red'>1303</copy00line13c>
 <copy00line13d color='red'>1304</copy00line13d>
 <copy00line13z color='red'>1305</copy00line13z>
+<copy00line06za color='blue'>This is line 06za</copy00line06za>
+<copy00line06zb color='blue'>This is line 06zb</copy00line06zb>
+<copy00line13zb color='blue'>This is line 13zb</copy00line13zb>
+<copy00line13za color='blue'>This is line 13za</copy00line13za>
 </Form>
 </IRSForms>

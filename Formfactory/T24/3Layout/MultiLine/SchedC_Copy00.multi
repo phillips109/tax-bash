@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -413,8 +413,8 @@ Endcol ************************************************
 
 type:col
 name:03
-left:7.15
-right:7.25
+left:7.14
+right:7.24
 width:0.1
 background-color='pink'
 font-size:12
@@ -454,8 +454,8 @@ Endcol ************************************************
 
 type:col
 name:04
-left:7.77
-right:7.87
+left:7.64
+right:7.74
 width:0.1
 background-color='pink'
 font-size:12

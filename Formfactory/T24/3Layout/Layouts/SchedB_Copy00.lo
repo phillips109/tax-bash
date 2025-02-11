@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -48,8 +48,8 @@ top='1.28in'
 height='0.15in'
 color='purple'>
 <form>Bkg</form>
-<copy>01</copy>
-<line2>lineTFNI</line2>
+<copy>00</copy>
+<line2>TFNI</line2>
 </tPull>
 
 <tPull name='SFNI'
@@ -57,8 +57,8 @@ top='1.42in'
 height='0.15in'
 color='purple'>
 <form>Bkg</form>
-<copy>01</copy>
-<line2>lineSFNI</line2>
+<copy>00</copy>
+<line2>SFNI</line2>
 </tPull>
 
 </col>
@@ -79,8 +79,8 @@ top='1.28in'
 height='0.15in'
 color='purple'>
 <form>Bkg</form>
-<copy>01</copy>
-<line2>lineTLN</line2>
+<copy>00</copy>
+<line2>TLN</line2>
 </tPull>
 
 <tPull name='SLN'
@@ -88,8 +88,8 @@ top='1.42in'
 height='0.15in'
 color='purple'>
 <form>Bkg</form>
-<copy>01</copy>
-<line2>lineSLN</line2>
+<copy>00</copy>
+<line2>SLN</line2>
 </tPull>
 
 </col>
@@ -110,8 +110,8 @@ top='1.42in'
 height='0.15in'
 color='purple'>
 <form>Bkg</form>
-<copy>01</copy>
-<line2>lineTSSNoF</line2>
+<copy>00</copy>
+<line2>TSSNoF</line2>
 </tPull>
 
 </col>
@@ -132,8 +132,8 @@ top='1.42in'
 height='0.15in'
 color='purple'>
 <form>Bkg</form>
-<copy>01</copy>
-<line2>lineTSSNoM</line2>
+<copy>00</copy>
+<line2>TSSNoM</line2>
 </tPull>
 
 </col>
@@ -154,8 +154,8 @@ top='1.42in'
 height='0.15in'
 color='purple'>
 <form>Bkg</form>
-<copy>01</copy>
-<line2>lineTSSNoL</line2>
+<copy>00</copy>
+<line2>TSSNoL</line2>
 </tPull>
 
 </col>
@@ -177,7 +177,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>01</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01bt'
@@ -186,7 +186,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>02</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01ct'
@@ -195,7 +195,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>03</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01dt'
@@ -204,7 +204,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>04</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01et'
@@ -213,7 +213,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>05</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01ft'
@@ -222,7 +222,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>06</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01gt'
@@ -231,7 +231,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>07</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01ht'
@@ -240,7 +240,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>08</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01it'
@@ -249,7 +249,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>09</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01jt'
@@ -258,7 +258,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>10</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01kt'
@@ -267,7 +267,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>11</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01lt'
@@ -276,7 +276,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>12</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01mt'
@@ -285,7 +285,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>13</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='01nt'
@@ -294,7 +294,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>14</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 </col>
@@ -316,7 +316,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>01</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05bt'
@@ -325,7 +325,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>02</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05ct'
@@ -334,7 +334,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>03</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05dt'
@@ -343,7 +343,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>04</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05et'
@@ -352,7 +352,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>05</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05ft'
@@ -361,7 +361,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>06</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05gt'
@@ -370,7 +370,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>07</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05ht'
@@ -379,7 +379,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>08</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05it'
@@ -388,7 +388,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>09</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05jt'
@@ -397,7 +397,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>10</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05kt'
@@ -406,7 +406,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>11</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05lt'
@@ -415,7 +415,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>12</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05mt'
@@ -424,7 +424,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>13</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 <tPull name='05nt'
@@ -433,7 +433,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>14</copy>
-<line2>linepnam1</line2>
+<line2>pnam1</line2>
 </tPull>
 
 </col>
@@ -455,7 +455,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>01</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01bta'
@@ -464,7 +464,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>02</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01cta'
@@ -473,7 +473,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>03</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01dta'
@@ -482,7 +482,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>04</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01eta'
@@ -491,7 +491,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>05</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01fta'
@@ -500,7 +500,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>06</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01gta'
@@ -509,7 +509,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>07</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01hta'
@@ -518,7 +518,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>08</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01ita'
@@ -527,7 +527,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>09</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01jta'
@@ -536,7 +536,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>10</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01kta'
@@ -545,7 +545,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>11</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01lta'
@@ -554,7 +554,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>12</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01mta'
@@ -563,7 +563,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>13</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='01nta'
@@ -572,7 +572,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099int</form>
 <copy>14</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 </col>
@@ -594,7 +594,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>01</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05bta'
@@ -603,7 +603,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>02</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05cta'
@@ -612,7 +612,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>03</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05dta'
@@ -621,7 +621,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>04</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05eta'
@@ -630,7 +630,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>05</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05fta'
@@ -639,7 +639,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>06</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05gta'
@@ -648,7 +648,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>07</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05hta'
@@ -657,7 +657,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>08</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05ita'
@@ -666,7 +666,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>09</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05jta'
@@ -675,7 +675,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>10</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05kta'
@@ -684,7 +684,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>11</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05lta'
@@ -693,7 +693,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>12</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05mta'
@@ -702,7 +702,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>13</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 <tPull name='05nta'
@@ -711,7 +711,7 @@ height='0.15in'
 color='purple'>
 <form>Form1099div</form>
 <copy>14</copy>
-<line2>lineactNo</line2>
+<line2>actNo</line2>
 </tPull>
 
 </col>

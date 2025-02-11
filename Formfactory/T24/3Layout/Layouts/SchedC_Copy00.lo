@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -443,8 +443,8 @@ color='red'>
 *******************************************************
 
 <col name='03'
-left='7.15in'
-right='7.25in'
+left='7.14in'
+right='7.24in'
 width='0.1in'
 background-color='pink'
 font-size='12pt'
@@ -488,8 +488,8 @@ color='blue'>
 *******************************************************
 
 <col name='04'
-left='7.77in'
-right='7.87in'
+left='7.64in'
+right='7.74in'
 width='0.1in'
 background-color='pink'
 font-size='12pt'

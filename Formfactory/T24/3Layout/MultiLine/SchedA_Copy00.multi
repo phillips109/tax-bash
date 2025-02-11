@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -486,6 +486,100 @@ top:9.94
 height:0.15
 color:blue
 dummy:x
+
+Endcol ************************************************
+
+type:col
+name:k
+left:1.61
+right:5.49
+width:3.88
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:06b
+top:4.29
+height:0.15
+color:blue
+dummy:This is line 06b.
+
+type:tlin
+name:08ba
+top:6.13
+height:0.15
+color:blue
+dummy:This is line 08ba.
+
+type:tlin
+name:08bb
+top:6.29
+height:0.15
+color:blue
+dummy:This is line 08bb.
+
+Endcol ************************************************
+
+type:col
+name:i
+left:3.57
+right:5.49
+width:1.92
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:06a
+top:4.13
+height:0.15
+color:blue
+dummy:This is line 06a.
+
+Endcol ************************************************
+
+type:col
+name:i
+left:4.62
+right:6.76
+width:2.14
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:16a
+top:8.97
+height:0.15
+color:blue
+dummy:This is line 16a.
+
+Endcol ************************************************
+
+type:col
+name:i
+left:1.61
+right:6.75
+width:5.14
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:16b
+top:9.13
+height:0.15
+color:blue
+dummy:This is line 16b.
 
 Endcol ************************************************
 

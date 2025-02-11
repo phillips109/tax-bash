@@ -32,3 +32,9 @@ dlin	!16	!027	!
 dlin	!17	!027	!
 tlin	!05ack	!027	!
 tlin	!18ck	!027	!
+tlin	!06a	!028	!
+tlin	!06b	!029	!
+tlin	!08ba	!030	!
+tlin	!08bb	!031	!
+tlin	!16a	!032	!
+tlin	!16b	!033	!

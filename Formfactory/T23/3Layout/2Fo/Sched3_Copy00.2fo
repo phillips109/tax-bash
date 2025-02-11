@@ -428,7 +428,7 @@
 <fo:block-container position="absolute" top="0.00in" left="0.91in" width="4.36in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
 <fo:block-container position="absolute" top="7.39in">
-<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Sched3_Copy00_line06line_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Sched3_Copy00_line06line_text.xml')//text"/>
+<fo:block height="0.15in" background-color="transparent"><xslt:attribute name="color"><xslt:value-of select="document('../Data/Sched3_Copy0006line_text.xml')//taxline/@color"/></xslt:attribute><xslt:value-of select="document('../Data/Sched3_Copy0006line_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 

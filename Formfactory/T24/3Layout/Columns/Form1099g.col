@@ -1,0 +1,39 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+1      	!001   	!pname1  	!tlin  	!      	!      	!      
+1      	!002   	!pname2  	!tlin  	!      	!      	!      
+1      	!003   	!paddr1  	!tlin  	!      	!      	!      
+1      	!004   	!paddr2  	!tlin  	!      	!      	!      
+1      	!005   	!pcity   	!tlin  	!      	!      	!      
+2      	!006   	!pST     	!tlin  	!      	!      	!      
+3      	!007   	!pzip    	!tlin  	!      	!      	!      
+1      	!008   	!ptel    	!tlin  	!      	!      	!      
+1      	!009   	!pTIN    	!tlin  	!      	!      	!      
+4      	!010   	!rTIN    	!tlin  	!      	!      	!      
+1      	!011   	!rname   	!tlin  	!      	!      	!      
+1      	!012   	!raddr   	!tlin  	!      	!      	!      
+1      	!013   	!rcity   	!tlin  	!      	!      	!      
+2      	!014   	!rST     	!tlin  	!      	!      	!      
+3      	!015   	!rzip    	!tlin  	!      	!      	!      
+5      	!016   	!AcctNo  	!tlin  	!      	!      	!      
+6      	!017   	!2dTIN   	!tlin  	!      	!      	!      
+7      	!018   	!01      	!dlin  	!      	!      	!      
+7      	!019   	!02      	!dlin  	!      	!      	!      
+8      	!020   	!Year    	!tlin  	!      	!      	!      
+7      	!021   	!03      	!dlin  	!      	!      	!      
+9      	!022   	!04      	!dlin  	!      	!      	!      
+7      	!023   	!05      	!dlin  	!      	!      	!      
+9      	!024   	!06      	!dlin  	!      	!      	!      
+7      	!025   	!07      	!dlin  	!      	!      	!      
+10     	!026   	!08      	!tlin  	!      	!      	!      
+7    	!027   	!09      	!dlin  	!      	!      	!      
+11     	!028   	!10a1    	!tlin  	!      	!      	!      
+12     	!029   	!10b1    	!tlin  	!      	!      	!      
+13     	!030   	!111     	!dlin  	!      	!      	!      
+11    	!031   	!10a2    	!tlin  	!      	!      	!      
+12    	!032   	!10b2    	!tlin  	!      	!      	!      
+13    	!033   	!112     	!dlin  	!      	!      	!      
+14     	!034   	!void    	!tlin  	!      	!      	!      
+15    	!035   	!corr    	!tlin  	!      	!      	!      

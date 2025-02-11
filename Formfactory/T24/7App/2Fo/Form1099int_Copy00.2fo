@@ -3,18 +3,18 @@
 <fo:root>
 <xslt:text disable-output-escaping="yes">
 
-	  Copyright(C) 2019 Phillips Wedemeyer
+	  Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 	  This file is part of a program called Tax-bash.
 
 	  Tax-bash is free software: you can redistibute it and/or modify
-	  it under the terms of the FNU General Public License as published by
+	  it under the terms of the GNU General Public License as published by
 	  the Free Software Foundation, either version 3 of the License, or
 	  (at your option) any later version.
 	  
 	  Tax-bash is distributed in the hope that it will be useful,
 	  but WITHOUT ANY WARRANTY; without even the implied warranty of
-	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	  GNU General Public License for more details.
 	  
 	  You should have received a copy of the GNU General Public License
@@ -469,9 +469,9 @@
 </fo:block-container>
 *******************************************************
 
-<fo:block-container position="absolute" top="0.00in" left="6.25in" width="0.25in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+<fo:block-container position="absolute" top="0.00in" left="6.00in" width="0.4in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.44in">
+<fo:block-container position="absolute" top="1.41in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099int_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>
@@ -921,9 +921,9 @@
 </fo:block-container>
 *******************************************************
 
-<fo:block-container position="absolute" top="0.00in" left="6.25in" width="0.25in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+<fo:block-container position="absolute" top="0.00in" left="6.00in" width="0.4in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.44in">
+<fo:block-container position="absolute" top="1.41in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099int_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>
@@ -1373,9 +1373,9 @@
 </fo:block-container>
 *******************************************************
 
-<fo:block-container position="absolute" top="0.00in" left="6.25in" width="0.25in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+<fo:block-container position="absolute" top="0.00in" left="6.00in" width="0.4in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.44in">
+<fo:block-container position="absolute" top="1.41in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099int_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>
@@ -1836,9 +1836,9 @@
 </fo:block-container>
 *******************************************************
 
-<fo:block-container position="absolute" top="0.00in" left="6.25in" width="0.25in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+<fo:block-container position="absolute" top="0.00in" left="6.00in" width="0.4in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.44in">
+<fo:block-container position="absolute" top="1.41in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099int_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>

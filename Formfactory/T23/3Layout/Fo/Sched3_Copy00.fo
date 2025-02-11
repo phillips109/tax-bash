@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
 
-	  Copyright(C) 2019 Phillips Wedemeyer
+	  Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 	  This file is part of a program called Tax-bash.
 
 	  Tax-bash is free software: you can redistibute it and/or modify
-	  it under the terms of the FNU General Public License as published by
+	  it under the terms of the GNU General Public License as published by
 	  the Free Software Foundation, either version 3 of the License, or
 	  (at your option) any later version.
 	  
 	  Tax-bash is distributed in the hope that it will be useful,
 	  but WITHOUT ANY WARRANTY; without even the implied warranty of
-	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	  GNU General Public License for more details.
 	  
 	  You should have received a copy of the GNU General Public License
@@ -39,7 +39,7 @@
 <fo:block-container text-align="right" font-size="12pt" font-family="Times" background-color="transparent" width="0.9in" left="5.75in" top="0.00in" position="absolute"><fo:block-container top="3.89in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">601</fo:block></fo:block-container><fo:block-container top="4.14in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">602</fo:block></fo:block-container><fo:block-container top="4.39in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">603</fo:block></fo:block-container><fo:block-container top="4.64in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">604</fo:block></fo:block-container><fo:block-container top="5.15in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">605</fo:block></fo:block-container><fo:block-container top="5.39in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">606</fo:block></fo:block-container><fo:block-container top="5.64in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">607</fo:block></fo:block-container><fo:block-container top="5.89in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">608</fo:block></fo:block-container><fo:block-container top="6.14in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">609</fo:block></fo:block-container><fo:block-container top="6.39in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">610</fo:block></fo:block-container><fo:block-container top="6.64in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">611</fo:block></fo:block-container><fo:block-container top="6.89in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">612</fo:block></fo:block-container><fo:block-container top="7.39in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="red">613</fo:block></fo:block-container></fo:block-container>
 *******************************************************
 
-<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="4.36in" left="0.91in" top="0.00in" position="absolute"><fo:block-container top="7.39in" position="absolute"><fo:block background-color="transparent" height="0.15in" color="blue">This is line 06.</fo:block></fo:block-container></fo:block-container>
+<fo:block-container text-align="left" font-size="12pt" font-family="Times" background-color="transparent" width="4.36in" left="0.91in" top="0.00in" position="absolute"><fo:block-container top="7.39in" position="absolute"><fo:block background-color="transparent" height="0.15in" color=""/></fo:block-container></fo:block-container>
 *******************************************************
 
 </fo:block-container>

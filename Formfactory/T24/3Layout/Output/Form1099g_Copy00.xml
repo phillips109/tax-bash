@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00line color='blue'></copy00line>
+<copy00linepname1 color='blue'>Pa Dept of Revenue</copy00linepname1>
+<copy00linepname2 color='blue'>PAYMENTS</copy00linepname2>
+<copy00linepaddr1 color='blue'>1 Revenue Place</copy00linepaddr1>
+<copy00linepaddr2 color='blue'>Fourth Floor</copy00linepaddr2>
+<copy00linepcity color='blue'>Harrisburg</copy00linepcity>
+<copy00lineptel color='blue'>724-123-4567</copy00lineptel>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linername color='blue'>John E Taxpayor</copy00linername>
+<copy00lineraddr color='blue'>200 Main Street</copy00lineraddr>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00line08 color='blue'>x</copy00line08>
+<copy00line10a1 color='blue'>PA</copy00line10a1>
+<copy00line10a2 color='blue'>OH</copy00line10a2>
+<copy00line10b1 color='blue'>44-50000</copy00line10b1>
+<copy00line10b2 color='blue'>35-80000</copy00line10b2>
+<copy00line111 color='red'>30000</copy00line111>
+<copy00line112 color='red'>5000</copy00line112>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepST color='blue'>PA</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepzip color='blue'>15217</copy00linepzip>
+<copy00linerzip color='blue'>15147</copy00linerzip>
+<copy00linerTIN color='blue'>123-45-6789</copy00linerTIN>
+<copy00lineAcctNo color='blue'>1234567</copy00lineAcctNo>
+<copy00line2dTIN color='blue'>x</copy00line2dTIN>
+<copy00line01 color='red'>1500</copy00line01>
+<copy00line02 color='red'>500</copy00line02>
+<copy00line03 color='red'>30000</copy00line03>
+<copy00line05 color='red'>1000</copy00line05>
+<copy00line07 color='red'>800</copy00line07>
+<copy00line09 color='red'>5000</copy00line09>
+<copy00lineYear color='blue'>2024</copy00lineYear>
+<copy00line04 color='red'>400</copy00line04>
+<copy00line06 color='red'>1000</copy00line06>
+<copy00linepname1 color='blue'>Pa Dept of Revenue</copy00linepname1>
+<copy00linepname2 color='blue'>PAYMENTS</copy00linepname2>
+<copy00linepaddr1 color='blue'>1 Revenue Place</copy00linepaddr1>
+<copy00linepaddr2 color='blue'>Fourth Floor</copy00linepaddr2>
+<copy00linepcity color='blue'>Harrisburg</copy00linepcity>
+<copy00lineptel color='blue'>724-123-4567</copy00lineptel>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linername color='blue'>John E Taxpayor</copy00linername>
+<copy00lineraddr color='blue'>200 Main Street</copy00lineraddr>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00line08 color='blue'>x</copy00line08>
+<copy00line10a1 color='blue'>PA</copy00line10a1>
+<copy00line10a2 color='blue'>OH</copy00line10a2>
+<copy00line10b1 color='blue'>44-50000</copy00line10b1>
+<copy00line10b2 color='blue'>35-80000</copy00line10b2>
+<copy00line111 color='red'>30000</copy00line111>
+<copy00line112 color='red'>5000</copy00line112>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepST color='blue'>PA</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepzip color='blue'>15217</copy00linepzip>
+<copy00linerzip color='blue'>15147</copy00linerzip>
+<copy00linerTIN color='blue'>123-45-6789</copy00linerTIN>
+<copy00lineAcctNo color='blue'>1234567</copy00lineAcctNo>
+<copy00line01 color='red'>1500</copy00line01>
+<copy00line02 color='red'>500</copy00line02>
+<copy00line03 color='red'>30000</copy00line03>
+<copy00line05 color='red'>1000</copy00line05>
+<copy00line07 color='red'>800</copy00line07>
+<copy00line09 color='red'>5000</copy00line09>
+<copy00lineYear color='blue'>2024</copy00lineYear>
+<copy00line04 color='red'>400</copy00line04>
+<copy00line06 color='red'>1000</copy00line06>
+<copy00linepname1 color='blue'>Pa Dept of Revenue</copy00linepname1>
+<copy00linepname2 color='blue'>PAYMENTS</copy00linepname2>
+<copy00linepaddr1 color='blue'>1 Revenue Place</copy00linepaddr1>
+<copy00linepaddr2 color='blue'>Fourth Floor</copy00linepaddr2>
+<copy00linepcity color='blue'>Harrisburg</copy00linepcity>
+<copy00lineptel color='blue'>724-123-4567</copy00lineptel>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linername color='blue'>John E Taxpayor</copy00linername>
+<copy00lineraddr color='blue'>200 Main Street</copy00lineraddr>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00line08 color='blue'>x</copy00line08>
+<copy00line10a1 color='blue'>PA</copy00line10a1>
+<copy00line10a2 color='blue'>OH</copy00line10a2>
+<copy00line10b1 color='blue'>44-50000</copy00line10b1>
+<copy00line10b2 color='blue'>35-80000</copy00line10b2>
+<copy00line111 color='red'>30000</copy00line111>
+<copy00line112 color='red'>5000</copy00line112>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepST color='blue'>PA</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepzip color='blue'>15217</copy00linepzip>
+<copy00linerzip color='blue'>15147</copy00linerzip>
+<copy00linerTIN color='blue'>123-45-6789</copy00linerTIN>
+<copy00lineAcctNo color='blue'>1234567</copy00lineAcctNo>
+<copy00line01 color='red'>1500</copy00line01>
+<copy00line02 color='red'>500</copy00line02>
+<copy00line03 color='red'>30000</copy00line03>
+<copy00line05 color='red'>1000</copy00line05>
+<copy00line07 color='red'>800</copy00line07>
+<copy00line09 color='red'>5000</copy00line09>
+<copy00lineYear color='blue'>2024</copy00lineYear>
+<copy00line04 color='red'>400</copy00line04>
+<copy00line06 color='red'>1000</copy00line06>
+<copy00line color='blue'></copy00line>
+<copy00linepname1 color='blue'>Pa Dept of Revenue</copy00linepname1>
+<copy00linepname2 color='blue'>PAYMENTS</copy00linepname2>
+<copy00linepaddr1 color='blue'>1 Revenue Place</copy00linepaddr1>
+<copy00linepaddr2 color='blue'>Fourth Floor</copy00linepaddr2>
+<copy00linepcity color='blue'>Harrisburg</copy00linepcity>
+<copy00lineptel color='blue'>724-123-4567</copy00lineptel>
+<copy00linepTIN color='blue'>25-12345</copy00linepTIN>
+<copy00linername color='blue'>John E Taxpayor</copy00linername>
+<copy00lineraddr color='blue'>200 Main Street</copy00lineraddr>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00line08 color='blue'>x</copy00line08>
+<copy00line10a1 color='blue'>PA</copy00line10a1>
+<copy00line10a2 color='blue'>OH</copy00line10a2>
+<copy00line10b1 color='blue'>44-50000</copy00line10b1>
+<copy00line10b2 color='blue'>35-80000</copy00line10b2>
+<copy00line111 color='red'>30000</copy00line111>
+<copy00line112 color='red'>5000</copy00line112>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepST color='blue'>PA</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepzip color='blue'>15217</copy00linepzip>
+<copy00linerzip color='blue'>15147</copy00linerzip>
+<copy00linerTIN color='blue'>123-45-6789</copy00linerTIN>
+<copy00lineAcctNo color='blue'>1234567</copy00lineAcctNo>
+<copy00line01 color='red'>1500</copy00line01>
+<copy00line02 color='red'>500</copy00line02>
+<copy00line03 color='red'>30000</copy00line03>
+<copy00line05 color='red'>1000</copy00line05>
+<copy00line07 color='red'>800</copy00line07>
+<copy00line09 color='red'>5000</copy00line09>
+<copy00lineYear color='blue'>2024</copy00lineYear>
+<copy00line04 color='red'>400</copy00line04>
+<copy00line06 color='red'>1000</copy00line06>
+</Form>
+</IRSForms>

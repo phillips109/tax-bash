@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -20,7 +20,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 Form
 
-type:pgF
+type:pgS
 name:Single
 bkgImage:../Jpg/f1040s3-page-001.jpg
 
@@ -153,7 +153,7 @@ align:center
 top:0.00
 
 type:tPull
-name:TSSNol
+name:TSSNoL
 top:1.47
 height:0.15
 color:purple
@@ -176,7 +176,7 @@ top:0.00
 
 type:dlin
 name:01
-top:1.98
+top:1.80
 height:0.15
 color:red
 dummy:100
@@ -186,7 +186,7 @@ line2:
 
 type:dlin
 name:02
-top:2.39
+top:1.97
 height:0.15
 color:red
 dummy:200
@@ -196,7 +196,7 @@ line2:
 
 type:dlin
 name:03
-top:2.64
+top:2.13
 height:0.15
 color:red
 dummy:300
@@ -206,7 +206,7 @@ line2:
 
 type:dlin
 name:04
-top:2.89
+top:2.30
 height:0.15
 color:red
 dummy:400
@@ -216,7 +216,7 @@ line2:
 
 type:dlin
 name:05a
-top:3.14
+top:2.47
 height:0.15
 color:red
 dummy:501
@@ -226,7 +226,7 @@ line2:
 
 type:dlin
 name:05b
-top:3.39
+top:2.63
 height:0.15
 color:red
 dummy:502
@@ -236,7 +236,7 @@ line2:
 
 type:dlin
 name:07
-top:7.64
+top:5.47
 height:0.15
 color:red
 dummy:700
@@ -246,7 +246,7 @@ line2:
 
 type:dlin
 name:08
-top:8.05
+top:5.64
 height:0.15
 color:red
 dummy:800
@@ -254,204 +254,9 @@ form:
 copy:
 line2:
 
-Endcol ************************************************
-
-type:col
-name:7
-left:5.75
-right:6.65
-width:0.9
-background-color='pink'
-font-size:12
-font-family:Times
-align:right
-top:0.00
-
-type:dlin
-name:06a
-top:3.89
-height:0.15
-color:red
-dummy:601
-form:
-copy:
-line2:
-
-type:dlin
-name:06b
-top:4.14
-height:0.15
-color:red
-dummy:602
-form:
-copy:
-line2:
-
-type:dlin
-name:06c
-top:4.39
-height:0.15
-color:red
-dummy:603
-form:
-copy:
-line2:
-
-type:dlin
-name:06d
-top:4.64
-height:0.15
-color:red
-dummy:604
-form:
-copy:
-line2:
-
-type:dlin
-name:06f
-top:5.15
-height:0.15
-color:red
-dummy:605
-form:
-copy:
-line2:
-
-type:dlin
-name:06g
-top:5.39
-height:0.15
-color:red
-dummy:606
-form:
-copy:
-line2:
-
-type:dlin
-name:06h
-top:5.64
-height:0.15
-color:red
-dummy:607
-form:
-copy:
-line2:
-
-type:dlin
-name:06i
-top:5.89
-height:0.15
-color:red
-dummy:608
-form:
-copy:
-line2:
-
-type:dlin
-name:06j
-top:6.14
-height:0.15
-color:red
-dummy:609
-form:
-copy:
-line2:
-
-type:dlin
-name:06k
-top:6.39
-height:0.15
-color:red
-dummy:610
-form:
-copy:
-line2:
-
-type:dlin
-name:06l
-top:6.64
-height:0.15
-color:red
-dummy:611
-form:
-copy:
-line2:
-
-type:dlin
-name:06m
-top:6.89
-height:0.15
-color:red
-dummy:612
-form:
-copy:
-line2:
-
-type:dlin
-name:06z
-top:7.39
-height:0.15
-color:red
-dummy:613
-form:
-copy:
-line2:
-
-Endcol ************************************************
-
-type:col
-name:9
-left:0.91
-right:5.27
-width:4.36
-background-color='pink'
-font-size:12
-font-family:Times
-align:left
-top:0.00
-
-type:tlin
-name:06line
-top:7.39
-height:0.15
-color:blue
-dummy:This is line 06.
-
-Endcol ************************************************
-
-Endcol ************************************************
-
-EndpgF
-
-type:pgL
-name:Single
-bkgImage:../Jpg/f1040s3-page-002.jpg
-
-type:col
-name:
-left:0.00
-right:8.50
-width:8.5
-background-color='pink'
-font-size:12
-font-family:Times
-align:left
-top:-0.12
-
-type:col
-name:6
-left:7.05
-right:7.96
-width:0.91
-background-color='pink'
-font-size:12
-font-family:Times
-align:right
-top:0.00
-
 type:dlin
 name:09
-top:1.12
+top:5.97
 height:0.15
 color:red
 dummy:900
@@ -461,7 +266,7 @@ line2:
 
 type:dlin
 name:10
-top:1.38
+top:6.14
 height:0.15
 color:red
 dummy:1000
@@ -471,7 +276,7 @@ line2:
 
 type:dlin
 name:11
-top:1.63
+top:6.31
 height:0.15
 color:red
 dummy:1100
@@ -481,7 +286,7 @@ line2:
 
 type:dlin
 name:12
-top:1.88
+top:6.47
 height:0.15
 color:red
 dummy:1200
@@ -491,7 +296,7 @@ line2:
 
 type:dlin
 name:14
-top:4.21
+top:7.96
 height:0.15
 color:red
 dummy:1400
@@ -501,7 +306,7 @@ line2:
 
 type:dlin
 name:15
-top:4.63
+top:8.13
 height:0.15
 color:red
 dummy:1500
@@ -523,8 +328,138 @@ align:right
 top:0.00
 
 type:dlin
+name:06a
+top:2.96
+height:0.15
+color:red
+dummy:601
+form:
+copy:
+line2:
+
+type:dlin
+name:06b
+top:3.14
+height:0.15
+color:red
+dummy:602
+form:
+copy:
+line2:
+
+type:dlin
+name:06c
+top:3.30
+height:0.15
+color:red
+dummy:603
+form:
+copy:
+line2:
+
+type:dlin
+name:06d
+top:3.47
+height:0.15
+color:red
+dummy:604
+form:
+copy:
+line2:
+
+type:dlin
+name:06f
+top:3.80
+height:0.15
+color:red
+dummy:605
+form:
+copy:
+line2:
+
+type:dlin
+name:06g
+top:3.97
+height:0.15
+color:red
+dummy:606
+form:
+copy:
+line2:
+
+type:dlin
+name:06h
+top:4.13
+height:0.15
+color:red
+dummy:607
+form:
+copy:
+line2:
+
+type:dlin
+name:06i
+top:4.30
+height:0.15
+color:red
+dummy:608
+form:
+copy:
+line2:
+
+type:dlin
+name:06j
+top:4.47
+height:0.15
+color:red
+dummy:609
+form:
+copy:
+line2:
+
+type:dlin
+name:06k
+top:4.62
+height:0.15
+color:red
+dummy:610
+form:
+copy:
+line2:
+
+type:dlin
+name:06l
+top:4.81
+height:0.15
+color:red
+dummy:611
+form:
+copy:
+line2:
+
+type:dlin
+name:06m
+top:4.97
+height:0.15
+color:red
+dummy:612
+form:
+copy:
+line2:
+
+type:dlin
+name:06z
+top:5.30
+height:0.15
+color:red
+dummy:613
+form:
+copy:
+line2:
+
+type:dlin
 name:13a
-top:2.38
+top:6.80
 height:0.15
 color:red
 dummy:1301
@@ -534,7 +469,7 @@ line2:
 
 type:dlin
 name:13b
-top:2.80
+top:7.14
 height:0.15
 color:red
 dummy:1302
@@ -544,7 +479,7 @@ line2:
 
 type:dlin
 name:13c
-top:3.22
+top:7.30
 height:0.15
 color:red
 dummy:1303
@@ -554,7 +489,7 @@ line2:
 
 type:dlin
 name:13d
-top:3.48
+top:7.46
 height:0.15
 color:red
 dummy:1304
@@ -564,7 +499,7 @@ line2:
 
 type:dlin
 name:13z
-top:3.96
+top:7.80
 height:0.15
 color:red
 dummy:1305
@@ -574,7 +509,74 @@ line2:
 
 Endcol ************************************************
 
+type:col
+name:9
+left:3.82
+right:5.27
+width:1.45
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:06za
+top:5.14
+height:0.15
+color:blue
+dummy:This is line 06za
+
 Endcol ************************************************
 
-EndpgL
+type:col
+name:10
+left:0.91
+right:5.27
+width:4.36
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:06zb
+top:5.30
+height:0.15
+color:blue
+dummy:This is line 06zb
+
+type:tlin
+name:13zb
+top:7.80
+height:0.15
+color:blue
+dummy:This is line 13zb
+
+Endcol ************************************************
+
+type:col
+name:11
+left:3.33
+right:5.27
+width:1.94
+background-color='pink'
+font-size:12
+font-family:Times
+align:left
+top:0.00
+
+type:tlin
+name:13za
+top:7.64
+height:0.15
+color:blue
+dummy:This is line 13za
+
+Endcol ************************************************
+
+Endcol ************************************************
+
+EndpgS
 EndForm

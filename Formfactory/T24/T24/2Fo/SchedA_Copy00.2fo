@@ -3,18 +3,18 @@
 <fo:root>
 <xslt:text disable-output-escaping="yes">
 
-	  Copyright(C) 2019 Phillips Wedemeyer
+	  Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 	  This file is part of a program called Tax-bash.
 
 	  Tax-bash is free software: you can redistibute it and/or modify
-	  it under the terms of the FNU General Public License as published by
+	  it under the terms of the GNU General Public License as published by
 	  the Free Software Foundation, either version 3 of the License, or
 	  (at your option) any later version.
 	  
 	  Tax-bash is distributed in the hope that it will be useful,
 	  but WITHOUT ANY WARRANTY; without even the implied warranty of
-	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	  GNU General Public License for more details.
 	  
 	  You should have received a copy of the GNU General Public License
@@ -439,6 +439,62 @@
 <fo:block-container position="absolute" top="9.94in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/SchedA_Copy00_line18ck_text.xml')//text"/>
+	</fo:block>
+</fo:block-container>
+
+</fo:block-container>
+*******************************************************
+
+<fo:block-container position="absolute" top="0.00in" left="1.61in" width="3.88in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+
+<fo:block-container position="absolute" top="4.29in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedA_Copy00_line06b_text.xml')//text"/>
+	</fo:block>
+</fo:block-container>
+
+<fo:block-container position="absolute" top="6.13in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedA_Copy00_line08ba_text.xml')//text"/>
+	</fo:block>
+</fo:block-container>
+
+<fo:block-container position="absolute" top="6.29in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedA_Copy00_line08bb_text.xml')//text"/>
+	</fo:block>
+</fo:block-container>
+
+</fo:block-container>
+*******************************************************
+
+<fo:block-container position="absolute" top="0.00in" left="3.57in" width="1.92in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+
+<fo:block-container position="absolute" top="4.13in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedA_Copy00_line06a_text.xml')//text"/>
+	</fo:block>
+</fo:block-container>
+
+</fo:block-container>
+*******************************************************
+
+<fo:block-container position="absolute" top="0.00in" left="4.62in" width="2.14in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+
+<fo:block-container position="absolute" top="8.97in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedA_Copy00_line16a_text.xml')//text"/>
+	</fo:block>
+</fo:block-container>
+
+</fo:block-container>
+*******************************************************
+
+<fo:block-container position="absolute" top="0.00in" left="1.61in" width="5.14in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
+
+<fo:block-container position="absolute" top="9.13in">
+<fo:block height="0.15in" background-color="transparent" color="black">
+<xslt:value-of select="document('../Data/SchedA_Copy00_line16b_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 

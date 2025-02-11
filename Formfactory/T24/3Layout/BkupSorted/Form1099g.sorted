@@ -1,0 +1,51 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!01    	!0.75  	!4.06  	!left         	!
+01     	!tlin  	!pname1	!      	!      	!0.84     	!Pa Dept of Revenue
+01     	!tlin  	!pname2	!      	!      	!1.00         	!PAYMENTS
+01     	!tlin  	!paddr1	!      	!      	!1.19     	!1 Revenue Place
+01     	!tlin  	!paddr2	!      	!      	!1.25     	!Fourth Floor
+01     	!tlin  	!pcity 	!      	!      	!1.39         	!Harrisburg
+01     	!tlin  	!ptel  	!      	!      	!1.46     	!724-123-4567
+01     	!tlin  	!pTIN  	!      	!      	!1.77    	!25-12345
+01     	!tlin  	!rname 	!      	!      	!2.22         	!John E Taxpayor
+01     	!tlin  	!raddr 	!      	!      	!2.62     	!200 Main Street
+01     	!tlin  	!rcity 	!      	!      	!2.96     	!Pittsburgh
+Col   	!col   	!10    	!6.65 	!6.75  	!center     	!
+10    	!tlin  	!08    	!      	!      	!2.46   	!x
+Col   	!col   	!11    	!4.14  	!4.66 	!center     	!
+11    	!tlin  	!10a1  	!      	!      	!3.12    	!PA
+11    	!tlin  	!10a2  	!      	!      	!3.31    	!OH
+Col   	!col   	!12    	!4.74 	!5.76 	!center     	!
+12    	!tlin  	!10b1  	!      	!      	!3.12     	!44-50000
+12    	!tlin  	!10b2  	!      	!      	!3.31     	!35-80000
+Col   	!col   	!13    	!5.96  	!      	!right         	!
+13    	!dlin  	!111   	!      	!      	!3.12     	!30000
+13    	!dlin  	!112   	!      	!      	!3.31     	!5000
+Col   	!col   	!14    	!2.61 	!2.71  	!center     	!
+14    	!tlin  	!void  	!      	!      	!0.48         	!x
+Col   	!col   	!15    	!3.42  	!3.52  	!center   	!
+15    	!tlin  	!corr  	!      	!      	!0.48     	!x
+Col   	!col   	!02     !2.92  	!3.12 	!left         	!
+02     	!tlin  	!pST   	!      	!      	!1.39         	!PA
+02     	!tlin  	!rST   	!      	!      	!2.96     	!PA
+Col   	!col   	!03    	!3.28  	!4.06  	!right         	!
+03     	!tlin  	!pzip  	!      	!      	!1.39         	!15217
+03     	!tlin  	!rzip  	!      	!      	!2.96     	!15147
+Col   	!col   	!04    	!2.45 	!4.05  	!center        	!
+04     	!tlin  	!rTIN  	!      	!      	!1.77     	!123-45-6789
+Col   	!col   	!05     !0.75   !3.44  	!left   	!
+05     	!tlin  	!AcctNo	!  	!  	!3.31         	!1234567
+Col   	!col   	!06    	!3.74 	!3.84  	!center   	!
+06     	!tlin  	!2dTIN 	!      	!      	!3.31         	!x
+Col   	!col   	!07    	!4.26 	!5.43 	!right   	!
+07     	!dlin  	!01    	!      	!      	!0.96    	!1500
+07     	!dlin  	!02    	!      	!      	!1.47     	!500
+07     	!dlin  	!03    	!      	!      	!1.80     	!30000
+07     	!dlin  	!05    	!      	!      	!2.12     	!1000
+07     	!dlin  	!07    	!      	!      	!2.46     	!800
+07     	!dlin  	!09    	!      	!      	!2.80     	!5000
+Col   	!col   	!08    	!5.80  	!6.21 	!center  	!
+08     	!tlin  	!Year  	!      	!      	!1.45    	!2024
+Col   	!col   	!09    	!5.64 	!6.81  	!right    	!
+09     	!dlin  	!04    	!      	!      	!1.80         	!400
+09     	!dlin  	!06    	!      	!      	!2.12      	!1000

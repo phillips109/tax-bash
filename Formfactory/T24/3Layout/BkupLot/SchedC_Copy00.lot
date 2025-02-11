@@ -1,16 +1,16 @@
 
-Copyright(C) 2019 Phillips Wedemeyer
+Copyright(C) 2023, 2024 Phillips Wedemeyer
                               
 This file is part of a program called Tax-bash
                               
 Tax-bash is free software: you can redistibute it and/or modify
-it under the terms of the FNU General Public License as published by
+it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
                               
 Tax-bash is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
                               
 You should have received a copy of the GNU General Public License
@@ -75,7 +75,7 @@ dlin  	!17    	!7.64  	!1700              	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!03    	!0.00  	!center	!7.15  	!7.25  
+col   	!03    	!0.00  	!center	!7.14  	!7.24  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!Gy    	!2.78  	!x                 	!            	!      	!      
 tlin  	!Hx    	!2.96  	!x                 	!            	!      	!      
@@ -84,7 +84,7 @@ tlin  	!Jy    	!3.28  	!x                 	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!04    	!0.00  	!center	!7.77  	!7.87  
+col   	!04    	!0.00  	!center	!7.64  	!7.74  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!Gn    	!2.78  	!x                 	!            	!      	!      
 tlin  	!In    	!3.12  	!x                 	!            	!      	!      

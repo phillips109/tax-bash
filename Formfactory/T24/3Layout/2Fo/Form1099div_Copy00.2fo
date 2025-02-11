@@ -371,7 +371,7 @@
 
 <fo:block-container position="absolute" top="0.00in" left="5.85in" width="0.27in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.41in">
+<fo:block-container position="absolute" top="1.43in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099div_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>
@@ -859,7 +859,7 @@
 
 <fo:block-container position="absolute" top="0.00in" left="5.85in" width="0.27in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.41in">
+<fo:block-container position="absolute" top="1.43in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099div_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>
@@ -1336,7 +1336,7 @@
 
 <fo:block-container position="absolute" top="0.00in" left="5.85in" width="0.27in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.41in">
+<fo:block-container position="absolute" top="1.43in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099div_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>
@@ -1846,7 +1846,7 @@
 
 <fo:block-container position="absolute" top="0.00in" left="5.85in" width="0.27in" background-color="transparent" font-family="Times" font-size="12pt" text-align="left">
 
-<fo:block-container position="absolute" top="1.41in">
+<fo:block-container position="absolute" top="1.43in">
 <fo:block height="0.15in" background-color="transparent" color="black">
 <xslt:value-of select="document('../Data/Form1099div_Copy00_line20yr_text.xml')//text"/>
 	</fo:block>

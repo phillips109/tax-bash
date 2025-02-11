@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -52,8 +52,8 @@ top:1.28
 height:0.15
 color:purple
 form:Bkg
-copy:01
-line2:lineTFNI
+copy:00
+line2:TFNI
 
 type:tPull
 name:SFNI
@@ -61,8 +61,8 @@ top:1.42
 height:0.15
 color:purple
 form:Bkg
-copy:01
-line2:lineSFNI
+copy:00
+line2:SFNI
 
 Endcol ************************************************
 
@@ -83,8 +83,8 @@ top:1.28
 height:0.15
 color:purple
 form:Bkg
-copy:01
-line2:lineTLN
+copy:00
+line2:TLN
 
 type:tPull
 name:SLN
@@ -92,8 +92,8 @@ top:1.42
 height:0.15
 color:purple
 form:Bkg
-copy:01
-line2:lineSLN
+copy:00
+line2:SLN
 
 Endcol ************************************************
 
@@ -114,8 +114,8 @@ top:1.42
 height:0.15
 color:purple
 form:Bkg
-copy:01
-line2:lineTSSNoF
+copy:00
+line2:TSSNoF
 
 Endcol ************************************************
 
@@ -136,8 +136,8 @@ top:1.42
 height:0.15
 color:purple
 form:Bkg
-copy:01
-line2:lineTSSNoM
+copy:00
+line2:TSSNoM
 
 Endcol ************************************************
 
@@ -158,8 +158,8 @@ top:1.42
 height:0.15
 color:purple
 form:Bkg
-copy:01
-line2:lineTSSNoL
+copy:00
+line2:TSSNoL
 
 Endcol ************************************************
 
@@ -181,7 +181,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:01
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01bt
@@ -190,7 +190,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:02
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01ct
@@ -199,7 +199,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:03
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01dt
@@ -208,7 +208,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:04
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01et
@@ -217,7 +217,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:05
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01ft
@@ -226,7 +226,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:06
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01gt
@@ -235,7 +235,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:07
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01ht
@@ -244,7 +244,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:08
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01it
@@ -253,7 +253,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:09
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01jt
@@ -262,7 +262,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:10
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01kt
@@ -271,7 +271,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:11
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01lt
@@ -280,7 +280,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:12
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01mt
@@ -289,7 +289,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:13
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:01nt
@@ -298,7 +298,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:14
-line2:linepnam1
+line2:pnam1
 
 Endcol ************************************************
 
@@ -320,7 +320,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:01
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05bt
@@ -329,7 +329,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:02
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05ct
@@ -338,7 +338,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:03
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05dt
@@ -347,7 +347,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:04
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05et
@@ -356,7 +356,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:05
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05ft
@@ -365,7 +365,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:06
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05gt
@@ -374,7 +374,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:07
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05ht
@@ -383,7 +383,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:08
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05it
@@ -392,7 +392,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:09
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05jt
@@ -401,7 +401,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:10
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05kt
@@ -410,7 +410,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:11
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05lt
@@ -419,7 +419,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:12
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05mt
@@ -428,7 +428,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:13
-line2:linepnam1
+line2:pnam1
 
 type:tPull
 name:05nt
@@ -437,7 +437,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:14
-line2:linepnam1
+line2:pnam1
 
 Endcol ************************************************
 
@@ -459,7 +459,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:01
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01bta
@@ -468,7 +468,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:02
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01cta
@@ -477,7 +477,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:03
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01dta
@@ -486,7 +486,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:04
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01eta
@@ -495,7 +495,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:05
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01fta
@@ -504,7 +504,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:06
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01gta
@@ -513,7 +513,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:07
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01hta
@@ -522,7 +522,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:08
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01ita
@@ -531,7 +531,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:09
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01jta
@@ -540,7 +540,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:10
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01kta
@@ -549,7 +549,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:11
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01lta
@@ -558,7 +558,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:12
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01mta
@@ -567,7 +567,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:13
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:01nta
@@ -576,7 +576,7 @@ height:0.15
 color:purple
 form:Form1099int
 copy:14
-line2:lineactNo
+line2:actNo
 
 Endcol ************************************************
 
@@ -598,7 +598,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:01
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05bta
@@ -607,7 +607,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:02
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05cta
@@ -616,7 +616,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:03
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05dta
@@ -625,7 +625,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:04
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05eta
@@ -634,7 +634,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:05
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05fta
@@ -643,7 +643,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:06
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05gta
@@ -652,7 +652,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:07
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05hta
@@ -661,7 +661,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:08
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05ita
@@ -670,7 +670,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:09
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05jta
@@ -679,7 +679,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:10
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05kta
@@ -688,7 +688,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:11
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05lta
@@ -697,7 +697,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:12
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05mta
@@ -706,7 +706,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:13
-line2:lineactNo
+line2:actNo
 
 type:tPull
 name:05nta
@@ -715,7 +715,7 @@ height:0.15
 color:purple
 form:Form1099div
 copy:14
-line2:lineactNo
+line2:actNo
 
 Endcol ************************************************
 

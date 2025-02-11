@@ -1,15 +1,15 @@
-Copyright(C) 2019 Phillips Wedemeyer
+Copyright(C) 2023, 2024 Phillips Wedemeyer
                               
 This file is part of a program called Tax-bash
                               
 Tax-bash is free software: you can redistibute it and/or modify
-it under the terms of the FNU General Public License as published by
+it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
                               
 Tax-bash is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
                               
 You should have received a copy of the GNU General Public License
@@ -111,7 +111,33 @@ col   	!j     	!0.00  	!center	!6.59  	!6.69
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!18ck  	!9.94  	!x                 	!            	!      	!      
 Endcol*******************     
-                              
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!left	!1.61  	!5.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!06b  	!4.29  	!This is line 06b.     	!            	!      	!      
+tlin  	!08ba  	!6.13  	!This is line 08ba. 	!            	!      	!      
+tlin  	!08bb  	!6.29  	!This is line 08bb.	!            	!      	!      
+Endcol*******************     
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!left	!3.57  	!5.49  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!06a 	!4.13  	!This is line 06a. 	!            	!      	!      
+Endcol*******************     
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!left	!4.62  	!6.76  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!16a 	!8.97  	!This is line 16a. 	!            	!      	!      
+Endcol*******************     
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!left	!1.61	!6.75  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!16b 	!9.13  	!This is line 16b. 	!            	!      	!      
+Endcol*******************     
+
 Endcol*******************     
                               
 EndpgS    

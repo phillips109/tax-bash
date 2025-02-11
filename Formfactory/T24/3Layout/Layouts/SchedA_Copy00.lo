@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright(C) 2023, 2024 Phillips Wedemeyer
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
 
 This file is part of a program called Tax-bash.
 
@@ -508,6 +508,106 @@ top='9.94in'
 height='0.15in'
 color='blue'>
 <text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='k'
+left='1.61in'
+right='5.49in'
+width='3.88in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='06b'
+top='4.29in'
+height='0.15in'
+color='blue'>
+<text>This is line 06b.</text>
+<blank></blank>
+</tlin>
+
+<tlin name='08ba'
+top='6.13in'
+height='0.15in'
+color='blue'>
+<text>This is line 08ba.</text>
+<blank></blank>
+</tlin>
+
+<tlin name='08bb'
+top='6.29in'
+height='0.15in'
+color='blue'>
+<text>This is line 08bb.</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='i'
+left='3.57in'
+right='5.49in'
+width='1.92in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='06a'
+top='4.13in'
+height='0.15in'
+color='blue'>
+<text>This is line 06a.</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='i'
+left='4.62in'
+right='6.76in'
+width='2.14in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='16a'
+top='8.97in'
+height='0.15in'
+color='blue'>
+<text>This is line 16a.</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='i'
+left='1.61in'
+right='6.75in'
+width='5.14in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='16b'
+top='9.13in'
+height='0.15in'
+color='blue'>
+<text>This is line 16b.</text>
 <blank></blank>
 </tlin>
 
