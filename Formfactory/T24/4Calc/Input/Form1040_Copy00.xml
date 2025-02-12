@@ -429,17 +429,6 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <line2>line26</line2>
 </line>
 
-<line number='12'
- color='purple'>
-<title></title>
-<type>dPull</type>
-<format>#####0</format>
-<year>0</year>
-<form>SchedA</form>
-<copy>01</copy>
-<line2>line17</line2>
-</line>
-
 <line number='13'
  color='purple'>
 <title></title>
@@ -1456,7 +1445,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
  color='cyan'>
 <type>subt0</type>
 <format>#####0</format>
-<minuend>line37a</minuend>
+<minuend>line24</minuend>
 <subtrahend>line33</subtrahend>
 </line>
 
@@ -1476,20 +1465,12 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <subtrahend>line10</subtrahend>
 </line>
 
-<line number='35'
+<line number='35a'
  color='purple'>
 <type>subtr</type>
 <format>#####0</format>
 <minuend>line34</minuend>
 <subtrahend>line36</subtrahend>
-</line>
-
-<line number='35a'
- color='purple'>
-<type>subtr</type>
-<format>#####0</format>
-<minuend>line35</minuend>
-<subtrahend>line38</subtrahend>
 </line>
 
 <line number='Calc16'
@@ -3126,13 +3107,22 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <value2>VALUOF0</value2>
 </line>
 
+<line number='modIncome'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$Form1040-Copy00-line01z > 850</value1>
+<value2>VALUOF$Form1040-Copy00-line01z + 450</value2>
+</line>
+
 <line number='12'
  color='red'>
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>WHEN01$Form1040-Copy00-lineScA18ck = 'x'</value1>
-<value2>VALUOF$Form1040-Copy00-lineschA17</value2>
+<value1>	WHEN01$Form1040-Copy00-lineScA18ck = 'x'</value1>
+<value2>	   VALUOF$Form1040-Copy00-lineschA17</value2>
 </line>
 
 <line number='16a'

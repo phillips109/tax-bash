@@ -425,12 +425,12 @@ Sched1
 00
 line26
 
-dPull
+xdPull
 12
 #####0
 0
 SchedA
-01
+01?
 line17
 
 dPull
@@ -1243,7 +1243,7 @@ line24
 subt0
 37
 #####0
-line37a
+line24
 line33
 
 x*******************************************************
@@ -1267,12 +1267,12 @@ line09
 line10
 
 subtr
-35
+35a
 #####0
 line34
 line36
 
-subtr
+xsubtr
 35a
 #####0
 line35
@@ -2337,6 +2337,116 @@ WHEN02
 CHOOS2
 
 cnum
+modIncome
+#####0
+CHOOS1
+WHEN01$Form1040-Copy00-line01z > 850
+VALUOF$Form1040-Copy00-line01z + 450
+WHEN02
+OTHER1
+VALUOF1300
+OTHER2
+CHOOS2
+
+
+cnum
+12
+#####0
+CHOOS1
+	WHEN01$Form1040-Copy00-lineScA18ck = 'x'
+	   VALUOF$Form1040-Copy00-lineschA17
+	WHEN02
+	WHEN01$Form1040-Copy00-lineSiUali = 'x'
+	   VALUOF$Form1040-Copy00-lineschA17
+	 WHEN02
+	 WHEN01Form1040-Copy00-FS = 'S'
+	    CHOOS1
+	       WHEN01$Form1040-Copy00-lineyoudep = 'x'
+	          CHOOS1
+		     WHEN01$Form1040-Copy00-linemodIncome < 14600
+		        VALUOF$Form1040-Copy00-linemodIncome + (1950 * $Form1040-Copy00-linecount)
+		     WHEN02
+		     OTHER1
+		        VALUOF14600 + (1950 * $Form1040-Copy000-linecount)
+		     OTHER2
+		  CHOOS2
+	       WHEN02
+               OTHER1
+	          VALUOF14600 + (1950 * $Form1040-Copy000-linecount)
+	       OTHER2
+	    CHOOS2
+	  WHEN02
+	 WHEN01Form1040-Copy00-FS = 'HOH'
+	    CHOOS1
+	       WHEN01$Form1040-Copy00-lineyoudep = 'x'
+	          CHOOS1
+		     WHEN01$Form1040-Copy00-linemodIncome < 21900
+		        VALUOF$Form1040-Copy00-linemodIncome + (1950 * $Form1040-Copy00-linecount)
+		     WHEN02
+		     OTHER1
+		        VALUOF21900 + (1950 * $Form1040-Copy000-linecount)
+		     OTHER2
+		  CHOOS2
+	       WHEN02
+	       OTHER1
+	           VALUOF21900 + (1950 * $Form1040-Copy000-linecount)
+	       OTHER2
+	    CHOOS2
+	 WHEN02
+	 WHEN01Form1040-Copy00-FS = 'QSS'
+	    CHOOS1
+	       WHEN01$Form1040-Copy00-lineyoudep = 'x'
+	          CHOOS1
+		     WHEN01$Form1040-Copy00-linemodIncome < 29200
+		        VALUOF$Form1040-Copy00-linemodIncome + (1550 * $Form1040-Copy00-linecount)
+		     WHEN02
+		     OTHER1
+		        VALUOF29200 + (1550 * $Form1040-Copy000-linecount)
+		     OTHER2
+		  CHOOS2
+	       WHEN02
+               OTHER1
+                  VALUOF29200 + (1550 * $Form1040-Copy000-linecount)
+               OTHER2
+	    CHOOS2
+	  WHEN02
+	 WHEN01Form1040-Copy00-FS = 'MFJ'
+	    CHOOS1
+	       WHEN01$Form1040-Copy00-lineyoudep = 'x' | $Form1040-Copy00-lineSdep = 'x'
+	          CHOOS1
+		     WHEN01$Form1040-Copy00-linemodIncome < 29200
+		        VALUOF$Form1040-Copy00-linemodIncome + (1550 * $Form1040-Copy00-linecount)
+		     WHEN02
+		     OTHER1
+		        VALUOF29200 + (1550 * $Form1040-Copy000-linecount)
+		     OTHER2
+		  CHOOS2
+	       WHEN02
+	       OTHER1
+	          VALUOF29200 + (1550 * $Form1040-Copy00-linecount)
+	       OTHER2
+	    CHOOS2
+	  WHEN02
+	 WHEN01Form1040-Copy00-FS = 'MFS'
+	    CHOOS1
+	       WHEN01$Form1040-Copy00-lineyoudep = 'x'
+	          CHOOS1
+		     WHEN01$Form1040-Copy00-linemodIncome < 14600
+		        VALUOF$Form1040-Copy00-linemodIncome + (1550 * $Form1040-Copy00-linecount)
+		     WHEN02
+		     OTHER1
+		        VALUOF14600 + (1550 * $Form1040-Copy000-linecount)
+		     OTHER2
+		  CHOOS2
+	       WHEN02
+               OTHER1
+	          VALUOF14600 + (1550 * $Form1040-Copy000-linecount)
+	       OTHER2
+	    CHOOS2
+	  WHEN02
+CHOOS2
+
+xcnum
 12
 #####0
 CHOOS1

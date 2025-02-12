@@ -38,7 +38,6 @@
 <copy00line07 color="red">-3000</copy00line07>
 <copy00line08 color="red">0</copy00line08>
 <copy00line10 color="red">0</copy00line10>
-<copy00line12 color="red">NaN</copy00line12>
 <copy00line13 color="red">0</copy00line13>
 <copy00line17 color="red">0</copy00line17>
 <copy00line19 color="red">0</copy00line19>
@@ -135,7 +134,6 @@
 <copy00line37 color="red">NaN</copy00line37>
 <copy00line02b color="red">0</copy00line02b>
 <copy00line11 color="red">-3000</copy00line11>
-<copy00line35 color="red">NaN</copy00line35>
 <copy00line35a color="red">NaN</copy00line35a>
 <copy00lineCalc16 color="red">NaN</copy00lineCalc16>
 <copy00line2name color="blue"/>
@@ -321,6 +319,7 @@
 <copy00linepen09 color="red">0</copy00linepen09>
 <copy00linepen10 color="red">0</copy00linepen10>
 <copy00linecount color="red">0</copy00linecount>
+<copy00linemodIncome color="red">1300</copy00linemodIncome>
 <copy00line12 color="red">NaN</copy00line12>
 <copy00line16a color="red">0</copy00line16a>
 <copy00lineS color="blue"/>
