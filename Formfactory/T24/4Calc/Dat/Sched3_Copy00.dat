@@ -22,7 +22,7 @@ You should have received a copy of the GNU General Public License
 
 along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
-xsum
+xaddit
 2name
 3format
 4augend
@@ -105,6 +105,8 @@ dlin
 #####0
 1305
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 xdPull
 2name
 3format
@@ -115,14 +117,14 @@ xdPull
 dlin
 01
 #####0
-dummy
+100
 Form1116
 00
 
 dlin
 02
 #####0
-dummy
+200
 Form2441
 00
 line11
@@ -130,7 +132,7 @@ line11
 dlin
 03
 #####0
-dummy
+300
 Form8863
 00
 line19
@@ -138,14 +140,14 @@ line19
 dlin
 04
 #####0
-dummy
+400
 Form8880
 00
 
 dlin
 05a
 #####0
-dummy
+501
 Form5695
 00
 line15
@@ -153,7 +155,7 @@ line15
 dlin
 05b
 #####0
-dummy
+502
 Form5695
 00
 line32
@@ -161,77 +163,77 @@ line32
 dlin
 06a
 #####0
-dummy
+601
 Form3800
 00
 
 dlin
 06b
 #####0
-dummy
+602
 Form8801
 00
 
 dlin
 06c
 #####0
-dummy
+603
 Form8839
 00
 
 dlin
 06d
 #####0
-dummy
+604
 SchedR
 00
 
 dlin
 06f
 #####0
-dummy
+605
 Form8936
 00
 
 dlin
 06g
 #####0
-dummy
+607
 Form8396
 00
 
 dlin
 06h
 #####0
-dummy
+608
 Form8396
 00
 
 dlin
 06i
 #####0
-dummy
+609
 Form8834
 00
 
 dlin
 06j
 #####0
-dummy
+610
 Form8911
 00
 
 dlin
 06k
 #####0
-dummy
+611
 Form8912
 00
 
 dlin
 06l
 #####0
-dummy
+612
 Form8978
 00
 line14
@@ -239,7 +241,7 @@ line14
 dlin
 06m
 #####0
-dummy
+613
 Form8936
 00
 
@@ -253,7 +255,7 @@ xI have changed dPull to dlin temporarily until the refereences are known.
 dlin
 09
 #####0
-dummy
+900
 Form8962
 00
 line00
@@ -261,7 +263,7 @@ line00
 dlin
 10
 #####0
-dummy
+1800
 Form4868
 00
 line07
@@ -269,7 +271,7 @@ line07
 dlin
 12
 #####0
-dummy
+1200
 Form4136
 00
 line00
@@ -277,7 +279,7 @@ line00
 dlin
 13a
 #####0
-dummy
+1301
 Form2439
 00
 line00
@@ -285,7 +287,7 @@ line00
 dlin
 13c
 #####0
-dummy
+1303
 Form3800
 00
 line00
@@ -293,7 +295,7 @@ line00
 dlin
 13d
 #####0
-dummy
+1304
 NET965
 00
 line00

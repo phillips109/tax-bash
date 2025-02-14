@@ -314,7 +314,7 @@ FS
 cnum
 05q
 #####0
-$SchedA-Copy00-lineFS = MFS
+$SchedA-Copy00-lineFS = 'MFS'
 5000
 10000
 

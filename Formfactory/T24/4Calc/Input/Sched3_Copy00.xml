@@ -115,7 +115,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>100</override>
 <blank></blank>
 </dlin>
 
@@ -124,7 +124,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>200</override>
 <blank></blank>
 </dlin>
 
@@ -133,7 +133,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>300</override>
 <blank></blank>
 </dlin>
 
@@ -142,7 +142,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>400</override>
 <blank></blank>
 </dlin>
 
@@ -151,7 +151,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>501</override>
 <blank></blank>
 </dlin>
 
@@ -160,7 +160,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>502</override>
 <blank></blank>
 </dlin>
 
@@ -169,7 +169,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>601</override>
 <blank></blank>
 </dlin>
 
@@ -178,7 +178,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>602</override>
 <blank></blank>
 </dlin>
 
@@ -187,7 +187,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>603</override>
 <blank></blank>
 </dlin>
 
@@ -196,7 +196,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>604</override>
 <blank></blank>
 </dlin>
 
@@ -205,7 +205,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>605</override>
 <blank></blank>
 </dlin>
 
@@ -214,7 +214,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>607</override>
 <blank></blank>
 </dlin>
 
@@ -223,7 +223,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>608</override>
 <blank></blank>
 </dlin>
 
@@ -232,7 +232,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>609</override>
 <blank></blank>
 </dlin>
 
@@ -241,7 +241,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>610</override>
 <blank></blank>
 </dlin>
 
@@ -250,7 +250,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>611</override>
 <blank></blank>
 </dlin>
 
@@ -259,7 +259,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>612</override>
 <blank></blank>
 </dlin>
 
@@ -268,7 +268,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>613</override>
 <blank></blank>
 </dlin>
 
@@ -277,7 +277,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>900</override>
 <blank></blank>
 </dlin>
 
@@ -286,7 +286,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>1800</override>
 <blank></blank>
 </dlin>
 
@@ -295,7 +295,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>1200</override>
 <blank></blank>
 </dlin>
 
@@ -304,7 +304,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>1301</override>
 <blank></blank>
 </dlin>
 
@@ -313,7 +313,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>1303</override>
 <blank></blank>
 </dlin>
 
@@ -322,7 +322,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <title></title>
 <type>dlin</type>
 <format>#####0</format>
-<override>dummy</override>
+<override>1304</override>
 <blank></blank>
 </dlin>
 

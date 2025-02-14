@@ -155,7 +155,7 @@ x
 
 cnum
 #####0
-$SchedA-Copy00-lineFS = MFS
+$SchedA-Copy00-lineFS = 'MFS'
 5000
 10000
 

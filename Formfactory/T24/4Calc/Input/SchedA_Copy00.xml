@@ -345,7 +345,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
  color='red'>
 <type>cnum</type>
 <format>#####0</format>
-<testvalue>$SchedA-Copy00-lineFS = MFS</testvalue>
+<testvalue>$SchedA-Copy00-lineFS = 'MFS'</testvalue>
 <value1>5000</value1>
 <value2>10000</value2>
 </line>

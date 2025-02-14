@@ -173,7 +173,7 @@ $SchedA-Copy00-line16"/>
 <xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11'], '#####0')"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11']) * -1, '#####0')"/>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedA-Copy00-line11']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>

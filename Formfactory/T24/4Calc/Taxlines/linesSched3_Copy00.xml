@@ -2,75 +2,75 @@
 <taxlines>
 <taxline color="red">
 <linename>Sched3-Copy00-line01</linename>
-<override>dummy</override>
+<override>100</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line02</linename>
-<override>dummy</override>
+<override>200</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line03</linename>
-<override>dummy</override>
+<override>300</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line04</linename>
-<override>dummy</override>
+<override>400</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line05a</linename>
-<override>dummy</override>
+<override>501</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line05b</linename>
-<override>dummy</override>
+<override>502</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06a</linename>
-<override>dummy</override>
+<override>601</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06b</linename>
-<override>dummy</override>
+<override>602</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06c</linename>
-<override>dummy</override>
+<override>603</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06d</linename>
-<override>dummy</override>
+<override>604</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06f</linename>
-<override>dummy</override>
+<override>605</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06g</linename>
-<override>dummy</override>
+<override>607</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06h</linename>
-<override>dummy</override>
+<override>608</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06i</linename>
-<override>dummy</override>
+<override>609</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06j</linename>
-<override>dummy</override>
+<override>610</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06k</linename>
-<override>dummy</override>
+<override>611</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06l</linename>
-<override>dummy</override>
+<override>612</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06m</linename>
-<override>dummy</override>
+<override>613</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line06z</linename>
@@ -78,11 +78,11 @@
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line09</linename>
-<override>dummy</override>
+<override>900</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line10</linename>
-<override>dummy</override>
+<override>1800</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line11</linename>
@@ -90,11 +90,11 @@
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line12</linename>
-<override>dummy</override>
+<override>1200</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line13a</linename>
-<override>dummy</override>
+<override>1301</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line13b</linename>
@@ -102,11 +102,11 @@
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line13c</linename>
-<override>dummy</override>
+<override>1303</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line13d</linename>
-<override>dummy</override>
+<override>1304</override>
 </taxline>
 <taxline color="red">
 <linename>Sched3-Copy00-line13z</linename>
