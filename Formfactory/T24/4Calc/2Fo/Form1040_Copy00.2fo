@@ -59,7 +59,7 @@
 
 <fo:block-container position="absolute" top="0.48in">
 <fo:block height="0.15in" background-color="transparent" color="black">
-<xslt:value-of select="document('../Data/Form1040_Copy00_linestMon_text.xml')//text"/>
+<xslt:value-of select="document('../Data/Form1040_Copy00_lineEndMon_text.xml')//text"/>
 	</fo:block>
 </fo:block-container>
 

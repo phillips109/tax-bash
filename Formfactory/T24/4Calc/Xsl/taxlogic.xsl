@@ -2863,7 +2863,7 @@ $Form1040-Copy00-linepen10"/>
 
 <xsl:variable name="Form1040-Copy00-linemodIncome">
 <xsl:choose>
-<xsl:when test="$Form1040-Copy00-line01z > 850">
+<xsl:when test="$Form1040-Copy00-line01z &gt; 850">
 <xsl:value-of select="$Form1040-Copy00-line01z + 450"/>
 </xsl:when>
 <xsl:otherwise>
@@ -2874,6 +2874,100 @@ $Form1040-Copy00-linepen10"/>
 
 <xsl:variable name="Form1040-Copy00-line12">
 <xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFS'">
+<xsl:value-of select="100"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineScA18ck = 'x'">
+<xsl:value-of select="$Form1040-Copy00-lineschA17"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineSiUali = 'x'">
+<xsl:value-of select="$Form1040-Copy00-lineschA17"/>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFS = 'S'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineyoudep = 'x'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-linemodIncome &lt; 14600">
+<xsl:value-of select="$Form1040-Copy00-linemodIncome + (1950 * $Form1040-Copy00-linecount)"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="14600 + (1950 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="14600 + (1950 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFS = 'HOH'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineyoudep = 'x'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-linemodIncome &lt; 21900">
+<xsl:value-of select="$Form1040-Copy00-linemodIncome + (1950 * $Form1040-Copy00-linecount)"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="21900 + (1950 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="21900 + (1950 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFS = 'QSS'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineyoudep = 'x'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-linemodIncome &lt; 29200">
+<xsl:value-of select="$Form1040-Copy00-linemodIncome + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="29200 + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="29200 + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFJ'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineyoudep = 'x' | $Form1040-Copy00-lineSdep = 'x'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-linemodIncome &lt; 29200">
+<xsl:value-of select="$Form1040-Copy00-linemodIncome + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="29200 + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="29200 + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:when test="$Form1040-Copy00-lineFS = 'MFS'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-lineyoudep = 'x'">
+<xsl:choose>
+<xsl:when test="$Form1040-Copy00-linemodIncome &lt; 14600">
+<xsl:value-of select="$Form1040-Copy00-linemodIncome + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="14600 + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="14600 + (1550 * $Form1040-Copy00-linecount)"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:when>
 </xsl:choose>
 </xsl:variable>
 
@@ -2885,22 +2979,22 @@ $Form1040-Copy00-linepen10"/>
 <xsl:when test="document('../Output/SchedJ-Copy00.xml')">
 <xsl:value-of select="$Form1040-Copy00-lineSchedJ23"/>
 </xsl:when>
-<xsl:when test="$Form1040-Copy00-lineFEIT02a > 0">
+<xsl:when test="$Form1040-Copy00-lineFEIT02a &gt; 0">
 <xsl:value-of select="$Form1040-Copy00-lineFEIT06"/>
 </xsl:when>
-<xsl:when test="$Form1040-Copy00-line49524g > 0">
+<xsl:when test="$Form1040-Copy00-line49524g &gt; 0">
 <xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
 </xsl:when>
-<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 > 0 or $Form1040-Copy00-lineD19 > 0">
+<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD18 &gt; 0 or $Form1040-Copy00-lineD19 &gt; 0">
 <xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
 </xsl:when>
-<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 > 0">
+<xsl:when test="document('../Output/SchedD-Copy00.xml') and $Form1040-Copy00-lineD15 >0 and $Form1040-Copy00-lineD16 &gt; 0">
 <xsl:value-of select="$Form1040-Copy00-lineQDCG"/>
 </xsl:when>
-<xsl:when test="$Form1040-Copy00-line03a > 0">
+<xsl:when test="$Form1040-Copy00-line03a &gt; 0">
 <xsl:value-of select="$Form1040-Copy00-lineQDCG"/>
 </xsl:when>
-<xsl:when test="$Form1040-Copy00-line07 > 0 and $Form1040-Copy00-line07Ck = 'x'">
+<xsl:when test="$Form1040-Copy00-line07 &gt; 0 and $Form1040-Copy00-line07Ck = 'x'">
 <xsl:value-of select="$Form1040-Copy00-lineQDCG"/>
 </xsl:when>
 <xsl:otherwise>

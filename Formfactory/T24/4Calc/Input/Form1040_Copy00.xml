@@ -3112,7 +3112,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>WHEN01$Form1040-Copy00-line01z > 850</value1>
+<value1>WHEN01$Form1040-Copy00-line01z &gt; 850</value1>
 <value2>VALUOF$Form1040-Copy00-line01z + 450</value2>
 </line>
 
@@ -3121,8 +3121,8 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>	WHEN01$Form1040-Copy00-lineScA18ck = 'x'</value1>
-<value2>	   VALUOF$Form1040-Copy00-lineschA17</value2>
+<value1>WHEN01$Form1040-Copy00-lineFS = 'MFS'</value1>
+<value2>VALUOF100</value2>
 </line>
 
 <line number='16a'

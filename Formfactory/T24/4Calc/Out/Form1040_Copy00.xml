@@ -1804,8 +1804,8 @@ VALUOF$Form1040-Copy00-line01z + 450
 cnum
 #####0
 CHOOS1
-	WHEN01$Form1040-Copy00-lineScA18ck = 'x'
-	   VALUOF$Form1040-Copy00-lineschA17
+WHEN01$Form1040-Copy00-lineFS = 'MFS'
+VALUOF100
 
 
 

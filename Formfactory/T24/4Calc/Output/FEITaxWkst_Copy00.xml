@@ -14,11 +14,11 @@
 <copy00line10403a color="red">0</copy00line10403a>
 <copy00line104007 color="red">-3000</copy00line104007>
 <copy00line02c color="red">0</copy00line02c>
-<copy00line06 color="red">0</copy00line06>
-<copy00line04 color="red">0</copy00line04>
-<copy00line04a color="red">0</copy00line04a>
-<copy00line05 color="red">0</copy00line05>
-<copy00lineFS color="blue">MFJ</copy00lineFS>
+<copy00line06 color="red">NaN</copy00line06>
+<copy00line04 color="red">NaN</copy00line04>
+<copy00line04a color="red">NaN</copy00line04a>
+<copy00line05 color="red">NaN</copy00line05>
+<copy00lineFS color="blue"/>
 <copy00line104007Ck color="blue"/>
 </Form>
 </IRSForms>
