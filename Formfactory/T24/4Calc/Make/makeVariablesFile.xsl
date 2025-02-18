@@ -365,6 +365,7 @@ Available types:
 </xsl:text>
   </xsl:template>
 
+ <!-- *********************************************************************************************************************** --> 
   
   <xsl:template match="line[type='addit']">
 
@@ -491,97 +492,19 @@ Available types:
 </xsl:text>
   <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="$Form1040-Copy00-lineSDTW"/&gt;</xsl:text><xsl:text>
 </xsl:text>
-  <xsl:text disable-output-escaping="yes'>&lt;/xsl:when&gt;</xsl:text><xsl:text>
+  <xsl:text disable-output-escaping="yes">&lt;/xsl:when&gt;</xsl:text><xsl:text>
 </xsl:text>
 
   <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text><xsl:text>
 </xsl:text>
 
-<xsl:text disable-output-escaping
+<xsl:text disable-output-escaping="yes">
 UNFINISHED!
-<!-- ********************************************************* -->
-
-
-
-
-
-
-
-  
-	  <xsl:text disable-output-escaping="yes">&lt;xsl:otherwise&gt;</xsl:text><xsl:text>
-	</xsl:text>
-	
-	<xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="$</xsl:text>
-	<xsl:value-of select="$form"/>
-	<xsl:text>-Copy</xsl:text>
-	<xsl:value-of select="$copy"/>
-	<xsl:text>-</xsl:text>
-	<xsl:value-of select="augend"/>
-	<xsl:text> +</xsl:text><xsl:text>
-      </xsl:text>
-      <xsl:for-each select="addend[position() != last()]">
-	<xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>
-	<xsl:value-of select="$form"/>
-	<xsl:text>-Copy</xsl:text>
-	<xsl:value-of select="$copy"/>
-	<xsl:text>-</xsl:text>
-	<xsl:value-of select="."/>
-	<xsl:text> +</xsl:text><xsl:text>
-      </xsl:text>
-      </xsl:for-each>
-      <xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>
-	<xsl:value-of select="$form"/>
-	<xsl:text>-Copy</xsl:text>
-	<xsl:value-of select="$copy"/>
-	<xsl:text>-</xsl:text>
-	<xsl:value-of select="addend[position() = last()]"/>
-	<xsl:text disable-output-escaping="yes">"/&gt;</xsl:text><xsl:text>
-      </xsl:text>  
-      <xsl:text disable-output-escaping="yes">&lt;/xsl:otherwise&gt;</xsl:text><xsl:text>
-    </xsl:text>
-    <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:choose&gt;</xsl:text><xsl:text>
-  </xsl:text>
-  
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="$</xsl:text>
-	<xsl:value-of select="$form"/>
-	<xsl:text>-Copy</xsl:text>
-	<xsl:value-of select="$copy"/>
-	<xsl:text>-</xsl:text>
-	<xsl:value-of select="augend"/>
-	<xsl:text> +</xsl:text><xsl:text>
-      </xsl:text>
-      <xsl:for-each select="addend[position() != last()]">
-	<xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>
-	<xsl:value-of select="$form"/>
-	<xsl:text>-Copy</xsl:text>
-	<xsl:value-of select="$copy"/>
-	<xsl:text>-</xsl:text>
-	<xsl:value-of select="."/>
-	<xsl:text> +</xsl:text><xsl:text>
-      </xsl:text>
-      </xsl:for-each>
-      <xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>  
-	<xsl:value-of select="$form"/>
-	<xsl:text>-Copy</xsl:text>
-	<xsl:value-of select="$copy"/>
-	<xsl:text>-</xsl:text>
-      <xsl:value-of select="addend[position() = last()]"/>
-      <xsl:text disable-output-escaping="yes">"/&gt;</xsl:text><xsl:text>
-    </xsl:text>
-    
-    </xsl:otherwise>
-  </xsl:choose>
-  
-  <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:variable&gt;</xsl:text><xsl:text>
 </xsl:text>
+</xsl:template>
 
-  </xsl:template>
-  
-  
-  
-  <!-- *********************************************************************************************************  -->  
+
+<!-- ********************************************************* -->
 
   <!-- ****************************************************************************************************** -->
   <xsl:template match="line[type='subtr']">
@@ -1758,7 +1681,8 @@ UNFINISHED!
   <xsl:text disable-output-escaping="yes">&lt;xsl:call-template name="taxCalc"&gt;</xsl:text><xsl:text>
 </xsl:text>
 
-    <xsl:text disable-output-escaping="yes">&lt;xsl:with-param name="filingStatus" select="$</xsl:text>
+
+<xsl:text disable-output-escaping="yes">&lt;xsl:with-param name="filingStatus" select="$</xsl:text>
       <xsl:value-of select="$form"/>
       <xsl:text>-Copy</xsl:text>
       <xsl:value-of select="$copy"/>
@@ -1785,6 +1709,88 @@ UNFINISHED!
 
 </xsl:stylesheet>
 
+<!--
+<xsl:template match=line[type='addit']">
+
+
+
+
+
+
+  
+	  <xsl:text disable-output-escaping="yes">&lt;xsl:otherwise&gt;</xsl:text><xsl:text>
+	</xsl:text>
+	
+	<xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-</xsl:text>
+	<xsl:value-of select="augend"/>
+	<xsl:text> +</xsl:text><xsl:text>
+      </xsl:text>
+      <xsl:for-each select="addend[position() != last()]">
+	<xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-</xsl:text>
+	<xsl:value-of select="."/>
+	<xsl:text> +</xsl:text><xsl:text>
+      </xsl:text>
+      </xsl:for-each>
+      <xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-</xsl:text>
+	<xsl:value-of select="addend[position() = last()]"/>
+	<xsl:text disable-output-escaping="yes">"/&gt;</xsl:text><xsl:text>
+      </xsl:text>  
+      <xsl:text disable-output-escaping="yes">&lt;/xsl:otherwise&gt;</xsl:text><xsl:text>
+    </xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:choose&gt;</xsl:text><xsl:text>
+  </xsl:text>
+  
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-</xsl:text>
+	<xsl:value-of select="augend"/>
+	<xsl:text> +</xsl:text><xsl:text>
+      </xsl:text>
+      <xsl:for-each select="addend[position() != last()]">
+	<xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-</xsl:text>
+	<xsl:value-of select="."/>
+	<xsl:text> +</xsl:text><xsl:text>
+      </xsl:text>
+      </xsl:for-each>
+      <xsl:text disable-output-escaping="yes">&#9;&#9;&#9;$</xsl:text>  
+	<xsl:value-of select="$form"/>
+	<xsl:text>-Copy</xsl:text>
+	<xsl:value-of select="$copy"/>
+	<xsl:text>-</xsl:text>
+      <xsl:value-of select="addend[position() = last()]"/>
+      <xsl:text disable-output-escaping="yes">"/&gt;</xsl:text><xsl:text>
+    </xsl:text>
+    
+    </xsl:otherwise>
+  </xsl:choose>
+  
+  <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:variable&gt;</xsl:text><xsl:text>
+</xsl:text>
+
+ 
+  
+  
+  <!-- *********************************************************************************************************  -->  
   
    
 

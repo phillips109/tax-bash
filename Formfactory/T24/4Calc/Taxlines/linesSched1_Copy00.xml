@@ -1,3 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:vendor="http://www.gnucash.org/XML/vendor" xmlns:entry="http://www.gnucash.org/XML/entry" xmlns:invoice="http://www.gnucash.org/XML/invoice" xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox" xmlns:bt-days="http://www.gnucash.org/XML/bt-days" xmlns:billterm="http://www.gnucash.org/XML/billterm" xmlns:order="http://www.gnucash.org/XML/order" xmlns:employee="http://www.gnucash.org/XML/employee" xmlns:tte="http://www.gnucash.org/XML/tte" xmlns:taxtable="http://www.gnucash.org/XML/taxtable" xmlns:owner="http://www.gnucash.org/XML/owner" xmlns:addr="http://www.gnucash.org/XML/addr" xmlns:job="http://www.gnucash.org/XML/job" xmlns:cust="http://www.gnucash.org/XML/cust" xmlns:lot="http://www.gnucash.org/XML/lot" xmlns:recurrence="http://www.gnucash.org/XML/recurrence" xmlns:bgt="http://www.gnucash.org/XML/bgt" xmlns:fs="http://www.gnucash.org/XML/fs" xmlns:ts="http://www.gnucash.org/XML/ts" xmlns:trn="http://www.gnucash.org/XML/trn" xmlns:sx="http://www.gnucash.org/XML/sx" xmlns:split="http://www.gnucash.org/XML/split" xmlns:slot="http://www.gnucash.org/XML/slot" xmlns:price="http://www.gnucash.org/XML/price" xmlns:cmdty="http://www.gnucash.org/XML/cmdty" xmlns:cd="http://www.gnucash.org/XML/cd" xmlns:book="http://www.gnucash.org/XML/book" xmlns:act="http://www.gnucash.org/XML/act" xmlns:gnc="http://www.gnucash.org/XML/gnc">
-<taxlines/>
+<taxlines>
+<taxline color="red">
+<linename>Sched1-Copy00-line01</linename>
+<override>100</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line02a</linename>
+<override>201</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line03</linename>
+<override>300</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line04</linename>
+<override>400</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line05</linename>
+<override>500</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line06</linename>
+<override>600</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line07</linename>
+<override>700</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08a</linename>
+<override>801</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08b</linename>
+<override>802</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08c</linename>
+<override>803</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08d</linename>
+<override>804</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08e</linename>
+<override>805</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08f</linename>
+<override>806</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08g</linename>
+<override>804</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08h</linename>
+<override>805</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08i</linename>
+<override>806</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08j</linename>
+<override>807</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08k</linename>
+<override>808</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08l</linename>
+<override>809</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08m</linename>
+<override>810</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08n</linename>
+<override>811</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08o</linename>
+<override>812</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08p</linename>
+<override>813</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08q</linename>
+<override>814</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08r</linename>
+<override>815</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08s</linename>
+<override>816</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08t</linename>
+<override>817</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08u</linename>
+<override>819</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08v</linename>
+<override>820</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line08z</linename>
+<override>821</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line11</linename>
+<override>1100</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line12</linename>
+<override>1200</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line13</linename>
+<override>1300</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line14</linename>
+<override>1400</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line15</linename>
+<override>1500</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line16</linename>
+<override>1600</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line17</linename>
+<override>1700</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line18</linename>
+<override>1800</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line19a</linename>
+<override>1901</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line20</linename>
+<override>2000</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line21</linename>
+<override>2100</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line23</linename>
+<override>2300</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24a</linename>
+<override>2401</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24b</linename>
+<override>2402</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24c</linename>
+<override>2403</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24d</linename>
+<override>2404</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24e</linename>
+<override>2405</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24f</linename>
+<override>2406</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24g</linename>
+<override>2407</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24h</linename>
+<override>2408</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24i</linename>
+<override>2409</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24j</linename>
+<override>2410</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24k</linename>
+<override>2411</override>
+</taxline>
+<taxline color="red">
+<linename>Sched1-Copy00-line24z</linename>
+<override>2412</override>
+</taxline>
+</taxlines>
 </IRSForms>

@@ -1,0 +1,101 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xsum    	!2name   	!3format 	!4augend 	!5addend 	!6addend 	!
+addit   	!09      	!#####0  	!        	!        	!        	!
+addit   	!10      	!#####0  	!        	!        	!        	!
+addit   	!25      	!#####0  	!        	!        	!        	!
+addit   	!26      	!#####0  	!        	!        	!        	!
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!01      	!#####0  	!                    	!
+dlin    	!02a     	!#####0  	!                    	!
+dlin    	!07      	!#####0  	!                    	!
+dlin    	!08a     	!#####0  	!                    	!
+dlin    	!08b     	!#####0  	!                    	!
+dlin    	!08c     	!#####0  	!                    	!
+dlin    	!08g     	!#####0  	!                    	!
+dlin    	!08h     	!#####0  	!                    	!
+dlin    	!08i     	!#####0  	!                    	!
+dlin    	!08j     	!#####0  	!                    	!
+dlin    	!08k     	!#####0  	!                    	!
+dlin    	!08l     	!#####0  	!                    	!
+dlin    	!08m     	!#####0  	!                    	!
+dlin    	!08n     	!#####0  	!                    	!
+dlin    	!08o     	!#####0  	!                    	!
+dlin    	!08p     	!#####0  	!                    	!
+dlin    	!08q     	!#####0  	!                    	!
+dlin    	!08r     	!#####0  	!                    	!
+dlin    	!08s     	!#####0  	!                    	!
+dlin    	!08t     	!#####0  	!                    	!
+dlin    	!08u     	!#####0  	!                    	!
+dlin    	!08v     	!#####0  	!                    	!
+dlin    	!08z     	!#####0  	!                    	!
+dlin    	!1099K   	!#####0  	!                    	!
+dlin    	!11      	!#####0  	!                    	!
+dlin    	!16      	!#####0  	!                    	!
+dlin    	!17      	!#####0  	!                    	!
+dlin    	!18      	!#####0  	!                    	!
+dlin    	!19a     	!#####0  	!                    	!
+dlin    	!20      	!#####0  	!                    	!
+dlin    	!21      	!#####0  	!                    	!
+dlin    	!23      	!#####0  	!                    	!
+dlin    	!24a     	!#####0  	!                    	!
+dlin    	!24b     	!#####0  	!                    	!
+dlin    	!24c     	!#####0  	!                    	!
+dlin    	!24d     	!#####0  	!                    	!
+dlin    	!24e     	!#####0  	!                    	!
+dlin    	!24f     	!#####0  	!                    	!
+dlin    	!24g     	!#####0  	!                    	!
+dlin    	!24h     	!#####0  	!                    	!
+dlin    	!24i     	!#####0  	!                    	!
+dlin    	!24k     	!#####0  	!                    	!
+dlin    	!24z     	!#####0  	!                    	!
+
+xdPull  	!2name   	!3format 	!4dummy  	!5form   	!6copy   	!
+dPull   	!03      	!#####0  	!        	!        	!        	!
+dPull   	!04      	!#####0  	!        	!        	!        	!
+dPull   	!05      	!#####0  	!        	!        	!        	!
+dPull   	!06      	!#####0  	!        	!        	!        	!
+dPull   	!08d     	!#####0  	!        	!        	!        	!
+dPull   	!08e     	!#####0  	!        	!        	!        	!
+dPull   	!08f     	!#####0  	!        	!        	!        	!
+dPull   	!12      	!#####0  	!        	!        	!        	!
+dPull   	!13      	!#####0  	!        	!        	!        	!
+dPull   	!14      	!#####0  	!        	!        	!        	!
+dPull   	!15      	!#####0  	!        	!        	!        	!
+dPull   	!24j     	!#####0  	!        	!        	!        	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!02b     	!        	!        	!
+tlin    	!08za    	!        	!        	!
+tlin    	!08zb    	!        	!        	!
+tlin    	!19b1    	!        	!        	!
+tlin    	!19b2    	!        	!        	!
+tlin    	!19b3    	!        	!        	!
+tlin    	!19c     	!        	!        	!
+
+xtPull  	!2name   	!3blank  	!4dummy  	!5form   	!6copy   	!7line   	!
+tPull   	!SFNI    	!        	!        	!        	!        	!        	!
+tPull   	!SLN     	!        	!        	!        	!        	!        	!
+tPull   	!TFNI    	!        	!        	!        	!        	!        	!
+tPull   	!TLN     	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoF  	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoL  	!        	!        	!        	!        	!        	!
+tPull   	!TSSNoM  	!        	!        	!        	!        	!        	!

@@ -19,3 +19,689 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
 -->
 <Form name=''>
+
+<line number='09'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08a</augend>
+<addend>line08b</addend>
+<addend>line08c</addend>
+<addend>line08d</addend>
+<addend>line08e</addend>
+<addend>line08f</addend>
+<addend>line08g</addend>
+<addend>line08h</addend>
+<addend>line08i</addend>
+<addend>line08j</addend>
+<addend>line08k</addend>
+<addend>line08l</addend>
+<addend>line08m</addend>
+<addend>line08n</addend>
+<addend>line08o</addend>
+<addend>line08p</addend>
+<addend>line08q</addend>
+<addend>line08r</addend>
+<addend>line08s</addend>
+<addend>line08t</addend>
+<addend>line08u</addend>
+<addend>line08v</addend>
+<addend>line08z</addend>
+</line>
+
+<line number='10'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01</augend>
+<addend>line02a</addend>
+<addend>line03</addend>
+<addend>line04</addend>
+<addend>line05</addend>
+<addend>line06</addend>
+<addend>line07</addend>
+<addend>line09</addend>
+</line>
+
+<line number='25'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line24a</augend>
+<addend>line24b</addend>
+<addend>line24c</addend>
+<addend>line24d</addend>
+<addend>line24e</addend>
+<addend>line24f</addend>
+<addend>line24g</addend>
+<addend>line24h</addend>
+<addend>line24i</addend>
+<addend>line24j</addend>
+<addend>line24k</addend>
+<addend>line24z</addend>
+</line>
+
+<line number='26'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line11</augend>
+<addend>line12</addend>
+<addend>line13</addend>
+<addend>line14</addend>
+<addend>line15</addend>
+<addend>line16</addend>
+<addend>line17</addend>
+<addend>line18</addend>
+<addend>line19a</addend>
+<addend>line20</addend>
+<addend>line21</addend>
+<addend>line23</addend>
+<addend>line25</addend>
+</line>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='02a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>201</override>
+<blank></blank>
+</dlin>
+
+<dlin number='07'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>700</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>801</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>802</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>803</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08g'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>804</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08h'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>805</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08i'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>806</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08j'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>807</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08k'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>808</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08l'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>809</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08m'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>810</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08n'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>811</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08o'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>812</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08p'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>813</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08q'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>814</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08r'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>815</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08s'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>816</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08t'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>817</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08u'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>819</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08v'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>820</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08z'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>821</override>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='16'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1600</override>
+<blank></blank>
+</dlin>
+
+<dlin number='17'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1700</override>
+<blank></blank>
+</dlin>
+
+<dlin number='18'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1800</override>
+<blank></blank>
+</dlin>
+
+<dlin number='19a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1901</override>
+<blank></blank>
+</dlin>
+
+<dlin number='20'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='21'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='23'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2300</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2401</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2402</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2403</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24d'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2404</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24e'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2405</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24f'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2406</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24g'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2407</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24h'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2408</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24i'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2409</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24k'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2411</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24z'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2412</override>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>300</override>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>400</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>500</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>600</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08d'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>804</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08e'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>805</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08f'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>806</override>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1200</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1300</override>
+<blank></blank>
+</dlin>
+
+<dlin number='14'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1400</override>
+<blank></blank>
+</dlin>
+
+<dlin number='15'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1500</override>
+<blank></blank>
+</dlin>
+
+<dlin number='24j'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2410</override>
+<blank></blank>
+</dlin>
+
+<line name='02b'
+ color='blue'>
+<type>tlin</type>
+<text>This is line 02a.</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='08za'
+ color='blue'>
+<type>tlin</type>
+<text>This is line 08za</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='08zb'
+ color='blue'>
+<type>tlin</type>
+<text>This is line 08zb</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='19b1'
+ color='blue'>
+<type>tlin</type>
+<text>123456789</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='19b2'
+ color='blue'>
+<type>tlin</type>
+<text>MONDYYEAR</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='24za'
+ color='blue'>
+<type>tlin</type>
+<text>This is line24z</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='24zb'
+ color='blue'>
+<type>tlin</type>
+<text>This is line24zb</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line number='SFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SFNI</line2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SLN</line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoL</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</line>
+</Form>
