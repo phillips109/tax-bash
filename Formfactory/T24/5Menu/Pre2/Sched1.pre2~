@@ -1,0 +1,58 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+dlin      	!1099K     	!008       	!Items included in error/personal sold at loss                                                       	!i1040gi.pdf         	!     	!     
+dlin      	!01        	!009       	!Taxable refunds, credts, or offsets of state and local income taxes                                 	!i1040gi.pdf         	!     	!     
+dlin      	!02a       	!010       	!Alimony received                                                                                    	!i1040gi.pdf         	!     	!     
+tlin      	!02b       	!011       	!Enter date of origianl divorce or separation agreement                                              	!i1040gi.pdf         	!     	!     
+dlin      	!07        	!016       	!Unemployment compensation                                                                           	!i1040gi.pdf         	!     	!     
+dlin      	!08a       	!017       	!net operating loss                                                                                  	!i1040gi.pdf         	!     	!     
+dlin      	!08b       	!018       	!Gambling                                                                                            	!i1040gi.pdf         	!     	!     
+dlin      	!08c       	!019       	!Cancellation of debt                                                                                	!i1040gi.pdf         	!     	!     
+dlin      	!08g       	!023       	!Alaska Permanent Fund dividends                                                                     	!i1040gi.pdf         	!     	!     
+dlin      	!08h       	!024       	!Jury duty pay                                                                                       	!i1040gi.pdf         	!     	!     
+dlin      	!08i       	!025       	!Prizes and awards                                                                                   	!i1040gi.pdf         	!     	!     
+dlin      	!08j       	!026       	!Activity not engaged in for profit income                                                           	!i1040gi.pdf         	!     	!     
+dlin      	!08k       	!027       	!Stock options                                                                                       	!i1040gi.pdf         	!     	!     
+dlin      	!08l       	!028       	!Income from rental of personal property                                                             	!i1040gi.pdf         	!     	!     
+dlin      	!08m       	!029       	!Olympic and Parallllympic medal and USOC prize money                                                	!i1040gi.pdf         	!     	!     
+dlin      	!08n       	!030       	!Section 951a inclusion                                                                              	!i1040gi.pdf         	!     	!     
+dlin      	!08o       	!031       	!Section 851Aa inclusion                                                                             	!i1040gi.pdf         	!     	!     
+dlin      	!08p       	!032       	!Section 461(l) excess business loss adjustment                                                      	!i1040gi.pdf         	!     	!     
+dlin      	!08q       	!033       	!Taxable distributions fraom an ABLE account                                                         	!i1040gi.pdf         	!     	!     
+dlin      	!08r       	!034       	!Scholarship and fellowship grants not reported on Form W@                                           	!i1040gi.pdf         	!     	!     
+dlin      	!08s       	!035       	!Nontaxable amount of Medicaid waiver payments included on Form 1040, line1a or 1d                   	!i1040gi.pdf         	!     	!     
+dlin      	!08t       	!036       	!Pension or annuity from a nonqualified deferred compensation plan/nongovernmentsl section 457 plan  	!i1040gi.pdf         	!     	!     
+dlin      	!08u       	!037       	!Wages earned while incarcerated                                                                     	!i1040gi.pdf         	!     	!     
+dlin      	!08v       	!038       	!Digital assets received as ordinary incomenot reported elsewhere                                    	!i1040gi.pdf         	!     	!     
+tlin      	!08za      	!039a      	!Other income type: line one                                                                         	!i1040gi.pdf         	!     	!     
+tlin      	!08zb      	!039b      	!Other income type: line two                                                                         	!i1040gi.pdf         	!     	!     
+dlin      	!08z       	!039       	!Other income amount                                                                                 	!i1040gi.pdf         	!     	!     
+dlin      	!11        	!042       	!Educator expenses                                                                                   	!i1040gi.pdf         	!     	!     
+dlin      	!12        	!042a      	!Certain business expenses of reservists, performing artists, and fee-basis government officials     	!i1040gi.pdf         	!     	!     
+dlin      	!13        	!042b      	!Health savings account deduction                                                                    	!i1040gi.pdf         	!     	!     
+dlin      	!14        	!042c      	!Moving expenses for members of the Armed Forces                                                     	!i1040gi.pdf         	!     	!     
+dlin      	!15        	!042d      	!Deductible part of self-employment tax                                                              	!i1040gi.pdf         	!     	!     
+dlin      	!16        	!047       	!Self-employed SEP, SIMPLE, and qualified plans                                                      	!i1040gi.pdf         	!     	!     
+dlin      	!17        	!048       	!Self-employed health insurance deduction                                                            	!i1040gi.pdf         	!     	!     
+dlin      	!18        	!049       	!Penalty for early withdrawal of savings                                                             	!i1040gi.pdf         	!     	!     
+dlin      	!19a       	!050       	!Alimony paid                                                                                        	!i1040gi.pdf         	!     	!     
+tlin      	!19b1      	!051       	!Recipient's SSN first 3 digits                                                                      	!i1040gi.pdf         	!     	!     
+tlin      	!19b2      	!052       	!Recipient's SSN second 2 digits                                                                     	!i1040gi.pdf         	!     	!     
+tlin      	!19b3      	!053       	!Recipient's SSN last 4 digits                                                                       	!i1040gi.pdf         	!     	!     
+tlin      	!19c       	!054       	!Date of ariginal divorce or separation agreement                                                    	!i1040gi.pdf         	!     	!     
+dlin      	!20        	!055       	!IRA deductions                                                                                      	!i1040gi.pdf         	!     	!     
+dlin      	!21        	!056       	!Student loan interest deduction                                                                     	!i1040gi.pdf         	!     	!     
+dlin      	!23        	!057       	!Archer MSA deduction                                                                                	!i1040gi.pdf         	!     	!     
+dlin      	!24a       	!058       	!Jury duty pay                                                                                       	!i1040gi.pdf         	!     	!     
+dlin      	!24b       	!059       	!Deductible expenses related to income reported on line 8L from the rental of personal property      	!i1040gi.pdf         	!     	!     
+dlin      	!24c       	!060       	!Non-taxable amount of the value of Olympic and Paralympic medals and USOC prize money               	!i1040gi.pdf         	!     	!     
+dlin      	!24d       	!061       	!Reforestation amortization and expenses                                                             	!i1040gi.pdf         	!     	!     
+dlin      	!24e       	!062       	!Payment of supplemental unemployment benefits                                                       	!i1040gi.pdf         	!     	!     
+dlin      	!24f       	!063       	!Contributions to section 501(c)(18)(D) pension plans                                                	!i1040gi.pdf         	!     	!     
+dlin      	!24g       	!064       	!Contribution by certain chaplains to section 403(b) plans                                           	!i1040gi.pdf         	!     	!     
+dlin      	!24h       	!065       	!Attorney fees and cout costs for action involving certain unlawful discrimination claims            	!i1040gi.pdf         	!     	!     
+dlin      	!24i       	!066       	!Attoroney fees and court costs you paid in connecition with an awardfrom the IRS for info           	!i1040gi.pdf         	!     	!     
+dlin      	!24kj      	!068       	!Housing deduction from Form2555                                                                     	!i1040gi.pdf         	!     	!     
+dlin      	!24k       	!068a      	!Excess deductions of section 67(e) expenses form Schedule K1                                        	!i1040gi.pdf         	!     	!     
+dlin      	!24z       	!069       	!Other adjustments                                                                                   	!i1040gi.pdf         	!     	!     
+tlin      	!24z1      	!070       	!Other adjustments text line 1                                                                       	!i1040gi.pdf         	!     	!     
+tlin      	!24z2      	!071       	!Other adjustments text line 2                                                                       	!i1040gi.pdf         	!     	!     

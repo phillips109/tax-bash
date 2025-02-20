@@ -1,0 +1,287 @@
+<Form fname="Sched1">
+<taxline name="1099K" type="dlin" color="black">
+<menuEntry>Items included in error/personal sold at loss</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>85</pgNo>
+</taxline>
+<taxline name="01" type="dlin" color="black">
+<menuEntry>Taxable refunds, credts, or offsets of state and local income taxes</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>85</pgNo>
+</taxline>
+<taxline name="02a" type="dlin" color="black">
+<menuEntry>Alimony received</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>85</pgNo>
+</taxline>
+<taxline name="02b" type="tlin" color="black">
+<menuEntry>Enter date of origianl divorce or separation agreement</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>85</pgNo>
+</taxline>
+<taxline name="07" type="dlin" color="black">
+<menuEntry>Unemployment compensation</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>85</pgNo>
+</taxline>
+<taxline name="08a" type="dlin" color="black">
+<menuEntry>net operating loss</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>85</pgNo>
+</taxline>
+<taxline name="08b" type="dlin" color="black">
+<menuEntry>Gambling</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>85</pgNo>
+</taxline>
+<taxline name="08c" type="dlin" color="black">
+<menuEntry>Cancellation of debt</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08g" type="dlin" color="black">
+<menuEntry>Alaska Permanent Fund dividends</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08h" type="dlin" color="black">
+<menuEntry>Jury duty pay</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08i" type="dlin" color="black">
+<menuEntry>Prizes and awards</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08j" type="dlin" color="black">
+<menuEntry>Activity not engaged in for profit income</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08k" type="dlin" color="black">
+<menuEntry>Stock options</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08l" type="dlin" color="black">
+<menuEntry>Income from rental of personal property</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08m" type="dlin" color="black">
+<menuEntry>Olympic and Parallllympic medal and USOC prize money</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08n" type="dlin" color="black">
+<menuEntry>Section 951a inclusion</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08o" type="dlin" color="black">
+<menuEntry>Section 851Aa inclusion</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08p" type="dlin" color="black">
+<menuEntry>Section 461(l) excess business loss adjustment</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08q" type="dlin" color="black">
+<menuEntry>Taxable distributions fraom an ABLE account</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08r" type="dlin" color="black">
+<menuEntry>Scholarship and fellowship grants not reported on Form W@</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>87</pgNo>
+</taxline>
+<taxline name="08s" type="dlin" color="black">
+<menuEntry>Nontaxable amount of Medicaid waiver payments included on Form 1040, line1a or 1d</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>88</pgNo>
+</taxline>
+<taxline name="08t" type="dlin" color="black">
+<menuEntry>Pension or annuity from a nonqualified deferred compensation plan/nongovernmentsl section 457 plan</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>88</pgNo>
+</taxline>
+<taxline name="08u" type="dlin" color="black">
+<menuEntry>Wages earned while incarcerated</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>88</pgNo>
+</taxline>
+<taxline name="08v" type="dlin" color="black">
+<menuEntry>Digital assets received as ordinary incomenot reported elsewhere</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>88</pgNo>
+</taxline>
+<taxline name="08za" type="tlin" color="black">
+<menuEntry>Other income type: line one</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>88</pgNo>
+</taxline>
+<taxline name="08zb" type="tlin" color="black">
+<menuEntry>Other income type: line two</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>88</pgNo>
+</taxline>
+<taxline name="08z" type="dlin" color="black">
+<menuEntry>Other income amount</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>88</pgNo>
+</taxline>
+<taxline name="11" type="dlin" color="black">
+<menuEntry>Educator expenses</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>89</pgNo>
+</taxline>
+<taxline name="12" type="dlin" color="black">
+<menuEntry>Certain business expenses of reservists, performing artists, and fee-basis government officials</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>89</pgNo>
+</taxline>
+<taxline name="13" type="dlin" color="black">
+<menuEntry>Health savings account deduction</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>89</pgNo>
+</taxline>
+<taxline name="14" type="dlin" color="black">
+<menuEntry>Moving expenses for members of the Armed Forces</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>89</pgNo>
+</taxline>
+<taxline name="15" type="dlin" color="black">
+<menuEntry>Deductible part of self-employment tax</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>89</pgNo>
+</taxline>
+<taxline name="16" type="dlin" color="black">
+<menuEntry>Self-employed SEP, SIMPLE, and qualified plans</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>89</pgNo>
+</taxline>
+<taxline name="17" type="dlin" color="black">
+<menuEntry>Self-employed health insurance deduction</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>89</pgNo>
+</taxline>
+<taxline name="18" type="dlin" color="black">
+<menuEntry>Penalty for early withdrawal of savings</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>90</pgNo>
+</taxline>
+<taxline name="19a" type="dlin" color="black">
+<menuEntry>Alimony paid</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>90</pgNo>
+</taxline>
+<taxline name="19b1" type="tlin" color="black">
+<menuEntry>Recipient's SSN first 3 digits</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>90</pgNo>
+</taxline>
+<taxline name="19b2" type="tlin" color="black">
+<menuEntry>Recipient's SSN second 2 digits</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>90</pgNo>
+</taxline>
+<taxline name="19b3" type="tlin" color="black">
+<menuEntry>Recipient's SSN last 4 digits</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>90</pgNo>
+</taxline>
+<taxline name="19c" type="tlin" color="black">
+<menuEntry>Date of ariginal divorce or separation agreement</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>90</pgNo>
+</taxline>
+<taxline name="20" type="dlin" color="black">
+<menuEntry>IRA deductions</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>91</pgNo>
+</taxline>
+<taxline name="21" type="dlin" color="black">
+<menuEntry>Student loan interest deduction</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>93</pgNo>
+</taxline>
+<taxline name="23" type="dlin" color="black">
+<menuEntry>Archer MSA deduction</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24a" type="dlin" color="black">
+<menuEntry>Jury duty pay</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24b" type="dlin" color="black">
+<menuEntry>Deductible expenses related to income reported on line 8L from the rental of personal property</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24c" type="dlin" color="black">
+<menuEntry>Non-taxable amount of the value of Olympic and Paralympic medals and USOC prize money</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24d" type="dlin" color="black">
+<menuEntry>Reforestation amortization and expenses</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24e" type="dlin" color="black">
+<menuEntry>Payment of supplemental unemployment benefits</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24f" type="dlin" color="black">
+<menuEntry>Contributions to section 501(c)(18)(D) pension plans</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24g" type="dlin" color="black">
+<menuEntry>Contribution by certain chaplains to section 403(b) plans</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>94</pgNo>
+</taxline>
+<taxline name="24h" type="dlin" color="black">
+<menuEntry>Attorney fees and cout costs for action involving certain unlawful discrimination claims</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>95</pgNo>
+</taxline>
+<taxline name="24i" type="dlin" color="black">
+<menuEntry>Attoroney fees and court costs you paid in connecition with an awardfrom the IRS for info</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>95</pgNo>
+</taxline>
+<taxline name="24kj" type="dlin" color="black">
+<menuEntry>Housing deduction from Form2555</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>95</pgNo>
+</taxline>
+<taxline name="24k" type="dlin" color="black">
+<menuEntry>Excess deductions of section 67(e) expenses form Schedule K1</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>95</pgNo>
+</taxline>
+<taxline name="24z" type="dlin" color="black">
+<menuEntry>Other adjustments</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>95</pgNo>
+</taxline>
+<taxline name="24z1" type="tlin" color="black">
+<menuEntry>Other adjustments text line 1</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>95</pgNo>
+</taxline>
+<taxline name="24z2" type="tlin" color="black">
+<menuEntry>Other adjustments text line 2</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>95</pgNo>
+</taxline>
+</Form>

@@ -21,7 +21,7 @@
 
 #Using showsPdf requires changing the T?? part only on one line each year.
 showsPdf(){
-    qpdfview ~/Projects/Tax-bash/Formfactory/T23/1Pdf2Jpg/Pdf/$1.pdf &
+    qpdfview ~/Projects/Tax-bash/Formfactory/T24/1Pdf2Jpg/Pdf/$1.pdf &
 }    
 
 choosePdf(){
@@ -75,7 +75,7 @@ choosePdf(){
     Bkg)                showsPdf fBkg;;
 
 
-    Sched1)	        showsPdf f1040sa;;		 
+    Sched1)	        showsPdf f1040s1;;		 
     Sched2)		showsPdf f1040s2;;
     Sched3)		showsPdf f1040s3;;
     Sched4)		showsPdf f1040s4;;
@@ -254,7 +254,7 @@ set_menu_choices(){
 	echo "  5) Check ../Entries/$1.ent to enter menuEntries"
 	echo "  6) Reorder columns to ../Pre/$1.pre"
 	echo "  7) Edit ../Pre/$1.pre"
-	echo "  8) Remove endspace from ../Pre/$1.pre"
+#	echo "  8) Remove endspace from ../Pre/$1.pre"
 	echo "  9) Make ../Menus/$1.men"
 	echo " 10) Edit ../Menus/$1.men to check result."
 	echo " 11) Combine all menus into ../Files/allMenus"
@@ -281,7 +281,7 @@ set_menu_choices(){
 	    5)  editEntries $1;;
 	    6)  reorderColumns $1;;
 	    7)  editPre $1;;
-	    8)  rmEndSpacePre $1;;
+#	    8)  rmEndSpacePre $1;;   For some reason this is not working. 
 	    9)  makeMenuFile $1;;
 	   10)  editMenu $1;;
 	   11)  catMenus $1;;

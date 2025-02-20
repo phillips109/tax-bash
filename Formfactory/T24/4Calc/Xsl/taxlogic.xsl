@@ -5595,6 +5595,17 @@ $Sched1-Copy00-line23 +
 $Sched1-Copy00-line25"/>
 </xsl:variable>
 
+<xsl:variable name="Sched1-Copy00-line1099K">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched1-Copy00-line1099K'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='Sched1-Copy00-line1099K'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='Sched1-Copy00-line1099K']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="Sched1-Copy00-line01">
 <xsl:choose>
 <xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='Sched1-Copy00-line01'])) != ''">
@@ -15541,6 +15552,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00line26 color="red">
 <xsl:value-of select="format-number($Sched1-Copy00-line26, '#####0')"/>
 </copy00line26>
+
+<copy00line1099K color="red">
+<xsl:value-of select="format-number($Sched1-Copy00-line1099K, '#####0')"/>
+</copy00line1099K>
 
 <copy00line01 color="red">
 <xsl:value-of select="format-number($Sched1-Copy00-line01, '#####0')"/>

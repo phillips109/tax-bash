@@ -100,6 +100,15 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <addend>line25</addend>
 </line>
 
+<dlin number='1099K'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>000</override>
+<blank></blank>
+</dlin>
+
 <dlin number='01'
  color='red'>
 <title></title>

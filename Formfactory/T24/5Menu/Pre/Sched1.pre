@@ -1,0 +1,58 @@
+type      	!name      	!seq       	!menuEntry                                                                                           
+dlin      	!1099K     	!008       	!Items included in error/personal sold at loss                                                       
+dlin      	!01        	!009       	!Taxable refunds, credts, or offsets of state and local income taxes                                 
+dlin      	!02a       	!010       	!Alimony received                                                                                    
+tlin      	!02b       	!011       	!Enter date of origianl divorce or separation agreement                                              
+dlin      	!07        	!016       	!Unemployment compensation                                                                           
+dlin      	!08a       	!017       	!net operating loss                                                                                  
+dlin      	!08b       	!018       	!Gambling                                                                                            
+dlin      	!08c       	!019       	!Cancellation of debt                                                                                
+dlin      	!08g       	!023       	!Alaska Permanent Fund dividends                                                                     
+dlin      	!08h       	!024       	!Jury duty pay                                                                                       
+dlin      	!08i       	!025       	!Prizes and awards                                                                                   
+dlin      	!08j       	!026       	!Activity not engaged in for profit income                                                           
+dlin      	!08k       	!027       	!Stock options                                                                                       
+dlin      	!08l       	!028       	!Income from rental of personal property                                                             
+dlin      	!08m       	!029       	!Olympic and Parallllympic medal and USOC prize money                                                
+dlin      	!08n       	!030       	!Section 951a inclusion                                                                              
+dlin      	!08o       	!031       	!Section 851Aa inclusion                                                                             
+dlin      	!08p       	!032       	!Section 461(l) excess business loss adjustment                                                      
+dlin      	!08q       	!033       	!Taxable distributions fraom an ABLE account                                                         
+dlin      	!08r       	!034       	!Scholarship and fellowship grants not reported on Form W@                                           
+dlin      	!08s       	!035       	!Nontaxable amount of Medicaid waiver payments included on Form 1040, line1a or 1d                   
+dlin      	!08t       	!036       	!Pension or annuity from a nonqualified deferred compensation plan/nongovernmentsl section 457 plan  
+dlin      	!08u       	!037       	!Wages earned while incarcerated                                                                     
+dlin      	!08v       	!038       	!Digital assets received as ordinary incomenot reported elsewhere                                    
+tlin      	!08za      	!039a      	!Other income type: line one                                                                         
+tlin      	!08zb      	!039b      	!Other income type: line two                                                                         
+dlin      	!08z       	!039       	!Other income amount                                                                                 
+dlin      	!11        	!042       	!Educator expenses                                                                                   
+dlin      	!12        	!042a      	!Certain business expenses of reservists, performing artists, and fee-basis government officials     
+dlin      	!13        	!042b      	!Health savings account deduction                                                                    
+dlin      	!14        	!042c      	!Moving expenses for members of the Armed Forces                                                     
+dlin      	!15        	!042d      	!Deductible part of self-employment tax                                                              
+dlin      	!16        	!047       	!Self-employed SEP, SIMPLE, and qualified plans                                                      
+dlin      	!17        	!048       	!Self-employed health insurance deduction                                                            
+dlin      	!18        	!049       	!Penalty for early withdrawal of savings                                                             
+dlin      	!19a       	!050       	!Alimony paid                                                                                        
+tlin      	!19b1      	!051       	!Recipient's SSN first 3 digits                                                                      
+tlin      	!19b2      	!052       	!Recipient's SSN second 2 digits                                                                     
+tlin      	!19b3      	!053       	!Recipient's SSN last 4 digits                                                                       
+tlin      	!19c       	!054       	!Date of ariginal divorce or separation agreement                                                    
+dlin      	!20        	!055       	!IRA deductions                                                                                      
+dlin      	!21        	!056       	!Student loan interest deduction                                                                     
+dlin      	!23        	!057       	!Archer MSA deduction                                                                                
+dlin      	!24a       	!058       	!Jury duty pay                                                                                       
+dlin      	!24b       	!059       	!Deductible expenses related to income reported on line 8L from the rental of personal property      
+dlin      	!24c       	!060       	!Non-taxable amount of the value of Olympic and Paralympic medals and USOC prize money               
+dlin      	!24d       	!061       	!Reforestation amortization and expenses                                                             
+dlin      	!24e       	!062       	!Payment of supplemental unemployment benefits                                                       
+dlin      	!24f       	!063       	!Contributions to section 501(c)(18)(D) pension plans                                                
+dlin      	!24g       	!064       	!Contribution by certain chaplains to section 403(b) plans                                           
+dlin      	!24h       	!065       	!Attorney fees and cout costs for action involving certain unlawful discrimination claims            
+dlin      	!24i       	!066       	!Attoroney fees and court costs you paid in connecition with an awardfrom the IRS for info           
+dlin      	!24kj      	!068       	!Housing deduction from Form2555                                                                     
+dlin      	!24k       	!068a      	!Excess deductions of section 67(e) expenses form Schedule K1                                        
+dlin      	!24z       	!069       	!Other adjustments                                                                                   
+tlin      	!24z1      	!070       	!Other adjustments text line 1                                                                       
+tlin      	!24z2      	!071       	!Other adjustments text line 2                                                                       

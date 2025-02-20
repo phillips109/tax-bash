@@ -1,0 +1,152 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+#Copywrite(C) 2024 Phillips Wedemeyer
+set_Sched1_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in Sched1 in which to enter or edit data:"
+echo
+echo "1099K)    Items included in error/personal sold at loss                                                       "
+echo "01   )    Taxable refunds, credts, or offsets of state and local income taxes                                 "
+echo "02a  )    Alimony received                                                                                    "
+echo "02b  )    Enter date of origianl divorce or separation agreement                                              "
+echo "07   )    Unemployment compensation                                                                           "
+echo "08a  )    net operating loss                                                                                  "
+echo "08b  )    Gambling                                                                                            "
+echo "08c  )    Cancellation of debt                                                                                "
+echo "08g  )    Alaska Permanent Fund dividends                                                                     "
+echo "08h  )    Jury duty pay                                                                                       "
+echo "08i  )    Prizes and awards                                                                                   "
+echo "08j  )    Activity not engaged in for profit income                                                           "
+echo "08k  )    Stock options                                                                                       "
+echo "08l  )    Income from rental of personal property                                                             "
+echo "08m  )    Olympic and Parallllympic medal and USOC prize money                                                "
+echo "08n  )    Section 951a inclusion                                                                              "
+echo "08o  )    Section 851Aa inclusion                                                                             "
+echo "08p  )    Section 461(l) excess business loss adjustment                                                      "
+echo "08q  )    Taxable distributions fraom an ABLE account                                                         "
+echo "08r  )    Scholarship and fellowship grants not reported on Form W@                                           "
+echo "08s  )    Nontaxable amount of Medicaid waiver payments included on Form 1040, line1a or 1d                   "
+echo "08t  )    Pension or annuity from a nonqualified deferred compensation plan/nongovernmentsl section 457 plan  "
+echo "08u  )    Wages earned while incarcerated                                                                     "
+echo "08v  )    Digital assets received as ordinary incomenot reported elsewhere                                    "
+echo "08za )    Other income type: line one                                                                         "
+echo "08zb )    Other income type: line two                                                                         "
+echo "08z  )    Other income amount                                                                                 "
+echo "11   )    Educator expenses                                                                                   "
+echo "12   )    Certain business expenses of reservists, performing artists, and fee-basis government officials     "
+echo "13   )    Health savings account deduction                                                                    "
+echo "14   )    Moving expenses for members of the Armed Forces                                                     "
+echo "15   )    Deductible part of self-employment tax                                                              "
+echo "16   )    Self-employed SEP, SIMPLE, and qualified plans                                                      "
+echo "17   )    Self-employed health insurance deduction                                                            "
+echo "18   )    Penalty for early withdrawal of savings                                                             "
+echo "19a  )    Alimony paid                                                                                        "
+echo "19b1 )    Recipient's SSN first 3 digits                                                                      "
+echo "19b2 )    Recipient's SSN second 2 digits                                                                     "
+echo "19b3 )    Recipient's SSN last 4 digits                                                                       "
+echo "19c  )    Date of ariginal divorce or separation agreement                                                    "
+echo "20   )    IRA deductions                                                                                      "
+echo "21   )    Student loan interest deduction                                                                     "
+echo "23   )    Archer MSA deduction                                                                                "
+echo "24a  )    Jury duty pay                                                                                       "
+echo "24b  )    Deductible expenses related to income reported on line 8L from the rental of personal property      "
+echo "24c  )    Non-taxable amount of the value of Olympic and Paralympic medals and USOC prize money               "
+echo "24d  )    Reforestation amortization and expenses                                                             "
+echo "24e  )    Payment of supplemental unemployment benefits                                                       "
+echo "24f  )    Contributions to section 501(c)(18)(D) pension plans                                                "
+echo "24g  )    Contribution by certain chaplains to section 403(b) plans                                           "
+echo "24h  )    Attorney fees and cout costs for action involving certain unlawful discrimination claims            "
+echo "24i  )    Attoroney fees and court costs you paid in connecition with an awardfrom the IRS for info           "
+echo "24kj )    Housing deduction from Form2555                                                                     "
+echo "24k  )    Excess deductions of section 67(e) expenses form Schedule K1                                        "
+echo "24z  )    Other adjustments                                                                                   "
+echo "24z1 )    Other adjustments text line 1                                                                       "
+echo "24z2 )    Other adjustments text line 2                                                                       "
+echo
+echo "    q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read Sched1_line_data_choice
+echo
+     case $Sched1_line_data_choice in
+1099K)    set_line_menu_number $1 $2  line1099K                            ;;
+01   )    set_line_menu_number $1 $2  line01                               ;;
+02a  )    set_line_menu_number $1 $2  line02a                              ;;
+02b  )    set_line_menu_text   $1 $2  line02b                              ;;
+07   )    set_line_menu_number $1 $2  line07                               ;;
+08a  )    set_line_menu_number $1 $2  line08a                              ;;
+08b  )    set_line_menu_number $1 $2  line08b                              ;;
+08c  )    set_line_menu_number $1 $2  line08c                              ;;
+08g  )    set_line_menu_number $1 $2  line08g                              ;;
+08h  )    set_line_menu_number $1 $2  line08h                              ;;
+08i  )    set_line_menu_number $1 $2  line08i                              ;;
+08j  )    set_line_menu_number $1 $2  line08j                              ;;
+08k  )    set_line_menu_number $1 $2  line08k                              ;;
+08l  )    set_line_menu_number $1 $2  line08l                              ;;
+08m  )    set_line_menu_number $1 $2  line08m                              ;;
+08n  )    set_line_menu_number $1 $2  line08n                              ;;
+08o  )    set_line_menu_number $1 $2  line08o                              ;;
+08p  )    set_line_menu_number $1 $2  line08p                              ;;
+08q  )    set_line_menu_number $1 $2  line08q                              ;;
+08r  )    set_line_menu_number $1 $2  line08r                              ;;
+08s  )    set_line_menu_number $1 $2  line08s                              ;;
+08t  )    set_line_menu_number $1 $2  line08t                              ;;
+08u  )    set_line_menu_number $1 $2  line08u                              ;;
+08v  )    set_line_menu_number $1 $2  line08v                              ;;
+08za )    set_line_menu_text   $1 $2  line08za                             ;;
+08zb )    set_line_menu_text   $1 $2  line08zb                             ;;
+08z  )    set_line_menu_number $1 $2  line08z                              ;;
+11   )    set_line_menu_number $1 $2  line11                               ;;
+12   )    set_line_menu_number $1 $2  line12                               ;;
+13   )    set_line_menu_number $1 $2  line13                               ;;
+14   )    set_line_menu_number $1 $2  line14                               ;;
+15   )    set_line_menu_number $1 $2  line15                               ;;
+16   )    set_line_menu_number $1 $2  line16                               ;;
+17   )    set_line_menu_number $1 $2  line17                               ;;
+18   )    set_line_menu_number $1 $2  line18                               ;;
+19a  )    set_line_menu_number $1 $2  line19a                              ;;
+19b1 )    set_line_menu_text   $1 $2  line19b1                             ;;
+19b2 )    set_line_menu_text   $1 $2  line19b2                             ;;
+19b3 )    set_line_menu_text   $1 $2  line19b3                             ;;
+19c  )    set_line_menu_text   $1 $2  line19c                              ;;
+20   )    set_line_menu_number $1 $2  line20                               ;;
+21   )    set_line_menu_number $1 $2  line21                               ;;
+23   )    set_line_menu_number $1 $2  line23                               ;;
+24a  )    set_line_menu_number $1 $2  line24a                              ;;
+24b  )    set_line_menu_number $1 $2  line24b                              ;;
+24c  )    set_line_menu_number $1 $2  line24c                              ;;
+24d  )    set_line_menu_number $1 $2  line24d                              ;;
+24e  )    set_line_menu_number $1 $2  line24e                              ;;
+24f  )    set_line_menu_number $1 $2  line24f                              ;;
+24g  )    set_line_menu_number $1 $2  line24g                              ;;
+24h  )    set_line_menu_number $1 $2  line24h                              ;;
+24i  )    set_line_menu_number $1 $2  line24i                              ;;
+24kj )    set_line_menu_number $1 $2  line24kj                             ;;
+24k  )    set_line_menu_number $1 $2  line24k                              ;;
+24z  )    set_line_menu_number $1 $2  line24z                              ;;
+24z1 )    set_line_menu_text   $1 $2  line24z1                             ;;
+24z2 )    set_line_menu_text   $1 $2  line24z2                             ;;
+q    )    break;;                       
+esac
+done
+}
