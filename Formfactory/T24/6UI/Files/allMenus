@@ -1653,24 +1653,24 @@ do
 clear
 echo "Lines in SchedA in which to enter or edit data:"
 echo
-echo "01   )    Enter neducak abd debtak expenses. "
-echo "05a  )    Enter State abd kicak ubcine taxes ir geberak sakes taxes."
-echo "05b  )    Enter State and local real estate taxes."
-echo "05c  )    enter State and local personal property taxes."
-echo "06   )    Enter Other taxes.                 "
-echo "06a  )    Enter type of other taxes.         "
-echo "08   )    Enter home mortgage interes and points."
-echo "08a  )    Enter home mortgage interes and points reported on Form1096."
-echo "08b  )    Enter mortgage interes not reported to you on Form1098."
-echo "08c  )    Enter points not reported to your on Form 1098."
-echo "09   )    Investment interest.               "
-echo "11   )    Enter charity gifts by cash or check."
-echo "12   )    Enter charity gifts ny other than cash or check."
-echo "13   )    Enter charity gifts from prior year."
-echo "15   )    Enter casualty and theft losses from a federally declared disaster."
-echo "16   )    Enter other itemized deductions.   "
-echo "05ack)    Enter x if you elect to include gereral sales taxes."
-echo "18ck )    Enter x if you elect to itemize deductions even though less than standard deduction."
+echo "01   )    Enter neducak abd debtak expenses.                                                                  "
+echo "05a  )    Enter State abd kicak ubcine taxes ir geberak sakes taxes.                                          "
+echo "05b  )    Enter State and local real estate taxes.                                                            "
+echo "05c  )    enter State and local personal property taxes.                                                      "
+echo "06   )    Enter Other taxes.                                                                                  "
+echo "06a  )    Enter type of other taxes.                                                                          "
+echo "08   )    Enter home mortgage interes and points.                                                             "
+echo "08a  )    Enter home mortgage interes and points reported on Form1096.                                        "
+echo "08b  )    Enter mortgage interes not reported to you on Form1098.                                             "
+echo "08c  )    Enter points not reported to your on Form 1098.                                                     "
+echo "09   )    Investment interest.                                                                                "
+echo "11a  )    Enter charity gifts by cash or check.                                                               "
+echo "12   )    Enter charity gifts ny other than cash or check.                                                    "
+echo "13   )    Enter charity gifts from prior year.                                                                "
+echo "15   )    Enter casualty and theft losses from a federally declared disaster.                                 "
+echo "16   )    Enter other itemized deductions.                                                                    "
+echo "05ack)    Enter x if you elect to include gereral sales taxes.                                                "
+echo "18ck )    Enter x if you elect to itemize deductions even though less than standard deduction.                "
 echo
 echo "    q)    Return to Previous Menu"      
 echo
@@ -1689,7 +1689,7 @@ echo
 08b  )    set_line_menu_number $1 $2  line08b                              ;;
 08c  )    set_line_menu_number $1 $2  line08c                              ;;
 09   )    set_line_menu_number $1 $2  line09                               ;;
-11   )    set_line_menu_number $1 $2  line11                               ;;
+11a  )    set_line_menu_number $1 $2  line11a                              ;;
 12   )    set_line_menu_number $1 $2  line12                               ;;
 13   )    set_line_menu_number $1 $2  line13                               ;;
 15   )    set_line_menu_number $1 $2  line15                               ;;

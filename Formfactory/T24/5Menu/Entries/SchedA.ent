@@ -9,7 +9,7 @@
 020	!dlin	!08b	!Enter mortgage interes not reported to you on Form1098.
 021	!dlin	!08c	!Enter points not reported to your on Form 1098.
 024	!dlin	!09	!Investment interest.
-026	!dlin	!11	!Enter charity gifts by cash or check.
+026	!dlin	!11a	!Enter charity gifts by cash or check.
 027	!dlin	!12	!Enter charity gifts ny other than cash or check.
 027	!dlin	!13	!Enter charity gifts from prior year.
 027	!dlin	!15	!Enter casualty and theft losses from a federally declared disaster.
