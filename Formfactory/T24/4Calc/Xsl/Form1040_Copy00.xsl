@@ -2542,9 +2542,6 @@ $Form1040-Copy00-linepen10"/>
 
 <xsl:variable name="Form1040-Copy00-line12">
 <xsl:choose>
-<xsl:when test="$Form1040-Copy00-lineFS = 'MFS'">
-<xsl:value-of select="100"/>
-</xsl:when>
 <xsl:when test="$Form1040-Copy00-lineScA18ck = 'x'">
 <xsl:value-of select="$Form1040-Copy00-lineschA17"/>
 </xsl:when>

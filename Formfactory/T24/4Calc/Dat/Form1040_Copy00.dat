@@ -2353,9 +2353,6 @@ cnum
 12
 #####0
 CHOOS1
-WHEN01$Form1040-Copy00-lineFS = 'MFS'
-VALUOF100
-WHEN02
 WHEN01$Form1040-Copy00-lineScA18ck = 'x'
 VALUOF$Form1040-Copy00-lineschA17
 WHEN02
