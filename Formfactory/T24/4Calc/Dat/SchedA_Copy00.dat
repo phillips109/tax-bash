@@ -22,7 +22,7 @@ You should have received a copy of the GNU General Public License
 
 along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
-xsum
+xaddit
 2name
 3format
 4augend
@@ -138,7 +138,7 @@ dlin
 900
 
 dlin
-11
+11a
 #####0
 1010
 
@@ -189,7 +189,7 @@ mult
 line02
 line75
 
-xmult
+mult
 11
 #####0
 line11a
