@@ -1,0 +1,217 @@
+<Form fname="w2">
+<taxline name="paddr1" type="tlin" color="black">
+<menuEntry>Enter payor address line1</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="paddr2" type="tlin" color="black">
+<menuEntry>Enter payor address line2</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="pcity" type="tlin" color="black">
+<menuEntry>Enter payor city</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="pST" type="tlin" color="black">
+<menuEntry>Enter payor STate</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="pzip" type="tlin" color="black">
+<menuEntry>Enter payor zip</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="ctrNo" type="tlin" color="black">
+<menuEntry>Enter control number</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="tsuff" type="tlin" color="black">
+<menuEntry>Enter taxpayor suffix</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="raddr1" type="tlin" color="black">
+<menuEntry>Enter recipient's address line1</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="raddr2" type="tlin" color="black">
+<menuEntry>Enter recipient's address line2</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="rcity" type="tlin" color="black">
+<menuEntry>Enter recipient's city</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="rST" type="tlin" color="black">
+<menuEntry>Enter recipient's STate</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="rzip" type="tlin" color="black">
+<menuEntry>Enter recipient's zip</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="01" type="dlin" color="black">
+<menuEntry>Wages, tips, other compensation</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="02" type="dlin" color="black">
+<menuEntry>Federal income tax withheld</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="03" type="dlin" color="black">
+<menuEntry>Social Security wages</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="04" type="dlin" color="black">
+<menuEntry>Social Security tax withheld</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="05" type="dlin" color="black">
+<menuEntry>Medicare wages and tips</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="06" type="dlin" color="black">
+<menuEntry>Medicare tax withheld</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="07" type="dlin" color="black">
+<menuEntry>Social security tips</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="08" type="dlin" color="black">
+<menuEntry>Allocated tips</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="10" type="dlin" color="black">
+<menuEntry>Dependent care benefits</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="11" type="dlin" color="black">
+<menuEntry>Nonqualified plans</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="12a" type="tlin" color="black">
+<menuEntry>XX1234</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="12b" type="tlin" color="black">
+<menuEntry>XX1234</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="12c" type="tlin" color="black">
+<menuEntry>XX1234</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="12d" type="tlin" color="black">
+<menuEntry>XX12334</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="13a" type="tlin" color="black">
+<menuEntry>Enter x if statutory employee</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="13b" type="tlin" color="black">
+<menuEntry>Enter x if Retirement plan</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="13c" type="tlin" color="black">
+<menuEntry>Enter x if Third party sick pay</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="14" type="dlin" color="black">
+<menuEntry>Other</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="15sa" type="tlin" color="black">
+<menuEntry>Enter first STate and Employer's state ID number</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="15b" type="tlin" color="black">
+<menuEntry>Enter second STate and Employer's state ID number</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="16a" type="dlin" color="black">
+<menuEntry>Wages, tips, etc for first state</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="16b" type="dlin" color="black">
+<menuEntry>Wages, tips, etc for second state</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="17a" type="dlin" color="black">
+<menuEntry>Income tax for first state</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="17b" type="dlin" color="black">
+<menuEntry>Income tax for second state</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="18a" type="dlin" color="black">
+<menuEntry>Wages, tips etc for first locality</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="18b" type="dlin" color="black">
+<menuEntry>Wages, tips etc for second locality</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="19a" type="dlin" color="black">
+<menuEntry>Income tax for first locality</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="19b" type="dlin" color="black">
+<menuEntry>Income tax for second locality</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="20a" type="tlin" color="black">
+<menuEntry>Name of first locality</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="20b" type="tlin" color="black">
+<menuEntry>Name of second locality</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="void" type="tlin" color="black">
+<menuEntry>Enter x if form is void</menuEntry>
+<IRSInstructions>Instruction file not defined.</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+</Form>

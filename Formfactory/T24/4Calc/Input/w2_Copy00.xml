@@ -1,0 +1,472 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>200</override>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>300</override>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>400</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>500</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>600</override>
+<blank></blank>
+</dlin>
+
+<dlin number='07'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>700</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>800</override>
+<blank></blank>
+</dlin>
+
+<dlin number='09'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>900</override>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='14'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1400</override>
+<blank></blank>
+</dlin>
+
+<dlin number='16a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1601</override>
+<blank></blank>
+</dlin>
+
+<dlin number='16b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1602</override>
+<blank></blank>
+</dlin>
+
+<dlin number='17a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1701</override>
+<blank></blank>
+</dlin>
+
+<dlin number='17b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1702</override>
+<blank></blank>
+</dlin>
+
+<dlin number='18a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1801</override>
+<blank></blank>
+</dlin>
+
+<dlin number='18b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1802</override>
+<blank></blank>
+</dlin>
+
+<dlin number='19a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1901</override>
+<blank></blank>
+</dlin>
+
+<dlin number='19b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1902</override>
+<blank></blank>
+</dlin>
+
+<line name='12a'
+ color='blue'>
+<type>tlin</type>
+<text>1201</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='12b'
+ color='blue'>
+<type>tlin</type>
+<text>1202</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='12c'
+ color='blue'>
+<type>tlin</type>
+<text>1203</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='12d'
+ color='blue'>
+<type>tlin</type>
+<text>1204</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='13a'
+ color='blue'>
+<type>tlin</type>
+<text>1301</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='13b'
+ color='blue'>
+<type>tlin</type>
+<text>1302</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='13c'
+ color='blue'>
+<type>tlin</type>
+<text>1303</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='15b'
+ color='blue'>
+<type>tlin</type>
+<text>1502</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='15sa'
+ color='blue'>
+<type>tlin</type>
+<text>15sa</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='20a'
+ color='blue'>
+<type>tlin</type>
+<text>2001</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='20b'
+ color='blue'>
+<type>tlin</type>
+<text>2002</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='ctrNo'
+ color='blue'>
+<type>tlin</type>
+<text>ctrNo</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='paddr1'
+ color='blue'>
+<type>tlin</type>
+<text>paddr1</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='paddr2'
+ color='blue'>
+<type>tlin</type>
+<text>paddr2</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='payrID'
+ color='blue'>
+<type>tlin</type>
+<text>payrID</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pcity'
+ color='blue'>
+<type>tlin</type>
+<text>pcity</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pST'
+ color='blue'>
+<type>tlin</type>
+<text>pST</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pzip'
+ color='blue'>
+<type>tlin</type>
+<text>pzip</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='raddr1'
+ color='blue'>
+<type>tlin</type>
+<text>raddr1</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='raddr2'
+ color='blue'>
+<type>tlin</type>
+<text>raddr2</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rcity'
+ color='blue'>
+<type>tlin</type>
+<text>rcity</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rST'
+ color='blue'>
+<type>tlin</type>
+<text>rST</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rzip'
+ color='blue'>
+<type>tlin</type>
+<text>rzip</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TFNI'
+ color='blue'>
+<type>tlin</type>
+<text>TFNI</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TLN'
+ color='blue'>
+<type>tlin</type>
+<text>TLN</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TSSNoF'
+ color='blue'>
+<type>tlin</type>
+<text>TSSNoF</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TSSNoL'
+ color='blue'>
+<type>tlin</type>
+<text>TSSNoL</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='TSSNoM'
+ color='blue'>
+<type>tlin</type>
+<text>TSSNoM</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='tsuff'
+ color='blue'>
+<type>tlin</type>
+<text>tsuff</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='void'
+ color='blue'>
+<type>tlin</type>
+<text>void</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+</Form>

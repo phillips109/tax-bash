@@ -799,6 +799,113 @@ done
 }
 
 
+set_w2_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in w2 in which to enter or edit data:"
+echo
+echo "payrID)    Enter payor ID                                                                                      "
+echo "paddr1)    Enter payor address line1                                                                           "
+echo "paddr2)    Enter payor address line2                                                                           "
+echo "pcity )    Enter payor city                                                                                    "
+echo "pST   )    Enter payor STate                                                                                   "
+echo "pzip  )    Enter payor zip                                                                                     "
+echo "ctrNo )    Enter control number                                                                                "
+echo "tsuff )    Enter taxpayor suffix                                                                               "
+echo "raddr1)    Enter recipient's address line1                                                                     "
+echo "raddr2)    Enter recipient's address line2                                                                     "
+echo "rcity )    Enter recipient's city                                                                              "
+echo "rST   )    Enter recipient's STate                                                                             "
+echo "rzip  )    Enter recipient's zip                                                                               "
+echo "01    )    Wages, tips, other compensation                                                                     "
+echo "02    )    Federal income tax withheld                                                                         "
+echo "03    )    Social Security wages                                                                               "
+echo "04    )    Social Security tax withheld                                                                        "
+echo "05    )    Medicare wages and tips                                                                             "
+echo "06    )    Medicare tax withheld                                                                               "
+echo "07    )    Social security tips                                                                                "
+echo "08    )    Allocated tips                                                                                      "
+echo "10    )    Dependent care benefits                                                                             "
+echo "11    )    Nonqualified plans                                                                                  "
+echo "12a   )    XX1234                                                                                              "
+echo "12b   )    XX1234                                                                                              "
+echo "12c   )    XX1234                                                                                              "
+echo "12d   )    XX12334                                                                                             "
+echo "13a   )    Enter x if statutory employee                                                                       "
+echo "13b   )    Enter x if Retirement plan                                                                          "
+echo "13c   )    Enter x if Third party sick pay                                                                     "
+echo "14    )    Other                                                                                               "
+echo "15sa  )    Enter first STate and Employer's state ID number                                                    "
+echo "15b   )    Enter second STate and Employer's state ID number                                                   "
+echo "16a   )    Wages, tips, etc for first state                                                                    "
+echo "16b   )    Wages, tips, etc for second state                                                                   "
+echo "17a   )    Income tax for first state                                                                          "
+echo "17b   )    Income tax for second state                                                                         "
+echo "18a   )    Wages, tips etc for first locality                                                                  "
+echo "18b   )    Wages, tips etc for second locality                                                                 "
+echo "19a   )    Income tax for first locality                                                                       "
+echo "19b   )    Income tax for second locality                                                                      "
+echo "20a   )    Name of first locality                                                                              "
+echo "20b   )    Name of second locality                                                                             "
+echo "void  )    Enter x if form is void                                                                             "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read w2_line_data_choice
+echo
+     case $w2_line_data_choice in
+payrID)    set_line_menu_text   $1 $2  linepayrID                           ;;
+paddr1)    set_line_menu_text   $1 $2  linepaddr1                           ;;
+paddr2)    set_line_menu_text   $1 $2  linepaddr2                           ;;
+pcity )    set_line_menu_text   $1 $2  linepcity                            ;;
+pST   )    set_line_menu_text   $1 $2  linepST                              ;;
+pzip  )    set_line_menu_text   $1 $2  linepzip                             ;;
+ctrNo )    set_line_menu_text   $1 $2  linectrNo                            ;;
+tsuff )    set_line_menu_text   $1 $2  linetsuff                            ;;
+raddr1)    set_line_menu_text   $1 $2  lineraddr1                           ;;
+raddr2)    set_line_menu_text   $1 $2  lineraddr2                           ;;
+rcity )    set_line_menu_text   $1 $2  linercity                            ;;
+rST   )    set_line_menu_text   $1 $2  linerST                              ;;
+rzip  )    set_line_menu_text   $1 $2  linerzip                             ;;
+01    )    set_line_menu_number $1 $2  line01                               ;;
+02    )    set_line_menu_number $1 $2  line02                               ;;
+03    )    set_line_menu_number $1 $2  line03                               ;;
+04    )    set_line_menu_number $1 $2  line04                               ;;
+05    )    set_line_menu_number $1 $2  line05                               ;;
+06    )    set_line_menu_number $1 $2  line06                               ;;
+07    )    set_line_menu_number $1 $2  line07                               ;;
+08    )    set_line_menu_number $1 $2  line08                               ;;
+10    )    set_line_menu_number $1 $2  line10                               ;;
+11    )    set_line_menu_number $1 $2  line11                               ;;
+12a   )    set_line_menu_text   $1 $2  line12a                              ;;
+12b   )    set_line_menu_text   $1 $2  line12b                              ;;
+12c   )    set_line_menu_text   $1 $2  line12c                              ;;
+12d   )    set_line_menu_text   $1 $2  line12d                              ;;
+13a   )    set_line_menu_text   $1 $2  line13a                              ;;
+13b   )    set_line_menu_text   $1 $2  line13b                              ;;
+13c   )    set_line_menu_text   $1 $2  line13c                              ;;
+14    )    set_line_menu_number $1 $2  line14                               ;;
+15sa  )    set_line_menu_text   $1 $2  line15sa                             ;;
+15b   )    set_line_menu_text   $1 $2  line15b                              ;;
+16a   )    set_line_menu_number $1 $2  line16a                              ;;
+16b   )    set_line_menu_number $1 $2  line16b                              ;;
+17a   )    set_line_menu_number $1 $2  line17a                              ;;
+17b   )    set_line_menu_number $1 $2  line17b                              ;;
+18a   )    set_line_menu_number $1 $2  line18a                              ;;
+18b   )    set_line_menu_number $1 $2  line18b                              ;;
+19a   )    set_line_menu_number $1 $2  line19a                              ;;
+19b   )    set_line_menu_number $1 $2  line19b                              ;;
+20a   )    set_line_menu_text   $1 $2  line20a                              ;;
+20b   )    set_line_menu_text   $1 $2  line20b                              ;;
+void  )    set_line_menu_text   $1 $2  linevoid                             ;;
+q     )    break;;                       
+esac
+done
+}
+
+
 set_Form1040_line_data_choice() {
 while true;
 do
@@ -1506,6 +1613,115 @@ QOFn)    set_line_menu_number $1 $2  lineQOFn                             ;;
 13  )    set_line_menu_number $1 $2  line13                               ;;
 14  )    set_line_menu_number $1 $2  line14                               ;;
 q   )    break;;                       
+esac
+done
+}
+
+
+set_w2_line_data_choice() {
+while true;
+do
+clear
+echo "Lines in w2 in which to enter or edit data:"
+echo
+echo "payrID)    Enter payor ID                                                                                      "
+echo "paddr1)    Enter payor address line1                                                                           "
+echo "paddr2)    Enter payor address line2                                                                           "
+echo "pcity )    Enter payor city                                                                                    "
+echo "pST   )    Enter payor STate                                                                                   "
+echo "pzip  )    Enter payor zip                                                                                     "
+echo "ctrNo )    Enter control number                                                                                "
+echo "tsuff )    Enter taxpayor suffix                                                                               "
+echo "raddr1)    Enter recipient's address line1                                                                     "
+echo "raddr2)    Enter recipient's address line2                                                                     "
+echo "rcity )    Enter recipient's city                                                                              "
+echo "rST   )    Enter recipient's STate                                                                             "
+echo "rzip  )    Enter recipient's zip                                                                               "
+echo "01    )    Wages, tips, other compensation                                                                     "
+echo "02    )    Federal income tax withheld                                                                         "
+echo "03    )    Social Security wages                                                                               "
+echo "04    )    Social Security tax withheld                                                                        "
+echo "05    )    Medicare wages and tips                                                                             "
+echo "06    )    Medicare tax withheld                                                                               "
+echo "07    )    Social security tips                                                                                "
+echo "08    )    Allocated tips                                                                                      "
+echo "09    )                                                                                                        "
+echo "10    )    Dependent care benefits                                                                             "
+echo "11    )    Nonqualified plans                                                                                  "
+echo "12a   )    XX1234                                                                                              "
+echo "12b   )    XX1234                                                                                              "
+echo "12c   )    XX1234                                                                                              "
+echo "12d   )    XX12334                                                                                             "
+echo "13a   )    Enter x if statutory employee                                                                       "
+echo "13b   )    Enter x if Retirement plan                                                                          "
+echo "13c   )    Enter x if Third party sick pay                                                                     "
+echo "14    )    Other                                                                                               "
+echo "15sa  )    Enter first STate and Employer's state ID number                                                    "
+echo "15b   )    Enter second STate and Employer's state ID number                                                   "
+echo "16a   )    Wages, tips, etc for first state                                                                    "
+echo "16b   )    Wages, tips, etc for second state                                                                   "
+echo "17a   )    Income tax for first state                                                                          "
+echo "17b   )    Income tax for second state                                                                         "
+echo "18a   )    Wages, tips etc for first locality                                                                  "
+echo "18b   )    Wages, tips etc for second locality                                                                 "
+echo "19a   )    Income tax for first locality                                                                       "
+echo "19b   )    Income tax for second locality                                                                      "
+echo "20a   )    Name of first locality                                                                              "
+echo "20b   )    Name of second locality                                                                             "
+echo "void  )    Enter x if form is void                                                                             "
+echo
+echo "     q)    Return to Previous Menu"      
+echo
+echo "Please enter the letter(s) of your choice then press return."
+     read w2_line_data_choice
+echo
+     case $w2_line_data_choice in
+payrID)    set_line_menu_text   $1 $2  linepayrID                           ;;
+paddr1)    set_line_menu_text   $1 $2  linepaddr1                           ;;
+paddr2)    set_line_menu_text   $1 $2  linepaddr2                           ;;
+pcity )    set_line_menu_text   $1 $2  linepcity                            ;;
+pST   )    set_line_menu_text   $1 $2  linepST                              ;;
+pzip  )    set_line_menu_text   $1 $2  linepzip                             ;;
+ctrNo )    set_line_menu_text   $1 $2  linectrNo                            ;;
+tsuff )    set_line_menu_text   $1 $2  linetsuff                            ;;
+raddr1)    set_line_menu_text   $1 $2  lineraddr1                           ;;
+raddr2)    set_line_menu_text   $1 $2  lineraddr2                           ;;
+rcity )    set_line_menu_text   $1 $2  linercity                            ;;
+rST   )    set_line_menu_text   $1 $2  linerST                              ;;
+rzip  )    set_line_menu_text   $1 $2  linerzip                             ;;
+01    )    set_line_menu_number $1 $2  line01                               ;;
+02    )    set_line_menu_number $1 $2  line02                               ;;
+03    )    set_line_menu_number $1 $2  line03                               ;;
+04    )    set_line_menu_number $1 $2  line04                               ;;
+05    )    set_line_menu_number $1 $2  line05                               ;;
+06    )    set_line_menu_number $1 $2  line06                               ;;
+07    )    set_line_menu_number $1 $2  line07                               ;;
+08    )    set_line_menu_number $1 $2  line08                               ;;
+09    )    set_line_menu_number $1 $2  line09                               ;;
+10    )    set_line_menu_number $1 $2  line10                               ;;
+11    )    set_line_menu_number $1 $2  line11                               ;;
+12a   )    set_line_menu_text   $1 $2  line12a                              ;;
+12b   )    set_line_menu_text   $1 $2  line12b                              ;;
+12c   )    set_line_menu_text   $1 $2  line12c                              ;;
+12d   )    set_line_menu_text   $1 $2  line12d                              ;;
+13a   )    set_line_menu_text   $1 $2  line13a                              ;;
+13b   )    set_line_menu_text   $1 $2  line13b                              ;;
+13c   )    set_line_menu_text   $1 $2  line13c                              ;;
+14    )    set_line_menu_number $1 $2  line14                               ;;
+15sa  )    set_line_menu_text   $1 $2  line15sa                             ;;
+15b   )    set_line_menu_text   $1 $2  line15b                              ;;
+16a   )    set_line_menu_number $1 $2  line16a                              ;;
+16b   )    set_line_menu_number $1 $2  line16b                              ;;
+17a   )    set_line_menu_number $1 $2  line17a                              ;;
+17b   )    set_line_menu_number $1 $2  line17b                              ;;
+18a   )    set_line_menu_number $1 $2  line18a                              ;;
+18b   )    set_line_menu_number $1 $2  line18b                              ;;
+19a   )    set_line_menu_number $1 $2  line19a                              ;;
+19b   )    set_line_menu_number $1 $2  line19b                              ;;
+20a   )    set_line_menu_text   $1 $2  line20a                              ;;
+20b   )    set_line_menu_text   $1 $2  line20b                              ;;
+void  )    set_line_menu_text   $1 $2  linevoid                             ;;
+q     )    break;;                       
 esac
 done
 }

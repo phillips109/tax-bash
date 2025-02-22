@@ -1,0 +1,45 @@
+tlin      	!payrID    	!004       	!Enter payor ID                                                                                      
+tlin      	!paddr1    	!005       	!Enter payor address line1                                                                           
+tlin      	!paddr2    	!006       	!Enter payor address line2                                                                           
+tlin      	!pcity     	!007       	!Enter payor city                                                                                    
+tlin      	!pST       	!008       	!Enter payor STate                                                                                   
+tlin      	!pzip      	!009       	!Enter payor zip                                                                                     
+tlin      	!ctrNo     	!010       	!Enter control number                                                                                
+tlin      	!tsuff     	!013       	!Enter taxpayor suffix                                                                               
+tlin      	!raddr1    	!014       	!Enter recipient's address line1                                                                     
+tlin      	!raddr2    	!015       	!Enter recipient's address line2                                                                     
+tlin      	!rcity     	!016       	!Enter recipient's city                                                                              
+tlin      	!rST       	!017       	!Enter recipient's STate                                                                             
+tlin      	!rzip      	!018       	!Enter recipient's zip                                                                               
+dlin      	!01        	!019       	!Wages, tips, other compensation                                                                     
+dlin      	!02        	!020       	!Federal income tax withheld                                                                         
+dlin      	!03        	!021       	!Social Security wages                                                                               
+dlin      	!04        	!022       	!Social Security tax withheld                                                                        
+dlin      	!05        	!023       	!Medicare wages and tips                                                                             
+dlin      	!06        	!024       	!Medicare tax withheld                                                                               
+dlin      	!07        	!025       	!Social security tips                                                                                
+dlin      	!08        	!026       	!Allocated tips                                                                                      
+dlin      	!09        	!027       	!                                                                                                    
+dlin      	!10        	!028       	!Dependent care benefits                                                                             
+dlin      	!11        	!029       	!Nonqualified plans                                                                                  
+tlin      	!12a       	!030       	!XX1234                                                                                              
+tlin      	!12b       	!031       	!XX1234                                                                                              
+tlin      	!12c       	!032       	!XX1234                                                                                              
+tlin      	!12d       	!033       	!XX12334                                                                                             
+tlin      	!13a       	!034       	!Enter x if statutory employee                                                                       
+tlin      	!13b       	!035       	!Enter x if Retirement plan                                                                          
+tlin      	!13c       	!036       	!Enter x if Third party sick pay                                                                     
+dlin      	!14        	!037       	!Other                                                                                               
+tlin      	!15sa      	!038       	!Enter first STate and Employer's state ID number                                                    
+tlin      	!15b       	!039       	!Enter second STate and Employer's state ID number                                                   
+dlin      	!16a       	!040       	!Wages, tips, etc for first state                                                                    
+dlin      	!16b       	!041       	!Wages, tips, etc for second state                                                                   
+dlin      	!17a       	!042       	!Income tax for first state                                                                          
+dlin      	!17b       	!043       	!Income tax for second state                                                                         
+dlin      	!18a       	!044       	!Wages, tips etc for first locality                                                                  
+dlin      	!18b       	!045       	!Wages, tips etc for second locality                                                                 
+dlin      	!19a       	!046       	!Income tax for first locality                                                                       
+dlin      	!19b       	!047       	!Income tax for second locality                                                                      
+tlin      	!20a       	!048       	!Name of first locality                                                                              
+tlin      	!20b       	!049       	!Name of second locality                                                                             
+tlin      	!void      	!050       	!Enter x if form is void                                                                             

@@ -782,7 +782,7 @@ do
       1099r)     set_menu_choices  Form1099r   00;;	
       1099g)     set_menu_choices  Form1099g   00;;
       1099ssa)   set_copy_number   Form1099ssa 00;;
-      w2)        set_copy_number   w2          00;;	
+      w2)        set_menu_choices  w2          00;;	
       bkg)       set_menu_choices  Bkg         00;; #Limited to one copy (00). (see above)     
       q)         break;;
     esac

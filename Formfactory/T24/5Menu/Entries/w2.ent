@@ -1,0 +1,45 @@
+004	!tlin	!payrID	!Enter payor ID                       
+005	!tlin	!paddr1	!Enter payor address line1
+006	!tlin	!paddr2	!Enter payor address line2
+007	!tlin	!pcity	!Enter payor city 
+008	!tlin	!pST	!Enter payor STate      
+009	!tlin	!pzip	!Enter payor zip        
+010	!tlin	!ctrNo	!Enter control number          
+013	!tlin	!tsuff	!Enter taxpayor suffix      
+014	!tlin	!raddr1	!Enter recipient's address line1     
+015	!tlin	!raddr2	!Enter recipient's address line2
+016	!tlin	!rcity	!Enter recipient's city
+017	!tlin	!rST	!Enter recipient's STate
+018	!tlin	!rzip	!Enter recipient's zip  
+019	!dlin	!01	!Wages, tips, other compensation 
+020	!dlin	!02	!Federal income tax withheld
+021	!dlin	!03	!Social Security wages
+022	!dlin	!04	!Social Security tax withheld  
+023	!dlin	!05	!Medicare wages and tips
+024	!dlin	!06	!Medicare tax withheld 
+025	!dlin	!07	!Social security tips   
+026	!dlin	!08	!Allocated tips    
+027	!dlin	!09	!          
+028	!dlin	!10	!Dependent care benefits                        
+029	!dlin	!11	!Nonqualified plans 
+030	!tlin	!12a	!XX1234       
+031	!tlin	!12b	!XX1234                  
+032	!tlin	!12c	!XX1234                 
+033	!tlin	!12d	!XX12334                        
+034	!tlin	!13a	!Enter x if statutory employee                 
+035	!tlin	!13b	!Enter x if Retirement plan
+036	!tlin	!13c	!Enter x if Third party sick pay
+037	!dlin	!14	!Other
+038	!tlin	!15sa	!Enter first STate and Employer's state ID number       
+039	!tlin	!15b	!Enter second STate and Employer's state ID number     
+040	!dlin	!16a	!Wages, tips, etc for first state                    
+041	!dlin	!16b	!Wages, tips, etc for second state         
+042	!dlin	!17a	!Income tax for first state
+043	!dlin	!17b	!Income tax for second state
+044	!dlin	!18a	!Wages, tips etc for first locality
+045	!dlin	!18b	!Wages, tips etc for second locality
+046	!dlin	!19a	!Income tax for first locality                
+047	!dlin	!19b	!Income tax for second locality
+048	!tlin	!20a	!Name of first locality    
+049	!tlin	!20b	!Name of second locality  
+050	!tlin	!void	!Enter x if form is void  

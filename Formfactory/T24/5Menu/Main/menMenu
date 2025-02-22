@@ -71,7 +71,7 @@ choosePdf(){
     Form1099r)          showsPdf f1099r;;
     Form1099g)          showsPdf f1099g;;
     Form1099ssa)        showsPdf f1099ssa;;
-    w2)                 showsPdf fw2--2022;;
+    w2)                 showsPdf fw2;;
     Bkg)                showsPdf fBkg;;
 
 

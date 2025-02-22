@@ -1,0 +1,44 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+tlin      	!paddr1    	!005       	!Enter payor address line1                                                                           	!Instruction file not defined.	!     	!     
+tlin      	!paddr2    	!006       	!Enter payor address line2                                                                           	!Instruction file not defined.	!     	!     
+tlin      	!pcity     	!007       	!Enter payor city                                                                                    	!Instruction file not defined.	!     	!     
+tlin      	!pST       	!008       	!Enter payor STate                                                                                   	!Instruction file not defined.	!     	!     
+tlin      	!pzip      	!009       	!Enter payor zip                                                                                     	!Instruction file not defined.	!     	!     
+tlin      	!ctrNo     	!010       	!Enter control number                                                                                	!Instruction file not defined.	!     	!     
+tlin      	!tsuff     	!013       	!Enter taxpayor suffix                                                                               	!Instruction file not defined.	!     	!     
+tlin      	!raddr1    	!014       	!Enter recipient's address line1                                                                     	!Instruction file not defined.	!     	!     
+tlin      	!raddr2    	!015       	!Enter recipient's address line2                                                                     	!Instruction file not defined.	!     	!     
+tlin      	!rcity     	!016       	!Enter recipient's city                                                                              	!Instruction file not defined.	!     	!     
+tlin      	!rST       	!017       	!Enter recipient's STate                                                                             	!Instruction file not defined.	!     	!     
+tlin      	!rzip      	!018       	!Enter recipient's zip                                                                               	!Instruction file not defined.	!     	!     
+dlin      	!01        	!019       	!Wages, tips, other compensation                                                                     	!Instruction file not defined.	!     	!     
+dlin      	!02        	!020       	!Federal income tax withheld                                                                         	!Instruction file not defined.	!     	!     
+dlin      	!03        	!021       	!Social Security wages                                                                               	!Instruction file not defined.	!     	!     
+dlin      	!04        	!022       	!Social Security tax withheld                                                                        	!Instruction file not defined.	!     	!     
+dlin      	!05        	!023       	!Medicare wages and tips                                                                             	!Instruction file not defined.	!     	!     
+dlin      	!06        	!024       	!Medicare tax withheld                                                                               	!Instruction file not defined.	!     	!     
+dlin      	!07        	!025       	!Social security tips                                                                                	!Instruction file not defined.	!     	!     
+dlin      	!08        	!026       	!Allocated tips                                                                                      	!Instruction file not defined.	!     	!     
+dlin      	!10        	!028       	!Dependent care benefits                                                                             	!Instruction file not defined.	!     	!     
+dlin      	!11        	!029       	!Nonqualified plans                                                                                  	!Instruction file not defined.	!     	!     
+tlin      	!12a       	!030       	!XX1234                                                                                              	!Instruction file not defined.	!     	!     
+tlin      	!12b       	!031       	!XX1234                                                                                              	!Instruction file not defined.	!     	!     
+tlin      	!12c       	!032       	!XX1234                                                                                              	!Instruction file not defined.	!     	!     
+tlin      	!12d       	!033       	!XX12334                                                                                             	!Instruction file not defined.	!     	!     
+tlin      	!13a       	!034       	!Enter x if statutory employee                                                                       	!Instruction file not defined.	!     	!     
+tlin      	!13b       	!035       	!Enter x if Retirement plan                                                                          	!Instruction file not defined.	!     	!     
+tlin      	!13c       	!036       	!Enter x if Third party sick pay                                                                     	!Instruction file not defined.	!     	!     
+dlin      	!14        	!037       	!Other                                                                                               	!Instruction file not defined.	!     	!     
+tlin      	!15sa      	!038       	!Enter first STate and Employer's state ID number                                                    	!Instruction file not defined.	!     	!     
+tlin      	!15b       	!039       	!Enter second STate and Employer's state ID number                                                   	!Instruction file not defined.	!     	!     
+dlin      	!16a       	!040       	!Wages, tips, etc for first state                                                                    	!Instruction file not defined.	!     	!     
+dlin      	!16b       	!041       	!Wages, tips, etc for second state                                                                   	!Instruction file not defined.	!     	!     
+dlin      	!17a       	!042       	!Income tax for first state                                                                          	!Instruction file not defined.	!     	!     
+dlin      	!17b       	!043       	!Income tax for second state                                                                         	!Instruction file not defined.	!     	!     
+dlin      	!18a       	!044       	!Wages, tips etc for first locality                                                                  	!Instruction file not defined.	!     	!     
+dlin      	!18b       	!045       	!Wages, tips etc for second locality                                                                 	!Instruction file not defined.	!     	!     
+dlin      	!19a       	!046       	!Income tax for first locality                                                                       	!Instruction file not defined.	!     	!     
+dlin      	!19b       	!047       	!Income tax for second locality                                                                      	!Instruction file not defined.	!     	!     
+tlin      	!20a       	!048       	!Name of first locality                                                                              	!Instruction file not defined.	!     	!     
+tlin      	!20b       	!049       	!Name of second locality                                                                             	!Instruction file not defined.	!     	!     
+tlin      	!void      	!050       	!Enter x if form is void                                                                             	!Instruction file not defined.	!     	!     

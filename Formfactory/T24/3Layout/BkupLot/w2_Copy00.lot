@@ -1,15 +1,15 @@
-Copyright(C) 2019 Phillips Wedemeyer
+Copyright(C) 2023, 2024 Phillips Wedemeyer
                               
 This file is part of a program called Tax-bash
                               
 Tax-bash is free software: you can redistibute it and/or modify
-it under the terms of the FNU General Public License as published by
+it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
                               
 Tax-bash is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PUPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
                               
 You should have received a copy of the GNU General Public License
@@ -21,10 +21,10 @@ For direction on how to separate pages see ../notes.
                               
 Form
 xpgF  	!2name 	!3BkgImage
-pgF   	!Single	!../Jpg/f1040sb-page-001.jpg
+pgF   	!Single	!../Jpg/fw2-page-001.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+col   	!      	!-0.12 	!left  	!0.00  	!8.50  
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!a     	!0.00  	!      	!      	!      
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
@@ -34,10 +34,10 @@ Endcol*******************
 EndpgF    
                               
 xpgM  	!2name 	!3BkgImage
-pgM   	!Single	!../Jpg/f1040sb-page-002.jpg
+pgM   	!Single	!../Jpg/fw2-page-002.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+col   	!      	!-0.12 	!left  	!0.00  	!8.50  
                               
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -48,7 +48,7 @@ dlin  	!04    	!1.46  	!400               	!            	!      	!
 dlin  	!06    	!1.80  	!600               	!            	!      	!      
 dlin  	!08    	!2.12  	!800               	!            	!      	!      
 dlin  	!10    	!2.46  	!1000              	!            	!      	!      
-tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12a   	!2.75  	!XX1201            	!            	!      	!      
 tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
 tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
 tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
@@ -62,7 +62,7 @@ dlin  	!03    	!1.46  	!300               	!            	!      	!
 dlin  	!05    	!1.80  	!500               	!            	!      	!      
 dlin  	!07    	!2.12  	!700               	!            	!      	!      
 dlin  	!09    	!2.46  	!900               	!            	!      	!      
-dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+dlin  	!11    	!2.75  	!1100              	!            	!      	!      
 tlin  	!14    	!3.46  	!1400              	!            	!      	!      
 Endcol*******************     
                               
@@ -92,13 +92,13 @@ tlin  	!payrID	!1.12  	!12-123456         	!            	!      	!
 tlin  	!paddr1	!1.80  	!13 River Street   	!            	!      	!      
 tlin  	!paddr2	!1.96  	!Suite 300         	!            	!      	!      
 tlin  	!pcity 	!2.12  	!Boston            	!            	!      	!      
-tlin  	!ctrNo 	!2.40  	!987654321         	!            	!      	!      
-tlin  	!TFNI  	!2.90  	!John E.           	!            	!      	!      
+tlin  	!ctrNo 	!2.46  	!987654321         	!            	!      	!      
+tlin  	!TFNI  	!2.97  	!John E.           	!            	!      	!      
 tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!      
 tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
 tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
-tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
-dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+tlin  	!15sa  	!4.23  	!PA  1501           	!            	!      	!      
+tlin  	!15b   	!4.63  	!MA  1502           	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -119,7 +119,7 @@ xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!i     	!0.00  	!center	!2.20  	!2.49  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
 tlin  	!TSSNoF	!0.79  	!123               	!            	!      	!      
-tlin  	!TLN   	!2.90  	!Dough             	!            	!      	!      
+tlin  	!TLN   	!2.97  	!Dough             	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -137,13 +137,13 @@ Endcol*******************
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
 col   	!l     	!0.00  	!left  	!4.34  	!4.57  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!      
+tlin  	!tsuff 	!2.97  	!Jr                	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+col   	!m     	!0.00  	!right 	!2.67  	!3.85  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16a   	!4.25  	!1601              	!            	!      	!      
 dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
 Endcol*******************     
                               
@@ -186,10 +186,10 @@ Endcol*******************
 EndpgM
 
 xpgM  	!2name 	!3BkgImage
-pgM   	!Single	!../Jpg/f1040sb-page-003.jpg
+pgM   	!Single	!../Jpg/fw2-page-003.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+col   	!      	!-0.12 	!left  	!0.00  	!8.50  
                               
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -338,10 +338,10 @@ Endcol*******************
 EndpgM
 
 xpgM  	!2name 	!3BkgImage
-pgM   	!Single	!../Jpg/f1040sb-page-004.jpg
+pgM   	!Single	!../Jpg/fw2-page-004.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+col   	!      	!-0.12 	!left  	!0.00  	!8.50  
                               
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -490,7 +490,7 @@ Endcol*******************
 EndpgM
 
 xpgM  	!2name 	!3BkgImage
-pgF   	!Single	!../Jpg/f1040sb-page-005.jpg
+pgM   	!Single	!../Jpg/fw2-page-005.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
 col   	!      	!-0.10 	!left  	!0.00  	!8.50  
@@ -503,10 +503,10 @@ Endcol*******************
 EndpgM    
 
 xpgM  	!2name 	!3BkgImage
-pgM   	!Single	!../Jpg/f1040sb-page-006.jpg
+pgM   	!Single	!../Jpg/fw2-page-006.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+col   	!      	!-0.12 	!left  	!0.00  	!8.50  
                               
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -655,7 +655,7 @@ Endcol*******************
 EndpgM
 
 xpgM  	!2name 	!3BkgImage
-pgF   	!Single	!../Jpg/f1040sb-page-007.jpg
+pgM   	!Single	!../Jpg/fw2-page-007.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
 col   	!      	!-0.10 	!left  	!0.00  	!8.50  
@@ -668,10 +668,10 @@ Endcol*******************
 EndpgM    
 
 xpgM  	!2name 	!3BkgImage
-pgM   	!Single	!../Jpg/f1040sb-page-008.jpg
+pgM   	!Single	!../Jpg/fw2-page-008.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+col   	!      	!-0.12 	!left  	!0.00  	!8.50  
                               
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -820,7 +820,7 @@ Endcol*******************
 EndpgM
 
 xpgM  	!2name 	!3BkgImage
-pgF   	!Single	!../Jpg/f1040sb-page-009.jpg
+pgM	!Single	!../Jpg/fw2-page-009.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
 col   	!      	!-0.10 	!left  	!0.00  	!8.50  
@@ -833,10 +833,10 @@ Endcol*******************
 EndpgM    
 
 xpgM  	!2name 	!3BkgImage
-pgM   	!Single	!../Jpg/f1040sb-page-010.jpg
+pgM   	!Single	!../Jpg/fw2-page-010.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
-col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+col   	!      	!-0.12 	!left  	!0.00  	!8.50  
                               
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -847,7 +847,7 @@ dlin  	!04    	!1.46  	!400               	!            	!      	!
 dlin  	!06    	!1.80  	!600               	!            	!      	!      
 dlin  	!08    	!2.12  	!800               	!            	!      	!      
 dlin  	!10    	!2.46  	!1000              	!            	!      	!      
-tlin  	!12a   	!2.90  	!XX1201            	!            	!      	!      
+tlin  	!12a   	!2.70  	!XX1201            	!            	!      	!      
 tlin  	!12b   	!3.13  	!XX1202            	!            	!      	!      
 tlin  	!12c   	!3.46  	!XX1203            	!            	!      	!      
 tlin  	!12d   	!3.79  	!XX1204            	!            	!      	!      
@@ -861,7 +861,7 @@ dlin  	!03    	!1.46  	!300               	!            	!      	!
 dlin  	!05    	!1.80  	!500               	!            	!      	!      
 dlin  	!07    	!2.12  	!700               	!            	!      	!      
 dlin  	!09    	!2.46  	!900               	!            	!      	!      
-dlin  	!11    	!2.90  	!1100              	!            	!      	!      
+dlin  	!11    	!2.70  	!1100              	!            	!      	!      
 tlin  	!14    	!3.46  	!1400              	!            	!      	!      
 Endcol*******************     
                               
@@ -897,7 +897,7 @@ tlin  	!raddr1	!3.22  	!300 Grant Street  	!            	!      	!
 tlin  	!raddr2	!3.53  	!Apt 3             	!            	!      	!      
 tlin  	!rcity 	!3.78  	!Pittsburgh        	!            	!      	!      
 tlin  	!15sa  	!4.23  	!PA 1501           	!            	!      	!      
-dlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
+tlin  	!15b   	!4.63  	!MA 1502           	!            	!      	!      
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
@@ -940,9 +940,9 @@ tlin  	!tsuff 	!2.90  	!Jr                	!            	!      	!
 Endcol*******************     
                               
 xcol  	!2name 	!3top  	!4align	!5left 	!6right
-col   	!m     	!0.00  	!left  	!0.65  	!2.64  
+col   	!m     	!0.00  	!left  	!2.65  	!3.85  
 xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
-dlin  	!16a   	!4.23  	!1601              	!            	!      	!      
+dlin  	!16a   	!4.25  	!1601              	!            	!      	!      
 dlin  	!16b   	!4.63  	!1602              	!            	!      	!      
 Endcol*******************     
                               
@@ -985,7 +985,7 @@ Endcol*******************
 EndpgM
 
 xpgL  	!2name 	!3BkgImage
-pgL   	!Single	!../Jpg/f1040sb-page-011.jpg
+pgL   	!Single	!../Jpg/fw2-page-011.jpg
                               
 xcol  	!2name 	!top   	!align 	!left  	!right 
 col   	!      	!-0.10 	!left  	!0.00  	!8.50  

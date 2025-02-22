@@ -1,0 +1,72 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+
+xdlin   	!2name   	!3format 	!4dummy              
+dlin    	!01      	!#####0  	!100                    	!
+dlin    	!02      	!#####0  	!200                 	!
+dlin    	!03      	!#####0  	!300                 	!
+dlin    	!04      	!#####0  	!400                 	!
+dlin    	!05      	!#####0  	!500                 	!
+dlin    	!06      	!#####0  	!600                 	!
+dlin    	!07      	!#####0  	!700                 	!
+dlin    	!08      	!#####0  	!800                 	!
+dlin    	!09      	!#####0  	!900                 	!
+dlin    	!10      	!#####0  	!1000                 	!
+dlin    	!11      	!#####0  	!1100                	!
+dlin    	!14      	!#####0  	!1400                	!
+dlin    	!16a     	!#####0  	!1601                	!
+dlin    	!16b     	!#####0  	!1602                	!
+dlin    	!17a     	!#####0  	!1701                	!
+dlin    	!17b     	!#####0  	!1702                	!
+dlin    	!18a     	!#####0  	!1801                	!
+dlin    	!18b     	!#####0  	!1802                	!
+dlin    	!19a     	!#####0  	!1901                	!
+dlin    	!19b     	!#####0  	!1902                	!
+
+xtlin   	!2name   	!3blank  	!4dummy  	!
+tlin    	!12a     	!blank        	!1201    	!
+tlin    	!12b     	!blank   	!1202    	!
+tlin    	!12c     	!blank   	!1203    	!
+tlin    	!12d     	!blank   	!1204    	!
+tlin    	!13a     	!blank   	!1301    	!
+tlin    	!13b     	!blank   	!1302    	!
+tlin    	!13c     	!blank   	!1303    	!
+tlin    	!15b     	!blank   	!1502    	!
+tlin    	!15sa    	!blank   	!15sa    	!
+tlin    	!20a     	!blank   	!2001    	!
+tlin    	!20b     	!blank   	!2002    	!
+tlin    	!ctrNo   	!blank   	!ctrNo    	!
+tlin    	!paddr1  	!blank   	!paddr1   	!
+tlin    	!paddr2  	!blank   	!paddr2        	!
+tlin    	!payrID  	!blank   	!payrID        	!
+tlin    	!pcity   	!blank   	!pcity         	!
+tlin    	!pST     	!blank   	!pST           	!
+tlin    	!pzip    	!blank   	!pzip          	!
+tlin    	!raddr1  	!blank   	!raddr1        	!
+tlin    	!raddr2  	!blank   	!raddr2        	!
+tlin    	!rcity   	!blank   	!rcity         	!
+tlin    	!rST     	!blank   	!rST           	!
+tlin    	!rzip    	!blank   	!rzip          	!
+tlin    	!TFNI    	!blank   	!TFNI          	!
+tlin    	!TLN     	!blank   	!TLN           	!
+tlin    	!TSSNoF  	!blank   	!TSSNoF        	!
+tlin    	!TSSNoL  	!blank   	!TSSNoL        	!
+tlin    	!TSSNoM  	!blank   	!TSSNoM        	!
+tlin    	!tsuff   	!blank   	!tsuff         	!
+tlin    	!void    	!blank   	!void          	!

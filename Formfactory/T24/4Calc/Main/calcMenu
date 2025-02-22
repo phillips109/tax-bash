@@ -70,7 +70,7 @@ Pdfshow(){
 	    SST) qpdfview ../Pdf/sst.pdf           &;; 
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
  SchedDaTaxWkst) qpdfview ../Pdf/schda.pdf	   &;; 
-             w2) qpdfview ../Pdf/fw2--2022.pdf     &;;
+             w2) qpdfview ../Pdf/fw2.pdf           &;;
 	    Bkg) qpdfview ../Pdf/fBkg.pdf          &;;
      FEITaxWkst) qpdfview ../Pdf/fei.pdf           &;;	    
           q) break;;	
