@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <Form name="Form1040-Copy00">
-<copy00line01z color="red">0</copy00line01z>
-<copy00line09 color="red">18429</copy00line09>
+<copy00line01z color="red">100</copy00line01z>
+<copy00line09 color="red">18529</copy00line09>
 <copy00line14 color="red">NaN</copy00line14>
 <copy00line16 color="red">NaN</copy00line16>
 <copy00line18 color="red">NaN</copy00line18>
@@ -27,7 +27,7 @@
 <copy00line27 color="red">2700</copy00line27>
 <copy00line36 color="red">3600</copy00line36>
 <copy00line38 color="red">50</copy00line38>
-<copy00line01a color="red">0</copy00line01a>
+<copy00line01a color="red">100</copy00line01a>
 <copy00line01e color="red">0</copy00line01e>
 <copy00line01f color="red">0</copy00line01f>
 <copy00line01g color="red">0</copy00line01g>
@@ -133,7 +133,7 @@
 <copy00line34 color="red">NaN</copy00line34>
 <copy00line37 color="red">NaN</copy00line37>
 <copy00line02b color="red">0</copy00line02b>
-<copy00line11 color="red">-30350</copy00line11>
+<copy00line11 color="red">-30250</copy00line11>
 <copy00line35a color="red">NaN</copy00line35a>
 <copy00lineCalc16 color="red">NaN</copy00lineCalc16>
 <copy00line2name color="blue"/>

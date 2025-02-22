@@ -314,7 +314,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <type>dPull</type>
 <format>#####0</format>
 <year>0</year>
-<form>W-2</form>
+<form>w2</form>
 <copy>00</copy>
 <line2>line01</line2>
 </line>

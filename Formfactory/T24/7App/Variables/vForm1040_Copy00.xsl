@@ -274,8 +274,8 @@ $Form1040-Copy00-linepen10"/>
 
 <xsl:variable name="Form1040-Copy00-line01a">
 <xsl:choose>
-<xsl:when test="document('../Output/W-2_Copy00.xml')">
-<xsl:value-of select="document('../Output/W-2_Copy00.xml')//copy00line01"/>
+<xsl:when test="document('../Output/w2_Copy00.xml')">
+<xsl:value-of select="document('../Output/w2_Copy00.xml')//copy00line01"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
