@@ -109,7 +109,7 @@ Pdfshow(){
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
     UR1250Wkst)  qpdfview ../Pdf/UR1250Wkst.pdf    &;;
-        CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
+            cap) qpdfview ../Pdf/cap.pdf           &;;
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
             SST) qpdfview ../Pdf/sst.pdf           &;;
        SSA_1099) qpdfview ../Pdf/ssa-1099-1040.pdf &;;
@@ -569,7 +569,7 @@ do
       ssa)   set_menu_choices SSA_1099          01;;
       sst)   set_menu_choices SST               01;;
       wks)   set_menu_choices Wks               01;;
-      cap)   set_menu_choices CLCWkst           01;;
+      cap)   set_menu_choices cap               01;;
       28rg)  set_menu_choices 28RGWkst          01;;
       1250)  set_menu_choices UG1250Wkst        01;;
       q)     break;;

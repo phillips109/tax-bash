@@ -1,0 +1,22 @@
+xaddit	!2name 	!3format	!4augend     	!5addend     	!6+addend
+addit 	!07    	!007    	!                              	!            	!            
+addit 	!12    	!012    	!                              	!            	!            
+xcnum 	!2name 	!3format	!4test       	!5value1     	!6value2
+cnum  	!03    	!003    	!                              	!            	!            
+cnum  	!06    	!006    	!                              	!            	!            
+cnum  	!10    	!010    	!                              	!            	!            
+xdPull	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dPull 	!01    	!001    	!            	!            	!      	!
+dPull 	!02a   	!001a   	!            	!            	!      	!
+dPull 	!05a   	!005a   	!            	!            	!      	!
+dPull 	!09a   	!009a   	!            	!            	!      	!
+xmult 	!2name 	!3format	!4multiplicand	!5multiplier
+mult  	!02    	!002    	!                              	!
+mult  	!05    	!005    	!            	!
+mult  	!09    	!009    	!            	!
+xsmOf 	!2name 	!3format	!4first      	!5second
+smOf  	!04    	!004    	!                              	!
+xsubt0	!2name 	!3format	!4minuend    	!5subtrahend
+subt0 	!08    	!008    	!                              	!
+subt0 	!11    	!011    	!                              	!
+subt0 	!13    	!013    	!                              	!

@@ -74,7 +74,7 @@ Pdfshow(){
          1120Sk) qpdfview ../Pdf/f1040s1.pdf       &;;
 	   4868) qpdfview ../Pdf/f4868.pdf         &;;
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
-        CLCWkst) qpdfview ../Pdf/clcWkst.pdf       &;;
+            cap) qpdfview ../Pdf/cap.pdf           &;;
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
     UG1250Wkst) qpdfview  ../Pdf/UG1250Wkst.pdf    &;;	    
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
@@ -817,7 +817,7 @@ do
 
     case $wkst_choice in
 
-      cap)    set_menu_choices CLCWkst          00;;	
+      cap)    set_menu_choices cap              00;;	
       fei)    set_menu_choices FEITaxWkst       00;;
       ln10)   set_menu_choices WSln10           00;;
       qdcg)   set_menu_choices QDCGTaxWkst      00;;

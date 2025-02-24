@@ -1,0 +1,16 @@
+dPull	!01	!001	!
+dPull	!02a	!001a	!
+mult	!02	!002	!                              
+cnum	!03	!003	!                              
+smOf	!04	!004	!                              
+dPull	!05a	!005a	!
+mult	!05	!005	!
+cnum	!06	!006	!                              
+addit	!07	!007	!                              
+subt0	!08	!008	!                              
+dPull	!09a	!009a	!
+mult	!09	!009
+cnum	!10	!010	!                              
+subt0	!11	!011	!                              
+addit	!12	!012	!                              
+subt0	!13	!013	!                              

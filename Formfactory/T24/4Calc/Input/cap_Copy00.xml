@@ -1,0 +1,202 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<line number='03a'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line01</augend>
+<addend>line02</addend>
+</line>
+
+<line number='07'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line04</augend>
+<addend>line06</addend>
+</line>
+
+<line number='12'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line10</augend>
+<addend>line11</addend>
+</line>
+
+<line number='01'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>T23</year>
+<form>Form1040</form>
+<copy>01</copy>
+<line2>line15</line2>
+</line>
+
+<line number='02a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>T23</year>
+<form>Form1040sd</form>
+<copy>01</copy>
+<line2>line21</line2>
+</line>
+
+<line number='05a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>T23</year>
+<form>Form1040sd</form>
+<copy>01</copy>
+<line2>line07</line2>
+</line>
+
+<line number='06a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>T23</year>
+<form>Form1040sd</form>
+<copy>01</copy>
+<line2>line15</line2>
+</line>
+
+<line number='09a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>T23</year>
+<form>Form1040sd</form>
+<copy>01</copy>
+<line2>line15</line2>
+</line>
+
+<line number='10a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>T23</year>
+<form>Form1040sd</form>
+<copy>01</copy>
+<line2>line07</line2>
+</line>
+
+<line number='02'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line02a</multiplicand>
+<multiplier>lineminus1</multiplier>
+</line>
+
+<line number='05'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line05a</multiplicand>
+<multiplier>lineminus1</multiplier>
+</line>
+
+<line number='09'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line09a</multiplicand>
+<multiplier>lineminus1</multiplier>
+</line>
+
+<line number='04'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line02</first>
+<second>line03</second>
+</line>
+
+<line number='08'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line05</minuend>
+<subtrahend>line07</subtrahend>
+</line>
+
+<line number='11'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line04</minuend>
+<subtrahend>line05</subtrahend>
+</line>
+
+<line number='13'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line09</minuend>
+<subtrahend>line12</subtrahend>
+</line>
+
+<line number='minus1'
+ color='blue'>
+<type>const</type>
+<format>#0.00#</format>
+<value>-1.00</value>
+</line>
+
+<line number='03'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$cap-Copy00-line03a &gt; 0</value1>
+<value2>VALUOF$cap-Copy00-line03a</value2>
+</line>
+
+<line number='06'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$cap-Copy00-line06a &gt; 0</value1>
+<value2>VALUOF$cap-Copy00-line06a</value2>
+</line>
+
+<line number='10'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$cap-Copy00-line10a &gt; 0</value1>
+<value2>VALUOF$cap-Copy00-line10a</value2>
+</line>
+</Form>

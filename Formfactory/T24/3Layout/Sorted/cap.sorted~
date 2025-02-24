@@ -1,0 +1,16 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!01    	!      	!      	!         	!
+01    	!dlin  	!01    	!      	!      	!         	!100
+01    	!dlin  	!02    	!      	!      	!         	!200
+01    	!dlin  	!03    	!      	!      	!         	!300
+01    	!dlin  	!05    	!      	!      	!         	!500
+01    	!dlin  	!07    	!      	!      	!         	!700
+01    	!dlin  	!08    	!      	!      	!         	!800
+01    	!dlin  	!09    	!      	!      	!         	!900
+01    	!dlin  	!12    	!      	!      	!         	!1200
+01    	!dlin  	!13    	!      	!      	!         	!1300
+Col   	!col   	!02    	!      	!      	!         	!
+02    	!dlin  	!04    	!      	!      	!         	!400
+02    	!dlin  	!06    	!      	!      	!         	!600
+02    	!dlin  	!10    	!      	!      	!         	!1000
+02    	!dlin  	!11    	!      	!      	!         	!1100

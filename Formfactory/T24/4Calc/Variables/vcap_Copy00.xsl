@@ -1,0 +1,190 @@
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
+
+<xsl:variable name="cap-Copy00-line03a">
+<xsl:value-of select="$cap-Copy00-line01 +
+$cap-Copy00-line02"/>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line07">
+<xsl:value-of select="$cap-Copy00-line04 +
+$cap-Copy00-line06"/>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line12">
+<xsl:value-of select="$cap-Copy00-line10 +
+$cap-Copy00-line11"/>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line01">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1040_Copy01.xml')//copy01line15"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="T23"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line02a">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040sd_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1040sd_Copy01.xml')//copy01line21"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="T23"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line05a">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040sd_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1040sd_Copy01.xml')//copy01line07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="T23"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line06a">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040sd_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1040sd_Copy01.xml')//copy01line15"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="T23"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line09a">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040sd_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1040sd_Copy01.xml')//copy01line15"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="T23"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line10a">
+<xsl:choose>
+<xsl:when test="document('../Output/Form1040sd_Copy01.xml')">
+<xsl:value-of select="document('../Output/Form1040sd_Copy01.xml')//copy01line07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="T23"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line02">
+<xsl:value-of select="$cap-Copy00-line02a * $cap-Copy00-lineminus1"/>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line05">
+<xsl:value-of select="$cap-Copy00-line05a * $cap-Copy00-lineminus1"/>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line09">
+<xsl:value-of select="$cap-Copy00-line09a * $cap-Copy00-lineminus1"/>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line04">
+<xsl:choose>
+<xsl:when test="$cap-Copy00-line02 &gt;= $cap-Copy00-line03">
+<xsl:value-of select="$cap-Copy00-line03"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$cap-Copy00-line02"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line08">
+<xsl:choose>
+<xsl:when test="$cap-Copy00-line07 >= $cap-Copy00-line05">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$cap-Copy00-line05 - $cap-Copy00-line07"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line11">
+<xsl:choose>
+<xsl:when test="$cap-Copy00-line05 >= $cap-Copy00-line04">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$cap-Copy00-line04 - $cap-Copy00-line05"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line13">
+<xsl:choose>
+<xsl:when test="$cap-Copy00-line12 >= $cap-Copy00-line09">
+<xsl:value-of select="0"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$cap-Copy00-line09 - $cap-Copy00-line12"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-lineminus1">
+<xsl:value-of select="-1.00"/>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line03">
+<xsl:choose>
+<xsl:when test="$cap-Copy00-line03a &gt; 0">
+<xsl:value-of select="$cap-Copy00-line03a"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line06">
+<xsl:choose>
+<xsl:when test="$cap-Copy00-line06a &gt; 0">
+<xsl:value-of select="$cap-Copy00-line06a"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="cap-Copy00-line10">
+<xsl:choose>
+<xsl:when test="$cap-Copy00-line10a &gt; 0">
+<xsl:value-of select="$cap-Copy00-line10a"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>

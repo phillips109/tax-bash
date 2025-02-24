@@ -302,7 +302,7 @@
 	  </xsl:when>
 
 	  <xsl:when test="$lineToBeTaxed &gt;= 25 and $lineToBeTaxed &lt; 3000">
-	    <xsl:value-of select="round(((floor($lineToBeTaxed div 50) + 0.125) * 50) * $TaxRateBracketOne)"/>
+	    <xsl:value-of select="round(((floor($lineToBeTaxed div 25) + 0.50) * 25) * $TaxRateBracketOne)"/>
 	  </xsl:when>
 	  
 	  <xsl:when test="$lineToBeTaxed &gt;= 3000 and $lineToBeTaxed &lt;= $SBracketOne">
@@ -363,7 +363,7 @@
 	  </xsl:when>
 
 	  <xsl:when test="$lineToBeTaxed &gt;= 25 and $lineToBeTaxed &lt; 3000">
-	    <xsl:value-of select="round(((floor($lineToBeTaxed div 50) + 0.125) * 50) * $TaxRateBracketOne)"/>
+	    <xsl:value-of select="round(((floor($lineToBeTaxed div 25) + 0.50) * 25) * $TaxRateBracketOne)"/>
 	  </xsl:when>
 	  
 	  <xsl:when test="$lineToBeTaxed &gt;= 3000 and $lineToBeTaxed &lt;= $MFSBracketOne">
@@ -419,7 +419,7 @@
 	  </xsl:when>
 
 	  <xsl:when test="$lineToBeTaxed &gt;= 25 and $lineToBeTaxed &lt; 3000">
-	    <xsl:value-of select="round(((floor($lineToBeTaxed div 50) + 0.125) * 50) * $TaxRateBracketOne)"/>
+	    <xsl:value-of select="round(((floor($lineToBeTaxed div 25) + 0.50) * 25) * $TaxRateBracketOne)"/>
 	  </xsl:when>
 	  
 	  <xsl:when test="$lineToBeTaxed &gt;= 3000 and $lineToBeTaxed &lt;= $HOHBracketOne">
@@ -475,7 +475,7 @@
 	  </xsl:when>
 
 	  <xsl:when test="$lineToBeTaxed &gt;= 25 and $lineToBeTaxed &lt; 3000">
-	    <xsl:value-of select="round(((floor($lineToBeTaxed div 50) + 0.125) * 50) * $TaxRateBracketOne)"/>
+	    <xsl:value-of select="round(((floor($lineToBeTaxed div 25) + 0.50) * 25) * $TaxRateBracketOne)"/>
 	  </xsl:when>
 	  
 	  <xsl:when test="$lineToBeTaxed &gt;= 3000 and $lineToBeTaxed &lt;= $MFJQSSBracketOne">
