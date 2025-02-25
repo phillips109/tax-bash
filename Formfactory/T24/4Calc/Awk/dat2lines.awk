@@ -37,7 +37,7 @@ BEGIN {
     print "</copy00line"$2">"
 }
 
-/^dlin/ || /^dPull/ || /^dRef/ || /^addit/ || /^subtr/ || /^subt0/ || /^mult/ || /^rmult/ || /^div/ || /^smOf/ || /^lgOf/ || /^cnum/ || /c2num/ || /^choice/ || /cFS/ || /^const/ || /^tCalc/ {
+/^dlin/ || /^dPull/ || /^dP23/ || /^dRef/ || /^addit/ || /^subtr/ || /^subt0/ || /^mult/ || /^rmult/ || /^div/ || /^smOf/ || /^lgOf/ || /^cnum/ || /c2num/ || /^choice/ || /cFS/ || /^const/ || /^tCalc/ {
     print ""
     print "<copy00line"$2" color=\"red\">"
     print "<xsl:value-of select=\"format-number($"form"-Copy00-line"$2", '#####0')\"/>"
