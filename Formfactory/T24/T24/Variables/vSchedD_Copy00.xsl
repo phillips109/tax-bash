@@ -144,17 +144,6 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="SchedD-Copy00-line14">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='SchedD-Copy00-line14'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='SchedD-Copy00-line14'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='SchedD-Copy00-line14']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
 <xsl:variable name="SchedD-Copy00-line07">
 <xsl:value-of select="$SchedD-Copy00-line01ah +
 $SchedD-Copy00-line01bh +
@@ -519,6 +508,17 @@ $SchedD-Copy00-line10g"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="SchedD-Copy00-line14">
+<xsl:choose>
+<xsl:when test="document('../Output/cap_Copy01.xml')">
+<xsl:value-of select="document('../Output/cap_Copy01.xml')//copy01line13"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="-1400"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>

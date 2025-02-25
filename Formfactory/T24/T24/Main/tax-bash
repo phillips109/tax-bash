@@ -3710,7 +3710,6 @@ echo "10g )    Enter adjustments to 10.           "
 echo "11  )    Enter long term gain from Form4797, 2439, 6252, 4684, 6781, and 8824."
 echo "12  )    Enter long term gain from partnerships, S corporations, estates and trusts."
 echo "13  )    Enter capital gain distsributions. "
-echo "14  )    Enter long term capital loss carryover."
 echo
 echo "   q)    Return to Previous Menu"      
 echo
@@ -3748,7 +3747,6 @@ QOFn)    set_line_menu_number $1 $2  lineQOFn                             ;;
 11  )    set_line_menu_number $1 $2  line11                               ;;
 12  )    set_line_menu_number $1 $2  line12                               ;;
 13  )    set_line_menu_number $1 $2  line13                               ;;
-14  )    set_line_menu_number $1 $2  line14                               ;;
 q   )    break;;                       
 esac
 done

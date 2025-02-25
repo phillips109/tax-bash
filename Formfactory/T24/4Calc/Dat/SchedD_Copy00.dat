@@ -133,7 +133,7 @@ min1
 #0.00
 -1.00
 
-dlin
+xdlin
 14
 #####0
 -138586
@@ -470,13 +470,13 @@ CGD
 01
 line01
 
-xdPull
+dPull
 14
 #####0
 -1400
-CLCWkst
+cap
 01
-line01
+line13
 
 dPull
 18d

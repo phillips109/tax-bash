@@ -149,9 +149,4 @@
 <IRSInstructions>i1040sd.pdf</IRSInstructions>
 <pgNo>12</pgNo>
 </taxline>
-<taxline name="14" type="dlin" color="black">
-<menuEntry>Enter long term capital loss carryover.</menuEntry>
-<IRSInstructions>i1040sd.pdf</IRSInstructions>
-<pgNo>12</pgNo>
-</taxline>
 </Form>

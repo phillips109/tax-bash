@@ -129,15 +129,6 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <blank></blank>
 </dlin>
 
-<dlin number='14'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override>-138586</override>
-<blank></blank>
-</dlin>
-
 <line number='07'
  color='green'>
 <type>addit</type>
@@ -534,6 +525,17 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <form>CGD</form>
 <copy>01</copy>
 <line2>line01</line2>
+</line>
+
+<line number='14'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>-1400</year>
+<form>cap</form>
+<copy>01</copy>
+<line2>line13</line2>
 </line>
 
 <line number='18d'
