@@ -287,6 +287,59 @@ Available types:
 <!-- This version looks to see if the ../Output document exists. -->
 <!-- If it does, the appropriate value is pulled. -->
 <!-- If not, the value of <dummy> is pulled. -->
+<!-- This one call the file from the year T23 -->
+  <xsl:template match="line[type='dP23']">
+    
+    <xsl:text disable-output-escaping="yes">&lt;xsl:variable name=T23"</xsl:text>
+    <xsl:value-of select="$form"/>
+  <xsl:text>-Copy</xsl:text>
+  <xsl:value-of select="$copy"/>
+    <xsl:text>-line</xsl:text>
+    <xsl:value-of select="@number"/>
+    <xsl:text disable-output-escaping="yes">&quot;&gt;</xsl:text><xsl:text>
+  </xsl:text>
+  
+  <xsl:text disable-output-escaping="yes">&lt;xsl:choose&gt;</xsl:text>
+  
+    <xsl:text disable-output-escaping="yes">&lt;xsl:when test="document('../../T23/../Output/</xsl:text>
+      <xsl:value-of select="./form"/>
+      <xsl:text>_Copy</xsl:text>
+      <xsl:value-of select="./copy"/>
+      <xsl:text disable-output-escaping="yes">.xml&apos;)</xsl:text>
+      <xsl:text disable-output-escaping="yes">&quot;&gt;</xsl:text><xsl:text>
+    </xsl:text>
+
+    <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="document('../../T23/../Output/</xsl:text>
+      <xsl:value-of select="./form"/>
+      <xsl:text>_Copy</xsl:text>
+      <xsl:value-of select="./copy"/>
+      <xsl:text disable-output-escaping="yes">.xml&apos;)//</xsl:text>
+      <xsl:text>copy</xsl:text>
+      <xsl:value-of select="./copy"/>
+      <xsl:value-of select="./line2"/>
+      <xsl:text disable-output-escaping="yes">&quot;&#47;&gt;</xsl:text><xsl:text>
+    </xsl:text>
+    
+    <xsl:text disable-output-escaping="yes">&lt;/xsl:when&gt;</xsl:text>
+    
+    <xsl:text disable-output-escaping="yes">&lt;xsl:otherwise&gt;</xsl:text>
+    
+    <xsl:text disable-output-escaping="yes">&lt;xsl:value-of select="</xsl:text>
+    <xsl:value-of select="./dummy"/>
+    <xsl:text disable-output-escaping="yes">"/&gt;</xsl:text>      
+
+    <xsl:text disable-output-escaping="yes">&lt;/xsl:otherwise&gt;</xsl:text>
+    
+    <xsl:text disable-output-escaping="yes">&lt;/xsl:choose&gt;</xsl:text>
+    
+  <xsl:text disable-output-escaping="yes">&lt;&#47;xsl:variable&gt;</xsl:text><xsl:text>
+</xsl:text>
+  </xsl:template>
+  
+
+<!-- This version looks to see if the ../Output document exists. -->
+<!-- If it does, the appropriate value is pulled. -->
+<!-- If not, the value of <dummy> is pulled. -->
   <xsl:template match="line[type='dPull']">
     
     <xsl:text disable-output-escaping="yes">&lt;xsl:variable name="</xsl:text>

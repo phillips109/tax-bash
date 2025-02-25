@@ -189,6 +189,21 @@ BEGIN {
         print "</xsl:variable>"
 }
 
+/^dP23/ {
+        print ""
+	print "<xsl:variable name=\""form"-Copy00-line"$2"\">"
+	print "<xsl:choose>"
+        print "<xsl:when test=\"document('../../T23/Output/"$5"_Copy"$6".xml')\">"
+	print "<xsl:value-of select=\"document('../../T23/Output/"$5"_Copy"$6".xml')//copy"$6 $7"\"/>"
+        print "</xsl:when>"
+	print "<xsl:otherwise>"
+	print "<xsl:value-of select=\""$4"\"/>"
+#        print "<xsl:value-of select=\"0\"/>"
+        print "</xsl:otherwise>"
+        print "</xsl:choose>"
+        print "</xsl:variable>"
+}
+
 /^subt0/  {
         print ""
         print "<xsl:variable name=\""form"-Copy00-line"$2"\">"

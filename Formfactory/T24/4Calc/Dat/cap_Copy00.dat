@@ -47,58 +47,59 @@ addit
 line10
 line11
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 xdPull
 2name
 3format
-4year
+4dummy
 5form
 6copy
 
-dPull
+dP23
 01
 #####0
-T23
+0
 Form1040
 01
 line15
 
-dPull
+dP23
 02a
 #####0
-T23
+0
 Form1040sd
 01
 line21
 
-dPull
+dP23
 05a
 #####0
-T23
-Form1040sd
+0
+orm1040sd
 01
 line07
 
-dPull
+dP23
 06a
 #####0
-T23
+0
 Form1040sd
 01
 line15
 
-dPull
+dP23
 09a
 #####0
-T23
+0
 Form1040sd
 01
 line15
 
-dPull
+dP23
 10a
 #####0
-T23
+0
 Form1040sd
 01
 line07
