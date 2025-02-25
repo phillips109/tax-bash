@@ -51,8 +51,8 @@ $cap-Copy00-line11"/>
 
 <xsl:variable name="cap-Copy00-line02a">
 <xsl:choose>
-<xsl:when test="document('../../T23/Output/Form1040sd_Copy01.xml')">
-<xsl:value-of select="document('../../T23/Output/Form1040sd_Copy01.xml')//copy01line21"/>
+<xsl:when test="document('../../T23/Output/SchedD_Copy01.xml')">
+<xsl:value-of select="document('../../T23/Output/SchedD_Copy01.xml')//copy01line21"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -62,8 +62,8 @@ $cap-Copy00-line11"/>
 
 <xsl:variable name="cap-Copy00-line05a">
 <xsl:choose>
-<xsl:when test="document('../../T23/Output/orm1040sd_Copy01.xml')">
-<xsl:value-of select="document('../../T23/Output/orm1040sd_Copy01.xml')//copy01line07"/>
+<xsl:when test="document('../../T23/Output/SchedD_Copy01.xml')">
+<xsl:value-of select="document('../../T23/Output/SchedD_Copy01.xml')//copy01line07"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -73,8 +73,8 @@ $cap-Copy00-line11"/>
 
 <xsl:variable name="cap-Copy00-line06a">
 <xsl:choose>
-<xsl:when test="document('../../T23/Output/Form1040sd_Copy01.xml')">
-<xsl:value-of select="document('../../T23/Output/Form1040sd_Copy01.xml')//copy01line15"/>
+<xsl:when test="document('../../T23/Output/SchedD_Copy01.xml')">
+<xsl:value-of select="document('../../T23/Output/SchedD_Copy01.xml')//copy01line15"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -84,8 +84,8 @@ $cap-Copy00-line11"/>
 
 <xsl:variable name="cap-Copy00-line09a">
 <xsl:choose>
-<xsl:when test="document('../../T23/Output/Form1040sd_Copy01.xml')">
-<xsl:value-of select="document('../../T23/Output/Form1040sd_Copy01.xml')//copy01line15"/>
+<xsl:when test="document('../../T23/Output/SchedD_Copy01.xml')">
+<xsl:value-of select="document('../../T23/Output/SchedD_Copy01.xml')//copy01line15"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -95,8 +95,8 @@ $cap-Copy00-line11"/>
 
 <xsl:variable name="cap-Copy00-line10a">
 <xsl:choose>
-<xsl:when test="document('../../T23/Output/Form1040sd_Copy01.xml')">
-<xsl:value-of select="document('../../T23/Output/Form1040sd_Copy01.xml')//copy01line07"/>
+<xsl:when test="document('../../T23/Output/SchedD_Copy01.xml')">
+<xsl:value-of select="document('../../T23/Output/SchedD_Copy01.xml')//copy01line07"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>

@@ -1459,7 +1459,7 @@ do
 
     case $wkst_choice in
 
-      cap)   set_copy_number  CLCWkst	     01;;		 
+      cap)   set_copy_number  cap	     01;;		 
       fei)   set_copy_number  FEITaxWkst     01;;
       ln10)  set_copy_number  WSln10         01;;
       qdcg)  set_copy_number  QDCGTaxWkst    01;;
