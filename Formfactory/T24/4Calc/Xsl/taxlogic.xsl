@@ -10899,7 +10899,7 @@ $SchedD-Copy00-line10g"/>
 <xsl:value-of select="0"/>
 </xsl:when>
 <xsl:when test="$SchedD-Copy00-line16 &gt; 0 and $SchedD-Copy00-line15 &gt; 0">
-<xsl:value-of select="$SchedD-Copy00-line18d - linecgexcess"/>
+<xsl:value-of select="$SchedD-Copy00-line18d - $SchedD-Copy00-linecgexcess"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>

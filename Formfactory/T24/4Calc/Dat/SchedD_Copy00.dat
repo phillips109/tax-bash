@@ -647,7 +647,7 @@ WHEN01$SchedD-Copy00-line16 &lt; 0
 VALUOF0
 WHEN02
 WHEN01$SchedD-Copy00-line16 &gt; 0 and $SchedD-Copy00-line15 &gt; 0
-VALUOF$SchedD-Copy00-line18d - linecgexcess
+VALUOF$SchedD-Copy00-line18d - $SchedD-Copy00-linecgexcess
 WHEN02
 OTHER1
 VALUOF0
