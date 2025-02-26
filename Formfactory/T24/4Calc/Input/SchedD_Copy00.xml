@@ -527,7 +527,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <line2>line01</line2>
 </line>
 
-<line number='14'
+<line number='14a'
  color='purple'>
 <title></title>
 <type>dPull</type>
@@ -677,6 +677,14 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <format>#####0</format>
 <minuend>line10e</minuend>
 <subtrahend>line10e</subtrahend>
+</line>
+
+<line number='14'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line14a</multiplicand>
+<multiplier>lineneg1</multiplier>
 </line>
 
 <line number='21b'

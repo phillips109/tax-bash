@@ -512,7 +512,7 @@ $SchedD-Copy00-line10g"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="SchedD-Copy00-line14">
+<xsl:variable name="SchedD-Copy00-line14a">
 <xsl:choose>
 <xsl:when test="document('../Output/cap_Copy01.xml')">
 <xsl:value-of select="document('../Output/cap_Copy01.xml')//copy01line13"/>
@@ -630,6 +630,10 @@ $SchedD-Copy00-line10g"/>
 
 <xsl:variable name="SchedD-Copy00-line10h">
 <xsl:value-of select="$SchedD-Copy00-line10e -  $SchedD-Copy00-line10e"/>
+</xsl:variable>
+
+<xsl:variable name="SchedD-Copy00-line14">
+<xsl:value-of select="$SchedD-Copy00-line14a * $SchedD-Copy00-lineneg1"/>
 </xsl:variable>
 
 <xsl:variable name="SchedD-Copy00-line21b">

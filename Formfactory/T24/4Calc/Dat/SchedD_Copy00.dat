@@ -471,7 +471,7 @@ CGD
 line01
 
 dPull
-14
+14a
 #####0
 -1400
 cap
@@ -599,11 +599,17 @@ xmult
 4multiplicand
 5multiplier
 
+mult
+14
+#####0
+line14a
+lineneg1
+
 xmult
 16pos
 #####0
 line16
--1.0
+lineneg1
 
 mult
 21b

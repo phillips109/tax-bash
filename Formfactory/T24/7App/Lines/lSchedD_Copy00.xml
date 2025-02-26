@@ -220,9 +220,9 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($SchedD-Copy00-line13, '#####0')"/>
 </copy00line13>
 
-<copy00line14 color="red">
-<xsl:value-of select="format-number($SchedD-Copy00-line14, '#####0')"/>
-</copy00line14>
+<copy00line14a color="red">
+<xsl:value-of select="format-number($SchedD-Copy00-line14a, '#####0')"/>
+</copy00line14a>
 
 <copy00line18d color="red">
 <xsl:value-of select="format-number($SchedD-Copy00-line18d, '#####0')"/>
@@ -283,6 +283,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00line10h color="red">
 <xsl:value-of select="format-number($SchedD-Copy00-line10h, '#####0')"/>
 </copy00line10h>
+
+<copy00line14 color="red">
+<xsl:value-of select="format-number($SchedD-Copy00-line14, '#####0')"/>
+</copy00line14>
 
 <copy00line21b color="red">
 <xsl:value-of select="format-number($SchedD-Copy00-line21b, '#####0')"/>

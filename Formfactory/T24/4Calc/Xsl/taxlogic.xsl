@@ -10755,7 +10755,7 @@ $SchedD-Copy00-line10g"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="SchedD-Copy00-line14">
+<xsl:variable name="SchedD-Copy00-line14a">
 <xsl:choose>
 <xsl:when test="document('../Output/cap_Copy01.xml')">
 <xsl:value-of select="document('../Output/cap_Copy01.xml')//copy01line13"/>
@@ -10873,6 +10873,10 @@ $SchedD-Copy00-line10g"/>
 
 <xsl:variable name="SchedD-Copy00-line10h">
 <xsl:value-of select="$SchedD-Copy00-line10e -  $SchedD-Copy00-line10e"/>
+</xsl:variable>
+
+<xsl:variable name="SchedD-Copy00-line14">
+<xsl:value-of select="$SchedD-Copy00-line14a * $SchedD-Copy00-lineneg1"/>
 </xsl:variable>
 
 <xsl:variable name="SchedD-Copy00-line21b">
@@ -18359,9 +18363,9 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($SchedD-Copy00-line13, '#####0')"/>
 </copy00line13>
 
-<copy00line14 color="red">
-<xsl:value-of select="format-number($SchedD-Copy00-line14, '#####0')"/>
-</copy00line14>
+<copy00line14a color="red">
+<xsl:value-of select="format-number($SchedD-Copy00-line14a, '#####0')"/>
+</copy00line14a>
 
 <copy00line18d color="red">
 <xsl:value-of select="format-number($SchedD-Copy00-line18d, '#####0')"/>
@@ -18422,6 +18426,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00line10h color="red">
 <xsl:value-of select="format-number($SchedD-Copy00-line10h, '#####0')"/>
 </copy00line10h>
+
+<copy00line14 color="red">
+<xsl:value-of select="format-number($SchedD-Copy00-line14, '#####0')"/>
+</copy00line14>
 
 <copy00line21b color="red">
 <xsl:value-of select="format-number($SchedD-Copy00-line21b, '#####0')"/>

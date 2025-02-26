@@ -14,8 +14,8 @@
 <copy00line1500 color="red">1500</copy00line1500>
 <copy00linemin1 color="red">-1</copy00linemin1>
 <copy00line07 color="red">0</copy00line07>
-<copy00line15 color="red">-1400</copy00line15>
-<copy00line16 color="red">-1400</copy00line16>
+<copy00line15 color="red">1400</copy00line15>
+<copy00line16 color="red">1400</copy00line16>
 <copy00line01bh color="red">0</copy00line01bh>
 <copy00line02h color="red">0</copy00line02h>
 <copy00line03h color="red">0</copy00line03h>
@@ -51,7 +51,7 @@
 <copy00line11 color="red">0</copy00line11>
 <copy00line12 color="red">0</copy00line12>
 <copy00line13 color="red">0</copy00line13>
-<copy00line14 color="red">-1400</copy00line14>
+<copy00line14a color="red">-1400</copy00line14a>
 <copy00line18d color="red">0</copy00line18d>
 <copy00line19d color="red">0</copy00line19d>
 <copy00line20ye color="red">0</copy00line20ye>
@@ -67,17 +67,18 @@
 <copy00line08bh color="red">0</copy00line08bh>
 <copy00line09h color="red">0</copy00line09h>
 <copy00line10h color="red">0</copy00line10h>
-<copy00line21b color="red">1400</copy00line21b>
-<copy00line21c color="red">1400</copy00line21c>
+<copy00line14 color="red">1400</copy00line14>
+<copy00line21b color="red">-1400</copy00line21b>
+<copy00line21c color="red">-1400</copy00line21c>
 <copy00line18 color="red">0</copy00line18>
 <copy00line19 color="red">0</copy00line19>
-<copy00line21 color="red">-1400</copy00line21>
+<copy00line21 color="red">0</copy00line21>
 <copy00line21a color="red">3000</copy00line21a>
-<copy00line17y color="blue"/>
+<copy00line17y color="blue">x</copy00line17y>
 <copy00line17n color="blue"/>
-<copy00line20y color="blue"/>
+<copy00line20y color="blue">x</copy00line20y>
 <copy00line20n color="blue"/>
 <copy00line22y color="blue"/>
-<copy00line22n color="blue">x</copy00line22n>
+<copy00line22n color="blue"/>
 </Form>
 </IRSForms>
