@@ -131,6 +131,9 @@ printf("\n%-8s\t!%-8s\t!%-8s\t!%-20s\n", "xstud", "2name", "3format", "5dummy")
 }
 
 
+/^xtCalc/{
+    printf("\n%-8s\t!%-8s\t!%-8s\t!%-8s\t!\n", "xtCalc", "2name", "3blank","4dummy")
+}
 /^xtlin/{
     printf("\n%-8s\t!%-8s\t!%-8s\t!%-8s\t!\n", "xtlin", "2name", "3blank","4dummy")
 }

@@ -1,0 +1,47 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+
+For direction on how to separate pages see ../notes.
+
+
+Form
+
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/fei-page-001.jpg
+
+xcol  	!2name 	!top   	!align 	!left  	!right
+col   	!      	!2.32 	!left  	!0.00  	!8.50
+
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!right 	!6.82  	!7.81
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01    	!1.66  	!100               	!            	!      	!
+dlin  	!02a   	!1.86  	!201               	!            	!      	!
+dlin  	!02b   	!2.16  	!202               	!            	!      	!
+dlin  	!02c   	!2.37  	!203               	!            	!      	!
+dlin  	!03    	!2.57  	!300               	!            	!      	!
+dlin  	!04    	!3.27  	!400               	!            	!      	!
+dlin  	!05    	!3.70  	!500               	!            	!      	!
+dlin  	!06    	!4.02  	!600               	!            	!      	!
+Endcol*******************
+
+Endcol*******************
+
+EndpgS
+EndForm

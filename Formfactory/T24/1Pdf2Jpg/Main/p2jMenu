@@ -561,17 +561,19 @@ do
   clear
   echo "Worksheets :"
   echo
-  echo "   cap)    Capital Loss Carryover Worksheet (i1040sd pg12)"
-  echo "   fei)    Foreign Earned Income Tax Worksheet (Inst 1040 pg32)"
-  echo "   sltr)   State & Local Income Tax Refund Worksheet (Inst 1040 p83)"
-  echo "   qdcg)   Qualified Dividends & Capital Gain Tax Worksheet (Inst 1040 p33)"
+  echo "    cap)   Capital Loss Carryover Worksheet"
+  echo "    fei)   Foreign Earned Income Tax Worksheet"
+  echo "    top)   Top of Foreign Earned Income Tax Worksheet"
+  echo " bottom)   Bottom of Foreign Earned Income Tax Worksheet"  
+  echo "   sltr)   State & Local Income Tax Refund Worksheet"
+  echo "   qdcg)   Qualified Dividends & Capital Gain Tax Worksheet"
   echo "  qdcga)   Qualified Dividents & Capital Gain Tax WorksheetA"
-  echo "   rg28)   28% Rate Gain (i1040sd p13)"
-  echo "   schd)   Schedule D worksheet (i1040sd p16,17)"
-  echo "  schda0   Schedule D worksheetA"
-  echo "   sales)  State and Local Sales Tax Worksheet (i1040sca.pdf p5)"
-  echo "   sst)    Social Security Tax Worksheet (Inst 1040 p28)"
-  echo "   1250)   Unrecaptured Section 1250 Gains (i1040sd p14)"
+  echo "   rg28)   28% Rate Gain"
+  echo "   schd)   Schedule D worksheet"
+  echo "  schda)   Schedule D worksheetA"
+  echo "  sales)   State and Local Sales Tax Worksheet"
+  echo "    sst)   Social Security Tax Worksheet"
+  echo "   1250)   Unrecaptured Section 1250 Gains"
   
   
   echo "   q)      Return to Main Menu"
@@ -581,19 +583,21 @@ do
 
     case $wkst_choice in
 
-      cap)    set_wksMenu_choices i1040sd;;
-      fei)    set_wksMenu_choices i1040gi;;
+       cap)   set_wksMenu_choices i1040sd;;
+       fei)   set_wksMenu_choices i1040gi;;
+       top)   set_wksMenu_choices i1040gi;;
+    bottom)   set_wksMenu_choices i1040gi;;    
       sltr)   set_wksMenu_choices i1040gi;;
       qdcg)   set_wksMenu_choices i1040gi;;
      qdcga)   set_wksMenu_choices i1040gi;; 
       rg28)   set_wksMenu_choices i1040sd;;
       schd)   set_wksMenu_choices i1040sd;;
      schda)   set_wksMenu_choices i1040sd;; 
-      sales)  set_wksMenu_choices i1040sca;;
-      ssa)    set_wksMenu_choices i1040gi;;
-      sst)    set_wksMenu_choices i1040gi;;
+     sales)   set_wksMenu_choices i1040sca;;
+       ssa)   set_wksMenu_choices i1040gi;;
+       sst)   set_wksMenu_choices i1040gi;;
       1250)   set_wksMenu_choices i1040sd;;
-      q)     break;;
+         q)   break;;
     esac
 done
  

@@ -1,0 +1,9 @@
+xaddit	!2name 	!3format	!4augend     	!5addend     	!6+addend
+addit 	!03    	!005    	!                              	!            	!            
+xdlin 	!2name 	!3format	!4dummy
+dlin  	!02a   	!002    	!                              
+dlin  	!02b   	!003    	!                              
+xdPull	!2name 	!3format	!4dummy      	!5form       	!6copy 	!7line
+dPull 	!01    	!001    	!                              	!            	!      	!
+xsubt0	!2name 	!3format	!4minuend    	!5subtrahend
+subt0 	!02c   	!004    	!                              	!

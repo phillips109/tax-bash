@@ -185,6 +185,19 @@ BEGIN{
 	LastType=$1
     }
 }
+/^tCalc/ {
+    if( $1 != LastType )
+    {
+	printf("%-6s\t!%-6s\t!%-12s\t!%-6s\t!%s\n", "xtCalc", "2name","3form", "4copy", "5line")
+	printf("%-6s\t!%-6s\t!%-12s\t!%-6s\t!%s\n", $1, $2, $3, $4, $5)
+	LastType=$1
+    }
+    else
+    {
+	printf("%-6s\t!%-6s\t!%-12s\t!%-6s\t!%s\n", $1, $2, $3, $4, $5)
+	LastType=$1
+    }
+}
 /^tlin/ {
     if( $1 != LastType )
     {

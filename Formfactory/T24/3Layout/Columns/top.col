@@ -1,0 +1,9 @@
+For each line enter, as the first character of the line, 
+the letter, a-z, of the column to which the line will belong.
+
+col   	!seq   	!name    	!type  	!left  	!right 	!align/top
+01     	!001   	!01      	!tlin  	!      	!      	!      
+01    	!002   	!02a     	!dlin  	!      	!      	!      
+01    	!003   	!02b     	!dlin  	!      	!      	!      
+01    	!004   	!02c     	!dlin  	!      	!      	!      
+01    	!005   	!03      	!dlin  	!      	!      	!      

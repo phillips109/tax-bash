@@ -1,0 +1,194 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<line number='top02c'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>top</form>
+<copy>00</copy>
+<line2>line02c</line2>
+</line>
+
+<line number='top03'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>top</form>
+<copy>00</copy>
+<line2>line02c</line2>
+</line>
+
+<line number='49524g'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form4952</form>
+<copy>00</copy>
+<line2>line04g</line2>
+</line>
+
+<line number='SDTWa'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedDaTaxWkst</form>
+<copy>00</copy>
+<line2>line47</line2>
+</line>
+
+<line number='QDCGa'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>QDCGaTaxWkst</form>
+<copy>00</copy>
+<line2>line25</line2>
+</line>
+
+<line number='D18'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line18</line2>
+</line>
+
+<line number='D19'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line19</line2>
+</line>
+
+<line number='D15'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line15</line2>
+</line>
+
+<line number='D16'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line16</line2>
+</line>
+
+<line number='10403a'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line03a</line2>
+</line>
+
+<line number='104007'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>######0</format>
+<year>0</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line07</line2>
+</line>
+
+<line number='06'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line04</minuend>
+<subtrahend>line05</subtrahend>
+</line>
+
+<line number='04'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$bottom-Copy00-line49524g > 0</value1>
+<value2>VALUOF$bottom-Copy00-lineSDTWa</value2>
+</line>
+
+<line number='04a'
+ color='blue'>
+<type>tCalc</type>
+<format>#####0</format>
+<form>bottom</form>
+<copy>00</copy>
+<line2>linetop03</line2>
+</line>
+
+<line number='05'
+ color='blue'>
+<type>tCalc</type>
+<format>#####0</format>
+<form>bottom</form>
+<copy>00</copy>
+<line2>linetop02c</line2>
+</line>
+
+<line number='FS'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>FS</line2>
+</line>
+
+<line number='104007Ck'
+ color='blue'>
+<type>tPull</type>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>07Ck</line2>
+</line>
+</Form>

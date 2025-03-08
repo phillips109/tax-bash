@@ -1,0 +1,5 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!01    	!      	!      	!         	!
+01    	!dlin  	!04    	!      	!      	!         	!400
+01    	!dlin  	!05    	!      	!      	!         	!500
+01    	!dlin  	!06    	!      	!      	!         	!600

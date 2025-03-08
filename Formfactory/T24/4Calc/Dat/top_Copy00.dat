@@ -1,0 +1,86 @@
+
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash
+
+Tax-bash is free software: you can redistibute it and/or modify
+
+it under the terms of the GNU General Public License as published by
+
+the Free Software Foundation, either version 3 of the License, or
+
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+xaddit
+2name
+3format
+4augend
+5addend
+6addend
+
+addit
+03
+#####0
+line01
+line02c
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xdlin
+2name
+3format
+4dummy
+
+dlin
+02a
+#####0
+201
+
+dlin
+02b
+#####0
+202
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xdPull
+2name
+3format
+4dummy
+5form
+6copy
+
+dPull
+01
+#####0
+0
+Form1040
+00
+line15
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xsubt0
+2name
+3format
+4minuend
+5subtrahend
+
+subt0
+02c
+#####0
+line02a
+line02b
+

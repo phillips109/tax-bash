@@ -84,7 +84,9 @@ Pdfshow(){
  SchedDaTaxWkst) qpdfview ../Pdf/schda.pdf         &;;      
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;; 
              w2) qpdfview ../Pdf/fw2.pdf           &;;
-     FEITaxWkst) qpdfview ../Pdf/fei.pdf           &;;             
+            fei) qpdfview ../Pdf/fei.pdf           &;;
+            top) qpdfview ../Pdf/top.pdf           &;;
+         bottom) qpdfview ../Pdf/bottom.pdf        &;;
 
           q) break;;	
     esac		
@@ -796,8 +798,10 @@ do
   clear
   echo "Worksheets :"
   echo
-  echo "   cap)    Capital Loss Carryover Worksheet"
-  echo "   fei)    Foreign Earned Income Tax Worksheet--f1040-line44."
+  echo "    cap)   Capital Loss Carryover Worksheet"
+  echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
+  echo "    top)   Top of Foreign Earned Income Tax Worksheet"
+  echo " bottom)   Bottom of Foreign Earned Income Tax Worksheet" 
   echo "   ln10)   State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "   qdcg)   Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
   echo "  qdcga)   Qualified Dividends & Capital Gain Alternative Tax Worksheet" 
@@ -818,7 +822,9 @@ do
     case $wkst_choice in
 
       cap)    set_menu_choices cap              00;;	
-      fei)    set_menu_choices FEITaxWkst       00;;
+      fei)    set_menu_choices fei              00;;
+      top)    set_menu_choices top              00;;
+   bottom)    set_menu_choices bottom           00;;    
       ln10)   set_menu_choices WSln10           00;;
       qdcg)   set_menu_choices QDCGTaxWkst      00;;
      qdcga)   set_menu_choices QDCGaTaxWkst     00;; 

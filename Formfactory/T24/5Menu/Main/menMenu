@@ -97,6 +97,8 @@ choosePdf(){
     Form8865SchedK1)	showsPdf f1040;;
 
     FEITaxWkst)         showsPdf fei;;
+    top)                showsPdf top;;
+    bottom)             showsPdf bottom;;
     WSln10)             showsPdf f1040;;
     QDCGTaxWkst)        showsPdf qdcg;;
     SchedDTaxWkst)      showsPdf schd;;
@@ -628,6 +630,8 @@ do
   echo "Worksheets :"
   echo
   echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44"
+  echo "    top)   Top of Foreign Earned Income Tax Worksheet"
+  echo " bottom)   Bottom of Foreign Earned Income Tax Worksheet"
   echo "    ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "    qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44"
   echo "    schd)  Schedule D worksheet"
@@ -647,6 +651,8 @@ do
     case $wkst_choice in
 
       fei)   set_menu_choices FEITaxWkst        01;;
+      top)   set_menu_choices top               01;;
+      bottom) set_menu_choices bottom           01;;
       ln10)  set_menu_choices WSln10            01;;
       qdcg)  set_menu_choices QDCGTaxWkst       01;;
       schd)  set_menu_choices SchedDTaxWkst     01;;

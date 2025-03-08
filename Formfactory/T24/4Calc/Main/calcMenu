@@ -64,15 +64,17 @@ Pdfshow(){
 	    cap) qpdfview ../Pdf/cap.pdf           &;;
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
      UG1250Wkst) qpdfview ../Pdf/ug1250.pdf        &;;
-    QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
-   QDCGaTaxWkst) qpdfview ../Pdf/qdcga.pdf	   &;;
+    QDCGTaxWkst) qpdfview ../Pdf/QDCGTaxWkst_Copy00.pdf    &;;
+   QDCGaTaxWkst) qpdfview ../Pdf/QDCGaTaxWkst_Copy00.pdf   &;;
     Form1040ssa) qpdfview ../Pdf/f1040ssa.pdf      &;;
 	    SST) qpdfview ../Pdf/sst.pdf           &;; 
   SchedDTaxWkst) qpdfview ../Pdf/schd.pdf          &;;
  SchedDaTaxWkst) qpdfview ../Pdf/schda.pdf	   &;; 
              w2) qpdfview ../Pdf/fw2.pdf           &;;
 	    Bkg) qpdfview ../Pdf/fBkg.pdf          &;;
-     FEITaxWkst) qpdfview ../Pdf/fei.pdf           &;;	    
+            fei) qpdfview ../Pdf/fei.pdf           &;;
+            top) qpdfview ../Pdf/top.pdf           &;;
+         bottom) qpdfview ../Pdf/bottom.pdf        &;;    
           q) break;;	
     esac		
    
@@ -779,6 +781,8 @@ do
   echo "Worksheets :"
   echo
   echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44"
+  echo "    top)   Top part of Foreign Earned Income tax worksheet"
+  echo "  bottom)  Bottom part of Foreign Earned Income tax worksheet"
   echo "    ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "    qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44"
   echo "   qdcga)  Qualified Dividends & Capital Gain Alternat Tax Worksheet"
@@ -799,8 +803,10 @@ do
 
     case $wkst_choice in
 
-       fei)   set_menu_choices  FEITaxWkst        00;; #set_copy_number allows for more than one copy.
-      ln10)   set_menu_choices  WSln10            00;; #set_menu_choices allows for only one copy.
+       fei)   set_menu_choices  fei               00;; #set_copy_number allows for more than one copy.
+       top)   set_menu_choices  top               00;; #set_menu_choices allows for only one copy.
+    bottom)   set_menu_choices  bottom            00;;   
+      ln10)   set_menu_choices  WSln10            00;;
       qdcg)   set_menu_choices  QDCGTaxWkst       00;;
      qdcga)   set_menu_choices  QDCGaTaxWkst      00;;
       schd)   set_menu_choices  SchedDTaxWkst     00;;

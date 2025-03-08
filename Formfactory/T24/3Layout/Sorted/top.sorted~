@@ -1,0 +1,7 @@
+Col   	!type  	!name  	!left  	!right 	!align/top	!dummy
+Col   	!col   	!01    	!      	!      	!         	!
+01    	!tlin  	!01    	!      	!      	!         	!100
+01    	!dlin  	!02a   	!      	!      	!         	!201
+01    	!dlin  	!02b   	!      	!      	!         	!202
+01    	!dlin  	!02c   	!      	!      	!         	!203
+01    	!dlin  	!03    	!      	!      	!         	!300
