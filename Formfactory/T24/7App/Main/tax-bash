@@ -1414,21 +1414,27 @@ done
 
 
 makeWksts(){
-	../NewCopy/2focopy01  QDCGTaxWkst
-	../NewCopy/xslcopy01  QDCGTaxWkst
-	../NewCopy/datacopy01 QDCGTaxWkst
-	../NewCopy/2focopy01   QDCGaTaxWkst
-	../NewCopy/xslcopy01   QDCGaTaxWkst
-	../NewCopy/datacopy01  QDCGaTaxWkst
-	../NewCopy/2focopy01    SchedDTaxWkst
-	../NewCopy/xslcopy01    SchedDTaxWkst
-	../NewCopy/datacopy01   SchedDTaxWkst
-	../NewCopy/2focopy01     SchedDaTaxWkst
-	../NewCopy/xslcopy01     SchedDaTaxWkst
-	../NewCopy/datacopy01    SchedDaTaxWkst
-	../NewCopy/2focopy01  Bkg
-	../NewCopy/xslcopy01  Bkg
-	../NewCopy/datacopy01 Bkg
+	../NewCopy/2focopy01  top
+	../NewCopy/xslcopy01  top
+	../NewCopy/datacopy01 top
+	../NewCopy/2focopy01   bottom
+	../NewCopy/xslcopy01   bottom
+	../NewCopy/datacopy01  bottom
+	../NewCopy/2focopy01    QDCGTaxWkst
+	../NewCopy/xslcopy01    QDCGTaxWkst
+	../NewCopy/datacopy01   QDCGTaxWkst
+	../NewCopy/2focopy01     QDCGaTaxWkst
+	../NewCopy/xslcopy01     QDCGaTaxWkst
+	../NewCopy/datacopy01    QDCGaTaxWkst
+	../NewCopy/2focopy01      SchedDTaxWkst
+	../NewCopy/xslcopy01      SchedDTaxWkst
+	../NewCopy/datacopy01     SchedDTaxWkst
+	../NewCopy/2focopy01       SchedDaTaxWkst
+	../NewCopy/xslcopy01       SchedDaTaxWkst
+	../NewCopy/datacopy01      SchedDaTaxWkst
+	../NewCopy/2focopy01   Bkg
+	../NewCopy/xslcopy01   Bkg
+	../NewCopy/datacopy01  Bkg
 
 	refreshTl
 
