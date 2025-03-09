@@ -5895,10 +5895,10 @@ $QDCGTaxWkst-Copy00-line22"/>
 <xsl:value-of select="276900"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'MFJ'">
-<xsl:value-of select="5553850"/>
+<xsl:value-of select="553850"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'QSS'">
-<xsl:value-of select="5553850"/>
+<xsl:value-of select="553850"/>
 </xsl:when>
 <xsl:when test="$QDCGTaxWkst-Copy00-lineFS = 'HOH'">
 <xsl:value-of select="523050"/>
