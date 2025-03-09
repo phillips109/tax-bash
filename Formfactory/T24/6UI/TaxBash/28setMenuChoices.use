@@ -41,6 +41,8 @@ set_menu_choices() {
         case $action_choice in
 	   0) importText $1 $2;;   
            1) refreshTl FEITaxWkst 01
+	      refreshTl top        01
+	      refreshTl bottom     01
 	      refreshTl QDCGTaxWkst 01
 	      refreshTl QDCGaTaxWkst 01
 	      refreshTl SchedDTaxWkst 01

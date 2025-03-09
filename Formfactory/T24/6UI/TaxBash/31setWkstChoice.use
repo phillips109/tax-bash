@@ -25,17 +25,19 @@ do
   clear
   echo "Worksheets :"
   echo
-  echo "   cap)   Capital Loss Carryover Worksheet"
-  echo "   fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
-  echo "   ln10)  State & Local Income Tax Refund Worksheet-form1040-line10"
-  echo "   qdcg)  Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
-  echo "  qdcga)  Qualified Dividents & Capital Gain Alternative Tax Worksheet." 
-  echo "    schd) Schedule D Tax Worksheet."
-  echo "   schda) Schedule D Alternative Tax Workssheet."
-  echo "   sales) State and Local Sales Tax Worksheet."
-  echo "     ssa) Social Security Benefit Statement"
-  echo "     sst) Social Security Tax Worksheet."
-  echo "    1250) Unrecaptured Section 1250 Gain Worksheet."
+  echo "    cap)   Capital Loss Carryover Worksheet"
+  echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
+  echo "    top)   Top of Foreign Earned Income Tax Worksheet."
+  echo " bottom)   Bottom of Foreign Earned Income Tax Worksheet."
+  echo "   ln10)   State & Local Income Tax Refund Worksheet-form1040-line10"
+  echo "   qdcg)   Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
+  echo "  qdcga)   Qualified Dividents & Capital Gain Alternative Tax Worksheet." 
+  echo "   schd)   Schedule D Tax Worksheet."
+  echo "  schda)   Schedule D Alternative Tax Workssheet."
+  echo "  sales)   State and Local Sales Tax Worksheet."
+  echo "    ssa)   Social Security Benefit Statement"
+  echo "    sst)   Social Security Tax Worksheet."
+  echo "   1250)   Unrecaptured Section 1250 Gain Worksheet."
   
   
   echo "   q)     Return to Main Menu"
@@ -47,16 +49,18 @@ do
 
       cap)   set_copy_number  cap	     01;;		 
       fei)   set_copy_number  FEITaxWkst     01;;
-      ln10)  set_copy_number  WSln10         01;;
-      qdcg)  set_copy_number  QDCGTaxWkst    01;;
-     qdcga)  set_copy_number  QDCGaTaxWkst   01;; 
-      schd)  set_copy_number  SchedDTaxWkst  01;;
-     schda)  set_copy_number  SchedDaTaxWkst 01;; 
-      sales) set_copy_number  WSSchASalesTax 01;;
+      top)   set_copy_number  top            01;;
+   bottom)   set_copy_number  bottom         01;;   
+     ln10)   set_copy_number  WSln10         01;;
+     qdcg)   set_copy_number  QDCGTaxWkst    01;;
+    qdcga)   set_copy_number  QDCGaTaxWkst   01;; 
+     schd)   set_copy_number  SchedDTaxWkst  01;;
+    schda)   set_copy_number  SchedDaTaxWkst 01;;
+    sales)   set_copy_number  WSSchASalesTax 01;;
       ssa)   set_copy_number  Form1099ssa    01;;
       sst)   set_copy_number  SST            01;;
-      1250)  set_copy_number  UG1250Wkst     01;;
-      q)     break;;
+     1250)   set_copy_number  UG1250Wkst     01;;
+        q)   break;;
     esac
 done
  

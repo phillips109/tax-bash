@@ -596,8 +596,8 @@ do
 clear
 echo "Lines in top in which to enter or edit data:"
 echo
-echo "02a)    Enter the amout from Form255 lines 45 and 50                            "
-echo "02b)    Enter amount of any itemized deductions related to excluded income      "
+echo "02a)    Enter amt from Form2555 kubew 45 & 50"
+echo "02b)    Enter deductions related to excluded income                                                                                                    "
 echo
 echo "  q)    Return to Previous Menu"      
 echo
