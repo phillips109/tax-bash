@@ -1169,7 +1169,7 @@ SchedJ
 00
 line23
 
-dPull
+xdPull
 FEIT02a
 #####0
 0
@@ -1177,11 +1177,27 @@ FEITaxWkst
 00
 line02a
 
-dPull
+xdPull
 FEIT06
 #####0
 0
 FEITaxWkst
+00
+line06
+
+dPull
+top02a
+#####0
+0
+top
+00
+line02a
+
+dPull
+bottom06
+#####0
+0
+bottom
 00
 line06
 
@@ -2499,8 +2515,10 @@ WHEN02
 WHEN01document('../Output/SchedJ-Copy00.xml')
 VALUOF$Form1040-Copy00-lineSchedJ23
 WHEN02
-WHEN01$Form1040-Copy00-lineFEIT02a &gt; 0
-VALUOF$Form1040-Copy00-lineFEIT06
+#WHEN01$Form1040-Copy00-lineFEIT02a &gt; 0
+#VALUOF$Form1040-Copy00-lineFEIT06
+WHEN01$Form1040-Copy00-linetop02a &gt; 0
+#VALUOF$Form1040-Copy00-linebottom06
 WHEN02
 WHEN01$Form1040-Copy00-line49524g &gt; 0
 VALUOF$Form1040-Copy00-lineSDTW

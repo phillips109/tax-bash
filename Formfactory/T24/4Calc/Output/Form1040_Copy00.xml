@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <Form name="Form1040-Copy00">
 <copy00line01z color="red">100</copy00line01z>
-<copy00line09 color="red">18529</copy00line09>
+<copy00line09 color="red">21529</copy00line09>
 <copy00line14 color="red">NaN</copy00line14>
 <copy00line16 color="red">NaN</copy00line16>
 <copy00line18 color="red">NaN</copy00line18>
@@ -35,7 +35,7 @@
 <copy00line03b color="red">0</copy00line03b>
 <copy00line06a color="red">0</copy00line06a>
 <copy00line06b color="red">0</copy00line06b>
-<copy00line07 color="red">-3000</copy00line07>
+<copy00line07 color="red">0</copy00line07>
 <copy00line08 color="red">21429</copy00line08>
 <copy00line10 color="red">48779</copy00line10>
 <copy00line13 color="red">0</copy00line13>
@@ -48,8 +48,8 @@
 <copy00line29 color="red">0</copy00line29>
 <copy00line31 color="red">11515</copy00line31>
 <copy00line35a color="red">NaN</copy00line35a>
-<copy00lineD15 color="red">-138586</copy00lineD15>
-<copy00lineD16 color="red">-138586</copy00lineD16>
+<copy00lineD15 color="red">1400</copy00lineD15>
+<copy00lineD16 color="red">1400</copy00lineD16>
 <copy00lineD18 color="red">0</copy00lineD18>
 <copy00lineD19 color="red">0</copy00lineD19>
 <copy00lineSDTW color="red">0</copy00lineSDTW>
@@ -124,8 +124,8 @@
 <copy00linept09 color="red">0</copy00linept09>
 <copy00linept10 color="red">0</copy00linept10>
 <copy00lineSchedJ23 color="red">0</copy00lineSchedJ23>
-<copy00lineFEIT02a color="red">201</copy00lineFEIT02a>
-<copy00lineFEIT06 color="red">NaN</copy00lineFEIT06>
+<copy00linetop02a color="red">201</copy00linetop02a>
+<copy00linebottom06 color="red">NaN</copy00linebottom06>
 <copy00line861521 color="red">0</copy00line861521>
 <copy00lineschA17 color="red">8887</copy00lineschA17>
 <copy00line15 color="red">NaN</copy00line15>
@@ -133,7 +133,7 @@
 <copy00line34 color="red">NaN</copy00line34>
 <copy00line37 color="red">NaN</copy00line37>
 <copy00line02b color="red">0</copy00line02b>
-<copy00line11 color="red">-30250</copy00line11>
+<copy00line11 color="red">-27250</copy00line11>
 <copy00line35a color="red">NaN</copy00line35a>
 <copy00lineCalc16 color="red">NaN</copy00lineCalc16>
 <copy00line2name color="blue"/>

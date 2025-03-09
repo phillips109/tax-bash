@@ -2092,10 +2092,10 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineFEIT02a">
+<xsl:variable name="Form1040-Copy00-linetop02a">
 <xsl:choose>
-<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
-<xsl:value-of select="document('../Output/FEITaxWkst_Copy00.xml')//copy00line02a"/>
+<xsl:when test="document('../Output/top_Copy00.xml')">
+<xsl:value-of select="document('../Output/top_Copy00.xml')//copy00line02a"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -2103,10 +2103,10 @@ $Form1040-Copy00-linepen10"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="Form1040-Copy00-lineFEIT06">
+<xsl:variable name="Form1040-Copy00-linebottom06">
 <xsl:choose>
-<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
-<xsl:value-of select="document('../Output/FEITaxWkst_Copy00.xml')//copy00line06"/>
+<xsl:when test="document('../Output/bottom_Copy00.xml')">
+<xsl:value-of select="document('../Output/bottom_Copy00.xml')//copy00line06"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>
@@ -3389,8 +3389,7 @@ $Form1040-Copy00-linepen10"/>
 <xsl:when test="document('../Output/SchedJ-Copy00.xml')">
 <xsl:value-of select="$Form1040-Copy00-lineSchedJ23"/>
 </xsl:when>
-<xsl:when test="$Form1040-Copy00-lineFEIT02a &gt; 0">
-<xsl:value-of select="$Form1040-Copy00-lineFEIT06"/>
+<xsl:when test="$Form1040-Copy00-linetop02a &gt; 0">
 </xsl:when>
 <xsl:when test="$Form1040-Copy00-line49524g &gt; 0">
 <xsl:value-of select="$Form1040-Copy00-lineSDTW"/>
@@ -14359,13 +14358,13 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($Form1040-Copy00-lineSchedJ23, '#####0')"/>
 </copy00lineSchedJ23>
 
-<copy00lineFEIT02a color="red">
-<xsl:value-of select="format-number($Form1040-Copy00-lineFEIT02a, '#####0')"/>
-</copy00lineFEIT02a>
+<copy00linetop02a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linetop02a, '#####0')"/>
+</copy00linetop02a>
 
-<copy00lineFEIT06 color="red">
-<xsl:value-of select="format-number($Form1040-Copy00-lineFEIT06, '#####0')"/>
-</copy00lineFEIT06>
+<copy00linebottom06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linebottom06, '#####0')"/>
+</copy00linebottom06>
 
 <copy00line861521 color="red">
 <xsl:value-of select="format-number($Form1040-Copy00-line861521, '#####0')"/>

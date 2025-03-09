@@ -512,13 +512,13 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($Form1040-Copy00-lineSchedJ23, '#####0')"/>
 </copy00lineSchedJ23>
 
-<copy00lineFEIT02a color="red">
-<xsl:value-of select="format-number($Form1040-Copy00-lineFEIT02a, '#####0')"/>
-</copy00lineFEIT02a>
+<copy00linetop02a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linetop02a, '#####0')"/>
+</copy00linetop02a>
 
-<copy00lineFEIT06 color="red">
-<xsl:value-of select="format-number($Form1040-Copy00-lineFEIT06, '#####0')"/>
-</copy00lineFEIT06>
+<copy00linebottom06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linebottom06, '#####0')"/>
+</copy00linebottom06>
 
 <copy00line861521 color="red">
 <xsl:value-of select="format-number($Form1040-Copy00-line861521, '#####0')"/>
