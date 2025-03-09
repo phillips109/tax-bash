@@ -26,7 +26,7 @@ do
   echo "Schedules :"
   echo
   echo "       1) Schedule 1"
-  echo "       2) Schedule 2"
+#  echo "       2) Schedule 2"
   echo "       3) Schedule 3"
   echo "       a) Schedule A"
   echo "       b) Schedule B"

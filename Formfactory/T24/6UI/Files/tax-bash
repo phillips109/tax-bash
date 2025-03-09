@@ -1268,13 +1268,6 @@ set_menu_choices() {
         case $action_choice in
 	   0) importText $1 $2;;   
            1) refreshTl FEITaxWkst 01
-	      refreshTl top        01
-	      refreshTl bottom     01
-	      refreshTl QDCGTaxWkst 01
-	      refreshTl QDCGaTaxWkst 01
-	      refreshTl SchedDTaxWkst 01
-	      refreshTl SchedDaTaxWkst 01
-	      refreshTl FEITaxWkst 01
 	      refreshTl $1 $2;;
            2) set_$1_line_data_choice $1 $2;;
            3) showForm2 $1 $2;;
@@ -1293,7 +1286,6 @@ do
   echo "Schedules :"
   echo
   echo "       1) Schedule 1"
-  echo "       2) Schedule 2"
   echo "       3) Schedule 3"
   echo "       a) Schedule A"
   echo "       b) Schedule B"
@@ -1336,10 +1328,6 @@ do
   echo "Forms :"
   echo
   echo "   1040)  U.S. Individual Income Tax Return" 
-  echo "   1116)  Foreign Tax Credit"
-  echo "   4868)  Application for Automatic Extension of Time to file"
-  echo "   4952)  Investment Interest Expenses Deduction"
-  echo "   6251)  Alternative Minimum Tax--Individuals"
   echo
   echo
   echo
@@ -1451,15 +1439,11 @@ do
   echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
   echo "    top)   Top of Foreign Earned Income Tax Worksheet."
   echo " bottom)   Bottom of Foreign Earned Income Tax Worksheet."
-  echo "   ln10)   State & Local Income Tax Refund Worksheet-form1040-line10"
   echo "   qdcg)   Qualified Dividends & Capital Gain Tax Worksheet-f1040-line44."
   echo "  qdcga)   Qualified Dividents & Capital Gain Alternative Tax Worksheet." 
   echo "   schd)   Schedule D Tax Worksheet."
   echo "  schda)   Schedule D Alternative Tax Workssheet."
-  echo "  sales)   State and Local Sales Tax Worksheet."
-  echo "    ssa)   Social Security Benefit Statement"
   echo "    sst)   Social Security Tax Worksheet."
-  echo "   1250)   Unrecaptured Section 1250 Gain Worksheet."
   
   
   echo "   q)     Return to Main Menu"

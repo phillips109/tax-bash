@@ -41,13 +41,13 @@ set_menu_choices() {
         case $action_choice in
 	   0) importText $1 $2;;   
            1) refreshTl FEITaxWkst 01
-	      refreshTl top        01
-	      refreshTl bottom     01
-	      refreshTl QDCGTaxWkst 01
-	      refreshTl QDCGaTaxWkst 01
-	      refreshTl SchedDTaxWkst 01
-	      refreshTl SchedDaTaxWkst 01
-	      refreshTl FEITaxWkst 01
+#	      refreshTl top        01
+#	      refreshTl bottom     01
+#	      refreshTl QDCGTaxWkst 01
+#	      refreshTl QDCGaTaxWkst 01
+#	      refreshTl SchedDTaxWkst 01
+#	      refreshTl SchedDaTaxWkst 01
+#	      refreshTl FEITaxWkst 01
 	      refreshTl $1 $2;;
            2) set_$1_line_data_choice $1 $2;;
            3) showForm2 $1 $2;;
