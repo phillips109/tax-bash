@@ -36,7 +36,7 @@ $QDCGaTaxWkst-Copy00-line21 +
 $QDCGaTaxWkst-Copy00-line22"/>
 </xsl:variable>
 
-<xsl:variable name="QDCGaTaxWkst-Copy00-line01">
+<xsl:variable name="QDCGaTaxWkst-Copy00-linetop03">
 <xsl:choose>
 <xsl:when test="document('../Output/top_Copy00.xml')">
 <xsl:value-of select="document('../Output/top_Copy00.xml')//copy00line03"/>
@@ -297,6 +297,17 @@ $QDCGaTaxWkst-Copy00-line22"/>
 
 <xsl:variable name="QDCGaTaxWkst-Copy00-line20">
 <xsl:value-of select="$QDCGaTaxWkst-Copy00-line10 -  $QDCGaTaxWkst-Copy00-line19"/>
+</xsl:variable>
+
+<xsl:variable name="QDCGaTaxWkst-Copy00-line01">
+<xsl:choose>
+<xsl:when test="document('../Output/top_Copy00.xml')">
+<xsl:value-of select="$QDCGaTaxWkst-Copy00-linetop03"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="$QDCGaTaxWkst-Copy00-line104015"/>
+</xsl:otherwise>
+</xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="QDCGaTaxWkst-Copy00-line03a">

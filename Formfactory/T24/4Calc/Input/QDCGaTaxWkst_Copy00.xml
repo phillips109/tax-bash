@@ -53,7 +53,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <addend>line22</addend>
 </line>
 
-<line number='01'
+<line number='top03'
  color='purple'>
 <title></title>
 <type>dPull</type>
@@ -310,6 +310,15 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <format>#####0</format>
 <minuend>line10</minuend>
 <subtrahend>line19</subtrahend>
+</line>
+
+<line number='01'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01document('../Output/top_Copy00.xml')</value1>
+<value2>VALUOF$QDCGaTaxWkst-Copy00-linetop03</value2>
 </line>
 
 <line number='03a'

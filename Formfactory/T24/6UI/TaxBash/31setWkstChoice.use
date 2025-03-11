@@ -26,7 +26,7 @@ do
   echo "Worksheets :"
   echo
   echo "    cap)   Capital Loss Carryover Worksheet"
-  echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
+#  echo "    fei)   Foreign Earned Income Tax Worksheet--f1040-line44."
   echo "    top)   Top of Foreign Earned Income Tax Worksheet."
   echo " bottom)   Bottom of Foreign Earned Income Tax Worksheet."
 #  echo "   ln10)   State & Local Income Tax Refund Worksheet-form1040-line10"

@@ -184,6 +184,14 @@ line19
 cnum
 #####0
 CHOOS1
+WHEN01document('../Output/top_Copy00.xml')
+VALUOF$QDCGaTaxWkst-Copy00-linetop03
+
+
+
+cnum
+#####0
+CHOOS1
 WHEN01$QDCGaTaxWkst-Copy00-line03y = 'x'
 CHOOS1
 

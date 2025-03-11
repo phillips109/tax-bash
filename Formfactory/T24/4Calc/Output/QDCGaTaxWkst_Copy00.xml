@@ -4,7 +4,7 @@
 <copy00line15 color="red">NaN</copy00line15>
 <copy00line19 color="red">NaN</copy00line19>
 <copy00line23 color="red">NaN</copy00line23>
-<copy00line01 color="red">NaN</copy00line01>
+<copy00linetop03 color="red">NaN</copy00linetop03>
 <copy00line02a color="red">0</copy00line02a>
 <copy00line15D color="red">1400</copy00line15D>
 <copy00line16D color="red">1400</copy00line16D>
@@ -33,6 +33,7 @@
 <copy00line09 color="red">NaN</copy00line09>
 <copy00line12 color="red">NaN</copy00line12>
 <copy00line20 color="red">NaN</copy00line20>
+<copy00line01 color="red">NaN</copy00line01>
 <copy00line03a color="red">1400</copy00line03a>
 <copy00line03y color="blue">x</copy00line03y>
 <copy00line03n color="blue"/>

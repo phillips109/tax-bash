@@ -53,6 +53,17 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <addend>line22</addend>
 </line>
 
+<line number='top03'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>0</year>
+<form>top</form>
+<copy>00</copy>
+<line2>line03</line2>
+</line>
+
 <line number='02'
  color='purple'>
 <title></title>
@@ -279,8 +290,8 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>WHEN01document('../Output/FEITaxWkst_Copy00.xml')</value1>
-<value2>VALUOF$QDCGTaxWkst-Copy00-lineFEI3</value2>
+<value1>WHEN01document('../Output/top_Copy00.xml')</value1>
+<value2>VALUOF$QDCGTaxWkst-Copy00-linetop03</value2>
 </line>
 
 <line number='03'

@@ -44,6 +44,17 @@ $QDCGTaxWkst-Copy00-line21 +
 $QDCGTaxWkst-Copy00-line22"/>
 </xsl:variable>
 
+<xsl:variable name="QDCGTaxWkst-Copy00-linetop03">
+<xsl:choose>
+<xsl:when test="document('../Output/top_Copy00.xml')">
+<xsl:value-of select="document('../Output/top_Copy00.xml')//copy00line03"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="QDCGTaxWkst-Copy00-line02">
 <xsl:choose>
 <xsl:when test="document('../Output/Form1040_Copy00.xml')">
@@ -265,8 +276,8 @@ $QDCGTaxWkst-Copy00-line22"/>
 
 <xsl:variable name="QDCGTaxWkst-Copy00-line01">
 <xsl:choose>
-<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
-<xsl:value-of select="$QDCGTaxWkst-Copy00-lineFEI3"/>
+<xsl:when test="document('../Output/top_Copy00.xml')">
+<xsl:value-of select="$QDCGTaxWkst-Copy00-linetop03"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="$QDCGTaxWkst-Copy00-line104015"/>
@@ -408,6 +419,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00line23 color="red">
 <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line23, '#####0')"/>
 </copy00line23>
+
+<copy00linetop03 color="red">
+<xsl:value-of select="format-number($QDCGTaxWkst-Copy00-linetop03, '#####0')"/>
+</copy00linetop03>
 
 <copy00line02 color="red">
 <xsl:value-of select="format-number($QDCGTaxWkst-Copy00-line02, '#####0')"/>

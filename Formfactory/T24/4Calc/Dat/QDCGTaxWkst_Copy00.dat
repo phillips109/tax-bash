@@ -63,8 +63,8 @@ xdPull
 5form
 6copy
 
-xdPull
-01
+dPull
+top03
 #####0
 0
 top
@@ -327,6 +327,18 @@ xcnum
 x***********************************
 
 cnum
+01
+#####0
+CHOOS1
+WHEN01document('../Output/top_Copy00.xml')
+VALUOF$QDCGTaxWkst-Copy00-linetop03
+WHEN02
+OTHER1
+VALUOF$QDCGTaxWkst-Copy00-line104015
+OTHER2
+CHOOS2
+
+xcnum
 01
 #####0
 CHOOS1
