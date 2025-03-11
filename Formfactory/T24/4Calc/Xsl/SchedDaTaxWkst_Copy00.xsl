@@ -82,8 +82,8 @@ $SchedDaTaxWkst-Copy00-line44"/>
 
 <xsl:variable name="SchedDaTaxWkst-Copy00-line01">
 <xsl:choose>
-<xsl:when test="document('../Output/FEITaxWkst_Copy00.xml')">
-<xsl:value-of select="document('../Output/FEITaxWkst_Copy00.xml')//copy00line03"/>
+<xsl:when test="document('../Output/top_Copy00.xml')">
+<xsl:value-of select="document('../Output/top_Copy00.xml')//copy00line03"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>

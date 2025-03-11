@@ -59,7 +59,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <type>dPull</type>
 <format>#####0</format>
 <year>0</year>
-<form>FEITaxWkst</form>
+<form>top</form>
 <copy>00</copy>
 <line2>line03</line2>
 </line>
