@@ -76,7 +76,7 @@ Pdfshow(){
           8865k) qpdfview ../Pdf/f1040s1.pdf       &;;
             cap) qpdfview ../Pdf/cap.pdf           &;;
        28RGWkst) qpdfview ../Pdf/28RGWkst.pdf      &;;
-    UG1250Wkst) qpdfview  ../Pdf/UG1250Wkst.pdf    &;;	    
+    UG1250Wkst) qpdfview  ../Pdf/1250g.pdf         &;;	    
     QDCGTaxWkst) qpdfview ../Pdf/qdcg.pdf          &;;
    QDCGaTaxWkst) qpdfview ../Pdf/qdcga.pdf         &;;
        f1040ssa) qpdfview ../Pdf/f1040ssa.pdf      &;;

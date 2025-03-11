@@ -22,7 +22,7 @@ For direction on how to separate pages see ../notes.
 Form
 
 xpgS  	!2name 	!3BkgImage
-pgS   	!Single	!../Jpg/ug1250-page-001.jpg
+pgS   	!Single	!../Jpg/1250g-page-001.jpg
 
 xcol  	!2name 	!top   	!align 	!left  	!right
 col   	!      	!-0.12 	!left  	!0.00  	!8.50

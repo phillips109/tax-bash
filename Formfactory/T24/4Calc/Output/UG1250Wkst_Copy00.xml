@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <Form name="UG1250Wkst-Copy00">
 <copy00line06 color="red">0</copy00line06>
-<copy00line16 color="red">0</copy00line16>
+<copy00line16 color="red">NaN</copy00line16>
 <copy00line01 color="red">0</copy00line01>
 <copy00line02 color="red">0</copy00line02>
 <copy00line04 color="red">0</copy00line04>
@@ -15,7 +15,7 @@
 <copy00line15 color="red">0</copy00line15>
 <copy00line16a color="red">0</copy00line16a>
 <copy00line479707 color="red">NaN</copy00line479707>
-<copy00linecgexcess color="red">0</copy00linecgexcess>
+<copy00linecgexcess color="red">NaN</copy00linecgexcess>
 <copy00line07 color="red">0</copy00line07>
 <copy00line09 color="red">0</copy00line09>
 <copy00line18 color="red">0</copy00line18>

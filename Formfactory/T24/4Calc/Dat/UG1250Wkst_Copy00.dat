@@ -22,7 +22,7 @@ You should have received a copy of the GNU General Public License
 
 along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 
-xsum
+xaddit
 2name
 3format
 4augend
@@ -42,13 +42,7 @@ addit
 line16a
 linecgexcess
 
-xcnum
-2name
-3format
-4test
-5value1
-6value2
-
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 xdlin
 2name
@@ -103,6 +97,8 @@ dlin
 16a
 #####0
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 dPull
 479707
 #####0
@@ -119,6 +115,8 @@ QDCGaTaxWkst
 00
 linecgexcess
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 xsmOf
 2name
 3format
@@ -130,6 +128,8 @@ smOf
 #####0
 line06
 line479707
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 xsubt0
 2name
@@ -149,6 +149,8 @@ subt0
 line13
 line17
 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 xsubt
 2name
 3format
@@ -160,6 +162,15 @@ subtr
 #####0
 line01
 line02
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xcnum
+2name
+3format
+4test
+5value1
+6value2
 
 cnum
 17
