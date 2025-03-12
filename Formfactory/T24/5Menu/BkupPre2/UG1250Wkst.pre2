@@ -1,12 +1,10 @@
 type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
-dlin      	!01        	!001       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-13 	!     
-dlin      	!02        	!002       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-13 	!     
-dlin      	!04        	!004       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-13 	!     
-dlin      	!05        	!005       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-13 	!     
-dlin      	!08        	!008       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-13 	!     
-dlin      	!10        	!010       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-14 	!     
-dlin      	!11        	!011       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-14 	!     
-dlin      	!12        	!012       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-14 	!     
-dlin      	!14        	!014       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-14 	!     
-dlin      	!15        	!015       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-14 	!     
-dlin      	!16a        	!016       	!Enter data per instructions.                                                                        	!i1040sd.pdf         	!D-14 	!     
+dlin      	!01        	!001       	!Enter required data                                                                                 	!i1040sd.pdf         	!D13  	!     
+dlin      	!02        	!002       	!Enter amount from Form4797 line26g                                                                  	!i1040sd.pdf         	!D13  	!     
+dlin      	!04        	!004       	!Enter data from form(s) 6252                                                                        	!i1040sd.pdf         	!D13  	!     
+dlin      	!05        	!005       	!Enter data from Schedule K1                                                                         	!i1040sd.pdf         	!D13  	!     
+dlin      	!08        	!008       	!Enter amount, if any, from Form4797 line08                                                          	!i1040sd.pdf         	!D13  	!     
+dlin      	!10        	!010       	!Enter requested data                                                                                	!i1040sd.pdf         	!D14  	!     
+dlin      	!11        	!011       	!Enter requested data                                                                                	!i1040sd.pdf         	!D14  	!     
+dlin      	!12        	!012       	!Enter requested data                                                                                	!i1040sd.pdf         	!D15  	!     
+dlin      	!14        	!014       	!Enter requested data                                                                                	!i1040sd.pdf         	!D15  	!     

@@ -36,11 +36,23 @@ line03
 line04
 line05
 
+dlin
+13
+#####0
+
 addit
 16
 #####0
-line16a
+lineSchedD14
+lineK1box11D
 linecgexcess
+
+addit
+17a
+#####0
+line14
+line15
+line16
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -82,20 +94,10 @@ dlin
 #####0
 
 dlin
-13
-#####0
-
-dlin
 14
 #####0
 
-dlin
-15
-#####0
 
-dlin
-16a
-#####0
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -114,6 +116,31 @@ dummy
 QDCGaTaxWkst
 00
 linecgexcess
+
+dPull
+SchedD07
+#####01
+dummy
+SchedD
+00
+line07
+
+dPull
+SchedD14
+#####01
+dummy
+SchedD
+00
+line14
+
+dPull
+K1box11D
+#####01
+dummy
+SchedK1
+00
+linebox11D
+
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
@@ -173,11 +200,23 @@ xcnum
 6value2
 
 cnum
+15
+#####0
+CHOOS1
+WHEN01$UG1250Wkst-Copy00-lineSchedD07 &lt; 0
+VALUOF$UG1250Wkst-Copy00-lineSchedD07
+WHEN02
+OTHER1
+VALUOF0
+OTHER2
+CHOOS2
+
+cnum
 17
 #####0
 CHOOS1
-WHEN01UG1250Wkst-Copy01-line17a &lt; 0
-VALUOFUG1250Wkst=Copy00-iine17 * -1
+WHEN01$UG1250Wkst-Copy00-line17a &lt; 0
+VALUOF$UG1250Wkst-Copy00-line17a * -1
 WHEN02
 OTHER1
 VALUOF0

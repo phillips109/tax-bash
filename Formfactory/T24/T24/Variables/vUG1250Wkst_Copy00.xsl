@@ -21,9 +21,27 @@ $UG1250Wkst-Copy00-line04 +
 $UG1250Wkst-Copy00-line05"/>
 </xsl:variable>
 
+<xsl:variable name="UG1250Wkst-Copy00-line13">
+<xsl:choose>
+<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line13'])) != ''">
+<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line13'], '#####0')"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line13']), '#####0')"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="UG1250Wkst-Copy00-line16">
-<xsl:value-of select="$UG1250Wkst-Copy00-line16a +
+<xsl:value-of select="$UG1250Wkst-Copy00-lineSchedD14 +
+$UG1250Wkst-Copy00-lineK1box11D +
 $UG1250Wkst-Copy00-linecgexcess"/>
+</xsl:variable>
+
+<xsl:variable name="UG1250Wkst-Copy00-line17a">
+<xsl:value-of select="$UG1250Wkst-Copy00-line14 +
+$UG1250Wkst-Copy00-line15 +
+$UG1250Wkst-Copy00-line16"/>
 </xsl:variable>
 
 <xsl:variable name="UG1250Wkst-Copy00-line01">
@@ -114,17 +132,6 @@ $UG1250Wkst-Copy00-linecgexcess"/>
 </xsl:choose>
 </xsl:variable>
 
-<xsl:variable name="UG1250Wkst-Copy00-line13">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line13'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line13'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line13']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
 <xsl:variable name="UG1250Wkst-Copy00-line14">
 <xsl:choose>
 <xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line14'])) != ''">
@@ -132,28 +139,6 @@ $UG1250Wkst-Copy00-linecgexcess"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line14']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="UG1250Wkst-Copy00-line15">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line15'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line15'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line15']), '#####0')"/>
-</xsl:otherwise>
-</xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="UG1250Wkst-Copy00-line16a">
-<xsl:choose>
-<xsl:when test="string(normalize-space(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line16a'])) != ''">
-<xsl:value-of select="format-number(//override[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line16a'], '#####0')"/>
-</xsl:when>
-<xsl:otherwise>
-<xsl:value-of select="format-number(sum(//total[normalize-space(ancestor::taxline/linename)='UG1250Wkst-Copy00-line16a']), '#####0')"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -173,6 +158,39 @@ $UG1250Wkst-Copy00-linecgexcess"/>
 <xsl:choose>
 <xsl:when test="document('../Output/QDCGaTaxWkst_Copy00.xml')">
 <xsl:value-of select="document('../Output/QDCGaTaxWkst_Copy00.xml')//copy00linecgexcess"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="dummy"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="UG1250Wkst-Copy00-lineSchedD07">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedD_Copy00.xml')//copy00line07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="dummy"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="UG1250Wkst-Copy00-lineSchedD14">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedD_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedD_Copy00.xml')//copy00line14"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="dummy"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="UG1250Wkst-Copy00-lineK1box11D">
+<xsl:choose>
+<xsl:when test="document('../Output/SchedK1_Copy00.xml')">
+<xsl:value-of select="document('../Output/SchedK1_Copy00.xml')//copy00linebox11D"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="dummy"/>
@@ -217,10 +235,21 @@ $UG1250Wkst-Copy00-linecgexcess"/>
 <xsl:value-of select="$UG1250Wkst-Copy00-line01 -  $UG1250Wkst-Copy00-line02"/>
 </xsl:variable>
 
+<xsl:variable name="UG1250Wkst-Copy00-line15">
+<xsl:choose>
+<xsl:when test="$UG1250Wkst-Copy00-lineSchedD07 &lt; 0">
+<xsl:value-of select="$UG1250Wkst-Copy00-lineSchedD07"/>
+</xsl:when>
+<xsl:otherwise>
+<xsl:value-of select="0"/>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:variable>
+
 <xsl:variable name="UG1250Wkst-Copy00-line17">
 <xsl:choose>
-<xsl:when test="UG1250Wkst-Copy01-line17a &lt; 0">
-<xsl:value-of select="UG1250Wkst=Copy00-iine17 * -1"/>
+<xsl:when test="$UG1250Wkst-Copy00-line17a &lt; 0">
+<xsl:value-of select="$UG1250Wkst-Copy00-line17a * -1"/>
 </xsl:when>
 <xsl:otherwise>
 <xsl:value-of select="0"/>

@@ -29,12 +29,31 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <addend>line05</addend>
 </line>
 
+<dlin number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override></override>
+<blank></blank>
+</dlin>
+
 <line number='16'
  color='green'>
 <type>addit</type>
 <format>#####0</format>
-<augend>line16a</augend>
+<augend>lineSchedD14</augend>
+<addend>lineK1box11D</addend>
 <addend>linecgexcess</addend>
+</line>
+
+<line number='17a'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line14</augend>
+<addend>line15</addend>
+<addend>line16</addend>
 </line>
 
 <dlin number='01'
@@ -109,34 +128,7 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <blank></blank>
 </dlin>
 
-<dlin number='13'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override></override>
-<blank></blank>
-</dlin>
-
 <dlin number='14'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override></override>
-<blank></blank>
-</dlin>
-
-<dlin number='15'
- color='red'>
-<title></title>
-<type>dlin</type>
-<format>#####0</format>
-<override></override>
-<blank></blank>
-</dlin>
-
-<dlin number='16a'
  color='red'>
 <title></title>
 <type>dlin</type>
@@ -165,6 +157,39 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <form>QDCGaTaxWkst</form>
 <copy>00</copy>
 <line2>linecgexcess</line2>
+</line>
+
+<line number='SchedD07'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####01</format>
+<year>dummy</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line07</line2>
+</line>
+
+<line number='SchedD14'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####01</format>
+<year>dummy</year>
+<form>SchedD</form>
+<copy>00</copy>
+<line2>line14</line2>
+</line>
+
+<line number='K1box11D'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####01</format>
+<year>dummy</year>
+<form>SchedK1</form>
+<copy>00</copy>
+<line2>linebox11D</line2>
 </line>
 
 <line number='07'
@@ -199,12 +224,21 @@ along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
 <subtrahend>line02</subtrahend>
 </line>
 
+<line number='15'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>CHOOS1</testvalue>
+<value1>WHEN01$UG1250Wkst-Copy00-lineSchedD07 &lt; 0</value1>
+<value2>VALUOF$UG1250Wkst-Copy00-lineSchedD07</value2>
+</line>
+
 <line number='17'
  color='red'>
 <type>cnum</type>
 <format>#####0</format>
 <testvalue>CHOOS1</testvalue>
-<value1>WHEN01UG1250Wkst-Copy01-line17a &lt; 0</value1>
-<value2>VALUOFUG1250Wkst=Copy00-iine17 * -1</value2>
+<value1>WHEN01$UG1250Wkst-Copy00-line17a &lt; 0</value1>
+<value2>VALUOF$UG1250Wkst-Copy00-line17a * -1</value2>
 </line>
 </Form>

@@ -9,10 +9,21 @@ line05
 
 
 
+
+
 addit
 #####0
-line16a
+lineSchedD14
+lineK1box11D
 linecgexcess
+
+
+
+addit
+#####0
+line14
+line15
+line16
 
 
 
@@ -75,7 +86,15 @@ line02
 cnum
 #####0
 CHOOS1
-WHEN01UG1250Wkst-Copy01-line17a &lt; 0
-VALUOFUG1250Wkst=Copy00-iine17 * -1
+WHEN01$UG1250Wkst-Copy00-lineSchedD07 &lt; 0
+VALUOF$UG1250Wkst-Copy00-lineSchedD07
+
+
+
+cnum
+#####0
+CHOOS1
+WHEN01$UG1250Wkst-Copy00-line17a &lt; 0
+VALUOF$UG1250Wkst-Copy00-line17a * -1
 
 </Form>

@@ -1,7 +1,7 @@
 <taxline type="dlin" color="black">
 <linename>UG1250Wkst-Copy00-line08</linename>
-<instructions>Enter data per instructions.</instructions>
-<IRSInstructions>../IRS/i1040sd.pdf#D-13</IRSInstructions>
+<instructions>Enter amount, if any, from Form4797 line08</instructions>
+<IRSInstructions>../IRS/i1040sd.pdf#D13</IRSInstructions>
 <notes/>
 <override/>
 <accounts/>

@@ -1514,17 +1514,15 @@ do
 clear
 echo "Lines in UG1250Wkst in which to enter or edit data:"
 echo
-echo "01)    Enter data per instructions.       "
-echo "02)    Enter data per instructions.       "
-echo "04)    Enter data per instructions.       "
-echo "05)    Enter data per instructions.       "
-echo "08)    Enter data per instructions.       "
-echo "10)    Enter data per instructions.       "
-echo "11)    Enter data per instructions.       "
-echo "12)    Enter data per instructions.       "
-echo "14)    Enter data per instructions.       "
-echo "15)    Enter data per instructions.       "
-echo "16a)   Enter data per instructions for line 16..       "
+echo "01)    Enter required data                               "
+echo "02)    Enter amount from Form4797 line26g                "
+echo "04)    Enter data from form(s) 6252                      "
+echo "05)    Enter data from Schedule K1                       "
+echo "08)    Enter amount, if any, from Form4797 line08        "
+echo "10)    Enter requested data                              "
+echo "11)    Enter requested data                              "
+echo "12)    Enter requested data                              "
+echo "14)    Enter requested data                              "
 echo
 echo " q)    Return to Previous Menu"      
 echo
@@ -1541,8 +1539,6 @@ echo
 11)    set_line_menu_number $1 $2  line11                               ;;
 12)    set_line_menu_number $1 $2  line12                               ;;
 14)    set_line_menu_number $1 $2  line14                               ;;
-15)    set_line_menu_number $1 $2  line15                               ;;
-16a)   set_line_menu_number $1 $2  line16a                               ;;
 q )    break;;                       
 esac
 done

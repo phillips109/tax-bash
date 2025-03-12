@@ -108,7 +108,7 @@ choosePdf(){
     Wks)                showsPdf f1040;;
     CLCWkst)            showsPdf clcWkst;;
     RG28Wks)            showsPdf f1040;;
-    UG1250Wkst)         showsPdf ug1250;;
+    UG1250Wkst)         showsPdf 1250g;;
 
     esac			      
 }

@@ -35,9 +35,9 @@ do
   echo "   schd)   Schedule D Tax Worksheet."
   echo "  schda)   Schedule D Alternative Tax Workssheet."
 #  echo "  sales)   State and Local Sales Tax Worksheet."
-#  echo "    ssa)   Social Security Benefit Statement"
+  echo "    ssa)   Social Security Benefit Statement"
   echo "    sst)   Social Security Tax Worksheet."
-#  echo "   1250)   Unrecaptured Section 1250 Gain Worksheet."
+  echo "   1250)   Unrecaptured Section 1250 Gain Worksheet."
   
   
   echo "   q)     Return to Main Menu"
