@@ -12866,13 +12866,17 @@ $UG1250Wkst-Copy00-line05"/>
 <xsl:variable name="UG1250Wkst-Copy00-line16">
 <xsl:value-of select="$UG1250Wkst-Copy00-lineSchedD14 +
 $UG1250Wkst-Copy00-lineK1box11D +
-$UG1250Wkst-Copy00-linecgexcess"/>
+$UG1250Wkst-Copy00-lineminuscgexcess"/>
 </xsl:variable>
 
 <xsl:variable name="UG1250Wkst-Copy00-line17a">
 <xsl:value-of select="$UG1250Wkst-Copy00-line14 +
 $UG1250Wkst-Copy00-line15 +
 $UG1250Wkst-Copy00-line16"/>
+</xsl:variable>
+
+<xsl:variable name="UG1250Wkst-Copy00-lineminusOne">
+<xsl:value-of select="-1.0"/>
 </xsl:variable>
 
 <xsl:variable name="UG1250Wkst-Copy00-line01">
@@ -12980,18 +12984,18 @@ $UG1250Wkst-Copy00-line16"/>
 <xsl:value-of select="document('../Output/Form4797_Copy00.xml')//copy00line07"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="dummy"/>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
 
 <xsl:variable name="UG1250Wkst-Copy00-linecgexcess">
 <xsl:choose>
-<xsl:when test="document('../Output/QDCGaTaxWkst_Copy00.xml')">
-<xsl:value-of select="document('../Output/QDCGaTaxWkst_Copy00.xml')//copy00linecgexcess"/>
+<xsl:when test="document('../Output/QDCGTaxWkst_Copy00.xml')">
+<xsl:value-of select="document('../Output/QDCGTaxWkst_Copy00.xml')//copy00linecgexcess"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="dummy"/>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -13002,7 +13006,7 @@ $UG1250Wkst-Copy00-line16"/>
 <xsl:value-of select="document('../Output/SchedD_Copy00.xml')//copy00line07"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="dummy"/>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -13013,7 +13017,7 @@ $UG1250Wkst-Copy00-line16"/>
 <xsl:value-of select="document('../Output/SchedD_Copy00.xml')//copy00line14"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="dummy"/>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
 </xsl:variable>
@@ -13024,9 +13028,13 @@ $UG1250Wkst-Copy00-line16"/>
 <xsl:value-of select="document('../Output/SchedK1_Copy00.xml')//copy00linebox11D"/>
 </xsl:when>
 <xsl:otherwise>
-<xsl:value-of select="dummy"/>
+<xsl:value-of select="0"/>
 </xsl:otherwise>
 </xsl:choose>
+</xsl:variable>
+
+<xsl:variable name="UG1250Wkst-Copy00-lineminuscgexcess">
+<xsl:value-of select="$UG1250Wkst-Copy00-linecgexcess * $UG1250Wkst-Copy00-lineminusOne"/>
 </xsl:variable>
 
 <xsl:variable name="UG1250Wkst-Copy00-line07">
@@ -19628,6 +19636,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-line17a, '#####0')"/>
 </copy00line17a>
 
+<copy00lineminusOne color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-lineminusOne, '#####0')"/>
+</copy00lineminusOne>
+
 <copy00line01 color="red">
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-line01, '#####0')"/>
 </copy00line01>
@@ -19683,6 +19695,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00lineK1box11D color="red">
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-lineK1box11D, '#####0')"/>
 </copy00lineK1box11D>
+
+<copy00lineminuscgexcess color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-lineminuscgexcess, '#####0')"/>
+</copy00lineminuscgexcess>
 
 <copy00line07 color="red">
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-line07, '#####0')"/>

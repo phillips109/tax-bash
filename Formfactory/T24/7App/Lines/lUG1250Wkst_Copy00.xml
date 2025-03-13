@@ -32,6 +32,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-line17a, '#####0')"/>
 </copy00line17a>
 
+<copy00lineminusOne color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-lineminusOne, '#####0')"/>
+</copy00lineminusOne>
+
 <copy00line01 color="red">
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-line01, '#####0')"/>
 </copy00line01>
@@ -87,6 +91,10 @@ along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
 <copy00lineK1box11D color="red">
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-lineK1box11D, '#####0')"/>
 </copy00lineK1box11D>
+
+<copy00lineminuscgexcess color="red">
+<xsl:value-of select="format-number($UG1250Wkst-Copy00-lineminuscgexcess, '#####0')"/>
+</copy00lineminuscgexcess>
 
 <copy00line07 color="red">
 <xsl:value-of select="format-number($UG1250Wkst-Copy00-line07, '#####0')"/>

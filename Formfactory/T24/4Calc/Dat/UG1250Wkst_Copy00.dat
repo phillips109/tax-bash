@@ -45,7 +45,7 @@ addit
 #####0
 lineSchedD14
 lineK1box11D
-linecgexcess
+lineminuscgexcess
 
 addit
 17a
@@ -55,6 +55,18 @@ line15
 line16
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xconst
+2name
+3format
+4dummy
+
+const
+minusOne
+#####0
+-1.0
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 xdlin
 2name
@@ -104,7 +116,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 dPull
 479707
 #####0
-dummy
+0
 Form4797
 00
 line07
@@ -112,15 +124,15 @@ line07
 dPull
 cgexcess
 #####01
-dummy
-QDCGaTaxWkst
+0
+QDCGTaxWkst
 00
 linecgexcess
 
 dPull
 SchedD07
 #####01
-dummy
+0
 SchedD
 00
 line07
@@ -128,7 +140,7 @@ line07
 dPull
 SchedD14
 #####01
-dummy
+0
 SchedD
 00
 line14
@@ -136,13 +148,28 @@ line14
 dPull
 K1box11D
 #####01
-dummy
+0
 SchedK1
 00
 linebox11D
 
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+xmult
+2name
+3format
+4multiplicand
+5multiplier
+
+mult
+minuscgexcess
+#####0
+linecgexcess
+lineminusOne
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 
 xsmOf
 2name

@@ -4,6 +4,7 @@
 <copy00line13 color="red">0</copy00line13>
 <copy00line16 color="red">NaN</copy00line16>
 <copy00line17a color="red">NaN</copy00line17a>
+<copy00lineminusOne color="red">-1</copy00lineminusOne>
 <copy00line01 color="red">0</copy00line01>
 <copy00line02 color="red">0</copy00line02>
 <copy00line04 color="red">0</copy00line04>
@@ -13,11 +14,12 @@
 <copy00line11 color="red">0</copy00line11>
 <copy00line12 color="red">0</copy00line12>
 <copy00line14 color="red">0</copy00line14>
-<copy00line479707 color="red">NaN</copy00line479707>
+<copy00line479707 color="red">0</copy00line479707>
 <copy00linecgexcess color="red">NaN</copy00linecgexcess>
 <copy00lineSchedD07 color="red">0</copy00lineSchedD07>
 <copy00lineSchedD14 color="red">1400</copy00lineSchedD14>
-<copy00lineK1box11D color="red">NaN</copy00lineK1box11D>
+<copy00lineK1box11D color="red">0</copy00lineK1box11D>
+<copy00lineminuscgexcess color="red">NaN</copy00lineminuscgexcess>
 <copy00line07 color="red">0</copy00line07>
 <copy00line09 color="red">0</copy00line09>
 <copy00line18 color="red">0</copy00line18>
