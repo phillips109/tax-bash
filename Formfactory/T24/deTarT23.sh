@@ -1,6 +1,5 @@
 #!/bin/bash
-#deTarT23.sh
+#deTarT24.sh
 
-tar -zxvf T23.tar.gz
 
 exit 0
