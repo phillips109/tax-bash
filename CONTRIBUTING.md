@@ -10,11 +10,11 @@ You may contribute in two ways:
 
 ## USING TAX-BASH
 To use Tax-bash you need to download a copy onto your computer.
-1. Go to Formfactory/T23
-2. Click on the file T23.tar.gz
+1. Go to Formfactory/T24
+2. Click on the file T24.tar.gz
 3. Click on the RAW button at the right.
 4. click on Save File and click OK.
-5. Do the same with the file deTarT23.sh
+5. Do the same with the file deTarT24.sh
 
 This will download these two files to your computer usually to ~/Downloads.
 
@@ -23,19 +23,19 @@ This will download these two files to your computer usually to ~/Downloads.
    This will allow you to create other folders for say your wife's for a son's returns.
    I use my initials for this folder(PW).
 3. Go to the TB/PW folder.
-4. Move the ~/Downloads/T23.tar.gz file to this folder.
-5. Move the ~/deTarT23.sh file to this folder.
-6. Give the deTarT23.sh file permissions (chmod 755 deTarT23.sh)
-7. Run deTarT23.sh (./deTarT23.sh)
-   This will Create a new Folder called T23 under PW that will contain Tax-bash.
-8. Go to T23/Main and type ./tax-bash to start Tax-bash.
+4. Move the ~/Downloads/T24.tar.gz file to this folder.
+5. Move the ~/deTarT24.sh file to this folder.
+6. Give the deTarT24.sh file permissions (chmod 755 deTarT23.sh)
+7. Run deTarT24.sh (./deTarT23.sh)
+   This will Create a new Folder called T24 under PW that will contain Tax-bash.
+8. Go to T24/Main and type ./tax-bash to start Tax-bash.
    You wil be presented with a menu that will guide you as well as a README file.
 
 Tp update your program at any time:
-1. Download T23.tar.gz
+1. Download T24.tar.gz
 2. Go to your equivalent of TB/PW
-3. Move T23.tar.gz from ~/Downloads to TB/PW
-4. Run deTarT23.sh (./deTarT23.sh)
+3. Move T24.tar.gz from ~/Downloads to TB/PW
+4. Run deTarT24.sh (./deTarT24.sh)
 
 Your program will be updated without overwriting your previously entered data.
 
