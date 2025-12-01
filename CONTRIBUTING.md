@@ -24,14 +24,14 @@ Ths will download these two files to your computer usually to ~/Downloads.
 3. Go to the TB/PW folder.
 4. Move the ~/Downloads/T24.tar.gz file to this folder.
 5. Move the ~/Downloads/deTarT24.sh file to this folder.
-6. Give the deTarT24.sh file permissions (chmod 755 deTarT23.sh)
-7. Run deTarT24.sh (./deTarT23.sh)
+6. Give the deTarT24.sh file permissions (chmod 755 deTarT24.sh)
+7. Run deTarT24.sh (./deTarT24.sh)
    This will Create a new Folder called T24 under PW that will contain Tax-bash.
 8. Go to T24/Main and type ./tax-bash to start Tax-bash.
    You wil be presented with a menu that will guide you as well as a README file.
-9. To place the 2024 version in a T24 folder next to the T23 folde, follow the same process using T24 instead of T23.   
+9. Once the 2025 version is available in January 2026. place the 2025 version in a T25 folder next to the T24 folder,
+   following the same process using T25 instead of T24.   
 
-Tp update your program at any time:
 1. Download T24.tar.gz
 2. Go to your equivalent of TB/PW
 3. Move T24.tar.gz from ~/Downloads to TB/PW
