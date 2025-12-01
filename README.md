@@ -22,6 +22,10 @@ This allows the filer to start with any form he chooses and
 allows him to add or remove forms from his return without one form impinging on any other.
 (This behavior is made possible by the use of Xsl as the backend calculating language.)
 
+## See CONTRIBUTING.md for directions to run the program to calculate your taxes.
+## See CONTRIBUTING.md for directions to download Formfactory to your computer.
+## See the following for directions to use Formfactory to create form for the program to offer.
+
 ## Formfactory
 FormFactory is a program to create the forms that comprise the Tax-bash program.
 Creation of a form consists of several steps. Doing this does not require any programming. The user simply follows the steps indicated by the main menus. 
@@ -82,13 +86,7 @@ It contains for each form, in the XSl folder, an xsl file from step 4,
 It contains for each form, in the Data folder, data files for each user entry created in step 5, 
 It contains for each form, in the Main folder, a new tax-bash interface file containing the menus created in step 6.
 
-## Create a tar file of folder 7App
-
-Create a tar file of the folder /7App
-Go up to ~/FormFactory/T22/ where you will find the file mkT22tar.sh file 
-which will create the tar file of 7App in a directory called T23.
-
-## See CONTRIBUTING.md for directions on how to move the program to your computer.
+## See CONTRIBUTING.md for directions on how to move or update the program to your computer.
 
 
 
