@@ -32,6 +32,7 @@ Ths will download these two files to your computer usually to ~/Downloads.
 9. Once the 2025 version is available in January 2026. place the 2025 version in a T25 folder next to the T24 folder,
    following the same process using T25 instead of T24.   
 
+## How to update your program at any time
 1. Download T24.tar.gz
 2. Go to your equivalent of TB/PW
 3. Move T24.tar.gz from ~/Downloads to TB/PW
