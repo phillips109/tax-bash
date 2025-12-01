@@ -46,7 +46,7 @@ I think it will be something like this:
 1. You will fork Tax-bash to your account.
 2. You will clone tax-bash to your computer.
 3. You will creae a branch for the form you intend to work on.
-4. You will follow the steps folder by folder. (See README.md for a description.
+4. You will follow the steps folder by folder. (See README.md for a description.)
    1Pdf2jpg
    2Sequence
    3Layout
