@@ -12,7 +12,7 @@ mkdir T25
 sleep 3
 
 echo "Copying 7App to T25"
-cp -r 7App/* T26
+cp -r 7App/* T25
 sleep 3
 
 echo "Making ziptarball of T25"
