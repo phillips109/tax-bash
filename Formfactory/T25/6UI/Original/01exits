@@ -1,0 +1,17 @@
+
+exit1(){
+echo "Returning..."
+sleep 1
+break 1
+}
+
+exit2(){
+echo "Exiting..."
+sleep 1
+break 2
+}
+
+
+
+
+

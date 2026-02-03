@@ -1,0 +1,113 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+edit-override(){
+#This fuction edits the override value of a data file.
+#The value of this line is shown as <override> in the data file:
+#echo "The data file currently reads:"
+#cat ../Data/$1_$2_data.xml
+
+#The $# is the number of parameters. It is $0 $1 $2 and perhaps $3 for a total of either 3 or 4.    
+params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_data.xml"
+#    tempfile="../Data/$1_$2_data.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_Copy$2_$3_data.xml"
+    tempfile="../Data/$1_Copy$2_$3_data.tmp"
+#fi
+#echo "infile is $infile. tempfile=$tempfile."
+
+echo "This line has a numerical value."
+echo "Preferably this value is drawn from you GnuCash data."
+echo "This is done by adding up the totals of the accounts you specify here."
+echo "This method allows the program to enter the amount automatically in the future."
+echo "To do this you should return to the previous menu and choose (6)."
+echo
+
+echo "If the numerical value desired is not in your GnuCash data,"
+echo "or you wish to temporarily or permanently override the value"
+echo "obtained from the accounts method described above,"
+echo "you may enter the desired number as an override here."
+ 
+echo "If you wish to temporarily override the value of this line,"
+     "you can procede here."
+echo "Overriding normally changes the color to red,"
+echo "but on the previous menu you may set the color as you wish."
+
+echo " "
+#The next 5 lines are not complete and give an error if used.
+#echo "Are you ready to continue?"
+#echo "If so, press y or n."
+#read this
+#if yOrn $this
+#then
+
+#These two lines echo the current value of the override line.
+echo
+echo "The value of the override is currently:"
+#sed -n '/<override>/s/<override>//;s/<\/override>//p' $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overout.xsl
+
+#Do you want to change it?
+echo
+echo "Do you wish to change this override? Enter y or n."
+read choice
+
+while yOrn $choice
+do
+echo "To change the value of the override, enter the new value now:"
+read override
+#echo "$override"
+#sed '/<override>/s/<override>.*<\/override>/<override>'"$override"'<\/override>/' $infile > $tempfile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overin.xsl -out $tempfile -PARAM override "$override"
+mv $tempfile $infile
+choice="n"
+done
+
+clear
+echo "The value of the override is currently:"
+#sed -n '/<override>/s/<override>//;s/<\/override>//p'  $infile
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/overout.xsl
+
+echo
+echo "Remember that this change will not show up"
+echo "until you have refreshed (recalculated) your data."
+echo "Since refreshing your data takes about 30 seconds,"
+echo "You may wish to make other changes to your data"
+echo "before you recalculate all your data."
+echo 
+echo "Do you wish to refresh your data now?"
+echo "This will take about 30 seconds."
+echo "Enter y or n"
+read this
+if yOrn "$this"
+then
+       refreshTl $1 $2
+else
+    echo "Data has not been refreshed."
+fi
+   
+
+return    
+}
+

@@ -1,0 +1,1350 @@
+<!--
+
+Copyright (C) 2024 Phillips Wedemeyer
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
+<Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Form1040-Copy00">
+
+<copy00line01z color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01z, '#####0')"/>
+</copy00line01z>
+
+<copy00line09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line09, '#####0')"/>
+</copy00line09>
+
+<copy00line14 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line14, '#####0')"/>
+</copy00line14>
+
+<copy00line16 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line16, '#####0')"/>
+</copy00line16>
+
+<copy00line18 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line18, '#####0')"/>
+</copy00line18>
+
+<copy00line21 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line21, '#####0')"/>
+</copy00line21>
+
+<copy00line24 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line24, '#####0')"/>
+</copy00line24>
+
+<copy00line25b color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line25b, '#####0')"/>
+</copy00line25b>
+
+<copy00line25d color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line25d, '#####0')"/>
+</copy00line25d>
+
+<copy00line32 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line32, '#####0')"/>
+</copy00line32>
+
+<copy00line33 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line33, '#####0')"/>
+</copy00line33>
+
+<copy00line02a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line02a, '#####0')"/>
+</copy00line02a>
+
+<copy00line03a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line03a, '#####0')"/>
+</copy00line03a>
+
+<copy00line37a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line37a, '#####0')"/>
+</copy00line37a>
+
+<copy00line04b color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line04b, '#####0')"/>
+</copy00line04b>
+
+<copy00line05b color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line05b, '#####0')"/>
+</copy00line05b>
+
+<copy00linec2000 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linec2000, '#####0')"/>
+</copy00linec2000>
+
+<copy00line01b color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01b, '#####0')"/>
+</copy00line01b>
+
+<copy00line01c color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01c, '#####0')"/>
+</copy00line01c>
+
+<copy00line01d color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01d, '#####0')"/>
+</copy00line01d>
+
+<copy00line01h color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01h, '#####0')"/>
+</copy00line01h>
+
+<copy00line01i color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01i, '#####0')"/>
+</copy00line01i>
+
+<copy00line25c color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line25c, '#####0')"/>
+</copy00line25c>
+
+<copy00line26 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line26, '#####0')"/>
+</copy00line26>
+
+<copy00line27 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line27, '#####0')"/>
+</copy00line27>
+
+<copy00line36 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line36, '#####0')"/>
+</copy00line36>
+
+<copy00line38 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line38, '#####0')"/>
+</copy00line38>
+
+<copy00line01a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01a, '#####0')"/>
+</copy00line01a>
+
+<copy00line01e color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01e, '#####0')"/>
+</copy00line01e>
+
+<copy00line01f color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01f, '#####0')"/>
+</copy00line01f>
+
+<copy00line01g color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line01g, '#####0')"/>
+</copy00line01g>
+
+<copy00lineintTot color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineintTot, '#####0')"/>
+</copy00lineintTot>
+
+<copy00line03b color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line03b, '#####0')"/>
+</copy00line03b>
+
+<copy00line06a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line06a, '#####0')"/>
+</copy00line06a>
+
+<copy00line06b color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line06b, '#####0')"/>
+</copy00line06b>
+
+<copy00line07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line07, '#####0')"/>
+</copy00line07>
+
+<copy00line08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line08, '#####0')"/>
+</copy00line08>
+
+<copy00line10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line10, '#####0')"/>
+</copy00line10>
+
+<copy00line13 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line13, '#####0')"/>
+</copy00line13>
+
+<copy00line17 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line17, '#####0')"/>
+</copy00line17>
+
+<copy00line19 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line19, '#####0')"/>
+</copy00line19>
+
+<copy00line20 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line20, '#####0')"/>
+</copy00line20>
+
+<copy00line23 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line23, '#####0')"/>
+</copy00line23>
+
+<copy00line25a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line25a, '#####0')"/>
+</copy00line25a>
+
+<copy00line28 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line28, '#####0')"/>
+</copy00line28>
+
+<copy00line29 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line29, '#####0')"/>
+</copy00line29>
+
+<copy00line31 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line31, '#####0')"/>
+</copy00line31>
+
+<copy00line35a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line35a, '#####0')"/>
+</copy00line35a>
+
+<copy00lineD15 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineD15, '#####0')"/>
+</copy00lineD15>
+
+<copy00lineD16 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineD16, '#####0')"/>
+</copy00lineD16>
+
+<copy00lineD18 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineD18, '#####0')"/>
+</copy00lineD18>
+
+<copy00lineD19 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineD19, '#####0')"/>
+</copy00lineD19>
+
+<copy00lineSDTW color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineSDTW, '#####0')"/>
+</copy00lineSDTW>
+
+<copy00lineQDCG color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineQDCG, '#####0')"/>
+</copy00lineQDCG>
+
+<copy00line49524g color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line49524g, '#####0')"/>
+</copy00line49524g>
+
+<copy00line8814 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line8814, '#####0')"/>
+</copy00line8814>
+
+<copy00line4972 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line4972, '#####0')"/>
+</copy00line4972>
+
+<copy00line962 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line962, '#####0')"/>
+</copy00line962>
+
+<copy00lineECR color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineECR, '#####0')"/>
+</copy00lineECR>
+
+<copy00line1291TAX color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1291TAX, '#####0')"/>
+</copy00line1291TAX>
+
+<copy00lineForm8978 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineForm8978, '#####0')"/>
+</copy00lineForm8978>
+
+<copy00line965 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line965, '#####0')"/>
+</copy00line965>
+
+<copy00line965INC color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line965INC, '#####0')"/>
+</copy00line965INC>
+
+<copy00line1099rtax01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax01, '#####0')"/>
+</copy00line1099rtax01>
+
+<copy00line1099rtax02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax02, '#####0')"/>
+</copy00line1099rtax02>
+
+<copy00line1099rtax03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax03, '#####0')"/>
+</copy00line1099rtax03>
+
+<copy00line1099rtax04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax04, '#####0')"/>
+</copy00line1099rtax04>
+
+<copy00line1099rtax05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax05, '#####0')"/>
+</copy00line1099rtax05>
+
+<copy00line1099rtax06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax06, '#####0')"/>
+</copy00line1099rtax06>
+
+<copy00line1099rtax07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax07, '#####0')"/>
+</copy00line1099rtax07>
+
+<copy00line1099rtax08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax08, '#####0')"/>
+</copy00line1099rtax08>
+
+<copy00line1099rtax09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax09, '#####0')"/>
+</copy00line1099rtax09>
+
+<copy00line1099rtax10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line1099rtax10, '#####0')"/>
+</copy00line1099rtax10>
+
+<copy00lineexempt01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt01, '#####0')"/>
+</copy00lineexempt01>
+
+<copy00lineexempt02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt02, '#####0')"/>
+</copy00lineexempt02>
+
+<copy00lineexempt03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt03, '#####0')"/>
+</copy00lineexempt03>
+
+<copy00lineexempt04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt04, '#####0')"/>
+</copy00lineexempt04>
+
+<copy00lineexempt05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt05, '#####0')"/>
+</copy00lineexempt05>
+
+<copy00lineexempt06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt06, '#####0')"/>
+</copy00lineexempt06>
+
+<copy00lineexempt07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt07, '#####0')"/>
+</copy00lineexempt07>
+
+<copy00lineexempt08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt08, '#####0')"/>
+</copy00lineexempt08>
+
+<copy00lineexempt09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt09, '#####0')"/>
+</copy00lineexempt09>
+
+<copy00lineexempt10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineexempt10, '#####0')"/>
+</copy00lineexempt10>
+
+<copy00linequal01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal01, '#####0')"/>
+</copy00linequal01>
+
+<copy00linequal02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal02, '#####0')"/>
+</copy00linequal02>
+
+<copy00linequal03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal03, '#####0')"/>
+</copy00linequal03>
+
+<copy00linequal04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal04, '#####0')"/>
+</copy00linequal04>
+
+<copy00linequal05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal05, '#####0')"/>
+</copy00linequal05>
+
+<copy00linequal06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal06, '#####0')"/>
+</copy00linequal06>
+
+<copy00linequal07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal07, '#####0')"/>
+</copy00linequal07>
+
+<copy00linequal08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal08, '#####0')"/>
+</copy00linequal08>
+
+<copy00linequal09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal09, '#####0')"/>
+</copy00linequal09>
+
+<copy00linequal10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linequal10, '#####0')"/>
+</copy00linequal10>
+
+<copy00liner01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner01, '#####0')"/>
+</copy00liner01>
+
+<copy00liner02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner02, '#####0')"/>
+</copy00liner02>
+
+<copy00liner03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner03, '#####0')"/>
+</copy00liner03>
+
+<copy00liner04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner04, '#####0')"/>
+</copy00liner04>
+
+<copy00liner05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner05, '#####0')"/>
+</copy00liner05>
+
+<copy00liner06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner06, '#####0')"/>
+</copy00liner06>
+
+<copy00liner07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner07, '#####0')"/>
+</copy00liner07>
+
+<copy00liner08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner08, '#####0')"/>
+</copy00liner08>
+
+<copy00liner09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner09, '#####0')"/>
+</copy00liner09>
+
+<copy00liner10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-liner10, '#####0')"/>
+</copy00liner10>
+
+<copy00linet01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet01, '#####0')"/>
+</copy00linet01>
+
+<copy00linet02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet02, '#####0')"/>
+</copy00linet02>
+
+<copy00linet03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet03, '#####0')"/>
+</copy00linet03>
+
+<copy00linet04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet04, '#####0')"/>
+</copy00linet04>
+
+<copy00linet05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet05, '#####0')"/>
+</copy00linet05>
+
+<copy00linet06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet06, '#####0')"/>
+</copy00linet06>
+
+<copy00linet07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet07, '#####0')"/>
+</copy00linet07>
+
+<copy00linet08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet08, '#####0')"/>
+</copy00linet08>
+
+<copy00linet09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet09, '#####0')"/>
+</copy00linet09>
+
+<copy00linet10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linet10, '#####0')"/>
+</copy00linet10>
+
+<copy00linept01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept01, '#####0')"/>
+</copy00linept01>
+
+<copy00linept02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept02, '#####0')"/>
+</copy00linept02>
+
+<copy00linept03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept03, '#####0')"/>
+</copy00linept03>
+
+<copy00linept04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept04, '#####0')"/>
+</copy00linept04>
+
+<copy00linept05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept05, '#####0')"/>
+</copy00linept05>
+
+<copy00linept06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept06, '#####0')"/>
+</copy00linept06>
+
+<copy00linept07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept07, '#####0')"/>
+</copy00linept07>
+
+<copy00linept08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept08, '#####0')"/>
+</copy00linept08>
+
+<copy00linept09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept09, '#####0')"/>
+</copy00linept09>
+
+<copy00linept10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linept10, '#####0')"/>
+</copy00linept10>
+
+<copy00lineSchedJ23 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineSchedJ23, '#####0')"/>
+</copy00lineSchedJ23>
+
+<copy00linetop02a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linetop02a, '#####0')"/>
+</copy00linetop02a>
+
+<copy00linebottom06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linebottom06, '#####0')"/>
+</copy00linebottom06>
+
+<copy00line861521 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line861521, '#####0')"/>
+</copy00line861521>
+
+<copy00lineschA17 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineschA17, '#####0')"/>
+</copy00lineschA17>
+
+<copy00line15 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line15, '#####0')"/>
+</copy00line15>
+
+<copy00line22 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line22, '#####0')"/>
+</copy00line22>
+
+<copy00line34 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line34, '#####0')"/>
+</copy00line34>
+
+<copy00line37 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line37, '#####0')"/>
+</copy00line37>
+
+<copy00line02b color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line02b, '#####0')"/>
+</copy00line02b>
+
+<copy00line11 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line11, '#####0')"/>
+</copy00line11>
+
+<copy00line35a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line35a, '#####0')"/>
+</copy00line35a>
+
+<copy00lineCalc16 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineCalc16, '#####0')"/>
+</copy00lineCalc16>
+
+<copy00line2name color="blue">
+<xsl:value-of select="$Form1040-Copy00-line2name"/>
+</copy00line2name>
+
+<copy00linestMon color="blue">
+<xsl:value-of select="$Form1040-Copy00-linestMon"/>
+</copy00linestMon>
+
+<copy00linestDay color="blue">
+<xsl:value-of select="$Form1040-Copy00-linestDay"/>
+</copy00linestDay>
+
+<copy00lineEndMon color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineEndMon"/>
+</copy00lineEndMon>
+
+<copy00lineendDay color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineendDay"/>
+</copy00lineendDay>
+
+<copy00lineendYr color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineendYr"/>
+</copy00lineendYr>
+
+<copy00line06cCk color="blue">
+<xsl:value-of select="$Form1040-Copy00-line06cCk"/>
+</copy00line06cCk>
+
+<copy00line07Ck color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07Ck"/>
+</copy00line07Ck>
+
+<copy00line35aCk color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35aCk"/>
+</copy00line35aCk>
+
+<copy00line35b1 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b1"/>
+</copy00line35b1>
+
+<copy00line35b2 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b2"/>
+</copy00line35b2>
+
+<copy00line35b3 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b3"/>
+</copy00line35b3>
+
+<copy00line35b4 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b4"/>
+</copy00line35b4>
+
+<copy00line35b5 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b5"/>
+</copy00line35b5>
+
+<copy00line35b6 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b6"/>
+</copy00line35b6>
+
+<copy00line35b7 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b7"/>
+</copy00line35b7>
+
+<copy00line35b8 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b8"/>
+</copy00line35b8>
+
+<copy00line35b9 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35b9"/>
+</copy00line35b9>
+
+<copy00line35cCkg color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35cCkg"/>
+</copy00line35cCkg>
+
+<copy00line35cSvg color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35cSvg"/>
+</copy00line35cSvg>
+
+<copy00line35d10 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d10"/>
+</copy00line35d10>
+
+<copy00line35d11 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d11"/>
+</copy00line35d11>
+
+<copy00line35d1 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d1"/>
+</copy00line35d1>
+
+<copy00line35d12 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d12"/>
+</copy00line35d12>
+
+<copy00line35d13 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d13"/>
+</copy00line35d13>
+
+<copy00line35d14 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d14"/>
+</copy00line35d14>
+
+<copy00line35d15 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d15"/>
+</copy00line35d15>
+
+<copy00line35d16 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d16"/>
+</copy00line35d16>
+
+<copy00line35d17 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d17"/>
+</copy00line35d17>
+
+<copy00line35d2 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d2"/>
+</copy00line35d2>
+
+<copy00line35d3 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d3"/>
+</copy00line35d3>
+
+<copy00line35d4 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d4"/>
+</copy00line35d4>
+
+<copy00line35d5 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d5"/>
+</copy00line35d5>
+
+<copy00line35d6 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d6"/>
+</copy00line35d6>
+
+<copy00line35d7 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d7"/>
+</copy00line35d7>
+
+<copy00line35d8 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d8"/>
+</copy00line35d8>
+
+<copy00line35d9 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line35d9"/>
+</copy00line35d9>
+
+<copy00line39N color="blue">
+<xsl:value-of select="$Form1040-Copy00-line39N"/>
+</copy00line39N>
+
+<copy00line39Y color="blue">
+<xsl:value-of select="$Form1040-Copy00-line39Y"/>
+</copy00line39Y>
+
+<copy00line421 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line421"/>
+</copy00line421>
+
+<copy00line422 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line422"/>
+</copy00line422>
+
+<copy00line423 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line423"/>
+</copy00line423>
+
+<copy00line424 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line424"/>
+</copy00line424>
+
+<copy00line425 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line425"/>
+</copy00line425>
+
+<copy00line431 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line431"/>
+</copy00line431>
+
+<copy00line432 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line432"/>
+</copy00line432>
+
+<copy00line433 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line433"/>
+</copy00line433>
+
+<copy00line434 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line434"/>
+</copy00line434>
+
+<copy00line435 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line435"/>
+</copy00line435>
+
+<copy00line436 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line436"/>
+</copy00line436>
+
+<copy00line441 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line441"/>
+</copy00line441>
+
+<copy00line442 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line442"/>
+</copy00line442>
+
+<copy00line443 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line443"/>
+</copy00line443>
+
+<copy00line444 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line444"/>
+</copy00line444>
+
+<copy00line445 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line445"/>
+</copy00line445>
+
+<copy00line4972Ck color="blue">
+<xsl:value-of select="$Form1040-Copy00-line4972Ck"/>
+</copy00line4972Ck>
+
+<copy00line8814Ck color="blue">
+<xsl:value-of select="$Form1040-Copy00-line8814Ck"/>
+</copy00line8814Ck>
+
+<copy00lineaddr1 color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineaddr1"/>
+</copy00lineaddr1>
+
+<copy00lineaddr2 color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineaddr2"/>
+</copy00lineaddr2>
+
+<copy00lineaptNo color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineaptNo"/>
+</copy00lineaptNo>
+
+<copy00linecampme color="blue">
+<xsl:value-of select="$Form1040-Copy00-linecampme"/>
+</copy00linecampme>
+
+<copy00linecampS color="blue">
+<xsl:value-of select="$Form1040-Copy00-linecampS"/>
+</copy00linecampS>
+
+<copy00linechild color="blue">
+<xsl:value-of select="$Form1040-Copy00-linechild"/>
+</copy00linechild>
+
+<copy00lineSName color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSName"/>
+</copy00lineSName>
+
+<copy00linecity color="blue">
+<xsl:value-of select="$Form1040-Copy00-linecity"/>
+</copy00linecity>
+
+<copy00lined1cod color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1cod"/>
+</copy00lined1cod>
+
+<copy00lined1CTC color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1CTC"/>
+</copy00lined1CTC>
+
+<copy00lined1LN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1LN"/>
+</copy00lined1LN>
+
+<copy00lined1name color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1name"/>
+</copy00lined1name>
+
+<copy00lined1name color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1name"/>
+</copy00lined1name>
+
+<copy00lined1rel color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1rel"/>
+</copy00lined1rel>
+
+<copy00lined1SF color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1SF"/>
+</copy00lined1SF>
+
+<copy00lined1SL color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1SL"/>
+</copy00lined1SL>
+
+<copy00lined1SM color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined1SM"/>
+</copy00lined1SM>
+
+<copy00lined2cod color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2cod"/>
+</copy00lined2cod>
+
+<copy00lined2CTC color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2CTC"/>
+</copy00lined2CTC>
+
+<copy00lined2LN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2LN"/>
+</copy00lined2LN>
+
+<copy00lined2name color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2name"/>
+</copy00lined2name>
+
+<copy00lined2rel color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2rel"/>
+</copy00lined2rel>
+
+<copy00lined2SF color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2SF"/>
+</copy00lined2SF>
+
+<copy00lined2SL color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2SL"/>
+</copy00lined2SL>
+
+<copy00lined2SM color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined2SM"/>
+</copy00lined2SM>
+
+<copy00lined3cod color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3cod"/>
+</copy00lined3cod>
+
+<copy00lined3CTC color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3CTC"/>
+</copy00lined3CTC>
+
+<copy00lined3LN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3LN"/>
+</copy00lined3LN>
+
+<copy00lined3name color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3name"/>
+</copy00lined3name>
+
+<copy00lined3rel color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3rel"/>
+</copy00lined3rel>
+
+<copy00lined3SF color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3SF"/>
+</copy00lined3SF>
+
+<copy00lined3SL color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3SL"/>
+</copy00lined3SL>
+
+<copy00lined3SM color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined3SM"/>
+</copy00lined3SM>
+
+<copy00lined4cod color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4cod"/>
+</copy00lined4cod>
+
+<copy00lined4CTC color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4CTC"/>
+</copy00lined4CTC>
+
+<copy00lined4LN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4LN"/>
+</copy00lined4LN>
+
+<copy00lined4name color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4name"/>
+</copy00lined4name>
+
+<copy00lined4rel color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4rel"/>
+</copy00lined4rel>
+
+<copy00lined4SF color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4SF"/>
+</copy00lined4SF>
+
+<copy00lined4SL color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4SL"/>
+</copy00lined4SL>
+
+<copy00lined4SM color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined4SM"/>
+</copy00lined4SM>
+
+<copy00lined5cod color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined5cod"/>
+</copy00lined5cod>
+
+<copy00lined5CTC color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined5CTC"/>
+</copy00lined5CTC>
+
+<copy00lined5LN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined5LN"/>
+</copy00lined5LN>
+
+<copy00lined5rel color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined5rel"/>
+</copy00lined5rel>
+
+<copy00lined5SF color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined5SF"/>
+</copy00lined5SF>
+
+<copy00lined5SL color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined5SL"/>
+</copy00lined5SL>
+
+<copy00lined5SM color="blue">
+<xsl:value-of select="$Form1040-Copy00-lined5SM"/>
+</copy00lined5SM>
+
+<copy00linedgt4 color="blue">
+<xsl:value-of select="$Form1040-Copy00-linedgt4"/>
+</copy00linedgt4>
+
+<copy00linedigN color="blue">
+<xsl:value-of select="$Form1040-Copy00-linedigN"/>
+</copy00linedigN>
+
+<copy00linedigY color="blue">
+<xsl:value-of select="$Form1040-Copy00-linedigY"/>
+</copy00linedigY>
+
+<copy00lineDname color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineDname"/>
+</copy00lineDname>
+
+<copy00lineDphone color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineDphone"/>
+</copy00lineDphone>
+
+<copy00lineFaddr color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFaddr"/>
+</copy00lineFaddr>
+
+<copy00lineFCntry color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFCntry"/>
+</copy00lineFCntry>
+
+<copy00lineFEIN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFEIN"/>
+</copy00lineFEIN>
+
+<copy00lineFname color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFname"/>
+</copy00lineFname>
+
+<copy00lineFphone color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFphone"/>
+</copy00lineFphone>
+
+<copy00lineFprov color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFprov"/>
+</copy00lineFprov>
+
+<copy00lineFzip color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFzip"/>
+</copy00lineFzip>
+
+<copy00lineOther color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineOther"/>
+</copy00lineOther>
+
+<copy00linePdate color="blue">
+<xsl:value-of select="$Form1040-Copy00-linePdate"/>
+</copy00linePdate>
+
+<copy00linePname color="blue">
+<xsl:value-of select="$Form1040-Copy00-linePname"/>
+</copy00linePname>
+
+<copy00linePTIN color="blue">
+<xsl:value-of select="$Form1040-Copy00-linePTIN"/>
+</copy00linePTIN>
+
+<copy00lineSa58 color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSa58"/>
+</copy00lineSa58>
+
+<copy00lineSblind color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSblind"/>
+</copy00lineSblind>
+
+<copy00lineSdate color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSdate"/>
+</copy00lineSdate>
+
+<copy00lineSdep color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSdep"/>
+</copy00lineSdep>
+
+<copy00lineSECk color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSECk"/>
+</copy00lineSECk>
+
+<copy00lineSiUali color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSiUali"/>
+</copy00lineSiUali>
+
+<copy00lineSocc color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSocc"/>
+</copy00lineSocc>
+
+<copy00lineST color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineST"/>
+</copy00lineST>
+
+<copy00lineTdate color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTdate"/>
+</copy00lineTdate>
+
+<copy00lineTemail color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTemail"/>
+</copy00lineTemail>
+
+<copy00lineTocc color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTocc"/>
+</copy00lineTocc>
+
+<copy00lineTphone color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTphone"/>
+</copy00lineTphone>
+
+<copy00lineYa58 color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineYa58"/>
+</copy00lineYa58>
+
+<copy00lineYblind color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineYblind"/>
+</copy00lineYblind>
+
+<copy00lineyoudep color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineyoudep"/>
+</copy00lineyoudep>
+
+<copy00linezip color="blue">
+<xsl:value-of select="$Form1040-Copy00-linezip"/>
+</copy00linezip>
+
+<copy00linex00 color="blue">
+<xsl:value-of select="$Form1040-Copy00-linex00"/>
+</copy00linex00>
+
+<copy00lineailS color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineailS"/>
+</copy00lineailS>
+
+<copy00lineaSname color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineaSname"/>
+</copy00lineaSname>
+
+<copy00line07a01 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a01"/>
+</copy00line07a01>
+
+<copy00line07a02 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a02"/>
+</copy00line07a02>
+
+<copy00line07a03 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a03"/>
+</copy00line07a03>
+
+<copy00line07a04 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a04"/>
+</copy00line07a04>
+
+<copy00line07a05 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a05"/>
+</copy00line07a05>
+
+<copy00line07a06 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a06"/>
+</copy00line07a06>
+
+<copy00line07a07 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a07"/>
+</copy00line07a07>
+
+<copy00line07a08 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a08"/>
+</copy00line07a08>
+
+<copy00line07a09 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a09"/>
+</copy00line07a09>
+
+<copy00line07a10 color="blue">
+<xsl:value-of select="$Form1040-Copy00-line07a10"/>
+</copy00line07a10>
+
+<copy00lineFS color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineFS"/>
+</copy00lineFS>
+
+<copy00lineSFNIa color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSFNIa"/>
+</copy00lineSFNIa>
+
+<copy00lineSLNa color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSLNa"/>
+</copy00lineSLNa>
+
+<copy00lineSSSNoFa color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoFa"/>
+</copy00lineSSSNoFa>
+
+<copy00lineSSSNoLa color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoLa"/>
+</copy00lineSSSNoLa>
+
+<copy00lineSSSNoMa color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoMa"/>
+</copy00lineSSSNoMa>
+
+<copy00lineTFNI color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTFNI"/>
+</copy00lineTFNI>
+
+<copy00lineTLN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTLN"/>
+</copy00lineTLN>
+
+<copy00lineTSSNoF color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTSSNoF"/>
+</copy00lineTSSNoF>
+
+<copy00lineTSSNoL color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTSSNoL"/>
+</copy00lineTSSNoL>
+
+<copy00lineTSSNoM color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineTSSNoM"/>
+</copy00lineTSSNoM>
+
+<copy00lineScA18ck color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineScA18ck"/>
+</copy00lineScA18ck>
+
+<copy00lineira01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira01, '#####0')"/>
+</copy00lineira01>
+
+<copy00lineira02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira02, '#####0')"/>
+</copy00lineira02>
+
+<copy00lineira03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira03, '#####0')"/>
+</copy00lineira03>
+
+<copy00lineira04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira04, '#####0')"/>
+</copy00lineira04>
+
+<copy00lineira05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira05, '#####0')"/>
+</copy00lineira05>
+
+<copy00lineira06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira06, '#####0')"/>
+</copy00lineira06>
+
+<copy00lineira07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira07, '#####0')"/>
+</copy00lineira07>
+
+<copy00lineira08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira08, '#####0')"/>
+</copy00lineira08>
+
+<copy00lineira09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira09, '#####0')"/>
+</copy00lineira09>
+
+<copy00lineira10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-lineira10, '#####0')"/>
+</copy00lineira10>
+
+<copy00linepen01 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen01, '#####0')"/>
+</copy00linepen01>
+
+<copy00linepen02 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen02, '#####0')"/>
+</copy00linepen02>
+
+<copy00linepen03 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen03, '#####0')"/>
+</copy00linepen03>
+
+<copy00linepen04 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen04, '#####0')"/>
+</copy00linepen04>
+
+<copy00linepen05 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen05, '#####0')"/>
+</copy00linepen05>
+
+<copy00linepen06 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen06, '#####0')"/>
+</copy00linepen06>
+
+<copy00linepen07 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen07, '#####0')"/>
+</copy00linepen07>
+
+<copy00linepen08 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen08, '#####0')"/>
+</copy00linepen08>
+
+<copy00linepen09 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen09, '#####0')"/>
+</copy00linepen09>
+
+<copy00linepen10 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linepen10, '#####0')"/>
+</copy00linepen10>
+
+<copy00linecount color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linecount, '#####0')"/>
+</copy00linecount>
+
+<copy00linemodIncome color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-linemodIncome, '#####0')"/>
+</copy00linemodIncome>
+
+<copy00line12 color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line12, '#####0')"/>
+</copy00line12>
+
+<copy00line16a color="red">
+<xsl:value-of select="format-number($Form1040-Copy00-line16a, '#####0')"/>
+</copy00line16a>
+
+<copy00lineS color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineS"/>
+</copy00lineS>
+
+<copy00lineMFJ color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineMFJ"/>
+</copy00lineMFJ>
+
+<copy00lineMFS color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineMFS"/>
+</copy00lineMFS>
+
+<copy00lineHOH color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineHOH"/>
+</copy00lineHOH>
+
+<copy00lineQSS color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineQSS"/>
+</copy00lineQSS>
+
+<copy00lineSLN color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSLN"/>
+</copy00lineSLN>
+
+<copy00lineSFNI color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSFNI"/>
+</copy00lineSFNI>
+
+<copy00lineSSSNoF color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoF"/>
+</copy00lineSSSNoF>
+
+<copy00lineSSSNoM color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoM"/>
+</copy00lineSSSNoM>
+
+<copy00lineSSSNoL color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSSSNoL"/>
+</copy00lineSSSNoL>
+
+<copy00lineSchild color="blue">
+<xsl:value-of select="$Form1040-Copy00-lineSchild"/>
+</copy00lineSchild>
+</Form>

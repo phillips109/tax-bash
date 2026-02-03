@@ -1,0 +1,12 @@
+001	!tlin	!TFNI	!Enter taxpayor's first name.                       
+002	!tlin	!TLN	!Enter taxpayor's last name.            
+003	!tlin	!TSSNoF	!Enter taxpayor's first 3 SSN digits.
+004	!tlin	!TSSNoM	!Enter taxpayor's second 2 SSN digits.     
+005	!tlin	!TSSNoL	!Enter taxpayor's last 4 SSN digits.           
+006	!tlin	!SFNI	!ENter spouse's first name.               
+007	!tlin	!SLN	!Enter spouse's last name.                              
+008	!tlin	!SSNoF	!Enter spouse's first 3 SSN digits.                   
+009	!tlin	!SSSNoM	!Enter spouse's second 2 SSN digits.                    
+010	!tlin	!SSSNoL	!Enter spouse's last 4 SSN digits.                      
+011	!tlin	!FS	!Enter filing status.                              
+012	!tlin	!Apart	!Did you (Yes or No) live apart froms spouse?                              

@@ -1,0 +1,59 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+set_menu_choices() {
+    while true;
+    do
+	clear
+	echo "Actions to be taken on "$1"_Copy"$2"."
+	echo
+	echo "  0) Import last years text for this form."
+	echo "  1) Refresh data"
+	echo "  2) Enter or alter data."
+	echo "  3) Show form, schedule, or worksheet."
+#	echo " rm) Remove a copy of "$1"." 
+	echo	
+	echo "  q) Return to previous menu."
+
+        echo "Please enter your choice, then press return."
+        read action_choice
+	
+#Note that choice 1) is a hack to get FEI calculated in the correct order.
+
+        case $action_choice in
+	   0) importText $1 $2;;   
+#           1) refreshTl FEITaxWkst 01
+#	      refreshTl top        01
+#	      refreshTl bottom     01
+#	      refreshTl QDCGTaxWkst 01
+#	      refreshTl QDCGaTaxWkst 01
+#	      refreshTl SchedDTaxWkst 01
+#	      refreshTl SchedDaTaxWkst 01
+#	      refreshTl FEITaxWkst 01
+	   1) refreshTl $1 $2;;
+           2) set_$1_line_data_choice $1 $2;;
+           3) showForm2 $1 $2;;
+#	  rm) removeForm $1;;
+           q) break;;
+        esac
+    done
+    }
+

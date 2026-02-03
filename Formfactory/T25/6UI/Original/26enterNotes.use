@@ -1,0 +1,50 @@
+
+enterNotes(){
+#Now you can choose to change the line or leave it unchanged.
+#The function yOrn returns 0 if y, 1 if n.
+#The $# is the number of parameters.     
+
+#params=$#
+#echo "$params"
+#if [ $params = "3" ]; then
+#    infile="../Data/$1_$2_*.xml"
+#    tempfile="../Data/$1_$2_*.tmp"
+#elif [ $params = "4" ]; then
+    infile="../Data/$1_$2_$3_*.xml"
+    tempfile="../Data/$1_$2_$3_*.tmp"
+#fi
+#echo "infile is $infile."
+#echo "tempfile is $tempfile"
+
+    echo "Currently, your notes on this line read:"
+    java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesout.xsl
+    echo
+    echo
+    echo "Do you wish to change these notes"
+    echo "or enter new notes to yourself about this line?"
+echo "Enter y or n."
+read this
+if yOrn "$this"
+then
+       echo "Editing your notes is not currently possible."
+       echo "Please enter any notes you wish to make:"
+       read note
+#	sed '/<notes>/s/<notes>.*<\/notes>/<notes>'"$note"'<\/notes>/' $infile > $tempfile
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesin.xsl -PARAM notes "$note" -out $tempfile
+	mv $tempfile $infile
+	echo
+#	cat $infile
+	echo "Your notes now read:"
+       java $XALANJAVAJAR org.apache.xalan.xslt.Process -in $infile -xsl ../BaseXsl/notesout.xsl
+       echo
+       echo
+
+else
+	echo "The notes have been kept unchanged."
+	echo
+	echo
+
+fi
+
+return
+}    

@@ -1,0 +1,62 @@
+<Form fname="Bkg">
+<taxline name="TFNI" type="tlin" color="black">
+<menuEntry>Enter taxpayor's first name.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="TLN" type="tlin" color="black">
+<menuEntry>Enter taxpayor's last name.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="TSSNoF" type="tlin" color="black">
+<menuEntry>Enter taxpayor's first 3 SSN digits.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="TSSNoM" type="tlin" color="black">
+<menuEntry>Enter taxpayor's second 2 SSN digits.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="TSSNoL" type="tlin" color="black">
+<menuEntry>Enter taxpayor's last 4 SSN digits.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="SFNI" type="tlin" color="black">
+<menuEntry>ENter spouse's first name.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="SLN" type="tlin" color="black">
+<menuEntry>Enter spouse's last name.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="SSNoF" type="tlin" color="black">
+<menuEntry>Enter spouse's first 3 SSN digits.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="SSSNoM" type="tlin" color="black">
+<menuEntry>Enter spouse's second 2 SSN digits.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="SSSNoL" type="tlin" color="black">
+<menuEntry>Enter spouse's last 4 SSN digits.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="FS" type="tlin" color="black">
+<menuEntry>Enter filing status.</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+<taxline name="Apart" type="tlin" color="black">
+<menuEntry>Did you (Yes or No) live apart froms spouse?</menuEntry>
+<IRSInstructions>Bkg.pdf</IRSInstructions>
+<pgNo>01</pgNo>
+</taxline>
+</Form>

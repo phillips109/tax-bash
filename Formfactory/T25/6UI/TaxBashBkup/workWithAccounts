@@ -1,0 +1,47 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+work_with_accounts() {
+while true;
+  do     
+      clear
+  echo " Working with Accounts (GnuCash data)"         
+  echo
+
+  echo "   1) List the names of all of the accounts in your GnuCash data."
+  echo "   2) List the transactions in a specified account."
+  echo "   3) Show the accounts and transactions used for a specified form."
+  echo 
+  echo "   q) Return to main menu."
+ 
+  echo "Please enter the number or letter(s) of your choice then press return."
+  read menu_choice
+
+    case "$menu_choice" in
+
+      1) listAccounts;;
+      2) oneAcct;;
+      3) showAccounts;;
+      
+      q)  break;;
+      *)  echo "Sorry, choice not recognized."
+    esac
+  done  
+}

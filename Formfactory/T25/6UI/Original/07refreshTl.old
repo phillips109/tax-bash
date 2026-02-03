@@ -1,0 +1,51 @@
+
+refreshTl() {
+#This file creates ../Work/taxlogic.xml for the forms to use.
+
+#In Ubuntu xalan is available in /usr/sbin but it points to the c version
+#which has no implementation of format-number().
+#I therefore used the classpath option to get the java version.
+
+#This file refreshes the data starting with ../BaseData/totl.xml. created at the end of RefreshAll()
+#It takes about half the time required by starting with gnucash file.
+
+echo "Your data is being refreshed. This will take about 30 seconds."
+echo "Please wait for the program to return." 
+
+#This lines removes ../Xml/$1_Copy$2.xml to make room for a new version.
+rm ../Xml/$1_Copy$2.xml
+
+#These lines create ../Xml/tl.xml by amalgamating the data files in ../Data.
+cat ../Data/$1_Copy$2*.xml >> ../Xml/$1_Copy$2.xml
+
+#SchedC and Form8829 are interdependent, therefore:
+#if [ "$1" = "Form8829" ]; then
+#cat ../Data/SchedC_*.xml >> ../Xml/$1.xml
+#fi
+#if [ "$1" = "SchedC" ]; then
+#cat ../Data/Form8829_*.xml >> ../Xml/$1.xml
+#fi
+
+#Form1040 and SchedA are interdependent, therefore:
+#if [ "$1" = "Form1040" ]; then
+#cat ../Data/SchedA_*.xml >> ../Xml/$1.xml
+#fi
+#if [ "$1" = "SchedA" ]; then
+#cat ../Data/Form1040_*.xml >> ../Xml/$1.xml
+#fi
+
+#The next line primes ../BaseData/totl.xml created in refreshAll to attach ../Xml/$1_Copy$2.xml created in previous step
+sed 's/<\/IRSForms>/include(\.\.\/Xml\/'"$1_Copy$2"'.xml)<\/IRSForms>/' ../BaseData/totl.xml > ../BaseData/sedtotl.xml
+
+#This line adds the ../Xml/$1_$2.xml lines to the end of ../BaseData/sedtotl.xml  to get ../Total/totl$1_Copy$2.xml
+m4 ../BaseData/sedtotl.xml > ../Total/totl$1_Copy$2.xml
+
+#This line puts the accounts under the proper taxlines.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Total/totl$1_Copy$2.xml -xsl ../BaseXsl/taxlines.xsl -out ../Taxlines/lines$1_Copy$2.xml
+
+#This line uses the logic in taxlogic.xsl to create the final data.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Taxlines/lines$1_Copy$2.xml  -xsl ../Xsl/$1_Copy$2.xsl -out ../Output/$1_Copy$2.xml
+
+return 
+}
+

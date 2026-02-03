@@ -1,0 +1,41 @@
+
+showAccounts(){
+#This function displays the transactions and total for each account used by a particular form or schedule.
+#This file now depends on refreshAll bringing data up to date.
+clear
+echo "In order to show the accounts associated with a particular"
+echo "Form or Schedule you need to specify the form or schedule you desire."
+echo "The name of the form is case sensitive and has no spaces."
+echo "The possibilities are:"
+echo "SchedA"
+echo "SchedB"
+echo "SchedC"
+#echo "SchedD"
+echo "SchedH"
+#echo "SchedSE"
+echo "1040"
+#echo "4562"
+#echo "4868"
+#echo "6251"
+echo "8829"
+
+
+echo "For which form or schedule would you like to see the accounts and their transactions? Enter a form or schedule from the list above."
+read formSch
+#echo $formSch
+
+#This line removes all accounts except those associated with the specified form or schedule.
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/taxlines.xml -xsl ../Xsl/oneForm.xsl -PARAM form $formSch -out ../Work/oneForm.xml 
+
+#This line prepares the fo file to be displayed
+java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Work/oneForm.xml -xsl ../2Fo/trnsPerTaxline.2fo -out ../Work/trnsPerForm.fo
+
+#This line converts the fo file to pdf.
+java $FOPJAVAJAR org.apache.fop.cli.Main ../Work/trnsPerForm.fo ../Pdf/trnsPerForm.pdf
+
+#This line displays the pdf in a tab of qpdfview.
+qpdfview  --unique ../Pdf/trnsPerForm.pdf > /dev/null 2>&1 &
+
+return
+}
+

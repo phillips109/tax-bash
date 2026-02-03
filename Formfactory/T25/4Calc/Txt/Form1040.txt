@@ -1,0 +1,229 @@
+tlin      !stMo      !  1
+tlin      !stDay     !  2
+tlin      !stMo      !  3
+tlin      !endDay    !  4
+tlin      !endYr     !  5
+tlin      !Sec301    !  6
+tlin      !Combat    !  7
+tlin      !Died      !  8
+tlin      !DateT     !  9
+tlin      !DateS     ! 10
+tlin      !Othr      ! 11
+tlin      !aliS      ! 12
+tlin      !aSname    ! 13
+tlin      !alien     ! 14
+tlin      !addr1     ! 15
+tlin      !addr2     ! 16
+tlin      !aptNo     ! 17
+tlin      !city      ! 18
+tlin      !ST        ! 19
+tlin      !zip       ! 20
+tlin      !FCntry    ! 21
+tlin      !Fprov     ! 22
+tlin      !Fzip      ! 23
+tlin      !campme    ! 24
+tlin      !campS     ! 25
+tlin      !digY      ! 26
+tlin      !digN      ! 27
+tlin      !d1name    ! 28
+tlin      !d1LN      ! 29
+tlin      !d1SF      ! 30
+tlin      !d1SM      ! 31
+tlin      !d1SL      ! 32
+tlin      !d1rel     ! 33
+tlin      !d1LWY     ! 34
+tlin      !d1US      ! 35
+tlin      !d1FTS     ! 36
+tlin      !d1CTC     ! 37
+tlin      !d1PTD     ! 38
+tlin      !d1COD     ! 39
+tlin      !d2name    ! 40
+tlin      !d2LN      ! 41
+tlin      !d2SF      ! 42
+tlin      !d2SM      ! 43
+tlin      !d2SL      ! 44
+tlin      !d2rel     ! 45
+tlin      !d1LWY     ! 46
+tlin      !d1US      ! 47
+tlin      !d1FTS     ! 48
+tlin      !d1CTC     ! 49
+tlin      !d1PTD     ! 50
+tlin      !d1COD     ! 51
+tlin      !d3name    ! 52
+tlin      !d3LN      ! 53
+tlin      !d3SF      ! 54
+tlin      !d3SM      ! 55
+tlin      !d3SL      ! 56
+tlin      !d3rel     ! 57
+tlin      !d1LWY     ! 58
+tlin      !d1US      ! 59
+tlin      !d1FTS     ! 60
+tlin      !d1CTC     ! 61
+tlin      !d1PTD     ! 62
+tlin      !d1COD     ! 63
+tlin      !d4name    ! 64
+tlin      !d4LN      ! 65
+tlin      !d4SF      ! 66
+tlin      !d4SM      ! 67
+tlin      !d4SL      ! 68
+tlin      !d4rel     ! 69
+tlin      !d1LWY     ! 70
+tlin      !d1US      ! 71
+tlin      !d1FTS     ! 72
+tlin      !d1CTC     ! 73
+tlin      !d1PTD     ! 74
+tlin      !d1COD     ! 75
+tlin      !dgt4      ! 76
+tlin      !apart     ! 77
+tlin      !EItyp     ! 78
+tlin      !3c1       ! 79
+tlin      !4c1       ! 80
+tlin      !5c1       ! 81
+tlin      !3c2       ! 82
+tlin      !4c2       ! 83
+tlin      !5c2       ! 84
+tlin      !4c3       ! 85
+tlin      !5c3       ! 86
+tlin      !06cCk     ! 87
+tlin      !06dCk     ! 88
+tlin      !07bCk1    ! 89
+tlin      !07bCk2    ! 90
+tlin      !07bTx1    ! 91
+dlin      !01a       ! 92
+dlin      !01b       ! 93
+dlin      !01c       ! 94
+dlin      !01d       ! 95
+dlin      !01e       ! 96
+dlin      !01f       ! 97
+dlin      !01g       ! 98
+dlin      !01h       ! 99
+dlin      !1i        !100
+addit      !01z       !101
+dPull      !02a       !102
+dPull      !03a       !103
+dlin      !04a       !104
+dlin      !05a       !105
+dPull      !06a       !106
+dPull	     !02b       !107
+dPull  !03b       !108
+dPull  !04b       !109
+dPull  !05b       !110
+dPull  !06b       !111
+dPull  !07a        !112
+dPull  !08        !113
+addit  !09        !114
+dPull  !10        !115
+subtr      !11a       !116
+tlin      !youdep    !117
+tlin      !Sdep      !118
+tlin      !SiSep     !119
+tlin      !2CitA     !120
+tlin      !Ya58      !121
+tlin      !Yblind    !122
+tlin      !Sa58      !123
+tlin      !Sblind    !124
+dPull      !11b       !125
+dPull      !12e       !126
+dPull      !13a       !129
+dPull     !13b       !130
+addit     !14        !131
+tlin      !8814      !132
+tlin      !4972      !133
+tlin      !Other     !134
+tlin      !tOther    !135
+calc      !16        !136
+dPull      !17        !137
+addit      !18        !138
+dPull     !19        !139
+dPull     !20        !140
+addit     !21        !141
+subt0     !22        !142
+dPull     !23        !143
+addit     !24        !144
+dlin      !25a       !145
+dlin      !25b       !146
+dlin      !25c       !147
+addit      !25d       !148
+dlin      !26        !149
+dlin      !27a        !150
+dPull      !28        !151
+dPull     !29        !152
+dPull     !30        !153
+dPull     !31        !154
+addit     !32        !155
+addit     !33        !156
+subtr     !34        !157
+dlin     !35a       !158
+subtr      !36        !159
+subtr     !37        !160
+subtr     !38        !161
+tlin      !26F       !162
+tlin      !26M       !163
+tlin      !26L       !164
+tlin      !27bCk     !165
+tlin      !27cCk     !166
+tlin      !28Ck      !167
+tlin      !35aCk     !168
+tlin      !35cCkg    !169
+tlin      !35cSvg    !170
+tlin      !35b1      !171
+tlin      !35d1      !172
+tlin      !35b2      !173
+tlin      !35d2      !174
+tlin      !35b3      !175
+tlin      !35d3      !176
+tlin      !35b4      !177
+tlin      !35d4      !178
+tlin      !35b5      !179
+tlin      !35d5      !180
+tlin      !35b6      !181
+tlin      !35d6      !182
+tlin      !35b7      !183
+tlin      !35d7      !184
+tlin      !35b8      !185
+tlin      !35d8      !186
+tlin      !35b9      !187
+tlin      !35d9      !188
+tlin      !35d10     !189
+tlin      !35d11     !190
+tlin      !35d12     !191
+tlin      !35d13     !192
+tlin      !35d14     !193
+tlin      !35d15     !194
+tlin      !35d16     !195
+tlin      !35d17     !196
+tlin      !39Y       !197
+tlin      !39N       !198
+tlin      !Dname     !199
+tlin      !Dphone    !200
+tlin      !421       !201
+tlin      !422       !202
+tlin      !423       !203
+tlin      !424       !204
+tlin      !425       !205
+tlin      !Tdate     !206
+tlin      !Sdate     !207
+tlin      !Tocc      !208
+tlin      !Socc      !209
+tlin      !431       !210
+tlin      !441       !211
+tlin      !432       !212
+tlin      !442       !213
+tlin      !433       !214
+tlin      !443       !215
+tlin      !434       !216
+tlin      !444       !217
+tlin      !435       !218
+tlin      !445       !219
+tlin      !436       !220
+tlin      !446       !221
+tlin      !Tphone    !222
+tlin      !Temail    !223
+tlin      !Pname     !224
+tlin      !Pdate     !225
+tlin      !PTIN      !226
+tlin      !SECk      !227
+tlin      !Fname     !228
+tlin      !Fphone    !229
+tlin      !Faddr     !230
+tlin      !FEIN      !231

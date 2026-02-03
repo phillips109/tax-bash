@@ -1,0 +1,24 @@
+
+set_wkst_choice() {
+while true;
+do
+  clear
+  echo "Tables :"
+  echo
+  echo "   basic) Data used by more than one form."
+  
+  echo "   q)     Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read table_choice
+
+    case $table_choice in
+
+      basic) set_menu_choices Basic	     Copy01;;
+      
+      q)     break;;
+    esac
+done
+ 
+}
+

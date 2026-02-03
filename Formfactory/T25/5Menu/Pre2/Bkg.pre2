@@ -1,0 +1,13 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+tlin      	!TFNI      	!001       	!Enter taxpayor's first name.                                                                        	!Bkg.pdf             	!01    	!     
+tlin      	!TLN       	!002       	!Enter taxpayor's last name.                                                                         	!Bkg.pdf             	!01    	!     
+tlin      	!TSSNoF    	!003       	!Enter taxpayor's first 3 SSN digits.                                                                	!Bkg.pdf             	!01    	!     
+tlin      	!TSSNoM    	!004       	!Enter taxpayor's second 2 SSN digits.                                                               	!Bkg.pdf             	!01    	!     
+tlin      	!TSSNoL    	!005       	!Enter taxpayor's last 4 SSN digits.                                                                 	!Bkg.pdf             	!01   	!     
+tlin      	!SFNI      	!006       	!ENter spouse's first name.                                                                          	!Bkg.pdf             	!01   	!     
+tlin      	!SLN       	!007       	!Enter spouse's last name.                                                                           	!Bkg.pdf             	!01   	!     
+tlin      	!SSNoF     	!008       	!Enter spouse's first 3 SSN digits.                                                                  	!Bkg.pdf             	!01   	!     
+tlin      	!SSSNoM    	!009       	!Enter spouse's second 2 SSN digits.                                                                 	!Bkg.pdf             	!01   	!     
+tlin      	!SSSNoL    	!010       	!Enter spouse's last 4 SSN digits.                                                                   	!Bkg.pdf             	!01   	!     
+tlin      	!FS        	!011       	!Enter filing status.                                                                                	!Bkg.pdf             	!01   	!     
+tlin      	!Apart     	!012       	!Did you (Yes or No) live apart froms spouse?                                                        	!Bkg.pdf             	!01   	!     

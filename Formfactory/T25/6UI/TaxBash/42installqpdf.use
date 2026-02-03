@@ -1,0 +1,4 @@
+installqpdf(){
+
+cat ../installqpdf.txt | less
+}

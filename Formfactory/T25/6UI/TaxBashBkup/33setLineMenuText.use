@@ -1,0 +1,95 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+set_line_menu_text() {
+while true;
+do
+
+ echo
+ echo  " 1) Show local instructions for this line."   
+ echo  " 2) show IRS instructions for this line" 
+ echo  " 3) Show current contents of the line"
+ echo  " 4) Edit the text of this line."
+ echo  " 5) Redisplay the form."
+ echo  " 5a)Change the color of this line."
+ echo  " 6) Comes from?"
+ echo  " q) quit"
+
+ echo "Please enter number of your choice and press Enter."
+ read action_choice
+
+ case $action_choice in
+        1) showInstructions $1 $2 $3 $4;;
+	2) showIRSinstructions $1 $2 $3 $4;;
+	3) showDataFile $1 $2 $3;;
+        4) edit_textline $1 $2 $3;;
+        5) showFormLocal $1 $2 $3;;
+	5a)changeColor $1 $2 $3 $4;;
+#	6) comes_from2 $1 $2 $3;;
+	6) params=$#
+	   echo $params
+	   if [ "$params" = "3" ]; then
+	       infile="../Data/$1_$2_text.xml"
+	       tempfile="../Data/$1_$2_text.tmp"
+	   elif [ "$params" = "4" ]; then
+	       infile="../Data/$1_$2_$3_text.xml"
+	       tempfile="../Data/$1_$2_$3_text.tmp"
+	   fi
+	   echo "infile is $infile tempfile is $tempfile"
+
+	   echo $infile
+	   echo "This line comes from:"
+	   foo=$(sed -n '/<from>/s/<from>//;s/<\/from>//p' $infile)
+	   echo $foo
+	   select fname in $foo
+	   do
+               echo "You have selected" $fname \($REPLY\)
+	       par=$fname
+#	       echo $par
+	       parminus=${par#*_}
+#	       echo $parminus
+	       par1=${parminus%%_*}
+	       echo $par1
+	       parminus2=${parminus#*_}
+#	       echo $parminus2
+	       par2=${parminus2%%_*}
+	       echo $par2
+	       par3=${parminus2##*_}
+	       echo $par3
+	       echo $par3
+
+	       echo $par3
+	       echo $par2
+	       echo $par1
+	       echo $par1 $par2 $par3
+	       set $(echo $par1 $par2 $par3)
+#	       set_line_menu_text 1040 lineTaxpayorLastName 13
+               set_line_menu_text $1 $2 $3
+	       break;
+            done
+	   ;;
+	   q) break;;
+
+ esac
+
+done
+
+}

@@ -1,0 +1,16 @@
+addit	!07	!007	!                              
+addit	!12	!012	!                              
+cnum	!03	!003	!                              
+cnum	!06	!006	!                              
+cnum	!10	!010	!                              
+dPull	!01	!001	!
+dPull	!02a	!001a	!
+dPull	!05a	!005a	!
+dPull	!09a	!009a	!
+mult	!02	!002	!                              
+mult	!05	!005	!
+mult	!09	!009
+smOf	!04	!004	!                              
+subt0	!08	!008	!                              
+subt0	!11	!011	!                              
+subt0	!13	!013	!                              

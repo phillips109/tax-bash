@@ -1,0 +1,104 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+importLastYrData(){
+#IMPORT DATA FROM LAST YEAR'S DATA FILES
+
+if [ -d ../../T16/Data/ ]
+then
+echo "Last years Data directory exists"
+echo "The program will import any data files"
+echo "in that directory."
+
+
+cp ../../T16/Data/*_data.xml ../Data
+
+
+#This takes last years data files and puts them in
+#  the correct format and outputs this in a .temp file.
+for file in ../Data/Background*_data.xml
+do
+    echo "Processing $file"
+    
+#This eliminates the <text/> format to make the file predictable.
+#It does not insert the <number></number> line
+sed 's/<instructions\/>/<instructions><\/instructions>/;s/<text\/>/<text><\/text>/;s/<number\/>/<number><\/number>/;s/<override\/>/<override><\/override>/;s/<item\/>/<item><\/item>/' ../Data/$file  >  ../Data/$file.tmp
+
+#The next two lines eliminate any <number> lines to avoid duplication
+sed '/<number>/d' ../Data/$file.tmp  >  ../Data/$file.tmp2
+sed '/<number\/>/d' ../Data/$file.tmp2 > ../Data/$file.tmp3
+
+#The next line inserts the <number> line in correct format.
+sed '/<override>/i\
+<number><\/number>
+<goesTo>
+</goesTo>
+<comesFrom>
+</comesFrom>' ../Data/$file.tmp3  >  ../Data/$file.tmp4
+
+#This line was supposed to put the whole file in proper format,
+#but it puts back the <text/> usage
+#It may not be necessary.
+#java $XALANJAVAJAR org.apache.xalan.xslt.Process -in ../Data/$file.tmp4 -xsl ../Xsl/setupData.xsl -out ../Data/$file.tmp5
+
+#This eliminates the <text/> format once more to make the file predictable.
+#It also eliminates any unused <item></item> entries.
+sed 's/<instructions\/>/<instructions><\/instructions>/;s/<text\/>/<text><\/text>/;s/<number\/>/<number><\/number>/;s/<override\/>/<override><\/override>/;s/<item\/>//' ../Data/$file.tmp5  >  ../Data/$file.tmp6
+
+#This line removes any blank lines.
+#This may have been done by the java step already.
+sed 's/^$/d' ../Data/$file.tmp6 ../Data/$file.temp
+
+#This moves the changes back to the original file.
+mv ../Data/$file.temp ../Data/$file
+
+done
+
+
+#This line removes the .temp extension
+#rename 's/.temp//' ../Data/*.temp
+
+ 
+
+#These lines remove the T16 .tmp files.
+rm ../Data/*.tmp
+rm ../Data/*.tmp2
+rm ../Data/*.tmp3
+rm ../Data/*.tmp4
+rm ../Data/*.tmp5
+echo
+
+#Here there will have to be a set of copy files to put last years 
+#formatted data files (../../Data/*.temp) in the correct 
+#lines (file names) for this years forms.
+#This is because the formatting and logic may have changed.
+
+
+echo "Last years data files have now been verified for their format."
+sleep 2
+
+
+else
+echo "Last year's Data directory doesn't exist"
+echo "This year's empty data files are now ready to use."
+fi
+
+return
+}

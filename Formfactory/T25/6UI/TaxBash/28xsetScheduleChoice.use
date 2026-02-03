@@ -1,0 +1,68 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+set_schedule_choice() {
+while true;
+do
+  clear
+  echo "Schedules :"
+  echo
+  echo "       1) Schedule 1"
+#  echo "       2) Schedule 2"
+  echo "       3) Schedule 3"
+  echo "       a) Schedule A"
+  echo "       b) Schedule B"
+  echo "       c) Schedule C"
+  echo "       d) Schedule D"  
+#  echo "       h) Show Schedule H."
+#  echo "   1041k) Show Form1041SchedK1"
+#  echo "   1065k) Show Form1065SchedK1"
+#  echo "  1065Bk) Show Form1065BSchedK1" 
+#  echo "  1120Sk) Show Form1120SSchedK1" 
+#  echo "   8865k) Show Form8865SchedK1"
+#  echo "      se) Show Schedule SE."
+  
+  echo "       q) Return to Main Menu"
+  echo
+  echo "Please enter the letter(s) of your choice then press return."
+  read sched_choice
+
+    case $sched_choice in
+          1) set_copy_number  Sched1		;;
+          2) set_copy_number  Sched2		;;
+          3) set_copy_number  Sched3		;;
+          a) set_copy_number  SchedA		;;
+          b) set_copy_number  SchedB		;;
+          c) set_copy_number  SchedC		;;
+          d) set_copy_number  SchedD		;;
+          h) set_copy_number  SchedH		;;
+      1041k) set_copy_number  Form1041SchedK1	;;
+      1065k) set_copy_number  Form1065SchedK1	;;
+     1065Bk) set_copy_number  Form1065BSchedK1	;;
+     1120Sk) set_copy_number  Form1120SSchedK1	;; 
+      8865k) set_copy_number  Form8865SchedK1	;;
+         se) set_copy_number  SchedSE		;;
+
+          q) break;;	
+    esac
+done
+}
+

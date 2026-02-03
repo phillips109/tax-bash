@@ -1,0 +1,61 @@
+
+#Copyright(C) 2023, 2024 Phillips Wedemeyer
+#
+#This file is part of a program called Tax-bash.
+#
+#Tax-bash is free software: you can redistibute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#Tax-bash is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+#
+#
+
+
+variables(){
+    while true;
+    do
+    clear
+    echo
+    echo "The tax-bash program depends on several global variables:"
+    echo "They are best set in the file ~/.bashrc"
+    echo "so that they are set whenever you restart your computer."
+    echo
+    echo "The first is GNUCASHFILES which should be set to"
+    echo "the path to the backup files of your GnuCash program."
+    echo "On my computer, the path is"
+    echo "  ~/.gnucash.data"
+    echo "This variable is best set in ~/.bashrc"
+    echo "To do that add the following 2 lines to the end of ~/.bashrc:"
+    echo "  GNUCASHFILES='~/.gnucash.data"
+    echo "  export GNUCASHFILES"
+    echo
+    echo "The second is XALANJAVAJAR which should be set to"
+    echo "the class path to the xalan jar file."
+    echo "On my computer, the value is"
+    echo "  '-cp /usr/share/java/xalan2.jar'"
+    echo "This variable is also best set in ~/.bashrc"
+    echo "How to do this is described under choice 3) in the previous menu."
+    echo
+    echo "The third variable is PATH"
+    echo "Tax-bash needs to use fop"
+    echo "Therefore, fop should be in your PATH variable."
+    echo "How to do this is described under choice 4) in the previous menu."
+    echo
+    echo "Enter q to return to the previous menu."
+    read choice
+    
+    case "$choice" in
+	q) break;;
+    esac
+done
+
+}
+    

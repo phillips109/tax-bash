@@ -1,0 +1,83 @@
+set_copy_number() {
+    while true;
+    do
+	clear
+	echo "Choose the copy with which you wish to work:"
+	check_copy_existence $1 00
+        check_copy_existence $1 01
+	check_copy_existence $1 02
+	check_copy_existence $1 03
+	check_copy_existence $1 04
+	check_copy_existence $1 05
+	check_copy_existence $1 06
+	check_copy_existence $1 07
+	check_copy_existence $1 08
+	check_copy_existence $1 09
+	check_copy_existence $1 10
+	check_copy_existence $1 11
+	check_copy_existence $1 12
+	check_copy_existence $1 13
+	check_copy_existence $1 14
+	check_copy_existence $1 15
+	check_copy_existence $1 16
+	check_copy_existence $1 17
+        check_copy_existence $1 18
+	check_copy_existence $1 19
+	check_copy_existence $1 20
+        echo "    new) Create a new copy of $1."
+	echo "     rm) Remove a copy of $1."
+	echo "      q) Return to previous menu."
+
+	echo
+	echo "There ought to be an 00 copy."
+	echo "If there is no 00 copy,"
+	echo "it means $1 is not yet"
+	echo "part of the tax-bash program."
+	echo
+        echo "Enter the number of the copy"
+	echo "with which you wish to work"
+	echo
+	echo "If you wish to create a new copy of $1, then"
+	echo "enter new"
+	echo
+	echo "If you wish to remove a copy of $1, then"
+	echo "enter rm"
+	echo
+	echo "To return to the previous menu"
+	echo "enter q"
+	echo
+	echo "  Enter your choice:"
+        read copy_number
+ 
+
+	case $copy_number in
+	 00) choice00NotAllowed $copy_number;;
+         01) set_menu_choices $1 $copy_number;;
+         02) set_menu_choices $1 $copy_number;;     
+         03) set_menu_choices $1 $copy_number;;
+         04) set_menu_choices $1 $copy_number;;
+         05) set_menu_choices $1 $copy_number;;
+         06) set_menu_choices $1 $copy_number;;
+         07) set_menu_choices $1 $copy_number;;
+         08) set_menu_choices $1 $copy_number;;
+         09) set_menu_choices $1 $copy_number;;
+         10) set_menu_choices $1 $copy_number;;
+         11) set_menu_choices $1 $copy_number;;
+         12) set_menu_choices $1 $copy_number;;
+         13) set_menu_choices $1 $copy_number;;
+         14) set_menu_choices $1 $copy_number;;
+         15) set_menu_choices $1 $copy_number;;
+         16) set_menu_choices $1 $copy_number;;
+         17) set_menu_choices $1 $copy_number;;
+         18) set_menu_choices $1 $copy_number;;
+         19) set_menu_choices $1 $copy_number;;
+         20) set_menu_choices $1 $copy_number;;
+        new) create_new_copy $1;;
+	 rm) removeForm $1 $2;;
+         q) break;;
+	 
+	esac
+	done
+
+}
+
