@@ -33,7 +33,7 @@ echo "TSSNoM)    Enter taxpayor's second 2 SSN digits.    "
 echo "TSSNoL)    Enter taxpayor's last 4 SSN digits.      "
 echo "SFNI  )    ENter spouse's first name.               "
 echo "SLN   )    Enter spouse's last name.                "
-echo "SSNoF )    Enter spouse's first 3 SSN digits.       "
+echo "SSSNoF)    Enter spouse's first 3 SSN digits.       "
 echo "SSSNoM)    Enter spouse's second 2 SSN digits.      "
 echo "SSSNoL)    Enter spouse's last 4 SSN digits.                             "
 echo "FS    )    Enter filing status.                     "
@@ -52,7 +52,7 @@ TSSNoM)    set_line_menu_text   $1 $2  lineTSSNoM                           ;;
 TSSNoL)    set_line_menu_text   $1 $2  lineTSSNoL                           ;;
 SFNI  )    set_line_menu_text   $1 $2  lineSFNI                             ;;
 SLN   )    set_line_menu_text   $1 $2  lineSLN                              ;;
-SSNoF )    set_line_menu_text   $1 $2  lineSSNoF                            ;;
+SSSNoF)    set_line_menu_text   $1 $2  lineSSNoF                            ;;
 SSSNoM)    set_line_menu_text   $1 $2  lineSSSNoM                           ;;
 SSSNoL)    set_line_menu_text   $1 $2  lineSSSNoL                           ;;
 FS    )    set_line_menu_text   $1 $2  lineFS                               ;;
@@ -76,7 +76,7 @@ echo "TSSNoM)    Enter taxpayor's second 2 SSN digits.    "
 echo "TSSNoL)    Enter taxpayor's last 4 SSN digits.      "
 echo "SFNI  )    ENter spouse's first name.               "
 echo "SLN   )    Enter spouse's last name.                "
-echo "SSNoF )    Enter spouse's first 3 SSN digits.       "
+echo "SSSNoF )    Enter spouse's first 3 SSN digits.       "
 echo "SSSNoM)    Enter spouse's second 2 SSN digits.      "
 echo "SSSNoL)    Enter spouse's last 4 SSN digits.                                                                   "
 echo "FS    )    Enter filing status.                     "
@@ -95,7 +95,7 @@ TSSNoM)    set_line_menu_text   $1 $2  lineTSSNoM                           ;;
 TSSNoL)    set_line_menu_text   $1 $2  lineTSSNoL                           ;;
 SFNI  )    set_line_menu_text   $1 $2  lineSFNI                             ;;
 SLN   )    set_line_menu_text   $1 $2  lineSLN                              ;;
-SSNoF )    set_line_menu_text   $1 $2  lineSSNoF                            ;;
+SSSNoF )    set_line_menu_text   $1 $2  lineSSNoF                            ;;
 SSSNoM)    set_line_menu_text   $1 $2  lineSSSNoM                           ;;
 SSSNoL)    set_line_menu_text   $1 $2  lineSSSNoL                           ;;
 FS    )    set_line_menu_text   $1 $2  lineFS                               ;;

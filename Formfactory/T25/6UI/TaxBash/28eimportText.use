@@ -23,7 +23,7 @@ importText(){
 for file in $(dir ../Data/$1_Copy$2_*_text.xml)
 do
 #    cp ~/Tax-bash/PW/T23/Data/$1_Copy01_line*_text.xml .
-    cp ~/TB/PW/T22/$file ../Data/
+    cp ~/TB/PW/T24/$file ../Data/
 done
 set_menu_choices $1 $2
 }

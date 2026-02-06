@@ -2,7 +2,7 @@ tlin	!Apart	!012	!
 tlin	!FS	!011	!                              
 tlin	!SFNI	!006	!                              
 tlin	!SLN	!007	!                              
-tlin	!SSNoF	!008	!                              
+tlin	!SSSNoF	!008	!                              
 tlin	!SSSNoL	!010	!                              
 tlin	!SSSNoM	!009	!                              
 tlin	!TFNI	!001	!                              
