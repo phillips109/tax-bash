@@ -1,0 +1,191 @@
+seq       	!type      	!name      	!menuEntry                                                                                           
+100       	!dlin      	!1i        	!                                                                                                    
+104       	!dlin      	!04a       	!                                                                                                    
+105       	!dlin      	!05a       	!                                                                                                    
+ 10       	!tlin      	!DateS     	!                                                                                                    
+117       	!tlin      	!youdep    	!Enter x if someone can claim you as a dependent                                                                                                    
+118       	!tlin      	!Sdep      	!Enter x if someone can claim your spouse as a dependent                                                                                                    
+119       	!tlin      	!SiSep     	!Enter x if spouse itejizes on a separate return.                                                                                                    
+ 11       	!tlin      	!Othr      	!                                                                                                    
+120       	!tlin      	!2CitA     	!                                                                                                    
+121       	!tlin      	!Ya58      	!Enter x if you were born before Jan 2 1961.                                                                                                    
+122       	!tlin      	!Yblind    	!Enter x if you are blind.                                                                                                    
+123       	!tlin      	!Sa58      	!Enter x if your spouse was born before Jan 2 1961.                                                                                                    
+124       	!tlin      	!Sblind    	!Enter x if your spouse is blind.                                                                                                    
+ 12       	!tlin      	!aliS      	!Enter x if you are a dual-status alien.                                                                                                    
+132       	!tlin      	!8814      	!Enter x if any tax from Form 8814.                                                                                                    
+133       	!tlin      	!4972      	!Enter x if any tax is from Form 4972.                                                                                                    
+134       	!tlin      	!Other     	!Enter x if any tax from other Form(s).                                                                                                    
+135       	!tlin      	!tOther    	!Enter the name of other Forn(s).                                                                                                    
+ 13       	!tlin      	!aSname    	!                                                                                                    
+145       	!dlin      	!25a       	!Enter Income from W#s.                                                                                                    
+146       	!dlin      	!25b       	!Enter income from Form(s) 1099.                                                                                                    
+147       	!dlin      	!25c       	!Enter income from other forms.                                                                                                    
+149       	!dlin      	!26        	!2025 estimate tax payments and amt applied from 22024 return.                                                                                                    
+ 14       	!tlin      	!alien     	!                                                                                                    
+150       	!dlin      	!27a       	!Enter Earned Income Credit.                                                                                                    
+158       	!dlin      	!35a       	!Enter the amouont you want applied to your 2026 return.                                                                                                    
+ 15       	!tlin      	!addr1     	!                                                                                                    
+162       	!tlin      	!26F       	!First 3 digits of former wife's SSN.                                                                                                    
+163       	!tlin      	!26M       	!Middle 2 digits of former wife's SSN.                                                                                                    
+164       	!tlin      	!26L       	!Last 4 digits of former wife's SSN.                                                                                                    
+165       	!tlin      	!27bCk     	!Enter x if Clergy fiing SE.                                                                                                    
+166       	!tlin      	!27cCk     	!Enter x if you do not want to claim the EIC.                                                                                                    
+167       	!tlin      	!28Ck      	!Enter x if you do not want to claim the ACTC.                                                                                                    
+168       	!tlin      	!35aCk     	!Enter x if Form 8888 is attached.                                                                                                    
+169       	!tlin      	!35cCkg    	!Enter x if this is a checking account.                                                                                                    
+ 16       	!tlin      	!addr2     	!                                                                                                    
+170       	!tlin      	!35cSvg    	!Enter x if this is a savings account.                                                                                                    
+171       	!tlin      	!35b1      	!Enter first digit is rounting number.                                                                                                    
+172       	!tlin      	!35d1      	!Enter first digit of account number.                                                                                                    
+173       	!tlin      	!35b2      	!Enter second digit of rounting number.                                                                                                    
+174       	!tlin      	!35d2      	!Enter second digit of account number.                                                                                                    
+175       	!tlin      	!35b3      	!Enter third digit of routing number.                                                                                                    
+176       	!tlin      	!35d3      	!Enter third digit of account number.                                                                                                    
+177       	!tlin      	!35b4      	!Enter fourth digit os routing number.                                                                                                    
+178       	!tlin      	!35d4      	!Enter fourth digit of account number.                                                                                                    
+179       	!tlin      	!35b5      	!Enter fifth digit of routing number.                                                                                                    
+ 17       	!tlin      	!aptNo     	!Enter apartment number.                                                                                                    
+180       	!tlin      	!35d5      	!Enter fifthe digit of account number.                                                                                                    
+181       	!tlin      	!35b6      	!Enter sixth digit of routing number.                                                                                                    
+182       	!tlin      	!35d6      	!Enter sixth digit of account number.                                                                                                    
+183       	!tlin      	!35b7      	!Enter seventh digit of routing number.                                                                                                    
+184       	!tlin      	!35d7      	!Enter seventh digit of account number.                                                                                                    
+185       	!tlin      	!35b8      	!Enter eighth digit of routing number.                                                                                                    
+186       	!tlin      	!35d8      	!Enter eighth digit of account number.                                                                                                    
+187       	!tlin      	!35b9      	!Enter ninth digit of routing number.                                                                                                    
+188       	!tlin      	!35d9      	!Enter ninthe digit of account number.                                                                                                    
+189       	!tlin      	!35d10     	!Enter tenth digit of account number.                                                                                                    
+ 18       	!tlin      	!city      	!Enter city.                                                                                                    
+190       	!tlin      	!35d11     	!Enter eleventh digit of account number.                                                                                                    
+191       	!tlin      	!35d12     	!Enter twelvth digit of account number.                                                                                                    
+192       	!tlin      	!35d13     	!Enter thirteenth digit of account number.                                                                                                    
+193       	!tlin      	!35d14     	!Enter fourteenth digit of account number.                                                                                                    
+194       	!tlin      	!35d15     	!Enter fifteenth digit of account number.                                                                                                    
+195       	!tlin      	!35d16     	!Enter sixteenth digit of account number.                                                                                                    
+196       	!tlin      	!35d17     	!Enter seventeenth digit of account number.                                                                                                    
+197       	!tlin      	!39Y       	!Enter x to allow another person to discuss this return with the IRS.                                                                                                    
+198       	!tlin      	!39N       	!Ente x to disallow any other person from discussing this return with the IRS.                                                                                                    
+199       	!tlin      	!Dname     	!Enter disignee's name.                                                                                                    
+ 19       	!tlin      	!ST        	!                                                                                                    
+  1       	!tlin      	!stMo      	!                                                                                                    
+200       	!tlin      	!Dphone    	!Enter Designee's phone number.                                                                                                    
+201       	!tlin      	!421       	!Enter first digit of designee's PIN.                                                                                                    
+202       	!tlin      	!422       	!Enter second digit of designee's PIN.                                                                                                    
+203       	!tlin      	!423       	!Enter third digit of designee's PIN.                                                                                                    
+204       	!tlin      	!424       	!Enter fourth digit of disignee's PIN.                                                                                                    
+205       	!tlin      	!425       	!Enter fifthe digit of designee's PIN.                                                                                                    
+206       	!tlin      	!Tdate     	!                                                                                                    
+207       	!tlin      	!Sdate     	!                                                                                                    
+208       	!tlin      	!Tocc      	!                                                                                                    
+209       	!tlin      	!Socc      	!                                                                                                    
+ 20       	!tlin      	!zip       	!                                                                                                    
+210       	!tlin      	!431       	!Enter first digit of your Identity Protections PIN.                                                                                                    
+211       	!tlin      	!441       	!Enter first digit of spouse's Identity Protection PIN.                                              
+212       	!tlin      	!432       	!Enter second digit of your Identity Protections PIN>                                                                                                    
+213       	!tlin      	!442       	!Enter second digit of spouse's Identity Protection PIN.                                             
+214       	!tlin      	!433       	!Enter third digit of your Identity Protection PIN.                                                                                                    
+215       	!tlin      	!443       	!Enter third digit of spouse's Identity Protection PIN.                                                                                                    
+216       	!tlin      	!434       	!Enter fourth digit ofyour Identity Protection PIN.                                                                                                    
+217       	!tlin      	!444       	!Enter fourthe digit of spouse's Identity Protections PIN.                                                                                                    
+218       	!tlin      	!435       	!Enter fifth digit of your Identity Protection PIN.                                                                                                    
+219       	!tlin      	!445       	!Enter fifthe digit of spouse's Identity Protections PIN.                                                                                                    
+ 21       	!tlin      	!FCntry    	!Enter foreign country.                                                                                                    
+220       	!tlin      	!436       	!Enter sixth digit of your Identity Protection PIN.                                                                                                    
+221       	!tlin      	!446       	!Enter sixthe digit of spouse's Identity Protection PIN.                                                                                                    
+222       	!tlin      	!Tphone    	!Enter your telephone number.                                                                                                    
+223       	!tlin      	!Temail    	!Enter your email address.                                                                                                    
+224       	!tlin      	!Pname     	!Enter Preparer's name.                                                                                                    
+225       	!tlin      	!Pdate     	!Enter date of Preparer's signature.                                                                                                    
+226       	!tlin      	!PTIN      	!Enter Preparer's TIN.                                                                                                    
+227       	!tlin      	!SECk      	!Enter x if Preparer is self-employed.                                                                                                    
+228       	!tlin      	!Fname     	!Enter Firm name of Preparer.                                                                                                    
+229       	!tlin      	!Fphone    	!Enter telephone number of Preparer's firm.                                                                                                    
+ 22       	!tlin      	!Fprov     	!                                                                                                    
+230       	!tlin      	!Faddr     	!Enter address of Preparer's firm.                                                                                                    
+231       	!tlin      	!FEIN      	!Enter PIN of Preparer's firm.                                                                                                    
+ 23       	!tlin      	!Fzip      	!                                                                                                    
+ 24       	!tlin      	!campme    	!                                                                                                    
+ 25       	!tlin      	!campS     	!                                                                                                    
+ 26       	!tlin      	!digY      	!                                                                                                    
+ 27       	!tlin      	!digN      	!                                                                                                    
+ 28       	!tlin      	!d1name    	!                                                                                                    
+ 29       	!tlin      	!d1LN      	!                                                                                                    
+  2       	!tlin      	!stDay     	!                                                                                                    
+ 30       	!tlin      	!d1SF      	!                                                                                                    
+ 31       	!tlin      	!d1SM      	!                                                                                                    
+ 32       	!tlin      	!d1SL      	!                                                                                                    
+ 33       	!tlin      	!d1rel     	!                                                                                                    
+ 34       	!tlin      	!d1LWY     	!                                                                                                    
+ 35       	!tlin      	!d1US      	!                                                                                                    
+ 36       	!tlin      	!d1FTS     	!                                                                                                    
+ 37       	!tlin      	!d1CTC     	!                                                                                                    
+ 38       	!tlin      	!d1PTD     	!                                                                                                    
+ 39       	!tlin      	!d1COD     	!                                                                                                    
+  3       	!tlin      	!stMo      	!                                                                                                    
+ 40       	!tlin      	!d2name    	!                                                                                                    
+ 41       	!tlin      	!d2LN      	!                                                                                                    
+ 42       	!tlin      	!d2SF      	!                                                                                                    
+ 43       	!tlin      	!d2SM      	!                                                                                                    
+ 44       	!tlin      	!d2SL      	!                                                                                                    
+ 45       	!tlin      	!d2rel     	!                                                                                                    
+ 46       	!tlin      	!d1LWY     	!                                                                                                    
+ 47       	!tlin      	!d1US      	!                                                                                                    
+ 48       	!tlin      	!d1FTS     	!                                                                                                    
+ 49       	!tlin      	!d1CTC     	!                                                                                                    
+  4       	!tlin      	!endDay    	!                                                                                                    
+ 50       	!tlin      	!d1PTD     	!                                                                                                    
+ 51       	!tlin      	!d1COD     	!                                                                                                    
+ 52       	!tlin      	!d3name    	!                                                                                                    
+ 53       	!tlin      	!d3LN      	!                                                                                                    
+ 54       	!tlin      	!d3SF      	!                                                                                                    
+ 55       	!tlin      	!d3SM      	!                                                                                                    
+ 56       	!tlin      	!d3SL      	!                                                                                                    
+ 57       	!tlin      	!d3rel     	!                                                                                                    
+ 58       	!tlin      	!d1LWY     	!                                                                                                    
+ 59       	!tlin      	!d1US      	!                                                                                                    
+  5       	!tlin      	!endYr     	!                                                                                                    
+ 60       	!tlin      	!d1FTS     	!                                                                                                    
+ 61       	!tlin      	!d1CTC     	!                                                                                                    
+ 62       	!tlin      	!d1PTD     	!                                                                                                    
+ 63       	!tlin      	!d1COD     	!                                                                                                    
+ 64       	!tlin      	!d4name    	!                                                                                                    
+ 65       	!tlin      	!d4LN      	!                                                                                                    
+ 66       	!tlin      	!d4SF      	!                                                                                                    
+ 67       	!tlin      	!d4SM      	!                                                                                                    
+ 68       	!tlin      	!d4SL      	!                                                                                                    
+ 69       	!tlin      	!d4rel     	!                                                                                                    
+  6       	!tlin      	!Sec301    	!                                                                                                    
+ 70       	!tlin      	!d1LWY     	!                                                                                                    
+ 71       	!tlin      	!d1US      	!                                                                                                    
+ 72       	!tlin      	!d1FTS     	!                                                                                                    
+ 73       	!tlin      	!d1CTC     	!                                                                                                    
+ 74       	!tlin      	!d1PTD     	!                                                                                                    
+ 75       	!tlin      	!d1COD     	!                                                                                                    
+ 76       	!tlin      	!dgt4      	!                                                                                                    
+ 77       	!tlin      	!apart     	!                                                                                                    
+ 78       	!tlin      	!EItyp     	!                                                                                                    
+ 79       	!tlin      	!3c1       	!                                                                                                    
+  7       	!tlin      	!Combat    	!                                                                                                    
+ 80       	!tlin      	!4c1       	!                                                                                                    
+ 81       	!tlin      	!5c1       	!                                                                                                    
+ 82       	!tlin      	!3c2       	!                                                                                                    
+ 83       	!tlin      	!4c2       	!                                                                                                    
+ 84       	!tlin      	!5c2       	!                                                                                                    
+ 85       	!tlin      	!4c3       	!                                                                                                    
+ 86       	!tlin      	!5c3       	!                                                                                                    
+ 87       	!tlin      	!06cCk     	!                                                                                                    
+ 88       	!tlin      	!06dCk     	!                                                                                                    
+ 89       	!tlin      	!07bCk1    	!                                                                                                    
+  8       	!tlin      	!Died      	!                                                                                                    
+ 90       	!tlin      	!07bCk2    	!                                                                                                    
+ 91       	!tlin      	!07bTx1    	!                                                                                                    
+ 92       	!dlin      	!01a       	!                                                                                                    
+ 93       	!dlin      	!01b       	!                                                                                                    
+ 94       	!dlin      	!01c       	!                                                                                                    
+ 95       	!dlin      	!01d       	!                                                                                                    
+ 96       	!dlin      	!01e       	!                                                                                                    
+ 97       	!dlin      	!01f       	!                                                                                                    
+ 98       	!dlin      	!01g       	!                                                                                                    
+ 99       	!dlin      	!01h       	!                                                                                                    
+  9       	!tlin      	!DateT     	!                                                                                                    

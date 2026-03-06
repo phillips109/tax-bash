@@ -203,8 +203,8 @@ catMenus(){
     }
 
 addColumns(){
-
-	awk -f ../Awk/addColumns.awk "form=$1" ../Pre/$1.pre   > $1.pre2.tmp
+	sed -f ../Sed/rmEndSpace2.sed ../Pre/$1.pre > ../Pre/$1.pre1
+	awk -f ../Awk/addColumns.awk "form=$1" ../Pre/$1.pre1   > $1.pre2.tmp
 	cp $1.pre2.tmp ../Pre2/$1.pre2
 	rm $1.pre2.tmp
 }

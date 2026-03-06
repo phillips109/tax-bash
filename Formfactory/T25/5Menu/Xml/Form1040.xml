@@ -1,0 +1,952 @@
+<Form fname="Form1040">
+<taxline name="stMo" type="tlin" color="black">
+<menuEntry>Enter starting month for tax year if needed.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="stDay" type="tlin" color="black">
+<menuEntry>Enter starting day for tax year if needed.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="endMo" type="tlin" color="black">
+<menuEntry>Enter ending month for tax year if needed.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="endDay" type="tlin" color="black">
+<menuEntry>Enter ending day for tax year if needed.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="endYr" type="tlin" color="black">
+<menuEntry>Enter ending year for tax year if needed.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="Sec301" type="tlin" color="black">
+<menuEntry>Enter x if Section 301.9100.2</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="Combat" type="tlin" color="black">
+<menuEntry>Enter x if combat zone.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>08</pgNo>
+</taxline>
+<taxline name="Died" type="tlin" color="black">
+<menuEntry>Enter x if taxpayor or spouse died.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="DateT" type="tlin" color="black">
+<menuEntry>Enter date of death for taxpayor.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="DateS" type="tlin" color="black">
+<menuEntry>Enter date of death for spouse.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="Othr" type="tlin" color="black">
+<menuEntry>Enter x if other.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="aliS" type="tlin" color="black">
+<menuEntry>Enter x if you are a dual-status alien.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="aSname" type="tlin" color="black">
+<menuEntry>If MFS enter spouse's full name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>14</pgNo>
+</taxline>
+<taxline name="alien" type="tlin" color="black">
+<menuEntry>Enter name of alilen spouse/</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="addr1" type="tlin" color="black">
+<menuEntry>Enter number and street portion of address.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="addr2" type="tlin" color="black">
+<menuEntry>Enter second line of address.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="aptNo" type="tlin" color="black">
+<menuEntry>Enter apartment number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="city" type="tlin" color="black">
+<menuEntry>Enter city.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="ST" type="tlin" color="black">
+<menuEntry>Enter state.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="zip" type="tlin" color="black">
+<menuEntry>Enter zip.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="FCntry" type="tlin" color="black">
+<menuEntry>Enter foreign country.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="Fprov" type="tlin" color="black">
+<menuEntry>Enter foreign province.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>12</pgNo>
+</taxline>
+<taxline name="Fzip" type="tlin" color="black">
+<menuEntry>Enter foreign postal code.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="campme" type="tlin" color="black">
+<menuEntry>Enter x if taxpayor wishes to have $3 go to presidential campaign.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>13</pgNo>
+</taxline>
+<taxline name="campS" type="tlin" color="black">
+<menuEntry>Enter x if spouse wishes to have $3 go to presidential campaign.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="digY" type="tlin" color="black">
+<menuEntry>Enter x if used digital assets.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="digN" type="tlin" color="black">
+<menuEntry>Enter x if you did not use digital assets.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>15</pgNo>
+</taxline>
+<taxline name="d1name" type="tlin" color="black">
+<menuEntry>First dependent first name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d1LN" type="tlin" color="black">
+<menuEntry>First dependent last name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d1SF" type="tlin" color="black">
+<menuEntry>First dependent SSN: first 3 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d1SM" type="tlin" color="black">
+<menuEntry>First dependent SSN: middle 2 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d1SL" type="tlin" color="black">
+<menuEntry>First dependent SSN: last 4 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d1rel" type="tlin" color="black">
+<menuEntry>First dependent: relationship to you.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>17</pgNo>
+</taxline>
+<taxline name="d1LWY" type="tlin" color="black">
+<menuEntry>First dependent: Enter x if lived with you more than half of 2025.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1US" type="tlin" color="black">
+<menuEntry>First dependent: And in the U.S.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1FTS" type="tlin" color="black">
+<menuEntry>First dependent: Was a full time student.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1CTC" type="tlin" color="black">
+<menuEntry>First de[emdemt: Child tax credit.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1PTD" type="tlin" color="black">
+<menuEntry>First dependent: Is permanently and totaly disabled.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1COD" type="tlin" color="black">
+<menuEntry>First dependent: Credit for other dependents.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d2name" type="tlin" color="black">
+<menuEntry>Second dependent first name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d2LN" type="tlin" color="black">
+<menuEntry>Second dependent last name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d2SF" type="tlin" color="black">
+<menuEntry>Second dependent SSN: first 3 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d2SM" type="tlin" color="black">
+<menuEntry>Second dependent SSN: middle 2 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d2SL" type="tlin" color="black">
+<menuEntry>Second dependent SSN: last 4 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d2rel" type="tlin" color="black">
+<menuEntry>Second dependent: relationship to you.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>17</pgNo>
+</taxline>
+<taxline name="d1LWY" type="tlin" color="black">
+<menuEntry>Second dependent: Enter x if lived with you more than half of 2025.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1US" type="tlin" color="black">
+<menuEntry>Second dependent: And in the U.S.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1FTS" type="tlin" color="black">
+<menuEntry>Second dependent: Was a full time student.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1CTC" type="tlin" color="black">
+<menuEntry>Second de[emdemt: Child tax credit.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1PTD" type="tlin" color="black">
+<menuEntry>Second dependent: Is permanently and totaly disabled.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1COD" type="tlin" color="black">
+<menuEntry>Second dependent: Credit for other dependents.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d3name" type="tlin" color="black">
+<menuEntry>Third dependent first name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d3LN" type="tlin" color="black">
+<menuEntry>Third dependent last name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d3SF" type="tlin" color="black">
+<menuEntry>Third dependent SSN: first 3 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d3SM" type="tlin" color="black">
+<menuEntry>Third dependent SSN: middle 2 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d3SL" type="tlin" color="black">
+<menuEntry>Third dependent SSN: last 4 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d3rel" type="tlin" color="black">
+<menuEntry>Third dependent: relationship to you.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>17</pgNo>
+</taxline>
+<taxline name="d1LWY" type="tlin" color="black">
+<menuEntry>Third dependent: Enter x if lived with you more than half of 2025.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1US" type="tlin" color="black">
+<menuEntry>Third dependent: And in the U.S.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1FTS" type="tlin" color="black">
+<menuEntry>Third dependent: Was a full time student.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1CTC" type="tlin" color="black">
+<menuEntry>Third de[emdemt: Child tax credit.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1PTD" type="tlin" color="black">
+<menuEntry>Third dependent: Is permanently and totaly disabled.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1COD" type="tlin" color="black">
+<menuEntry>Third dependent: Credit for other dependents.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d4name" type="tlin" color="black">
+<menuEntry>Fourth dependent first name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d4LN" type="tlin" color="black">
+<menuEntry>Fourth dependent last name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d4SF" type="tlin" color="black">
+<menuEntry>Fourth dependent SSN: first 3 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d4SM" type="tlin" color="black">
+<menuEntry>Fourth dependent SSN: middle 2 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d4SL" type="tlin" color="black">
+<menuEntry>Fourth dependent SSN: last 4 digits.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>22</pgNo>
+</taxline>
+<taxline name="d4rel" type="tlin" color="black">
+<menuEntry>Fourth dependent: relationship to you.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>17</pgNo>
+</taxline>
+<taxline name="d1LWY" type="tlin" color="black">
+<menuEntry>Fourth dependent: Enter x if lived with you more than half of 2025.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1US" type="tlin" color="black">
+<menuEntry>Fourth dependent: And in the U.S.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1FTS" type="tlin" color="black">
+<menuEntry>Fourth dependent: Was a full time student.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1CTC" type="tlin" color="black">
+<menuEntry>Fourth de[emdemt: Child tax credit.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1PTD" type="tlin" color="black">
+<menuEntry>Fourth dependent: Is permanently and totaly disabled.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="d1COD" type="tlin" color="black">
+<menuEntry>Fourth dependent: Credit for other dependents.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="dgt4" type="tlin" color="black">
+<menuEntry>Enter x if you have more than 4 dependents.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>17</pgNo>
+</taxline>
+<taxline name="apart" type="tlin" color="black">
+<menuEntry>Enter x if you did not live with separated wife for last 6 months of 2025.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>20</pgNo>
+</taxline>
+<taxline name="EItyp" type="tlin" color="black">
+<menuEntry>Enter type of Earned Income (line 1h).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="3c1" type="tlin" color="black">
+<menuEntry>Enter x if your child's dividends are included in Line 3a.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>25</pgNo>
+</taxline>
+<taxline name="4c1" type="tlin" color="black">
+<menuEntry>Enter x if Rollover (line 4c).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+<taxline name="5c1" type="tlin" color="black">
+<menuEntry>Enter x if Rollover (line 5c).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+<taxline name="3c2" type="tlin" color="black">
+<menuEntry>Enter x if your child's dividends are included in Line 3b.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="4c2" type="tlin" color="black">
+<menuEntry>Enter x if QCD (line 4c).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>21</pgNo>
+</taxline>
+<taxline name="5c2" type="tlin" color="black">
+<menuEntry>Enter x if PSO (line 5c).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+<taxline name="4c3" type="tlin" color="black">
+<menuEntry>Enter x if Other (line 4c).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+<taxline name="5c3" type="tlin" color="black">
+<menuEntry>Emter x if other (line 5c).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+<taxline name="06cCk" type="tlin" color="black">
+<menuEntry>Enter x if you elect to use the lllump-sum election method.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>30</pgNo>
+</taxline>
+<taxline name="06dCk" type="tlin" color="black">
+<menuEntry>Enter x if MFS and lilved apart for entire year.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>31</pgNo>
+</taxline>
+<taxline name="07bCk1" type="tlin" color="black">
+<menuEntry>Enter x if Schedule D is not required (line 7b).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="07bCk2" type="tlin" color="black">
+<menuEntry>Enter x if child's capital gain or loss is included (line 7b).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="07bTx1" type="tlin" color="black">
+<menuEntry>Enter amount of child's capital gain included (line 7b).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="01a" type="dlin" color="black">
+<menuEntry>Enter total amount from Form(s) W2,box 1.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="01b" type="dlin" color="black">
+<menuEntry>Enter household employee wages not reported onf Forms(s) W2.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="01c" type="dlin" color="black">
+<menuEntry>Enter tip income not reported on line 1a.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="01d" type="dlin" color="black">
+<menuEntry>Enter Medicaid waiver payments not reported on Form(s) W2.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="01e" type="dlin" color="black">
+<menuEntry>Enter taxable depended care benefits from Form 2441, line 26.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="01f" type="dlin" color="black">
+<menuEntry>Enter employer-provided adoption benefits from Form 8839, line 31.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="01g" type="dlin" color="black">
+<menuEntry>Enter wages from Form 8919, line 6.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="01h" type="dlin" color="black">
+<menuEntry>Enter other earned income.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>24</pgNo>
+</taxline>
+<taxline name="1i" type="dlin" color="black">
+<menuEntry>Enter nontaable combat pay election.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>25</pgNo>
+</taxline>
+<taxline name="04a" type="dlin" color="black">
+<menuEntry>Enter IRA distributions.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>26</pgNo>
+</taxline>
+<taxline name="05a" type="dlin" color="black">
+<menuEntry>Enter taxable amount of IRA distributions.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>26</pgNo>
+</taxline>
+<taxline name="youdep" type="tlin" color="black">
+<menuEntry>Enter x if someone can claim you as a dependent</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="Sdep" type="tlin" color="black">
+<menuEntry>Enter x if someone can claim your spouse as a dependent</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="SiSep" type="tlin" color="black">
+<menuEntry>Enter x if spouse itemizes on a separate return.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="2CitA" type="tlin" color="black">
+<menuEntry>Enter x if you are a dual status alien.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="Ya58" type="tlin" color="black">
+<menuEntry>Enter x if you were born before Jan 2 1961.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="Yblind" type="tlin" color="black">
+<menuEntry>Enter x if you are blind.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>33</pgNo>
+</taxline>
+<taxline name="Sa58" type="tlin" color="black">
+<menuEntry>Enter x if your spouse was born before Jan 2 1961.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>34</pgNo>
+</taxline>
+<taxline name="Sblind" type="tlin" color="black">
+<menuEntry>Enter x if your spouse is blind.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>34</pgNo>
+</taxline>
+<taxline name="8814" type="tlin" color="black">
+<menuEntry>Enter x if any tax from Form 8814.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>34</pgNo>
+</taxline>
+<taxline name="4972" type="tlin" color="black">
+<menuEntry>Enter x if any tax is from Form 4972.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>34</pgNo>
+</taxline>
+<taxline name="Other" type="tlin" color="black">
+<menuEntry>Enter x if any tax from other Form(s).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="tOther" type="tlin" color="black">
+<menuEntry>Enter the name of other Forn(s).</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>25</pgNo>
+</taxline>
+<taxline name="25a" type="dlin" color="black">
+<menuEntry>Enter Income from W#s.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>25</pgNo>
+</taxline>
+<taxline name="25b" type="dlin" color="black">
+<menuEntry>Enter income from Form(s) 1099.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>25</pgNo>
+</taxline>
+<taxline name="25c" type="dlin" color="black">
+<menuEntry>Enter income from other forms.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo></pgNo>
+</taxline>
+<taxline name="26" type="dlin" color="black">
+<menuEntry>2025 estimate tax payments and amt applied from 22024 return.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>39</pgNo>
+</taxline>
+<taxline name="27a" type="dlin" color="black">
+<menuEntry>Enter Earned Income Credit.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>40</pgNo>
+</taxline>
+<taxline name="35a" type="dlin" color="black">
+<menuEntry>Enter the amouont you want applied to your 2026 return.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="26F" type="tlin" color="black">
+<menuEntry>First 3 digits of former wife's SSN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>39</pgNo>
+</taxline>
+<taxline name="26M" type="tlin" color="black">
+<menuEntry>Middle 2 digits of former wife's SSN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>39</pgNo>
+</taxline>
+<taxline name="26L" type="tlin" color="black">
+<menuEntry>Last 4 digits of former wife's SSN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>39</pgNo>
+</taxline>
+<taxline name="27bCk" type="tlin" color="black">
+<menuEntry>Enter x if Clergy fiing SE.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>43</pgNo>
+</taxline>
+<taxline name="27cCk" type="tlin" color="black">
+<menuEntry>Enter x if you do not want to claim the EIC.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>43</pgNo>
+</taxline>
+<taxline name="28Ck" type="tlin" color="black">
+<menuEntry>Enter x if you do not want to claim the ACTC.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>61</pgNo>
+</taxline>
+<taxline name="35aCk" type="tlin" color="black">
+<menuEntry>Enter x if Form 8888 is attached.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>62</pgNo>
+</taxline>
+<taxline name="35cCkg" type="tlin" color="black">
+<menuEntry>Enter x if this is a checking account.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35cSvg" type="tlin" color="black">
+<menuEntry>Enter x if this is a savings account.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b1" type="tlin" color="black">
+<menuEntry>Enter first digit is rounting number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d1" type="tlin" color="black">
+<menuEntry>Enter first digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b2" type="tlin" color="black">
+<menuEntry>Enter second digit of rounting number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d2" type="tlin" color="black">
+<menuEntry>Enter second digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b3" type="tlin" color="black">
+<menuEntry>Enter third digit of routing number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d3" type="tlin" color="black">
+<menuEntry>Enter third digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b4" type="tlin" color="black">
+<menuEntry>Enter fourth digit os routing number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d4" type="tlin" color="black">
+<menuEntry>Enter fourth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b5" type="tlin" color="black">
+<menuEntry>Enter fifth digit of routing number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d5" type="tlin" color="black">
+<menuEntry>Enter fifthe digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b6" type="tlin" color="black">
+<menuEntry>Enter sixth digit of routing number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d6" type="tlin" color="black">
+<menuEntry>Enter sixth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b7" type="tlin" color="black">
+<menuEntry>Enter seventh digit of routing number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d7" type="tlin" color="black">
+<menuEntry>Enter seventh digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b8" type="tlin" color="black">
+<menuEntry>Enter eighth digit of routing number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d8" type="tlin" color="black">
+<menuEntry>Enter eighth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35b9" type="tlin" color="black">
+<menuEntry>Enter ninth digit of routing number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d9" type="tlin" color="black">
+<menuEntry>Enter ninthe digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d10" type="tlin" color="black">
+<menuEntry>Enter tenth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d11" type="tlin" color="black">
+<menuEntry>Enter eleventh digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d12" type="tlin" color="black">
+<menuEntry>Enter twelvth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d13" type="tlin" color="black">
+<menuEntry>Enter thirteenth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d14" type="tlin" color="black">
+<menuEntry>Enter fourteenth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d15" type="tlin" color="black">
+<menuEntry>Enter fifteenth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d16" type="tlin" color="black">
+<menuEntry>Enter sixteenth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="35d17" type="tlin" color="black">
+<menuEntry>Enter seventeenth digit of account number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>63</pgNo>
+</taxline>
+<taxline name="39Y" type="tlin" color="black">
+<menuEntry>Enter x to allow another person to discuss this return with the IRS.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="39N" type="tlin" color="black">
+<menuEntry>Ente x to disallow any other person from discussing this return with the IRS.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="Dname" type="tlin" color="black">
+<menuEntry>Enter disignee's name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="Dphone" type="tlin" color="black">
+<menuEntry>Enter Designee's phone number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="421" type="tlin" color="black">
+<menuEntry>Enter first digit of designee's PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="422" type="tlin" color="black">
+<menuEntry>Enter second digit of designee's PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="423" type="tlin" color="black">
+<menuEntry>Enter third digit of designee's PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="424" type="tlin" color="black">
+<menuEntry>Enter fourth digit of disignee's PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="425" type="tlin" color="black">
+<menuEntry>Enter fifthe digit of designee's PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="Tdate" type="tlin" color="black">
+<menuEntry>Enter date signed by taxpayor.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="Sdate" type="tlin" color="black">
+<menuEntry>Enter date signed by spouse.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="Tocc" type="tlin" color="black">
+<menuEntry>Enter taxpayor's occupation.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>65</pgNo>
+</taxline>
+<taxline name="Socc" type="tlin" color="black">
+<menuEntry>Enter spouse's occupation.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="431" type="tlin" color="black">
+<menuEntry>Enter first digit of your Identity Protections PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="441" type="tlin" color="black">
+<menuEntry>Enter first digit of spouse's Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="432" type="tlin" color="black">
+<menuEntry>Enter second digit of your Identity Protections PIN></menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="442" type="tlin" color="black">
+<menuEntry>Enter second digit of spouse's Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="433" type="tlin" color="black">
+<menuEntry>Enter third digit of your Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="443" type="tlin" color="black">
+<menuEntry>Enter third digit of spouse's Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="434" type="tlin" color="black">
+<menuEntry>Enter fourth digit ofyour Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="444" type="tlin" color="black">
+<menuEntry>Enter fourthe digit of spouse's Identity Protections PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="435" type="tlin" color="black">
+<menuEntry>Enter fifth digit of your Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="445" type="tlin" color="black">
+<menuEntry>Enter fifthe digit of spouse's Identity Protections PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="436" type="tlin" color="black">
+<menuEntry>Enter sixth digit of your Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="446" type="tlin" color="black">
+<menuEntry>Enter sixthe digit of spouse's Identity Protection PIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="Tphone" type="tlin" color="black">
+<menuEntry>Enter your telephone number.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="Temail" type="tlin" color="black">
+<menuEntry>Enter your email address.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>66</pgNo>
+</taxline>
+<taxline name="Pname" type="tlin" color="black">
+<menuEntry>Enter Preparer's name.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+<taxline name="Pdate" type="tlin" color="black">
+<menuEntry>Enter date of Preparer's signature.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+<taxline name="PTIN" type="tlin" color="black">
+<menuEntry>Enter Preparer's TIN.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+<taxline name="SECk" type="tlin" color="black">
+<menuEntry>Enter x if Preparer is self-employed.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+<taxline name="Fname" type="tlin" color="black">
+<menuEntry>Enter Firm name of Preparer.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+<taxline name="Fphone" type="tlin" color="black">
+<menuEntry>Enter telephone number of Preparer's firm.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+<taxline name="Faddr" type="tlin" color="black">
+<menuEntry>Enter address of Preparer's firm.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+<taxline name="FEIN" type="tlin" color="black">
+<menuEntry>Enter PIN of Preparer's firm.</menuEntry>
+<IRSInstructions>i1040gi.pdf</IRSInstructions>
+<pgNo>67</pgNo>
+</taxline>
+</Form>

@@ -53,7 +53,7 @@
 <!-- '-' removes no transactions -->
 <!-- will not select a range of dates -->
 
-  <xsl:template match="gnc:transaction[not(contains(trn:date-posted,'2023'))]">
+  <xsl:template match="gnc:transaction[not(contains(trn:date-posted,'2024'))]">
  
   
  <!-- empty template removes the matched nodes -->

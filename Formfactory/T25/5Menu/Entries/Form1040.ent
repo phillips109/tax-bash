@@ -1,0 +1,190 @@
+100	!dlin	!1i	!
+104	!dlin	!04a	!
+105	!dlin	!05a	!
+ 10	!tlin	!DateS	!
+117	!tlin	!youdep	!
+118	!tlin	!Sdep	!
+119	!tlin	!SiSep	!
+ 11	!tlin	!Othr	!
+120	!tlin	!2CitA	!
+121	!tlin	!Ya58	!
+122	!tlin	!Yblind	!
+123	!tlin	!Sa58	!
+124	!tlin	!Sblind	!
+ 12	!tlin	!aliS	!
+132	!tlin	!8814	!
+133	!tlin	!4972	!
+134	!tlin	!Other	!
+135	!tlin	!tOther	!
+ 13	!tlin	!aSname	!
+145	!dlin	!25a	!
+146	!dlin	!25b	!
+147	!dlin	!25c	!
+149	!dlin	!26	!
+ 14	!tlin	!alien	!
+150	!dlin	!27a	!
+158	!dlin	!35a	!
+ 15	!tlin	!addr1	!
+162	!tlin	!26F	!
+163	!tlin	!26M	!
+164	!tlin	!26L	!
+165	!tlin	!27bCk	!
+166	!tlin	!27cCk	!
+167	!tlin	!28Ck	!
+168	!tlin	!35aCk	!
+169	!tlin	!35cCkg	!
+ 16	!tlin	!addr2	!
+170	!tlin	!35cSvg	!
+171	!tlin	!35b1	!
+172	!tlin	!35d1	!
+173	!tlin	!35b2	!
+174	!tlin	!35d2	!
+175	!tlin	!35b3	!
+176	!tlin	!35d3	!
+177	!tlin	!35b4	!
+178	!tlin	!35d4	!
+179	!tlin	!35b5	!
+ 17	!tlin	!aptNo	!
+180	!tlin	!35d5	!
+181	!tlin	!35b6	!
+182	!tlin	!35d6	!
+183	!tlin	!35b7	!
+184	!tlin	!35d7	!
+185	!tlin	!35b8	!
+186	!tlin	!35d8	!
+187	!tlin	!35b9	!
+188	!tlin	!35d9	!
+189	!tlin	!35d10	!
+ 18	!tlin	!city	!
+190	!tlin	!35d11	!
+191	!tlin	!35d12	!
+192	!tlin	!35d13	!
+193	!tlin	!35d14	!
+194	!tlin	!35d15	!
+195	!tlin	!35d16	!
+196	!tlin	!35d17	!
+197	!tlin	!39Y	!
+198	!tlin	!39N	!
+199	!tlin	!Dname	!
+ 19	!tlin	!ST	!
+  1	!tlin	!stMo	!
+200	!tlin	!Dphone	!
+201	!tlin	!421	!
+202	!tlin	!422	!
+203	!tlin	!423	!
+204	!tlin	!424	!
+205	!tlin	!425	!
+206	!tlin	!Tdate	!
+207	!tlin	!Sdate	!
+208	!tlin	!Tocc	!
+209	!tlin	!Socc	!
+ 20	!tlin	!zip	!
+210	!tlin	!431	!
+211	!tlin	!441	!
+212	!tlin	!432	!
+213	!tlin	!442	!
+214	!tlin	!433	!
+215	!tlin	!443	!
+216	!tlin	!434	!
+217	!tlin	!444	!
+218	!tlin	!435	!
+219	!tlin	!445	!
+ 21	!tlin	!FCntry	!
+220	!tlin	!436	!
+221	!tlin	!446	!
+222	!tlin	!Tphone	!
+223	!tlin	!Temail	!
+224	!tlin	!Pname	!
+225	!tlin	!Pdate	!
+226	!tlin	!PTIN	!
+227	!tlin	!SECk	!
+228	!tlin	!Fname	!
+229	!tlin	!Fphone	!
+ 22	!tlin	!Fprov	!
+230	!tlin	!Faddr	!
+231	!tlin	!FEIN	!
+ 23	!tlin	!Fzip	!
+ 24	!tlin	!campme	!
+ 25	!tlin	!campS	!
+ 26	!tlin	!digY	!
+ 27	!tlin	!digN	!
+ 28	!tlin	!d1name	!
+ 29	!tlin	!d1LN	!
+  2	!tlin	!stDay	!
+ 30	!tlin	!d1SF	!
+ 31	!tlin	!d1SM	!
+ 32	!tlin	!d1SL	!
+ 33	!tlin	!d1rel	!
+ 34	!tlin	!d1LWY	!
+ 35	!tlin	!d1US	!
+ 36	!tlin	!d1FTS	!
+ 37	!tlin	!d1CTC	!
+ 38	!tlin	!d1PTD	!
+ 39	!tlin	!d1COD	!
+  3	!tlin	!stMo	!
+ 40	!tlin	!d2name	!
+ 41	!tlin	!d2LN	!
+ 42	!tlin	!d2SF	!
+ 43	!tlin	!d2SM	!
+ 44	!tlin	!d2SL	!
+ 45	!tlin	!d2rel	!
+ 46	!tlin	!d1LWY	!
+ 47	!tlin	!d1US	!
+ 48	!tlin	!d1FTS	!
+ 49	!tlin	!d1CTC	!
+  4	!tlin	!endDay	!
+ 50	!tlin	!d1PTD	!
+ 51	!tlin	!d1COD	!
+ 52	!tlin	!d3name	!
+ 53	!tlin	!d3LN	!
+ 54	!tlin	!d3SF	!
+ 55	!tlin	!d3SM	!
+ 56	!tlin	!d3SL	!
+ 57	!tlin	!d3rel	!
+ 58	!tlin	!d1LWY	!
+ 59	!tlin	!d1US	!
+  5	!tlin	!endYr	!
+ 60	!tlin	!d1FTS	!
+ 61	!tlin	!d1CTC	!
+ 62	!tlin	!d1PTD	!
+ 63	!tlin	!d1COD	!
+ 64	!tlin	!d4name	!
+ 65	!tlin	!d4LN	!
+ 66	!tlin	!d4SF	!
+ 67	!tlin	!d4SM	!
+ 68	!tlin	!d4SL	!
+ 69	!tlin	!d4rel	!
+  6	!tlin	!Sec301	!
+ 70	!tlin	!d1LWY	!
+ 71	!tlin	!d1US	!
+ 72	!tlin	!d1FTS	!
+ 73	!tlin	!d1CTC	!
+ 74	!tlin	!d1PTD	!
+ 75	!tlin	!d1COD	!
+ 76	!tlin	!dgt4	!
+ 77	!tlin	!apart	!
+ 78	!tlin	!EItyp	!
+ 79	!tlin	!3c1	!
+  7	!tlin	!Combat	!
+ 80	!tlin	!4c1	!
+ 81	!tlin	!5c1	!
+ 82	!tlin	!3c2	!
+ 83	!tlin	!4c2	!
+ 84	!tlin	!5c2	!
+ 85	!tlin	!4c3	!
+ 86	!tlin	!5c3	!
+ 87	!tlin	!06cCk	!
+ 88	!tlin	!06dCk	!
+ 89	!tlin	!07bCk1	!
+  8	!tlin	!Died	!
+ 90	!tlin	!07bCk2	!
+ 91	!tlin	!07bTx1	!
+ 92	!dlin	!01a	!
+ 93	!dlin	!01b	!
+ 94	!dlin	!01c	!
+ 95	!dlin	!01d	!
+ 96	!dlin	!01e	!
+ 97	!dlin	!01f	!
+ 98	!dlin	!01g	!
+ 99	!dlin	!01h	!
+  9	!tlin	!DateT	!

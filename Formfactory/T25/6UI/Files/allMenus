@@ -33,7 +33,7 @@ echo "TSSNoM)    Enter taxpayor's second 2 SSN digits.    "
 echo "TSSNoL)    Enter taxpayor's last 4 SSN digits.      "
 echo "SFNI  )    ENter spouse's first name.               "
 echo "SLN   )    Enter spouse's last name.                "
-echo "SSSNoF)    Enter spouse's first 3 SSN digits.       "
+echo "SSNoF )    Enter spouse's first 3 SSN digits.       "
 echo "SSSNoM)    Enter spouse's second 2 SSN digits.      "
 echo "SSSNoL)    Enter spouse's last 4 SSN digits.                             "
 echo "FS    )    Enter filing status.                     "
@@ -52,7 +52,7 @@ TSSNoM)    set_line_menu_text   $1 $2  lineTSSNoM                           ;;
 TSSNoL)    set_line_menu_text   $1 $2  lineTSSNoL                           ;;
 SFNI  )    set_line_menu_text   $1 $2  lineSFNI                             ;;
 SLN   )    set_line_menu_text   $1 $2  lineSLN                              ;;
-SSSNoF)    set_line_menu_text   $1 $2  lineSSNoF                            ;;
+SSNoF )    set_line_menu_text   $1 $2  lineSSNoF                            ;;
 SSSNoM)    set_line_menu_text   $1 $2  lineSSSNoM                           ;;
 SSSNoL)    set_line_menu_text   $1 $2  lineSSSNoL                           ;;
 FS    )    set_line_menu_text   $1 $2  lineFS                               ;;
@@ -63,43 +63,399 @@ done
 }
 
 
-set_Bkg_line_data_choice() {
+set_Form1040_line_data_choice() {
 while true;
 do
 clear
-echo "Lines in Bkg in which to enter or edit data:"
+echo "Lines in Form1040 in which to enter or edit data:"
 echo
-echo "TFNI  )    Enter taxpayor's first name.             "
-echo "TLN   )    Enter taxpayor's last name.              "
-echo "TSSNoF)    Enter taxpayor's first 3 SSN digits.     "
-echo "TSSNoM)    Enter taxpayor's second 2 SSN digits.    "
-echo "TSSNoL)    Enter taxpayor's last 4 SSN digits.      "
-echo "SFNI  )    ENter spouse's first name.               "
-echo "SLN   )    Enter spouse's last name.                "
-echo "SSSNoF )    Enter spouse's first 3 SSN digits.       "
-echo "SSSNoM)    Enter spouse's second 2 SSN digits.      "
-echo "SSSNoL)    Enter spouse's last 4 SSN digits.                                                                   "
-echo "FS    )    Enter filing status.                     "
-echo "Apart )    Did you (Yes or No) live apart froms spouse?                                                        "
+echo "stMo  )    Enter starting month for tax year if needed.                                                                                                    "
+echo "stDay )    Enter starting day for tax year if needed.                                                                                                    "
+echo "endMo )    Enter ending month for tax year if needed.                                                                                                    "
+echo "endDay)    Enter ending day for tax year if needed.                                                                                                    "
+echo "endYr )    Enter ending year for tax year if needed.                                                                                                    "
+echo "Sec301)    Enter x if Section 301.9100.2                                                                                                    "
+echo "Combat)    Enter x if combat zone.                                                                                                    "
+echo "Died  )    Enter x if taxpayor or spouse died.                                                                                                   "
+echo "DateT )    Enter date of death for taxpayor.                                                                                                    "
+echo "DateS )    Enter date of death for spouse.                                                                                                    "
+echo "Othr  )    Enter x if other.                                                                                                    "
+echo "aliS  )    Enter x if you are a dual-status alien.                                                                                                    "
+echo "aSname)    If MFS enter spouse's full name.                                                                                                    "
+echo "alien )    Enter name of alilen spouse/                                                                                                    "
+echo "addr1 )    Enter number and street portion of address.                                                                                                   "
+echo "addr2 )    Enter second line of address.                                                                                                    "
+echo "aptNo )    Enter apartment number.                                                                                                    "
+echo "city  )    Enter city.                                                                                                    "
+echo "ST    )    Enter state.                                                                                                    "
+echo "zip   )    Enter zip.                                                                                                    "
+echo "FCntry)    Enter foreign country.                                                                                                    "
+echo "Fprov )    Enter foreign province.                                                                                                    "
+echo "Fzip  )    Enter foreign postal code.                                                                                                    "
+echo "campme)    Enter x if taxpayor wishes to have $3 go to presidential campaign.                                                                                                    "
+echo "campS )    Enter x if spouse wishes to have $3 go to presidential campaign.                                                                                                   "
+echo "digY  )    Enter x if used digital assets.                                                                                                   "
+echo "digN  )    Enter x if you did not use digital assets.                                                                                                    "
+echo "d1name)    First dependent first name.                                                                                                    "
+echo "d1LN  )    First dependent last name.                                                                                                    "
+echo "d1SF  )    First dependent SSN: first 3 digits.                                                                                                    "
+echo "d1SM  )    First dependent SSN: middle 2 digits.                                                                                                    "
+echo "d1SL  )    First dependent SSN: last 4 digits.                                                                                                    "
+echo "d1rel )    First dependent: relationship to you.                                                                                                     "
+echo "d1LWY )    First dependent: Enter x if lived with you more than half of 2025.                                                                                                    "
+echo "d1US  )    First dependent: And in the U.S.                                                                                                    "
+echo "d1FTS )    First dependent: Was a full time student.                                                                                                    "
+echo "d1CTC )    First de[emdemt: Child tax credit.                                                                                                    "
+echo "d1PTD )    First dependent: Is permanently and totaly disabled.                                                                                                   "
+echo "d1COD )    First dependent: Credit for other dependents.                                                                                                    "
+echo "d2name)    Second dependent first name.                                                                                                                                            "
+echo "d2LN  )    Second dependent last name.                                                                                                                                             "
+echo "d2SF  )    Second dependent SSN: first 3 digits.                                                                                                                                   "
+echo "d2SM  )    Second dependent SSN: middle 2 digits.                                                                                                                                  "
+echo "d2SL  )    Second dependent SSN: last 4 digits.                                                                                                                                    "
+echo "d2rel )    Second dependent: relationship to you.                                                                                                                                  "
+echo "d1LWY )    Second dependent: Enter x if lived with you more than half of 2025.                                                                                                     "
+echo "d1US  )    Second dependent: And in the U.S.                                                                                                                                       "
+echo "d1FTS )    Second dependent: Was a full time student.                                                                                                                              "
+echo "d1CTC )    Second de[emdemt: Child tax credit.                                                                                                                                     "
+echo "d1PTD )    Second dependent: Is permanently and totaly disabled.                                                                                                                   "
+echo "d1COD )    Second dependent: Credit for other dependents.                                                                                                                          "
+echo "d3name)    Third dependent first name.                                                                                                                                            "
+echo "d3LN  )    Third dependent last name.                                                                                                                                             "
+echo "d3SF  )    Third dependent SSN: first 3 digits.                                                                                                                                   "
+echo "d3SM  )    Third dependent SSN: middle 2 digits.                                                                                                                                  "
+echo "d3SL  )    Third dependent SSN: last 4 digits.                                                                                                                                    "
+echo "d3rel )    Third dependent: relationship to you.                                                                                                                                  "
+echo "d1LWY )    Third dependent: Enter x if lived with you more than half of 2025.                                                                                                     "
+echo "d1US  )    Third dependent: And in the U.S.                                                                                                                                       "
+echo "d1FTS )    Third dependent: Was a full time student.                                                                                                                              "
+echo "d1CTC )    Third de[emdemt: Child tax credit.                                                                                                                                     "
+echo "d1PTD )    Third dependent: Is permanently and totaly disabled.                                                                                                                   "
+echo "d1COD )    Third dependent: Credit for other dependents.                                                                                                                          "
+echo "d4name)    Fourth dependent first name.                                                                                                                                            "
+echo "d4LN  )    Fourth dependent last name.                                                                                                                                             "
+echo "d4SF  )    Fourth dependent SSN: first 3 digits.                                                                                                                                   "
+echo "d4SM  )    Fourth dependent SSN: middle 2 digits.                                                                                                                                  "
+echo "d4SL  )    Fourth dependent SSN: last 4 digits.                                                                                                                                    "
+echo "d4rel )    Fourth dependent: relationship to you.                                                                                                                                  "
+echo "d1LWY )    Fourth dependent: Enter x if lived with you more than half of 2025.                                                                                                     "
+echo "d1US  )    Fourth dependent: And in the U.S.                                                                                                                                       "
+echo "d1FTS )    Fourth dependent: Was a full time student.                                                                                                                              "
+echo "d1CTC )    Fourth de[emdemt: Child tax credit.                                                                                                                                     "
+echo "d1PTD )    Fourth dependent: Is permanently and totaly disabled.                                                                                                                   "
+echo "d1COD )    Fourth dependent: Credit for other dependents.                                                                                                                          "
+echo "dgt4  )    Enter x if you have more than 4 dependents.                                                                                                    "
+echo "apart )    Enter x if you did not live with separated wife for last 6 months of 2025.                                                                                                   "
+echo "EItyp )    Enter type of Earned Income (line 1h).                                                                                                    "
+echo "3c1   )    Enter x if your child's dividends are included in Line 3a.                                                                                                    "
+echo "4c1   )    Enter x if Rollover (line 4c).                                                                                                    "
+echo "5c1   )    Enter x if Rollover (line 5c).                                                                                                    "
+echo "3c2   )    Enter x if your child's dividends are included in Line 3b.                                                                                                    "
+echo "4c2   )    Enter x if QCD (line 4c).                                                                                                    "
+echo "5c2   )    Enter x if PSO (line 5c).                                                                                                    "
+echo "4c3   )    Enter x if Other (line 4c).                                                                                                    "
+echo "5c3   )    Emter x if other (line 5c).                                                                                                    "
+echo "06cCk )    Enter x if you elect to use the lllump-sum election method.                                                                                                   "
+echo "06dCk )    Enter x if MFS and lilved apart for entire year.                                                                                                    "
+echo "07bCk1)    Enter x if Schedule D is not required (line 7b).                                                    "
+echo "07bCk2)    Enter x if child's capital gain or loss is included (line 7b).                                                                                                    "
+echo "07bTx1)    Enter amount of child's capital gain included (line 7b).                                                                                                    "
+echo "01a   )    Enter total amount from Form(s) W2,box 1.                                                                                                    "
+echo "01b   )    Enter household employee wages not reported onf Forms(s) W2.                                                                                                    "
+echo "01c   )    Enter tip income not reported on line 1a.                                                                                                    "
+echo "01d   )    Enter Medicaid waiver payments not reported on Form(s) W2.                                                                                                    "
+echo "01e   )    Enter taxable depended care benefits from Form 2441, line 26.                                                                                                    "
+echo "01f   )    Enter employer-provided adoption benefits from Form 8839, line 31.                                                                                                    "
+echo "01g   )    Enter wages from Form 8919, line 6.                                                                                                    "
+echo "01h   )    Enter other earned income.                                                                                                    "
+echo "1i    )    Enter nontaable combat pay election.                                                                                                    "
+echo "04a   )    Enter IRA distributions.                                                                                                    "
+echo "05a   )    Enter taxable amount of IRA distributions.                                                                                                    "
+echo "youdep)    Enter x if someone can claim you as a dependent                                                                                                    "
+echo "Sdep  )    Enter x if someone can claim your spouse as a dependent                                                                                                    "
+echo "SiSep )    Enter x if spouse itemizes on a separate return.                                                                                                    "
+echo "2CitA )    Enter x if you are a dual status alien.                                                                                                   "
+echo "Ya58  )    Enter x if you were born before Jan 2 1961.                                                                                                    "
+echo "Yblind)    Enter x if you are blind.                                                                                                    "
+echo "Sa58  )    Enter x if your spouse was born before Jan 2 1961.                                                                                                    "
+echo "Sblind)    Enter x if your spouse is blind.                                                                                                    "
+echo "8814  )    Enter x if any tax from Form 8814.                                                                                                    "
+echo "4972  )    Enter x if any tax is from Form 4972.                                                                                                    "
+echo "Other )    Enter x if any tax from other Form(s).                                                                                                    "
+echo "tOther)    Enter the name of other Forn(s).                                                                                                    "
+echo "25a   )    Enter Income from W#s.                                                                                                    "
+echo "25b   )    Enter income from Form(s) 1099.                                                                                                    "
+echo "25c   )    Enter income from other forms.                                                                                                    "
+echo "26    )    2025 estimate tax payments and amt applied from 22024 return.                                                                                                    "
+echo "27a   )    Enter Earned Income Credit.                                                                                                    "
+echo "35a   )    Enter the amouont you want applied to your 2026 return.                                                                                                    "
+echo "26F   )    First 3 digits of former wife's SSN.                                                                                                    "
+echo "26M   )    Middle 2 digits of former wife's SSN.                                                                                                    "
+echo "26L   )    Last 4 digits of former wife's SSN.                                                                                                    "
+echo "27bCk )    Enter x if Clergy fiing SE.                                                                                                    "
+echo "27cCk )    Enter x if you do not want to claim the EIC.                                                                                                    "
+echo "28Ck  )    Enter x if you do not want to claim the ACTC.                                                                                                    "
+echo "35aCk )    Enter x if Form 8888 is attached.                                                                                                    "
+echo "35cCkg)    Enter x if this is a checking account.                                                                                                    "
+echo "35cSvg)    Enter x if this is a savings account.                                                                                                    "
+echo "35b1  )    Enter first digit is rounting number.                                                                                                    "
+echo "35d1  )    Enter first digit of account number.                                                                                                    "
+echo "35b2  )    Enter second digit of rounting number.                                                                                                    "
+echo "35d2  )    Enter second digit of account number.                                                                                                    "
+echo "35b3  )    Enter third digit of routing number.                                                                                                    "
+echo "35d3  )    Enter third digit of account number.                                                                                                    "
+echo "35b4  )    Enter fourth digit os routing number.                                                                                                    "
+echo "35d4  )    Enter fourth digit of account number.                                                                                                    "
+echo "35b5  )    Enter fifth digit of routing number.                                                                                                    "
+echo "35d5  )    Enter fifthe digit of account number.                                                                                                    "
+echo "35b6  )    Enter sixth digit of routing number.                                                                                                    "
+echo "35d6  )    Enter sixth digit of account number.                                                                                                    "
+echo "35b7  )    Enter seventh digit of routing number.                                                                                                    "
+echo "35d7  )    Enter seventh digit of account number.                                                                                                    "
+echo "35b8  )    Enter eighth digit of routing number.                                                                                                    "
+echo "35d8  )    Enter eighth digit of account number.                                                                                                    "
+echo "35b9  )    Enter ninth digit of routing number.                                                                                                    "
+echo "35d9  )    Enter ninthe digit of account number.                                                                                                    "
+echo "35d10 )    Enter tenth digit of account number.                                                                                                    "
+echo "35d11 )    Enter eleventh digit of account number.                                                                                                    "
+echo "35d12 )    Enter twelvth digit of account number.                                                                                                    "
+echo "35d13 )    Enter thirteenth digit of account number.                                                                                                    "
+echo "35d14 )    Enter fourteenth digit of account number.                                                                                                    "
+echo "35d15 )    Enter fifteenth digit of account number.                                                                                                    "
+echo "35d16 )    Enter sixteenth digit of account number.                                                                                                    "
+echo "35d17 )    Enter seventeenth digit of account number.                                                                                                    "
+echo "39Y   )    Enter x to allow another person to discuss this return with the IRS.                                                                                                    "
+echo "39N   )    Ente x to disallow any other person from discussing this return with the IRS."
+echo "Dname )    Enter disignee's name.                                                                                                    "
+echo "Dphone)    Enter Designee's phone number.                                                                                                    "
+echo "421   )    Enter first digit of designee's PIN.                                                                                                    "
+echo "422   )    Enter second digit of designee's PIN.                                                                                                    "
+echo "423   )    Enter third digit of designee's PIN.                                                                                                    "
+echo "424   )    Enter fourth digit of disignee's PIN.                                                                                                    "
+echo "425   )    Enter fifthe digit of designee's PIN.                                                                                                    "
+echo "Tdate )    Enter date signed by taxpayor.                                                                                                    "
+echo "Sdate )    Enter date signed by spouse.                                                                                                    "
+echo "Tocc  )    Enter taxpayor's occupation.                                                                                                    "
+echo "Socc  )    Enter spouse's occupation.                                                                                                    "
+echo "431   )    Enter first digit of your Identity Protections PIN.                                                                                                    "
+echo "441   )    Enter first digit of spouse's Identity Protection PIN.                                              "
+echo "432   )    Enter second digit of your Identity Protections PIN>                                                                                                    "
+echo "442   )    Enter second digit of spouse's Identity Protection PIN.                                             "
+echo "433   )    Enter third digit of your Identity Protection PIN.                                                                                                    "
+echo "443   )    Enter third digit of spouse's Identity Protection PIN.                                                                                                    "
+echo "434   )    Enter fourth digit ofyour Identity Protection PIN.                                                                                                    "
+echo "444   )    Enter fourthe digit of spouse's Identity Protections PIN.                                                                                                    "
+echo "435   )    Enter fifth digit of your Identity Protection PIN.                                                                                                    "
+echo "445   )    Enter fifthe digit of spouse's Identity Protections PIN.                                                                                                    "
+echo "436   )    Enter sixth digit of your Identity Protection PIN.                                                                                                    "
+echo "446   )    Enter sixthe digit of spouse's Identity Protection PIN.                                                                                                    "
+echo "Tphone)    Enter your telephone number.                                                                                                    "
+echo "Temail)    Enter your email address.                                                                                                    "
+echo "Pname )    Enter Preparer's name.                                                                                                    "
+echo "Pdate )    Enter date of Preparer's signature.                                                                                                    "
+echo "PTIN  )    Enter Preparer's TIN.                                                                                                    "
+echo "SECk  )    Enter x if Preparer is self-employed.                                                                                                    "
+echo "Fname )    Enter Firm name of Preparer.                                                                                                    "
+echo "Fphone)    Enter telephone number of Preparer's firm.                                                                                                    "
+echo "Faddr )    Enter address of Preparer's firm.                                                                                                    "
+echo "FEIN  )    Enter PIN of Preparer's firm.                                                                                                    "
 echo
 echo "     q)    Return to Previous Menu"      
 echo
 echo "Please enter the letter(s) of your choice then press return."
-     read Bkg_line_data_choice
+     read Form1040_line_data_choice
 echo
-     case $Bkg_line_data_choice in
-TFNI  )    set_line_menu_text   $1 $2  lineTFNI                             ;;
-TLN   )    set_line_menu_text   $1 $2  lineTLN                              ;;
-TSSNoF)    set_line_menu_text   $1 $2  lineTSSNoF                           ;;
-TSSNoM)    set_line_menu_text   $1 $2  lineTSSNoM                           ;;
-TSSNoL)    set_line_menu_text   $1 $2  lineTSSNoL                           ;;
-SFNI  )    set_line_menu_text   $1 $2  lineSFNI                             ;;
-SLN   )    set_line_menu_text   $1 $2  lineSLN                              ;;
-SSSNoF )    set_line_menu_text   $1 $2  lineSSNoF                            ;;
-SSSNoM)    set_line_menu_text   $1 $2  lineSSSNoM                           ;;
-SSSNoL)    set_line_menu_text   $1 $2  lineSSSNoL                           ;;
-FS    )    set_line_menu_text   $1 $2  lineFS                               ;;
-Apart )    set_line_menu_text   $1 $2  lineApart                            ;;
+     case $Form1040_line_data_choice in
+stMo  )    set_line_menu_text   $1 $2  linestMo                             ;;
+stDay )    set_line_menu_text   $1 $2  linestDay                            ;;
+endMo )    set_line_menu_text   $1 $2  lineendMo                            ;;
+endDay)    set_line_menu_text   $1 $2  lineendDay                           ;;
+endYr )    set_line_menu_text   $1 $2  lineendYr                            ;;
+Sec301)    set_line_menu_text   $1 $2  lineSec301                           ;;
+Combat)    set_line_menu_text   $1 $2  lineCombat                           ;;
+Died  )    set_line_menu_text   $1 $2  lineDied                             ;;
+DateT )    set_line_menu_text   $1 $2  lineDateT                            ;;
+DateS )    set_line_menu_text   $1 $2  lineDateS                            ;;
+Othr  )    set_line_menu_text   $1 $2  lineOthr                             ;;
+aliS  )    set_line_menu_text   $1 $2  linealiS                             ;;
+aSname)    set_line_menu_text   $1 $2  lineaSname                           ;;
+alien )    set_line_menu_text   $1 $2  linealien                            ;;
+addr1 )    set_line_menu_text   $1 $2  lineaddr1                            ;;
+addr2 )    set_line_menu_text   $1 $2  lineaddr2                            ;;
+aptNo )    set_line_menu_text   $1 $2  lineaptNo                            ;;
+city  )    set_line_menu_text   $1 $2  linecity                             ;;
+ST    )    set_line_menu_text   $1 $2  lineST                               ;;
+zip   )    set_line_menu_text   $1 $2  linezip                              ;;
+FCntry)    set_line_menu_text   $1 $2  lineFCntry                           ;;
+Fprov )    set_line_menu_text   $1 $2  lineFprov                            ;;
+Fzip  )    set_line_menu_text   $1 $2  lineFzip                             ;;
+campme)    set_line_menu_text   $1 $2  linecampme                           ;;
+campS )    set_line_menu_text   $1 $2  linecampS                            ;;
+digY  )    set_line_menu_text   $1 $2  linedigY                             ;;
+digN  )    set_line_menu_text   $1 $2  linedigN                             ;;
+d1name)    set_line_menu_text   $1 $2  lined1name                           ;;
+d1LN  )    set_line_menu_text   $1 $2  lined1LN                             ;;
+d1SF  )    set_line_menu_text   $1 $2  lined1SF                             ;;
+d1SM  )    set_line_menu_text   $1 $2  lined1SM                             ;;
+d1SL  )    set_line_menu_text   $1 $2  lined1SL                             ;;
+d1rel )    set_line_menu_text   $1 $2  lined1rel                            ;;
+d1LWY )    set_line_menu_text   $1 $2  lined1LWY                            ;;
+d1US  )    set_line_menu_text   $1 $2  lined1US                             ;;
+d1FTS )    set_line_menu_text   $1 $2  lined1FTS                            ;;
+d1CTC )    set_line_menu_text   $1 $2  lined1CTC                            ;;
+d1PTD )    set_line_menu_text   $1 $2  lined1PTD                            ;;
+d1COD )    set_line_menu_text   $1 $2  lined1COD                            ;;
+d2name)    set_line_menu_text   $1 $2  lined2name                           ;;
+d2LN  )    set_line_menu_text   $1 $2  lined2LN                             ;;
+d2SF  )    set_line_menu_text   $1 $2  lined2SF                             ;;
+d2SM  )    set_line_menu_text   $1 $2  lined2SM                             ;;
+d2SL  )    set_line_menu_text   $1 $2  lined2SL                             ;;
+d2rel )    set_line_menu_text   $1 $2  lined2rel                            ;;
+d1LWY )    set_line_menu_text   $1 $2  lined1LWY                            ;;
+d1US  )    set_line_menu_text   $1 $2  lined1US                             ;;
+d1FTS )    set_line_menu_text   $1 $2  lined1FTS                            ;;
+d1CTC )    set_line_menu_text   $1 $2  lined1CTC                            ;;
+d1PTD )    set_line_menu_text   $1 $2  lined1PTD                            ;;
+d1COD )    set_line_menu_text   $1 $2  lined1COD                            ;;
+d3name)    set_line_menu_text   $1 $2  lined3name                           ;;
+d3LN  )    set_line_menu_text   $1 $2  lined3LN                             ;;
+d3SF  )    set_line_menu_text   $1 $2  lined3SF                             ;;
+d3SM  )    set_line_menu_text   $1 $2  lined3SM                             ;;
+d3SL  )    set_line_menu_text   $1 $2  lined3SL                             ;;
+d3rel )    set_line_menu_text   $1 $2  lined3rel                            ;;
+d1LWY )    set_line_menu_text   $1 $2  lined1LWY                            ;;
+d1US  )    set_line_menu_text   $1 $2  lined1US                             ;;
+d1FTS )    set_line_menu_text   $1 $2  lined1FTS                            ;;
+d1CTC )    set_line_menu_text   $1 $2  lined1CTC                            ;;
+d1PTD )    set_line_menu_text   $1 $2  lined1PTD                            ;;
+d1COD )    set_line_menu_text   $1 $2  lined1COD                            ;;
+d4name)    set_line_menu_text   $1 $2  lined4name                           ;;
+d4LN  )    set_line_menu_text   $1 $2  lined4LN                             ;;
+d4SF  )    set_line_menu_text   $1 $2  lined4SF                             ;;
+d4SM  )    set_line_menu_text   $1 $2  lined4SM                             ;;
+d4SL  )    set_line_menu_text   $1 $2  lined4SL                             ;;
+d4rel )    set_line_menu_text   $1 $2  lined4rel                            ;;
+d1LWY )    set_line_menu_text   $1 $2  lined1LWY                            ;;
+d1US  )    set_line_menu_text   $1 $2  lined1US                             ;;
+d1FTS )    set_line_menu_text   $1 $2  lined1FTS                            ;;
+d1CTC )    set_line_menu_text   $1 $2  lined1CTC                            ;;
+d1PTD )    set_line_menu_text   $1 $2  lined1PTD                            ;;
+d1COD )    set_line_menu_text   $1 $2  lined1COD                            ;;
+dgt4  )    set_line_menu_text   $1 $2  linedgt4                             ;;
+apart )    set_line_menu_text   $1 $2  lineapart                            ;;
+EItyp )    set_line_menu_text   $1 $2  lineEItyp                            ;;
+3c1   )    set_line_menu_text   $1 $2  line3c1                              ;;
+4c1   )    set_line_menu_text   $1 $2  line4c1                              ;;
+5c1   )    set_line_menu_text   $1 $2  line5c1                              ;;
+3c2   )    set_line_menu_text   $1 $2  line3c2                              ;;
+4c2   )    set_line_menu_text   $1 $2  line4c2                              ;;
+5c2   )    set_line_menu_text   $1 $2  line5c2                              ;;
+4c3   )    set_line_menu_text   $1 $2  line4c3                              ;;
+5c3   )    set_line_menu_text   $1 $2  line5c3                              ;;
+06cCk )    set_line_menu_text   $1 $2  line06cCk                            ;;
+06dCk )    set_line_menu_text   $1 $2  line06dCk                            ;;
+07bCk1)    set_line_menu_text   $1 $2  line07bCk1                           ;;
+07bCk2)    set_line_menu_text   $1 $2  line07bCk2                           ;;
+07bTx1)    set_line_menu_text   $1 $2  line07bTx1                           ;;
+01a   )    set_line_menu_number $1 $2  line01a                              ;;
+01b   )    set_line_menu_number $1 $2  line01b                              ;;
+01c   )    set_line_menu_number $1 $2  line01c                              ;;
+01d   )    set_line_menu_number $1 $2  line01d                              ;;
+01e   )    set_line_menu_number $1 $2  line01e                              ;;
+01f   )    set_line_menu_number $1 $2  line01f                              ;;
+01g   )    set_line_menu_number $1 $2  line01g                              ;;
+01h   )    set_line_menu_number $1 $2  line01h                              ;;
+1i    )    set_line_menu_number $1 $2  line1i                               ;;
+04a   )    set_line_menu_number $1 $2  line04a                              ;;
+05a   )    set_line_menu_number $1 $2  line05a                              ;;
+youdep)    set_line_menu_text   $1 $2  lineyoudep                           ;;
+Sdep  )    set_line_menu_text   $1 $2  lineSdep                             ;;
+SiSep )    set_line_menu_text   $1 $2  lineSiSep                            ;;
+2CitA )    set_line_menu_text   $1 $2  line2CitA                            ;;
+Ya58  )    set_line_menu_text   $1 $2  lineYa58                             ;;
+Yblind)    set_line_menu_text   $1 $2  lineYblind                           ;;
+Sa58  )    set_line_menu_text   $1 $2  lineSa58                             ;;
+Sblind)    set_line_menu_text   $1 $2  lineSblind                           ;;
+8814  )    set_line_menu_text   $1 $2  line8814                             ;;
+4972  )    set_line_menu_text   $1 $2  line4972                             ;;
+Other )    set_line_menu_text   $1 $2  lineOther                            ;;
+tOther)    set_line_menu_text   $1 $2  linetOther                           ;;
+25a   )    set_line_menu_number $1 $2  line25a                              ;;
+25b   )    set_line_menu_number $1 $2  line25b                              ;;
+25c   )    set_line_menu_number $1 $2  line25c                              ;;
+26    )    set_line_menu_number $1 $2  line26                               ;;
+27a   )    set_line_menu_number $1 $2  line27a                              ;;
+35a   )    set_line_menu_number $1 $2  line35a                              ;;
+26F   )    set_line_menu_text   $1 $2  line26F                              ;;
+26M   )    set_line_menu_text   $1 $2  line26M                              ;;
+26L   )    set_line_menu_text   $1 $2  line26L                              ;;
+27bCk )    set_line_menu_text   $1 $2  line27bCk                            ;;
+27cCk )    set_line_menu_text   $1 $2  line27cCk                            ;;
+28Ck  )    set_line_menu_text   $1 $2  line28Ck                             ;;
+35aCk )    set_line_menu_text   $1 $2  line35aCk                            ;;
+35cCkg)    set_line_menu_text   $1 $2  line35cCkg                           ;;
+35cSvg)    set_line_menu_text   $1 $2  line35cSvg                           ;;
+35b1  )    set_line_menu_text   $1 $2  line35b1                             ;;
+35d1  )    set_line_menu_text   $1 $2  line35d1                             ;;
+35b2  )    set_line_menu_text   $1 $2  line35b2                             ;;
+35d2  )    set_line_menu_text   $1 $2  line35d2                             ;;
+35b3  )    set_line_menu_text   $1 $2  line35b3                             ;;
+35d3  )    set_line_menu_text   $1 $2  line35d3                             ;;
+35b4  )    set_line_menu_text   $1 $2  line35b4                             ;;
+35d4  )    set_line_menu_text   $1 $2  line35d4                             ;;
+35b5  )    set_line_menu_text   $1 $2  line35b5                             ;;
+35d5  )    set_line_menu_text   $1 $2  line35d5                             ;;
+35b6  )    set_line_menu_text   $1 $2  line35b6                             ;;
+35d6  )    set_line_menu_text   $1 $2  line35d6                             ;;
+35b7  )    set_line_menu_text   $1 $2  line35b7                             ;;
+35d7  )    set_line_menu_text   $1 $2  line35d7                             ;;
+35b8  )    set_line_menu_text   $1 $2  line35b8                             ;;
+35d8  )    set_line_menu_text   $1 $2  line35d8                             ;;
+35b9  )    set_line_menu_text   $1 $2  line35b9                             ;;
+35d9  )    set_line_menu_text   $1 $2  line35d9                             ;;
+35d10 )    set_line_menu_text   $1 $2  line35d10                            ;;
+35d11 )    set_line_menu_text   $1 $2  line35d11                            ;;
+35d12 )    set_line_menu_text   $1 $2  line35d12                            ;;
+35d13 )    set_line_menu_text   $1 $2  line35d13                            ;;
+35d14 )    set_line_menu_text   $1 $2  line35d14                            ;;
+35d15 )    set_line_menu_text   $1 $2  line35d15                            ;;
+35d16 )    set_line_menu_text   $1 $2  line35d16                            ;;
+35d17 )    set_line_menu_text   $1 $2  line35d17                            ;;
+39Y   )    set_line_menu_text   $1 $2  line39Y                              ;;
+39N   )    set_line_menu_text   $1 $2  line39N                              ;;
+Dname )    set_line_menu_text   $1 $2  lineDname                            ;;
+Dphone)    set_line_menu_text   $1 $2  lineDphone                           ;;
+421   )    set_line_menu_text   $1 $2  line421                              ;;
+422   )    set_line_menu_text   $1 $2  line422                              ;;
+423   )    set_line_menu_text   $1 $2  line423                              ;;
+424   )    set_line_menu_text   $1 $2  line424                              ;;
+425   )    set_line_menu_text   $1 $2  line425                              ;;
+Tdate )    set_line_menu_text   $1 $2  lineTdate                            ;;
+Sdate )    set_line_menu_text   $1 $2  lineSdate                            ;;
+Tocc  )    set_line_menu_text   $1 $2  lineTocc                             ;;
+Socc  )    set_line_menu_text   $1 $2  lineSocc                             ;;
+431   )    set_line_menu_text   $1 $2  line431                              ;;
+441   )    set_line_menu_text   $1 $2  line441                              ;;
+432   )    set_line_menu_text   $1 $2  line432                              ;;
+442   )    set_line_menu_text   $1 $2  line442                              ;;
+433   )    set_line_menu_text   $1 $2  line433                              ;;
+443   )    set_line_menu_text   $1 $2  line443                              ;;
+434   )    set_line_menu_text   $1 $2  line434                              ;;
+444   )    set_line_menu_text   $1 $2  line444                              ;;
+435   )    set_line_menu_text   $1 $2  line435                              ;;
+445   )    set_line_menu_text   $1 $2  line445                              ;;
+436   )    set_line_menu_text   $1 $2  line436                              ;;
+446   )    set_line_menu_text   $1 $2  line446                              ;;
+Tphone)    set_line_menu_text   $1 $2  lineTphone                           ;;
+Temail)    set_line_menu_text   $1 $2  lineTemail                           ;;
+Pname )    set_line_menu_text   $1 $2  linePname                            ;;
+Pdate )    set_line_menu_text   $1 $2  linePdate                            ;;
+PTIN  )    set_line_menu_text   $1 $2  linePTIN                             ;;
+SECk  )    set_line_menu_text   $1 $2  lineSECk                             ;;
+Fname )    set_line_menu_text   $1 $2  lineFname                            ;;
+Fphone)    set_line_menu_text   $1 $2  lineFphone                           ;;
+Faddr )    set_line_menu_text   $1 $2  lineFaddr                            ;;
+FEIN  )    set_line_menu_text   $1 $2  lineFEIN                             ;;
 q     )    break;;                       
 esac
 done

@@ -1,0 +1,191 @@
+type      	!name      	!seq       	!menuEntry
+tlin      	!stMo      	!  1       	!Enter starting month for tax year if needed.
+tlin      	!stDay     	!  2       	!Enter starting day for tax year if needed.
+tlin      	!endMo     	!  3       	!Enter ending month for tax year if needed.
+tlin      	!endDay    	!  4       	!Enter ending day for tax year if needed.
+tlin      	!endYr     	!  5       	!Enter ending year for tax year if needed.
+tlin      	!Sec301    	!  6       	!Enter x if Section 301.9100.2
+tlin      	!Combat    	!  7       	!Enter x if combat zone.
+tlin      	!Died      	!  8       	!Enter x if taxpayor or spouse died.
+tlin      	!DateT     	!  9       	!Enter date of death for taxpayor.
+tlin      	!DateS     	! 10       	!Enter date of death for spouse.
+tlin      	!Othr      	! 11       	!Enter x if other.
+tlin      	!aliS      	! 12       	!Enter x if you are a dual-status alien.
+tlin      	!aSname    	! 13       	!If MFS enter spouse's full name.
+tlin      	!alien     	! 14       	!Enter name of alilen spouse/
+tlin      	!addr1     	! 15       	!Enter number and street portion of address.
+tlin      	!addr2     	! 16       	!Enter second line of address.
+tlin      	!aptNo     	! 17       	!Enter apartment number.
+tlin      	!city      	! 18       	!Enter city.
+tlin      	!ST        	! 19       	!Enter state.
+tlin      	!zip       	! 20       	!Enter zip.
+tlin      	!FCntry    	! 21       	!Enter foreign country.
+tlin      	!Fprov     	! 22       	!Enter foreign province.
+tlin      	!Fzip      	! 23       	!Enter foreign postal code.
+tlin      	!campme    	! 24       	!Enter x if taxpayor wishes to have $3 go to presidential campaign.
+tlin      	!campS     	! 25       	!Enter x if spouse wishes to have $3 go to presidential campaign.
+tlin      	!digY      	! 26       	!Enter x if used digital assets.
+tlin      	!digN      	! 27       	!Enter x if you did not use digital assets.
+tlin      	!d1name    	! 28       	!First dependent first name.
+tlin      	!d1LN      	! 29       	!First dependent last name.
+tlin      	!d1SF      	! 30       	!First dependent SSN: first 3 digits.
+tlin      	!d1SM      	! 31       	!First dependent SSN: middle 2 digits.
+tlin      	!d1SL      	! 32       	!First dependent SSN: last 4 digits.
+tlin      	!d1rel     	! 33       	!First dependent: relationship to you.
+tlin      	!d1LWY     	! 34       	!First dependent: Enter x if lived with you more than half of 2025.
+tlin      	!d1US      	! 35       	!First dependent: And in the U.S.
+tlin      	!d1FTS     	! 36       	!First dependent: Was a full time student.
+tlin      	!d1CTC     	! 37       	!First de[emdemt: Child tax credit.
+tlin      	!d1PTD     	! 38       	!First dependent: Is permanently and totaly disabled.
+tlin      	!d1COD     	! 39       	!First dependent: Credit for other dependents.
+tlin      	!d2name    	! 40       	!Second dependent first name.
+tlin      	!d2LN      	! 41       	!Second dependent last name.
+tlin      	!d2SF      	! 42       	!Second dependent SSN: first 3 digits.
+tlin      	!d2SM      	! 43       	!Second dependent SSN: middle 2 digits.
+tlin      	!d2SL      	! 44       	!Second dependent SSN: last 4 digits.
+tlin      	!d2rel     	! 45       	!Second dependent: relationship to you.
+tlin      	!d1LWY     	! 46       	!Second dependent: Enter x if lived with you more than half of 2025.
+tlin      	!d1US      	! 47       	!Second dependent: And in the U.S.
+tlin      	!d1FTS     	! 48       	!Second dependent: Was a full time student.
+tlin      	!d1CTC     	! 49       	!Second de[emdemt: Child tax credit.
+tlin      	!d1PTD     	! 50       	!Second dependent: Is permanently and totaly disabled.
+tlin      	!d1COD     	! 51       	!Second dependent: Credit for other dependents.
+tlin      	!d3name    	! 52       	!Third dependent first name.
+tlin      	!d3LN      	! 53       	!Third dependent last name.
+tlin      	!d3SF      	! 54       	!Third dependent SSN: first 3 digits.
+tlin      	!d3SM      	! 55       	!Third dependent SSN: middle 2 digits.
+tlin      	!d3SL      	! 56       	!Third dependent SSN: last 4 digits.
+tlin      	!d3rel     	! 57       	!Third dependent: relationship to you.
+tlin      	!d1LWY     	! 58       	!Third dependent: Enter x if lived with you more than half of 2025.
+tlin      	!d1US      	! 59       	!Third dependent: And in the U.S.
+tlin      	!d1FTS     	! 60       	!Third dependent: Was a full time student.
+tlin      	!d1CTC     	! 61       	!Third de[emdemt: Child tax credit.
+tlin      	!d1PTD     	! 62       	!Third dependent: Is permanently and totaly disabled.
+tlin      	!d1COD     	! 63       	!Third dependent: Credit for other dependents.
+tlin      	!d4name    	! 64       	!Fourth dependent first name.
+tlin      	!d4LN      	! 65       	!Fourth dependent last name.
+tlin      	!d4SF      	! 66       	!Fourth dependent SSN: first 3 digits.
+tlin      	!d4SM      	! 67       	!Fourth dependent SSN: middle 2 digits.
+tlin      	!d4SL      	! 68       	!Fourth dependent SSN: last 4 digits.
+tlin      	!d4rel     	! 69       	!Fourth dependent: relationship to you.
+tlin      	!d1LWY     	! 70       	!Fourth dependent: Enter x if lived with you more than half of 2025.
+tlin      	!d1US      	! 71       	!Fourth dependent: And in the U.S.
+tlin      	!d1FTS     	! 72       	!Fourth dependent: Was a full time student.
+tlin      	!d1CTC     	! 73       	!Fourth de[emdemt: Child tax credit.
+tlin      	!d1PTD     	! 74       	!Fourth dependent: Is permanently and totaly disabled.
+tlin      	!d1COD     	! 75       	!Fourth dependent: Credit for other dependents.
+tlin      	!dgt4      	! 76       	!Enter x if you have more than 4 dependents.
+tlin      	!apart     	! 77       	!Enter x if you did not live with separated wife for last 6 months of 2025.
+tlin      	!EItyp     	! 78       	!Enter type of Earned Income (line 1h).
+tlin      	!3c1       	! 79       	!Enter x if your child's dividends are included in Line 3a.
+tlin      	!4c1       	! 80       	!Enter x if Rollover (line 4c).
+tlin      	!5c1       	! 81       	!Enter x if Rollover (line 5c).
+tlin      	!3c2       	! 82       	!Enter x if your child's dividends are included in Line 3b.
+tlin      	!4c2       	! 83       	!Enter x if QCD (line 4c).
+tlin      	!5c2       	! 84       	!Enter x if PSO (line 5c).
+tlin      	!4c3       	! 85       	!Enter x if Other (line 4c).
+tlin      	!5c3       	! 86       	!Emter x if other (line 5c).
+tlin      	!06cCk     	! 87       	!Enter x if you elect to use the lllump-sum election method.
+tlin      	!06dCk     	! 88       	!Enter x if MFS and lilved apart for entire year.
+tlin      	!07bCk1    	! 89       	!Enter x if Schedule D is not required (line 7b).
+tlin      	!07bCk2    	! 90       	!Enter x if child's capital gain or loss is included (line 7b).
+tlin      	!07bTx1    	! 91       	!Enter amount of child's capital gain included (line 7b).
+dlin      	!01a       	! 92       	!Enter total amount from Form(s) W2,box 1.
+dlin      	!01b       	! 93       	!Enter household employee wages not reported onf Forms(s) W2.
+dlin      	!01c       	! 94       	!Enter tip income not reported on line 1a.
+dlin      	!01d       	! 95       	!Enter Medicaid waiver payments not reported on Form(s) W2.
+dlin      	!01e       	! 96       	!Enter taxable depended care benefits from Form 2441, line 26.
+dlin      	!01f       	! 97       	!Enter employer-provided adoption benefits from Form 8839, line 31.
+dlin      	!01g       	! 98       	!Enter wages from Form 8919, line 6.
+dlin      	!01h       	! 99       	!Enter other earned income.
+dlin      	!1i        	!100       	!Enter nontaable combat pay election.
+dlin      	!04a       	!104       	!Enter IRA distributions.
+dlin      	!05a       	!105       	!Enter taxable amount of IRA distributions.
+tlin      	!youdep    	!117       	!Enter x if someone can claim you as a dependent
+tlin      	!Sdep      	!118       	!Enter x if someone can claim your spouse as a dependent
+tlin      	!SiSep     	!119       	!Enter x if spouse itemizes on a separate return.
+tlin      	!2CitA     	!120       	!Enter x if you are a dual status alien.
+tlin      	!Ya58      	!121       	!Enter x if you were born before Jan 2 1961.
+tlin      	!Yblind    	!122       	!Enter x if you are blind.
+tlin      	!Sa58      	!123       	!Enter x if your spouse was born before Jan 2 1961.
+tlin      	!Sblind    	!124       	!Enter x if your spouse is blind.
+tlin      	!8814      	!132       	!Enter x if any tax from Form 8814.
+tlin      	!4972      	!133       	!Enter x if any tax is from Form 4972.
+tlin      	!Other     	!134       	!Enter x if any tax from other Form(s).
+tlin      	!tOther    	!135       	!Enter the name of other Forn(s).
+dlin      	!25a       	!145       	!Enter Income from W#s.
+dlin      	!25b       	!146       	!Enter income from Form(s) 1099.
+dlin      	!25c       	!147       	!Enter income from other forms.
+dlin      	!26        	!149       	!2025 estimate tax payments and amt applied from 22024 return.
+dlin      	!27a       	!150       	!Enter Earned Income Credit.
+dlin      	!35a       	!158       	!Enter the amouont you want applied to your 2026 return.
+tlin      	!26F       	!162       	!First 3 digits of former wife's SSN.
+tlin      	!26M       	!163       	!Middle 2 digits of former wife's SSN.
+tlin      	!26L       	!164       	!Last 4 digits of former wife's SSN.
+tlin      	!27bCk     	!165       	!Enter x if Clergy fiing SE.
+tlin      	!27cCk     	!166       	!Enter x if you do not want to claim the EIC.
+tlin      	!28Ck      	!167       	!Enter x if you do not want to claim the ACTC.
+tlin      	!35aCk     	!168       	!Enter x if Form 8888 is attached.
+tlin      	!35cCkg    	!169       	!Enter x if this is a checking account.
+tlin      	!35cSvg    	!170       	!Enter x if this is a savings account.
+tlin      	!35b1      	!171       	!Enter first digit is rounting number.
+tlin      	!35d1      	!172       	!Enter first digit of account number.
+tlin      	!35b2      	!173       	!Enter second digit of rounting number.
+tlin      	!35d2      	!174       	!Enter second digit of account number.
+tlin      	!35b3      	!175       	!Enter third digit of routing number.
+tlin      	!35d3      	!176       	!Enter third digit of account number.
+tlin      	!35b4      	!177       	!Enter fourth digit os routing number.
+tlin      	!35d4      	!178       	!Enter fourth digit of account number.
+tlin      	!35b5      	!179       	!Enter fifth digit of routing number.
+tlin      	!35d5      	!180       	!Enter fifthe digit of account number.
+tlin      	!35b6      	!181       	!Enter sixth digit of routing number.
+tlin      	!35d6      	!182       	!Enter sixth digit of account number.
+tlin      	!35b7      	!183       	!Enter seventh digit of routing number.
+tlin      	!35d7      	!184       	!Enter seventh digit of account number.
+tlin      	!35b8      	!185       	!Enter eighth digit of routing number.
+tlin      	!35d8      	!186       	!Enter eighth digit of account number.
+tlin      	!35b9      	!187       	!Enter ninth digit of routing number.
+tlin      	!35d9      	!188       	!Enter ninthe digit of account number.
+tlin      	!35d10     	!189       	!Enter tenth digit of account number.
+tlin      	!35d11     	!190       	!Enter eleventh digit of account number.
+tlin      	!35d12     	!191       	!Enter twelvth digit of account number.
+tlin      	!35d13     	!192       	!Enter thirteenth digit of account number.
+tlin      	!35d14     	!193       	!Enter fourteenth digit of account number.
+tlin      	!35d15     	!194       	!Enter fifteenth digit of account number.
+tlin      	!35d16     	!195       	!Enter sixteenth digit of account number.
+tlin      	!35d17     	!196       	!Enter seventeenth digit of account number.
+tlin      	!39Y       	!197       	!Enter x to allow another person to discuss this return with the IRS.
+tlin      	!39N       	!198       	!Ente x to disallow any other person from discussing this return with the IRS.
+tlin      	!Dname     	!199       	!Enter disignee's name.
+tlin      	!Dphone    	!200       	!Enter Designee's phone number.
+tlin      	!421       	!201       	!Enter first digit of designee's PIN.
+tlin      	!422       	!202       	!Enter second digit of designee's PIN.
+tlin      	!423       	!203       	!Enter third digit of designee's PIN.
+tlin      	!424       	!204       	!Enter fourth digit of disignee's PIN.
+tlin      	!425       	!205       	!Enter fifthe digit of designee's PIN.
+tlin      	!Tdate     	!206       	!Enter date signed by taxpayor.
+tlin      	!Sdate     	!207       	!Enter date signed by spouse.
+tlin      	!Tocc      	!208       	!Enter taxpayor's occupation.
+tlin      	!Socc      	!209       	!Enter spouse's occupation.
+tlin      	!431       	!210       	!Enter first digit of your Identity Protections PIN.
+tlin      	!441       	!211       	!Enter first digit of spouse's Identity Protection PIN.
+tlin      	!432       	!212       	!Enter second digit of your Identity Protections PIN>
+tlin      	!442       	!213       	!Enter second digit of spouse's Identity Protection PIN.
+tlin      	!433       	!214       	!Enter third digit of your Identity Protection PIN.
+tlin      	!443       	!215       	!Enter third digit of spouse's Identity Protection PIN.
+tlin      	!434       	!216       	!Enter fourth digit ofyour Identity Protection PIN.
+tlin      	!444       	!217       	!Enter fourthe digit of spouse's Identity Protections PIN.
+tlin      	!435       	!218       	!Enter fifth digit of your Identity Protection PIN.
+tlin      	!445       	!219       	!Enter fifthe digit of spouse's Identity Protections PIN.
+tlin      	!436       	!220       	!Enter sixth digit of your Identity Protection PIN.
+tlin      	!446       	!221       	!Enter sixthe digit of spouse's Identity Protection PIN.
+tlin      	!Tphone    	!222       	!Enter your telephone number.
+tlin      	!Temail    	!223       	!Enter your email address.
+tlin      	!Pname     	!224       	!Enter Preparer's name.
+tlin      	!Pdate     	!225       	!Enter date of Preparer's signature.
+tlin      	!PTIN      	!226       	!Enter Preparer's TIN.
+tlin      	!SECk      	!227       	!Enter x if Preparer is self-employed.
+tlin      	!Fname     	!228       	!Enter Firm name of Preparer.
+tlin      	!Fphone    	!229       	!Enter telephone number of Preparer's firm.
+tlin      	!Faddr     	!230       	!Enter address of Preparer's firm.
+tlin      	!FEIN      	!231       	!Enter PIN of Preparer's firm.
