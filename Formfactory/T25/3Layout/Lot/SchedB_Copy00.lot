@@ -1,0 +1,210 @@
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+                              
+This file is part of a program called Tax-bash
+                              
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+                              
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+                              
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+                              
+                              
+For direction on how to separate pages see ../notes.
+
+                              
+Form
+
+                              
+xpgS  	!2name 	!3BkgImage
+pgS   	!Single	!../Jpg/f1040sb-page-001.jpg
+                              
+xcol  	!2name 	!top   	!align 	!left  	!right 
+col   	!      	!-0.10 	!left  	!0.00  	!8.50  
+                              
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!a     	!0.00  	!left  	!1.80  	!3.88  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!TFNI  	!1.28  	!John D            	!Bkg          	!00    	!TFNI      
+tPull  	!SFNI  	!1.42  	!Jeanne E          	!Bkg         	!00    	!SFNI  
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!b     	!0.00  	!left  	!4.00  	!7.45  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!TLN   	!1.28  	!Taxpayor          	!Bkg         	!00    	!TLN   
+tPull  	!SLN   	!1.42  	!Taxpayor          	!Bkg         	!00    	!SLN   
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!c     	!0.00  	!left  	!6.59  	!6.90  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!TSSNF 	!1.42  	!123               	!Bkg        	!00    	!TSSNoF   
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!d     	!0.00  	!left  	!6.92  	!7.10  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!TSSNM 	!1.42  	!45                	!Bkg       	!00   	!TSSNoM    
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!e     	!0.00  	!left  	!7.18  	!7.97  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!TSSML 	!1.42  	!6789              	!Bkg      	!00    	!TSSNoL 
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!f     	!-0.03 	!left  	!1.80  	!6.43  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!01at  	!2.14  	!Bank01            	!Form1099int   	!01    	!pnam1      
+tPull 	!01bt  	!2.30  	!Bank02            	!Form1099int 	!02    	!pnam1 
+tPull 	!01ct  	!2.47  	!Bank03            	!Form1099int 	!03    	!pnam1 
+tPull 	!01dt  	!2.63  	!Bank04            	!Form1099int 	!04    	!pnam1 
+tPull 	!01et  	!2.79  	!Bank05            	!Form1099int 	!05   	!pnam1 
+tPull 	!01ft  	!2.97  	!Bank06            	!Form1099int 	!06    	!pnam1 
+tPull 	!01gt  	!3.13  	!Bank07            	!Form1099int 	!07    	!pnam1 
+tPull 	!01ht  	!3.30  	!Bank08            	!Form1099int 	!08    	!pnam1 
+tPull 	!01it  	!3.46  	!Bank09            	!Form1099int 	!09    	!pnam1 
+tPull 	!01jt  	!3.63  	!Bank10            	!Form1099int 	!10    	!pnam1 
+tPull 	!01kt  	!3.80  	!Bank11            	!Form1099int 	!11    	!pnam1 
+tPull 	!01lt  	!3.98  	!Bank12            	!Form1099int 	!12    	!pnam1 
+tPull 	!01mt  	!4.13  	!Bank13            	!Form1099int 	!13    	!pnam1 
+tPull 	!01nt  	!4.30  	!Bank14            	!Form1099int 	!14    	!pnam1
+Endcol**************************					     
+
+xcol	!2name	!3top	!4align	!5left	!6right  
+col	!f1	!-0.17	!left	!1.80	!6.43		
+tPull  	!05at  	!5.63  	!Broker01          	!Form1099div   	!01    	!pnam1 
+tPull  	!05bt  	!5.80  	!Broker02          	!Form1099div   	!02    	!pnam1 
+tPull 	!05ct  	!5.96  	!Broker03          	!Form1099div   	!03    	!pnam1 
+tPull 	!05dt  	!6.12  	!Broker04          	!Form1099div   	!04    	!pnam1 
+tPull 	!05et  	!6.30  	!Broker05          	!Form1099div   	!05    	!pnam1 
+tPull 	!05ft  	!6.47  	!Broker06          	!Form1099div   	!06    	!pnam1 
+tPull 	!05gt  	!6.63  	!Broker07          	!Form1099div   	!07    	!pnam1 
+tPull 	!05ht  	!6.80  	!Broker08          	!Form1099div   	!08    	!pnam1 
+tPull 	!05it  	!6.97  	!Broker09          	!Form1099div   	!09    	!pnam1 
+tPull 	!05jt  	!7.13  	!Broker10          	!Form1099div   	!10    	!pnam1 
+tPull 	!05kt  	!7.30  	!Broker11          	!Form1099div   	!11    	!pnam1 
+tPull 	!05lt  	!7.46  	!Broker12          	!Form1099div   	!12    	!pnam1 
+tPull 	!05mt  	!7.63  	!Broker13          	!Form1099div   	!13    	!pnam1 
+tPull 	!05nt  	!7.79  	!Broker14          	!Form1099div   	!14    	!pnam1 
+                         
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!-0.03 	!left  	!4.75  	!6.43  
+type 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!01ata 	!2.14  	!Bank01accountNo.  	!Form1099int	!01	!actNo      	      
+tPull  	!01bta 	!2.30  	!Bank02accountNo.  	!Form1099int	!02	!actNo      	      
+tPull  	!01cta 	!2.47  	!Bank03accountNo.  	!Form1099int	!03	!actNo
+tPull  	!01dta 	!2.63  	!Bank04accountNo.  	!Form1099int	!04	!actNo 	      
+tPull  	!01eta 	!2.79  	!Bank05accountNo.  	!Form1099int	!05	!actNo 	      
+tPull  	!01fta 	!2.97  	!Bank06accountNo.  	!Form1099int	!06	!actNo 	      
+tPull  	!01gta 	!3.13  	!Bank07accountNo.  	!Form1099int	!07	!actNo 	      
+tPull  	!01hta 	!3.30  	!Bank08accountNo.  	!Form1099int	!08	!actNo 	      
+tPull  	!01ita 	!3.46  	!Bank09accountNo.  	!Form1099int	!09	!actNo 	      
+tPull  	!01jta 	!3.63  	!Bank10accountNo.  	!Form1099int	!10	!actNo 	      
+tPull  	!01kta 	!3.80  	!Bank11accountNo.  	!Form1099int	!11	!actNo 	      
+tPull  	!01lta 	!3.98  	!Bank12accountNo.  	!Form1099int	!12	!actNo 	      
+tPull  	!01mta 	!4.13  	!Bank13accountNo.  	!Form1099int	!13	!actNo 	      
+tPull  	!01nta 	!4.30  	!Bank14accountNo.  	!Form1099int	!14	!actNo
+Endcol********************************		                                 
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!g     	!-0.17 	!left  	!4.00  	!8.43  
+type 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tPull  	!05ata 	!5.63  	!Broker01accountNo.	!Form1099div   	!01     !actNo 	      
+tPull 	!05bta 	!5.80  	!Broker02accountNo.	!Form1099div 	!02     !actNo 	      
+tPull 	!05cta 	!5.96  	!Broker03accountNo.	!Form1099div 	!03     !actNo 	      
+tPull 	!05dta 	!6.12  	!Broker04accountNo.	!Form1099div 	!04     !actNo 	      
+tPull 	!05eta 	!6.30  	!Broker05accountNo.	!Form1099div 	!05     !actNo 	      
+tPull 	!05fta 	!6.47  	!Broker06accountNo.	!Form1099div 	!06     !actNo 	      
+tPull 	!05gta 	!6.63  	!Broker07accountNo.	!Form1099div 	!07     !actNo 	      
+tPull 	!05hta 	!6.80  	!Broker08accountNo.	!Form1099div 	!08     !actNo 	      
+tPull 	!05ita 	!6.97  	!Broker09accountNo.	!Form1099div 	!09     !actNo 	      
+tPull 	!05jta 	!7.13  	!Broker10accountNo.	!Form1099div 	!10     !actNo 	      
+tPull 	!05kta 	!7.30  	!Broker11accountNo.	!Form1099div 	!11     !actNo 	      
+tPull 	!05lta 	!7.46  	!Broker12accountNo.	!Form1099div 	!12     !actNo 	      
+tPull 	!05mta 	!7.63  	!Broker13accountNo.	!Form1099div 	!13     !actNo 	      
+tPull 	!05nta 	!7.79  	!Broker14accountNo.	!Form1099div 	!14     !actNo 	      
+xPull  	!05ota 	!7.97  	!Broker15accountNo.	!Form1099div 	!15     !actNo 	      
+xPull  	!05pta 	!8.15  	!Broker16accountNo.	!Form1099div   	!16	!actNo 	
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h     	!-0.03 	!right	!6.84      	!7.92      
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+dlin  	!01ad  	!2.14  	!10                	!Form1099int   	!01     !01      	      
+dlin  	!01bd  	!2.30  	!20                	!Form1099int 	!02     !01    	      
+dlin  	!01cd  	!2.47  	!30                	!Form1099int 	!03     !01    	      
+dlin  	!01dd  	!2.63  	!40                	!Form1099int 	!04     !01    	      
+dlin  	!01ed  	!2.79  	!50                	!Form1099int 	!05     !01    	      
+dlin  	!01fd  	!2.97  	!60                	!Form1099int 	!06     !01    	      
+dlin  	!01gd  	!3.13  	!70                	!Form1099int 	!07     !01    	      
+dlin  	!01hd  	!3.30  	!80                	!Form1099int 	!08     !01    	      
+dlin  	!01id  	!3.46  	!90                	!Form1099int 	!09     !01    	      
+dlin  	!01jd  	!3.63  	!100               	!Form1099int 	!10     !01    	      
+dlin  	!01kd  	!3.80  	!110               	!Form1099int 	!11    	!01    	      
+dlin  	!01ld  	!3.98  	!120               	!Form1099int 	!12    	!01    	      
+dlin  	!01md  	!4.13  	!130               	!Form1099int 	!13    	!01    	      
+dlin  	!01nd  	!4.30  	!140               	!Form1099int 	!14    	!01    	      
+dlin  	!02    	!4.49  	!200               	!            	!      	!    
+dlin  	!03    	!4.81  	!300               	!            	!      	!      
+dlin  	!04    	!4.98  	!400               	!            	!      	!
+Endcol*********************************
+
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!h1    	!-0.17 	!right	!6.84      	!7.92      
+dlin  	!05ad  	!5.63  	!501               	!Form1099div   	!01    	!01a      	      
+dlin  	!05bd  	!5.80  	!502               	!Form1099div 	!02    	!01a   	      
+dlin  	!05cd  	!5.96  	!503               	!Form1099div 	!03    	!01a   	      
+dlin  	!05dd  	!6.12  	!504               	!Form1099div 	!04    	!01a   	      
+dlin  	!05ed  	!6.30  	!505               	!Form1099div 	!05    	!01a   	      
+dlin  	!05fd  	!6.47  	!506               	!Form1099div 	!06    	!01a   	      
+dlin  	!05gd  	!6.63  	!507               	!Form1099div 	!07    	!01a   	      
+dlin  	!05hd  	!6.80  	!508               	!Form1099div 	!08    	!01a   	      
+dlin  	!05id  	!6.97  	!509               	!Form1099div 	!09    	!01a   	      
+dlin  	!05jd  	!7.13  	!510               	!Form1099div 	!10    	!01a   	      
+dlin  	!05kd  	!7.30  	!511               	!Form1099div 	!11    	!01a   	      
+dlin  	!05ld  	!7.46  	!512               	!Form1099div 	!12    	!01a   	      
+dlin  	!05md  	!7.63  	!513               	!Form1099div 	!13    	!01a   	      
+dlin  	!05nd  	!7.79  	!514               	!Form1099div 	!14     !01a   	      
+xdlin  	!05od  	!7.97  	!515               	!Form1099div 	!15    	!01a   	      
+xdlin  	!05pd  	!8.15  	!516               	!Form1099div   	!16    	!01a   	      
+dlin  	!06    	!7.96  	!600               	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!i     	!0.00  	!right 	!7.42  	!7.66  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!07a1y 	!9.11  	!x                 	!            	!      	!      
+tlin  	!07a2y 	!9.61  	!x                 	!            	!      	!      
+tlin  	!08y   	!10.46 	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!j     	!0.00  	!right 	!7.72  	!7.95  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!07a1n 	!9.11  	!x                 	!            	!      	!      
+tlin  	!07a2n 	!9.61 	!x                 	!            	!      	!      
+tlin  	!08n   	!10.46 	!x                 	!            	!      	!      
+Endcol*******************     
+                              
+xcol  	!2name 	!3top  	!4align	!5left 	!6right
+col   	!k     	!0.00  	!left  	!3.80  	!7.27  
+xtype 	!2name 	!3top  	!4dummy            	!5form       	!6copy 	!7line2
+tlin  	!07b   	!9.95 	!Foreign Country   	!            	!      	!      
+Endcol*******************     
+                              
+Endcol*******************     
+                              
+EndpgS    
+EndForm

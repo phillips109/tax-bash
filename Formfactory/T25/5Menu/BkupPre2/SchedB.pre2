@@ -1,0 +1,8 @@
+type      	!name      	!seq       	!menuEntry                                                                                           	!IRSInstructions     	!pgNo 	!     
+tlin      	!07a1y     	!072       	!Enter x if you had a financial interest in a foreign account.                                       	!i1040sb.pdr         	!2     	!     
+tlin      	!07a1n     	!073       	!Enter x if you didn't have a financial interest in a foreign account.                               	!i1040sb.pdr         	!2     	!     
+tlin      	!07a2y     	!074       	!Enter x if you are required to file FinCEN.                                                         	!i1040sb.pdr         	!3     	!     
+tlin      	!07a2n     	!075       	!Enter x if you are not required to file FinCEN.                                                     	!i1040sb.pdr         	!3     	!     
+tlin      	!07b       	!076       	!Enter the name of the foreign country where the financial account is located.                       	!i1040sb.pdr         	!3     	!     
+tlin      	!08y       	!077       	!Enter x if you received a distribution from or were the grantor or transferor to a foreign trust.   	!i1040sb.pdr         	!3     	!     
+tlin      	!08n       	!078       	!Enter x if you were not.                                                                            	!i1040sb.pdr         	!3     	!     

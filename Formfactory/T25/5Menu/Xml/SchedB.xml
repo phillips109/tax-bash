@@ -1,0 +1,37 @@
+<Form fname="SchedB">
+<taxline name="07a1y" type="tlin" color="black">
+<menuEntry>Enter x if you had a financial interest in a foreign account.</menuEntry>
+<IRSInstructions>i1040sb.pdr</IRSInstructions>
+<pgNo>2</pgNo>
+</taxline>
+<taxline name="07a1n" type="tlin" color="black">
+<menuEntry>Enter x if you didn't have a financial interest in a foreign account.</menuEntry>
+<IRSInstructions>i1040sb.pdr</IRSInstructions>
+<pgNo>2</pgNo>
+</taxline>
+<taxline name="07a2y" type="tlin" color="black">
+<menuEntry>Enter x if you are required to file FinCEN.</menuEntry>
+<IRSInstructions>i1040sb.pdr</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="07a2n" type="tlin" color="black">
+<menuEntry>Enter x if you are not required to file FinCEN.</menuEntry>
+<IRSInstructions>i1040sb.pdr</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="07b" type="tlin" color="black">
+<menuEntry>Enter the name of the foreign country where the financial account is located.</menuEntry>
+<IRSInstructions>i1040sb.pdr</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="08y" type="tlin" color="black">
+<menuEntry>Enter x if you received a distribution from or were the grantor or transferor to a foreign trust.</menuEntry>
+<IRSInstructions>i1040sb.pdr</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="08n" type="tlin" color="black">
+<menuEntry>Enter x if you were not.</menuEntry>
+<IRSInstructions>i1040sb.pdr</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+</Form>
