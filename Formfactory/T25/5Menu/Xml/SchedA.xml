@@ -1,0 +1,92 @@
+<Form fname="SchedA">
+<taxline name="01" type="dlin" color="black">
+<menuEntry>Enter medicalk and dental expenses.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>2</pgNo>
+</taxline>
+<taxline name="05a" type="dlin" color="black">
+<menuEntry>Enter State abd local income taxes or general sales taxes.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="05b" type="dlin" color="black">
+<menuEntry>Enter State and local real estate taxes.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="05c" type="dlin" color="black">
+<menuEntry>enter State and local personal property taxes.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>6</pgNo>
+</taxline>
+<taxline name="06" type="dlin" color="black">
+<menuEntry>Enter Other taxes.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>7</pgNo>
+</taxline>
+<taxline name="06a" type="tlin" color="black">
+<menuEntry>Enter type of other taxes.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>7</pgNo>
+</taxline>
+<taxline name="08" type="dlin" color="black">
+<menuEntry>Enter home mortgage interes and points.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>8</pgNo>
+</taxline>
+<taxline name="08a" type="dlin" color="black">
+<menuEntry>Enter home mortgage interes and points reported on Form1096.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>9</pgNo>
+</taxline>
+<taxline name="08b" type="dlin" color="black">
+<menuEntry>Enter mortgage interest not reported to you on Form 1098.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>9</pgNo>
+</taxline>
+<taxline name="08c" type="dlin" color="black">
+<menuEntry>Enter points not reported to your on Form 1098.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>9</pgNo>
+</taxline>
+<taxline name="09" type="dlin" color="black">
+<menuEntry>Investment interest.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>9</pgNo>
+</taxline>
+<taxline name="11a" type="dlin" color="black">
+<menuEntry>Enter charity gifts by cash or check.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>10</pgNo>
+</taxline>
+<taxline name="12" type="dlin" color="black">
+<menuEntry>Enter charity gifts ny other than cash or check.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>10</pgNo>
+</taxline>
+<taxline name="13" type="dlin" color="black">
+<menuEntry>Enter charity gifts from prior year.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="15" type="dlin" color="black">
+<menuEntry>Enter casualty and theft losses from a federally declared disaster.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="16" type="dlin" color="black">
+<menuEntry>Enter other itemized deductions.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>11</pgNo>
+</taxline>
+<taxline name="05ack" type="tlin" color="black">
+<menuEntry>Enter x if you elect to include gereral sales taxes.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+<taxline name="18ck" type="tlin" color="black">
+<menuEntry>Enter x if you elect to itemize deductions even though less than standard deduction.</menuEntry>
+<IRSInstructions>i1040sca.pdf</IRSInstructions>
+<pgNo>3</pgNo>
+</taxline>
+</Form>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><IRSForms xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<Form name="SchedA-Copy00">
+<copy00line05d color="red">1506</copy00line05d>
+<copy00line07 color="red">2106</copy00line07>
+<copy00line08e color="red">2406</copy00line08e>
+<copy00line10 color="red">3306</copy00line10>
+<copy00line14 color="red">1040</copy00line14>
+<copy00line17 color="red">8662</copy00line17>
+<copy00lineminus1 color="red">-1</copy00lineminus1>
+<copy00line75 color="red">0</copy00line75>
+<copy00line01 color="red">100</copy00line01>
+<copy00line05a color="red">501</copy00line05a>
+<copy00line05b color="red">502</copy00line05b>
+<copy00line05c color="red">503</copy00line05c>
+<copy00line06 color="red">600</copy00line06>
+<copy00line08a color="red">801</copy00line08a>
+<copy00line08b color="red">802</copy00line08b>
+<copy00line08c color="red">803</copy00line08c>
+<copy00line09 color="red">900</copy00line09>
+<copy00line11a color="red">1010</copy00line11a>
+<copy00line12 color="red">1020</copy00line12>
+<copy00line13 color="red">1030</copy00line13>
+<copy00line15 color="red">1050</copy00line15>
+<copy00line16 color="red">1060</copy00line16>
+<copy00line02 color="red">0</copy00line02>
+<copy00line03 color="red">0</copy00line03>
+<copy00line11 color="red">-1010</copy00line11>
+<copy00line05e color="red">1506</copy00line05e>
+<copy00line04 color="red">100</copy00line04>
+<copy00line05ack color="blue"/>
+<copy00line08ck color="blue"/>
+<copy00line18ck color="blue"/>
+<copy00lineSFNI color="blue"/>
+<copy00lineSLN color="blue"/>
+<copy00lineTFNI color="blue"/>
+<copy00lineTLN color="blue"/>
+<copy00lineTSSNoF color="blue"/>
+<copy00lineTSSNoL color="blue"/>
+<copy00lineTSSNoM color="blue"/>
+<copy00lineFS color="blue"/>
+<copy00line05q color="red">NaN</copy00line05q>
+</Form>
+</IRSForms>

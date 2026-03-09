@@ -1,0 +1,360 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<line number='05d'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line05a</augend>
+<addend>line05b</addend>
+<addend>line05c</addend>
+</line>
+
+<line number='07'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line05e</augend>
+<addend>line06</addend>
+</line>
+
+<line number='08e'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08a</augend>
+<addend>line08b</addend>
+<addend>line08c</addend>
+</line>
+
+<line number='10'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line08e</augend>
+<addend>line09</addend>
+</line>
+
+<line number='14'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line11</augend>
+<addend>line12</addend>
+<addend>line13</addend>
+</line>
+
+<line number='17'
+ color='green'>
+<type>addit</type>
+<format>#####0</format>
+<augend>line04</augend>
+<addend>line07</addend>
+<addend>line10</addend>
+<addend>line14</addend>
+<addend>line15</addend>
+<addend>line16</addend>
+</line>
+
+<line number='minus1'
+ color='blue'>
+<type>const</type>
+<format>#####0</format>
+<value>-1</value>
+</line>
+
+<line number='75'
+ color='blue'>
+<type>const</type>
+<format>#0.000</format>
+<value>0.075</value>
+</line>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>100</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>501</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>502</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>503</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>600</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>801</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>802</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08c'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>803</override>
+<blank></blank>
+</dlin>
+
+<dlin number='09'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>900</override>
+<blank></blank>
+</dlin>
+
+<dlin number='11a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1010</override>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1020</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1030</override>
+<blank></blank>
+</dlin>
+
+<dlin number='15'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1050</override>
+<blank></blank>
+</dlin>
+
+<dlin number='16'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1060</override>
+<blank></blank>
+</dlin>
+
+<line number='02'
+ color='purple'>
+<title></title>
+<type>dPull</type>
+<format>#####0</format>
+<year>200</year>
+<form>Form1040</form>
+<copy>00</copy>
+<line2>line11</line2>
+</line>
+
+<line number='03'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line02</multiplicand>
+<multiplier>line75</multiplier>
+</line>
+
+<line number='11'
+ color='red'>
+<type>mult</type>
+<format>#####0</format>
+<multiplicand>line11a</multiplicand>
+<multiplier>lineminus1</multiplier>
+</line>
+
+<line number='05e'
+ color='blue'>
+<type>smOf</type>
+<format>#####0</format>
+<first>line05d</first>
+<second>line05q</second>
+</line>
+
+<line number='04'
+ color='cyan'>
+<type>subt0</type>
+<format>#####0</format>
+<minuend>line01</minuend>
+<subtrahend>line03</subtrahend>
+</line>
+
+<line name='05ack'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='08ck'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='18ck'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line number='SFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SFNI</line2>
+</line>
+
+<line number='SLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>SLN</line2>
+</line>
+
+<line number='TFNI'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TFNI</line2>
+</line>
+
+<line number='TLN'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TLN</line2>
+</line>
+
+<line number='TSSNoF'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoF</line2>
+</line>
+
+<line number='TSSNoL'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoM</line2>
+</line>
+
+<line number='TSSNoM'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>TSSNoL</line2>
+</line>
+
+<line number='FS'
+ color='blue'>
+<type>tPull</type>
+<form>Bkg</form>
+<copy>00</copy>
+<line2>FS</line2>
+</line>
+
+<line number='05q'
+ color='red'>
+<type>cnum</type>
+<format>#####0</format>
+<testvalue>$SchedA-Copy00-lineFS = 'MFS'</testvalue>
+<value1>20000</value1>
+<value2>40000</value2>
+</line>
+</Form>
