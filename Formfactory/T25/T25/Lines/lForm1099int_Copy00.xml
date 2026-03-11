@@ -1,0 +1,210 @@
+<!--
+
+Copyright (C) 2024 Phillips Wedemeyer
+This file is part of a program called Tax-bash
+Tax-bash is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public Llicense as published by
+the Free Software Foundataion, either version 3 of the License, or
+(at your option) any later version.
+Tax-bash is distributed in the hope that it will be useful,
+but without any warranty; without event the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see >https://www.gnu.org/licenses/>.
+-->
+
+<Form xmlns:xsl="http://www.w3.org/1999/XSL/Transform" name="Form1099int-Copy00">
+
+<copy00line01 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line01, '#####0')"/>
+</copy00line01>
+
+<copy00line02 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line02, '#####0')"/>
+</copy00line02>
+
+<copy00line03 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line03, '#####0')"/>
+</copy00line03>
+
+<copy00line04 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line04, '#####0')"/>
+</copy00line04>
+
+<copy00line05 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line05, '#####0')"/>
+</copy00line05>
+
+<copy00line06 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line06, '#####0')"/>
+</copy00line06>
+
+<copy00line08 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line08, '#####0')"/>
+</copy00line08>
+
+<copy00line09 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line09, '#####0')"/>
+</copy00line09>
+
+<copy00line10 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line10, '#####0')"/>
+</copy00line10>
+
+<copy00line11 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line11, '#####0')"/>
+</copy00line11>
+
+<copy00line12 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line12, '#####0')"/>
+</copy00line12>
+
+<copy00line13 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line13, '#####0')"/>
+</copy00line13>
+
+<copy00line14 color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line14, '#####0')"/>
+</copy00line14>
+
+<copy00line17a color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line17a, '#####0')"/>
+</copy00line17a>
+
+<copy00line17b color="red">
+<xsl:value-of select="format-number($Form1099int-Copy00-line17b, '#####0')"/>
+</copy00line17b>
+
+<copy00line07 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-line07"/>
+</copy00line07>
+
+<copy00line15a color="blue">
+<xsl:value-of select="$Form1099int-Copy00-line15a"/>
+</copy00line15a>
+
+<copy00line15b color="blue">
+<xsl:value-of select="$Form1099int-Copy00-line15b"/>
+</copy00line15b>
+
+<copy00line16a color="blue">
+<xsl:value-of select="$Form1099int-Copy00-line16a"/>
+</copy00line16a>
+
+<copy00line16b color="blue">
+<xsl:value-of select="$Form1099int-Copy00-line16b"/>
+</copy00line16b>
+
+<copy00line20yr color="blue">
+<xsl:value-of select="$Form1099int-Copy00-line20yr"/>
+</copy00line20yr>
+
+<copy00line2TIN color="blue">
+<xsl:value-of select="$Form1099int-Copy00-line2TIN"/>
+</copy00line2TIN>
+
+<copy00lineactNo color="blue">
+<xsl:value-of select="$Form1099int-Copy00-lineactNo"/>
+</copy00lineactNo>
+
+<copy00linecorr color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linecorr"/>
+</copy00linecorr>
+
+<copy00lineFATCA color="blue">
+<xsl:value-of select="$Form1099int-Copy00-lineFATCA"/>
+</copy00lineFATCA>
+
+<copy00linepadd1 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepadd1"/>
+</copy00linepadd1>
+
+<copy00linepadd2 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepadd2"/>
+</copy00linepadd2>
+
+<copy00linepcity color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepcity"/>
+</copy00linepcity>
+
+<copy00linepcnty color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepcnty"/>
+</copy00linepcnty>
+
+<copy00linepctry color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepctry"/>
+</copy00linepctry>
+
+<copy00linepnam1 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepnam1"/>
+</copy00linepnam1>
+
+<copy00linepnam2 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepnam2"/>
+</copy00linepnam2>
+
+<copy00linepRTN color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepRTN"/>
+</copy00linepRTN>
+
+<copy00linepST color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepST"/>
+</copy00linepST>
+
+<copy00lineptel color="blue">
+<xsl:value-of select="$Form1099int-Copy00-lineptel"/>
+</copy00lineptel>
+
+<copy00linepTIN color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepTIN"/>
+</copy00linepTIN>
+
+<copy00linepzip color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linepzip"/>
+</copy00linepzip>
+
+<copy00lineradd1 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-lineradd1"/>
+</copy00lineradd1>
+
+<copy00lineradd2 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-lineradd2"/>
+</copy00lineradd2>
+
+<copy00linercity color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linercity"/>
+</copy00linercity>
+
+<copy00linercnty color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linercnty"/>
+</copy00linercnty>
+
+<copy00linerctry color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linerctry"/>
+</copy00linerctry>
+
+<copy00linernam1 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linernam1"/>
+</copy00linernam1>
+
+<copy00linernam2 color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linernam2"/>
+</copy00linernam2>
+
+<copy00linerST color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linerST"/>
+</copy00linerST>
+
+<copy00linerTIN color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linerTIN"/>
+</copy00linerTIN>
+
+<copy00linerzip color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linerzip"/>
+</copy00linerzip>
+
+<copy00linevoid color="blue">
+<xsl:value-of select="$Form1099int-Copy00-linevoid"/>
+</copy00linevoid>
+</Form>

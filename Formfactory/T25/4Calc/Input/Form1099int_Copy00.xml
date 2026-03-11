@@ -1,0 +1,454 @@
+<?xml version = "1.0"?>
+<!--
+Copyright(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+<Form name=''>
+
+<dlin number='01'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>1000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='02'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>2000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>3000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>4000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='05'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>5000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>6000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>8000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='09'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>9000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>10000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>11000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>12000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>13000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='14'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>14000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='17a'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>17000</override>
+<blank></blank>
+</dlin>
+
+<dlin number='17b'
+ color='red'>
+<title></title>
+<type>dlin</type>
+<format>#####0</format>
+<override>17001</override>
+<blank></blank>
+</dlin>
+
+<line name='07'
+ color='blue'>
+<type>tlin</type>
+<text>Portugal</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='15a'
+ color='blue'>
+<type>tlin</type>
+<text>PA</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='15b'
+ color='blue'>
+<type>tlin</type>
+<text>OH</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='16a'
+ color='blue'>
+<type>tlin</type>
+<text>1234567</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='16b'
+ color='blue'>
+<type>tlin</type>
+<text>7654321</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='20yr'
+ color='blue'>
+<type>tlin</type>
+<text>2022</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='2TIN'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='actNo'
+ color='blue'>
+<type>tlin</type>
+<text>456789</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='corr'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='FATCA'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='padd1'
+ color='blue'>
+<type>tlin</type>
+<text>24 W. Main St.</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='padd2'
+ color='blue'>
+<type>tlin</type>
+<text>3rd Floor</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pcity'
+ color='blue'>
+<type>tlin</type>
+<text>Sandusky</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pcnty'
+ color='blue'>
+<type>tlin</type>
+<text>Erie</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pctry'
+ color='blue'>
+<type>tlin</type>
+<text>USA</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pnam1'
+ color='blue'>
+<type>tlin</type>
+<text>Thomas Building Co.</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pnam2'
+ color='blue'>
+<type>tlin</type>
+<text>Concrete Division</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pRTN'
+ color='blue'>
+<type>tlin</type>
+<text>9876543</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pST'
+ color='blue'>
+<type>tlin</type>
+<text>OH</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='ptel'
+ color='blue'>
+<type>tlin</type>
+<text>(734)542-1278</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pTIN'
+ color='blue'>
+<type>tlin</type>
+<text>24-345678</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='pzip'
+ color='blue'>
+<type>tlin</type>
+<text>972678</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='radd1'
+ color='blue'>
+<type>tlin</type>
+<text>25 Grant Street</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='radd2'
+ color='blue'>
+<type>tlin</type>
+<text>Apt 12</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rcity'
+ color='blue'>
+<type>tlin</type>
+<text>Pittsburgh</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rcnty'
+ color='blue'>
+<type>tlin</type>
+<text>Allegheny</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rctry'
+ color='blue'>
+<type>tlin</type>
+<text>USA</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rnam1'
+ color='blue'>
+<type>tlin</type>
+<text>John Q. Taxpayor</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rnam2'
+ color='blue'>
+<type>tlin</type>
+<text>Accounting Division</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rST'
+ color='blue'>
+<type>tlin</type>
+<text>PA</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rTIN'
+ color='blue'>
+<type>tlin</type>
+<text>34-123456</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='rzip'
+ color='blue'>
+<type>tlin</type>
+<text>15213</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+
+<line name='void'
+ color='blue'>
+<type>tlin</type>
+<text>x</text>
+<form></form>
+<copy></copy>
+<line2></line2>
+</line>
+</Form>

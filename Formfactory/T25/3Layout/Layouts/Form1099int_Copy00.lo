@@ -1,0 +1,2629 @@
+<?xml version="1.0"?>
+<!--
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<Form>
+
+<pgF name='First'
+bkgImage='../Jpg/f1099int-page-001.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.10in'>
+
+<col name='a'
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name=''
+top='0.00in'
+height='0.15in'
+color='blue'>
+<text></text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgF>
+
+<pgM name='name:Second'
+bkgImage='../Jpg/f1099int-page-002.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.10in'>
+
+<col name='a'
+left='0.76in'
+right='4.04in'
+width='3.28in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pnam1'
+top='0.88in'
+height='0.15in'
+color='blue'>
+<text>Hopkins Coal Co.</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pnam2'
+top='1.08in'
+height='0.15in'
+color='blue'>
+<text>Ohio Division</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd1'
+top='1.27in'
+height='0.15in'
+color='blue'>
+<text>1700 Industrial Park</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd2'
+top='1.45in'
+height='0.15in'
+color='blue'>
+<text>Suite 300</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pcity'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Sandusky</text>
+<blank></blank>
+</tlin>
+
+<tlin name='ptel'
+top='1.78in'
+height='0.15in'
+color='blue'>
+<text>972-346-9254</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>26-785633</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam1'
+top='2.76in'
+height='0.15in'
+color='blue'>
+<text>John Taxpayor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam2'
+top='2.95in'
+height='0.15in'
+color='blue'>
+<text>Accounting Specialist</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd1'
+top='3.26in'
+height='0.15in'
+color='blue'>
+<text>300 Grant Street</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd2'
+top='3.45in'
+height='0.15in'
+color='blue'>
+<text>5th Floor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcity'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Pittsburgh</text>
+<blank></blank>
+</tlin>
+
+<tlin name='actNo'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>754824</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='b'
+left='2.00in'
+right='2.60in'
+width='0.6in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pST'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rST'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='c'
+left='2.46in'
+right='4.04in'
+width='1.58in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pcnty'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Erie</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>28-74521</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcnty'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Allegheny</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='d'
+left='2.75in'
+right='4.10in'
+width='1.35in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pctry'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rctry'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='e'
+left='3.20in'
+right='4.04in'
+width='0.84in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pzip'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>44870</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rzip'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>15213</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='f'
+left='3.74in'
+right='3.83in'
+width='0.09in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='FATCA'
+top='4.37in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+<tlin name='2TIN'
+top='4.77in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='g'
+left='4.18in'
+right='5.47in'
+width='1.29in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pRTN'
+top='0.91in'
+height='0.15in'
+color='blue'>
+<text>472-30-3181</text>
+<blank></blank>
+</tlin>
+
+<dlin number='01'
+top='1.44in'
+height='0.15in'
+color='red'>
+<dummy>1000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>4000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+top='3.12in'
+height='0.15in'
+color='red'>
+<dummy>6000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>8000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>10000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>12000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='14'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>87549235</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='h'
+left='4.18in'
+right='6.85in'
+width='2.67in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='02'
+top='1.96in'
+height='0.15in'
+color='red'>
+<dummy>2000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+top='2.44in'
+height='0.15in'
+color='red'>
+<dummy>3000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='i'
+left='5.62in'
+right='6.85in'
+width='1.23in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='05'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>5000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='07'
+top='3.12in'
+height='0.15in'
+color='blue'>
+<text>Spain</text>
+<blank></blank>
+</tlin>
+
+<dlin number='09'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>9000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>11000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>13000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='j'
+left='5.62in'
+right='5.70in'
+width='0.08in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='15a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='15b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='k'
+left='5.96in'
+right='6.85in'
+width='0.89in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='16a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>459835</text>
+<blank></blank>
+</tlin>
+
+<tlin name='16b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>274592</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='l'
+left='7.04in'
+right='7.90in'
+width='0.86in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='17a'
+top='4.78in'
+height='0.15in'
+color='red'>
+<dummy>17000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='17b'
+top='4.96in'
+height='0.15in'
+color='red'>
+<dummy>17001</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='m'
+left='6.00in'
+right='6.40in'
+width='0.4in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='20yr'
+top='1.41in'
+height='0.15in'
+color='blue'>
+<text>2024</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='n'
+left='2.64in'
+right='2.84in'
+width='0.2in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='void'
+top='0.43in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='o'
+left='3.44in'
+right='3.64in'
+width='0.2in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='corr'
+top='0.43in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgM>
+
+<pgM name='name:Three'
+bkgImage='../Jpg/f1099int-page-003.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.10in'>
+
+<col name='a'
+left='0.76in'
+right='4.04in'
+width='3.28in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pnam1'
+top='0.88in'
+height='0.15in'
+color='blue'>
+<text>Hopkins Coal Co.</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pnam2'
+top='1.08in'
+height='0.15in'
+color='blue'>
+<text>Ohio Division</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd1'
+top='1.27in'
+height='0.15in'
+color='blue'>
+<text>1700 Industrial Park</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd2'
+top='1.45in'
+height='0.15in'
+color='blue'>
+<text>Suite 300</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pcity'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Sandusky</text>
+<blank></blank>
+</tlin>
+
+<tlin name='ptel'
+top='1.78in'
+height='0.15in'
+color='blue'>
+<text>972-346-9254</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>26-785633</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam1'
+top='2.76in'
+height='0.15in'
+color='blue'>
+<text>John Taxpayor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam2'
+top='2.95in'
+height='0.15in'
+color='blue'>
+<text>Accounting Specialist</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd1'
+top='3.26in'
+height='0.15in'
+color='blue'>
+<text>300 Grant Street</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd2'
+top='3.45in'
+height='0.15in'
+color='blue'>
+<text>5th Floor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcity'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Pittsburgh</text>
+<blank></blank>
+</tlin>
+
+<tlin name='actNo'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>754824</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='b'
+left='2.00in'
+right='2.60in'
+width='0.6in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pST'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rST'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='c'
+left='2.46in'
+right='4.04in'
+width='1.58in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pcnty'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Erie</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>28-74521</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcnty'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Allegheny</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='d'
+left='2.75in'
+right='4.10in'
+width='1.35in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pctry'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rctry'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='e'
+left='3.20in'
+right='4.04in'
+width='0.84in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pzip'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>44870</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rzip'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>15213</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='f'
+left='3.74in'
+right='3.83in'
+width='0.09in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='FATCA'
+top='4.37in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='g'
+left='4.18in'
+right='5.47in'
+width='1.29in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pRTN'
+top='0.91in'
+height='0.15in'
+color='blue'>
+<text>472-30-3181</text>
+<blank></blank>
+</tlin>
+
+<dlin number='01'
+top='1.44in'
+height='0.15in'
+color='red'>
+<dummy>1000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>4000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+top='3.12in'
+height='0.15in'
+color='red'>
+<dummy>6000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>8000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>10000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>12000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='14'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>87549235</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='h'
+left='4.18in'
+right='6.85in'
+width='2.67in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='02'
+top='1.96in'
+height='0.15in'
+color='red'>
+<dummy>2000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+top='2.44in'
+height='0.15in'
+color='red'>
+<dummy>3000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='i'
+left='5.62in'
+right='6.85in'
+width='1.23in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='05'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>5000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='07'
+top='3.12in'
+height='0.15in'
+color='blue'>
+<text>Spain</text>
+<blank></blank>
+</tlin>
+
+<dlin number='09'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>9000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>11000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>13000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='j'
+left='5.62in'
+right='5.70in'
+width='0.08in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='15a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='15b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='k'
+left='5.96in'
+right='6.85in'
+width='0.89in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='16a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>459835</text>
+<blank></blank>
+</tlin>
+
+<tlin name='16b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>274592</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='l'
+left='7.04in'
+right='7.90in'
+width='0.86in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='17a'
+top='4.78in'
+height='0.15in'
+color='red'>
+<dummy>17000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='17b'
+top='4.96in'
+height='0.15in'
+color='red'>
+<dummy>17001</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='m'
+left='6.00in'
+right='6.40in'
+width='0.4in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='20yr'
+top='1.41in'
+height='0.15in'
+color='blue'>
+<text>2024</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='n'
+left='2.64in'
+right='2.84in'
+width='0.2in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='void'
+top='0.43in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='o'
+left='3.44in'
+right='3.64in'
+width='0.2in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='corr'
+top='0.43in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgM>
+
+<pgM name='name:Four'
+bkgImage='../Jpg/f1099int-page-004.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.10in'>
+
+<col name='a'
+left='0.76in'
+right='4.04in'
+width='3.28in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pnam1'
+top='0.88in'
+height='0.15in'
+color='blue'>
+<text>Hopkins Coal Co.</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pnam2'
+top='1.08in'
+height='0.15in'
+color='blue'>
+<text>Ohio Division</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd1'
+top='1.27in'
+height='0.15in'
+color='blue'>
+<text>1700 Industrial Park</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd2'
+top='1.45in'
+height='0.15in'
+color='blue'>
+<text>Suite 300</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pcity'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Sandusky</text>
+<blank></blank>
+</tlin>
+
+<tlin name='ptel'
+top='1.78in'
+height='0.15in'
+color='blue'>
+<text>972-346-9254</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>26-785633</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam1'
+top='2.76in'
+height='0.15in'
+color='blue'>
+<text>John Taxpayor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam2'
+top='2.95in'
+height='0.15in'
+color='blue'>
+<text>Accounting Specialist</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd1'
+top='3.26in'
+height='0.15in'
+color='blue'>
+<text>300 Grant Street</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd2'
+top='3.45in'
+height='0.15in'
+color='blue'>
+<text>5th Floor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcity'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Pittsburgh</text>
+<blank></blank>
+</tlin>
+
+<tlin name='actNo'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>754824</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='b'
+left='2.00in'
+right='2.60in'
+width='0.6in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pST'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rST'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='c'
+left='2.46in'
+right='4.04in'
+width='1.58in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pcnty'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Erie</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>28-74521</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcnty'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Allegheny</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='d'
+left='2.75in'
+right='4.10in'
+width='1.35in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pctry'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rctry'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='e'
+left='3.20in'
+right='4.04in'
+width='0.84in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pzip'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>44870</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rzip'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>15213</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='f'
+left='3.74in'
+right='3.83in'
+width='0.09in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='FATCA'
+top='4.37in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='g'
+left='4.18in'
+right='5.47in'
+width='1.29in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pRTN'
+top='0.91in'
+height='0.15in'
+color='blue'>
+<text>472-30-3181</text>
+<blank></blank>
+</tlin>
+
+<dlin number='01'
+top='1.44in'
+height='0.15in'
+color='red'>
+<dummy>1000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>4000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+top='3.12in'
+height='0.15in'
+color='red'>
+<dummy>6000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>8000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>10000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>12000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='14'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>87549235</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='h'
+left='4.18in'
+right='6.85in'
+width='2.67in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='02'
+top='1.96in'
+height='0.15in'
+color='red'>
+<dummy>2000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+top='2.44in'
+height='0.15in'
+color='red'>
+<dummy>3000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='i'
+left='5.62in'
+right='6.85in'
+width='1.23in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='05'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>5000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='07'
+top='3.12in'
+height='0.15in'
+color='blue'>
+<text>Spain</text>
+<blank></blank>
+</tlin>
+
+<dlin number='09'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>9000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>11000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>13000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='j'
+left='5.62in'
+right='5.70in'
+width='0.08in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='15a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='15b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='k'
+left='5.96in'
+right='6.85in'
+width='0.89in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='16a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>459835</text>
+<blank></blank>
+</tlin>
+
+<tlin name='16b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>274592</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='l'
+left='7.04in'
+right='7.90in'
+width='0.86in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='17a'
+top='4.78in'
+height='0.15in'
+color='red'>
+<dummy>17000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='17b'
+top='4.96in'
+height='0.15in'
+color='red'>
+<dummy>17001</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='m'
+left='6.00in'
+right='6.40in'
+width='0.4in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='20yr'
+top='1.41in'
+height='0.15in'
+color='blue'>
+<text>2024</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='o'
+left='3.44in'
+right='3.64in'
+width='0.2in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='corr'
+top='0.43in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgM>
+
+<pgM name='name:Five'
+bkgImage='../Jpg/f1099int-page-005.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.10in'>
+
+<col name='a'
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name=''
+top='0.00in'
+height='0.15in'
+color='blue'>
+<text></text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgM>
+
+<pgM name='name:Six'
+bkgImage='../Jpg/f1099int-page-006.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.10in'>
+
+<col name='a'
+left='0.76in'
+right='4.04in'
+width='3.28in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pnam1'
+top='0.88in'
+height='0.15in'
+color='blue'>
+<text>Hopkins Coal Co.</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pnam2'
+top='1.08in'
+height='0.15in'
+color='blue'>
+<text>Ohio Division</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd1'
+top='1.27in'
+height='0.15in'
+color='blue'>
+<text>1700 Industrial Park</text>
+<blank></blank>
+</tlin>
+
+<tlin name='padd2'
+top='1.45in'
+height='0.15in'
+color='blue'>
+<text>Suite 300</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pcity'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Sandusky</text>
+<blank></blank>
+</tlin>
+
+<tlin name='ptel'
+top='1.78in'
+height='0.15in'
+color='blue'>
+<text>972-346-9254</text>
+<blank></blank>
+</tlin>
+
+<tlin name='pTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>26-785633</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam1'
+top='2.76in'
+height='0.15in'
+color='blue'>
+<text>John Taxpayor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rnam2'
+top='2.95in'
+height='0.15in'
+color='blue'>
+<text>Accounting Specialist</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd1'
+top='3.26in'
+height='0.15in'
+color='blue'>
+<text>300 Grant Street</text>
+<blank></blank>
+</tlin>
+
+<tlin name='radd2'
+top='3.45in'
+height='0.15in'
+color='blue'>
+<text>5th Floor</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcity'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Pittsburgh</text>
+<blank></blank>
+</tlin>
+
+<tlin name='actNo'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>754824</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='b'
+left='2.00in'
+right='2.60in'
+width='0.6in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pST'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rST'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='c'
+left='2.46in'
+right='4.04in'
+width='1.58in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pcnty'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>Erie</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rTIN'
+top='2.28in'
+height='0.15in'
+color='blue'>
+<text>28-74521</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rcnty'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>Allegheny</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='d'
+left='2.75in'
+right='4.10in'
+width='1.35in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pctry'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rctry'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>USA</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='e'
+left='3.20in'
+right='4.04in'
+width='0.84in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='pzip'
+top='1.62in'
+height='0.15in'
+color='blue'>
+<text>44870</text>
+<blank></blank>
+</tlin>
+
+<tlin name='rzip'
+top='3.87in'
+height='0.15in'
+color='blue'>
+<text>15213</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='f'
+left='3.74in'
+right='3.83in'
+width='0.09in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='FATCA'
+top='4.37in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='g'
+left='4.18in'
+right='5.47in'
+width='1.29in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='pRTN'
+top='0.91in'
+height='0.15in'
+color='blue'>
+<text>472-30-3181</text>
+<blank></blank>
+</tlin>
+
+<dlin number='01'
+top='1.44in'
+height='0.15in'
+color='red'>
+<dummy>1000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='04'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>4000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='06'
+top='3.12in'
+height='0.15in'
+color='red'>
+<dummy>6000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='08'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>8000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='10'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>10000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='12'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>12000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='14'
+top='4.94in'
+height='0.15in'
+color='blue'>
+<text>87549235</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='h'
+left='4.18in'
+right='6.85in'
+width='2.67in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='02'
+top='1.96in'
+height='0.15in'
+color='red'>
+<dummy>2000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='03'
+top='2.44in'
+height='0.15in'
+color='red'>
+<dummy>3000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='i'
+left='5.62in'
+right='6.85in'
+width='1.23in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='05'
+top='2.78in'
+height='0.15in'
+color='red'>
+<dummy>5000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<tlin name='07'
+top='3.12in'
+height='0.15in'
+color='blue'>
+<text>Spain</text>
+<blank></blank>
+</tlin>
+
+<dlin number='09'
+top='3.62in'
+height='0.15in'
+color='red'>
+<dummy>9000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='11'
+top='4.12in'
+height='0.15in'
+color='red'>
+<dummy>11000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='13'
+top='4.46in'
+height='0.15in'
+color='red'>
+<dummy>13000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='j'
+left='5.62in'
+right='5.70in'
+width='0.08in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='15a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>PA</text>
+<blank></blank>
+</tlin>
+
+<tlin name='15b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>OH</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='k'
+left='5.96in'
+right='6.85in'
+width='0.89in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<tlin name='16a'
+top='4.78in'
+height='0.15in'
+color='blue'>
+<text>459835</text>
+<blank></blank>
+</tlin>
+
+<tlin name='16b'
+top='4.96in'
+height='0.15in'
+color='blue'>
+<text>274592</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='l'
+left='7.04in'
+right='7.90in'
+width='0.86in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='right'
+top='0.00in'>
+
+<dlin number='17a'
+top='4.78in'
+height='0.15in'
+color='red'>
+<dummy>17000</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+<dlin number='17b'
+top='4.96in'
+height='0.15in'
+color='red'>
+<dummy>17001</dummy>
+<form></form>
+<copy></copy>
+<line2></line2>
+<blank></blank>
+</dlin>
+
+</col>
+*******************************************************
+
+<col name='m'
+left='6.00in'
+right='6.40in'
+width='0.4in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='20yr'
+top='1.41in'
+height='0.15in'
+color='blue'>
+<text>2024</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+<col name='o'
+left='3.44in'
+right='3.64in'
+width='0.2in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name='corr'
+top='0.43in'
+height='0.15in'
+color='blue'>
+<text>x</text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgM>
+
+<pgL name='Seven'
+bkgImage='../Jpg/f1099int-page-007.jpg'>
+
+<col name=''
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='-0.10in'>
+
+<col name='a'
+left='0.00in'
+right='8.50in'
+width='8.5in'
+background-color='pink'
+font-size='12pt'
+font-family='Times'
+text-align='left'
+top='0.00in'>
+
+<tlin name=''
+top='0.00in'
+height='0.15in'
+color='blue'>
+<text></text>
+<blank></blank>
+</tlin>
+
+</col>
+*******************************************************
+
+</col>
+*******************************************************
+
+</pgL>
+</Form>

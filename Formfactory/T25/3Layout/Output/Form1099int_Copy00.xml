@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyrigh(C) 2023, 2024 Phillips Wedemeyer
+
+This file is part of a program called Tax-bash.
+
+Tax-bash is free software: you can redistibute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Tax-bash is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Tax-bash.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<IRSForms>
+<Form>
+<copy00line color='blue'></copy00line>
+<copy00linepnam1 color='blue'>Hopkins Coal Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Ohio Division</copy00linepnam2>
+<copy00linepadd1 color='blue'>1700 Industrial Park</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 300</copy00linepadd2>
+<copy00linepcity color='blue'>Sandusky</copy00linepcity>
+<copy00lineptel color='blue'>972-346-9254</copy00lineptel>
+<copy00linepTIN color='blue'>26-785633</copy00linepTIN>
+<copy00linernam1 color='blue'>John Taxpayor</copy00linernam1>
+<copy00linernam2 color='blue'>Accounting Specialist</copy00linernam2>
+<copy00lineradd1 color='blue'>300 Grant Street</copy00lineradd1>
+<copy00lineradd2 color='blue'>5th Floor</copy00lineradd2>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00lineactNo color='blue'>754824</copy00lineactNo>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepcnty color='blue'>Erie</copy00linepcnty>
+<copy00linerTIN color='blue'>28-74521</copy00linerTIN>
+<copy00linercnty color='blue'>Allegheny</copy00linercnty>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>44870</copy00linepzip>
+<copy00linerzip color='blue'>15213</copy00linerzip>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00line2TIN color='blue'>x</copy00line2TIN>
+<copy00linepRTN color='blue'>472-30-3181</copy00linepRTN>
+<copy00line01 color='red'>1000</copy00line01>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='red'>8000</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line14 color='blue'>87549235</copy00line14>
+<copy00line02 color='red'>2000</copy00line02>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='blue'>Spain</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line11 color='red'>11000</copy00line11>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line15a color='blue'>PA</copy00line15a>
+<copy00line15b color='blue'>OH</copy00line15b>
+<copy00line16a color='blue'>459835</copy00line16a>
+<copy00line16b color='blue'>274592</copy00line16b>
+<copy00line17a color='red'>17000</copy00line17a>
+<copy00line17b color='red'>17001</copy00line17b>
+<copy00line20yr color='blue'>2024</copy00line20yr>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepnam1 color='blue'>Hopkins Coal Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Ohio Division</copy00linepnam2>
+<copy00linepadd1 color='blue'>1700 Industrial Park</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 300</copy00linepadd2>
+<copy00linepcity color='blue'>Sandusky</copy00linepcity>
+<copy00lineptel color='blue'>972-346-9254</copy00lineptel>
+<copy00linepTIN color='blue'>26-785633</copy00linepTIN>
+<copy00linernam1 color='blue'>John Taxpayor</copy00linernam1>
+<copy00linernam2 color='blue'>Accounting Specialist</copy00linernam2>
+<copy00lineradd1 color='blue'>300 Grant Street</copy00lineradd1>
+<copy00lineradd2 color='blue'>5th Floor</copy00lineradd2>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00lineactNo color='blue'>754824</copy00lineactNo>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepcnty color='blue'>Erie</copy00linepcnty>
+<copy00linerTIN color='blue'>28-74521</copy00linerTIN>
+<copy00linercnty color='blue'>Allegheny</copy00linercnty>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>44870</copy00linepzip>
+<copy00linerzip color='blue'>15213</copy00linerzip>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00linepRTN color='blue'>472-30-3181</copy00linepRTN>
+<copy00line01 color='red'>1000</copy00line01>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='red'>8000</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line14 color='blue'>87549235</copy00line14>
+<copy00line02 color='red'>2000</copy00line02>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='blue'>Spain</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line11 color='red'>11000</copy00line11>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line15a color='blue'>PA</copy00line15a>
+<copy00line15b color='blue'>OH</copy00line15b>
+<copy00line16a color='blue'>459835</copy00line16a>
+<copy00line16b color='blue'>274592</copy00line16b>
+<copy00line17a color='red'>17000</copy00line17a>
+<copy00line17b color='red'>17001</copy00line17b>
+<copy00line20yr color='blue'>2024</copy00line20yr>
+<copy00linevoid color='blue'>x</copy00linevoid>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00linepnam1 color='blue'>Hopkins Coal Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Ohio Division</copy00linepnam2>
+<copy00linepadd1 color='blue'>1700 Industrial Park</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 300</copy00linepadd2>
+<copy00linepcity color='blue'>Sandusky</copy00linepcity>
+<copy00lineptel color='blue'>972-346-9254</copy00lineptel>
+<copy00linepTIN color='blue'>26-785633</copy00linepTIN>
+<copy00linernam1 color='blue'>John Taxpayor</copy00linernam1>
+<copy00linernam2 color='blue'>Accounting Specialist</copy00linernam2>
+<copy00lineradd1 color='blue'>300 Grant Street</copy00lineradd1>
+<copy00lineradd2 color='blue'>5th Floor</copy00lineradd2>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00lineactNo color='blue'>754824</copy00lineactNo>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepcnty color='blue'>Erie</copy00linepcnty>
+<copy00linerTIN color='blue'>28-74521</copy00linerTIN>
+<copy00linercnty color='blue'>Allegheny</copy00linercnty>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>44870</copy00linepzip>
+<copy00linerzip color='blue'>15213</copy00linerzip>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00linepRTN color='blue'>472-30-3181</copy00linepRTN>
+<copy00line01 color='red'>1000</copy00line01>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='red'>8000</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line14 color='blue'>87549235</copy00line14>
+<copy00line02 color='red'>2000</copy00line02>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='blue'>Spain</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line11 color='red'>11000</copy00line11>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line15a color='blue'>PA</copy00line15a>
+<copy00line15b color='blue'>OH</copy00line15b>
+<copy00line16a color='blue'>459835</copy00line16a>
+<copy00line16b color='blue'>274592</copy00line16b>
+<copy00line17a color='red'>17000</copy00line17a>
+<copy00line17b color='red'>17001</copy00line17b>
+<copy00line20yr color='blue'>2024</copy00line20yr>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00line color='blue'></copy00line>
+<copy00linepnam1 color='blue'>Hopkins Coal Co.</copy00linepnam1>
+<copy00linepnam2 color='blue'>Ohio Division</copy00linepnam2>
+<copy00linepadd1 color='blue'>1700 Industrial Park</copy00linepadd1>
+<copy00linepadd2 color='blue'>Suite 300</copy00linepadd2>
+<copy00linepcity color='blue'>Sandusky</copy00linepcity>
+<copy00lineptel color='blue'>972-346-9254</copy00lineptel>
+<copy00linepTIN color='blue'>26-785633</copy00linepTIN>
+<copy00linernam1 color='blue'>John Taxpayor</copy00linernam1>
+<copy00linernam2 color='blue'>Accounting Specialist</copy00linernam2>
+<copy00lineradd1 color='blue'>300 Grant Street</copy00lineradd1>
+<copy00lineradd2 color='blue'>5th Floor</copy00lineradd2>
+<copy00linercity color='blue'>Pittsburgh</copy00linercity>
+<copy00lineactNo color='blue'>754824</copy00lineactNo>
+<copy00linepST color='blue'>OH</copy00linepST>
+<copy00linerST color='blue'>PA</copy00linerST>
+<copy00linepcnty color='blue'>Erie</copy00linepcnty>
+<copy00linerTIN color='blue'>28-74521</copy00linerTIN>
+<copy00linercnty color='blue'>Allegheny</copy00linercnty>
+<copy00linepctry color='blue'>USA</copy00linepctry>
+<copy00linerctry color='blue'>USA</copy00linerctry>
+<copy00linepzip color='blue'>44870</copy00linepzip>
+<copy00linerzip color='blue'>15213</copy00linerzip>
+<copy00lineFATCA color='blue'>x</copy00lineFATCA>
+<copy00linepRTN color='blue'>472-30-3181</copy00linepRTN>
+<copy00line01 color='red'>1000</copy00line01>
+<copy00line04 color='red'>4000</copy00line04>
+<copy00line06 color='red'>6000</copy00line06>
+<copy00line08 color='red'>8000</copy00line08>
+<copy00line10 color='red'>10000</copy00line10>
+<copy00line12 color='red'>12000</copy00line12>
+<copy00line14 color='blue'>87549235</copy00line14>
+<copy00line02 color='red'>2000</copy00line02>
+<copy00line03 color='red'>3000</copy00line03>
+<copy00line05 color='red'>5000</copy00line05>
+<copy00line07 color='blue'>Spain</copy00line07>
+<copy00line09 color='red'>9000</copy00line09>
+<copy00line11 color='red'>11000</copy00line11>
+<copy00line13 color='red'>13000</copy00line13>
+<copy00line15a color='blue'>PA</copy00line15a>
+<copy00line15b color='blue'>OH</copy00line15b>
+<copy00line16a color='blue'>459835</copy00line16a>
+<copy00line16b color='blue'>274592</copy00line16b>
+<copy00line17a color='red'>17000</copy00line17a>
+<copy00line17b color='red'>17001</copy00line17b>
+<copy00line20yr color='blue'>2024</copy00line20yr>
+<copy00linecorr color='blue'>x</copy00linecorr>
+<copy00line color='blue'></copy00line>
+</Form>
+</IRSForms>
